@@ -1,0 +1,26 @@
+{
+  "name": "learn-rxjs",
+  "version": "0.0.1",
+  "description": "Learn RxJS 5 Gitbook",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "gb": "gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btroncone/learn-rxjs.git"
+  },
+  "keywords": [
+    "Angular 2",
+    "ngrx",
+    "rxjs"
+  ],
+  "author": "Brian Troncone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btroncone/learn-rxjs/issues"
+  },
+  "homepage": "https://github.com/btroncone/learn-rxjs#readme"
+}

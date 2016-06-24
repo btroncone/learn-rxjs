@@ -1,0 +1,24 @@
+{
+  "gitbook": "3.1.1",
+  "title": "Learn RxJS",
+  "plugins": [
+    "include-codeblock",
+    "advanced-emoji",
+    "prism",
+    "-highlight",
+    "copy-code-button",
+    "edit-link",
+    "expandable-chapters",
+    "github"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/btroncone/learn-rxjs",
+      "label": "Edit This Page"
+    },
+    "expandable-chapters":{},
+    "github": {
+      "url": "https://github.com/btroncone/learn-rxjs/"
+    }
+  }
+}
