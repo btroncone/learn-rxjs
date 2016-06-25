@@ -1,5 +1,7 @@
 # Multicasting Operators
 
+![multicasting](http://http://imgur.com/lCoW13G.png)
+
 Brief summary about multicasting operators...
 
 ## Contents

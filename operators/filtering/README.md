@@ -1,5 +1,7 @@
 # Filtering Operators
 
+![filtering](http://i.imgur.com/WsRPr9g.png)
+
 Brief summary about filtering operators...
 
 ## Contents
