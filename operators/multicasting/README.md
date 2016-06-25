@@ -1,6 +1,6 @@
 # Multicasting Operators
 
-![multicasting](http://http://imgur.com/lCoW13G.png)
+![multicasting](http://imgur.com/lCoW13G.png)
 
 Brief summary about multicasting operators...
 
