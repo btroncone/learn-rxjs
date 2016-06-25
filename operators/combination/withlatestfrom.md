@@ -1,8 +1,8 @@
 # withLatestFrom
-###signature: `withLatestFrom(other: Observable, project: Function): Observable`
+####signature: `withLatestFrom(other: Observable, project: Function): Observable`
 *The gist: When source emits, also give last value emitted from another observable...*
 
-([jsBin](http://jsbin.com/xehucaketu/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/7/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-withLatestFrom))
+( [jsBin](http://jsbin.com/xehucaketu/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/7/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-withLatestFrom) )
 ```js
 //emit every 5s
 const source = Rx.Observable.interval(5000);

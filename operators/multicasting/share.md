@@ -1,8 +1,8 @@
 # share
-###signature: `share(): Observable`
+####signature: `share(): Observable`
 *The gist: Share observable among multiple subscribers...*
 
-([jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/26/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share))
+( [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/26/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share) )
 ```js
 //emit value in 1s
 const source = Rx.Observable.timer(1000);

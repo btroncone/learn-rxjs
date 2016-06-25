@@ -1,8 +1,8 @@
 # startWith
-###signature: `startWith(an: Values): Observable`
+####signature: `startWith(an: Values): Observable`
 *The gist: Emit specified item first...*
 
-([jsBin](http://jsbin.com/jeyakemume/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/6/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith))
+( [jsBin](http://jsbin.com/jeyakemume/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/6/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith) )
 ```js
 //emit (1,2,3)
 const source = Rx.Observable.of(1,2,3);

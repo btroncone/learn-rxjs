@@ -1,8 +1,8 @@
 # expand
-###signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
+####signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
 *The gist: Recursively call provided function...*
 
-([jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/34/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand))
+( [jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/34/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand) )
 ```js
 //emit 2
 const source = Rx.Observable.of(2);

@@ -1,10 +1,10 @@
 # concatMap
-###signature: `concatMap(project: function, resultSelector: function): Observable`
+####signature: `concatMap(project: function, resultSelector: function): Observable`
 *The gist: Map values from source to inner observable, subscribe and emit inner observable values in order...*
 
 *You could also: `map -> concatAll`*
 
-([jsBin](http://jsbin.com/dekadarube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/32/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap))
+( [jsBin](http://jsbin.com/dekadarube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/32/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap) )
 ```js
 //emit 'Hello' and 'Goodbye'
 const source = Rx.Observable.of('Hello', 'Goodbye');

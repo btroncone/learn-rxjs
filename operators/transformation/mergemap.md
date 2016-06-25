@@ -1,10 +1,10 @@
 # mergeMap
-###signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
+####signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
 *The gist: Map values from source to inner observable, flatten output...*
 
 *You could also: `map -> mergeAll`*
 
-([jsBin](http://jsbin.com/haxobidino/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/38/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap))
+( [jsBin](http://jsbin.com/haxobidino/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/38/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap) )
 ```js
 //emit 'Hello'
 const source = Rx.Observable.of('Hello');

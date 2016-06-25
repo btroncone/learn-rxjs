@@ -1,8 +1,8 @@
 # sample
-###signature: `sample(sampler: Observable): Observable`
+####signature: `sample(sampler: Observable): Observable`
 *The gist: Sample from source when supplied observable emits...*
 
-([jsBin](http://jsbin.com/wifaqipuse/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/20/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-sample))
+( [jsBin](http://jsbin.com/wifaqipuse/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/20/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-sample) )
 ```js
 //emit value every 1s
 const source = Rx.Observable.interval(1000);

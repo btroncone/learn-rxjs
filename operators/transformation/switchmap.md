@@ -1,8 +1,8 @@
 # switchMap
-###signature: `switchMap(a: Observable): Observable`
+####signature: `switchMap(a: Observable): Observable`
 *The gist: When source emits, switch to and emit values emitted from latest inner observable*
 
-([jsBin](http://jsbin.com/decinatisu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/42/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap))
+( [jsBin](http://jsbin.com/decinatisu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/42/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap) )
 ```js
 //emit immediately, then every 5s
 const source = Rx.Observable.timer(0, 5000);

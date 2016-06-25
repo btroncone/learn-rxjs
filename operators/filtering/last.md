@@ -1,8 +1,8 @@
 # last
-###signature: `last(predicate: function): Observable`
+####signature: `last(predicate: function): Observable`
 *The gist: Emit last item or last to pass test...*
 
-([jsBin](http://jsbin.com/xidufijuku/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/19/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-last))
+( [jsBin](http://jsbin.com/xidufijuku/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/19/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-last) )
 ```js
 const source = Rx.Observable.from([1,2,3,4,5]);
 //no arguments, emit last value

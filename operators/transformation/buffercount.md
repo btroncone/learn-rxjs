@@ -1,8 +1,8 @@
 # bufferCount
-###signature: `bufferCount<T>(bufferSize: number, startBufferEvery: number = null): Observable<T[]>`
+####signature: `bufferCount<T>(bufferSize: number, startBufferEvery: number = null): Observable<T[]>`
 *The gist: Collect output values until specified number is fulfilled then hand them over. Repeat...*
 
-([jsBin](http://jsbin.com/xibixetiqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/28/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount))
+( [jsBin](http://jsbin.com/xibixetiqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/28/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) )
 ```js
 //Create an observable that emits a value every second
 const myInterval = Rx.Observable.interval(1000);

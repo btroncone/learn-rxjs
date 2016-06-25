@@ -1,8 +1,8 @@
 # window
-###signature: `window(windowBoundaries: Observable): Observable`
+####signature: `window(windowBoundaries: Observable): Observable`
 *The gist: Observable of values for window of time*
 
-([jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/43/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window))
+( [jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/43/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window) )
 ```js
 //emit immediately then every 1s
 const source = Rx.Observable.timer(0, 1000);
