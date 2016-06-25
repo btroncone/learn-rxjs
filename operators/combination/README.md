@@ -1,5 +1,6 @@
 # Combination Operators
 
+![combination](http://imgur.com/bHvgnGj.png)
 
 Brief summary about combination operators...
 
