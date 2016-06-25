@@ -1,6 +1,6 @@
 # Summary
 
-### Learn RxJS 5
+### Learn RxJS
 
 * [Operators](/operators/README.md)
     * [Combination](/operators/combination/README.md)
