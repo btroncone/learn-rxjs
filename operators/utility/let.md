@@ -2,7 +2,7 @@
 ###signature: `let(function): Observable`
 *The gist: let me have the whole observable...*
 
-([demo](http://jsbin.com/bivisofuxe/edit?js,console) | [official docs](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md))
+([jsBin](http://jsbin.com/bivisofuxe/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/52/) | [official docs](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md))
 ```js
 const myArray = [1,2,3,4,5];
 const myObservableArray = Rx.Observable.fromArray(myArray);

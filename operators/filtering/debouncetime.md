@@ -2,7 +2,7 @@
 ###signature: `debounceTime(dueTime: number, scheduler: Scheduler): Observable`
 *The gist: Throw away all emitted values that take less then the specified time between output...*
 
-([demo](http://jsbin.com/kacijarogi/1/edit?js,console,output) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounceTime))
+([jsBin](http://jsbin.com/kacijarogi/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/14/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounceTime))
 ```js
 const input = document.getElementById('example');
 

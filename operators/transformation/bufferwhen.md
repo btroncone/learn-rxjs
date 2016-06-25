@@ -2,7 +2,7 @@
 ###signature: `bufferWhen(closingSelector: function): Observable<T[]>`
 *The gist: Buffer all values until closing selector emits, emit buffered values, repeat...*
 
-([demo](http://jsbin.com/vugerupube/1/edit?js,console) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferWhen))
+([jsBin](http://jsbin.com/vugerupube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/31/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferWhen))
 ```js
 //emit value every 1 second
 const oneSecondInterval = Rx.Observable.interval(1000);

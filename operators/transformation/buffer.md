@@ -2,7 +2,7 @@
 ###signature: `buffer<T>(closingNotifier: Observable<any>): Observable<T[]>`
 *The gist: Collect output values until something happens then hand them over. Repeat...*
 
-([demo](http://jsbin.com/fazimarajo/edit?js,console,output) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer))
+([jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/27/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer))
 ```js
 //Create an observable that emits a value every second
 const myInterval = Rx.Observable.interval(1000);

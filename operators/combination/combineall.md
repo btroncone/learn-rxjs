@@ -2,7 +2,7 @@
 ###signature: `combineAll(project: function): Observable`
 *The gist: Output latest values from inner observables when outer observable completes...*
 
-([demo](http://jsbin.com/boxadasevu/1/edit?js,console) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll))
+([jsBin](http://jsbin.com/nasakesame/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll))
 ```js
 //emit after five seconds then complete
 const fiveSecondTimer = Rx.Observable.timer(5000);
@@ -13,9 +13,8 @@ const combined = example.combineAll();
 const subscribe = combined.subscribe(val => console.log('Values from inner observable:', val));
 
 //combineAll also takes a projection function that receives emitted values
-const fiveSecondTimer = Rx.Observable.timer(5000);
-const example = fiveSecondTimer.mapTo(Rx.Observable.of('Hello', 'Goodbye'));
-const combined = example.combineAll(val => `${val} Friend!`);
+const exampleTwo = fiveSecondTimer.mapTo(Rx.Observable.of('Hello', 'Goodbye'));
+const combinedTwo = example.combineAll(val => `${val} Friend!`);
 //ex output: "Hello Friend!"..."Goodbye Friend!"
 const subscribeProjected = combined.subscribe(val => console.log('Values Using Projection:', val));
 ```

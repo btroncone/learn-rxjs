@@ -2,7 +2,7 @@
 ###signature: `merge(input: Observable): Observable`
 *The gist: Squish outputs from multiple observables into a single source...*
 
-([demo](http://jsbin.com/wicubemece/1/edit?js,console) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge))
+([jsBin](http://jsbin.com/wicubemece/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/4/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge))
 ```js
 //emit every 2.5 seconds
 const first = Rx.Observable.interval(2500);

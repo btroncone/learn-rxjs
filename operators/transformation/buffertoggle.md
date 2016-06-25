@@ -2,7 +2,7 @@
 ###signature: `bufferToggle(openings: Observable<O>, closingSelector: Function): Observable<T[]>`
 *The gist: Toggle buffer on to catch emitted values from source, toggle buffer off to emit buffered values...*
 
-([demo](http://jsbin.com/relavezugo/edit?js,console) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle))
+([jsBin](http://jsbin.com/relavezugo/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/30/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle))
 ```js
 //emit value every second
 const sourceInterval = Rx.Observable.interval(1000);

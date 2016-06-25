@@ -2,7 +2,7 @@
 ### signature: `dematerialize(): Observable`
 *The gist: Turn notification objects into notification values...*
 
-([demo](http://jsbin.com/vafedocibi/1/edit?js,console) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-dematerialize))
+([jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/50/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-dematerialize))
 ```js
 //emit next and error notifications
 const source = Rx.Observable
