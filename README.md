@@ -4,7 +4,7 @@ Clear examples, explanations, and resources for RxJS.
 
 ### Introduction
 
-RxJS is one of the hottest libraries in web development today. Offering  and with integration points into a growing number of frameworks, libraries, and utilities, 
+RxJS is one of the hottest libraries in web development today. Offering a powerful, functional approach for dealing with events and with integration points into a growing number of frameworks, libraries, and utilities, 
 the case for learning Rx has never been more appealing. Couple this with the ability to utilize your knowledge across nearly any language, 
 having a solid grasp on reactive programming and what it can offer seems like a no-brainer.
 
