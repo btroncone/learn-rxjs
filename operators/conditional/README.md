@@ -3,5 +3,5 @@
 Brief summary about conditional operators...
 
 ## Contents
-*[defaultIfEmpty](defaultifempty.md)
-*[every](every.md)
+* [defaultIfEmpty](defaultifempty.md)
+* [every](every.md)

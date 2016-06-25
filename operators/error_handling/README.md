@@ -3,6 +3,6 @@
 Brief summary about error handling operators...
 
 ## Contents
-*[catch](catch.md)
-*[retry](retry.md)
-*[retryWhen](retrywhen.md)
+* [catch](catch.md)
+* [retry](retry.md)
+* [retryWhen](retrywhen.md)
