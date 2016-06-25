@@ -1,5 +1,5 @@
 # Learn RxJS
-Easy to understand examples, explanations, and resources for RxJS
+Clear examples, explanations, and resources for RxJS.
 
 
 ### Introduction
