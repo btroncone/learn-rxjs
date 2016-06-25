@@ -14,7 +14,7 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/btroncone/learn-rxjs",
+      "base": "https://github.com/btroncone/learn-rxjs/tree/master",
       "label": "Edit This Page"
     },
     "expandable-chapters":{},
