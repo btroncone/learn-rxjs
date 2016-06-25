@@ -1,5 +1,7 @@
 # Conditional Operators
 
+![conditional](http://imgur.com/kmYWe4b.png)
+
 Brief summary about conditional operators...
 
 ## Contents
