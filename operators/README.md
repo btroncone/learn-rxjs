@@ -1,5 +1,7 @@
 # RxJS 5 Operators By Example
 
+A complete list of RxJS 5 operators with easy to understand explanations, relevant resources, and runnable examples.
+
 ### Contents (By Operator Type)
 * [Combination](combination/README.md)
     * [combineAll](combination/combineall.md)
