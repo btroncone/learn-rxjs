@@ -9,7 +9,8 @@
     "copy-code-button",
     "edit-link",
     "expandable-chapters",
-    "github"
+    "github",
+    "ga"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -19,6 +20,9 @@
     "expandable-chapters":{},
     "github": {
       "url": "https://github.com/btroncone/learn-rxjs/"
+    },
+    "ga": {
+        "token": "UA-54001708-2"
     }
   }
 }
