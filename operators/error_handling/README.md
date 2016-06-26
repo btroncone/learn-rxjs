@@ -2,7 +2,8 @@
 
 ![error handling](http://imgur.com/xNn9wzx.png)
 
-Brief summary about error handling operators...
+Errors are an unfortunate side-effect of development. These operators provide effective ways
+to gracefully handle errors and retry logic, should they occur. 
 
 ## Contents
 * [catch](catch.md)

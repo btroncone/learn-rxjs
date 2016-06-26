@@ -2,7 +2,8 @@
 
 ![filtering](http://i.imgur.com/WsRPr9g.png)
 
-Brief summary about filtering operators...
+In a push based approach, picking and choosing which items to accept is very important.
+These operators provide techniques for deciding when, and what values to accept from an observable source.
 
 ## Contents
 * [debounce](filtering/debounce.md)

@@ -20,7 +20,7 @@ Learning Rx may be difficult but it is certainly worth the effort!
 
 #### Operators
 Operators are the horse-power behind observables, providing an elegant, declarative solution to complex asynchronous tasks.
-This section contains all RxJS 5 operators, included with clear, runnable examples in both JSBin and JSFiddle. Links to 
+This section contains all RxJS 5 operators, included with clear, executable examples in both JSBin and JSFiddle. Links to 
 to additional resources and recipes for each operator are also provided, when applicable.  
 
 ##### Categories
