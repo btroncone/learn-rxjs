@@ -2,8 +2,8 @@
 
 ![combination](http://imgur.com/bHvgnGj.png)
 
-When you need to join information from multiple observables utilize the combination operators.
-Order, time, and structure of emitted values is the primary variation among the following choices.
+The combination operators allow the joining of information from multiple observables.
+Order, time, and structure of emitted values is the primary variation among these operators.
 
 ## Contents
 * [combineAll](combineall.md)
