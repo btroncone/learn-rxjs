@@ -1,6 +1,6 @@
 # Error Handling Operators
 
-![error handling](http://imgur.com/xNn9wzx.png)
+![error handling](http://imgur.com/ejwHeK4.png)
 
 Errors are an unfortunate side-effect of development. These operators provide effective ways
 to gracefully handle errors and retry logic, should they occur. 

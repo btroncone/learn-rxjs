@@ -1,6 +1,6 @@
 # Combination Operators
 
-![combination](http://imgur.com/bHvgnGj.png)
+![combination](http://imgur.com/uP12Dcs.png)
 
 The combination operators allow the joining of information from multiple observables.
 Order, time, and structure of emitted values is the primary variation among these operators.
