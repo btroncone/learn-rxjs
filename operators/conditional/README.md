@@ -2,7 +2,7 @@
 
 ![conditional](http://imgur.com/kmYWe4b.png)
 
-Brief summary about conditional operators...
+For use-cases that depend on a specific condition to be met, these operators do the trick. 
 
 ## Contents
 * [defaultIfEmpty](defaultifempty.md)

@@ -1,6 +1,7 @@
 # Utility Operators
 
-Brief summary about utility operators...
+From logging, handling notifications, to setting up schedulers, these operators 
+provide helpful utilities in your observable toolkit. 
 
 ## Contents
 * [do](do.md)

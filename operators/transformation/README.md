@@ -1,6 +1,7 @@
 # Transformation Operators
 
-Brief summary about transformation operators...
+Transforming values as they pass through the operator chain is a common task. These operators provide transformation techniques
+for nearly any use-case you will encounter.
 
 ## Contents
 * [buffer](buffer.md)

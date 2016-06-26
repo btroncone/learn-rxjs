@@ -2,8 +2,8 @@
 
 ![filtering](http://i.imgur.com/WsRPr9g.png)
 
-In a push based approach, picking and choosing which items to accept is very important.
-These operators provide techniques for deciding when, and what values to accept from an observable source.
+In a push based approach, picking and choosing how and when to accept items is important.
+These operators provide techniques for accepting values from an observable source and dealing with [backpressure](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/backpressure.md).
 
 ## Contents
 * [debounce](filtering/debounce.md)
