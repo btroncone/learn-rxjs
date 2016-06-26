@@ -1,6 +1,6 @@
 # RxJS 5 Operators By Example
 
-A complete list of RxJS 5 operators with easy to understand explanations, relevant resources, and executable examples.
+A complete list of RxJS 5 operators with claer explanations, relevant resources, and executable examples.
 
 ### Contents (By Operator Type)
 * [Combination](combination/README.md)
@@ -85,3 +85,7 @@ A complete list of RxJS 5 operators with easy to understand explanations, releva
     * [materialize](utility/materialize.md)
     * [observeOn](utility/observeon.md)
     * [toPromise](utility/topromise.md)
+
+### Additional Resources
+* [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators) :newspaper: - Official Docs
+* [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are) :video_camera: :dollar: - - André Staltz

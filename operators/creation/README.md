@@ -16,3 +16,6 @@ to specific use-cases you are free, and encouraged, to turn [everything into a s
 * [range](range.md)
 * [throw](throw.md)
 * [timer](timer.md)
+
+### Additional Resources
+* [Creating Observables From Scratch](https://egghead.io/courses/rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
