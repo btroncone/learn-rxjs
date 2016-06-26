@@ -18,3 +18,6 @@ const exampleTwo = sourceTwo.map(person => person.name);
 //output: "Joe","Frank","Ryan"
 const subscribe = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### Additional Resources
+* [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh
