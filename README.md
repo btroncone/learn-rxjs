@@ -2,7 +2,7 @@
 Clear examples, explanations, and resources for RxJS.
 
 
-### Introduction
+## Introduction
 
 [RxJS](https://github.com/ReactiveX/rxjs) is one of the hottest libraries in web development today. Offering a powerful, functional approach for dealing with events and with integration points into a growing number of frameworks, libraries, and utilities, 
 the case for learning Rx has never been more appealing. Couple this with the ability to utilize your knowledge across [nearly any language](http://reactivex.io/languages.html), 
@@ -16,7 +16,7 @@ and features references throughout to the best RxJS related material on the web.
 The goal is to supplement the [official docs](http://reactivex.io/rxjs/) and pre-existing learning material while offering a new, fresh perspective to clear any hurdles and tackle the pain points. 
 Learning Rx may be difficult but it is certainly worth the effort!
 
-### Content
+## Content
 
 #### Operators
 Operators are the horse-power behind observables, providing an elegant, declarative solution to complex asynchronous tasks.
@@ -44,19 +44,19 @@ Recipes, use-cases, and best-practices are included for solving common problems 
 
 *Coming Soon!*
 
-### Introductory Resources
+## Introductory Resources
 
 New to RxJS and reactive programming? In addition to the content found on this site, these excellent articles and videos will help
 jump start your learning experience!
 
-##### Reading
+#### Reading
 * [RxJS Introduction](http://reactivex.io/rxjs/manual/overview.html#introduction) - Official Docs
 * [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) - André Staltz
 
-##### Videos
+#### Videos
 * [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) - Jafar Husain
 * [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
 * [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming) :dollar: - André Staltz
 
-##### Exercises
+#### Exercises
 * [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar Husain
