@@ -65,5 +65,5 @@ jump start your learning experience!
 
 ### A Note On References
 All references included in this GitBook are resources that helped me tremendously while learning RxJS.
-If you come across something you think should be included, please use the *edit this page* link in the top
+If you come across an article or video that you think should be included, please use the *edit this page* link in the top
 menu and submit a pull request. Your feedback is appreciated!

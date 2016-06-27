@@ -90,4 +90,4 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
 
 ### Additional Resources
 * [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators) :newspaper: - Official Docs
-* [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are) :video_camera: :dollar: - - André Staltz
+* [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are) :video_camera: :dollar: - André Staltz
