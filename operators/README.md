@@ -67,7 +67,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [groupBy](transformation/groupby.md)
     * [map](transformation/map.md) :star:
     * [mapTo](transformation/mapto.md)
-    * [mergeMap (alias: flatMap)](transformation/margemap.md) :star:
+    * [mergeMap](transformation/mergemap.md) :star:
     * [partition](transformation/partition.md)
     * [pluck](transformation/pluck.md)
     * [scan](transformation/scan.md) :star:

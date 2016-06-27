@@ -3,6 +3,7 @@
 *The gist: Pick out nested properties...*
 
 ( [jsBin](http://jsbin.com/netulokasu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/40/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck) )
+
 ```js
 const source = Rx.Observable.from([
   {name: 'Joe', age: 30},

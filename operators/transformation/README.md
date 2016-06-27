@@ -15,7 +15,7 @@ for nearly any use-case you will encounter.
 * [groupBy](groupby.md)
 * [map](map.md) :star:
 * [mapTo](mapto.md)
-* [mergeMap (alias: flatMap)](mergemap.md) :star:
+* [mergeMap](mergemap.md) :star:
 * [partition](partition.md)
 * [pluck](pluck.md)
 * [scan](scan.md) :star:
