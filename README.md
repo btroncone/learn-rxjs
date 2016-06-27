@@ -64,6 +64,6 @@ jump start your learning experience!
 *Interested in RxJS 4? Check out [Denis Stoyanov's](https://github.com/xgrommx) excellent [eBook](https://xgrommx.github.io/rx-book/)!*
 
 ### A Note On References
-All references included in this GitBook are resources that helped me tremendously while learning RxJS.
+All references included in this GitBook are resources, both free and paid, that helped me tremendously while learning RxJS.
 If you come across an article or video that you think should be included, please use the *edit this page* link in the top
 menu and submit a pull request. Your feedback is appreciated!
