@@ -3,6 +3,7 @@
 *The gist: Emit the first value, or the first to pass condition...*
 
 ( [jsBin](http://jsbin.com/poloquxuja/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/17/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-first) )
+
 ```js
 const source = Rx.Observable.from([1,2,3,4,5]);
 //no arguments, emit first value

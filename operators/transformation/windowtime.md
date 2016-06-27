@@ -3,6 +3,7 @@
 *The gist: Emit an observable of values collected from source every specified time span*
 
 ( [jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/45/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime) )
+
 ```js
 //emit immediately then every 1s
 const source = Rx.Observable.timer(0,1000);

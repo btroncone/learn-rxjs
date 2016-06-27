@@ -3,6 +3,7 @@
 *The gist: Retry specified number of times on error...*
 
 ( [jsBin](http://jsbin.com/yovacuxuqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/11/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retry) )
+
 ```js
 //emit value every 1s
 const source = Rx.Observable.interval(1000);

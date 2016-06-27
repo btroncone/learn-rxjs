@@ -3,6 +3,7 @@
 *The gist: Group into observables by given value...*
 
 ( [jsBin](http://jsbin.com/zibomoluru/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/35/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-groupBy) )
+
 ```js
 const people = [{name: 'Sue', age:25},{name: 'Joe', age: 30},{name: 'Frank', age: 25}, {name: 'Sarah', age: 35}];
 //emit each person

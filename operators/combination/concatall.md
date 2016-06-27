@@ -3,6 +3,7 @@
 *The gist: Concat for nested observables (observable of observables), subscribe to each when previous completes and merge emitted values...*
 
 ( [jsBin](http://jsbin.com/hayasoxoci/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/3/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll) )
+
 ```js
 //emit a value every 2 seconds
 const sourceOne = Rx.Observable.interval(2000);

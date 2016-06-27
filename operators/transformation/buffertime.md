@@ -3,6 +3,7 @@
 *The gist: Collect output values until specified time has passed then hand them over. Repeat...*
 
 ( [jsBin](http://jsbin.com/gixarikeme/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/29/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferTime) )
+
 ```js
 //Create an observable that emits a value every 500ms
 const myInterval = Rx.Observable.interval(500);

@@ -3,6 +3,7 @@
 *The gist: Delay output by specified time, determined by provided function...*
 
 ( [jsBin](http://jsbin.com/topohekuje/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/49/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delayWhen) )
+
 ```js
 //emit value every second
 const message = Rx.Observable.interval(1000);

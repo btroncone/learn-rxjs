@@ -3,6 +3,7 @@
 *The gist: Retry with additional logic...*
 
 ( [jsBin](http://jsbin.com/miduqexalo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/12/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retryWhen) )
+
 ```js
 //emit value every 1s
 const source = Rx.Observable.interval(1000);

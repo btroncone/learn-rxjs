@@ -3,6 +3,7 @@
 *The gist: Take the first observable to emit...*
 
 ( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/5/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) )
+
 ```js
 //take the first observable to emit
 const example = Rx.Observable.race(

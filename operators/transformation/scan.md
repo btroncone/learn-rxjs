@@ -3,6 +3,7 @@
 *The gist: Reduce over time...*
 
 ( [jsBin](http://jsbin.com/jopikihuvu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/41/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan) )
+
 ```js
 const testSubject = new Rx.Subject();
 //basic scan example, sum over time starting with zero

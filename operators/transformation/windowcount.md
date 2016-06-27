@@ -3,6 +3,7 @@
 *The gist: Observable of values from source, emitted each time count is fulfilled*
 
 ( [jsBin](http://jsbin.com/nezuvacexe/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/44/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowCount) )
+
 ```js
 //emit every 1s
 const source = Rx.Observable.interval(1000);

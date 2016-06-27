@@ -3,6 +3,7 @@
 *The gist: Apply projection to each element...*
 
 ( [jsBin](http://jsbin.com/vegagizedo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/36/) | [official docs](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-map) )
+
 ```js
 //emit (1,2,3,4,5)
 const source = Rx.Observable.from([1,2,3,4,5]);

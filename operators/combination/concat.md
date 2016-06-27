@@ -3,6 +3,7 @@
 *The gist: Like the line at an ATM, the next transaction (subscription) won't start until the previous completes...*
 
 ( [jsBin](http://jsbin.com/kenusofudu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/2/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concat) )
+
 ```js
 //emits 1,2,3
 const sourceOne = Rx.Observable.of(1,2,3);

@@ -3,6 +3,7 @@
 *The gist: Only emit when the next value is different then the last...*
 
 ( [jsBin](http://jsbin.com/wuhumodoha/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/15/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged) )
+
 ```js
 //only output distinct values, based on the last emitted value
 const myArrayWithDuplicatesInARow = Rx.Observable

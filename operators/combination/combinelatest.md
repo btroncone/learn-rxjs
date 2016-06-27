@@ -3,6 +3,7 @@
 *The gist: Given a group of observables, when one emits also emit latest values from each...*
 
 ( [jsBin](http://jsbin.com/lumaqanoha/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/1/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest) )
+
 ```js
 //timerOne emits first value at 1s, then once every 4s
 const timerOne = Rx.Observable.timer(1000, 4000);
