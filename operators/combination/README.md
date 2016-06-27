@@ -7,13 +7,15 @@ Order, time, and structure of emitted values is the primary variation among thes
 
 ## Contents
 * [combineAll](combineall.md)
-* [combineLatest](combinelatest.md)
-* [concat](concat.md)
+* [combineLatest](combinelatest.md) :star:
+* [concat](concat.md) :star:
 * [concatAll](concatall.md)
 * [forkJoin](forkjoin.md)
-* [merge](merge.md)
+* [merge](merge.md) :star:
 * [mergeAll](margeall.md)
 * [race](race.md)
-* [startWith](startwith.md)
-* [withLatestFrom](withlatestfrom.md)
+* [startWith](startwith.md) :star:
+* [withLatestFrom](withlatestfrom.md) :star:
 * [zip](zip.md)
+
+:star: - *commonly used*

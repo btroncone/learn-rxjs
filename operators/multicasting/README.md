@@ -8,7 +8,9 @@ side-effects to be share among multiple subscribers.
 ## Contents
 * [cache](cache.md)
 * [publish](publish.md)
-* [share](share.md)
+* [share](share.md) :star:
+
+:star: - *commonly used*
 
 ### Additional Resources
 * [Hot vs Cold Observables](https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339#.8x9uam5rg) :newspaper: - Ben Lesh

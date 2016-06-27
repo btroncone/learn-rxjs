@@ -7,9 +7,9 @@ These operators provide techniques for accepting values from an observable sourc
 
 ## Contents
 * [debounce](filtering/debounce.md)
-* [debounceTime](debouncetime.md)
-* [distinctUntilChanged](distinctuntilchanged.md)
-* [filter](filter.md)
+* [debounceTime](debouncetime.md) :star:
+* [distinctUntilChanged](distinctuntilchanged.md) :star:
+* [filter](filter.md) :star:
 * [first](first.md)
 * [ignoreElements](ignoreelements.md)
 * [last](last.md)
@@ -18,8 +18,11 @@ These operators provide techniques for accepting values from an observable sourc
 * [skip](skip.md)
 * [skipUntil](skipuntil.md)
 * [skipWhile](skipwhile.md)
-* [take](take.md)
-* [takeUntil](takeuntil.md)
+* [take](take.md) :star:
+* [takeUntil](takeuntil.md) :star:
 * [takeWhile](takewhile.md)
 * [throttle](throttle.md)
 * [throttleTime](throttletime.md)
+
+:star: - *commonly used*
+
