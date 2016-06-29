@@ -82,8 +82,6 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [delay](utility/delay.md)
     * [delayWhen](utility/delaywhen.md)
     * [let](utility/let.md)
-    * [materialize](utility/materialize.md)
-    * [observeOn](utility/observeon.md)
     * [toPromise](utility/topromise.md)
 
 :star: - *commonly used*

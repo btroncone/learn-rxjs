@@ -83,8 +83,6 @@
         * [delayWhen](/operators/utility/delaywhen.md)
         * [dematerialize](/operators/utility/dematerialize.md)
         * [let](/operators/utility/let.md)
-        * [materialize](/operators/utility/materialize.md)
-        * [observeOn](/operators/utility/observeon.md)
         * [toPromise](/operators/utility/topromise.md)
 * [Concepts](/concepts/README.md)
 * [Recipes](/recipes/README.md)
