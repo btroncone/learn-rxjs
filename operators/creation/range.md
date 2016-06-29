@@ -3,7 +3,7 @@
 ####signature: `range(start: number, count: number, scheduler: Scheduler): Observable`
 *The gist: Emits numbers within a specified range...*
 
-( [jsBin](http://jsbin.com/yalefomage/1/edit?js,console) | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range) )
+( [jsBin](http://jsbin.com/yalefomage/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ukec2y4p/3/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range) )
 
 ```js
 //emit 1-10 in sequence

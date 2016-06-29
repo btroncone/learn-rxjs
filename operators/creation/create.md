@@ -3,7 +3,7 @@
 ####signature: `create(subscribe: function)`
 *The gist: Creates an observable with a given subscribe function...*
 
-( [jsBin](http://jsbin.com/hinacisafu/1/edit?js,console) | [jsFiddle]() )
+( [jsBin](http://jsbin.com/hinacisafu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ukec2y4p/6/) )
 
 ```js
 /*

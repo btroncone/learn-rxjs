@@ -3,7 +3,7 @@
 ####signature: `catch(project : function): Observable`
 *The gist: Gracefully handle errors and exceptions without terminating observable...*
 
-( [jsBin](http://jsbin.com/litesodute/1/edit?js,console) | [jsFiddle]() )
+( [jsBin](http://jsbin.com/litesodute/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ukec2y4p/) )
 
 ```js
 //emit error
