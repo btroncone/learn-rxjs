@@ -1,9 +1,9 @@
 # forkJoin
 
-####signature: `windowToggle(openings: Observable, closingSelector: function(value): Observable): Observable`
-*The gist: Collect and emit observable of values from source between opening and closing emission*
+####signature: `forkJoin(...args, selector : function): Observable`
+*The gist: Get the last emitted item from each observable on completion...*
 
-( [jsBin]() | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle) )
+( [jsBin]() | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin) )
 
 ### How forkJoin works...
 *Coming soon...*
