@@ -33,7 +33,7 @@ to additional resources and recipes for each operator are also provided, when ap
 * [Transformation](/operators/transformation/README.md)
 * [Utility](/operators/utility/README.md)
 
-**OR**
+**OR...**
 
 [Complete listing in alphabetical order.](/operators/complete.md)
 
