@@ -23,7 +23,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [empty](creation/empty.md)
     * [from](creation/from.md) :star:
     * [fromEvent](creation/fromevent.md)
-    * [fromPromise](creation/frompromise.md) :start:
+    * [fromPromise](creation/frompromise.md) :star:
     * [interval](creation/interval.md)
     * [of](creation/of.md) :star:
     * [range](creation/range.md)
