@@ -31,3 +31,10 @@ const exampleThree = sourceThree.filter(num => num > 5);
 */
 const subscribeThree = exampleThree.subscribe(val => console.log(`Number greater than 5: ${val}`));
 ```
+
+### How filter works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

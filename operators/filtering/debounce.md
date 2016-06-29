@@ -29,3 +29,10 @@ const debouncedInterval = interval.debounce(val => Rx.Observable.timer(val * 200
 */
 const subscribeTwo = debouncedInterval.subscribe(val => console.log(`Example Two: ${val}`));
 ```
+
+### How debounce works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

@@ -24,3 +24,10 @@ const exampleTwo = sourceTwo.pluck('job', 'title');
 //output: "Developer" , undefined
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How pluck works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

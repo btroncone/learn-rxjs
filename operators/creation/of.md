@@ -3,4 +3,23 @@
 ####signature: ` of(...values, scheduler: Scheduler): Observable`
 *The gist: Emits provided values...*
 
-( [jsBin]() | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of) )
+( [jsBin](http://jsbin.com/tawezibeyu/1/edit?js,console) | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of) )
+
+```js
+//emits any number of provided values in sequence
+const source = Rx.Observable.of(1,2,3,4,5);
+//output: 1,2,3,4,5
+const subscribe = source.subscribe(val => console.log(val));
+
+//emits values of any type
+const sourceTwo = Rx.Observable.of({name: 'Brian'}, [1,2,3], function hello(){ return 'Hello'});
+//output: {name: 'Brian}, [1,2,3], function hello() { return 'Hello' }
+const subscribeTwo = sourceTwo.subscribe(val => console.log(val));
+```
+
+### How of works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

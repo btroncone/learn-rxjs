@@ -34,3 +34,10 @@ const subscribeTwo = example
 */
   .subscribe(val => console.log(val));
 ```
+
+### How windowToggle works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

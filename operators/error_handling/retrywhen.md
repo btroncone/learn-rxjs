@@ -34,3 +34,10 @@ const example = source
 */
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
+### How retryWhen works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

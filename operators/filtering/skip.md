@@ -12,3 +12,10 @@ const example = source.skip(5);
 //output: 5...6...7...8........
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
+### How skip works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

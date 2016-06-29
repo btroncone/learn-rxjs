@@ -32,3 +32,10 @@ const subscribeTwo = example
 */
   .subscribe(val => console.log(val));
 ```
+
+### How windowWhen works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

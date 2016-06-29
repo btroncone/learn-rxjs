@@ -22,3 +22,10 @@ const exampleThree = source.first(num => num % 2 === 0,
 //output: "First even: 2 at index: 1"
 const subscribeThree = exampleThree.subscribe(val => console.log(val));
 ```
+
+### How first works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

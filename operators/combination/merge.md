@@ -29,3 +29,10 @@ const exampleTwo = first.merge(fourth);
 //output: 0,1,0,2....
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How merge works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

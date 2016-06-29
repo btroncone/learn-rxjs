@@ -30,3 +30,10 @@ const subscribeTwo = example
 */
   .subscribe(val => console.log(val));
 ```
+
+### How windowCount works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

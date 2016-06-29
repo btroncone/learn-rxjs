@@ -19,3 +19,10 @@ const example = Rx.Observable.race(
 //output: "1s won!"..."1s won!"...etc
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
+### How race works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

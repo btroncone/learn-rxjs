@@ -12,3 +12,10 @@ const example = source.single(val => val === 4);
 //output: 4
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
+### How single works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

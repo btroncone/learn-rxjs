@@ -4,3 +4,11 @@
 *The gist: Emit values until another observable emits...*
 
 ( [jsBin]() | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeUntil) )
+
+
+### How takeUntil works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

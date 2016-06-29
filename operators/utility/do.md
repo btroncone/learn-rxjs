@@ -15,3 +15,10 @@ const example = source
 //output: 11...12...13...14...15
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
+### How do works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

@@ -16,3 +16,10 @@ const exampleTwo = source.last(num => num % 2 === 0);
 //output: "Last to pass test: 4"
 const subscribeTwo = exampleTwo.subscribe(val => console.log(`Last to pass test: ${val}`));
 ```
+
+### How last works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

@@ -18,3 +18,10 @@ const exampleTwo = emptyTwo.defaultIfEmpty('Observable.empty()!');
 //output: 'Observable.empty()!'
 const subscribe = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How defaultIfEmpty works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

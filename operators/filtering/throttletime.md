@@ -4,3 +4,10 @@
 *The gist: Emit value only when specified duration has passed...*
 
 ( [jsBin]() | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime) )
+
+### How throttleTime works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

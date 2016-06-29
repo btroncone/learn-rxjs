@@ -34,3 +34,10 @@ const bufferEveryOne = myInterval.bufferCount(3,1);
 //Print values to console
 const secondSubscribe = bufferEveryOne.subscribe(val => console.log('Start Buffer Every 1:', val));
 ```
+
+### How bufferCount works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

@@ -33,3 +33,10 @@ const subscribeTwo = error.subscribe(
   () => console.log('SECOND COMPLETE!')
 );
 ```
+
+### How ignoreElements works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

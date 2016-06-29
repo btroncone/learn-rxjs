@@ -46,3 +46,10 @@ const subscribeTwo = Rx.Observable.merge(
   error.map(val => `Error! ${val.error}`)
 ).subscribe(val => console.log(val));
 ```
+
+### How partition works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

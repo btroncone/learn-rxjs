@@ -24,3 +24,10 @@ const exampleTwo = sourceOne
 //output: 'Example with Promise 0', 'Example with Promise 1'...
 const subscribeTwo = exampleTwo.subscribe(val => console.log('Example with Promise:', val));
 ```
+
+### How concatAll works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

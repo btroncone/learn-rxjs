@@ -19,3 +19,10 @@ const exampleTwo = sourceTwo.switchMap(val => Rx.Observable.interval(3000).mapTo
 //(click)...3s...'Hello I made it!'...(click)...2s(click)...
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How switchMap works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

@@ -33,3 +33,10 @@ const subscribeThree = exampleWithSelector
   .delay(2000)
   .subscribe(val => console.log('Example w/ Selector:', val));
 ```
+
+### How concatMap works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

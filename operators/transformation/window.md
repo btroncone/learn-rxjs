@@ -24,3 +24,10 @@ const count = example.scan((acc, curr) => acc + 1, 0)
 const subscribe = count.subscribe(val => console.log(`Window ${val}:`));
 const subscribeTwo = example.mergeAll().subscribe(val => console.log(val));
 ```
+
+### How window works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

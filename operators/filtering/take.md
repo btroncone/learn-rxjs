@@ -4,3 +4,11 @@
 *The gist: Emit only specified number of values...*
 
 ( [jsBin]() | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take) )
+
+
+### How take works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

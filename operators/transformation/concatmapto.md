@@ -39,3 +39,10 @@ const exampleTwo = interval
 */
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How concatMapTo works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

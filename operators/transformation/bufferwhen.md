@@ -15,3 +15,10 @@ const bufferWhenExample = oneSecondInterval.bufferWhen(fiveSecondInterval);
 //ex. output: [0,1,2,3]...[4,5,6,7,8]
 const subscribe = bufferWhenExample.subscribe(val => console.log('Emitted Buffer: ', val));
 ```
+
+### How bufferWhen works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

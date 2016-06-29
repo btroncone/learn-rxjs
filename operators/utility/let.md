@@ -41,3 +41,10 @@ const addTenThenTwenty = obs => obs.map(val => val + 10).map(val => val + 20);
 const letTestFour = obsArrayPlusYourOperators(addTenThenTwenty)
 	.subscribe(val => console.log('let FROM FUNCTION:', val));
 ```
+
+### How let works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

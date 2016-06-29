@@ -19,3 +19,10 @@ const exampleTwo = clickSource.mapTo('GOODBYE WORLD!');
 //output: (click)'GOODBYE WORLD!'...
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How mapTo works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

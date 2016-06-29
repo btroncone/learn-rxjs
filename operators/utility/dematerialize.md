@@ -20,3 +20,10 @@ const subscription = source.subscribe({
   error: val => console.log(`ERROR VALUE: ${val}`)
 });
 ```
+
+### How dematerialize works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

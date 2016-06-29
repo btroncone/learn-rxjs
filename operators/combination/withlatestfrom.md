@@ -36,3 +36,10 @@ const exampleTwo = secondSource
 */
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How withLatestFrom works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

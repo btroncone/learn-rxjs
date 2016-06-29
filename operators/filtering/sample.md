@@ -23,3 +23,10 @@ const exampleTwo = sourceTwo.sample(Rx.Observable.interval(2500));
 //output: ["Joe", 0]...["Frank", 1]...........
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How sample works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

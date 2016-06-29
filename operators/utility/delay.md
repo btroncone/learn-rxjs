@@ -17,3 +17,10 @@ const message = Rx.Observable.merge(
 //output: 'Hello'...'World!'...'Goodbye'...'World!'
 const subscribe = message.subscribe(val => console.log(val));
 ```
+
+### How delay works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

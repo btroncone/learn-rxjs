@@ -28,3 +28,10 @@ const subscribeTwo = example
 */
   .subscribe(val => console.log(val));
 ```
+
+### How windowTime works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

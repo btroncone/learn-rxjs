@@ -31,3 +31,10 @@ const exampleTwo = Rx.Observable
 //output: [0,0]...[1,1]
 const subscribe = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How zip works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

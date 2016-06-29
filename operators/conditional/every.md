@@ -20,3 +20,10 @@ const exampleTwo = allEvens
 //output: true
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
+
+### How every works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

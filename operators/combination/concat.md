@@ -32,3 +32,10 @@ const sourceOneNeverComplete = Rx.Observable
 //outputs: 1,2,3,4....
 const subscribeNeverComplete = sourceOneNeverComplete.subscribe(val => console.log('Example 3: Source one never completes, second observable never runs:', val));
 ```
+
+### How concat works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

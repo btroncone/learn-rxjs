@@ -20,5 +20,9 @@ const exampleTwo = sourceTwo.map(person => person.name);
 const subscribe = exampleTwo.subscribe(val => console.log(val));
 ```
 
+### How map works...
+*Coming soon...*
+
+
 ### Additional Resources
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh

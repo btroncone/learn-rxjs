@@ -31,3 +31,10 @@ setTimeout(() => {
  example.connect(); 
 },5000)
 ```
+
+### How publish works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

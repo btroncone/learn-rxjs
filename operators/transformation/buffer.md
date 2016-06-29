@@ -17,3 +17,10 @@ const myBufferedInterval = myInterval.buffer(bufferBy);
 //ex. output: [1,2,3] ... [4,5,6,7,8]
 const subscribe = myBufferedInterval.subscribe(val => console.log(' Buffered Values:', val));
 ```
+
+### How buffer works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

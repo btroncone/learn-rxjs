@@ -15,3 +15,10 @@ const delayWhenExample = message.delayWhen(delayForFiveSeconds);
 //ex. output: 5s....1...2...3
 const subscribe = delayWhenExample.subscribe(val => console.log(val));
 ```
+
+### How delayWhen works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

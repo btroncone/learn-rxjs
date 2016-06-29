@@ -30,3 +30,10 @@ const subscribe = example
      error: val => console.log(`${val}: Retried 2 times then quit!`)
 });
 ```
+
+### How retry works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

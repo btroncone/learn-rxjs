@@ -27,3 +27,10 @@ testSubjectTwo.next({name: 'Joe'}); // {name: 'Joe'}
 testSubjectTwo.next({age: 30}); // {name: 'Joe', age: 30}
 testSubjectTwo.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
 ```
+
+### How scan works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

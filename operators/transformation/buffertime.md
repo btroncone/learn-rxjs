@@ -22,3 +22,10 @@ const bufferTimeTwo = myInterval.bufferTime(2000,1000);
 //Print values to console
 const secondSubscribe = bufferTimeTwo.subscribe(val => console.log('Start Buffer Every 1s:', val));
 ```
+
+### How bufferTime works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*

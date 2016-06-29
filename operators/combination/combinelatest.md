@@ -51,3 +51,10 @@ const combinedProject = Rx.Observable
 //log values
 const subscribe = combinedProject.subscribe(latestValuesProject => console.log(latestValuesProject));
 ```
+
+### How combineLatest works...
+*Coming soon...*
+
+
+### Additional Resources
+*Coming soon...*
