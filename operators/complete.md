@@ -46,7 +46,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
 * [merge](combination/merge.md) :star:
 * [mergeAll](combination/margeall.md)
 * [mergeMap](transformation/mergemap.md) :star:
-* [multicast](multicast.md)
+* [multicast](multicasting/multicast.md)
 * [of](creation/of.md) :star:
 * [partition](transformation/partition.md)
 * [pluck](transformation/pluck.md)
