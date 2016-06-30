@@ -35,7 +35,7 @@ to additional resources and recipes for each operator are also provided, when ap
 
 **OR...**
 
-[Complete listing in alphabetical order.](/operators/complete.md)
+[Complete listing in alphabetical order](/operators/complete.md)
 
 #### Concepts
 Without a solid base knowledge of how Observables work behind the scenes, it's easy for much of RxJS to feel like 'magic'.
