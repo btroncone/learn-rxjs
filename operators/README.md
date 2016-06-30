@@ -55,6 +55,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [throttleTime](filtering/throttletime.md)
 * [Multicasting](multicasting/README.md)
     * [cache](multicasting/cache.md)
+    * [multicast](multicast.md)
     * [publish](multicasting/publish.md)
     * [share](multicasting/share.md) :star:
 * [Transformation](transformation/README.md)
