@@ -1,39 +1,35 @@
 # throttleTime
 
 ####signature: `throttleTime(duration: number, scheduler: Scheduler): Observable`
-*The gist: Emit value only when specified duration has passed...*
+*The gist: Emit latest value when specified duration has passed...*
 
-( [jsBin](http://jsbin.com/vifezopeto/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/14/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime) )
+( [jsBin](http://jsbin.com/wudukimivi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/22/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime) )
 
 ```js
 //emit value every 1 second
 const source = Rx.Observable.interval(1000);
-//throttle for 5 seconds
-const example = source.throttleTime(5000)
+/*
+  throttle for five seconds
+  last value emitted before throttle ends will be emitted from source
+*/
+const example = source
+  .throttleTime(5000);
 //output: 0...6...12
 const subscribe = example.subscribe(val => console.log(val));
 
 //merge observables that emit every 1s, immediately, and every 5s
 const sourceTwo = Rx.Observable
 	.merge(
-		Rx.Observable.interval(1000).mapTo('1s interval'),
-    Rx.Observable.of('Hello World'),
-    Rx.Observable.interval(5000).mapTo('5s interval')
+        //emit every 2.25 seconds
+		Rx.Observable.interval(2250),
+        //emit every 3 seconds
+        Rx.Observable.interval(3000)
 	);
- //throttle output to 5s
-const exampleTwo = sourceTwo.throttleTime(5000);
-/*
-  'Hello World'
-  0
-  '5s interval'
-  6
-  '1s interval'
-  12
-  '1s interval'
-*/
+//throttle for 5 seconds
+const exampleTwo = sourceTwo.throttleTime(1500);
+//output: 0...1...2...2...4...5...6...5
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
-
 
 ### How throttleTime works...
 *Coming soon...*
