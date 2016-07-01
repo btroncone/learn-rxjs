@@ -2,22 +2,32 @@
 ####signature: `combineAll(project: function): Observable`
 *The gist: Output latest values from inner observables when outer observable completes...*
 
-( [jsBin](http://jsbin.com/nasakesame/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll) )
+( [jsBin](http://jsbin.com/kovofevimo/edit?js,console) | [jsFiddle]https://jsfiddle.net/d3pn27dv/26/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll) )
 
 ```js
-//emit after five seconds then complete
-const fiveSecondTimer = Rx.Observable.timer(5000);
-//once timer (outer observable) fires and completes, latest emitted values from inner observables will be output, in this case there is a single value
-const example = fiveSecondTimer.mapTo(Rx.Observable.of('Hello', 'World'));
+//emit every 1s, take 2
+const source = Rx.Observable.interval(1000).take(2);
+//map each emitted value from source to interval observable that takes 5 values
+const example = source.map(val => Rx.Observable.interval(1000).map(i => `Result (${val}): ${i}`).take(5));
+/*
+  2 values from source will map to 2 (inner) interval observables that emit every 1s
+  combineAll uses combineLatest strategy, emitting the last value from each
+  whenever either observable emits a value
+*/
 const combined = example.combineAll();
-//ex output: ["Hello"]...["World"]
-const subscribe = combined.subscribe(val => console.log('Values from inner observable:', val));
-
-//combineAll also takes a projection function that receives emitted values
-const exampleTwo = fiveSecondTimer.mapTo(Rx.Observable.of('Hello', 'Goodbye'));
-const combinedTwo = example.combineAll(val => `${val} Friend!`);
-//ex output: "Hello Friend!"..."Goodbye Friend!"
-const subscribeProjected = combined.subscribe(val => console.log('Values Using Projection:', val));
+/*
+  output:
+  ["Result (0): 0", "Result (1): 0"]
+  ["Result (0): 1", "Result (1): 0"]
+  ["Result (0): 1", "Result (1): 1"]
+  ["Result (0): 2", "Result (1): 1"]
+  ["Result (0): 2", "Result (1): 2"]
+  ["Result (0): 3", "Result (1): 2"]
+  ["Result (0): 3", "Result (1): 3"]
+  ["Result (0): 4", "Result (1): 3"]
+  ["Result (0): 4", "Result (1): 4"]
+*/
+const subscribe = combined.subscribe(val => console.log(val));
 ```
 
 ### How combineAll works...
