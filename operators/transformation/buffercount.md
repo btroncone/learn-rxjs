@@ -1,5 +1,5 @@
 # bufferCount
-####signature: `bufferCount<T>(bufferSize: number, startBufferEvery: number = null): Observable<T[]>`
+####signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 *The gist: Collect output values until specified number is fulfilled then hand them over. Repeat...*
 
 ( [jsBin](http://jsbin.com/xibixetiqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/28/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) )
@@ -37,7 +37,6 @@ const secondSubscribe = bufferEveryOne.subscribe(val => console.log('Start Buffe
 
 ### How bufferCount works...
 *Coming soon...*
-
 
 ### Additional Resources
 *Coming soon...*
