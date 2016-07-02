@@ -60,6 +60,7 @@ jump start your learning experience!
 #### Videos
 * [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) - Jafar Husain
 * [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
+* [Creating Observable from Scratch](https://egghead.io/lessons/rxjs-creating-observable-from-scratch) - Ben Lesh
 * [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming) :dollar: - André Staltz
 
 #### Exercises
