@@ -22,7 +22,10 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
 
 ### How take works...
-*Coming soon...*
+1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts#L60).
+2. For each value emitted from source an internal counter is incremented.
+    1. [If total number of values emitted from source is less than or equal to supplied value, deliver value to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts#L78-L79).
+    2. [If total number of values emitted from source is greater than supplied value, unsubscribe and complete](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts#L80-L83).
 
 
 ### Additional Resources

@@ -26,6 +26,5 @@ const secondSubscribe = bufferTimeTwo.subscribe(val => console.log('Start Buffer
 ### How bufferTime works...
 *Coming soon...*
 
-
 ### Additional Resources
 *Coming soon...*
