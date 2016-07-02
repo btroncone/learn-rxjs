@@ -19,8 +19,10 @@ const subscribe = myBufferedInterval.subscribe(val => console.log(' Buffered Val
 ```
 
 ### How buffer works...
-*Coming soon...*
-
+1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L55).
+2. An [inner subscriber is created](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L21) and [subscribed to the given inner observable](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L33), or closing notififier.
+3. Values emitted from source are [pushed to internal array](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L73).
+4. When the given [inner observable emits](https://github.com/ReactiveX/rxjs/blob/master/src/InnerSubscriber.ts#L17), the [buffer is cleared and passed to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L76-L82). Repeat...
 
 ### Additional Resources
 *Coming soon...*

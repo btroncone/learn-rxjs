@@ -37,9 +37,9 @@ const subscribeThree = exampleThree.subscribe(val => console.log(val));
 1. Operator subscribes to source observable. [source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts#L81-L84)
 2. Project function is invoked with received value. [source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts#L118)
 3. The result is passed to utility function, where different action is taken dependant on return type of project function. [source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts#L124-L129)
-  1. **If Observable** - The inner observable is subscribed to, with emitted values being passed to destination subscriber. [source](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L27-L35)
-  2. **If Array**  - The array is iterated over, with each value being passed to destination subscriber. [source](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L37-L43)
-  3. **If Promise** - `.then` is called on the promise, with the result being passed to destination subscriber. [source](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L44-L53)
+  1. **If Observable** - The inner observable is subscribed to, with emitted values passed to subscriber. [source](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L27-L35)
+  2. **If Array**  - The array is iterated over, with each value being passed to subscriber. [source](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L37-L43)
+  3. **If Promise** - `.then` is called on the promise, with the result being passed to subscriber. [source](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L44-L53)
 
 
 ### Additional Resources
