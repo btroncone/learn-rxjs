@@ -39,3 +39,10 @@ setTimeout(() => {
   subscribeTwo.unsubscribe();
 }, 10000);
 ```
+
+### How empty works...
+*Coming soon...*
+
+
+### Additional Resources
+* [Creation operators: Create()](https://egghead.io/lessons/rxjs-creation-operator-create?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
