@@ -17,4 +17,4 @@ const subscribe = source.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz

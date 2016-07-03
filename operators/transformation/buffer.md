@@ -25,4 +25,4 @@ const subscribe = myBufferedInterval.subscribe(val => console.log(' Buffered Val
 4. When the given [inner observable emits](https://github.com/ReactiveX/rxjs/blob/master/src/InnerSubscriber.ts#L17), the [buffer is cleared and passed to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L76-L82). Repeat...
 
 ### Additional Resources
-*Coming soon...*
+* [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

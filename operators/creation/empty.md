@@ -20,4 +20,4 @@ const subscribe = example.subscribe({
 
 
 ### Additional Resources
-*Coming soon...*
+* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz

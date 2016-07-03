@@ -31,4 +31,4 @@ const subscribeThree = mapSource.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz

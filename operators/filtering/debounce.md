@@ -35,4 +35,4 @@ const subscribeTwo = debouncedInterval.subscribe(val => console.log(`Example Two
 
 
 ### Additional Resources
-*Coming soon...*
+* [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

@@ -28,4 +28,4 @@ const subscribeThree = exampleThree.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

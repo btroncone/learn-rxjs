@@ -38,4 +38,4 @@ const subscribeNeverComplete = sourceOneNeverComplete.subscribe(val => console.l
 
 
 ### Additional Resources
-*Coming soon...*
+* [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

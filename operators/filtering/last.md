@@ -22,4 +22,4 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(`Last to pass test:
 
 
 ### Additional Resources
-*Coming soon...*
+* [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

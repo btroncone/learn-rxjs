@@ -33,3 +33,4 @@ testSubjectTwo.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30,
 
 ### Additional Resources
 * [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
+* [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

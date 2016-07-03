@@ -36,4 +36,4 @@ const subscribe = example
 
 
 ### Additional Resources
-*Coming soon...*
+* [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

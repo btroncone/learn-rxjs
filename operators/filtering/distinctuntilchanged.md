@@ -33,4 +33,4 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
 
 
 ### Additional Resources
-*Coming soon...*
+* [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
