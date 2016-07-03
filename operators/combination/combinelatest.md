@@ -57,4 +57,4 @@ const subscribe = combinedProject.subscribe(latestValuesProject => console.log(l
 
 
 ### Additional Resources
-*Coming soon...*
+* [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist

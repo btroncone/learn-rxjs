@@ -37,4 +37,4 @@ const subscribeThree = exampleThree.subscribe(val => console.log(`Number greater
 
 
 ### Additional Resources
-*Coming soon...*
+* [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist

@@ -31,6 +31,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ### How startWith works...
 *Coming soon...*
 
-
 ### Additional Resources
-*Coming soon...*
+* [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist

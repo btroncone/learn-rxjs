@@ -44,6 +44,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ### How takeUntil works...
 *Coming soon...*
 
-
 ### Additional Resources
-*Coming soon...*
+* [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist

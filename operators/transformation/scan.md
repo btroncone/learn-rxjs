@@ -31,6 +31,5 @@ testSubjectTwo.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30,
 ### How scan works...
 *Coming soon...*
 
-
 ### Additional Resources
-*Coming soon...*
+* [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
