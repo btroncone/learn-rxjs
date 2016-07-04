@@ -12,7 +12,7 @@ Order, time, and structure of emitted values is the primary variation among thes
 * [concatAll](concatall.md)
 * [forkJoin](forkjoin.md)
 * [merge](merge.md) :star:
-* [mergeAll](margeall.md)
+* [mergeAll](mergeall.md)
 * [race](race.md)
 * [startWith](startwith.md) :star:
 * [withLatestFrom](withlatestfrom.md) :star:

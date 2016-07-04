@@ -12,7 +12,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [concatAll](combination/concatall.md)
     * [forkJoin](combination/forkjoin.md)
     * [merge](combination/merge.md) :star:
-    * [mergeAll](combination/margeall.md)
+    * [mergeAll](combination/mergeall.md)
     * [race](combination/race.md)
     * [startWith](combination/startwith.md) :star:
     * [withLatestFrom](combination/withlatestfrom.md) :star:
