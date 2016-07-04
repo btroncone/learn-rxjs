@@ -8,7 +8,6 @@
     "-highlight",
     "copy-code-button",
     "edit-link",
-    "expandable-chapters",
     "github",
     "ga"
   ],
@@ -17,7 +16,6 @@
       "base": "https://github.com/btroncone/learn-rxjs/tree/master",
       "label": "Edit This Page"
     },
-    "expandable-chapters":{},
     "github": {
       "url": "https://github.com/btroncone/learn-rxjs/"
     },
