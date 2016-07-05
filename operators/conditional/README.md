@@ -1,7 +1,5 @@
 # Conditional Operators
 
-![conditional](http://imgur.com/kmYWe4b.png)
-
 For use-cases that depend on a specific condition to be met, these operators do the trick. 
 
 ## Contents
