@@ -2,7 +2,7 @@
 ####signature: `pluck(properties: ...args): Observable`
 *The gist: Pick out nested properties...*
 
-( [jsBin](http://jsbin.com/netulokasu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/40/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck) )
+( [jsBin](http://jsbin.com/netulokasu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/58v9xq0f/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck) )
 
 ```js
 const source = Rx.Observable.from([

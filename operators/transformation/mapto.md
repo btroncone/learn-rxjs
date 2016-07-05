@@ -2,7 +2,7 @@
 ####signature: `mapTo(value: any): Observable`
 *The gist: Map to a constant value every time...*
 
-( [jsBin](http://jsbin.com/yazusehahu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/37/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mapTo) )
+( [jsBin](http://jsbin.com/yazusehahu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mapTo) )
 
 ```js
 //emit value every two seconds

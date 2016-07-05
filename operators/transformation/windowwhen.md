@@ -2,7 +2,7 @@
 ####signature: `windowWhen(closingSelector: function(): Observable): Observable`
 *The gist: Close window at specified time frame emitting observable of collected values from source, repeat...*
 
-( [jsBin](http://jsbin.com/tuhaposemo/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/47/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowWhen) )
+( [jsBin](http://jsbin.com/tuhaposemo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/gnx9fb3h/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowWhen) )
 
 ```js
 //emit immediately then every 1s

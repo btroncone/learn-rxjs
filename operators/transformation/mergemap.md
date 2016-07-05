@@ -4,7 +4,7 @@
 
 *You could also: `map -> mergeAll`*
 
-( [jsBin](http://jsbin.com/haxobidino/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/38/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap) )
+( [jsBin](http://jsbin.com/haxobidino/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap) )
 
 ```js
 //emit 'Hello'

@@ -2,7 +2,7 @@
 ####signature: `scan(accumulator: function, seed: any): Observable`
 *The gist: Reduce over time...*
 
-( [jsBin](http://jsbin.com/jopikihuvu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/41/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan) )
+( [jsBin](http://jsbin.com/jopikihuvu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/d2g2a2c6/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan) )
 
 ```js
 const testSubject = new Rx.Subject();

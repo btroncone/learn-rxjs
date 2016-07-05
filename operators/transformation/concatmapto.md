@@ -2,7 +2,7 @@
 ####signature: `concatMapTo(observable: Observable, resultSelector: function): Observable`
 *The gist: When source emits, always subscribe to the same observable, merging together results when complete...*
 
-( [jsBin](http://jsbin.com/caqiruqula/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/33/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo) )
+( [jsBin](http://jsbin.com/caqiruqula/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/La0bam0u/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo) )
 
 ```js
 //emit value every 2 seconds

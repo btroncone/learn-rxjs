@@ -2,13 +2,13 @@
 ####signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 *The gist: Collect output values until specified number is fulfilled then hand them over. Repeat...*
 
-( [jsBin](http://jsbin.com/xibixetiqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/28/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) )
+( [jsBin](http://jsbin.com/hizuxiruqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) )
 
 ```js
 //Create an observable that emits a value every second
-const myInterval = Rx.Observable.interval(1000);
+const source = Rx.Observable.interval(1000);
 //After three values are emitted, pass on as an array of buffered values
-const bufferThree = myInterval.bufferCount(3);
+const bufferThree = source.bufferCount(3);
 //Print values to console
 //ex. output [0,1,2]...[3,4,5]
 const subscribe = bufferThree.subscribe(val => console.log('Buffered Values:', val));
@@ -30,7 +30,7 @@ buffer 2: [1,2,3] Buffer of 3, emit buffer
 buffer 3: [2, 3]
 buffer 4: [3]
 */
-const bufferEveryOne = myInterval.bufferCount(3,1);
+const bufferEveryOne = source.bufferCount(3,1);
 //Print values to console
 const secondSubscribe = bufferEveryOne.subscribe(val => console.log('Start Buffer Every 1:', val));
 ```

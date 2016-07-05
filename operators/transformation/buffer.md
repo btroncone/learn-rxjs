@@ -2,7 +2,7 @@
 ####signature: `buffer(closingNotifier: Observable): Observable`
 *The gist: Collect output values until something happens then hand them over. Repeat...*
 
-( [jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/27/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer) )
+( [jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer) )
 
 ```js
 //Create an observable that emits a value every second
