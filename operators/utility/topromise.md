@@ -3,7 +3,7 @@
 ####signature: `toPromise() : Promise`
 *The gist: Convert observable to promise...*
 
-( [jsBin](http://jsbin.com/favoqecixi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/25/) | [official docs](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md) )
+( [jsBin](http://jsbin.com/favoqecixi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/thykc9up/) | [official docs](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md) )
 
 ```js
 //return basic observable

@@ -2,7 +2,7 @@
 ####signature: `do(nextOrObserver: function, error: function, complete: function): Observable`
 *The gist: Transparently perform actions, such as logging...*
 
-( [jsBin](http://jsbin.com/jimazuriva/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/51/) | [official docs](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts) )
+( [jsBin](http://jsbin.com/jimazuriva/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qtyakorq/) | [official docs](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts) )
 
 ```js
 const source = Rx.Observable.of(1,2,3,4,5);
