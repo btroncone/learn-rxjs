@@ -3,7 +3,7 @@
 ####signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
 *The gist: Emit value only when specified duration, returned from provided function, has passed...*
 
-( [jsBin](http://jsbin.com/tajayovide/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/13/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttle) )
+( [jsBin](http://jsbin.com/tajayovide/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/h8na4m0p/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttle) )
 
 ```js
 //emit value every 1 second

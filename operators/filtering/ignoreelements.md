@@ -2,7 +2,7 @@
 ####signature: `ignoreElements(): Observable`
 *The gist: Ignore everything but complete and error...*
 
-( [jsBin](http://jsbin.com/luyufeviqu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/18/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements) )
+( [jsBin](http://jsbin.com/luyufeviqu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/59scjqss/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements) )
 
 ```js
 //emit value every 100ms

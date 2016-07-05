@@ -3,7 +3,7 @@
 ####signature: `takeWhile(predicate: function(value, index): boolean): Observable`
 *The gist: Emit values until one fails test...*
 
-( [jsBin](http://jsbin.com/zanefaqexu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/11/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeWhile) )
+( [jsBin](http://jsbin.com/zanefaqexu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/yakd4jgc/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeWhile) )
 
 ```js
 //emit 1,2,3,4,5

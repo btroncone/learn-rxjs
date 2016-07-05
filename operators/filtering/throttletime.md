@@ -3,7 +3,7 @@
 ####signature: `throttleTime(duration: number, scheduler: Scheduler): Observable`
 *The gist: Emit latest value when specified duration has passed...*
 
-( [jsBin](http://jsbin.com/wudukimivi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/22/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime) )
+( [jsBin](http://jsbin.com/wudukimivi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/4zysLc3y/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime) )
 
 ```js
 //emit value every 1 second

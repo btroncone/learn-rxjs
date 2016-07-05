@@ -2,7 +2,7 @@
 ####signature: `filter(select: Function, thisArg: any): Observable`
 *The gist: Only return values that pass the provided condition...*
 
-( [jsBin](http://jsbin.com/gaqojobove/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/16/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter) )
+( [jsBin](http://jsbin.com/gaqojobove/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/tkz0fuy2/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter) )
 
 ```js
 //emit (1,2,3,4,5)

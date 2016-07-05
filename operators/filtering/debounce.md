@@ -2,7 +2,7 @@
 ####signature: `debounce(durationSelector: function): Observable`
 *The gist: Throw away all emitted values that take less then the specified time (based on selector function) between output...*
 
-( [jsBin](http://jsbin.com/cofofizopo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/13/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce) )
+( [jsBin](http://jsbin.com/cofofizopo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e5698yow/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce) )
 
 ```js
 //emit four strings

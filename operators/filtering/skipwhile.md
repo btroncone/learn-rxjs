@@ -2,7 +2,7 @@
 ####signature: `skipWhile(predicate: Function): Observable`
 *The gist: Skip emitted items from source until provided expression is false...*
 
-( [jsBin](http://jsbin.com/bemikuleya/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/24/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipWhile) )
+( [jsBin](http://jsbin.com/bemikuleya/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3ymfxb09/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipWhile) )
 
 ```js
 //emit every 1s
