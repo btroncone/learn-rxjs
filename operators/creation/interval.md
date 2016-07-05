@@ -3,7 +3,7 @@
 ####signature: `interval(period: number, scheduler: Scheduler): Observable`
 *The gist: Create an observable that emits numbers in sequence every supplied timeframe...*
 
-( [jsBin](http://jsbin.com/vigohomabo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ukec2y4p/7/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent) )
+( [jsBin](http://jsbin.com/vigohomabo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/x3mrwzr0/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent) )
 
 ```js
 //emit value in sequence every 1 second

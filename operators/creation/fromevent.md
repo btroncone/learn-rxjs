@@ -3,7 +3,7 @@
 ####signature: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
 *The gist: Emit events from observable...*
 
-( [jsBin](http://jsbin.com/xikapewoqa/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/ukec2y4p/4/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle) )
+( [jsBin](http://jsbin.com/xikapewoqa/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/vbLz1pdx/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle) )
 
 ```js
 //create observable that emits click events

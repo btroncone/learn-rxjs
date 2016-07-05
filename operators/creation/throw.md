@@ -3,7 +3,7 @@
 ####signature: `throw(error: any, scheduler: Scheduler): Observable`
 *The gist: Emits error...*
 
-( [jsBin](http://jsbin.com/punubequju/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ukec2y4p/2/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-throw) )
+( [jsBin](http://jsbin.com/punubequju/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/mks82xqz/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-throw) )
 
 ```js
 //emits an error with specified value on subscription

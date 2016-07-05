@@ -3,7 +3,7 @@
 ####signature: ` of(...values, scheduler: Scheduler): Observable`
 *The gist: Emits provided values...*
 
-( [jsBin](http://jsbin.com/tawezibeyu/1/edit?js,console) | [jsFiddle]() | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of) )
+( [jsBin](http://jsbin.com/tawezibeyu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/f7b35ayz/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of) )
 
 ```js
 //emits any number of provided values in sequence

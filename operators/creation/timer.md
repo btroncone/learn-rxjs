@@ -3,7 +3,7 @@
 ####signature: `timer(initialDelay: number | Date, period: number, scheduler: Scheduler): Observable`
 *The gist: After given duration, emit numbers in sequence every specified duration...*
 
-( [jsBin](http://jsbin.com/posozozuyi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ukec2y4p/1/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer) )
+( [jsBin](http://jsbin.com/posozozuyi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/vpx0y8fu/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer) )
 
 ```js
 //emit 0 after 1 second then complete, since no second argument is supplied

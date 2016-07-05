@@ -3,7 +3,7 @@
 ####signature: `fromPromise(promise: Promise, scheduler: Scheduler): Observable`
 *The gist: Create an observable from a promise, emitting the result...*
 
-( [jsBin](http://jsbin.com/cokivecima/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/8/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromPromise) )
+( [jsBin](http://jsbin.com/cokivecima/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/upy6nr6n/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromPromise) )
 
 ```js
 //example promise that will resolve or reject based on input
