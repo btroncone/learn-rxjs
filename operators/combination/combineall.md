@@ -2,7 +2,7 @@
 ####signature: `combineAll(project: function): Observable`
 *The gist: Output latest values from inner observables when outer observable completes...*
 
-( [jsBin](http://jsbin.com/kovofevimo/edit?js,console) | [jsFiddle](https://jsfiddle.net/d3pn27dv/26/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll) )
+( [jsBin](http://jsbin.com/kovofevimo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll) )
 
 ```js
 //emit every 1s, take 2

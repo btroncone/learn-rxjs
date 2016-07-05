@@ -2,12 +2,12 @@
 ####signature: `concatAll(): Observable`
 *The gist: Concat for nested observables (observable of observables), subscribe to each when previous completes and merge emitted values...*
 
-( [jsBin](http://jsbin.com/hayasoxoci/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/3/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll) )
+( [jsBin](http://jsbin.com/bogofazero/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8dfuf2y6/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll) )
 
 ```js
 //emit a value every 2 seconds
-const sourceOne = Rx.Observable.interval(2000);
-const example = sourceOne
+const source = Rx.Observable.interval(2000);
+const example = source
   //for demonstration, add 10 to and return as observable
   .map(val => Rx.Observable.of(val + 10))
   //merge values from inner observable
@@ -17,7 +17,7 @@ const subscribe = example.subscribe(val => console.log('Example with Basic Obser
 
 //create and resolve basic promise
 const samplePromise = val => new Promise(resolve => resolve(val));
-const exampleTwo = sourceOne
+const exampleTwo = source
   .map(val => samplePromise(val))
   //merge values from resolved promise
   .concatAll();

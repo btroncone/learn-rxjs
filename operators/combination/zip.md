@@ -2,7 +2,7 @@
 ####signature: `zip(observables: *): Observable`
 *The gist: After all observables emit, emit values as an array...*
 
-( [jsBin](http://jsbin.com/torusemimi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/qg6qfqLz/8/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip) )
+( [jsBin](http://jsbin.com/torusemimi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/htdb9t1p/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip) )
 
 ```js
 const sourceOne = Rx.Observable.of('Hello');
