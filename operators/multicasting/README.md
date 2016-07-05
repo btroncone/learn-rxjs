@@ -1,7 +1,5 @@
 # Multicasting Operators
 
-![multicasting](http://imgur.com/lCoW13G.png)
-
 In RxJS observables are cold, or unicast by default. These operators can make an observable hot, or multicast, allowing
 side-effects to be share among multiple subscribers.
 
