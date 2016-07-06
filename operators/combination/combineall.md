@@ -2,7 +2,11 @@
 ####signature: `combineAll(project: function): Observable`
 *The gist: Output latest values from inner observables when outer observable completes...*
 
-( [jsBin](http://jsbin.com/kovofevimo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll) )
+### Examples
+
+##### Example 1: Mapping to inner interval observable
+
+( [jsBin](http://jsbin.com/kovofevimo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
 
 ```js
 //emit every 1s, take 2
@@ -33,6 +37,5 @@ const subscribe = combined.subscribe(val => console.log(val));
 ### How combineAll works...
 *Coming soon...*
 
-
 ### Additional Resources
-*Coming soon...*
+* [combineAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll) :newspaper: - Official docs

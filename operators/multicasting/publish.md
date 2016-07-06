@@ -2,7 +2,7 @@
 ####signature: `publish() : ConnectableObservable`
 *The gist: Do nothing until connect is called, share source...*
 
-( [jsBin](http://jsbin.com/laguvecixi/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/fpe6csaz/) | [official docs](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-publish) )
+( [jsBin](http://jsbin.com/laguvecixi/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/fpe6csaz/) )
 
 ```js
 //emit value every 1 second
@@ -37,4 +37,4 @@ setTimeout(() => {
 
 
 ### Additional Resources
-*Coming soon...*
+* [publish](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-publish) :newspaper: - Official docs

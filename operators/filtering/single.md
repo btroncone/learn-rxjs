@@ -2,7 +2,7 @@
 ####signature: `single(a: Function): Observable`
 *The gist: Emit single item that matches condition...*
 
-( [jsBin](http://jsbin.com/solecibuza/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/26r5y90s/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-single) )
+( [jsBin](http://jsbin.com/solecibuza/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/26r5y90s/) )
 
 ```js
 //emit (1,2,3,4,5)
@@ -18,4 +18,4 @@ const subscribe = example.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [single](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-single) :newspaper: - Official docs

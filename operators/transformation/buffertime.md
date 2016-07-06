@@ -2,7 +2,7 @@
 ####signature: `bufferTime(bufferTimeSpan: number, bufferCreationInterval: number, scheduler: Scheduler): Observable<T[]>`
 *The gist: Collect output values until specified time has passed then hand them over. Repeat...*
 
-( [jsBin](http://jsbin.com/hizuxiruqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/vx7vwg01/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferTime) )
+( [jsBin](http://jsbin.com/hizuxiruqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/vx7vwg01/) )
 
 ```js
 //Create an observable that emits a value every 500ms
@@ -27,4 +27,4 @@ const secondSubscribe = bufferTimeTwo.subscribe(val => console.log('Start Buffer
 *Coming soon...*
 
 ### Additional Resources
-*Coming soon...*
+* [bufferTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferTime) :newspaper: - Official docs

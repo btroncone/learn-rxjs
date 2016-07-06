@@ -2,7 +2,7 @@
 ####signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 *The gist: Collect output values until specified number is fulfilled then hand them over. Repeat...*
 
-( [jsBin](http://jsbin.com/hizuxiruqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) )
+( [jsBin](http://jsbin.com/hizuxiruqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
 
 ```js
 //Create an observable that emits a value every second
@@ -42,4 +42,4 @@ const secondSubscribe = bufferEveryOne.subscribe(val => console.log('Start Buffe
 3. When buffer size meets supplied value, [buffer is delivered to subscriber and removed](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L92-L100). Repeat...
 
 ### Additional Resources
-*Coming soon...*
+* [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) :newspaper: - Official docs

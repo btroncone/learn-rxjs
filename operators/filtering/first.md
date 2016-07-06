@@ -2,7 +2,7 @@
 ####signature: `first(predicate: function, select: function)`
 *The gist: Emit the first value, or the first to pass condition...*
 
-( [jsBin](http://jsbin.com/poloquxuja/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/uncey4v9/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-first) )
+( [jsBin](http://jsbin.com/poloquxuja/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/uncey4v9/) )
 
 ```js
 const source = Rx.Observable.from([1,2,3,4,5]);
@@ -28,4 +28,5 @@ const subscribeThree = exampleThree.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [first](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-first) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

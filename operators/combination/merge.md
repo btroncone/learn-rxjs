@@ -1,8 +1,8 @@
 # merge
 ####signature: `merge(input: Observable): Observable`
-*The gist: Squish outputs from multiple observables into a single source...*
+*The gist: Merge outputs from multiple observables into a single source...*
 
-( [jsBin](http://jsbin.com/wicubemece/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge) )
+( [jsBin](http://jsbin.com/wicubemece/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
 
 ```js
 //emit every 2.5 seconds
@@ -35,6 +35,7 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [merge](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge) :newspaper: - Official docs
 * [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming) :video_camera: :dollar: - André Staltz
 * [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

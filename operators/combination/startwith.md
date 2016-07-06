@@ -2,7 +2,7 @@
 ####signature: `startWith(an: Values): Observable`
 *The gist: Emit specified item first...*
 
-( [jsBin](http://jsbin.com/jeyakemume/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e8dn3ggp/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith) )
+( [jsBin](http://jsbin.com/jeyakemume/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e8dn3ggp/) )
 
 ```js
 //emit (1,2,3)
@@ -32,6 +32,7 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 *Coming soon...*
 
 ### Additional Resources
+* [startWith](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith) :newspaper: - Official docs
 * [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Clear data while loading with startWith](https://egghead.io/lessons/rxjs-reactive-programming-clear-data-while-loading-with-rxjs-startwith?course=introduction-to-reactive-programming) :video_camera: :dollar: - André Staltz
 * [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

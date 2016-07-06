@@ -2,7 +2,7 @@
 ####signature: `multicast(selector: Function): Observable`
 *The gist: Share subscription to source given particular Subject...*
 
-( [jsBin](http://jsbin.com/kisinazaga/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/x2z7p1gm/) | [official docs](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-publish) )
+( [jsBin](http://jsbin.com/kisinazaga/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/x2z7p1gm/) )
 
 ```js
 const source = Rx.Observable.interval(2000).take(5);
@@ -52,4 +52,4 @@ setTimeout(() => {
 
 
 ### Additional Resources
-*Coming soon...*
+* [multicast](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-multicast) :newspaper: - Official docs

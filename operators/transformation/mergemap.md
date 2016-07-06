@@ -4,7 +4,7 @@
 
 *You could also: `map -> mergeAll`*
 
-( [jsBin](http://jsbin.com/haxobidino/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap) )
+( [jsBin](http://jsbin.com/haxobidino/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) )
 
 ```js
 //emit 'Hello'
@@ -43,5 +43,6 @@ const subscribeThree = exampleThree.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [mergeMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap) :newspaper: - Official docs
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh
 * [Async requests and responses in RxJS](https://egghead.io/lessons/rxjs-04-reactive-programming-async-requests-and-responses-in-rxjs) :video_camera: :dollar: - André Staltz

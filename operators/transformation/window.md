@@ -2,7 +2,11 @@
 ####signature: `window(windowBoundaries: Observable): Observable`
 *The gist: Observable of values for window of time*
 
-( [jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/rmgghg6d/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window) )
+### Examples
+
+##### Example 1: Open window specified by inner observable
+
+( [jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/rmgghg6d/) )
 
 ```js
 //emit immediately then every 1s
@@ -30,4 +34,4 @@ const subscribeTwo = example.mergeAll().subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [window](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window) :newspaper: - Official docs

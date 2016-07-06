@@ -2,7 +2,7 @@
 ####signature: `withLatestFrom(other: Observable, project: Function): Observable`
 *The gist: When source emits, also give last value emitted from another observable...*
 
-( [jsBin](http://jsbin.com/xehucaketu/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-withLatestFrom) )
+( [jsBin](http://jsbin.com/xehucaketu/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) )
 
 ```js
 //emit every 5s
@@ -42,4 +42,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [withLatestFrom](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-withLatestFrom) :newspaper: - Official docs
 * [Combination operator: withLatestFrom](https://egghead.io/lessons/rxjs-combination-operator-withlatestfrom?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

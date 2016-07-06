@@ -2,7 +2,7 @@
 ####signature: `sample(sampler: Observable): Observable`
 *The gist: Sample from source when supplied observable emits...*
 
-( [jsBin](http://jsbin.com/wifaqipuse/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8wsbuvjb/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-sample) )
+( [jsBin](http://jsbin.com/wifaqipuse/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8wsbuvjb/) )
 
 ```js
 //emit value every 1s
@@ -29,4 +29,4 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [sample](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-sample) :newspaper: - Official docs

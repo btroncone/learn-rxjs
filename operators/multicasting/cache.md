@@ -3,7 +3,7 @@
 ####signature: `cache(bufferSize: number, windowTime: number, scheduler : Scheduler): Observable`
 *The gist: Share source and deliver specified number of latest emitted values upon subscription...*
 
-( [jsBin](http://jsbin.com/laxumuzuge/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/cb0dcnnx/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-cache) )
+( [jsBin](http://jsbin.com/laxumuzuge/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/cb0dcnnx/) )
 
 ```js
 //basic promise, resolve after 2 seconds
@@ -43,4 +43,4 @@ setTimeout(() => {
 
 
 ### Additional Resources
-*Coming soon...*
+* [cache](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-cache) :newspaper: - Official docs

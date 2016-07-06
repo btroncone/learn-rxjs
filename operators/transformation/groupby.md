@@ -2,7 +2,7 @@
 ####signature: `groupBy(keySelector: Function, elementSelector: Function): Observable`
 *The gist: Group into observables by given value...*
 
-( [jsBin](http://jsbin.com/zibomoluru/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-groupBy) )
+( [jsBin](http://jsbin.com/zibomoluru/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
 
 ```js
 const people = [{name: 'Sue', age:25},{name: 'Joe', age: 30},{name: 'Frank', age: 25}, {name: 'Sarah', age: 35}];
@@ -27,4 +27,4 @@ const subscribe = example.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [groupBy](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-groupBy) :newspaper: - Official docs

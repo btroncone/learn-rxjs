@@ -2,7 +2,7 @@
 ####signature: `mapTo(value: any): Observable`
 *The gist: Map to a constant value every time...*
 
-( [jsBin](http://jsbin.com/yazusehahu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mapTo) )
+( [jsBin](http://jsbin.com/yazusehahu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) )
 
 ```js
 //emit value every two seconds
@@ -25,5 +25,6 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [mapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mapTo) :newspaper: - Official docs
 * [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

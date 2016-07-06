@@ -2,7 +2,7 @@
 ####signature: `buffer(closingNotifier: Observable): Observable`
 *The gist: Collect output values until something happens then hand them over. Repeat...*
 
-( [jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer) )
+( [jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) )
 
 ```js
 //Create an observable that emits a value every second
@@ -25,4 +25,5 @@ const subscribe = myBufferedInterval.subscribe(val => console.log(' Buffered Val
 4. When the given [inner observable emits](https://github.com/ReactiveX/rxjs/blob/master/src/InnerSubscriber.ts#L17), the [buffer is cleared and passed to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L76-L82). Repeat...
 
 ### Additional Resources
+* [buffer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer) :newspaper: - Official docs
 * [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

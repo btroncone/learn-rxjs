@@ -2,7 +2,7 @@
 ####signature: `skip(the: Number): Observable`
 *The gist: Skip a specified number of emitted items...*
 
-( [jsBin](http://jsbin.com/hacepudabi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ar1eqbya/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skip) )
+( [jsBin](http://jsbin.com/hacepudabi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ar1eqbya/) )
 
 ```js
 //emit every 1s
@@ -18,4 +18,5 @@ const subscribe = example.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [skip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skip) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

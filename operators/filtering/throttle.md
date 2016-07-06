@@ -3,7 +3,7 @@
 ####signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
 *The gist: Emit value only when specified duration, returned from provided function, has passed...*
 
-( [jsBin](http://jsbin.com/tajayovide/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/h8na4m0p/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttle) )
+( [jsBin](http://jsbin.com/tajayovide/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/h8na4m0p/) )
 
 ```js
 //emit value every 1 second
@@ -27,4 +27,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [throttle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttle) :newspaper: - Official docs
 * [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

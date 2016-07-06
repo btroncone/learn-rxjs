@@ -2,7 +2,11 @@
 ####signature: `windowCount(windowSize: number, startWindowEvery: number): Observable`
 *The gist: Observable of values from source, emitted each time count is fulfilled*
 
-( [jsBin](http://jsbin.com/nezuvacexe/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xjgbnqp5/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowCount) )
+### Examples
+
+##### Example 1: Start new window every x items emitted
+
+( [jsBin](http://jsbin.com/nezuvacexe/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xjgbnqp5/) )
 
 ```js
 //emit every 1s
@@ -36,4 +40,4 @@ const subscribeTwo = example
 
 
 ### Additional Resources
-*Coming soon...*
+* [windowCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowCount) :newspaper: - Official docs

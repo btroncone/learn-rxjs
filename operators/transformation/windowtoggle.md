@@ -2,7 +2,11 @@
 ####signature: `windowToggle(openings: Observable, closingSelector: function(value): Observable): Observable`
 *The gist: Collect and emit observable of values from source between opening and closing emission*
 
-( [jsBin](http://jsbin.com/xasofupuka/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3xmmuzy4/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle) )
+### Examples
+
+##### Example 1: Toggle window at increasing interval
+
+( [jsBin](http://jsbin.com/xasofupuka/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3xmmuzy4/) )
 
 ```js
 //emit immediately then every 1s
@@ -40,4 +44,4 @@ const subscribeTwo = example
 
 
 ### Additional Resources
-*Coming soon...*
+* [windowToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle) :newspaper: - Official docs

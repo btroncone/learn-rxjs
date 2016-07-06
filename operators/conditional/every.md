@@ -2,7 +2,7 @@
 ####signature: `every(predicate: function, thisArg: any): Observable`
 *The gist: Does every emitted item pass a condition?...*
 
-( [jsBin](http://jsbin.com/mafacebuwu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/1b46tsm7/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-every) )
+( [jsBin](http://jsbin.com/mafacebuwu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/1b46tsm7/) )
 
 ```js
 //emit 5 values
@@ -26,4 +26,4 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [every](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-every) :newspaper: - Official docs

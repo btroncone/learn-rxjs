@@ -2,7 +2,7 @@
 ####signature: `race(): Observable`
 *The gist: Take the first observable to emit...*
 
-( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) )
+( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 
 ```js
 //take the first observable to emit
@@ -25,4 +25,4 @@ const subscribe = example.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) :newspaper: - Official docs

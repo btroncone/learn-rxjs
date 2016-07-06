@@ -4,7 +4,7 @@
 
 *You could also: `map -> concatAll`*
 
-( [jsBin](http://jsbin.com/dekadarube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/y3yx666r/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap) )
+( [jsBin](http://jsbin.com/dekadarube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/y3yx666r/) )
 
 ```js
 //emit 'Hello' and 'Goodbye'
@@ -39,4 +39,4 @@ const subscribeThree = exampleWithSelector
 
 
 ### Additional Resources
-*Coming soon...*
+* [concatMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap) :newspaper: - Official docs

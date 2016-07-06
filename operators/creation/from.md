@@ -3,7 +3,7 @@
 ####signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
 *The gist: Turn an array, promise, or iterable into an observable...*
 
-( [jsBin](http://jsbin.com/yunebajugi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/o7kb5e6j/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from) )
+( [jsBin](http://jsbin.com/yunebajugi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/o7kb5e6j/) )
 
 ```js
 //emit array as a sequence of values
@@ -31,4 +31,5 @@ const subscribeThree = mapSource.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from) :newspaper: - Official docs
 * [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz

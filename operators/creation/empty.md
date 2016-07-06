@@ -3,7 +3,11 @@
 ####signature: `empty(scheduler: Scheduler): Observable`
 *The gist: Emit observable that completes...*
 
-( [jsBin](http://jsbin.com/rodubucaqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/bz71mzuy/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-empty) )
+### Examples
+
+##### Example 1: empty immediately completes
+
+( [jsBin](http://jsbin.com/rodubucaqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/bz71mzuy/) )
 
 ```js
 //Create observable that immediately completes
@@ -20,4 +24,5 @@ const subscribe = example.subscribe({
 
 
 ### Additional Resources
+* [empty](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-empty) :newspaper: - Official docs
 * [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz

@@ -2,7 +2,7 @@
 ####signature: `share(): Observable`
 *The gist: Share observable among multiple subscribers...*
 
-( [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lmesxxaq/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share) )
+( [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lmesxxaq/) )
 
 ```js
 //emit value in 1s
@@ -40,4 +40,5 @@ const subscribeFour = sharedExample.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [share](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share) :newspaper: - Official docs
 * [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist

@@ -2,7 +2,11 @@
 ####signature: `windowTime(windowTimeSpan: number, windowCreationInterval: number, scheduler: Scheduler): Observable`
 *The gist: Emit an observable of values collected from source every specified time span*
 
-( [jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/g04b3qeb/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime) )
+### Examples
+
+##### Example 1: Open new window every specified duration
+
+( [jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/g04b3qeb/) )
 
 ```js
 //emit immediately then every 1s
@@ -34,4 +38,4 @@ const subscribeTwo = example
 
 
 ### Additional Resources
-*Coming soon...*
+* [windowTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime) :newspaper: - Official docs

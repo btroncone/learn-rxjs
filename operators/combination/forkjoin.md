@@ -3,7 +3,7 @@
 ####signature: `forkJoin(...args, selector : function): Observable`
 *The gist: Get the last emitted item from each observable on completion...*
 
-( [jsBin](http://jsbin.com/taziyomusa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/5fj77920/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin) )
+( [jsBin](http://jsbin.com/taziyomusa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/5fj77920/) )
 
 ```js
 const myPromise = val => new Promise(resolve => setTimeout(() => resolve(`Promise Resolved: ${val}`), 5000))
@@ -50,4 +50,4 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [forkJoin](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin) :newspaper: - Official docs

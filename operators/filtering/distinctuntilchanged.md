@@ -2,7 +2,7 @@
 #### signature: ` distinctUntilChanged(compare: function): Observable`
 *The gist: Only emit when the next value is different then the last...*
 
-( [jsBin](http://jsbin.com/wuhumodoha/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xc2vzct7/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged) )
+( [jsBin](http://jsbin.com/wuhumodoha/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xc2vzct7/) )
 
 ```js
 //only output distinct values, based on the last emitted value
@@ -33,4 +33,5 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
 
 
 ### Additional Resources
+* [distinctUntilChanged](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged) :newspaper: - Official docs
 * [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

@@ -2,7 +2,7 @@
 ####signature: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
 *The gist: Split one observable into two based on predicate...*
 
-( [jsBin](http://jsbin.com/fuqojubaqu/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-partition) )
+( [jsBin](http://jsbin.com/fuqojubaqu/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) )
 
 ```js
 const source = Rx.Observable.from([1,2,3,4,5,6]);
@@ -52,4 +52,4 @@ const subscribeTwo = Rx.Observable.merge(
 
 
 ### Additional Resources
-*Coming soon...*
+* [partition](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-partition) :newspaper: - Official docs

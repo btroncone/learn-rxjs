@@ -2,7 +2,7 @@
 ####signature: `filter(select: Function, thisArg: any): Observable`
 *The gist: Only return values that pass the provided condition...*
 
-( [jsBin](http://jsbin.com/gaqojobove/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/tkz0fuy2/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter) )
+( [jsBin](http://jsbin.com/gaqojobove/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/tkz0fuy2/) )
 
 ```js
 //emit (1,2,3,4,5)
@@ -37,5 +37,6 @@ const subscribeThree = exampleThree.subscribe(val => console.log(`Number greater
 
 
 ### Additional Resources
+* [filter](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter) :newspaper: - Official docs
 * [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

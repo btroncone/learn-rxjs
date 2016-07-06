@@ -2,7 +2,7 @@
 ####signature: `switchMap(a: Observable): Observable`
 *The gist: When source emits, switch to and emit values emitted from latest inner observable*
 
-( [jsBin](http://jsbin.com/decinatisu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/6pz981gd/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap) )
+( [jsBin](http://jsbin.com/decinatisu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/6pz981gd/) )
 
 ```js
 //emit immediately, then every 5s
@@ -25,4 +25,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [switchMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap) :newspaper: - Official docs
 * [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist

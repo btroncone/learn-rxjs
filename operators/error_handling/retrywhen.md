@@ -2,7 +2,7 @@
 ####signature: `retryWhen(receives: notificationHandler, the: scheduler): Observable`
 *The gist: Retry with additional logic...*
 
-( [jsBin](http://jsbin.com/miduqexalo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/49mkhsyr/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retryWhen) )
+( [jsBin](http://jsbin.com/miduqexalo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/49mkhsyr/) )
 
 ```js
 //emit value every 1s
@@ -40,4 +40,5 @@ const subscribe = example.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [retryWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retryWhen) :newspaper: - Official docs
 * [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

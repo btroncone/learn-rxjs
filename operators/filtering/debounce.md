@@ -2,7 +2,7 @@
 ####signature: `debounce(durationSelector: function): Observable`
 *The gist: Throw away all emitted values that take less then the specified time (based on selector function) between output...*
 
-( [jsBin](http://jsbin.com/cofofizopo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e5698yow/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce) )
+( [jsBin](http://jsbin.com/cofofizopo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e5698yow/) )
 
 ```js
 //emit four strings
@@ -35,4 +35,5 @@ const subscribeTwo = debouncedInterval.subscribe(val => console.log(`Example Two
 
 
 ### Additional Resources
+* [debounce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce) :newspaper: - Official docs
 * [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

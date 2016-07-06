@@ -3,7 +3,7 @@
 ####signature: ` take(count: number): Observable`
 *The gist: Emit only specified number of values...*
 
-( [jsBin](http://jsbin.com/zeputevule/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/f9bz0tr3/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take) )
+( [jsBin](http://jsbin.com/zeputevule/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/f9bz0tr3/) )
 
 ```js
 //emit 1,2,3,4,5
@@ -29,4 +29,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [take](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

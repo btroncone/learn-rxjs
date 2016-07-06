@@ -2,7 +2,7 @@
 ####signature: `last(predicate: function): Observable`
 *The gist: Emit last item or last to pass test...*
 
-( [jsBin](http://jsbin.com/xidufijuku/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/b05r434a/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-last) )
+( [jsBin](http://jsbin.com/xidufijuku/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/b05r434a/) )
 
 ```js
 const source = Rx.Observable.from([1,2,3,4,5]);
@@ -22,4 +22,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(`Last to pass test:
 
 
 ### Additional Resources
+* [last](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-last) :newspaper: - Official docs
 * [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

@@ -2,7 +2,7 @@
 ####signature: `delayWhen(selector: Function, sequence: Observable): Observable`
 *The gist: Delay output by specified time, determined by provided function...*
 
-( [jsBin](http://jsbin.com/topohekuje/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delayWhen) )
+( [jsBin](http://jsbin.com/topohekuje/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) )
 
 ```js
 //emit value every second
@@ -21,4 +21,5 @@ const subscribe = delayWhenExample.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [delayWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delayWhen) :newspaper: - Official docs
 * [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

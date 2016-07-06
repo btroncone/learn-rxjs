@@ -2,7 +2,7 @@
 ####signature: `map(project: Function, thisArg: any): Observable`
 *The gist: Apply projection to each element...*
 
-( [jsBin](http://jsbin.com/vegagizedo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/yd38awLa/) | [official docs](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-map) )
+( [jsBin](http://jsbin.com/vegagizedo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/yd38awLa/) )
 
 ```js
 //emit (1,2,3,4,5)
@@ -25,5 +25,6 @@ const subscribe = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [map](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-map) :newspaper: - Official docs
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

@@ -3,7 +3,7 @@
 ####signature: `mergeAll(concurrent: number): Observable`
 *The gist: Emit values from any observable or promise emitted from source...*
 
-( [jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeAll) )
+( [jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) )
 
 ```js
 const myPromise = val => new Promise(resolve => setTimeout(() => resolve(`Result: ${val}`), 2000))
@@ -31,4 +31,4 @@ const subscribe = example.subscribe(val => console.log(val));
 
 
 ### Additional Resources
-*Coming soon...*
+* [mergeAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeAll) :newspaper: - Official docs

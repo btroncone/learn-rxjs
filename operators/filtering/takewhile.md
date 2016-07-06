@@ -3,7 +3,7 @@
 ####signature: `takeWhile(predicate: function(value, index): boolean): Observable`
 *The gist: Emit values until one fails test...*
 
-( [jsBin](http://jsbin.com/zanefaqexu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/yakd4jgc/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeWhile) )
+( [jsBin](http://jsbin.com/zanefaqexu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/yakd4jgc/) )
 
 ```js
 //emit 1,2,3,4,5
@@ -19,4 +19,5 @@ const subscribe = example.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [takeWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeWhile) :newspaper: - Official docs
 * [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist

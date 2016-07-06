@@ -2,7 +2,7 @@
 ####signature: `retry(number: number): Observable`
 *The gist: Retry specified number of times on error...*
 
-( [jsBin](http://jsbin.com/yovacuxuqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hg7z16bo/) | [ official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retry) )
+( [jsBin](http://jsbin.com/yovacuxuqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hg7z16bo/) )
 
 ```js
 //emit value every 1s
@@ -36,4 +36,5 @@ const subscribe = example
 
 
 ### Additional Resources
+* [retry](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retry) :newspaper: - Official docs
 * [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

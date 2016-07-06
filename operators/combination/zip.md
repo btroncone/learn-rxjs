@@ -2,7 +2,7 @@
 ####signature: `zip(observables: *): Observable`
 *The gist: After all observables emit, emit values as an array...*
 
-( [jsBin](http://jsbin.com/torusemimi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/htdb9t1p/) | [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip) )
+( [jsBin](http://jsbin.com/torusemimi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/htdb9t1p/) )
 
 ```js
 const sourceOne = Rx.Observable.of('Hello');
@@ -37,4 +37,5 @@ const subscribe = exampleTwo.subscribe(val => console.log(val));
 
 
 ### Additional Resources
+* [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip) :newspaper: - Official docs
 * [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
