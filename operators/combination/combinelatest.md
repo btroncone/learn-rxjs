@@ -1,7 +1,6 @@
 # combineLatest
 ####signature: `combineLatest(observables: ...Observable, project: function): Observable`
 *The gist: An observable that will combine a group of observables and emit the lastest values from all whenever one emits.*  
-*( [official docs](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest) )*
 
 ###Examples
 
@@ -85,5 +84,6 @@ const subscribe = combinedProject.subscribe(latestValuesProject => console.log(l
 
 
 ### Additional Resources
+* [combineLatest: Official Documentation](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest)
 * [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
