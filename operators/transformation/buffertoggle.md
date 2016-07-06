@@ -1,5 +1,5 @@
 # bufferToggle
-####signature: `bufferToggle(openings: Observable<O>, closingSelector: Function): Observable<T[]>`
+####signature: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
 *The gist: Toggle buffer on to catch emitted values from source, toggle buffer off to emit buffered values...*
 
 ( [jsBin](http://jsbin.com/relavezugo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/6ad3w3wf/) )

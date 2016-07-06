@@ -1,5 +1,5 @@
 # bufferWhen
-####signature: `bufferWhen(closingSelector: function): Observable<T[]>`
+####signature: `bufferWhen(closingSelector: function): Observable`
 *The gist: Buffer all values until closing selector emits, emit buffered values, repeat...*
 
 ( [jsBin](http://jsbin.com/vugerupube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/nr9agfuL/) )
