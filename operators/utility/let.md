@@ -2,43 +2,71 @@
 ####signature: `let(function): Observable`
 *The gist: let me have the whole observable...*
 
-( [jsBin](http://jsbin.com/bivisofuxe/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/c8wr96sx/) | [official docs](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md) )
+
+### Examples
+
+##### Example 1: Applying map with let
+
+( [jsBin](http://jsbin.com/sicavuvijo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/6n7w3b22/) )
 
 ```js
-const myArray = [1,2,3,4,5];
-const myObservableArray = Rx.Observable.fromArray(myArray);
+//emit array as a sequence
+const source = Rx.Observable.from([1,2,3,4,5]);
 //demonstrating the difference between let and other operators
-const test = myObservableArray
+const test = source
   .map(val => val + 1)
-  //this fails, let behaves differently than most operators
-  //val in this case is an observable
+  /*
+  	this would fail, let behaves differently than most operators
+  	val in this case is an observable
+  */
   //.let(val => val + 2)
   .subscribe(val => console.log('VALUE FROM ARRAY: ', val));
-  
-const letTest = myObservableArray
+
+const subscribe = source
   .map(val => val + 1)
   //'let' me have the entire observable
   .let(obs => obs.map(val => val + 2))
+  //output: 2,3,4,5,6
   .subscribe(val => console.log('VALUE FROM ARRAY WITH let: ', val));
+```
+
+##### Example 2: Applying multiple operators with let
+
+( [jsBin](http://jsbin.com/zamizapaho/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/gxsq1woc/) )
+
+```js
+//emit array as a sequence
+const source = Rx.Observable.from([1,2,3,4,5]);
 
 //let provides flexibility to add multiple operators to source observable then return
-const letTestThree = myObservableArray
+const subscribeTwo = source
    .map(val => val + 1)
    .let(obs => obs
       .map(val => val + 2)
       //also, just return evens
       .filter(val => val % 2 === 0)
     )
+  //output: 4,6,8
   .subscribe(val => console.log('let WITH MULTIPLE OPERATORS: ', val));
+```
 
+##### Example 3: Applying operators through function
+
+( [jsBin](http://jsbin.com/vojelelamu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ah09dL9e/) )
+
+```js
+//emit array as a sequence
+const source = Rx.Observable.from([1,2,3,4,5]);
+ 
 //pass in your own function to add operators to observable
 const obsArrayPlusYourOperators = (yourAppliedOperators) => {
-  return myObservableArray
+  return source
     .map(val => val + 1)
     .let(yourAppliedOperators)
  };
 const addTenThenTwenty = obs => obs.map(val => val + 10).map(val => val + 20);
-const letTestFour = obsArrayPlusYourOperators(addTenThenTwenty)
+const subscribe = obsArrayPlusYourOperators(addTenThenTwenty)
+	//output: 32, 33, 34, 35, 36
 	.subscribe(val => console.log('let FROM FUNCTION:', val));
 ```
 
@@ -47,4 +75,4 @@ const letTestFour = obsArrayPlusYourOperators(addTenThenTwenty)
 
 
 ### Additional Resources
-*Coming soon...*
+* [let](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md) - Official docs

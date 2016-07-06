@@ -5,7 +5,7 @@
     "include-codeblock",
     "advanced-emoji",
     "prism",
-    "-highlight",
+    "highlight",
     "copy-code-button",
     "edit-link",
     "github",
