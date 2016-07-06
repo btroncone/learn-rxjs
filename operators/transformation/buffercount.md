@@ -38,7 +38,7 @@ const secondSubscribe = bufferEveryOne.subscribe(val => console.log('Start Buffe
 ### How bufferCount works...
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L59).
 2. [Each value emitted from source is pushed to internal array](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L91).
-    1. If second parameter, *startBufferEvery* is supplied, an [additional buffer array will be created for every given values emitted from source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L85-L87).
+    1. **If** second parameter, *startBufferEvery* is supplied, an [additional buffer array will be created for every given values emitted from source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L85-L87).
 3. When buffer size meets supplied value, [buffer is delivered to subscriber and removed](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L92-L100). Repeat...
 
 ### Additional Resources
