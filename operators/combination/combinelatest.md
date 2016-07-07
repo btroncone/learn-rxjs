@@ -2,6 +2,7 @@
 ####signature: `combineLatest(observables: ...Observable, project: function): Observable`
 *The gist: Given a group of observables, when one emits also emit latest values from each...*
 
+
 ### Examples
 
 #####Example 1: Combining observables emitting at 3 intervals

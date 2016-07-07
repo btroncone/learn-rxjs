@@ -2,6 +2,11 @@
 ####signature: `race(): Observable`
 *The gist: Take the first observable to emit...*
 
+
+### Examples
+
+##### Example 1: race with four observables
+
 ( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 
 ```js

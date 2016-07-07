@@ -2,6 +2,7 @@
 ####signature: `concat(observables: ...*): Observable`
 *The gist: Like the line at an ATM, the next transaction (subscription) won't start until the previous completes...*
 
+
 ### Examples
 
 ##### Example 1: concat two basic observables

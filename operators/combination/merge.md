@@ -2,7 +2,12 @@
 ####signature: `merge(input: Observable): Observable`
 *The gist: Merge outputs from multiple observables into a single source...*
 
-( [jsBin](http://jsbin.com/wicubemece/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
+
+### Examples
+
+##### Example 1: merging multiple observables, static method
+
+( [jsBin](http://jsbin.com/conufujapi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
 
 ```js
 //emit every 2.5 seconds
@@ -23,11 +28,21 @@ const example = Rx.Observable.merge(
 );
 //output: "FOURTH", "THIRD", "SECOND!", "FOURTH", "FIRST!", "THIRD", "FOURTH"
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: merge two observables, instance method
+
+( [jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/me5ofcr0/) )
+
+```js
+//emit every 2.5 seconds
+const first = Rx.Observable.interval(2500);
+//emit every 1 second
+const second = Rx.Observable.interval(1000);
 //used as instance method
-const exampleTwo = first.merge(fourth);
+const example = first.merge(second);
 //output: 0,1,0,2....
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How merge works...

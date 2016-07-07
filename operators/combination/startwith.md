@@ -2,7 +2,12 @@
 ####signature: `startWith(an: Values): Observable`
 *The gist: Emit specified item first...*
 
-( [jsBin](http://jsbin.com/jeyakemume/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e8dn3ggp/) )
+
+### Examples
+
+##### Example 1: startWith on number sequence
+
+( [jsBin](http://jsbin.com/lezuravizu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e8dn3ggp/) )
 
 ```js
 //emit (1,2,3)
@@ -11,11 +16,17 @@ const source = Rx.Observable.of(1,2,3);
 const example =  source.startWith(0);
 //output: 0,1,2,3
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: startWith for initial scan value
+
+( [jsBin](http://jsbin.com/gemevuzoha/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/54r3g83e/) )
+
+```js
 //emit ('World!', 'Goodbye', 'World!')
-const sourceTwo = Rx.Observable.of('World!', 'Goodbye', 'World!');
+const source = Rx.Observable.of('World!', 'Goodbye', 'World!');
 //start with 'Hello', concat current string to previous
-const exampleTwo = sourceTwo
+const example = source
   .startWith('Hello')
   .scan((acc, curr) => `${acc} ${curr}`);
 /*
@@ -25,7 +36,7 @@ const exampleTwo = sourceTwo
   "Hello World! Goodbye"
   "Hello World! Goodbye World!"
 */
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How startWith works...

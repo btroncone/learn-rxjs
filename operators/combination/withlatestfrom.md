@@ -2,7 +2,12 @@
 ####signature: `withLatestFrom(other: Observable, project: Function): Observable`
 *The gist: When source emits, also give last value emitted from another observable...*
 
-( [jsBin](http://jsbin.com/xehucaketu/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) )
+
+### Examples
+
+##### Example 1: Latest value from quicker second source
+
+( [jsBin](http://jsbin.com/fitekeseru/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) )
 
 ```js
 //emit every 5s
@@ -21,8 +26,19 @@ const example = source
   ...
 */
 const subscribe = example.subscribe(val => console.log(val));
+```
+
+##### Example 2: Slower second source
+
+( [jsBin](http://jsbin.com/vujekucuxa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/bywLL579/) )
+
+```js
+//emit every 5s
+const source = Rx.Observable.interval(5000);
+//emit every 1s
+const secondSource = Rx.Observable.interval(1000);
 //withLatestFrom slower than source
-const exampleTwo = secondSource
+const example = secondSource
   //both sources must emit at least 1 value (5s) before emitting
   .withLatestFrom(source)
   .map(([first, second]) => {
@@ -34,7 +50,7 @@ const exampleTwo = secondSource
   "Source (1s): 6 Latest From (5s): 0"
   ...
 */
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How withLatestFrom works...

@@ -2,7 +2,11 @@
 ####signature: `zip(observables: *): Observable`
 *The gist: After all observables emit, emit values as an array...*
 
-( [jsBin](http://jsbin.com/torusemimi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/htdb9t1p/) )
+### Examples
+
+##### Example 1: zip multiple observables emitting at alternate intervals
+
+( [jsBin](http://jsbin.com/lireyisira/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ton462sg/) )
 
 ```js
 const sourceOne = Rx.Observable.of('Hello');
@@ -19,17 +23,23 @@ const example = Rx.Observable
   );
 //output: ["Hello", "World!", "Goodbye", "World!"]
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: zip when one observable completes
+
+( [jsBin](http://jsbin.com/fisitatesa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/oamyk3xr/) )
+
+```js
 //emit every 1s
 const interval = Rx.Observable.interval(1000);
 //when one observable completes no more values will be emitted
-const exampleTwo = Rx.Observable
+const example = Rx.Observable
   .zip(
     interval,
     interval.take(2)
   );
 //output: [0,0]...[1,1]
-const subscribe = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How zip works...

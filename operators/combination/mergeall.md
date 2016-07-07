@@ -1,7 +1,11 @@
 # mergeAll
-
 ####signature: `mergeAll(concurrent: number): Observable`
 *The gist: Emit values from any observable or promise emitted from source...*
+
+
+### Examples
+
+##### Example 1: mergeAll with promises
 
 ( [jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) )
 

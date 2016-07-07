@@ -3,6 +3,11 @@
 ####signature: `forkJoin(...args, selector : function): Observable`
 *The gist: Get the last emitted item from each observable on completion...*
 
+
+### Examples
+
+##### Example 1: Making variable number of requests
+
 ( [jsBin](http://jsbin.com/taziyomusa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/5fj77920/) )
 
 ```js
@@ -27,7 +32,7 @@ const example = Rx.Observable.forkJoin(
 //output: ["Hello", "World", 0, 1, "Promise Resolved: RESULT"]
 const subscribe = example.subscribe(val => console.log(val));
 
-//make 5 request
+//make 5 requests
 const queue = Rx.Observable.of([1,2,3,4,5]);
 //emit array of all 5 results
 const exampleTwo = queue
