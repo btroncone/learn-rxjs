@@ -2,6 +2,11 @@
 ####signature: `skipWhile(predicate: Function): Observable`
 *The gist: Skip emitted items from source until provided expression is false...*
 
+
+### Examples
+
+##### Example 1: Skip while values below threshold
+
 ( [jsBin](http://jsbin.com/bemikuleya/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3ymfxb09/) )
 
 ```js

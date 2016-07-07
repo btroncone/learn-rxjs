@@ -2,6 +2,11 @@
 ####signature: `publish() : ConnectableObservable`
 *The gist: Do nothing until connect is called, share source...*
 
+
+### Examples
+
+##### Example 1: Connect observable after subscribers
+
 ( [jsBin](http://jsbin.com/laguvecixi/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/fpe6csaz/) )
 
 ```js

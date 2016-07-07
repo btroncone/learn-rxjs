@@ -2,7 +2,12 @@
 ####signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 *The gist: Collect output values until specified number is fulfilled then hand them over. Repeat...*
 
-( [jsBin](http://jsbin.com/hizuxiruqa/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
+
+### Examples
+
+##### Example 1: Collect buffer and emit after specified number of values
+
+( [jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
 
 ```js
 //Create an observable that emits a value every second
@@ -12,7 +17,15 @@ const bufferThree = source.bufferCount(3);
 //Print values to console
 //ex. output [0,1,2]...[3,4,5]
 const subscribe = bufferThree.subscribe(val => console.log('Buffered Values:', val));
+```
 
+##### Example 2: Overlapping buffers
+
+( [jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3c67qcz1/) )
+
+```js
+//Create an observable that emits a value every second
+const source = Rx.Observable.interval(1000);
 /*
 bufferCount also takes second argument, when to start the next buffer
 for instance, if we have a bufferCount of 3 but second argument (startBufferEvery) of 1:
@@ -32,7 +45,7 @@ buffer 4: [3]
 */
 const bufferEveryOne = source.bufferCount(3,1);
 //Print values to console
-const secondSubscribe = bufferEveryOne.subscribe(val => console.log('Start Buffer Every 1:', val));
+const subscribe = bufferEveryOne.subscribe(val => console.log('Start Buffer Every 1:', val));
 ```
 
 ### How bufferCount works...

@@ -1,7 +1,10 @@
 # takeWhile
-
 ####signature: `takeWhile(predicate: function(value, index): boolean): Observable`
 *The gist: Emit values until one fails test...*
+
+### Examples
+
+##### Example 1: Take values under limit
 
 ( [jsBin](http://jsbin.com/zanefaqexu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/yakd4jgc/) )
 

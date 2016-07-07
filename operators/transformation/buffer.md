@@ -2,6 +2,10 @@
 ####signature: `buffer(closingNotifier: Observable): Observable`
 *The gist: Collect output values until something happens then hand them over. Repeat...*
 
+### Examples
+
+##### Example 1: Buffer until document click
+
 ( [jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) )
 
 ```js

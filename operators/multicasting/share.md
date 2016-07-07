@@ -2,6 +2,10 @@
 ####signature: `share(): Observable`
 *The gist: Share observable among multiple subscribers...*
 
+### Examples
+
+##### Example 1: Multiple subscribers sharing source
+
 ( [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lmesxxaq/) )
 
 ```js

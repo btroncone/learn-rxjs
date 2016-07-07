@@ -2,9 +2,15 @@
 ####signature: `multicast(selector: Function): Observable`
 *The gist: Share subscription to source given particular Subject...*
 
-( [jsBin](http://jsbin.com/kisinazaga/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/x2z7p1gm/) )
+
+### Examples
+
+##### Example 1: multicast with standard Subject
+
+( [jsBin](http://jsbin.com/zexuyosuvi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/x2z7p1gm/) )
 
 ```js
+//emit every 2 seconds, take 5
 const source = Rx.Observable.interval(2000).take(5);
 
 const example = source
@@ -26,23 +32,32 @@ const subscriberOne = multi.subscribe(val => console.log(val));
 const subscriberTwo = multi.subscribe(val => console.log(val));
 //subscribe subject to source
 multi.connect();
+```
+
+##### Example 2: multicast with ReplaySubject
+
+( [jsBin](http://jsbin.com/ruhexuhike/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/oj68u58j/) )
+
+```js
+//emit every 2 seconds, take 5
+const source = Rx.Observable.interval(2000).take(5);
 
 //example with ReplaySubject
-const exampleTwo = source
+const example = source
   //since we are multicasting below, side effects will be executed once
   .do(() => console.log('Side Effect #2'))
   .mapTo('Result Two!')
 //can use any type of subject
-const multiTwo = exampleTwo.multicast(() => new Rx.ReplaySubject(5));
+const multi = example.multicast(() => new Rx.ReplaySubject(5));
 //subscribe subject to source
-multiTwo.connect();
+multi.connect();
 
 setTimeout(() => { 
   /*
    subscriber will receieve all previous values on subscription because
    of ReplaySubject
    */
-  const subscriberThree = multiTwo
+  const subscriber = multi
     .subscribe(val => console.group(val));
 }, 5000);
 ```

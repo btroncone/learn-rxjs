@@ -3,6 +3,10 @@
 ####signature: `cache(bufferSize: number, windowTime: number, scheduler : Scheduler): Observable`
 *The gist: Share source and deliver specified number of latest emitted values upon subscription...*
 
+### Examples
+
+##### Example 1: Cache last value from source
+
 ( [jsBin](http://jsbin.com/laxumuzuge/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/cb0dcnnx/) )
 
 ```js

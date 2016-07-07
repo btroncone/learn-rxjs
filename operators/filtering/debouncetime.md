@@ -2,6 +2,11 @@
 ####signature: `debounceTime(dueTime: number, scheduler: Scheduler): Observable`
 *The gist: Throw away all emitted values that take less then the specified time between output...*
 
+
+### Examples
+
+##### Example 1: Debouncing based on time between input
+
 ( [jsBin](http://jsbin.com/kacijarogi/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/7kbg4q2e/) )
 
 ```js

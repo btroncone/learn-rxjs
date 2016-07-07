@@ -2,6 +2,11 @@
 ####signature: `skip(the: Number): Observable`
 *The gist: Skip a specified number of emitted items...*
 
+
+### Examples
+
+##### Example 1: Skipping values before emission
+
 ( [jsBin](http://jsbin.com/hacepudabi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ar1eqbya/) )
 
 ```js
