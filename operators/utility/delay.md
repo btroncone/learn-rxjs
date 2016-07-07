@@ -2,6 +2,11 @@
 ####signature: `delay(delay: number | Date, scheduler: Scheduler): Observable`
 *The gist: Delay output by specified time...*
 
+
+### Examples
+
+##### Example 1: Delay for increasing durations
+
 ( [jsBin](http://jsbin.com/zebatixije/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/1kxtzcu6/) )
 
 ```js

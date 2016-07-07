@@ -2,6 +2,11 @@
 ####signature: `delayWhen(selector: Function, sequence: Observable): Observable`
 *The gist: Delay output by specified time, determined by provided function...*
 
+
+### Examples
+
+##### Example 1: Delay based on observable
+
 ( [jsBin](http://jsbin.com/topohekuje/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) )
 
 ```js

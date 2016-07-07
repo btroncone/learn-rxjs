@@ -2,6 +2,11 @@
 ####signature: `do(nextOrObserver: function, error: function, complete: function): Observable`
 *The gist: Transparently perform actions, such as logging...*
 
+
+### Examples
+
+##### Example 1: Logging with do
+
 ( [jsBin](http://jsbin.com/jimazuriva/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qtyakorq/) )
 
 ```js

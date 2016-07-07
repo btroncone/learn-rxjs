@@ -2,6 +2,11 @@
 #### signature: `dematerialize(): Observable`
 *The gist: Turn notification objects into notification values...*
 
+
+### Examples
+
+##### Example 1: Converting notifications to values
+
 ( [jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/jw08mouy/) )
 
 ```js
