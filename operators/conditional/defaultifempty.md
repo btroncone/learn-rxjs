@@ -2,7 +2,12 @@
 ####signature: `defaultIfEmpty(defaultValue: any): Observable`
 *The gist: When observable is empty use given default, or null...*
 
-( [jsBin](http://jsbin.com/ricotitasu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8ex96cov/) )
+
+### Examples
+
+##### Example 1: Default for empty value
+
+( [jsBin](http://jsbin.com/yawumoqatu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8ex96cov/) )
 
 ```js
 const empty = Rx.Observable.of();
@@ -10,13 +15,19 @@ const empty = Rx.Observable.of();
 const exampleOne = empty.defaultIfEmpty('Observable.of() Empty!');
 //output: 'Observable.of() Empty!'
 const subscribe = exampleOne.subscribe(val => console.log(val));
+```
 
+##### Example 2: Default for Observable.empty
+
+( [jsBin](http://jsbin.com/kojafuvesu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3edw828p/) )
+
+```js
 //empty observable
-const emptyTwo = Rx.Observable.empty();
+const empty = Rx.Observable.empty();
 //emit 'Observable.empty()!' when empty, else any values from source
-const exampleTwo = emptyTwo.defaultIfEmpty('Observable.empty()!');
+const example = empty.defaultIfEmpty('Observable.empty()!');
 //output: 'Observable.empty()!'
-const subscribe = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How defaultIfEmpty works...
