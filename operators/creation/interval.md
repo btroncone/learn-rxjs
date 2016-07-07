@@ -1,7 +1,11 @@
 # interval
-
 ####signature: `interval(period: number, scheduler: Scheduler): Observable`
 *The gist: Create an observable that emits numbers in sequence every supplied timeframe...*
+
+
+### Examples
+
+##### Example 1: Emit sequence of values at one second interval
 
 ( [jsBin](http://jsbin.com/vigohomabo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/x3mrwzr0/) )
 
