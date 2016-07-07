@@ -2,6 +2,11 @@
 ####signature: `bufferWhen(closingSelector: function): Observable`
 *The gist: Buffer all values until closing selector emits, emit buffered values, repeat...*
 
+
+### Examples
+
+##### Example 1: Emit buffer based on interval
+
 ( [jsBin](http://jsbin.com/vugerupube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/nr9agfuL/) )
 
 ```js
