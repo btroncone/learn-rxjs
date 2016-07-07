@@ -2,6 +2,11 @@
 ####signature: `retry(number: number): Observable`
 *The gist: Retry specified number of times on error...*
 
+
+### Examples
+
+##### Example 1: Retry twice on error
+
 ( [jsBin](http://jsbin.com/yovacuxuqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hg7z16bo/) )
 
 ```js

@@ -2,6 +2,11 @@
 ####signature: `retryWhen(receives: notificationHandler, the: scheduler): Observable`
 *The gist: Retry with additional logic...*
 
+
+### Examples
+
+##### Example 1: Trigger retry after specified duration
+
 ( [jsBin](http://jsbin.com/miduqexalo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/49mkhsyr/) )
 
 ```js
