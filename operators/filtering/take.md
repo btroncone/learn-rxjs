@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1: Take one value from source
+##### Example 1: Take 1 value from source
 
 ( [jsBin](http://jsbin.com/vaxitupiwi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/f9bz0tr3/) )
 
@@ -18,7 +18,7 @@ const example = source.take(1);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: Take the first five values from source
+##### Example 2: Take the first 5 values from source
 
 ( [jsBin](http://jsbin.com/lovawayefe/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/g1fhxgua/) )
 

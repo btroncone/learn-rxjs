@@ -26,7 +26,7 @@ const example = Rx.Observable
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: zip when one observable completes
+##### Example 2: zip when 1 observable completes
 
 ( [jsBin](http://jsbin.com/fisitatesa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/oamyk3xr/) )
 

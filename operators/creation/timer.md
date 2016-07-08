@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1: timer emits one value then completes
+##### Example 1: timer emits 1 value then completes
 
 ( [jsBin](http://jsbin.com/pazajanehu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/vpx0y8fu/) )
 

@@ -30,7 +30,7 @@ const example = Rx.Observable.merge(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: merge two observables, instance method
+##### Example 2: merge 2 observables, instance method
 
 ( [jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/me5ofcr0/) )
 

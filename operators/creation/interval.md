@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1: Emit sequence of values at one second interval
+##### Example 1: Emit sequence of values at 1 second interval
 
 ( [jsBin](http://jsbin.com/vigohomabo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/x3mrwzr0/) )
 

@@ -20,7 +20,7 @@ const example = source.takeUntil(timer);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: Take the first five even numbers 
+##### Example 2: Take the first 5 even numbers 
 
 ( [jsBin](http://jsbin.com/doquqecara/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/0dLeksLe/) )
 

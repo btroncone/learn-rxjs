@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1: race with four observables
+##### Example 1: race with 4 observables
 
 ( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 

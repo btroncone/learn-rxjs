@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1: Retry twice on error
+##### Example 1: Retry 2 times on error
 
 ( [jsBin](http://jsbin.com/yovacuxuqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hg7z16bo/) )
 

@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1: concat two basic observables
+##### Example 1: concat 2 basic observables
 
 ( [jsBin](http://jsbin.com/gegubutele/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) )
 
