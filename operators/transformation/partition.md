@@ -2,7 +2,12 @@
 ####signature: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
 *The gist: Split one observable into two based on predicate...*
 
-( [jsBin](http://jsbin.com/fuqojubaqu/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) )
+
+### Examples
+
+##### Example 1: Split even and odd numbers
+
+( [jsBin](http://jsbin.com/hipehexaku/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) )
 
 ```js
 const source = Rx.Observable.from([1,2,3,4,5,6]);
@@ -23,6 +28,14 @@ const subscribe = Rx.Observable.merge(
  odds
   .map(val => `Odd: ${val}`)
 ).subscribe(val => console.log(val));
+```
+
+##### Example 2: Split success and errors
+
+( [jsBin](http://jsbin.com/kukuguhuri/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/fe246u5p/) )
+
+```js
+const source = Rx.Observable.from([1,2,3,4,5,6]);
 //if greater than 3 throw
 const example = source
   .map(val => {
@@ -41,7 +54,7 @@ const [success, error] = example.partition(res => res.success)
   "Success! 3"
   "Error! 4 greater than 3!"
 */
-const subscribeTwo = Rx.Observable.merge(
+const subscribe = Rx.Observable.merge(
   success.map(val => `Success! ${val.success}`),
   error.map(val => `Error! ${val.error}`)
 ).subscribe(val => console.log(val));

@@ -2,6 +2,11 @@
 ####signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
 *The gist: Recursively call provided function...*
 
+
+### Examples
+
+##### Example 1: Add one for each invocation
+
 ( [jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
 
 ```js

@@ -2,6 +2,11 @@
 ####signature: `groupBy(keySelector: Function, elementSelector: Function): Observable`
 *The gist: Group into observables by given value...*
 
+
+### Examples
+
+##### Example 1:  Group by property
+
 ( [jsBin](http://jsbin.com/zibomoluru/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
 
 ```js

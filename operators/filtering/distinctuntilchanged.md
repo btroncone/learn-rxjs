@@ -2,7 +2,12 @@
 #### signature: ` distinctUntilChanged(compare: function): Observable`
 *The gist: Only emit when the next value is different then the last...*
 
-( [jsBin](http://jsbin.com/wuhumodoha/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xc2vzct7/) )
+
+### Examples
+
+##### Example 1: distinctUntilChanged with basic values
+
+( [jsBin](http://jsbin.com/qoyoxeheva/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xc2vzct7/) )
 
 ```js
 //only output distinct values, based on the last emitted value
@@ -17,9 +22,15 @@ const distinctSub = myArrayWithDuplicatesInARow
 const nonDistinctSub = myArrayWithDuplicatesInARow
 	//output: 1,1,2,2,3,1,2,3
 	.subscribe(val => console.log('NON DISTINCT SUB:', val));
+```
 
+##### Example 2: distinctUntilChanged with objects
+
+( [jsBin](http://jsbin.com/mexocipave/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/t4ava5b4/) )
+
+```js
 const sampleObject = {name: 'Test'};
-
+//Objects must be same reference
 const myArrayWithDuplicateObjects = Rx.Observable.from([sampleObject, sampleObject, sampleObject]);
 //only out distinct objects, based on last emitted value
 const nonDistinctObjects = myArrayWithDuplicateObjects

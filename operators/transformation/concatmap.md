@@ -4,34 +4,52 @@
 
 *You could also: `map -> concatAll`*
 
-( [jsBin](http://jsbin.com/dekadarube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/y3yx666r/) )
+
+### Examples
+
+##### Example 1: Map to inner observable
+
+( [jsBin](http://jsbin.com/powivemaxu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/y3yx666r/) )
 
 ```js
 //emit 'Hello' and 'Goodbye'
 const source = Rx.Observable.of('Hello', 'Goodbye');
 // map value from source into inner observable, when complete emit result and move to next
-const exampleOne = source.concatMap(val => Rx.Observable.of(`${val} World!`));
+const example = source.concatMap(val => Rx.Observable.of(`${val} World!`));
 //output: 'Example One: 'Hello World', Example One: 'Goodbye World'
-const subscribe = exampleOne
+const subscribe = example
   .subscribe(val => console.log('Example One:', val));
+```
 
+##### Example 2: Map to promise
+
+( [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
+
+
+```js
+//emit 'Hello' and 'Goodbye'
+const source = Rx.Observable.of('Hello', 'Goodbye');
 //example with promise
 const examplePromise = val => new Promise(resolve => resolve(`${val} World!`));
 // map value from source into inner observable, when complete emit result and move to next
-const exampleTwo = source.concatMap(val => examplePromise(val))
+const example = source.concatMap(val => examplePromise(val))
 //output: 'Example w/ Promise: 'Hello World', Example w/ Promise: 'Goodbye World'
-const subscribeTwo = exampleTwo
-  //delay for logging clarity
-  .delay(1000)
-  .subscribe(val => console.log('Example w/ Promise:', val));
+const subscribe = example.subscribe(val => console.log('Example w/ Promise:', val));
+```
 
+##### Example 3: Supplying a projection function
+
+( [jsBin](http://jsbin.com/vihacewozo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/5sr5zzgy/) )
+
+```js
+//emit 'Hello' and 'Goodbye'
+const source = Rx.Observable.of('Hello', 'Goodbye');
+//example with promise
+const examplePromise = val => new Promise(resolve => resolve(`${val} World!`));
 //result of first param passed to second param selector function before being  returned
-const exampleWithSelector = source.concatMap(val => examplePromise(val), result => `${result} w/ selector!`);
+const example = source.concatMap(val => examplePromise(val), result => `${result} w/ selector!`);
 //output: 'Example w/ Selector: 'Hello w/ Selector', Example w/ Selector: 'Goodbye w/ Selector'
-const subscribeThree = exampleWithSelector
-  //delay for logging clarity
-  .delay(2000)
-  .subscribe(val => console.log('Example w/ Selector:', val));
+const subscribe = example.subscribe(val => console.log('Example w/ Selector:', val));
 ```
 
 ### How concatMap works...

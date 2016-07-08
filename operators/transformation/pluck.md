@@ -2,7 +2,12 @@
 ####signature: `pluck(properties: ...args): Observable`
 *The gist: Pick out nested properties...*
 
-( [jsBin](http://jsbin.com/netulokasu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/58v9xq0f/) )
+
+### Examples
+
+##### Example 1: Pluck object property
+
+( [jsBin](http://jsbin.com/zokaxiwahe/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/58v9xq0f/) )
 
 ```js
 const source = Rx.Observable.from([
@@ -13,16 +18,22 @@ const source = Rx.Observable.from([
 const example = source.pluck('name');
 //output: "Joe", "Sarah"
 const subscribe = example.subscribe(val => console.log(val));
+```
 
-const sourceTwo = Rx.Observable.from([
+##### Example 2: Pluck nested properties
+
+( [jsBin](http://jsbin.com/joqesidugu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/n592m597/) )
+
+```js
+const source = Rx.Observable.from([
   {name: 'Joe', age: 30, job: {title: 'Developer', language: 'JavaScript'}},
   //will return undefined when no job is found
   {name: 'Sarah', age:35}
 ]);
 //grab title property under job
-const exampleTwo = sourceTwo.pluck('job', 'title');
+const example = source.pluck('job', 'title');
 //output: "Developer" , undefined
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How pluck works...

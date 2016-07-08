@@ -2,7 +2,12 @@
 ####signature: `mapTo(value: any): Observable`
 *The gist: Map to a constant value every time...*
 
-( [jsBin](http://jsbin.com/yazusehahu/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) )
+
+### Examples
+
+##### Example 1: Map every emission to string
+
+( [jsBin](http://jsbin.com/qujolenili/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) )
 
 ```js
 //emit value every two seconds
@@ -11,13 +16,19 @@ const source = Rx.Observable.interval(2000);
 const example = source.mapTo('HELLO WORLD!');
 //output: 'HELLO WORLD!'...'HELLO WORLD!'...'HELLO WORLD!'...
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: Mapping clicks to string
+
+( [jsBin](http://jsbin.com/xaheciwara/1/edit?js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/52fqL4nn/) )
+
+```js
 //emit every click on document
-const clickSource = Rx.Observable.fromEvent(document, 'click');
+const source = Rx.Observable.fromEvent(document, 'click');
 //map all emissions to one value
-const exampleTwo = clickSource.mapTo('GOODBYE WORLD!');
+const example = source.mapTo('GOODBYE WORLD!');
 //output: (click)'GOODBYE WORLD!'...
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How mapTo works...

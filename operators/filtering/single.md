@@ -2,6 +2,11 @@
 ####signature: `single(a: Function): Observable`
 *The gist: Emit single item that matches condition...*
 
+
+### Examples
+
+##### Example 1: Emit first number passing predicate
+
 ( [jsBin](http://jsbin.com/solecibuza/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/26r5y90s/) )
 
 ```js

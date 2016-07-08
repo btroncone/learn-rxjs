@@ -2,7 +2,12 @@
 ####signature: `first(predicate: function, select: function)`
 *The gist: Emit the first value, or the first to pass condition...*
 
-( [jsBin](http://jsbin.com/poloquxuja/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/uncey4v9/) )
+
+### Examples
+
+##### Example 1: First value from sequence
+
+( [jsBin](http://jsbin.com/kayenuxoma/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/uncey4v9/) )
 
 ```js
 const source = Rx.Observable.from([1,2,3,4,5]);
@@ -10,17 +15,31 @@ const source = Rx.Observable.from([1,2,3,4,5]);
 const example = source.first();
 //output: "First value: 1"
 const subscribe = example.subscribe(val => console.log(`First value: ${val}`));
+```
 
+##### Example 2: First value to pass predicate
+
+( [jsBin](http://jsbin.com/pujowawovu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/pt36r8cu/) )
+
+```js
+const source = Rx.Observable.from([1,2,3,4,5]);
 //emit first item to pass test
-const exampleTwo = source.first(num => num === 5);
+const example = source.first(num => num === 5);
 //output: "First to pass test: 5"
-const subscribeTwo = exampleTwo.subscribe(val => console.log(`First to pass test: ${val}`));
+const subscribe = example.subscribe(val => console.log(`First to pass test: ${val}`));
+```
 
+##### Example 3: Using optional projection function
+
+( [jsBin](http://jsbin.com/qijekijaja/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qosu0cx6/) )
+
+```js
+const source = Rx.Observable.from([1,2,3,4,5]);
 //using optional projection function
-const exampleThree = source.first(num => num % 2 === 0, 
+const example = source.first(num => num % 2 === 0, 
                                     (result, index) => `First even: ${result} is at index: ${index}`);
 //output: "First even: 2 at index: 1"
-const subscribeThree = exampleThree.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How first works...

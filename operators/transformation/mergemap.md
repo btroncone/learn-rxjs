@@ -4,7 +4,11 @@
 
 *You could also: `map -> mergeAll`*
 
-( [jsBin](http://jsbin.com/haxobidino/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) )
+### Examples
+
+##### Example 1: mergeMap with observable
+
+( [jsBin](http://jsbin.com/mojurubana/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) )
 
 ```js
 //emit 'Hello'
@@ -13,24 +17,43 @@ const source = Rx.Observable.of('Hello');
 const example = source.mergeMap(val => Rx.Observable.of(`${val} World!`));
 //output: 'Hello World!'
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: mergeMap with promise
+
+( [jsBin](http://jsbin.com/vuhecorana/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/o9kxpvsv/) )
+
+```js
+//emit 'Hello'
+const source = Rx.Observable.of('Hello');
 //mergeMap also emits result of promise
 const myPromise = val => new Promise(resolve => resolve(`${val} World From Promise!`));
 //map to promise and emit result
-const exampleTwo = source.mergeMap(val => myPromise(val));
+const example = source.mergeMap(val => myPromise(val));
 //output: 'Hello World From Promise'
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
+```
+
+##### Example 3: mergeMap with projection function
+
+( [jsBin](http://jsbin.com/wajokocage/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/zu9a6vr4/) )
+
+```js
 /*
   you can also supply a second argument which recieves the source value and emitted
   value of inner observable or promise
 */
-const exampleThree = source
+//emit 'Hello'
+const source = Rx.Observable.of('Hello');
+//mergeMap also emits result of promise
+const myPromise = val => new Promise(resolve => resolve(`${val} World From Promise!`));
+const example = source
   .mergeMap(val => myPromise(val), 
     (valueFromSource, valueFromPromise) => {
       return `Source: ${valueFromSource}, Promise: ${valueFromPromise}`;
 });
 //output: "Source: Hello, Promise: Hello World From Promise!"
-const subscribeThree = exampleThree.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How mergeMap works...

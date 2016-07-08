@@ -1,9 +1,13 @@
 # takeUntil
-
 ####signature: ` takeUntil(notifier: Observable): Observable`
 *The gist: Emit values until another observable emits...*
 
-( [jsBin](http://jsbin.com/razojivezi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/zbe9dzb9/) )
+
+### Examples
+
+##### Example 1: Take values until timer emits
+
+( [jsBin](http://jsbin.com/yevuhukeja/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/zbe9dzb9/) )
 
 ```js
 //emit value every 1s
@@ -14,7 +18,15 @@ const timer = Rx.Observable.timer(5000);
 const example = source.takeUntil(timer);
 //output: 0,1,2,3
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: Take the first five even numbers 
+
+( [jsBin](http://jsbin.com/doquqecara/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/0dLeksLe/) )
+
+```js
+//emit value every 1s
+const source = Rx.Observable.interval(1000);
 //is number even?
 const isEven = val => val % 2 === 0;
 //only allow values that are even
@@ -25,7 +37,7 @@ const evenNumberCount = evenSource
 //do not emit until 5 even numbers have been emitted
 const fiveEvenNumbers = evenNumberCount.filter(val => val > 5);
   
-const exampleTwo = evenSource
+const example = evenSource
 	//also give me the current even number count for display
   .withLatestFrom(evenNumberCount)
 	.map(([val, count]) => `Even number (${count}) : ${val}`)
@@ -38,7 +50,7 @@ const exampleTwo = evenSource
 	Even number (4) : 6
 	Even number (5) : 8
 */
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How takeUntil works...

@@ -2,7 +2,12 @@
 ####signature: `sample(sampler: Observable): Observable`
 *The gist: Sample from source when supplied observable emits...*
 
-( [jsBin](http://jsbin.com/wifaqipuse/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8wsbuvjb/) )
+
+### Examples
+
+##### Example 1: Sample source every 2 seconds
+
+( [jsBin](http://jsbin.com/gemebopifu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8wsbuvjb/) )
 
 ```js
 //emit value every 1s
@@ -11,17 +16,23 @@ const source = Rx.Observable.interval(1000);
 const example = source.sample(Rx.Observable.interval(2000));
 //output: 2..4..6..8..
 const subscribe = example.subscribe(val => console.log(val));
+```
 
-const sourceTwo = Rx.Observable.zip(
+##### Example 2: Sample source when interval emits
+
+( [jsBin](http://jsbin.com/cunicepube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/b33kg9dn/) )
+
+```js
+const source = Rx.Observable.zip(
   //emit 'Joe', 'Frank' and 'Bob' in sequence
   Rx.Observable.from(['Joe', 'Frank', 'Bob']),
   //emit value every 2s
   Rx.Observable.interval(2000)
 );
 //sample last emitted value from source every 2.5s
-const exampleTwo = sourceTwo.sample(Rx.Observable.interval(2500));
+const example = source.sample(Rx.Observable.interval(2500));
 //output: ["Joe", 0]...["Frank", 1]...........
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How sample works...

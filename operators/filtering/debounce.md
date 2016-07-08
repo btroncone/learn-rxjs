@@ -2,7 +2,12 @@
 ####signature: `debounce(durationSelector: function): Observable`
 *The gist: Throw away all emitted values that take less then the specified time (based on selector function) between output...*
 
-( [jsBin](http://jsbin.com/cofofizopo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e5698yow/) )
+
+### Examples
+
+##### Example 1: Debounce on timer
+
+( [jsBin](http://jsbin.com/sorimeyoro/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/e5698yow/) )
 
 ```js
 //emit four strings
@@ -17,7 +22,13 @@ const debouncedExample = example.debounce(() => Rx.Observable.timer(1000));
     output: 'Last will display'
 */
 const subscribe = debouncedExample.subscribe(val => console.log(val));
+```
 
+##### Example 2: Debounce at increasing interval
+
+( [jsBin](http://jsbin.com/sotaretese/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/6ab34nq6/) )
+
+```js
 //emit value every 1 second, ex. 0...1...2
 const interval = Rx.Observable.interval(1000);
 //raise the debounce time by 200ms each second
@@ -27,7 +38,7 @@ const debouncedInterval = interval.debounce(val => Rx.Observable.timer(val * 200
   all future values will be thrown away
   output: 0...1...2...3...4......(debounce time over 1s, no values emitted)
 */
-const subscribeTwo = debouncedInterval.subscribe(val => console.log(`Example Two: ${val}`));
+const subscribe = debouncedInterval.subscribe(val => console.log(`Example Two: ${val}`));
 ```
 
 ### How debounce works...

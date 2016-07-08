@@ -2,6 +2,11 @@
 ####signature: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
 *The gist: Toggle buffer on to catch emitted values from source, toggle buffer off to emit buffered values...*
 
+
+### Examples
+
+##### Example 1: Toggle buffer on and off at interval
+
 ( [jsBin](http://jsbin.com/relavezugo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/6ad3w3wf/) )
 
 ```js

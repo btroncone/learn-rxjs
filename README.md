@@ -38,6 +38,8 @@ to additional resources and recipes for each operator are also provided, when ap
 
 [Complete listing in alphabetical order](/operators/complete.md)
 
+*[Chinese version of original RxJS 5 Operators By Example](https://gist.github.com/DrakeLeung/ecbcedab8534d4486a888ef777a76140) - Drake Leung*
+
 #### Concepts
 Without a solid base knowledge of how Observables work behind the scenes, it's easy for much of RxJS to feel like 'magic'.
 This section helps solidify the major concepts needed to feel comfortable with reactive programming and Observables.

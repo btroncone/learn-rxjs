@@ -1,9 +1,13 @@
 # take
-
 ####signature: ` take(count: number): Observable`
 *The gist: Emit only specified number of values...*
 
-( [jsBin](http://jsbin.com/zeputevule/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/f9bz0tr3/) )
+
+### Examples
+
+##### Example 1: Take one value from source
+
+( [jsBin](http://jsbin.com/vaxitupiwi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/f9bz0tr3/) )
 
 ```js
 //emit 1,2,3,4,5
@@ -12,13 +16,19 @@ const source = Rx.Observable.of(1,2,3,4,5);
 const example = source.take(1);
 //output: 1
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: Take the first five values from source
+
+( [jsBin](http://jsbin.com/lovawayefe/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/g1fhxgua/) )
+
+```js
 //emit value every 1s
 const interval = Rx.Observable.interval(1000);
 //take the first 5 emitted values
-const exampleTwo = interval.take(5);
+const example = interval.take(5);
 //output: 0,1,2,3,4
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How take works...

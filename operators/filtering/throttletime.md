@@ -3,7 +3,12 @@
 ####signature: `throttleTime(duration: number, scheduler: Scheduler): Observable`
 *The gist: Emit latest value when specified duration has passed...*
 
-( [jsBin](http://jsbin.com/wudukimivi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/4zysLc3y/) )
+
+### Examples
+
+##### Example 1: Receieve latest value every 5 seconds
+
+( [jsBin](http://jsbin.com/koqujayizo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/4zysLc3y/) )
 
 ```js
 //emit value every 1 second
@@ -16,19 +21,25 @@ const example = source
   .throttleTime(5000);
 //output: 0...6...12
 const subscribe = example.subscribe(val => console.log(val));
+```
 
+##### Example 2: Throttle merged observable
+
+( [jsBin](http://jsbin.com/juqinaqika/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xhd1zy3m/) )
+
+```js
 //merge observables that emit every 1s, immediately, and every 5s
-const sourceTwo = Rx.Observable
+const source = Rx.Observable
 	.merge(
         //emit every 2.25 seconds
-		Rx.Observable.interval(2250),
+		    Rx.Observable.interval(2250),
         //emit every 3 seconds
         Rx.Observable.interval(3000)
 	);
 //throttle for 5 seconds
-const exampleTwo = sourceTwo.throttleTime(1500);
+const example = source.throttleTime(1500);
 //output: 0...1...2...2...4...5...6...5
-const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How throttleTime works...

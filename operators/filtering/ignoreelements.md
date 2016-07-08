@@ -2,7 +2,13 @@
 ####signature: `ignoreElements(): Observable`
 *The gist: Ignore everything but complete and error...*
 
-( [jsBin](http://jsbin.com/luyufeviqu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/59scjqss/) )
+
+
+### Examples
+
+##### Example 1: Ignore all elements from source
+
+( [jsBin](http://jsbin.com/yiyefelubi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/59scjqss/) )
 
 ```js
 //emit value every 100ms
@@ -17,6 +23,15 @@ const subscribe = example.subscribe(
   val => console.log(`ERROR: ${val}`),
   () => console.log('COMPLETE!')
 );
+```
+
+##### Example 2: Only displaying error
+
+( [jsBin](http://jsbin.com/gogonawuze/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/srcwdgw6/) )
+
+```js
+//emit value every 100ms
+const source = Rx.Observable.interval(100);
 //ignore everything but error
 const error = source
   .flatMap(val => {
@@ -27,7 +42,7 @@ const error = source
   })
   .ignoreElements();
 //output: "ERROR: ERROR AT 4"
-const subscribeTwo = error.subscribe(
+const subscribe = error.subscribe(
   val => console.log(`NEXT: ${val}`),
   val => console.log(`ERROR: ${val}`),
   () => console.log('SECOND COMPLETE!')
