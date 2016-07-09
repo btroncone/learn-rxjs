@@ -32,7 +32,10 @@ const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How map works...
-*Coming soon...*
+1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L54).
+2. [The supplied project function is invoked for each value emitted from source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L79).
+3. [The result of the project function is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L84).
+
 
 
 ### Additional Resources
