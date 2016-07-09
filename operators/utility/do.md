@@ -22,7 +22,11 @@ const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### How do works...
-*Coming soon...*
+1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L66).
+2. An extra [subscriber is created](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L85), based on the functions passed to do operator.
+3. The [destination subscription](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L97) and [extra subscription created for do operator](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L93) are both invoked with values emitted from source. 
+4. [Errors are forwarded to destination](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L94-L95).
+
 
 
 ### Additional Resources
