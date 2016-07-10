@@ -44,7 +44,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Follow the source code...
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L76)
-2. For every value emitted from source...
+2. **For every value emitted from source...**
     1. **IF** [Predicate function is supplied, run function against value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L109)
         1. **IF** [Return value of predicate is truthy, emit value to subscriber and complete observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L138-L143)
     2. **IF** [No predicate function is supplied, emit value to subscriber and complete observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L138-L143)
