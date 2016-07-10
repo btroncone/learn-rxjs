@@ -84,6 +84,7 @@
         * [dematerialize](/operators/utility/dematerialize.md)
         * [let](/operators/utility/let.md)
         * [toPromise](/operators/utility/topromise.md)
+    * [Full Listing](/operators/complete.md)
 * [Concepts](/concepts/README.md)
 * [Recipes](/recipes/README.md)
 
