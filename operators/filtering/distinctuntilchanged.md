@@ -43,11 +43,13 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
 *On subscription...*
 
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L31)
-2. **For every value emitted from source**
-	1. **IF** [No custom compare function is supplied, a strict equality comparison is performed between the previous and current emission](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L53-L55) ([Performed](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72))
-		1. **IF** [Comparison returns false, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L80-L83)
-	2. **IF** [Custom compare function is supplied, invoke with current and previously emitted value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72) ([Override](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72))
-		1. **IF** [Comparison returns false, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L80-L83)
+
+*When value is emitted from source...*
+
+1. **IF** [No custom compare function is supplied, a strict equality comparison is performed between the previous and current emission](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L53-L55) ([Performed](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72))
+	1. **IF** [Comparison returns false, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L80-L83)
+2. **IF** [Custom compare function is supplied, invoke with current and previously emitted value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72) ([Override](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72))
+	1. **IF** [Comparison returns false, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L80-L83)
 
 
 

@@ -53,8 +53,11 @@ const subscribe = example.subscribe(val => console.log(`Number greater than 5: $
 *On subscription...*
 
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L60)
-2. [Each time a value is emitted from source, the supplied predicate expression is invoked with said value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L85)
-3. **IF** - [The result is truthy, value from source is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L90-L92)
+
+*When value is emitted from source...*
+
+1. [The supplied predicate expression is invoked with value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L85)
+2. **IF** - [The result is truthy, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L90-L92)
 
 
 ### Additional Resources

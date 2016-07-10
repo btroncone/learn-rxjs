@@ -35,7 +35,10 @@ const subscribe = example.subscribe(val => console.log(val));
 *On subscription...*
 
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L48)
-2. [Each time a value is emitted from source, the supplied value is emitted subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L67).
+
+*When value is emitted from source...*
+
+1. [The constant value provided to `mapTo` operator is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L67).
 
 
 
