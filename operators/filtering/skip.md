@@ -19,7 +19,9 @@ const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### Follow the source code...
-*Coming soon...*
+1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts#L29)
+2. [Internal count of emissions from source is kept](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts#L39)
+3. **IF** - [The count of emitted values from source is greater then supplied count, emit values to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts#L46-L48)
 
 
 ### Additional Resources
