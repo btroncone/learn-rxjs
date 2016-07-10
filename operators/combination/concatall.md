@@ -39,7 +39,7 @@ const example = source
 const subscribe = example.subscribe(val => console.log('Example with Promise:', val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

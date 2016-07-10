@@ -22,7 +22,9 @@ const myBufferedInterval = myInterval.buffer(bufferBy);
 const subscribe = myBufferedInterval.subscribe(val => console.log(' Buffered Values:', val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
+*On subscription...*
+
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L55)
 2. [An inner subscriber is created](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L21) and [subscribed to the given inner observable](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L33), or *closing notifier*
 3. [Values emitted from source are pushed to internal array](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L73)

@@ -29,7 +29,7 @@ const subscribe = count.subscribe(val => console.log(`Window ${val}:`));
 const subscribeTwo = example.mergeAll().subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

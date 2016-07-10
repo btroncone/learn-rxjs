@@ -26,7 +26,7 @@ const bufferToggleInterval = sourceInterval.bufferToggle(startInterval, closingI
 const subscribe = bufferToggleInterval.subscribe(val => console.log('Emitted Buffer:', val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

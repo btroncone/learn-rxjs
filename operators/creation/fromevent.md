@@ -18,7 +18,7 @@ const example = source.map(event => `Event time: ${event.timeStamp}`)
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

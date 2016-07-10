@@ -39,7 +39,7 @@ const subscribeThree = sharedExample.subscribe(val => console.log(val));
 const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

@@ -72,7 +72,7 @@ const source = Rx.Observable
 const subscribe = source.subscribe(val => console.log('Example: Source never completes, second observable never runs:', val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

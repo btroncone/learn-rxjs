@@ -42,7 +42,7 @@ setTimeout(() => {
 }, 5000);
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

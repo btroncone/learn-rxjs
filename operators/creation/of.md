@@ -27,7 +27,7 @@ const source = Rx.Observable.of({name: 'Brian'}, [1,2,3], function hello(){ retu
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

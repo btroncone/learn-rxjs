@@ -31,7 +31,9 @@ const example = source.map(person => person.name);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
+*On subscription...*
+
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L54)
 2. [The supplied project function is invoked for each value emitted from source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L79)
 3. [The result of the project function is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L84)

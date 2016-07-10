@@ -44,7 +44,7 @@ example().then(val => {
 });
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

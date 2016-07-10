@@ -70,7 +70,7 @@ const subscribe = obsArrayPlusYourOperators(addTenThenTwenty)
 	.subscribe(val => console.log('let FROM FUNCTION:', val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

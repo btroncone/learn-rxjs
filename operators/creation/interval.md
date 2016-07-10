@@ -16,7 +16,7 @@ const source = Rx.Observable.interval(1000);
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

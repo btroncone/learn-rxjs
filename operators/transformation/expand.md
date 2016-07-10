@@ -38,7 +38,7 @@ const example = source
 const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

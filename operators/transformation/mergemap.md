@@ -56,7 +56,9 @@ const example = source
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
+*On subscription...*
+
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts#L81-L84).
 2. [Project function is invoked with received value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts#L118).
 3. [The result is passed to utility function](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts#L124-L129), where different action is taken dependant on return type of project function.

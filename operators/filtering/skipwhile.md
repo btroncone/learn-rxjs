@@ -18,7 +18,7 @@ const example = source.skipWhile(val => val < 5);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

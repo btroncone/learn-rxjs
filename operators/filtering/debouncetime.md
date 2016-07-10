@@ -27,7 +27,7 @@ const subscribe = debouncedInput.subscribe(val => {
 });
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

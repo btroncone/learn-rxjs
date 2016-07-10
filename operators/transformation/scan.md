@@ -41,7 +41,7 @@ subject.next({age: 30}); // {name: 'Joe', age: 30}
 subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 ### Additional Resources

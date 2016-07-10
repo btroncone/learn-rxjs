@@ -21,7 +21,7 @@ const delayWhenExample = message.delayWhen(delayForFiveSeconds);
 const subscribe = delayWhenExample.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

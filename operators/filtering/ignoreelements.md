@@ -49,7 +49,7 @@ const subscribe = error.subscribe(
 );
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

@@ -21,7 +21,9 @@ const example = source
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
+*On subscription...*
+
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L66)
 2. [An extra subscriber is created, based on the functions passed to do operator](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L85)
 3. Both subscribe functions are invoked with values emitted from source ([Source #1](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L93) | [Source #2](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L97))

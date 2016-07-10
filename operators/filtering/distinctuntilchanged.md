@@ -39,7 +39,9 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
   .subscribe(val => console.log('DISTINCT OBJECTS:', val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
+*On subscription...*
+
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L31)
 2. **For every value emitted from source**
 	1. **IF** [No custom compare function is supplied, a strict equality comparison is performed between the previous and current emission](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L53-L55) ([Performed](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72))

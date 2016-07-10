@@ -19,7 +19,7 @@ const subscribe = example.subscribe({
 });
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

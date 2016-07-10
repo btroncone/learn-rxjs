@@ -41,7 +41,7 @@ const mapSource = Rx.Observable.from(map);
 const subscribe = mapSource.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 

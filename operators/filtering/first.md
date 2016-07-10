@@ -42,7 +42,9 @@ const example = source.first(num => num % 2 === 0,
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
+*On subscription...*
+
 1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L76)
 2. **For every value emitted from source...**
     1. **IF** [Predicate function is supplied, run function against value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L109)

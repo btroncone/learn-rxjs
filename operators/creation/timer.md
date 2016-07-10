@@ -31,7 +31,7 @@ const source = Rx.Observable.timer(1000, 2000);
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Follow the source code...
+### Follow the Source Code
 *Coming soon...*
 
 
