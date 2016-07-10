@@ -1,6 +1,6 @@
 # withLatestFrom
 ####signature: `withLatestFrom(other: Observable, project: Function): Observable`
-*The gist: When source emits, also give last value emitted from another observable...*
+*The gist: When source emits, also get last value emitted from another observable...*
 
 
 ### Examples

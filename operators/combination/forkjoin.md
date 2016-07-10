@@ -1,7 +1,7 @@
 # forkJoin
 
 ####signature: `forkJoin(...args, selector : function): Observable`
-*The gist: Get the last emitted item from each observable on completion...*
+*The gist: Output the last emitted item from each observable on completion...*
 
 
 ### Examples

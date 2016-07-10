@@ -1,6 +1,6 @@
 # buffer
 ####signature: `buffer(closingNotifier: Observable): Observable`
-*The gist: Collect output values until something happens then hand them over. Repeat...*
+*The gist: Collect output values until provided observable emits, emit as array. Repeat...*
 
 ### Examples
 
