@@ -49,7 +49,7 @@ const subscribe = error.subscribe(
 );
 ```
 
-### How ignoreElements works...
+### Follow the source code...
 *Coming soon...*
 
 

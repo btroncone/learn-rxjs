@@ -16,7 +16,7 @@ const source = Rx.Observable.range(1,10);
 const example = source.subscribe(val => console.log(val));
 ```
 
-### How range works...
+### Follow the source code...
 *Coming soon...*
 
 

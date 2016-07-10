@@ -44,7 +44,7 @@ example().then(val => {
 });
 ```
 
-### How toPromise works...
+### Follow the source code...
 *Coming soon...*
 
 

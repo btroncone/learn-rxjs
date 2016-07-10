@@ -18,7 +18,7 @@ const example = source.skipUntil(Rx.Observable.timer(6000));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How skipUntil works...
+### Follow the source code...
 *Coming soon...*
 
 

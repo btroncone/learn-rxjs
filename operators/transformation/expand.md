@@ -38,7 +38,7 @@ const example = source
 const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ```
 
-### How expand works...
+### Follow the source code...
 *Coming soon...*
 
 

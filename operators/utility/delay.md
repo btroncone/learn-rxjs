@@ -23,7 +23,7 @@ const message = Rx.Observable.merge(
 const subscribe = message.subscribe(val => console.log(val));
 ```
 
-### How delay works...
+### Follow the source code...
 *Coming soon...*
 
 

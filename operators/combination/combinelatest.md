@@ -69,7 +69,7 @@ const combinedProject = Rx.Observable
 const subscribe = combinedProject.subscribe(latestValuesProject => console.log(latestValuesProject));
 ```
 
-### How combineLatest works...
+### Follow the source code...
 *Coming soon...*
 
 

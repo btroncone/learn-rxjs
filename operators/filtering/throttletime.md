@@ -42,7 +42,7 @@ const example = source.throttleTime(1500);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How throttleTime works...
+### Follow the source code...
 *Coming soon...*
 
 

@@ -21,7 +21,7 @@ const bufferWhenExample = oneSecondInterval.bufferWhen(fiveSecondInterval);
 const subscribe = bufferWhenExample.subscribe(val => console.log('Emitted Buffer: ', val));
 ```
 
-### How bufferWhen works...
+### Follow the source code...
 *Coming soon...*
 
 

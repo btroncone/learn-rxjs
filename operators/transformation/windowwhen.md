@@ -37,7 +37,7 @@ const subscribeTwo = example
   .subscribe(val => console.log(val));
 ```
 
-### How windowWhen works...
+### Follow the source code...
 *Coming soon...*
 
 

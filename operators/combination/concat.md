@@ -72,7 +72,7 @@ const source = Rx.Observable
 const subscribe = source.subscribe(val => console.log('Example: Source never completes, second observable never runs:', val));
 ```
 
-### How concat works...
+### Follow the source code...
 *Coming soon...*
 
 

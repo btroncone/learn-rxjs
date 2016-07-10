@@ -42,7 +42,7 @@ const example = source.first(num => num % 2 === 0,
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How first works...
+### Follow the source code...
 *Coming soon...*
 
 

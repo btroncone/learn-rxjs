@@ -36,7 +36,7 @@ const subscribe = example
 });
 ```
 
-### How retry works...
+### Follow the source code...
 *Coming soon...*
 
 

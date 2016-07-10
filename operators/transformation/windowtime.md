@@ -33,7 +33,7 @@ const subscribeTwo = example
   .subscribe(val => console.log(val));
 ```
 
-### How windowTime works...
+### Follow the source code...
 *Coming soon...*
 
 

@@ -52,7 +52,7 @@ const example = source.concatMap(val => examplePromise(val), result => `${result
 const subscribe = example.subscribe(val => console.log('Example w/ Selector:', val));
 ```
 
-### How concatMap works...
+### Follow the source code...
 *Coming soon...*
 
 

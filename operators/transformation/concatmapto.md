@@ -53,7 +53,7 @@ const example = interval
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How concatMapTo works...
+### Follow the source code...
 *Coming soon...*
 
 

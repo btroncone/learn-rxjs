@@ -41,7 +41,7 @@ subject.next({age: 30}); // {name: 'Joe', age: 30}
 subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
 ```
 
-### How scan works...
+### Follow the source code...
 *Coming soon...*
 
 ### Additional Resources

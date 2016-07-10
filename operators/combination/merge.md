@@ -45,7 +45,7 @@ const example = first.merge(second);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How merge works...
+### Follow the source code...
 *Coming soon...*
 
 

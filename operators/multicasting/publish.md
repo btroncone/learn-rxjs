@@ -37,7 +37,7 @@ setTimeout(() => {
 },5000)
 ```
 
-### How publish works...
+### Follow the source code...
 *Coming soon...*
 
 

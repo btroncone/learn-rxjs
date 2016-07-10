@@ -60,7 +60,7 @@ const subscribe = Rx.Observable.merge(
 ).subscribe(val => console.log(val));
 ```
 
-### How partition works...
+### Follow the source code...
 *Coming soon...*
 
 

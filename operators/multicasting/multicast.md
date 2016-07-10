@@ -62,7 +62,7 @@ setTimeout(() => {
 }, 5000);
 ```
 
-### How multicast works...
+### Follow the source code...
 *Coming soon...*
 
 

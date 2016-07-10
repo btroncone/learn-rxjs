@@ -27,7 +27,7 @@ const subscribe = debouncedInput.subscribe(val => {
 });
 ```
 
-### How debounceTime works...
+### Follow the source code...
 *Coming soon...*
 
 

@@ -39,7 +39,7 @@ const subscribeThree = sharedExample.subscribe(val => console.log(val));
 const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ```
 
-### How share works...
+### Follow the source code...
 *Coming soon...*
 
 

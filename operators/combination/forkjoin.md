@@ -50,7 +50,7 @@ const exampleTwo = queue
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
 
-### How forkJoin works...
+### Follow the source code...
 *Coming soon...*
 
 

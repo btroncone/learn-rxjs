@@ -36,7 +36,7 @@ const example = source.flatMap(() => Rx.Observable
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How catch works...
+### Follow the source code...
 *Coming soon...*
 
 

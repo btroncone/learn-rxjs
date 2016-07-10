@@ -53,7 +53,7 @@ const example = evenSource
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How takeUntil works...
+### Follow the source code...
 *Coming soon...*
 
 ### Additional Resources

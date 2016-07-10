@@ -19,7 +19,7 @@ const subscribe = example.subscribe({
 });
 ```
 
-### How empty works...
+### Follow the source code...
 *Coming soon...*
 
 

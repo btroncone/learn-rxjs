@@ -27,7 +27,7 @@ const example = source
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How groupBy works...
+### Follow the source code...
 *Coming soon...*
 
 

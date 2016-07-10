@@ -31,8 +31,8 @@ const example = source.mapTo('GOODBYE WORLD!');
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How mapTo works...
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L48).
+### Follow the source code...
+1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L48)
 2. [Each time a value is emitted from source, the supplied value is emitted subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L67).
 
 

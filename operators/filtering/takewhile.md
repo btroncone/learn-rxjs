@@ -17,7 +17,7 @@ const example = source.takeWhile(val => val <= 4);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How takeWhile works...
+### Follow the source code...
 *Coming soon...*
 
 

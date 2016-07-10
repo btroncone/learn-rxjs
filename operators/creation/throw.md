@@ -20,7 +20,7 @@ const subscribe = source.subscribe({
 });
 ```
 
-### How throw works...
+### Follow the source code...
 *Coming soon...*
 
 

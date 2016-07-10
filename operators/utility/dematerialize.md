@@ -26,7 +26,7 @@ const subscription = source.subscribe({
 });
 ```
 
-### How dematerialize works...
+### Follow the source code...
 *Coming soon...*
 
 

@@ -18,7 +18,7 @@ const example = source.skip(5);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How skip works...
+### Follow the source code...
 *Coming soon...*
 
 

@@ -35,7 +35,7 @@ const example = source.sample(Rx.Observable.interval(2500));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How sample works...
+### Follow the source code...
 *Coming soon...*
 
 

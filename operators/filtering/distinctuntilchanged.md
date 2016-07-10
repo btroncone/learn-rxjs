@@ -39,7 +39,7 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
   .subscribe(val => console.log('DISTINCT OBJECTS:', val));
 ```
 
-### How distinctUntilChanged works...
+### Follow the source code...
 *Coming soon...*
 
 

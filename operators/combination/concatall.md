@@ -39,7 +39,7 @@ const example = source
 const subscribe = example.subscribe(val => console.log('Example with Promise:', val));
 ```
 
-### How concatAll works...
+### Follow the source code...
 *Coming soon...*
 
 

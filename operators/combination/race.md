@@ -25,7 +25,7 @@ const example = Rx.Observable.race(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How race works...
+### Follow the source code...
 *Coming soon...*
 
 

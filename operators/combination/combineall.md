@@ -35,7 +35,7 @@ const combined = example.combineAll();
 const subscribe = combined.subscribe(val => console.log(val));
 ```
 
-### How combineAll works...
+### Follow the source code...
 *Coming soon...*
 
 ### Additional Resources

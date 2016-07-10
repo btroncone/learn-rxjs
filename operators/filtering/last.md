@@ -29,7 +29,7 @@ const exampleTwo = source.last(num => num % 2 === 0);
 const subscribeTwo = exampleTwo.subscribe(val => console.log(`Last to pass test: ${val}`));
 ```
 
-### How last works...
+### Follow the source code...
 *Coming soon...*
 
 

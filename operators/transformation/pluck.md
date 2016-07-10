@@ -36,7 +36,7 @@ const example = source.pluck('job', 'title');
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How pluck works...
+### Follow the source code...
 *Coming soon...*
 
 

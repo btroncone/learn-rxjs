@@ -50,7 +50,7 @@ setTimeout(() => {
 }, 10000);
 ```
 
-### How empty works...
+### Follow the source code...
 *Coming soon...*
 
 

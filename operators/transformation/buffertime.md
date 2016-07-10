@@ -36,7 +36,7 @@ const example = source.bufferTime(2000,1000);
 const subscribe = example.subscribe(val => console.log('Start Buffer Every 1s:', val));
 ```
 
-### How bufferTime works...
+### Follow the source code...
 *Coming soon...*
 
 ### Additional Resources

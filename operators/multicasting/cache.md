@@ -42,7 +42,7 @@ setTimeout(() => {
 }, 5000);
 ```
 
-### How cache works...
+### Follow the source code...
 *Coming soon...*
 
 

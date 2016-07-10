@@ -31,7 +31,7 @@ const example = source.switchMap(val => Rx.Observable.interval(3000).mapTo('Hell
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### How switchMap works...
+### Follow the source code...
 *Coming soon...*
 
 
