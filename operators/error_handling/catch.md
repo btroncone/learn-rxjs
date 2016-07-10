@@ -2,6 +2,7 @@
 ####signature: `catch(project : function): Observable`
 *The gist: Gracefully handle errors and exceptions without terminating observable...*
 
+> :bulb: Tip: Remember to return an observable from your catch function!
 
 ### Examples
 

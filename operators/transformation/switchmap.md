@@ -2,6 +2,7 @@
 ####signature: `switchMap(a: Observable): Observable`
 *The gist: When source emits, switch to and emit values emitted from latest inner observable*
 
+> :bulb: Tip: switchMap can cancel in-flight network requests!
 
 ### Examples
 

@@ -2,6 +2,7 @@
 ####signature: `concat(observables: ...*): Observable`
 *The gist: Like the line at an ATM, the next transaction (subscription) won't start until the previous completes...*
 
+> :bulb: Tip: If throughput not order is a primary concern, try [merge](merge.md) instead!
 
 ### Examples
 

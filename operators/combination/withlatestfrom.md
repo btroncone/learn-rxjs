@@ -2,6 +2,7 @@
 ####signature: `withLatestFrom(other: Observable, project: Function): Observable`
 *The gist: When source emits, also get last value emitted from another observable...*
 
+> :bulb: Tip: If you want the last emission any time a variable number of observables emits, try [combinelatest](combinelatest.md)!
 
 ### Examples
 

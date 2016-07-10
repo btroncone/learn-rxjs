@@ -2,6 +2,7 @@
 ####signature: `merge(input: Observable): Observable`
 *The gist: Merge outputs from multiple observables into a single source...*
 
+> :bulb: Tip: If order not throughput is a primary concern, try [concat](concat.md) instead!
 
 ### Examples
 

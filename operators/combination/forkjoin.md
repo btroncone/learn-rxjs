@@ -3,6 +3,7 @@
 ####signature: `forkJoin(...args, selector : function): Observable`
 *The gist: Output the last emitted item from each observable on completion...*
 
+> :bulb: Tip: If you want ordered emissions from multiple observables as they occur, try [zip](zip.md)!
 
 ### Examples
 

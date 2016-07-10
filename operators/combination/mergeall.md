@@ -2,6 +2,7 @@
 ####signature: `mergeAll(concurrent: number): Observable`
 *The gist: Emit values from any observable or promise emitted from source...*
 
+> :bulb: Tip: In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
 
 ### Examples
 

@@ -2,6 +2,7 @@
 ####signature: `concatAll(): Observable`
 *The gist: Concat for nested observables (observable of observables), subscribe to each when previous completes and merge emitted values...*
 
+> :bulb: Tip: In many cases you can use [concatMap](../transformation/concatmap.md) as a single operator instead!
 
 ### Examples
 

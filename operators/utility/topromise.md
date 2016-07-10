@@ -3,6 +3,7 @@
 ####signature: `toPromise() : Promise`
 *The gist: Convert observable to promise...*
 
+
 ### Examples
 
 ##### Example 1: Basic Promise
