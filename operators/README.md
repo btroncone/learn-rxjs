@@ -2,7 +2,7 @@
 
 A complete list of RxJS 5 operators with clear explanations, relevant resources, and executable examples.
 
-*[Prefer a complete list in alphabetical order?](/complete.md)*
+*[Prefer a complete list in alphabetical order?](complete.md)*
 
 ### Contents (By Operator Type)
 * [Combination](combination/README.md)
