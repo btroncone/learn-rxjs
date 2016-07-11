@@ -1,6 +1,6 @@
 # concat
 ####signature: `concat(observables: ...*): Observable`
-*The gist: Like the line at an ATM, the next transaction (subscription) won't start until the previous completes...*
+*The gist: Subscribe to observables in order as the previous completes, emit from source...*
 
 > :bulb: Tip: If throughput not order is a primary concern, try [merge](merge.md) instead!
 
