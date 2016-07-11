@@ -2,7 +2,7 @@
 ####signature: `zip(observables: *): Observable`
 *The gist: After all observables emit, emit values as an array...*
 
-> :bulb: Tip: Combined with an [interval](../creation/interval) or [timer](../creation/timer.md) zip can also be used to time output from another source!
+> :bulb: Tip: Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can also be used to time output from another source!
 
 ### Examples
 
