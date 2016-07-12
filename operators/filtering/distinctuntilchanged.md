@@ -2,6 +2,7 @@
 #### signature: ` distinctUntilChanged(compare: function): Observable`
 *The gist: Only emit when the next value is different then the last...*
 
+> :bulb: Tip: distinctUntilChanged uses '===' comparison by default, object references must match!
 
 ### Examples
 

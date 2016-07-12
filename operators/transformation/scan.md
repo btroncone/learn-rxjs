@@ -2,6 +2,7 @@
 ####signature: `scan(accumulator: function, seed: any): Observable`
 *The gist: Reduce over time...*
 
+> :bulb: Tip: scan is the core for many RxJS based [Redux](http://redux.js.org) implementations!
 
 ### Examples
 

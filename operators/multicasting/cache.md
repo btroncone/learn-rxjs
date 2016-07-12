@@ -3,6 +3,8 @@
 ####signature: `cache(bufferSize: number, windowTime: number, scheduler : Scheduler): Observable`
 *The gist: Share source and deliver specified number of latest emitted values upon subscription...*
 
+> :bulb: Tip: cache is like [multicast](multicast.md) with a ReplaySubject and refCount!
+
 ### Examples
 
 ##### Example 1: Cache last value from source

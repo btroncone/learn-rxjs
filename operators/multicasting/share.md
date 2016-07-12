@@ -2,6 +2,8 @@
 ####signature: `share(): Observable`
 *The gist: Share observable among multiple subscribers...*
 
+> :bulb: Tip: share is like [multicast](multicast.md) with a Subject and refCount!
+
 ### Examples
 
 ##### Example 1: Multiple subscribers sharing source

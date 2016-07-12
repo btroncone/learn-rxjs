@@ -4,6 +4,8 @@
 
 *You could also: `map -> mergeAll`*
 
+> :bulb: Tip: flatMap is an alias for mergeMap!
+
 ### Examples
 
 ##### Example 1: mergeMap with observable
