@@ -52,9 +52,9 @@ const example = source.concatMap(val => examplePromise(val), result => `${result
 const subscribe = example.subscribe(val => console.log('Example w/ Selector:', val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [concatMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts)

@@ -31,19 +31,11 @@ const example = source.map(person => person.name);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L54)
-
-*When value is emitted from source...*
-
-1. [The supplied project function is invoked with value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L79)
-2. [The result of the project function is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts#L84)
-
-
 
 ### Additional Resources
 * [map](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-map) :newspaper: - Official docs
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts)

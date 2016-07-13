@@ -29,9 +29,8 @@ const subscribe = count.subscribe(val => console.log(`Window ${val}:`));
 const subscribeTwo = example.mergeAll().subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [window](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window) :newspaper: - Official docs
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/window.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/window.ts)

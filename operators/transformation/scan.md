@@ -42,11 +42,12 @@ subject.next({age: 30}); // {name: 'Joe', age: 30}
 subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
 ```
 
-### Follow the Source Code
-*Coming soon...*
 
 ### Additional Resources
 * [scan](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan) :newspaper: - Official docs
 * [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs) :video_camera: - Ben Lesh
 * [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts)

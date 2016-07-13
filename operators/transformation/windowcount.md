@@ -35,9 +35,9 @@ const subscribeTwo = example
   .subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [windowCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowCount) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowCount.ts)

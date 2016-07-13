@@ -27,10 +27,10 @@ const source = Rx.Observable.of({name: 'Brian'}, [1,2,3], function hello(){ retu
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [of](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of) :newspaper: - Official docs
 * [Creation operators: of](https://egghead.io/lessons/rxjs-creation-operator-of?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/ArrayObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/ArrayObservable.ts)

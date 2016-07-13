@@ -29,10 +29,10 @@ const exampleTwo = source.last(num => num % 2 === 0);
 const subscribeTwo = exampleTwo.subscribe(val => console.log(`Last to pass test: ${val}`));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [last](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-last) :newspaper: - Official docs
 * [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts)

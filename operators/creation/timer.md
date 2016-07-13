@@ -31,10 +31,10 @@ const source = Rx.Observable.timer(1000, 2000);
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [timer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer) :newspaper: - Official docs
 * [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts)

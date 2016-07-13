@@ -60,9 +60,9 @@ const subscribe = Rx.Observable.merge(
 ).subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [partition](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-partition) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts)

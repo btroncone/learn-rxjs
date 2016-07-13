@@ -41,10 +41,10 @@ const mapSource = Rx.Observable.from(map);
 const subscribe = mapSource.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from) :newspaper: - Official docs
 * [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromObservable.ts)

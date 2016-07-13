@@ -18,9 +18,9 @@ const example = source.skipWhile(val => val < 5);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [skipWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipWhile) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts)

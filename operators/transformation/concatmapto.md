@@ -53,9 +53,9 @@ const example = interval
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [concatMapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts)

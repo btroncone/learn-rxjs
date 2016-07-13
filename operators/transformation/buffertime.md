@@ -36,8 +36,9 @@ const example = source.bufferTime(2000,1000);
 const subscribe = example.subscribe(val => console.log('Start Buffer Every 1s:', val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
 
 ### Additional Resources
 * [bufferTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferTime) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferTime.ts)

@@ -18,9 +18,9 @@ const example = source.skipUntil(Rx.Observable.timer(6000));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [skipUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipUntil) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipUntil.ts)

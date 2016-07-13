@@ -49,9 +49,9 @@ const subscribe = error.subscribe(
 );
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [ignoreElements](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts)

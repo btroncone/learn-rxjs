@@ -35,8 +35,9 @@ const combined = example.combineAll();
 const subscribe = combined.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
 
 ### Additional Resources
 * [combineAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/combineAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/combineAll.ts)

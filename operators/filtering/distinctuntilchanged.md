@@ -40,20 +40,10 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
   .subscribe(val => console.log('DISTINCT OBJECTS:', val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L31)
-
-*When value is emitted from source...*
-
-1. **IF** [No custom compare function is supplied, a strict equality comparison is performed between the previous and current emission](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L53-L55) ([Performed](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72))
-	1. **IF** [Comparison returns false, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L80-L83)
-2. **IF** [Custom compare function is supplied, invoke with current and previously emitted value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72) ([Override](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L72))
-	1. **IF** [Comparison returns false, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts#L80-L83)
-
-
 
 ### Additional Resources
 * [distinctUntilChanged](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged) :newspaper: - Official docs
 * [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts)

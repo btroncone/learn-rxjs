@@ -16,10 +16,9 @@ const source = Rx.Observable.interval(1000);
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
-
 ### Additional Resources
 * [interval](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-interval) :newspaper: - Official docs
 * [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts)

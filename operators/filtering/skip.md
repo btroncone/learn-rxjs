@@ -18,14 +18,10 @@ const example = source.skip(5);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts#L29)
-2. [Internal count of emissions from source is kept](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts#L39)
-3. **IF** - [The count of emitted values from source is greater then supplied count, emit values to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts#L46-L48)
-
 
 ### Additional Resources
 * [skip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skip) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts)

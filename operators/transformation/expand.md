@@ -38,9 +38,9 @@ const example = source
 const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts)

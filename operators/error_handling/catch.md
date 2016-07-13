@@ -37,9 +37,9 @@ const example = source.flatMap(() => Rx.Observable
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [Error handling operator: catch](https://egghead.io/lessons/rxjs-error-handling-operator-catch?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/catch.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/catch.ts)

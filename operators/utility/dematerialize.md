@@ -26,9 +26,9 @@ const subscription = source.subscribe({
 });
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [dematerialize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-dematerialize) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/dematerialize.ts)

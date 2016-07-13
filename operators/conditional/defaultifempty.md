@@ -30,9 +30,9 @@ const example = empty.defaultIfEmpty('Observable.empty()!');
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [defaultIfEmpty](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-defaultIfEmpty) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts)

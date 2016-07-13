@@ -18,9 +18,9 @@ const example = source.map(event => `Event time: ${event.timeStamp}`)
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [fromEvent](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromEventObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromEventObservable.ts)

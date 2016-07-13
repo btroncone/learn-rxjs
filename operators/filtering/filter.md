@@ -49,18 +49,10 @@ const example = source.filter(num => num > 5);
 const subscribe = example.subscribe(val => console.log(`Number greater than 5: ${val}`));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L60)
-
-*When value is emitted from source...*
-
-1. [The supplied predicate expression is invoked with value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L85)
-2. **IF** - [The result is truthy, value is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts#L90-L92)
-
-
 ### Additional Resources
 * [filter](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter) :newspaper: - Official docs
 * [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts)

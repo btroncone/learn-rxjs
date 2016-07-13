@@ -53,9 +53,10 @@ const example = evenSource
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
 
 ### Additional Resources
 * [takeUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeUntil) :newspaper: - Official docs
 * [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts)

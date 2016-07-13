@@ -33,9 +33,9 @@ const subscribeTwo = example
   .subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [windowTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowTime.ts)

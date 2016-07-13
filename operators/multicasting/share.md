@@ -41,10 +41,10 @@ const subscribeThree = sharedExample.subscribe(val => console.log(val));
 const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [share](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share) :newspaper: - Official docs
 * [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts)

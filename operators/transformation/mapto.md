@@ -31,18 +31,11 @@ const example = source.mapTo('GOODBYE WORLD!');
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L48)
-
-*When value is emitted from source...*
-
-1. [The constant value provided to `mapTo` operator is emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts#L67).
-
-
 
 ### Additional Resources
 * [mapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mapTo) :newspaper: - Official docs
 * [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts)

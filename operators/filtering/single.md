@@ -18,9 +18,9 @@ const example = source.single(val => val === 4);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [single](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-single) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/single.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/single.ts)

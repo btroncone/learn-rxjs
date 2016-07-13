@@ -31,18 +31,10 @@ const example = interval.take(5);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts#L60)
-
-*When value is emitted from source...*
-
-1. [Internal counter is incremented](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts#L78)
-    1. **IF** - [The total number of values emitted from source is less than or equal to supplied value, deliver value to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts#L78-L79)
-    2. **IF** - [The total number of values emitted from source is greater than supplied value, unsubscribe and complete](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts#L80-L83)
-
 
 ### Additional Resources
 * [take](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts)

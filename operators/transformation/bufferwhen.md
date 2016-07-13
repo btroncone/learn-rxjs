@@ -21,9 +21,9 @@ const bufferWhenExample = oneSecondInterval.bufferWhen(fiveSecondInterval);
 const subscribe = bufferWhenExample.subscribe(val => console.log('Emitted Buffer: ', val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [bufferWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferWhen) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts)

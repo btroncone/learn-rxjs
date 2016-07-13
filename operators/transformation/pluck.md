@@ -36,9 +36,9 @@ const example = source.pluck('job', 'title');
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [pluck](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/pluck.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/pluck.ts)

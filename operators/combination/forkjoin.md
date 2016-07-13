@@ -51,9 +51,9 @@ const exampleTwo = queue
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [forkJoin](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/forkJoin.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/forkJoin.ts)

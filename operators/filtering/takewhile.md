@@ -17,10 +17,10 @@ const example = source.takeWhile(val => val <= 4);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [takeWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeWhile) :newspaper: - Official docs
 * [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeWhile.ts)

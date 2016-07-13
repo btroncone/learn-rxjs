@@ -48,16 +48,9 @@ const bufferEveryOne = source.bufferCount(3,1);
 const subscribe = bufferEveryOne.subscribe(val => console.log('Start Buffer Every 1:', val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L59)
-
-*When value is emitted from source...*
-
-1. [Each value is pushed to internal array](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L91)
-    1. **IF** - [The second parameter, *startBufferEvery* is supplied, an additional buffer array will be created for every given values emitted from source](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L85-L87)
-2. [When supplied buffer size is met, buffer is emitted to subscriber and removed](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts#L92-L100)
 
 ### Additional Resources
 * [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts)

@@ -70,9 +70,9 @@ const subscribe = obsArrayPlusYourOperators(addTenThenTwenty)
 	.subscribe(val => console.log('let FROM FUNCTION:', val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [let](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/let.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/let.ts)

@@ -62,9 +62,9 @@ setTimeout(() => {
 }, 5000);
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [multicast](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-multicast) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/multicast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/multicast.ts)

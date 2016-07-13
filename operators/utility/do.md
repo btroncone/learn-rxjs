@@ -21,20 +21,11 @@ const example = source
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L66)
-2. [An extra subscriber is created, based on the functions passed to do operator](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L85)
-
-*When value is emitted from source...*
-
-1. Both subscribe functions are invoked ([Source 1](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L93) | [Source 2](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L97))
-2. [Errors are forwarded to main subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts#L94-L95)
-
-
 
 ### Additional Resources
 * [do](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts) :newspaper: - Official docs
 * [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts)

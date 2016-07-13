@@ -42,18 +42,10 @@ const example = source.first(num => num % 2 === 0,
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L76)
-
-*When value is emitted from source...*
-
-1. **IF** [Predicate function is supplied, run function against value](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L109)
-    1. **IF** [Return value of predicate is truthy, emit value to subscriber and complete](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L138-L143)
-2. **IF** [No predicate function is supplied, emit value to subscriber and complete](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts#L138-L143)
-
 
 ### Additional Resources
 * [first](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-first) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/first.ts)

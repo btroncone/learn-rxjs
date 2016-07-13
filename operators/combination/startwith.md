@@ -39,11 +39,13 @@ const example = source
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
 
 ### Additional Resources
 * [startWith](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith) :newspaper: - Official docs
 * [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Clear data while loading with startWith](https://egghead.io/lessons/rxjs-reactive-programming-clear-data-while-loading-with-rxjs-startwith?course=introduction-to-reactive-programming) :video_camera: :dollar: - André Staltz
 * [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/startWith.ts)

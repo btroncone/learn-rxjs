@@ -44,9 +44,9 @@ setTimeout(() => {
 }, 5000);
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [cache](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-cache) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/cache.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/cache.ts)

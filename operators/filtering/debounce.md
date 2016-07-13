@@ -41,10 +41,10 @@ const debouncedInterval = interval.debounce(val => Rx.Observable.timer(val * 200
 const subscribe = debouncedInterval.subscribe(val => console.log(`Example Two: ${val}`));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [debounce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce) :newspaper: - Official docs
 * [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts)

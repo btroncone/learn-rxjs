@@ -35,9 +35,9 @@ const example = source.sample(Rx.Observable.interval(2500));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [sample](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-sample) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/sample.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/sample.ts)

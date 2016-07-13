@@ -22,17 +22,9 @@ const myBufferedInterval = myInterval.buffer(bufferBy);
 const subscribe = myBufferedInterval.subscribe(val => console.log(' Buffered Values:', val));
 ```
 
-### Follow the Source Code
-*On subscription...*
-
-1. [Operator subscribes to source observable](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L55)
-2. [An inner subscriber is created](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L21) and [subscribed to the provided inner observable, or *closing notifier*](https://github.com/ReactiveX/rxjs/blob/master/src/util/subscribeToResult.ts#L33)
-
-*When value is emitted from source...*
-
-1. [Values are pushed to internal array](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L73)
-2. [When the provided inner observable emits](https://github.com/ReactiveX/rxjs/blob/master/src/InnerSubscriber.ts#L17), the [buffer is cleared and emitted to subscriber](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts#L76-L82). Repeat...
 
 ### Additional Resources
 * [buffer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer) :newspaper: - Official docs
 * [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts)

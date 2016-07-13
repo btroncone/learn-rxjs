@@ -16,9 +16,9 @@ const source = Rx.Observable.range(1,10);
 const example = source.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [range](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/RangeObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/RangeObservable.ts)

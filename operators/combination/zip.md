@@ -44,10 +44,10 @@ const example = Rx.Observable
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip) :newspaper: - Official docs
 * [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/zip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/zip.ts)

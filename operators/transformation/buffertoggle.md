@@ -26,9 +26,9 @@ const bufferToggleInterval = sourceInterval.bufferToggle(startInterval, closingI
 const subscribe = bufferToggleInterval.subscribe(val => console.log('Emitted Buffer:', val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [bufferToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle) :newspaper: - Official docs
+
+
+> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts)
