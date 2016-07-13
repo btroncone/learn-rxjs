@@ -1,9 +1,11 @@
 # concatMap
 ####signature: `concatMap(project: function, resultSelector: function): Observable`
-*The gist: Map values from source to inner observable, subscribe and emit inner observable values in order...*
 
-*You could also: `map -> concatAll`*
+### Description
 
+###### TL;DR: Map values from source to inner observable, subscribe and emit inner observable values in order
+
+*Description coming soon...*
 
 ### Examples
 
@@ -56,5 +58,5 @@ const subscribe = example.subscribe(val => console.log('Example w/ Selector:', v
 ### Additional Resources
 * [concatMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts)

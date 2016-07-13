@@ -1,7 +1,11 @@
 # fromEvent
-
 ####signature: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
-*The gist: Emit events from observable...*
+
+### Description
+
+###### TL;DR: Wrap event in observable
+
+*Description coming soon...*
 
 ### Examples
 
@@ -22,5 +26,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [fromEvent](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromEventObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromEventObservable.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromEventObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/FromEventObservable.ts)

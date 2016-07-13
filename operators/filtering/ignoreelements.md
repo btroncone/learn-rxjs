@@ -1,8 +1,12 @@
 # ignoreElements
 ####signature: `ignoreElements(): Observable`
-*The gist: Ignore everything but complete and error...*
 
 
+### Description
+
+###### TL;DR: Ignore everything but complete and error
+
+*Description coming soon...*
 
 ### Examples
 
@@ -53,5 +57,5 @@ const subscribe = error.subscribe(
 ### Additional Resources
 * [ignoreElements](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts)

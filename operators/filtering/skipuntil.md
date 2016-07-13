@@ -1,7 +1,11 @@
 # skipUntil
 ####signature: `skipUntil(the: Observable): Observable`
-*The gist: Skip emitted items from source until inner observable emits...*
 
+### Description
+
+###### TL;DR: Skip emitted items from source until inner observable emits
+
+*Description coming soon...*
 
 ### Examples
 
@@ -22,5 +26,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [skipUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipUntil) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipUntil.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipUntil.ts)

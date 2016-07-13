@@ -1,7 +1,11 @@
 # timer
-
 ####signature: `timer(initialDelay: number | Date, period: number, scheduler: Scheduler): Observable`
-*The gist: After given duration, emit numbers in sequence every specified duration...*
+
+### Description
+
+###### TL;DR: After given duration, emit numbers in sequence every specified duration
+
+*Description coming soon...*
 
 ### Examples
 
@@ -36,5 +40,5 @@ const subscribe = source.subscribe(val => console.log(val));
 * [timer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer) :newspaper: - Official docs
 * [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts)

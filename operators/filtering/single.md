@@ -1,7 +1,11 @@
 # single
 ####signature: `single(a: Function): Observable`
-*The gist: Emit single item that matches condition...*
 
+### Description
+
+###### TL;DR: Emit single item that matches condition
+
+*Description coming soon...*
 
 ### Examples
 
@@ -22,5 +26,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [single](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-single) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/single.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/single.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/single.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/single.ts)

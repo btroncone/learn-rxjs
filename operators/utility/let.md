@@ -1,7 +1,11 @@
 # let
 ####signature: `let(function): Observable`
-*The gist: let me have the whole observable...*
 
+### Description
+
+###### TL;DR: Let me have the whole observable
+
+*Description coming soon...*
 
 ### Examples
 
@@ -74,5 +78,5 @@ const subscribe = obsArrayPlusYourOperators(addTenThenTwenty)
 ### Additional Resources
 * [let](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/let.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/let.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/let.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/let.ts)

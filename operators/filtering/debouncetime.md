@@ -1,7 +1,11 @@
 # debounceTime
 ####signature: `debounceTime(dueTime: number, scheduler: Scheduler): Observable`
-*The gist: Throw away all emitted values that take less then the specified time between output...*
 
+### Description
+
+###### TL;DR: Throw away all emitted values that take less then the specified time between output
+
+*Description coming soon...*
 
 ### Examples
 
@@ -32,5 +36,5 @@ const subscribe = debouncedInput.subscribe(val => {
 * [debounceTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounceTime) :newspaper: - Official docs
 * [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounceTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounceTime.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounceTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounceTime.ts)

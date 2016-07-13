@@ -1,7 +1,11 @@
 # groupBy
 ####signature: `groupBy(keySelector: Function, elementSelector: Function): Observable`
-*The gist: Group into observables by given value...*
 
+### Description
+
+###### TL;DR: Group into observables by provided value
+
+*Description coming soon...*
 
 ### Examples
 
@@ -31,5 +35,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [groupBy](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-groupBy) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/groupBy.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/groupBy.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/groupBy.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/groupBy.ts)

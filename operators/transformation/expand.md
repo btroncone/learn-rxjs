@@ -1,7 +1,11 @@
 # expand
 ####signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
-*The gist: Recursively call provided function...*
 
+### Description
+
+###### TL;DR: Recursively call provided function
+
+*Description coming soon...*
 
 ### Examples
 
@@ -42,5 +46,5 @@ const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ### Additional Resources
 * [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts)

@@ -1,7 +1,11 @@
 # retry
 ####signature: `retry(number: number): Observable`
-*The gist: Retry specified number of times on error...*
 
+### Description
+
+###### TL;DR: Retry provided number of times on error
+
+*Description coming soon...*
 
 ### Examples
 
@@ -41,5 +45,5 @@ const subscribe = example
 * [retry](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retry) :newspaper: - Official docs
 * [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/retry.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/retry.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/retry.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/retry.ts)

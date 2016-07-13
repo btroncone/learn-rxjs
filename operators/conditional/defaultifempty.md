@@ -1,7 +1,11 @@
 # defaultIfEmpty
 ####signature: `defaultIfEmpty(defaultValue: any): Observable`
-*The gist: When observable is empty use given default, or null...*
 
+### Description
+
+###### TL;DR: Use given default when empty, or null
+
+*Description coming soon...*
 
 ### Examples
 
@@ -34,5 +38,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [defaultIfEmpty](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-defaultIfEmpty) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts)

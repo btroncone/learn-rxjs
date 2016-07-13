@@ -1,8 +1,11 @@
 # toPromise
-
 ####signature: `toPromise() : Promise`
-*The gist: Convert observable to promise...*
 
+### Description
+
+###### TL;DR: Convert observable to promise
+
+*Description coming soon...*
 
 ### Examples
 
@@ -49,5 +52,5 @@ example().then(val => {
 ### Additional Resources
 * [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md) :newspaper: - Official Docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts)

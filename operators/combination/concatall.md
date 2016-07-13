@@ -1,6 +1,11 @@
 # concatAll
 ####signature: `concatAll(): Observable`
-*The gist: Concat for nested observables (observable of observables), subscribe to each when previous completes and merge emitted values...*
+
+### Description
+
+###### TL;DR: Concat for nested observables, subscribe to each when previous completes and merge emitted values
+
+*Description coming soon...*
 
 > :bulb: Tip: In many cases you can use [concatMap](../transformation/concatmap.md) as a single operator instead!
 
@@ -44,5 +49,5 @@ const subscribe = example.subscribe(val => console.log('Example with Promise:', 
 ### Additional Resources
 * [concatAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatAll.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatAll.ts)

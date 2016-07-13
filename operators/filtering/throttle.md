@@ -1,6 +1,11 @@
 # throttle
 ####signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
-*The gist: Emit value only when specified duration, returned from provided function, has passed...*
+
+### Description
+
+###### TL;DR: Emit value only when specified duration, returned from provided function, has passed
+
+*Description coming soon...*
 
 ### Examples
 
@@ -39,5 +44,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [throttle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttle) :newspaper: - Official docs
 * [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttle.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttle.ts)

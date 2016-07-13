@@ -1,7 +1,11 @@
 # partition
 ####signature: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
-*The gist: Split one observable into two based on predicate...*
 
+### Description
+
+###### TL;DR: Split one observable into two based on predicate
+
+*Description coming soon...*
 
 ### Examples
 
@@ -64,5 +68,5 @@ const subscribe = Rx.Observable.merge(
 ### Additional Resources
 * [partition](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-partition) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts)

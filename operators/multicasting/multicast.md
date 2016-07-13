@@ -1,7 +1,11 @@
 # multicast
 ####signature: `multicast(selector: Function): Observable`
-*The gist: Share subscription to source given particular Subject...*
 
+### Description
+
+###### TL;DR: Share subscription to source given particular Subject
+
+*Description coming soon...*
 
 ### Examples
 
@@ -66,5 +70,5 @@ setTimeout(() => {
 ### Additional Resources
 * [multicast](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-multicast) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/multicast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/multicast.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/multicast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/multicast.ts)

@@ -1,7 +1,11 @@
 # mapTo
 ####signature: `mapTo(value: any): Observable`
-*The gist: Map to a constant value every time...*
 
+### Description
+
+###### TL;DR: Map to constant value
+
+*Description coming soon...*
 
 ### Examples
 
@@ -37,5 +41,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mapTo.ts)

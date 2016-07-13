@@ -1,7 +1,11 @@
 # skip
 ####signature: `skip(the: Number): Observable`
-*The gist: Skip a specified number of emitted items...*
 
+### Description
+
+###### TL;DR: Skip a specified number of emitted items
+
+*Description coming soon...*
 
 ### Examples
 
@@ -23,5 +27,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [skip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skip) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skip.ts)

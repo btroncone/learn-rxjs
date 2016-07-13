@@ -1,7 +1,11 @@
 # sample
 ####signature: `sample(sampler: Observable): Observable`
-*The gist: Sample from source when supplied observable emits...*
 
+### Description
+
+###### TL;DR: Sample from source when supplied observable emits
+
+*Description coming soon...*
 
 ### Examples
 
@@ -39,5 +43,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [sample](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-sample) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/sample.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/sample.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/sample.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/sample.ts)

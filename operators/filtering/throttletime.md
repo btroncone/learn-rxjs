@@ -1,8 +1,11 @@
 # throttleTime
-
 ####signature: `throttleTime(duration: number, scheduler: Scheduler): Observable`
-*The gist: Emit latest value when specified duration has passed...*
 
+### Description
+
+###### TL;DR: Emit latest value when specified duration has passed
+
+*Description coming soon...*
 
 ### Examples
 
@@ -47,5 +50,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [throttleTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime) :newspaper: - Official docs
 * [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttleTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttleTime.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttleTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/throttleTime.ts)

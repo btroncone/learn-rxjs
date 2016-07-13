@@ -1,7 +1,11 @@
 # concatMapTo
 ####signature: `concatMapTo(observable: Observable, resultSelector: function): Observable`
-*The gist: When source emits, always subscribe to the same observable, merging together results when complete...*
 
+### Description
+
+###### TL;DR: When source emits subscribe to a single observable, merge results when complete
+
+*Description coming soon...*
 
 ### Examples
 
@@ -57,5 +61,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [concatMapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts)

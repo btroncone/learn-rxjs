@@ -1,6 +1,11 @@
 # merge
 ####signature: `merge(input: Observable): Observable`
-*The gist: Merge outputs from multiple observables into a single source...*
+
+### Description
+
+###### TL;DR: Merge outputs from multiple observables into a single source
+
+*Description coming soon...*
 
 > :bulb: Tip: If order not throughput is a primary concern, try [concat](concat.md) instead!
 
@@ -53,5 +58,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming) :video_camera: :dollar: - André Staltz
 * [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts)

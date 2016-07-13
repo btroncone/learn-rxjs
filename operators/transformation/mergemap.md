@@ -1,8 +1,11 @@
 # mergeMap
 #### signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
-*The gist: Map values from source to inner observable, flatten output...*
 
-*You could also: `map -> mergeAll`*
+### Description
+
+###### TL;DR: Map values from source to inner observable, merge output
+
+*Description coming soon...*
 
 > :bulb: Tip: flatMap is an alias for mergeMap!
 
@@ -64,5 +67,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh
 * [Async requests and responses in RxJS](https://egghead.io/lessons/rxjs-04-reactive-programming-async-requests-and-responses-in-rxjs) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeMap.ts)

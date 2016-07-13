@@ -1,6 +1,11 @@
 # switchMap
 ####signature: `switchMap(a: Observable): Observable`
-*The gist: When source emits, switch to and emit values emitted from latest inner observable*
+
+### Description
+
+###### TL;DR: When source emits switch to new inner observable
+
+*Description coming soon...*
 
 > :bulb: Tip: switchMap can cancel in-flight network requests!
 
@@ -37,5 +42,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [switchMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap) :newspaper: - Official docs
 * [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/switchMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/switchMap.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/switchMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/switchMap.ts)

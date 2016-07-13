@@ -1,7 +1,11 @@
 # retryWhen
 ####signature: `retryWhen(receives: notificationHandler, the: scheduler): Observable`
-*The gist: Retry with additional logic...*
 
+### Description
+
+###### TL;DR: Retry with additional logic
+
+*Description coming soon...*
 
 ### Examples
 
@@ -40,10 +44,11 @@ const example = source
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Follow the Source Code
-*Coming soon...*
-
 
 ### Additional Resources
 * [retryWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retryWhen) :newspaper: - Official docs
 * [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/retryWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/retryWhen.ts)

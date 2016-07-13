@@ -1,7 +1,11 @@
 # race
 ####signature: `race(): Observable`
-*The gist: Take the first observable to emit...*
 
+### Description
+
+###### TL;DR: Use the first observable to emit
+
+*Description coming soon...*
 
 ### Examples
 
@@ -29,5 +33,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts)

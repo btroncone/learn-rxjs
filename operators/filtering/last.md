@@ -1,7 +1,11 @@
 # last
 ####signature: `last(predicate: function): Observable`
-*The gist: Emit last item or last to pass test...*
 
+### Description
+
+###### TL;DR: Emit last item or last to pass test
+
+*Description coming soon...*
 
 ### Examples
 
@@ -34,5 +38,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(`Last to pass test:
 * [last](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-last) :newspaper: - Official docs
 * [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts)

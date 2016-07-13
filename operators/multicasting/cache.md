@@ -1,7 +1,11 @@
 # cache
-
 ####signature: `cache(bufferSize: number, windowTime: number, scheduler : Scheduler): Observable`
-*The gist: Share source and deliver specified number of latest emitted values upon subscription...*
+
+### Description
+
+###### TL;DR: Share source and deliver specified number of latest emitted values upon subscription
+
+*Description coming soon...*
 
 > :bulb: Tip: cache is like [multicast](multicast.md) with a ReplaySubject and refCount!
 
@@ -48,5 +52,5 @@ setTimeout(() => {
 ### Additional Resources
 * [cache](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-cache) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/cache.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/cache.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/cache.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/cache.ts)

@@ -1,6 +1,11 @@
 # buffer
 ####signature: `buffer(closingNotifier: Observable): Observable`
-*The gist: Collect output values until provided observable emits, emit as array. Repeat...*
+
+### Description
+
+###### TL;DR: Collect output values until provided observable emits, emit as array
+
+*Description coming soon...*
 
 ### Examples
 
@@ -27,4 +32,5 @@ const subscribe = myBufferedInterval.subscribe(val => console.log(' Buffered Val
 * [buffer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer) :newspaper: - Official docs
 * [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts)

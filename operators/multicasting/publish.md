@@ -1,7 +1,11 @@
 # publish
 ####signature: `publish() : ConnectableObservable`
-*The gist: Do nothing until connect is called, share source...*
 
+### Description
+
+###### TL;DR: Do nothing until connect is called, share source
+
+*Description coming soon...*
 
 ### Examples
 
@@ -42,4 +46,4 @@ setTimeout(() => {
 * [publish](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-publish) :newspaper: - Official docs
 
 
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/publish.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/publish.ts)
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/publish.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/publish.ts)

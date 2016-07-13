@@ -1,7 +1,11 @@
 # dematerialize
 #### signature: `dematerialize(): Observable`
-*The gist: Turn notification objects into notification values...*
 
+### Description
+
+###### TL;DR: Turn notification objects into notification values
+
+*Description coming soon...*
 
 ### Examples
 
@@ -30,5 +34,5 @@ const subscription = source.subscribe({
 ### Additional Resources
 * [dematerialize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-dematerialize) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/dematerialize.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/dematerialize.ts)

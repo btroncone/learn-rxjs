@@ -1,6 +1,11 @@
 # catch
 ####signature: `catch(project : function): Observable`
-*The gist: Gracefully handle errors and exceptions without terminating observable...*
+
+### Description
+
+###### TL;DR: Gracefully handle errors and exceptions without terminating observable
+
+*Description coming soon...*
 
 > :bulb: Tip: Remember to return an observable from your catch function!
 
@@ -41,5 +46,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [Error handling operator: catch](https://egghead.io/lessons/rxjs-error-handling-operator-catch?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/catch.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/catch.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/catch.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/catch.ts)

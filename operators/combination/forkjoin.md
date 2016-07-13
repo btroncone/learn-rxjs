@@ -1,7 +1,11 @@
 # forkJoin
-
 ####signature: `forkJoin(...args, selector : function): Observable`
-*The gist: Output the last emitted item from each observable on completion...*
+
+### Description
+
+###### TL;DR: Output the last emitted item from each observable on completion
+
+*Description coming soon...*
 
 > :bulb: Tip: If you want ordered emissions from multiple observables as they occur, try [zip](zip.md)!
 
@@ -55,5 +59,5 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ### Additional Resources
 * [forkJoin](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/forkJoin.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/forkJoin.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/ForkJoinObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/ForkJoinObservable.ts)

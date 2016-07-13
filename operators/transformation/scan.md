@@ -1,6 +1,11 @@
 # scan
 ####signature: `scan(accumulator: function, seed: any): Observable`
-*The gist: Reduce over time...*
+
+### Description
+
+###### TL;DR: Reduce over time
+
+*Description coming soon...*
 
 > :bulb: Tip: scan is the core for many RxJS based [Redux](http://redux.js.org) implementations!
 
@@ -49,5 +54,5 @@ subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favori
 * [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts)

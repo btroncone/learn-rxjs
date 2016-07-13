@@ -2,6 +2,12 @@
 ####signature: `mergeAll(concurrent: number): Observable`
 *The gist: Emit values from any observable or promise emitted from source...*
 
+### Description
+
+###### TL;DR: Emit values from observables or promises emitted from source
+
+*Description coming soon...*
+
 > :bulb: Tip: In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
 
 ### Examples
@@ -34,5 +40,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [mergeAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeAll) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts)

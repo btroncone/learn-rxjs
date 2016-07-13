@@ -1,7 +1,11 @@
 # do
 ####signature: `do(nextOrObserver: function, error: function, complete: function): Observable`
-*The gist: Transparently perform actions, such as logging...*
 
+### Description
+
+###### TL;DR: Transparently perform actions, such as logging
+
+*Description coming soon...*
 
 ### Examples
 
@@ -27,5 +31,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/do.ts)

@@ -1,7 +1,11 @@
 # skipWhile
 ####signature: `skipWhile(predicate: Function): Observable`
-*The gist: Skip emitted items from source until provided expression is false...*
 
+### Description
+
+###### TL;DR: Skip emitted items from source until provided expression is false
+
+*Description coming soon...*
 
 ### Examples
 
@@ -22,5 +26,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [skipWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipWhile) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts)

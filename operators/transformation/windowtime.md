@@ -1,6 +1,11 @@
 # windowTime
 ####signature: `windowTime(windowTimeSpan: number, windowCreationInterval: number, scheduler: Scheduler): Observable`
-*The gist: Emit an observable of values collected from source every specified time span*
+
+### Description
+
+###### TL;DR: Emit an observable of values collected from source every specified time span
+
+*Description coming soon...*
 
 ### Examples
 
@@ -37,5 +42,5 @@ const subscribeTwo = example
 ### Additional Resources
 * [windowTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowTime.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowTime.ts)

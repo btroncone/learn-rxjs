@@ -1,7 +1,11 @@
 # filter
 ####signature: `filter(select: Function, thisArg: any): Observable`
-*The gist: Only return values that pass the provided condition...*
 
+### Description
+
+###### TL;DR: Only return values that pass the provided condition
+
+*Description coming soon...*
 
 ### Examples
 
@@ -54,5 +58,5 @@ const subscribe = example.subscribe(val => console.log(`Number greater than 5: $
 * [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/filter.ts)

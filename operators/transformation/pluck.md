@@ -1,7 +1,11 @@
 # pluck
 ####signature: `pluck(properties: ...args): Observable`
-*The gist: Pick out nested properties...*
 
+### Description
+
+###### TL;DR: Pick out properties
+
+*Description coming soon...*
 
 ### Examples
 
@@ -40,5 +44,5 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [pluck](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/pluck.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/pluck.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/pluck.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/pluck.ts)

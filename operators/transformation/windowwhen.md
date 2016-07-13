@@ -2,6 +2,12 @@
 ####signature: `windowWhen(closingSelector: function(): Observable): Observable`
 *The gist: Close window at specified time frame emitting observable of collected values from source, repeat...*
 
+### Description
+
+###### TL;DR: Given a group of observables, when one emits also emit latest values from each
+
+*Description coming soon...*
+
 ### Examples
 
 ##### Example 1: Open and close window at interval
@@ -41,5 +47,5 @@ const subscribeTwo = example
 ### Additional Resources
 * [windowWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowWhen) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowWhen.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowWhen.ts)

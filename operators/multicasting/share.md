@@ -1,6 +1,11 @@
 # share
 ####signature: `share(): Observable`
-*The gist: Share observable among multiple subscribers...*
+
+### Description
+
+###### TL;DR: Share source among multiple subscribers
+
+*Description coming soon...*
 
 > :bulb: Tip: share is like [multicast](multicast.md) with a Subject and refCount!
 
@@ -46,5 +51,5 @@ const subscribeFour = sharedExample.subscribe(val => console.log(val));
 * [share](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share) :newspaper: - Official docs
 * [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts)

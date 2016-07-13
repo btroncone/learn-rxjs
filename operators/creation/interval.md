@@ -1,7 +1,11 @@
 # interval
 ####signature: `interval(period: number, scheduler: Scheduler): Observable`
-*The gist: Create an observable that emits numbers in sequence every supplied timeframe...*
 
+### Description
+
+###### TL;DR: Emits numbers in sequence for provided timeframe
+
+*Description coming soon...*
 
 ### Examples
 
@@ -20,5 +24,5 @@ const subscribe = source.subscribe(val => console.log(val));
 * [interval](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-interval) :newspaper: - Official docs
 * [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts)

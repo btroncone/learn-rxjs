@@ -1,7 +1,11 @@
 # map
 ####signature: `map(project: Function, thisArg: any): Observable`
-*The gist: Apply projection to each element...*
 
+### Description
+
+###### TL;DR: Apply projection to each value from source
+
+*Description coming soon...*
 
 ### Examples
 
@@ -37,5 +41,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/map.ts)

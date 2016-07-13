@@ -2,6 +2,11 @@
 ####signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 *The gist: Collect output values until specified number is fulfilled then hand them over. Repeat...*
 
+### Description
+
+###### TL;DR: Collect emitted values until specified number is fulfilled, emit as array
+
+*Description coming soon...*
 
 ### Examples
 
@@ -52,5 +57,5 @@ const subscribe = bufferEveryOne.subscribe(val => console.log('Start Buffer Ever
 ### Additional Resources
 * [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts)

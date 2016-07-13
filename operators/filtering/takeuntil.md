@@ -1,7 +1,11 @@
 # takeUntil
 ####signature: ` takeUntil(notifier: Observable): Observable`
-*The gist: Emit values until another observable emits...*
 
+### Description
+
+###### TL;DR: Emit values until another observable emits
+
+*Description coming soon...*
 
 ### Examples
 
@@ -58,5 +62,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [takeUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeUntil) :newspaper: - Official docs
 * [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts)

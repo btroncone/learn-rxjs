@@ -1,7 +1,11 @@
 # bufferWhen
 ####signature: `bufferWhen(closingSelector: function): Observable`
-*The gist: Buffer all values until closing selector emits, emit buffered values, repeat...*
 
+### Description
+
+###### TL;DR: Buffer all values until closing selector emits, emit buffered values
+
+*Description coming soon...*
 
 ### Examples
 
@@ -25,5 +29,5 @@ const subscribe = bufferWhenExample.subscribe(val => console.log('Emitted Buffer
 ### Additional Resources
 * [bufferWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferWhen) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts)

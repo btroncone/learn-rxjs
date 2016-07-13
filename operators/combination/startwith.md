@@ -1,7 +1,11 @@
 # startWith
 ####signature: `startWith(an: Values): Observable`
-*The gist: Emit specified item first...*
 
+### Description
+
+###### TL;DR: Emit specified item first
+
+*Description coming soon...*
 
 ### Examples
 
@@ -47,5 +51,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/startWith.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/startWith.ts)

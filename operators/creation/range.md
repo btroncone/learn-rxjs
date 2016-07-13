@@ -1,7 +1,11 @@
 # range
-
 ####signature: `range(start: number, count: number, scheduler: Scheduler): Observable`
-*The gist: Emits numbers within a specified range...*
+
+### Description
+
+###### TL;DR: Emits numbers within a specified range
+
+*Description coming soon...*
 
 ### Examples
 
@@ -20,5 +24,5 @@ const example = source.subscribe(val => console.log(val));
 ### Additional Resources
 * [range](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/RangeObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/RangeObservable.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/RangeObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/RangeObservable.ts)

@@ -1,6 +1,11 @@
 # window
 ####signature: `window(windowBoundaries: Observable): Observable`
-*The gist: Observable of values for window of time*
+
+### Description
+
+###### TL;DR: Observable of values for window of time
+
+*Description coming soon...*
 
 ### Examples
 
@@ -33,4 +38,5 @@ const subscribeTwo = example.mergeAll().subscribe(val => console.log(val));
 ### Additional Resources
 * [window](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window) :newspaper: - Official docs
 
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/window.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/window.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/window.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/window.ts)

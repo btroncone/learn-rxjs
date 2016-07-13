@@ -1,7 +1,11 @@
 # debounce
 ####signature: `debounce(durationSelector: function): Observable`
-*The gist: Throw away all emitted values that take less then the specified time (based on selector function) between output...*
 
+### Description
+
+###### TL;DR: Throw away all emitted values that take less then the specified time, based on selector function, between output
+
+*Description coming soon...*
 
 ### Examples
 
@@ -46,5 +50,5 @@ const subscribe = debouncedInterval.subscribe(val => console.log(`Example Two: $
 * [debounce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce) :newspaper: - Official docs
 * [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts)

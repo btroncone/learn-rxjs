@@ -1,7 +1,11 @@
 # bufferToggle
 ####signature: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
-*The gist: Toggle buffer on to catch emitted values from source, toggle buffer off to emit buffered values...*
 
+### Description
+
+###### TL;DR: Toggle on to catch emitted values from source, toggle off to emit buffered values as array
+
+*Description coming soon...*
 
 ### Examples
 
@@ -30,5 +34,5 @@ const subscribe = bufferToggleInterval.subscribe(val => console.log('Emitted Buf
 ### Additional Resources
 * [bufferToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts)

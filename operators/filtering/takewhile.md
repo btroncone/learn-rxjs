@@ -1,6 +1,11 @@
 # takeWhile
 ####signature: `takeWhile(predicate: function(value, index): boolean): Observable`
-*The gist: Emit values until one fails test...*
+
+### Description
+
+###### TL;DR: Emit values until one fails test
+
+*Description coming soon...*
 
 ### Examples
 
@@ -22,5 +27,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [takeWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeWhile) :newspaper: - Official docs
 * [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeWhile.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeWhile.ts)

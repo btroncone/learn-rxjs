@@ -1,6 +1,11 @@
 # windowCount
 ####signature: `windowCount(windowSize: number, startWindowEvery: number): Observable`
-*The gist: Observable of values from source, emitted each time count is fulfilled*
+
+### Description
+
+###### TL;DR: Observable of values from source, emitted each time count is fulfilled
+
+*Description coming soon...*
 
 ### Examples
 
@@ -39,5 +44,5 @@ const subscribeTwo = example
 ### Additional Resources
 * [windowCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowCount) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowCount.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowCount.ts)

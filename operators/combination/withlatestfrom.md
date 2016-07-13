@@ -1,6 +1,11 @@
 # withLatestFrom
 ####signature: `withLatestFrom(other: Observable, project: Function): Observable`
-*The gist: When source emits, also get last value emitted from another observable...*
+
+### Description
+
+###### TL;DR: When source emits, also get last value emitted from another observable
+
+*Description coming soon...*
 
 > :bulb: Tip: If you want the last emission any time a variable number of observables emits, try [combinelatest](combinelatest.md)!
 
@@ -59,5 +64,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [withLatestFrom](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-withLatestFrom) :newspaper: - Official docs
 * [Combination operator: withLatestFrom](https://egghead.io/lessons/rxjs-combination-operator-withlatestfrom?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/withLatestFrom.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/withLatestFrom.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/withLatestFrom.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/withLatestFrom.ts)

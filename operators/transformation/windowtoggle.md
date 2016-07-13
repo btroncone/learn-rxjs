@@ -1,6 +1,11 @@
 # windowToggle
 ####signature: `windowToggle(openings: Observable, closingSelector: function(value): Observable): Observable`
-*The gist: Collect and emit observable of values from source between opening and closing emission*
+
+### Description
+
+###### TL;DR: Collect and emit observable of values from source between opening and closing emission
+
+*Description coming soon...*
 
 ### Examples
 
@@ -43,5 +48,5 @@ const subscribeTwo = example
 ### Additional Resources
 * [windowToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle) :newspaper: - Official docs
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowToggle.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/windowToggle.ts)

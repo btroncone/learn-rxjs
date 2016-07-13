@@ -1,7 +1,11 @@
 # of
-
 ####signature: ` of(...values, scheduler: Scheduler): Observable`
-*The gist: Emits provided values...*
+
+### Description
+
+###### TL;DR: Emit provided values
+
+*Description coming soon...*
 
 ### Examples
 
@@ -32,5 +36,5 @@ const subscribe = source.subscribe(val => console.log(val));
 * [of](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of) :newspaper: - Official docs
 * [Creation operators: of](https://egghead.io/lessons/rxjs-creation-operator-of?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/observable/ArrayObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/ArrayObservable.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/ArrayObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/ArrayObservable.ts)

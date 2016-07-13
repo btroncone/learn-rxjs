@@ -1,6 +1,11 @@
 # zip
 ####signature: `zip(observables: *): Observable`
-*The gist: After all observables emit, emit values as an array...*
+
+### Description
+
+###### TL;DR: After all observables emit, emit values as an array
+
+*Description coming soon...*
 
 > :bulb: Tip: Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can also be used to time output from another source!
 
@@ -49,5 +54,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip) :newspaper: - Official docs
 * [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/zip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/zip.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/zip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/zip.ts)

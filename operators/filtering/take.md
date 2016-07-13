@@ -1,7 +1,11 @@
 # take
 ####signature: ` take(count: number): Observable`
-*The gist: Emit only specified number of values...*
 
+### Description
+
+###### TL;DR: Emit only specified number of values
+
+*Description coming soon...*
 
 ### Examples
 
@@ -36,5 +40,5 @@ const subscribe = example.subscribe(val => console.log(val));
 * [take](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take) :newspaper: - Official docs
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/take.ts)

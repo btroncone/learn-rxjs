@@ -1,6 +1,11 @@
 # distinctUntilChanged
 #### signature: ` distinctUntilChanged(compare: function): Observable`
-*The gist: Only emit when the next value is different then the last...*
+
+### Description
+
+###### TL;DR: Only emit when the current value is different then the last
+
+*Description coming soon...*
 
 > :bulb: Tip: distinctUntilChanged uses '===' comparison by default, object references must match!
 
@@ -45,5 +50,5 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
 * [distinctUntilChanged](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged) :newspaper: - Official docs
 * [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
-
-> :file_folder: [https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts)
+---
+> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/distinctUntilChanged.ts)
