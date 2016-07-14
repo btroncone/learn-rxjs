@@ -6,6 +6,7 @@ side-effects to be share among multiple subscribers.
 ## Contents
 * [cache](cache.md)
 * [publish](publish.md)
+* [multicast](multicast.md)
 * [share](share.md) :star:
 
 :star: - *commonly used*

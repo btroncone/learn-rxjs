@@ -7,7 +7,6 @@
 
 *Description coming soon...*
 
-> :bulb: Tip: cache is like [multicast](multicast.md) with a ReplaySubject and refCount!
 
 ### Examples
 
