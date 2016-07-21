@@ -42,5 +42,6 @@ const subscribe = example.subscribe(val => console.log(val));
 * [fromPromise](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromPromise) :newspaper: - Official docs
 * [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
 * [fromPromise - Guide](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/promises.md)
+
 ---
 > :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/PromiseObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/PromiseObservable.ts)
