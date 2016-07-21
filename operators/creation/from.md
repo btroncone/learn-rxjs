@@ -49,6 +49,16 @@ const mapSource = Rx.Observable.from(map);
 const subscribe = mapSource.subscribe(val => console.log(val));
 ```
 
+##### Example 4: Observable from string
+
+( [jsBin](http://jsbin.com/tezohobudu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hfvzjcvL/) )
+
+```js
+//emit string as a sequence
+const source = Rx.Observable.from('Hello World');
+//output: 'H','e','l','l','o',' ','W','o','r','l','d'
+const subscribe = source.subscribe(val => console.log(val));
+```
 
 ### Additional Resources
 * [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from) :newspaper: - Official docs
