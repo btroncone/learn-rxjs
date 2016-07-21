@@ -5,7 +5,7 @@
 
 ###### TL;DR: Only return values that pass the provided condition
 
-*Description coming soon...*
+The **filter** operator only permits the source to emit a value that satisfy the criteria you provide.  Anything outside of that would get ignored.
 
 ### Examples
 

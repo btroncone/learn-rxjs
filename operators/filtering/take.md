@@ -5,7 +5,7 @@
 
 ###### TL;DR: Emit only specified number of values
 
-*Description coming soon...*
+The **take** operator would allow the source to emit the specified number of values.
 
 ### Examples
 

@@ -5,7 +5,11 @@
 
 ###### TL;DR: Share source among multiple subscribers
 
-*Description coming soon...*
+The **share** operator allows you to subscribe to the observable in multiple location while performing 
+the work within the observable once just once. The example below illustrate this concept. Without share, 
+the side effect of the observable occur twice. With share, the side effect only occur once when whichever 
+subscription first emit. This can be more evident if you place a delay on one of them.  The one without delay 
+will emit the side effect and result, then the one after will emit only the result.
 
 > :bulb: Tip: share is like [multicast](multicast.md) with a Subject and refCount!
 

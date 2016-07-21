@@ -5,7 +5,8 @@
 
 ###### TL;DR: Only emit when the current value is different then the last
 
-*Description coming soon...*
+The **distinctUntilChanged** operator will emit values that are distinct from the source’s previous output. You can 
+dictate how the item comparison is carried out by providing a function that will compare the current value with the previous value.
 
 > :bulb: Tip: distinctUntilChanged uses '===' comparison by default, object references must match!
 

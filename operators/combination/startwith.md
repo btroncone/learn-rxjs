@@ -5,7 +5,7 @@
 
 ###### TL;DR: Emit specified item first
 
-*Description coming soon...*
+The **startWith** operator allows you to begin with a specified value before emitting the source value.
 
 ### Examples
 

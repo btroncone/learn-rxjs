@@ -5,7 +5,7 @@
 
 ###### TL;DR: Merge outputs from multiple observables into a single source
 
-*Description coming soon...*
+The **merge** operator accepts any number of observables. It then simply emits values as each individual observables emits.
 
 > :bulb: Tip: If order not throughput is a primary concern, try [concat](concat.md) instead!
 

@@ -5,7 +5,7 @@
 
 ###### TL;DR: Transparently perform actions, such as logging
 
-*Description coming soon...*
+The **do** operator copies the source’s output and does whatever it is you want.  The source’s original value then proceed without interference.
 
 ### Examples
 

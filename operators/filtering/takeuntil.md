@@ -5,7 +5,8 @@
 
 ###### TL;DR: Emit values until another observable emits
 
-*Description coming soon...*
+The **takeUntil** operator takes a notifier observable that tells the source when to stop emitting values and complete. 
+As soon as this notifier observable emits a value, source of **takeUntil** will completes.
 
 ### Examples
 

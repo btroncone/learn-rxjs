@@ -5,7 +5,9 @@
 
 ###### TL;DR: Emit provided values
 
-*Description coming soon...*
+The **of** operator turns the set of given parameters into an observable and emits the given parameter. 
+Unlike the **from** operator, of does not need an iterable item.  If given a single array, the observable
+would emit the entire array in one iteration.
 
 ### Examples
 

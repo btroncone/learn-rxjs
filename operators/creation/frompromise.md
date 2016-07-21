@@ -5,7 +5,9 @@
 
 ###### TL;DR: Create an observable from a promise, emitting the result
 
-*Description coming soon...*
+The **fromPromise** operator takes a promise and convert it to an observable, allow us to emit the promise’s result. 
+“The advantage that you get when you intermix Promises with Observable sequences is that unlike the ES6 Promise standard,
+you get cancellation semantics which means you can disregard values if you no longer are interested.”
 
 ### Examples
 
@@ -39,6 +41,6 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 * [fromPromise](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromPromise) :newspaper: - Official docs
 * [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
-
+* [fromPromise - Guide](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/promises.md)
 ---
 > :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/PromiseObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/PromiseObservable.ts)

@@ -5,7 +5,8 @@
 
 ###### TL;DR: When source emits switch to new inner observable
 
-*Description coming soon...*
+The **switchMap** operator takes a project function and returns the source’s output as an observable after it has pass through 
+the project function.  It then flatten the output using the **switch** operator and emits them.
 
 > :bulb: Tip: switchMap can cancel in-flight network requests!
 

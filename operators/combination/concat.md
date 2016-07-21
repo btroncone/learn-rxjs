@@ -6,8 +6,8 @@
 ###### TL;DR: Subscribe to observables in order as the previous completes, emit from source
 
 The concat operator accepts any number of observables, subscribing to each in order as the previous completes. 
-Emissions from each observable are emitted from the source as they occur. This is useful when you need to execute multiple observables or promises and order must be maintained. 
-Concat can be used as either a static or instance method.
+Emissions from each observable are emitted from the source as they occur. This is useful when you need to execute
+multiple observables or promises and order must be maintained. Concat can be used as either a static or instance method.
 
 > :bulb: Tip: If throughput not order is a primary concern, try [merge](merge.md) instead!
 
