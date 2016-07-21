@@ -51,7 +51,7 @@ const subscribe = mapSource.subscribe(val => console.log(val));
 
 ##### Example 4: Observable from string
 
-( [jsBin](http://jsbin.com/tezohobudu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hfvzjcvL/) )
+( [jsBin](http://jsbin.com/wenozubana/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hfvzjcvL/) )
 
 ```js
 //emit string as a sequence
