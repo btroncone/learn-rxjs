@@ -5,9 +5,9 @@
 
 ###### TL;DR: Given a group of observables, when one emits also emit latest values from each
 
-The **combineLatest** operator accepts any number of observables. The operator will then combines all desired 
-observables into a single observable and emit the latest value from all whenever one of the individual observable 
-emits a value. If a projected function is provided as a parameter, the operator will make use of it to display the output.
+The **combineLatest** operator accepts a variable number of observables, subscribing to each. When an observable emits a value, the last emitted value from each observable is emitted as an array. **Each provided observable must emit at least one value before the first emission can occur**. Promises can also be supplied.
+
+> :bulb: Tip: [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
 
 ### Examples
 
