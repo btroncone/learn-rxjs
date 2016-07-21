@@ -5,7 +5,9 @@
 
 ###### TL;DR: Given a group of observables, when one emits also emit latest values from each
 
-*Description coming soon...*
+The **combineLatest** operator accepts any number of observables. The operator will then combines all desired 
+observables into a single observable and emit the latest value from all whenever one of the individual observable 
+emits a value. If a projected function is provided as a parameter, the operator will make use of it to display the output.
 
 ### Examples
 
