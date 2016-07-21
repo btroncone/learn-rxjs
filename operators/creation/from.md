@@ -5,9 +5,8 @@
 
 ###### TL;DR: Turn an array, promise, or iterable into an observable
 
-The **from** operator turns any iterable item or promise into an observable that will emit that item.  In the case of a
-promise, this new observable will emit the resolve of the promise.  If the iterable item is a string, each character is
-emitted in order.
+The **from** operator turns any array, promise, or iterable into an observable. In the case of a
+promise, the result of the promise will be emitted. For arrays and iterables, all contained values will be emitted as a sequence.
 
 ### Examples
 
