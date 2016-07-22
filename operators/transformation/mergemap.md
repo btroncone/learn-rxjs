@@ -5,10 +5,11 @@
 
 ###### TL;DR: Map values from source to inner observable, merge output
 
-The **mergeMap** operator takes a project function and returns the source’s output as an observable after it has pass 
-through the project function.  It then flatten the output using the **mergeAll** operator and emits them. 
+The **mergeMap** operator takes a project function, subscribing to the returned observable and emitting the output.  **mergeMap** can also handle promises, emitting the resolved value, and arrays or iterables, emitting each value in a sequence.
 
 > :bulb: Tip: flatMap is an alias for mergeMap!
+
+> :bulb: Tip: mergeMap is one of the most popular operators for handling HTTP requests!
 
 ### Examples
 
