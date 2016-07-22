@@ -5,10 +5,7 @@
 
 ###### TL;DR: Throw away all emitted values that take less then the specified time, based on selector function, between output
 
-The **debounceTime** operator is not to be confused with the delay operator.  The output value is most current in the stream with 
-no backlog of values waiting to be emitted.  The timer on this operator will reset if the source emits a value. Given the example 
-below, if you spam the input, debounce will keep resetting its timer.  Until there’s a period of quite (0.5s), you will receive 
-no output.
+The **debounce** operator emits the last value from source when the returned inner observable emits. Though not as widely used as [debounceTime](debouncetime.md), **debounce** is important when the debounce rate is variable.
 
 ### Examples
 
