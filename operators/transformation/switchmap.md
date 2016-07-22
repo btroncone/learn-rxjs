@@ -1,12 +1,11 @@
 # switchMap
-####signature: `switchMap(a: Observable): Observable`
+####signature: ` switchMap(project: function: Observable, resultSelector: function(outerValue, innerValue, outerIndex, innerIndex): any): Observable`
 
 ### Description
 
 ###### TL;DR: When source emits switch to new inner observable
 
-The **switchMap** operator takes a project function and returns the source’s output as an observable after it has pass through 
-the project function.  It then flatten the output using the **switch** operator and emits them.
+The **switchMap** operator applies a project function, *switching to* the returned observable. This is similar to [mergeMap](mergemap.md) except the previous inner observable is completed each time the source emits a new value.
 
 > :bulb: Tip: switchMap can cancel in-flight network requests!
 
