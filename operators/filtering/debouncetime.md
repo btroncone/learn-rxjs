@@ -5,10 +5,9 @@
 
 ###### TL;DR: Throw away all emitted values that take less then the specified time between output
 
-The **debounceTime** operator is not to be confused with the delay operator.  The output value is most current in the 
-stream with no backlog of values waiting to be emitted.  The timer on this operator will reset if the source emits a value. 
-Given the example below, if you spam the input, debounce will keep resetting its timer.  Until there’s a period of quite 
-(0.5s), you will receive no output.
+The **debounceTime** operator will emit the last value received only after a specified time has passed. Each time a value is receieved from the source the timer will be reset. All values emitted outside the specified debounce timer will be ignored.
+
+> :bulb: Tip: debounceTime is popular in scenarios such as type-ahead where the rate of user input must be controlled!
 
 ### Examples
 
