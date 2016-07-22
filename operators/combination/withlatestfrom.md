@@ -5,9 +5,7 @@
 
 ###### TL;DR: When source emits, also get last value emitted from another observable
 
-The **withLatestFrom** operator chains off of an observable and takes in any number of observables.  Whenever the main observable
-emits a value, you will receive the latest values from all other observables as well.  If the main observable never emits, however,
-you will never receive any output from the others.
+The **withLatestFrom** operator emits the source value with the last value from the provided observable, as an array, each time the source emits. No values will be emitted until the observable provided to **withLatestFrom** has emitted atleast one value. 
 
 > :bulb: Tip: If you want the last emission any time a variable number of observables emits, try [combinelatest](combinelatest.md)!
 
