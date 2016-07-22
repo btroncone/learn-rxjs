@@ -5,9 +5,8 @@
 
 ###### TL;DR: Emit provided values
 
-The **of** operator turns the set of given parameters into an observable and emits the given parameter. 
-Unlike the **from** operator, of does not need an iterable item.  If given a single array, the observable
-would emit the entire array in one iteration.
+The **of** operator emits a variable number of provide parameters as a sequence. 
+Unlike the [**from**](from.md) operator, **of** will not emit values from arrays or iterables individually.
 
 ### Examples
 
