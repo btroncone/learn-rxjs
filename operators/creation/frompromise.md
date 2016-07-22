@@ -5,9 +5,9 @@
 
 ###### TL;DR: Create an observable from a promise, emitting the result
 
-The **fromPromise** operator takes a promise and convert it to an observable, allow us to emit the promise’s result. 
-“The advantage that you get when you intermix Promises with Observable sequences is that unlike the ES6 Promise standard,
-you get cancellation semantics which means you can disregard values if you no longer are interested.”
+The **fromPromise** operator converts a promise to a proper observable, emitting the result. Although a variety of operators can handle promises directly, it can be useful to continue an operator chain from an inner promise, or take advantage of cancellation not available to promises.
+
+> :bulb: Tip: Most operators that can handle inner observables can also accept promises without wrapping!
 
 ### Examples
 
