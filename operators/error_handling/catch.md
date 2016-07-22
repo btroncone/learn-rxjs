@@ -5,8 +5,7 @@
 
 ###### TL;DR: Gracefully handle errors and exceptions without terminating observable
 
-The **catch** operator allows us to capture errors and exceptions then continue on with our operation. 
-So if an error is thrown, we’re now able to handle the error appropriately in our **catch** operator.
+The **catch** operator allows us to capture errors and exceptions, returning an observable. Properly caught errors will avoid terminating a subscription chain.  **catch** is the most widely used error handling operator.
 
 > :bulb: Tip: Remember to return an observable from your catch function!
 
