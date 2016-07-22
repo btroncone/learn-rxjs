@@ -5,8 +5,9 @@
 
 ###### TL;DR: Emit values until another observable emits
 
-The **takeUntil** operator takes a notifier observable that tells the source when to stop emitting values and complete. 
-As soon as this notifier observable emits a value, source of **takeUntil** will completes.
+The **takeUntil** operator accepts an observable, subscribing and completing when this inner observable emits a value. **takeUntil** is useful when a series of user interactions defines an event, such as a *mousedrag* until *mouseup*.
+
+> :bulb: Tip: If you only need a specific number of values, try [take](take.md)!
 
 ### Examples
 
