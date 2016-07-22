@@ -5,7 +5,9 @@
 
 ###### TL;DR: Emit specified item first
 
-The **startWith** operator allows you to begin with a specified value before emitting the source value.
+The **startWith** operator allows you to emit a variable number of values before emitting values received from the source.
+
+> :bulb: Tip: A [BehaviorSubject](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md) can also start with an initial value!
 
 ### Examples
 
@@ -43,6 +45,18 @@ const example = source
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 3: startWith multiple values
+
+( [jsBin](http://jsbin.com/cumupemuxa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ckcyj3ms/) )
+
+```js
+//emit values in sequence every 1s
+const source = Rx.Observable.interval(1000);
+//start with -3, -2, -1
+const example = source.startWith(-3, -2, -1);
+//output: -3, -2, -1, 0, 1, 2....
+const subscribe = example.subscribe(val => console.log(val));
+```
 
 ### Additional Resources
 * [startWith](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith) :newspaper: - Official docs
