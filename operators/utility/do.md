@@ -5,7 +5,7 @@
 
 ###### TL;DR: Transparently perform actions, such as logging
 
-The **do** operator copies the source’s output and does whatever it is you want.  The source’s original value then proceed without interference.
+The **do** operator passes through emitted items from the source while performing any provided side-effects. Any values returned from do will be ignored while errors are forwarded to subscribers.
 
 ### Examples
 
