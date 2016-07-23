@@ -5,8 +5,7 @@
 
 ###### TL;DR: Map values from source to inner observable, subscribe and emit inner observable values in order
 
-The **concatMap** operator takes a project function and returns the source’s output as an observable after it has pass through 
-the project function.  It then flatten the output using the **concatAll** operator and emits them. 
+*Description coming soon!* 
 
 ### Examples
 

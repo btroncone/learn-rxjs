@@ -5,7 +5,8 @@
 
 ###### TL;DR: Merge outputs from multiple observables into a single source
 
-The **merge** operator accepts a variable number of observables, subscribing to each and emitting values as each emits. **merge** can be used as either a static or instance method.
+The **merge** operator accepts a variable number of observables, subscribing to each and emitting values as each emits. 
+Merge can be used as either a static or instance method.
 
 > :bulb: Tip: If order not throughput is a primary concern, try [concat](concat.md) instead!
 

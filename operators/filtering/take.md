@@ -5,7 +5,7 @@
 
 ###### TL;DR: Emit only specified number of values
 
-The **take** operator provides a method for receiving a specified number of values from a source before completing the observable. **take** is often used to grab a single emission.
+*Description coming soon!*
 
 
 > :bulb: Tip: If you want to take a variable number of values based on some logic, or another observable, you can use [takeUntil](takeuntil.md) or [takeWhile](takewhile.md)!

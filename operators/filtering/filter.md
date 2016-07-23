@@ -5,7 +5,8 @@
 
 ###### TL;DR: Only return values that pass the provided condition
 
-The **filter** operator only emits values that pass the provided predicate expression.  All other values emitted from the source will be ignored.
+The **filter** operator only emits values that pass the provided predicate expression. 
+All other values emitted from the source will be ignored.
 
 > :bulb: Tip: If you would like to complete an observable when a condition fails, check out [takeWhile](takewhile.md)!
 

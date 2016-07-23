@@ -5,8 +5,7 @@
 
 ###### TL;DR: Apply projection to each value from source
 
-The **map** operator is similar to the well-known map operator you’ve most likely used before. 
-The difference is now you can attach it to a source and the operator will return an observable.
+*Description coming soon!*
 
 ### Examples
 

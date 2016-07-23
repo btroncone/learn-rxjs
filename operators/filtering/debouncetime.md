@@ -5,7 +5,8 @@
 
 ###### TL;DR: Throw away all emitted values that take less then the specified time between output
 
-The **debounceTime** operator will emit the last value received only after a specified time has passed. Each time a value is receieved from the source the timer will be reset. All values emitted outside the specified debounce timer will be ignored.
+The **debounceTime** operator will emit the last value received only after a specified time has passed. 
+The timer will reset each time a value is receieved from the source. All values emitted outside the specified debounce timer will be ignored.
 
 > :bulb: Tip: debounceTime is popular in scenarios such as type-ahead where the rate of user input must be controlled!
 

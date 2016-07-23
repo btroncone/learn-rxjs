@@ -3,7 +3,7 @@
 
 ### Description
 
-###### TL;DR: Emit specified item first
+###### TL;DR: Emit specified item or items first
 
 The **startWith** operator allows you to emit a variable number of values before emitting values received from the source.
 

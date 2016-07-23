@@ -6,8 +6,7 @@
 
 ###### TL;DR: Collect emitted values until provided time has passed, emit as array
 
-The **bufferTime** operator will group the values from the observable into an array emit the array after the 
-specified time.  If the source gives no value, the observable will not emit an empty array.
+*Description coming soon!*
 
 ### Examples
 
