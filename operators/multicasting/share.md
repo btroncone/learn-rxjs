@@ -5,7 +5,7 @@
 
 ###### TL;DR: Share source among multiple subscribers
 
-*Description coming soon...*
+*Description coming soon!*
 
 > :bulb: Tip: share is like [multicast](multicast.md) with a Subject and refCount!
 

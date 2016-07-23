@@ -5,7 +5,7 @@
 
 ###### TL;DR: Apply projection to each value from source
 
-*Description coming soon...*
+*Description coming soon!*
 
 ### Examples
 

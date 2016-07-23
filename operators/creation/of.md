@@ -5,7 +5,8 @@
 
 ###### TL;DR: Emit provided values
 
-*Description coming soon...*
+The **of** operator emits a variable number of provided parameters as a sequence. 
+Unlike the [**from**](from.md) operator, **of** will not emit items contained in arrays or iterables individually.
 
 ### Examples
 

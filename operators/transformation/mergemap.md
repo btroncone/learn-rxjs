@@ -5,9 +5,11 @@
 
 ###### TL;DR: Map values from source to inner observable, merge output
 
-*Description coming soon...*
+The **mergeMap** operator takes a project function, subscribing to the returned observable and emitting the output.  **mergeMap** can also handle promises, emitting the resolved value, and arrays or iterables, emitting each value in a sequence.
 
 > :bulb: Tip: flatMap is an alias for mergeMap!
+
+> :bulb: Tip: mergeMap is one of the most popular operators for handling HTTP requests!
 
 ### Examples
 

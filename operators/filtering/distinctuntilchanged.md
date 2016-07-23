@@ -5,7 +5,9 @@
 
 ###### TL;DR: Only emit when the current value is different then the last
 
-*Description coming soon...*
+The **distinctUntilChanged** operator will emit values that are distinct from the source’s previous output. You can 
+dictate how this comparison is performed by providing a function that will compare the current and previous values. 
+A [strict equality comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) is used by default.
 
 > :bulb: Tip: distinctUntilChanged uses '===' comparison by default, object references must match!
 

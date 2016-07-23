@@ -5,7 +5,7 @@
 
 ###### TL;DR: Map values from source to inner observable, subscribe and emit inner observable values in order
 
-*Description coming soon...*
+*Description coming soon!* 
 
 ### Examples
 

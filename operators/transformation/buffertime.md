@@ -6,7 +6,7 @@
 
 ###### TL;DR: Collect emitted values until provided time has passed, emit as array
 
-*Description coming soon...*
+*Description coming soon!*
 
 ### Examples
 

@@ -5,7 +5,10 @@
 
 ###### TL;DR: Turn an array, promise, or iterable into an observable
 
-*Description coming soon...*
+The **from** operator turns any array, promise, or iterable into an observable. 
+In the case of a promise, the result of the promise will be emitted. For arrays and iterables, all contained values will be emitted as a sequence.
+
+> :bulb: Tip: from can also be used to emit a string as a sequence of characters!
 
 ### Examples
 
@@ -46,6 +49,16 @@ const mapSource = Rx.Observable.from(map);
 const subscribe = mapSource.subscribe(val => console.log(val));
 ```
 
+##### Example 4: Observable from string
+
+( [jsBin](http://jsbin.com/wenozubana/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/hfvzjcvL/) )
+
+```js
+//emit string as a sequence
+const source = Rx.Observable.from('Hello World');
+//output: 'H','e','l','l','o',' ','W','o','r','l','d'
+const subscribe = source.subscribe(val => console.log(val));
+```
 
 ### Additional Resources
 * [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from) :newspaper: - Official docs

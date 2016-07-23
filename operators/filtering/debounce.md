@@ -5,7 +5,8 @@
 
 ###### TL;DR: Throw away all emitted values that take less then the specified time, based on selector function, between output
 
-*Description coming soon...*
+The **debounce** operator emits the last value from the source when the returned inner observable emits. 
+Though not as widely used as [debounceTime](debouncetime.md), **debounce** is important when the debounce rate is variable.
 
 ### Examples
 

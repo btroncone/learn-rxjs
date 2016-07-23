@@ -5,7 +5,7 @@
 
 ###### TL;DR: Transparently perform actions, such as logging
 
-*Description coming soon...*
+The **do** operator passes through emitted items from the source while performing any provided side-effects. Any values returned from do will be ignored while errors are forwarded to subscribers.
 
 ### Examples
 
