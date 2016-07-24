@@ -4,7 +4,11 @@
   "description": "Learn RxJS 5 Gitbook",
   "main": "",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "lodash.isequal": "^4.2.0",
+    "rxjs": "^5.0.0-beta.2"
+  },
   "scripts": {
     "gb": "gitbook build"
   },
@@ -13,8 +17,6 @@
     "url": "git+https://github.com/btroncone/learn-rxjs.git"
   },
   "keywords": [
-    "Angular 2",
-    "ngrx",
     "rxjs"
   ],
   "author": "Brian Troncone",
