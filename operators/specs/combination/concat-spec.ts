@@ -19,7 +19,7 @@ describe('The concat operator examples', () => {
     });  
 
     describe('Example 2 - concat as static method', () => {
-        it('should emit values from sourceTwo after sourceOne', () => {
+        it('should emit values from sourceTwo after sourceOne when used as static method', () => {
             const sourceOne = Observable.of(1,2,3);
             const sourceTwo = Observable.of(4,5,6);
             const example = Observable.concat(sourceOne,sourceTwo);
@@ -31,7 +31,7 @@ describe('The concat operator examples', () => {
     });    
 
     describe('Example 3 - concat with a delayed source', () => {
-        it('should emit values from sourceTwo after sourceOne', () => {
+        it('should emit values from sourceTwo after delayed sourceThree completes', () => {
             const sourceOne = Observable.of(1,2,3);
             const sourceTwo = Observable.of(4,5,6);
             const sourceThree = sourceOne.delay(20, rxTestScheduler);
