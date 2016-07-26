@@ -5,7 +5,7 @@
 
 ###### TL;DR: Output latest values from inner observables when outer observable completes
 
-*Description coming soon...*
+The **combineAll** takes the listed observables and subscribe to them once the source observable completes. At this point, the operator would work similarly to **combineLatest** where the latest value from each observables are emitted whenever one emits. The inner observables are provided by the source observable where it must return observables in order for us to subscribe to them, no observables, no combineAll.
 
 ### Examples
 
