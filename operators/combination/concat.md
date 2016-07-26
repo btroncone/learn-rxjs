@@ -12,7 +12,7 @@ Emissions from each observable are emitted to subscriber as they occur. Concat c
 
 ### Examples
 
-( [marble tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concat-spec.ts) )
+( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concat-spec.ts) )
 
 ##### Example 1: concat 2 basic observables
 

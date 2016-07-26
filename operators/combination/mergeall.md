@@ -12,6 +12,8 @@
 
 ### Examples
 
+( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/mergeall-spec.ts) )
+
 ##### Example 1: mergeAll with promises
 
 ( [jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) )

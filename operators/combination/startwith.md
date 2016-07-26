@@ -11,7 +11,7 @@ The **startWith** operator allows you to emit a variable number of values before
 
 ### Examples
 
-( [marble tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/startwith-spec.ts) )
+( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/startwith-spec.ts) )
 
 ##### Example 1: startWith on number sequence
 
