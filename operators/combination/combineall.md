@@ -5,7 +5,7 @@
 
 ###### TL;DR: Output latest values from inner observables when outer observable completes
 
-The **combineAll** operator collects observables emitted from source, subscribing using `combineLatest` when the source observable completes. 
+The **combineAll** operator collects observables emitted from source, subscribing using [`combineLatest`](combineLatest.md) when the source observable completes. 
 This can be thought of as follows:
 
 1. Source observable emits 2 values, mapping to 2 inner interval observables
@@ -22,7 +22,7 @@ This can be thought of as follows:
     .map(val => Rx.Observable.interval(val + 500).take(2))
   ```
 
-2. When complete, you can think of the output of `combineAll` the same as if you used `combineLatest` on the inner observables.
+2. When complete, you can think of the output of `combineAll` the same as if you used [`combineLatest`](combineLatest.md) on the inner observables.
 
   ```js
   /*
