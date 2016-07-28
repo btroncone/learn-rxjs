@@ -5,7 +5,8 @@
 
 ###### TL;DR: Concat for nested observables, subscribe to each when previous completes and merge emitted values
 
-*Description coming soon...*
+The **concatAll** operator takes in all observables the source emits and subscribe to the first observable.  Once the first completes, the operator would subscribe to the second observable then so on so forth. During this time, the source observable would continue to emit and queue up the inner observables.
+> :warning: Warning: If the inner observables are completing at a slower rate than the source observable emition, the build up of inner observables could lead to backpressure.
 
 > :bulb: Tip: In many cases you can use [concatMap](../transformation/concatmap.md) as a single operator instead!
 
@@ -45,6 +46,21 @@ const example = source
 const subscribe = example.subscribe(val => console.log('Example with Promise:', val));
 ```
 
+##### Example 3: variying completion.
+
+( [jsFiddle](https://jsfiddle.net/g6ymr39L/) )
+
+```js
+const obs1 = Rx.Observable.interval(1000).take(5);
+const obs2 = Rx.Observable.interval(500).take(2);
+const obs3 = Rx.Observable.interval(2000).take(1);
+
+//The source emits the three inner simultaneously. But each completes at a different time.
+const source = Rx.Observable.of(obs1, obs2, obs3)
+	.concatAll()
+  .subscribe(val => console.log(val));
+//If the source emits an infinate number of observables, this could create a large backpressure leading to memory issue.
+```
 
 ### Additional Resources
 * [concatAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll) :newspaper: - Official docs
