@@ -5,11 +5,17 @@
 
 ###### TL;DR: Given a group of observables, when one emits also emit latest values from each
 
-The **combineLatest** operator accepts a variable number of observables, subscribing to each. When an observable emits a value, the last emitted value from each observable is emitted as an array. **Each provided observable must emit at least one value before the first emission can occur**. Promises can also be supplied, if necessary. This operator can be used as either a static or instance method.
+The **combineLatest** operator accepts a variable number of observables, subscribing to each. When any inner observable emits a value, the last emitted value from each observable is emitted as an array. 
+**Each provided observable must emit at least one value before the first emission can occur**. 
+Promises can also be supplied when necessary.
+
+> :bulb: Tip: combineLatest can be used as either a static or instance method!
 
 > :bulb: Tip: [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
 
 ### Examples
+
+( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combinelatest-spec.ts) )
 
 #####Example 1: Combining observables emitting at 3 intervals
 ( [jsBin](http://jsbin.com/zupiqozaro/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/) )
