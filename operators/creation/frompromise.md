@@ -7,7 +7,7 @@
 
 *Description coming soon...*
 
-> :bulb: Tip: Most operators that can handle inner observables can also accept promises without wrapping!
+> :bulb:  Most operators that can handle inner observables can also accept promises without wrapping!
 
 ### Examples
 

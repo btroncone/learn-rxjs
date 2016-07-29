@@ -7,7 +7,7 @@
 
 *Description coming soon...*
 
-> :bulb: Tip: In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
+> :bulb:  In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
 
 ### Examples
 

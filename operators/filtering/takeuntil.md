@@ -7,7 +7,7 @@
 
 The **takeUntil** operator accepts an observable, subscribing and completing when this inner observable emits a value. **takeUntil** is useful when a series of user interactions defines an event, such as a *mousedrag* until *mouseup*.
 
-> :bulb: Tip: If you only need a specific number of values, try [take](take.md)!
+> :bulb:  If you only need a specific number of values, try [take](take.md)!
 
 ### Examples
 

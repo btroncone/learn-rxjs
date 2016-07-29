@@ -8,7 +8,7 @@
 The **from** operator turns any array, promise, or iterable into an observable. 
 In the case of a promise, the result of the promise will be emitted. For arrays and iterables, all contained values will be emitted as a sequence.
 
-> :bulb: Tip: from can also be used to emit a string as a sequence of characters!
+> :bulb:  from can also be used to emit a string as a sequence of characters!
 
 ### Examples
 

@@ -8,7 +8,7 @@
 *Description coming soon!*
 
 
-> :bulb: Tip: If you want to take a variable number of values based on some logic, or another observable, you can use [takeUntil](takeuntil.md) or [takeWhile](takewhile.md)!
+> :bulb:  If you want to take a variable number of values based on some logic, or another observable, you can use [takeUntil](takeuntil.md) or [takeWhile](takewhile.md)!
 
 ### Examples
 

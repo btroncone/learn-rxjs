@@ -7,7 +7,7 @@
 
 The **switchMap** operator applies a project function, *switching to* the returned observable. This is similar to [mergeMap](mergemap.md) except the previous inner observable is completed each time the source emits a new value.
 
-> :bulb: Tip: switchMap can cancel in-flight network requests!
+> :bulb:  switchMap can cancel in-flight network requests!
 
 ### Examples
 

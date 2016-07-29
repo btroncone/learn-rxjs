@@ -9,9 +9,9 @@ The **combineLatest** operator accepts a variable number of observables, subscri
 **Each provided observable must emit at least one value before the first emission can occur**. 
 Promises can also be supplied when necessary.
 
-> :bulb: Tip: combineLatest can be used as either a static or instance method!
+> :bulb:  combineLatest can be used as either a static or instance method!
 
-> :bulb: Tip: [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
+> :bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
 
 ### Examples
 

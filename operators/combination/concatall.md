@@ -7,9 +7,9 @@
 
 The **concatAll** operator behaves similarly to [concat](concat.md), subscribing to each emitted observable as the previous completes. Like other flattening operators, **concatAll** can also accept promises, emitting the result, or arrays and iterables, emitting as a sequence of values.
 
-> :warning: Warning: Be wary of backpressure when the source emits at a faster pace than inner observables complete!
+> :warning:  Be wary of backpressure when the source emits at a faster pace than inner observables complete!
 
-> :bulb: Tip: In many cases you can use [concatMap](../transformation/concatmap.md) as a single operator instead!
+> :bulb:  In many cases you can use [concatMap](../transformation/concatmap.md) as a single operator instead!
 
 ### Examples
 

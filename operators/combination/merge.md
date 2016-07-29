@@ -8,7 +8,7 @@
 The **merge** operator accepts a variable number of observables, subscribing to each and emitting values as each emits. 
 Merge can be used as either a static or instance method.
 
-> :bulb: Tip: If order not throughput is a primary concern, try [concat](concat.md) instead!
+> :bulb:  If order not throughput is a primary concern, try [concat](concat.md) instead!
 
 ### Examples
 

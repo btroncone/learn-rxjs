@@ -8,7 +8,7 @@
 The **scan** operator applies a reducer function to values received from the source, emitting the current accumulator. 
 You can think of scan as a reduce applied over time. If you only need a final value when the source observable has completed, reduce is also available.
 
-> :bulb: Tip: scan is the core for many RxJS based [Redux](http://redux.js.org) implementations!
+> :bulb:  scan is the core for many RxJS based [Redux](http://redux.js.org) implementations!
 
 ### Examples
 

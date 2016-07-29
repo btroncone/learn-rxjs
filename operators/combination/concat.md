@@ -8,7 +8,7 @@
 The **concat** operator accepts a variable number of observables, subscribing to each in order as the previous completes. 
 Emissions from each observable are emitted to subscriber as they occur. Concat can be used as either a static or instance method.
 
-> :bulb: Tip: If throughput not order is a primary concern, try [merge](merge.md) instead!
+> :bulb:  If throughput not order is a primary concern, try [merge](merge.md) instead!
 
 ### Examples
 

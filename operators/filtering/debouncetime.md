@@ -8,7 +8,7 @@
 The **debounceTime** operator will emit the last value received only after a specified time has passed. 
 The timer will reset each time a value is receieved from the source. All values emitted outside the specified debounce timer will be ignored.
 
-> :bulb: Tip: debounceTime is popular in scenarios such as type-ahead where the rate of user input must be controlled!
+> :bulb:  debounceTime is popular in scenarios such as type-ahead where the rate of user input must be controlled!
 
 ### Examples
 

@@ -7,7 +7,7 @@
 
 *Description coming soon...*
 
-> :bulb: Tip: If you want ordered emissions from multiple observables as they occur, try [zip](zip.md)!
+> :bulb:  If you want ordered emissions from multiple observables as they occur, try [zip](zip.md)!
 
 ### Examples
 

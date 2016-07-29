@@ -7,7 +7,7 @@
 
 *Description coming soon...*
 
-> :bulb: Tip: Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can also be used to time output from another source!
+> :bulb:  Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can also be used to time output from another source!
 
 ### Examples
 
