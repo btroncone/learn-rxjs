@@ -5,8 +5,9 @@
 
 ###### TL;DR: Concat for nested observables, subscribe to each when previous completes and merge emitted values
 
-The **concatAll** operator takes in all observables the source emits and subscribe to the first observable.  Once the first completes, the operator would subscribe to the second observable then so on so forth. During this time, the source observable would continue to emit and queue up the inner observables.
-> :warning: Warning: If the inner observables are completing at a slower rate than the source observable emition, the build up of inner observables could lead to backpressure.
+The **concatAll** operator behaves similarly to [concat](concat.md), subscribing to each emitted observable as the previous completes. Like other flattening operators, **concatAll** can also accept promises, emitting the result, or arrays and iterables, emitting as a sequence of values.
+
+> :warning: Warning: Be wary of backpressure when the source emits at a faster pace than inner observables complete!
 
 > :bulb: Tip: In many cases you can use [concatMap](../transformation/concatmap.md) as a single operator instead!
 
@@ -46,20 +47,28 @@ const example = source
 const subscribe = example.subscribe(val => console.log('Example with Promise:', val));
 ```
 
-##### Example 3: variying completion.
+##### Example 3: When previous inner observable completes, subscribe to next
 
-( [jsFiddle](https://jsfiddle.net/g6ymr39L/) )
+( [jsBin](http://jsbin.com/pojolatile/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8230ucbg/) )
 
 ```js
 const obs1 = Rx.Observable.interval(1000).take(5);
 const obs2 = Rx.Observable.interval(500).take(2);
 const obs3 = Rx.Observable.interval(2000).take(1);
+//emit three observables
+const source = Rx.Observable.of(obs1, obs2, obs3);
+//subscribe to each inner observable in order when previous completes
+const example = source.concatAll();
+/*
+  output: 0,1,2,3,4,0,1,0
+  How it works...
+  Subscribes to each inner observable and emit values, when complete subscribe to next
+  obs1: 0,1,2,3,4 (complete)
+  obs2: 0,1 (complete)
+  obs3: 0 (complete)
+*/
 
-//The source emits the three inner simultaneously. But each completes at a different time.
-const source = Rx.Observable.of(obs1, obs2, obs3)
-	.concatAll()
-  .subscribe(val => console.log(val));
-//If the source emits an infinate number of observables, this could create a large backpressure leading to memory issue.
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### Additional Resources
