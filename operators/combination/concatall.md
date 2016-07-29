@@ -47,7 +47,7 @@ const example = source
 const subscribe = example.subscribe(val => console.log('Example with Promise:', val));
 ```
 
-##### Example 3: When previous inner observable completes, subscribe to next
+##### Example 3: Delay while inner observables conplete
 
 ( [jsBin](http://jsbin.com/pojolatile/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8230ucbg/) )
 
