@@ -5,7 +5,7 @@
 
 ###### TL;DR: Use the first observable to emit
 
-The **race** operator is as the name implies.  It subscribes to all inner observables and emits values from the first observables to emits a values.  Once that inner observable completes, the operator will conclude.  Note that **race** does not care which observable completes the fastest.
+The **race** operator is as the name implies.  It subscribes to all inner observables and emits values from the first observables to emits a values.  Once that inner observable completes, the operator will conclude.  Note that **race** does not care which observable completes the fastest as well as which observable fails unless it is the first.  This is because the operator will throw out the rest of the observables once the first one emits.
 
 ### Examples
 
@@ -29,6 +29,21 @@ const example = Rx.Observable.race(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 2: race with an error
+
+( [jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
+
+```js
+console.clear();
+
+//Throws an error and ignore the rest of the observables.
+const first = Rx.Observable.of('first').delay(100).map(() => {throw 'error'});
+const second = Rx.Observable.of('second').delay(200);
+const third = Rx.Observable.of('third').delay(300);
+
+const race = Rx.Observable.race(first, second, third)
+	.subscribe(val => console.log(val));
+```
 
 ### Additional Resources
 * [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) :newspaper: - Official docs
