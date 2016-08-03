@@ -5,7 +5,7 @@
 
 ###### TL;DR: Emit values from observables or promises emitted from source
 
-*Description coming soon...*
+The **mergeAll** operator takes the observables emitted by the source and subscribes to each as they are provided.  The operator would then emit whatever values the inner observables emit.  If one of inner observables emit an error, the source will emit that error immediately unless gracefully handled.  The source will complete once all inner observables complete.  The operator also takes an optional 'concurrent' parameter.  This number alows you to indicate how many inner observables you want to subscribe to at a time.  If none is provided, all will be subscribed concurrently.
 
 > :bulb:  In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
 
