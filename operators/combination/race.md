@@ -5,7 +5,7 @@
 
 ###### TL;DR: Use the first observable to emit
 
-*Description coming soon...*
+The **race** operator is as the name implies.  It subscribes to all inner observables and emits values from the first observables to emits a values.  Once that inner observable completes, the operator will conclude.  Note that **race** does not care which observable completes the fastest.
 
 ### Examples
 
