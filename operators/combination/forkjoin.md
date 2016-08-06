@@ -6,7 +6,7 @@
 ###### TL;DR: Output the last emitted item from each observable on completion
 
 The **forkJoin** operator accepts a variable number of observables, subscribing to them simultaneously.  
-Once all inner observables complete, the source observable emits an array containing the last emitted value from each inner observables.
+Once all inner observables complete, the source observable emits an array containing the last emitted value from each inner observable.
 
 > :bulb:  If you want corresponding emissions from multiple observables as they occur, try [zip](zip.md)!
 
