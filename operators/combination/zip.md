@@ -5,9 +5,11 @@
 
 ###### TL;DR: After all observables emit, emit values as an array
 
-The **zip** operator will subscribe to all inner observables and wait for all to emit a value.  Once that occurs, the operator will emits an array with all the values emitted.  This will continues until at least one observable completes, allowing the operator itself to completes.  Note, there is a backlog of values from the the faster observables.  This is because the values are grouped into their emission index. The first emitted values will always go into the first array, the second emitted values will always go into the second array.
+The **zip** operator will subscribe to all inner observables, waiting for each to emit a value.  
+Once this occurs, all values with the corresponding index will be emitted.  
+This will continue until at least one inner observable completes. 
 
-> :bulb:  Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can also be used to time output from another source!
+> :bulb:  Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can be used to time output from another source!
 
 ### Examples
 
@@ -49,31 +51,6 @@ const example = Rx.Observable
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 3: zip with a backlog
-
-( [jsFiddle](https://jsfiddle.net/yjxdot8a/) )
-
-```js
-console.clear();
-
-const interval = Rx.Observable.interval(500);
-const fromArray = Rx.Observable.from(['a','b','c']);
-
-/*
-  fromArray will emit all 3 values immediately, but each will be grouped up
-  into their respected array and wait for values from interval to be emitted.
-  First emission at 0.5s: [1, 'a']
-  Second emission at 1.0s: [2, 'b']
-  Third emission at 1.5s: [3, 'c']
-*/
-const subscribe = Rx.Observable
-  .zip(interval, fromArray)
-  .subscribe(val => console.log(val));
-/*
-  Although interval could continue to emit, it won't because the third emission
-  marks the completion of fromArray, allowing zip to emits a completion.
-*/
-```
 
 ### Additional Resources
 * [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip) :newspaper: - Official docs

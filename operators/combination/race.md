@@ -5,7 +5,9 @@
 
 ###### TL;DR: Use the first observable to emit
 
-The **race** operator is as the name implies.  It subscribes to all inner observables and emits values from the first observables to emits a values.  Once that inner observable completes, the operator will conclude.  Note that **race** does not care which observable completes the fastest as well as which observable fails unless it is the first.  This is because the operator will throw out the rest of the observables once the first one emits.
+The **race** operator accepts a variable number of observables, subscribing to each. 
+The first observable to emit will be used while the rest are ignored. 
+
 
 ### Examples
 
