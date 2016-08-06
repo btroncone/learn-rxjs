@@ -5,7 +5,9 @@
 
 ###### TL;DR: Use the first observable to emit
 
-*Description coming soon...*
+The **race** operator accepts a variable number of observables, subscribing to each. 
+The first observable to emit will be used while the rest are ignored. 
+
 
 ### Examples
 
@@ -29,6 +31,21 @@ const example = Rx.Observable.race(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 2: race with an error
+
+( [jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
+
+```js
+console.clear();
+
+//Throws an error and ignore the rest of the observables.
+const first = Rx.Observable.of('first').delay(100).map(() => {throw 'error'});
+const second = Rx.Observable.of('second').delay(200);
+const third = Rx.Observable.of('third').delay(300);
+
+const race = Rx.Observable.race(first, second, third)
+	.subscribe(val => console.log(val));
+```
 
 ### Additional Resources
 * [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) :newspaper: - Official docs

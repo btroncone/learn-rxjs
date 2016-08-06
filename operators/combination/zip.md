@@ -5,9 +5,11 @@
 
 ###### TL;DR: After all observables emit, emit values as an array
 
-*Description coming soon...*
+The **zip** operator will subscribe to all inner observables, waiting for each to emit a value.  
+Once this occurs, all values with the corresponding index will be emitted.  
+This will continue until at least one inner observable completes. 
 
-> :bulb:  Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can also be used to time output from another source!
+> :bulb:  Combined with [interval](../creation/interval) or [timer](../creation/timer.md), zip can be used to time output from another source!
 
 ### Examples
 

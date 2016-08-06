@@ -7,11 +7,13 @@
 
 The **concatAll** operator behaves similarly to [concat](concat.md), subscribing to each emitted observable as the previous completes. Like other flattening operators, **concatAll** can also accept promises, emitting the result, or arrays and iterables, emitting as a sequence of values.
 
-> :warning:  Be wary of backpressure when the source emits at a faster pace than inner observables complete!
+> :warning:  Be wary of [backpressure](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/backpressure.md) when the source emits at a faster pace than inner observables complete!
 
 > :bulb:  In many cases you can use [concatMap](../transformation/concatmap.md) as a single operator instead!
 
 ### Examples
+
+( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concatall-spec.ts) )
 
 ##### Example 1: concatAll with observable
 
