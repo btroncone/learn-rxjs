@@ -5,7 +5,7 @@
 
 ###### TL;DR: Does every emitted value pass condition?
 
-The **every** operator takes a predicate function and test ever emission from the source against this function.  This function will check if the value meet the condition you specified and return a boolean based on the result.  If all pass the test, the operator will return true, if not, it will return false.  Note that the **every** operator will only return a value when the source completes. 
+The **every** operator accepts a predicate function, testing every emission from the source against this function. If the result of the predicate for each emission is truthy the operator will return true, if not, it will return false.  Note that the **every** operator will only emit a value when the source completes. 
 
 ### Examples
 
