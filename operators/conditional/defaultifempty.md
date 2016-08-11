@@ -5,7 +5,7 @@
 
 ###### TL;DR: Use given default when empty, or null
 
-*Description coming soon...*
+The **deafultIfEmpty** will mirror the output emitted by the source observable.  If the source observable completes without emitting a value, the operator will emit the default value provided in the parameter (null is emitted if there is no parameter).
 
 ### Examples
 
