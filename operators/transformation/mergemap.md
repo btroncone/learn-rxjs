@@ -47,7 +47,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ```js
 /*
-  you can also supply a second argument which recieves the source value and emitted
+  you can also supply a second argument which receives the source value and emitted
   value of inner observable or promise
 */
 //emit 'Hello'
