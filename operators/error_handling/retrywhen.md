@@ -1,11 +1,11 @@
 # retryWhen
-####signature: `retryWhen(receives: notificationHandler, the: scheduler): Observable`
+####signature: `retryWhen(receives: (errors: Observable) => Observable, the: scheduler): Observable`
 
 ### Description
 
 ###### TL;DR: Retry with additional logic
 
-The **retryWhen** operator mirrors the output of the source except in the case of an error.  When the error occurs the operator would pass the error onto the ```notificationHandler``` function where it would stipulate the next action.  If the function emits an error or complete, the operator would so the same.  If not, the operator would resubscribe to the source and retry.
+The **retryWhen** operator mirrors the output of the source except in the case of an error.  When an error occurs it is passed to the ```notificationHandler``` function which stipulates the next action.  If the function emits an error or complete, the operator would so the same.  If not, the operator would resubscribes to the source.
 
 ### Examples
 
