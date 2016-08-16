@@ -5,7 +5,7 @@
 
 ###### TL;DR: Retry provided number of times on error
 
-*Description coming soon...*
+The **retry** operator mirrors the output of the source except in the case of an error.  When an error is emitted, the operator would resubscribe to the source and retry.  It will do so for the number of times provided in the parameter.  Once the retry count is reached, and there's still an error, the source will emit that error.
 
 ### Examples
 
