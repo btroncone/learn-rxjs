@@ -5,6 +5,7 @@ import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/observable/of';
 
 describe('The catch operator examples', () => {
+    
     describe('Example 1 - Catching error from observable', () => {
         it('catch an error', () => {
             const source = cold('#')
@@ -14,6 +15,7 @@ describe('The catch operator examples', () => {
             expectObservable(example).toBe(expected, {a: 'Error Caught!'});
         });
     });
+
     describe('Example 2 - Catching rejected promise', () => {
         it('catch an error from a rejected promise', (done) => {
             let result;

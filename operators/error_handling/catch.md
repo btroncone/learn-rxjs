@@ -12,6 +12,8 @@ Properly caught errors will avoid terminating a subscription chain.  **catch** i
 
 ### Examples
 
+( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/error_handling/catch-spec.ts) )
+
 ##### Example 1: Catching error from observable
 
 ( [jsBin](http://jsbin.com/porevoxelu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/wk4oLLqc/) )
