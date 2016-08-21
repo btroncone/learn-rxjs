@@ -10,7 +10,7 @@ to pass the given predicate expression. When a single value is emitted the obser
 
 A projection function can also be supplied as the second parameter to the **first** operator. This function will 
 receieve the emitted value and index of said value. For instance, if the third emitted
-value was the first to pass the predicate expression the index value will be 2.
+value was the first to pass the predicate expression the index value will be `2`.
 
 ### Examples
 
