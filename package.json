@@ -19,7 +19,12 @@
   "keywords": [
     "rxjs"
   ],
-  "author": "Brian Troncone",
+  "author": "Brian Troncone <btroncone@gmail.com>",
+  "contributors": [
+    {
+      "name": "Huy Le"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/btroncone/learn-rxjs/issues"
