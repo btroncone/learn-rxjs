@@ -5,13 +5,34 @@
 
 ###### TL;DR: Given a group of observables, when one emits also emit latest values from each
 
-The **combineLatest** operator accepts a variable number of observables, subscribing to each. When any inner observable emits a value, the last emitted value from each observable is emitted as an array. 
-**Each provided observable must emit at least one value before the first emission can occur**. 
-Promises can also be supplied when necessary.
+The **combineLatest** operator accepts a variable number of observables, subscribing to each. When any inner observable emits a value, 
+the last emitted value from each observable is emitted as an array. 
 
-> :bulb:  combineLatest can be used as either a static or instance method!
+__*For example...*__
 
-> :bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
+Suppose you have several inputs that rely on eachother to perform a calculation.
+When any stream emits a value the last value from each is required to take appropriate action.
+
+```js
+Observable.combineLatest(
+  observable1,
+  observable2,
+  observable3
+)
+/*
+  When any of the inner observables emit, supply latest from all three to calculate sum
+*/
+.map(([val1, val2, val3]) => val1 + val2 + val3) 
+```
+
+---
+:warning: Each provided observable must emit at least one value before the first emission can occur!
+
+:bulb:  combineLatest can be used as either a static or instance method!
+
+:bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
+
+---
 
 ### Examples
 

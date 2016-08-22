@@ -8,11 +8,35 @@
 The **concat** operator accepts a variable number of observables, subscribing to each in order as the previous completes. 
 Emissions from each observable are emitted to subscriber as they occur.
 
-> :bulb:  You can think of concat like a line at a ATM, the next transaction (subscription) cannot start until the previous completes!
+__*For example...*__
 
-> :bulb:  concat can be used as either a static or instance method!
+Suppose we had three requests to be initiated and order must be maintained. 
+The first request should be completed successfully before the next is made, and so on.
 
-> :bulb:  If throughput not order is a primary concern, try [merge](merge.md) instead!
+```js
+Observable.concat(
+  request1, // <-- returns response1
+  request2, // <-- returns response2
+  request3  // <-- returns response3
+)
+```
+
+Given the above case:
+1. `request1` is initiated
+  1. `request1` completes and `response1` is emitted
+2. `request2` is initiated
+  1. `request2` completes and `response2` is emitted
+3. `request3` is initiated
+  1. `request3` completes and `response3` is emitted
+
+---
+:bulb:  You can think of concat like a line at a ATM, the next transaction (subscription) cannot start until the previous completes!
+
+:bulb:  concat can be used as either a static or instance method!
+
+:bulb:  If throughput not order is a primary concern, try [merge](merge.md) instead!
+
+---
 
 ### Examples
 
