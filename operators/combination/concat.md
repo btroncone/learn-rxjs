@@ -15,9 +15,9 @@ The first request should be completed successfully before the next is made, and 
 
 ```js
 Observable.concat(
-  request1, // <-- returns response1
-  request2, // <-- returns response2
-  request3  // <-- returns response3
+  request1, // <-- emits response1
+  request2, // <-- emits response2
+  request3  // <-- emits response3
 )
 ```
 
