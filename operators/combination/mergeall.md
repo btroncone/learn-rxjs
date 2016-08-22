@@ -6,8 +6,7 @@
 ###### TL;DR: Emit values from observables or promises emitted from source
 
 The **mergeAll** operator subscribes to each observable as it is emitted from the source.  
-Values emitted from inner observables are emitted to subscribers. Like other flattening operators, **mergeAll** also
-works with promises, arrays, and iterables.
+Values emitted from inner observables are emitted to subscribers.
 
 ---
 :bulb:  In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
