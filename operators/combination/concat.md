@@ -10,7 +10,7 @@ Emissions from each observable are emitted to subscriber as they occur.
 
 __*For example...*__
 
-Suppose we had three requests to be initiated and order must be maintained. 
+Suppose you have three requests to be initiated and order must be maintained. 
 The first request should be completed successfully before the next is made, and so on.
 
 ```js

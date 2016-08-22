@@ -6,7 +6,8 @@
 ###### TL;DR: Output latest values from inner observables when outer observable completes
 
 The **combineAll** operator collects observables emitted from source, subscribing using [`combineLatest`](combinelatest.md) when the source observable completes. 
-This can be thought of as follows:
+
+__*For example...*__
 
 1. Source observable emits 2 values, mapping to 2 inner interval observables
 
