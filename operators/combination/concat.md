@@ -8,7 +8,7 @@
 The **concat** operator accepts a variable number of observables, subscribing to each in order as the previous completes. 
 Emissions from each observable are emitted to subscriber as they occur.
 
-__*For example...*__
+__*For instance...*__
 
 Suppose you have three requests to be initiated and order must be maintained. 
 The first request should be completed successfully before the next is made, and so on.

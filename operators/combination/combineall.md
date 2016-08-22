@@ -7,7 +7,7 @@
 
 The **combineAll** operator collects observables emitted from source, subscribing using [`combineLatest`](combinelatest.md) when the source observable completes. 
 
-__*For example...*__
+__*For instance...*__
 
 1. Source observable emits 2 values, mapping to 2 inner interval observables
 

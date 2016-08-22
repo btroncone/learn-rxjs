@@ -8,7 +8,7 @@
 The **combineLatest** operator accepts a variable number of observables, subscribing to each. When any inner observable emits a value, 
 the last emitted value from each observable is emitted as an array. 
 
-__*For example...*__
+__*For instance...*__
 
 Suppose you have several inputs that rely on eachother to perform a calculation.
 When any stream emits a value the last value from each is required to take appropriate action.
