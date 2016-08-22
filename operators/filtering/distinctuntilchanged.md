@@ -9,7 +9,10 @@ The **distinctUntilChanged** operator will emit values that are distinct from th
 dictate how this comparison is performed by providing a function that will compare the current and previous values. 
 A [strict equality comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) is used by default.
 
-> :bulb:  distinctUntilChanged uses '===' comparison by default, object references must match!
+---
+:bulb:  distinctUntilChanged uses '===' comparison by default, object references must match!
+
+---
 
 ### Examples
 

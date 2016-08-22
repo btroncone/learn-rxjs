@@ -7,9 +7,12 @@
 
 The **mergeMap** operator takes a project function, subscribing to the returned observable and emitting the output.  **mergeMap** can also handle promises, emitting the resolved value, and arrays or iterables, emitting each value in a sequence.
 
-> :bulb:  flatMap is an alias for mergeMap!
+---
+:bulb:  flatMap is an alias for mergeMap!
 
-> :bulb:  mergeMap is one of the most popular operators for handling HTTP requests!
+:bulb:  This is one of the most popular operators for handling HTTP requests!
+
+---
 
 ### Examples
 

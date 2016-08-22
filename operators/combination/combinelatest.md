@@ -28,7 +28,7 @@ Observable.combineLatest(
 ---
 :warning: Each provided observable must emit at least one value before the first emission can occur!
 
-:bulb:  combineLatest can be used as either a static or instance method!
+:bulb:  This operator can be used as either a static or instance method!
 
 :bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
 

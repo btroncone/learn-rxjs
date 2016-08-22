@@ -7,9 +7,12 @@
 
 The **merge** operator accepts a variable number of observables, subscribing to each and emitting values as each emits. 
 
-> :bulb:  merge can be used as either a static or instance method!
+---
+:bulb:  This operator can be used as either a static or instance method!
 
-> :bulb:  If order not throughput is a primary concern, try [concat](concat.md) instead!
+:bulb:  If order not throughput is a primary concern, try [concat](concat.md) instead!
+
+---
 
 ### Examples
 

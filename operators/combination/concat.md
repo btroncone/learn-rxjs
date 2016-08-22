@@ -32,7 +32,7 @@ Given the above case:
 ---
 :bulb:  You can think of concat like a line at a ATM, the next transaction (subscription) cannot start until the previous completes!
 
-:bulb:  concat can be used as either a static or instance method!
+:bulb:  This operator can be used as either a static or instance method!
 
 :bulb:  If throughput not order is a primary concern, try [merge](merge.md) instead!
 

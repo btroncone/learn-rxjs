@@ -7,7 +7,10 @@
 
 *Description coming soon!*
 
-> :bulb:  share is like [multicast](multicast.md) with a Subject and refCount!
+---
+:bulb:  share is like [multicast](multicast.md) with a Subject and refCount!
+
+---
 
 ### Examples
 

@@ -7,7 +7,10 @@
 
 *Description coming soon...*
 
-> :bulb:  Most operators that can handle inner observables can also accept promises without wrapping!
+---
+:bulb:  Flattening operators can generally accept promises without wrapping!
+
+---
 
 ### Examples
 

@@ -7,7 +7,10 @@
 
 The **startWith** operator emits a variable number of values before emitting values received from the source.
 
-> :bulb:  A [BehaviorSubject](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md) can also start with an initial value!
+---
+:bulb:  A [BehaviorSubject](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md) can also start with an initial value!
+
+---
 
 ### Examples
 

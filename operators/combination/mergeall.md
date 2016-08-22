@@ -9,7 +9,10 @@ The **mergeAll** operator subscribes to each observable as it is emitted from th
 Values emitted from inner observables are emitted to subscribers. Like other flattening operators, **mergeAll** also
 works with promises, arrays, and iterables.
 
-> :bulb:  In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
+---
+:bulb:  In many cases you can use [mergeMap](../transformation/mergemap.md) as a single operator instead!
+
+---
 
 ### Examples
 
