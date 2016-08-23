@@ -5,12 +5,59 @@
 
 ###### TL;DR: Map values from source to inner observable, merge output
 
-The **mergeMap** operator takes a project function, subscribing to the returned observable and emitting the output.  **mergeMap** can also handle promises, emitting the resolved value, and arrays or iterables, emitting each value in a sequence.
+The **mergeMap** operator takes a project function, subscribing to the returned observable and emitting the output.
+
+__*For instance...*__
+
+Suppose you are initiating an HTTP request, for the sake of example we can imagine a `makeRequest` method which <sup>1</sup>returns an observable.
+The `mergeMap` operator will subscribe to this <sup>2</sup>observable, emitting the result to the outer subscriber. 
+
+
+```js
+Observable.of(url)
+ /*
+    The observable returned from the makeRequest method will be subscribed to, 
+    creating an inner subscription.
+    Values emitted from this inner observable will be emitted to the outer subscriber, 
+    ie the next operator or subscribe function.
+ */
+  .mergeMap(url => makeRequest(url));
+```
+
+If a promise is returned from the provided function, `.then` will be called with the result emitted to the outer subscriber.
+
+```js
+Observable.of(url)
+  /*
+    Promises are also fine, the result will be emitted.
+  */
+  .mergeMap(url => makeRequestPromise(url))
+```
+
+Lastly, if an array or iterable is returned each item will be emitted in sequence. For instance:
+
+```js
+Observable.of([1,2,3])
+  .mergeMap(arr => arr)
+```
+
+Will emit:
+
+```bash
+1
+2
+3
+```
+
+<sup>1</sup> *This is an example of an Observable of Observables.*
+
+<sup>2</sup> *This is referred to as the inner subscriber.*
+
 
 ---
 :bulb:  flatMap is an alias for mergeMap!
 
-:bulb:  This is one of the most popular operators for handling HTTP requests!
+:bulb: If the order of emission and subscription of inner observables is important, try [`concatMap`](concatmap.md)!
 
 ---
 
