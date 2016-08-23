@@ -51,7 +51,7 @@ Will emit:
 
 <sup>1</sup> *This is an example of an Observable of Observables.*
 
-<sup>2</sup> *This is eferred to as the inner observable.*
+<sup>2</sup> *This is referred to as the inner observable.*
 
 
 ---
