@@ -9,8 +9,8 @@ The **mergeMap** operator takes a project function, subscribing to the returned 
 
 __*For instance...*__
 
-Suppose you are initiating an HTTP request, for the sake of example we can imagine a `makeRequest` method which <sup>1</sup>returns an observable.
-The `mergeMap` operator will subscribe to this <sup>2</sup>observable, emitting the result to the outer subscriber. 
+Suppose you are initiating an HTTP request, for the sake of example we can imagine a `makeRequest` method which returns an observable.
+The `mergeMap` operator will subscribe to this observable, emitting the result to the outer subscriber. 
 
 
 ```js
@@ -48,10 +48,6 @@ Will emit:
 2
 3
 ```
-
-<sup>1</sup> *This is an example of an Observable of Observables.*
-
-<sup>2</sup> *This is referred to as the inner observable.*
 
 
 ---
