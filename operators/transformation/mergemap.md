@@ -21,7 +21,7 @@ Observable.of(url)
     Values emitted from this inner observable will be emitted to the outer subscriber, 
     ie the next operator or subscribe function.
  */
-  .mergeMap(url => makeRequest(url));
+  .mergeMap(makeRequest);
 ```
 
 If a promise is returned from the provided function, `.then` will be called with the result emitted to the outer subscriber.
@@ -31,7 +31,7 @@ Observable.of(url)
   /*
     Promises are also fine, the result will be emitted.
   */
-  .mergeMap(url => makeRequestPromise(url))
+  .mergeMap(makePromiseRequest)
 ```
 
 Lastly, if an array or iterable is returned each item will be emitted in sequence. For instance:
