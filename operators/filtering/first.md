@@ -1,16 +1,23 @@
-# first
-####signature: `first(predicate: function, select: function)`
+#first(predicate, resultSelector, defaultValue)
 
-### Description
+###TL;DR:
+Emits the first value based on given argument(s).  Useful for specific filter scenario where you only want the first emitted value.
 
-###### TL;DR: Emit the first value, or the first to pass condition
+###first():Observable
+The **first** operator is tasked with one simple and very specific purpose, emit the first value from the source.  Once that value is emitted, the observable completes.  This first value could be the first value from the source, or the first value from the source that pass the conditional testing provided by the predicate function.
 
-The **first** operator will emit the first value from the source, or, if supplied, the first value
-to pass the given predicate expression. When a single value is emitted the observable will complete.
+###predicate:function
+This `predicate` function is an optional argument that returns a boolean based on whatever conditional testing you want to do.  Now this is a powerful ability because you are able to select only the result you would like see.  Imagine a crowd of contestants guessing the number of jelly beans in the jar, you’re only interested in the contestants who guessed correctly and you want to know who the first to do so was.  If this conditional testing returns a false, the source observable would emit the next value to be tested.  This will continue to happen until a value passes the conditional testing.
 
-A projection function can also be supplied as the second parameter to the **first** operator. This function will 
-receieve the emitted value and index of said value. For instance, if the third emitted
-value was the first to pass the predicate expression the index value will be `2`.
+###resultSelector:function
+Once you have that emitted value, you can perform various action on it through the use of the optional `resultSelector` function.  This function provides you with the value and the index of what was emitted.  This index is the placement order of that value that has gone through the process.  This is useful for when you want to know how many value have failed before one passes the `predicate` function.
+
+###defaultValue:R
+If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be provided to be emitted instead.  Without this value, an `EmptyError` would be thrown instead.
+
+Overall, the first operator is very simple.  It does what you ask of it while providing you a lot of control over what should be done.  Think of it as a filter operator but only emits the first value.
+
+:bulb: The counterpart to first is **last**. Who would have though?
 
 ### Examples
 
