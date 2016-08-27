@@ -1,11 +1,28 @@
-# last
-####signature: `last(predicate: function): Observable`
+#last(predicate, resultSelector, defaultValue)
 
-### Description
+### TL;DR:
+Emits the last value based on given argument(s).  Useful for specific scenarios where only the last value, or last value to pass a provided predicate expression is needed.
 
-###### TL;DR: Emit last item or last to pass test
+### last : Observable
+The **last** operator only purpose is to emit the last value received from the source.  Once that is emitted, the observable completes.  This value can be the last value from the source, or the last value from the source to pass the conditional testing described by the predicate function.  How the operator does this is by updating the `lastValue` variable until there is no value to update it with.
 
-*Description coming soon...*
+---
+
+### Arguments
+
+###predicate : function
+The `predicate` function is an optional argument that returns a boolean based on the conditional testing you wish to perform.  In addition, the predicate function would update a variable named `lastValue` to match the value that passed the test.  This allows you to add specifications to the single emitted value. If the supplied predicate returns `false`, the value will be ignored and the next value will be tested. If returned `true`, the value will be assigned to `lastValue`. The observable will continues to emit values until there are no more to emit, at which point `lastValue` and `index` would be emitted and the observable would completes.
+
+###resultSelector : function
+When a value is emitted you can perform a specified projection through the use of the optional `resultSelector` function.  This function provides you with the value and the index of the value that was emitted.  This index is the placement order of that value, or in other words, the number of items to be emitted before the current value (starting with `0`).  This may be useful in situations where you wish to know how many values have failed before one passed the `predicate` function.
+
+###defaultValue : any
+If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
+
+Overall, the `last` operator is simple, though can be lengthy.  When a predicate function is supplied, the source would emit a value, this value would go through a conditional test, if the result is true, the value would be assigned to `lastValue`. This would continues until a complete is emitted by the source which signals for `lastValue` and the index to be emitted before everything completes.  This is lengthy because `lastValue` has to be reassigned everytime the observable emits a value that pass the conditional test.
+
+:bulb: The counterpart to last is [**first**](first.md).
+
 
 ### Examples
 
