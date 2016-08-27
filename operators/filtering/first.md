@@ -3,20 +3,20 @@
 ### TL;DR:
 Emits the first value based on given argument(s).  Useful for specific scenarios where you only want the first value, or first value to pass a provided predicate expression.
 
-### first : Observable
+### [first : Observable](#example-1-first-value-from-sequence)
 The **first** operator has one purpose, emit the first value receieved from the source.  Once that value is emitted, the observable completes.  This first value can be the first value from the source, or the first value from the source to pass the conditional testing described by the predicate function.
 
 ---
 
-### Arguments
+### Arguments (optional)
 
-###predicate : function
+###[predicate : function](#example-2-first-value-to-pass-predicate)
 The `predicate` function is an optional argument, returning a boolean based on the conditional testing you wish to perform.  In the context of `first`, this allows you to add specifications to the single emitted value. If the supplied predicate returns `false`, the value will be ignored and the next value will be tested. This will continue until the result of the predicate is `true`, at which point the value will be emitted and observable completed.
 
-###resultSelector : function
+###[resultSelector : function](#example-3-using-optional-projection-function)
 When a value is emitted you can perform a specified projection through the use of the optional `resultSelector` function.  This function provides you with the value and the index of the value that was emitted.  This index is the placement order of that value, or in other words, the number of items to be emitted before the current value (starting with `0`).  This may be useful in situations where you wish to know how many values have failed before one passed the `predicate` function.
 
-###defaultValue : any
+###[defaultValue : any](#example-4-utilizing-default-value)
 If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
 
 Overall, the `first` operator is very simple. Without a predicate, the first value is emitted and the observable is completed.  When a predicate is supplied, you can think of `first` as a shorthand for `filter` and `take(1)`.
