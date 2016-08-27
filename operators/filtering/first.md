@@ -1,16 +1,27 @@
-# first
-####signature: `first(predicate: function, select: function)`
+#first(predicate, resultSelector, defaultValue)
 
-### Description
+### TL;DR:
+Emits the first value based on given argument(s).  Useful for specific scenarios where you only want the first value, or first value to pass a provided predicate expression.
 
-###### TL;DR: Emit the first value, or the first to pass condition
+### first : Observable
+The **first** operator has one purpose, emit the first value receieved from the source.  Once that value is emitted, the observable completes.  This first value can be the first value from the source, or the first value from the source to pass the conditional testing described by the predicate function.
 
-The **first** operator will emit the first value from the source, or, if supplied, the first value
-to pass the given predicate expression. When a single value is emitted the observable will complete.
+---
 
-A projection function can also be supplied as the second parameter to the **first** operator. This function will 
-receieve the emitted value and index of said value. For instance, if the third emitted
-value was the first to pass the predicate expression the index value will be `2`.
+### Arguments
+
+###predicate : function
+The `predicate` function is an optional argument, returning a boolean based on the conditional testing you wish to perform.  In the context of `first`, this allows you to add specifications to the single emitted value. If the supplied predicate returns `false`, the value will be ignored and the next value will be tested. This will continue until the result of the predicate is `true`, at which point the value will be emitted and observable completed.
+
+###resultSelector : function
+When a value is emitted you can perform a specified projection through the use of the optional `resultSelector` function.  This function provides you with the value and the index of the value that was emitted.  This index is the placement order of that value, or in other words, the number of items to be emitted before the current value (starting with `0`).  This may be useful in situations where you wish to know how many values have failed before one passed the `predicate` function.
+
+###defaultValue : any
+If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
+
+Overall, the `first` operator is very simple. Without a predicate, the first value is emitted and the observable is completed.  When a predicate is supplied, you can think of `first` as a shorthand for `filter` and `take(1)`.
+
+:bulb: The counterpart to first is [**last**](last.md). Who would have thought?
 
 ### Examples
 
@@ -48,6 +59,18 @@ const source = Rx.Observable.from([1,2,3,4,5]);
 const example = source.first(num => num % 2 === 0, 
                                     (result, index) => `First even: ${result} is at index: ${index}`);
 //output: "First even: 2 at index: 1"
+const subscribe = example.subscribe(val => console.log(val));
+```
+
+##### Example 4: Utilizing default value
+
+( [jsBin](http://jsbin.com/qoganeleqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/owx2jdg1/3/) )
+
+```js
+const source = Rx.Observable.from([1,2,3,4,5]);
+//no value will pass, emit default
+const example = source.first(val => val > 5, val => `Value: ${val}`, 'Nothing');
+//output: 'Nothing'
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
