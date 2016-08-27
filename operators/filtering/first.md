@@ -62,6 +62,18 @@ const example = source.first(num => num % 2 === 0,
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 4: Utilizing default value
+
+( [jsBin](http://jsbin.com/qoganeleqa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/owx2jdg1/3/) )
+
+```js
+const source = Rx.Observable.from([1,2,3,4,5]);
+//no value will pass, emit default
+const example = source.first(val => val > 5, val => `Value: ${val}`, 'Nothing');
+//output: 'Nothing'
+const subscribe = example.subscribe(val => console.log(val));
+```
+
 
 ### Additional Resources
 * [first](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-first) :newspaper: - Official docs
