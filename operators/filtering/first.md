@@ -1,23 +1,27 @@
 #first(predicate, resultSelector, defaultValue)
 
-###TL;DR:
-Emits the first value based on given argument(s).  Useful for specific filter scenario where you only want the first emitted value.
+### TL;DR:
+Emits the first value based on given argument(s).  Useful for specific scenarios where you only want the first value, or first value to pass a provided predicate expression.
 
-###first():Observable
-The **first** operator is tasked with one simple and very specific purpose, emit the first value from the source.  Once that value is emitted, the observable completes.  This first value could be the first value from the source, or the first value from the source that pass the conditional testing provided by the predicate function.
+### first : Observable
+The **first** operator has one purpose, emit the first value receieved from the source.  Once that value is emitted, the observable completes.  This first value can be the first value from the source, or the first value from the source to pass the conditional testing described by the predicate function.
 
-###predicate:function
-This `predicate` function is an optional argument that returns a boolean based on whatever conditional testing you want to do.  Now this is a powerful ability because you are able to select only the result you would like see.  Imagine a crowd of contestants guessing the number of jelly beans in the jar, you’re only interested in the contestants who guessed correctly and you want to know who the first to do so was.  If this conditional testing returns a false, the source observable would emit the next value to be tested.  This will continue to happen until a value passes the conditional testing.
+---
 
-###resultSelector:function
-Once you have that emitted value, you can perform various action on it through the use of the optional `resultSelector` function.  This function provides you with the value and the index of what was emitted.  This index is the placement order of that value that has gone through the process.  This is useful for when you want to know how many value have failed before one passes the `predicate` function.
+### Arguments
 
-###defaultValue:R
-If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be provided to be emitted instead.  Without this value, an `EmptyError` would be thrown instead.
+###predicate : function
+The `predicate` function is an optional argument, returning a boolean based on the conditional testing you wish to perform.  In the context of `first`, this allows you to add specifications to the single emitted value. If the supplied predicate returns `false`, the value will be ignored and the next value will be tested. This will continue until the result of the predicate is `true`, at which point the value will be emitted and observable completed.
 
-Overall, the first operator is very simple.  It does what you ask of it while providing you a lot of control over what should be done.  Think of it as a filter operator but only emits the first value.
+###resultSelector : function
+When a value is emitted you can perform a specified projection through the use of the optional `resultSelector` function.  This function provides you with the value and the index of the value that was emitted.  This index is the placement order of that value, or in other words, the number of items to be emitted before the current value (starting with `0`).  This may be useful in situations where you wish to know how many values have failed before one passed the `predicate` function.
 
-:bulb: The counterpart to first is **last**. Who would have though?
+###defaultValue : any
+If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
+
+Overall, the `first` operator is very simple. Without a predicate, the first value is emitted and the observable is completed.  When a predicate is supplied, you can think of `first` as a shorthand for `filter` and `take(1)`.
+
+:bulb: The counterpart to first is [**last**](last.md). Who would have thought?
 
 ### Examples
 
