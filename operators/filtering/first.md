@@ -22,7 +22,7 @@ When a value is emitted you can perform a specified projection through the use o
 If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
 
 ### Walkthrough
-Suppose you had a source of random numbers, but you only wanted to emit the first number that surpassed a particular threshold. We can model that with `first` by supplying a predicate expression:
+Suppose you had a source of random numbers but only wanted to emit the first number that surpassed a particular threshold. We can model that with `first` by supplying a predicate expression:
 
 ```js
 const source = Rx.Observable.of(1,2,3,4,5,6);
