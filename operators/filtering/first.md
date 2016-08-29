@@ -1,12 +1,14 @@
 #first(predicate, resultSelector, defaultValue)
 
 ### TL;DR:
-Emits the first value based on given argument(s).  Useful for specific scenarios where you only want the first value, or first value to pass a provided predicate expression.
+Emits the first value based on given argument(s).  Useful for scenarios where you only need the first value, or first value to pass a provided predicate expression.
 
 ### [first : Observable](#example-1-first-value-from-sequence)
-The **first** operator has one purpose, emit the first value receieved from the source.  Once that value is emitted, the observable completes.  This first value can be the first value from the source, or the first value from the source to pass the conditional testing described by the predicate function.
+The `first` operator has one purpose, emit the first value receieved from the source.  Once this value is emitted, the observable completes.  The emitted value is either the first value from the source, or the first value from the source to pass the conditional test described by the provided predicate function. When a predicate function is supplied, you can think of `first` as a shorthand for `filter` and `take(1)`.
 
----
+An optional `resultSelector` function and `default` value can also be supplied to the `first` operator. If a `resultSelector` function is supplied, this will be invoked with the corresponding `value` and `index`, with the result being emitted to the subscriber. If a `default` value is supplied, this will be emitted in situations where no values would be emitted, for instance, when no values pass the provided predicate before the source observable completes.
+
+:bulb: The counterpart to first is [**last**](last.md). Who would have thought?
 
 ### Arguments (optional)
 
@@ -18,10 +20,6 @@ When a value is emitted you can perform a specified projection through the use o
 
 ###[defaultValue : any](#example-4-utilizing-default-value)
 If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
-
-Overall, the `first` operator is very simple. Without a predicate, the first value is emitted and the observable is completed.  When a predicate is supplied, you can think of `first` as a shorthand for `filter` and `take(1)`.
-
-:bulb: The counterpart to first is [**last**](last.md). Who would have thought?
 
 ### Examples
 
