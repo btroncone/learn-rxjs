@@ -53,6 +53,8 @@ const example = source.first(
 
 ### Examples
 
+( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/filtering/first-spec.ts) )
+
 ##### Example 1: First value from sequence
 
 ( [jsBin](http://jsbin.com/kayenuxoma/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/uncey4v9/) )
