@@ -1,12 +1,14 @@
-# combineLatest
-####signature: `combineLatest(observables: ...Observable, project: function): Observable`
+# combineLatest(observables, project)
+
+### TL;DR:
+Combines all given observables into one observable and emits the latest values of all observables when any emits.  This is useful in maintaining multiples observables you want to keep track of.
 
 ### Description
+The `combineLatest` operator can hang off of an existing observable and accepts any number of observables in the form of `(obs1, obs2, obsEtc)`.  It then subscribes to all observables and emits an array of values once all observables emits at least one time.  `combineLatest` then continues to emit the latest values array as soon as any observable emits.  `combineLatest` can also takes an optional `project` function that allows you to dictate what the value being emitted should appear as.
 
-###### TL;DR: Given a group of observables, when one emits also emit latest values from each
+:bulb:  This operator can be used as either a static or instance method!
 
-The **combineLatest** operator accepts a variable number of observables, subscribing to each. When any inner observable emits a value, 
-the last emitted value from each observable is emitted as an array. 
+:bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
 
 __*For instance...*__
 
@@ -25,14 +27,16 @@ Observable.combineLatest(
 .map(([val1, val2, val3]) => val1 + val2 + val3) 
 ```
 
----
-:warning: Each provided observable must emit at least one value before the first emission can occur!
+### Arguments (optional)
 
-:bulb:  This operator can be used as either a static or instance method!
+### observable : Observable
+You are free to include any number of `observable` which can be as low as zero or as high as you and your system can handle.  The `combineLatest` operator would subscribe to each and wait until all observables emit at least one value.  These values would be grouped together and emitted as a single value.  From this point on, the operator would group all latest values and emit the combined value every time an observables emits.  If any observable throws an error, the operator would do the same.  Once all observables completes, the `combineLatest` will do the same.
 
-:bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
+### project : function : Observable
+The `project` function takes the values emitted and let you manipulate them as you pleased.  The function, itself, takes various arguments that represent the emitted values.  For example, `(one, two, three) => one + two + three;`  `one` represent the value from the first observable in the chain and so on so forth.  If you include less arguments than number of observables, the latters would be left out.
 
----
+### Walkthrough
+
 
 ### Examples
 
