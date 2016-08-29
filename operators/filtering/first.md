@@ -8,7 +8,7 @@ The `first` operator has one purpose, emit the first value receieved from the so
 
 An optional `resultSelector` function and `default` value can also be supplied to the `first` operator. If a `resultSelector` function is supplied, this will be invoked with the corresponding `value` and `index`, with the result being emitted to the subscriber. If a `default` value is supplied, this will be emitted in situations where no values would be emitted, for instance, when no values pass the provided predicate before the source observable completes.
 
-:bulb: The counterpart to first is [**last**](last.md). Who would have thought?
+:bulb: The counterpart to first is [**last**](last.md)!
 
 ### Arguments (optional)
 
