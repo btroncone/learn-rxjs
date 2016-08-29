@@ -56,6 +56,7 @@ setTimeout(() => {
 
 
 ### Additional Resources
+* [create](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-create) :newspaper: - Official docs
 * [Creation operators: Create()](https://egghead.io/lessons/rxjs-creation-operator-create?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
 * [Using Observable.create for fine-grained control](https://egghead.io/lessons/rxjs-using-observable-create-for-fine-grained-control) :video_camera: :dollar: - Shane Osbourne
 
