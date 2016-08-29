@@ -4,7 +4,7 @@ In a [push based approach](http://reactivex.io/rxjs/manual/overview.html#pull-ve
 These operators provide techniques for accepting values from an observable source and dealing with [backpressure](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/backpressure.md).
 
 ## Contents
-* [debounce](filtering/debounce.md)
+* [debounce](debounce.md)
 * [debounceTime](debouncetime.md) :star:
 * [distinctUntilChanged](distinctuntilchanged.md) :star:
 * [filter](filter.md) :star:
