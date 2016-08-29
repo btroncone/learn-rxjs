@@ -15,14 +15,14 @@ An optional `resultSelector` function and `default` value can also be supplied t
 #### [predicate : function(value: any, index: number, source: Observable) : boolean](#example-2-first-value-to-pass-predicate)
 The `predicate` function is an optional argument, returning a boolean based on the conditional testing you wish to perform.  In the context of `first`, this allows you to add specifications to the single emitted value. If the supplied predicate returns `false`, the value will be ignored and the next value will be tested. This will continue until the result of the predicate is `true`, at which point the value will be emitted and observable completed.
 
-#### [resultSelector : function(value: any, index: number): R](#example-3-using-optional-projection-function)
+#### [resultSelector : function(value: any, index: number): any](#example-3-using-optional-projection-function)
 When a value is emitted you can perform a specified projection through the use of the optional `resultSelector` function.  This function provides you with the value and the index of the value that was emitted.  This index is the placement order of that value, or in other words, the number of items to be emitted before the current value (starting with `0`).  This may be useful in situations where you wish to know how many values have failed before one passed the `predicate` function.
 
 #### [defaultValue : any](#example-4-utilizing-default-value)
 If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
 
 ### Walkthrough
-Suppose you had a source of random numbers, but you only wanted to emit the first number that surpassed a particular threshold. We can model that with first by supplying a predicate expression:
+Suppose you had a source of random numbers, but you only wanted to emit the first number that surpassed a particular threshold. We can model that with `first` by supplying a predicate expression:
 
 ```js
 const source = Rx.Observable.of(1,2,3,4,5,6);
