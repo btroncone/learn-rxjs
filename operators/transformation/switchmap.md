@@ -1,16 +1,22 @@
-# switchMap
-####signature: ` switchMap(project: function: Observable, resultSelector: function(outerValue, innerValue, outerIndex, innerIndex): any): Observable`
+#switchMap(project, resultSelector)
+
+### TL;DR:
+Maps values emitted by the source observable to new observables.  These observables are then flatten with `switch`, which would allows each observables to emit values until the sequential observable takes over.
 
 ### Description
+The `switchMap` operator takes `switch` one step further.  It first takes a value emitted by the source and maps it to a new observable.  This observable will emits values until the source emit a new value.  This new value would then be mapped, and similar to `switch`, the previous observable will completes and the new one will starts emission.  The operator will continues to do so until the source completes.  The project function responsible for the mapping must return an observable for this to work.  That is because the operator will try to subscribe to the inner observables.  If there is none, we have a problem.
 
-###### TL;DR: When source emits switch to new inner observable
+An optional `resultSelector` function can also be supplied to the operator. If provided, the function would grant you access to the values and indices of both the outter and inner observables.
 
-The **switchMap** operator applies a project function, *switching to* the returned observable. This is similar to [mergeMap](mergemap.md) except the previous inner observable is completed each time the source emits a new value.
+:bulb: This operator can cancel in-flight network requests!
 
----
-:bulb:  This operator can cancel in-flight network requests!
+### Arguments
 
----
+#### project : function(value: any, index: number): Observable
+Accepts the value from the source observable and map that value to a new observable.  You have the freedom to do whatever you want within the function, the only caveat is that you must return an observable.  This operator will not work otherwise because `switchMap` will attempt to subscribe to this return value.
+
+#### resultSelector : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any
+The `resultSelector` you see here is a bit different from others you might have seen before.  This one, in particular, have four arguments.  Two to track the outer index and value. Two to track the inner index and value.  When the inner observable emits a value, the `resultSelector` will identify the `(outerValue, innerValue, outerIndex, innerIndex)` of that value.  Outer refers to information from the source observable while inner refers to the current emitting inner observable.
 
 ### Examples
 
