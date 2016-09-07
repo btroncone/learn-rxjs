@@ -1,17 +1,19 @@
-# mergeMap
-#### signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
+# mergeMap(project, resultSelector, concurrent)
+
+### TL;DR:
+Maps the source's emitted values to new observales.  These inner observables are then flatten with `mergeAll`.  They are then subscribed to and begin emission.
 
 ### Description
+The `mergeMap` operator takes the values emitted by the source observables and map it to a new observable using the project function.  The `project` function is the only required argument because `mergemMap` will make an attempt to subscribe to to the newly mapped observable.  This inner observable will then begin emission.  Similar to `mergeAll`, when new inner observables arrive, they are flatten, subscribed to, and begin emission.  Once the source and all inner observables completes, `mergeMap` will emits a complete.
 
-###### TL;DR: Map values from source to inner observable, merge output
+The `resultSelector` is an optional argument that gives you access to the outer and inner values and indices of the emitted value.  This gives you a great deal of control over what you can do with the output.
 
-The **mergeMap** operator takes a project function, subscribing to the returned observable and emitting the output.
+Because the source could continue to emits values while the inners observables are incomplete, there is a risk of your system being overloaded.  In this scenario, you would want to make use of the `concurrent` argument.  This optional argument allows you to control the number of concurrent values being subscribed to.
 
 __*For instance...*__
 
 Suppose you are initiating an HTTP request, for the sake of example we can imagine a `makeRequest` method which returns an observable.
 The `mergeMap` operator will subscribe to this observable, emitting the result to the outer subscriber. 
-
 
 ```js
 Observable.of(url)
@@ -49,13 +51,24 @@ Will emit:
 3
 ```
 
-
 ---
 :bulb:  flatMap is an alias for mergeMap!
 
 :bulb: If the order of emission and subscription of inner observables is important, try [`concatMap`](concatmap.md)!
 
 ---
+
+### Arguments
+
+#### project : function(value: any, index: number): Observable
+Accepts the value from the source observable and map that value to a new observable.  You have the freedom to do whatever you want within the function, the only caveat is that you must return an observable.  This operator will not work otherwise because `mergeMap` will attempt to subscribe to this return value.
+
+#### resultSelector : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any
+The `resultSelector` takes four arguments.  Two to track the outer and inner value. Two to track the outer and inner index.  When the inner observable emits a value, the `resultSelector` will identify the `(outerValue, innerValue, outerIndex, innerIndex)` of that value.  Outer refers to information from the source observable while inner refers to the current emitting inner observable.  This gives you great control and freedom over the emitted value.
+
+#### concurrent : number
+This is a number that restricts how many concurrent inner observables are being subscribed to at a time.  By default, this is inifite.  Because the source observable continues to emit, the values are being mapped to new inner observables.  Without any restriction, all of these inner observables would be subscribed to and emit concurrently.  This introduce a number of problems including confusion and overloading. `concurrent` puts a limit on how many are subscribed to at a time which would slow down and draw out the completion time.  As soon as one observable completes, the next will subscribed to and begin emission.
+
 
 ### Examples
 
@@ -107,6 +120,29 @@ const example = source
 });
 //output: "Source: Hello, Promise: Hello World From Promise!"
 const subscribe = example.subscribe(val => console.log(val));
+```
+
+##### Example 4: mergeMap with concurrent number
+
+( [jsFiddle](https://jsfiddle.net/c0c7u60x/1/) )
+
+```js
+console.clear();
+
+//Source emits 3 values at .3 second inbetween.
+//Each values are mapped to a new observable.
+//Inner observable emits at .1 second inbetween.
+//Inner values are mapped to an array of values representing the value's state.
+//Only two inner observable is subscribed to at a time.
+
+const source = Rx.Observable.interval(300).take(3).do(val=>console.log(val));
+//I added the do() here so that we could see that the source continued to emits value.
+//These values are being mapped, but they are placed on a back log waiting to be subscribed to.
+const example = source.mergeMap(
+ (val => Rx.Observable.interval(100).take(5)), //project
+  ((oVal, iVal, oIndex, iIndex) => [oIndex, oVal, iIndex, iVal] ), //resultSelector
+  2 //concurrent
+).subscribe(val => console.log(val));
 ```
 
 
