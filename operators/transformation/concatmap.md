@@ -38,7 +38,7 @@ const subscribe = example
 
 ##### Example 2: Map to promise
 
-( [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
+( [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97/) )
 
 
 ```js
