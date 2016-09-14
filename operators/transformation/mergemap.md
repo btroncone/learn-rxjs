@@ -61,7 +61,7 @@ Will emit:
 ### Arguments
 
 #### project : function(value: any, index: number): Observable | Array | Iterable
-Invoked with the emitted value from the source observable, returning a new observable. If a previous inner subscription exists, it will be unsubscribed after this function is invoked, with a new subscription created with the returned observable.
+Invoked with the emitted value from the source observable, returning a new observable. The new observable will then be subscribed to and merge with any preexisting innber observables. Values from the merged observables will then be emitted in one continuous stream.
 
 #### resultSelector? : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any
 The `resultSelector` is invoked with four values, the last emitted value from the source observable, the currently emitted value from the inner observable, and the index, or emission count for each of these observables. Because a new subscription is created on each emission from the source, the `innerIndex` will be reset each time a switch to a new observable occurs, on source emission. If a `resultSelector` function is provided, the result of this function will be emitted to subscribers of the `mergeMap` operator.
