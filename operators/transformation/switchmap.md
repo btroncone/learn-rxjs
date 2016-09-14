@@ -1,7 +1,7 @@
 #switchMap(project, resultSelector)
 
 ### TL;DR:
-Switch to a new observable returned from the project function on each emission from source observable. Emit values emitted from inner observable. Previous inne
+Switch to the observable returned from the project function on each emission from source observable. Emit values emitted from inner observable. Previous inner observables are unsubscribed on each emission from source.
 
 ### Description
 The `switchMap` operator subscribes to observable returned from the `project` function, emitting all values emitted from this *inner* observable. Each time the source emits a new value the previous inner observable is unsubscribed. Unlike [`mergeMap`](mergemap.md), only one inner subscription is maintained at a time.
@@ -12,13 +12,14 @@ An optional `resultSelector` function can also be supplied as a second parameter
 
 ### Arguments
 
-#### project : function(value: any, index: number): Observable
+#### [project : function(value: any, index: number): Observable](#example-1-restart-interval-every-5-seconds)
 Invoked with the emitted value from the source observable, returning a new observable.  If a previous inner subscription exists, it will be unsubscribed after this function is invoked, with a new subscription created with the returned observable. 
 
 #### resultSelector? : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any
 The `resultSelector` is invoked with four values, the last emitted value from the source observable, the currently emitted value from the inner observable, and the index, or emission count for each of these observables. Because a new subscription is created on each emission from the source, the `innerIndex` will be reset each time a switch to a new observable occurs, on source emission.  If a `resultSelector` function is provided, the result of this function will be emitted to subscribers of the `switchMap` operator.
 
 ### Walkthrough
+
 
 ### Examples
 
@@ -48,6 +49,24 @@ const example = source.switchMap(val => Rx.Observable.interval(3000).mapTo('Hell
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 3: Using a `resultSelector` function
+
+( [jsBin](http://jsbin.com/qobapubeze/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/nqfu534y/) )
+
+```js
+//emit immediately, then every 5s
+const source = Rx.Observable.timer(0, 5000);
+//switch to new inner observable when source emits, invoke project function and emit values
+const example = source.switchMap(() => Rx.Observable.interval(2000), (outerValue, innerValue, outerIndex, innerIndex) => ({outerValue, innerValue, outerIndex, innerIndex}));
+/*
+	Output:
+	{outerValue: 0, innerValue: 0, outerIndex: 0, innerIndex: 0}
+	{outerValue: 0, innerValue: 1, outerIndex: 0, innerIndex: 1}
+	{outerValue: 1, innerValue: 0, outerIndex: 1, innerIndex: 0}
+	{outerValue: 1, innerValue: 1, outerIndex: 1, innerIndex: 1}
+*/
+const subscribe = example.subscribe(val => console.log(val));
+```
 
 ### Additional Resources
 * [switchMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap) :newspaper: - Official docs
