@@ -4,11 +4,11 @@
 Maps the source's emitted values to new observales.  These inner observables are then flatten with `mergeAll`.  They are then subscribed to and begin emission.
 
 ### Description
-The `mergeMap` operator takes the values emitted by the source observables and map it to a new observable using the project function.  The `project` function is the only required argument because `mergemMap` will make an attempt to subscribe to to the newly mapped observable.  This inner observable will then begin emission.  Similar to `mergeAll`, when new inner observables arrive, they are flatten, subscribed to, and begin emission.  Once the source and all inner observables completes, `mergeMap` will emits a complete.
+The `mergeMap` operator subscribes to observable returned from the `project` function, emitting all values emitted from this *inner* observable.  Each time the source emits a new value, the new observable is merged with preexisting ones and their emission are flatten into one continuous stream.  Unlike `switchMap`, many inner subscriptions can be maintained at a time.
 
-The `resultSelector` is an optional argument that gives you access to the outer and inner values and indices of the emitted value.  This gives you a great deal of control over what you can do with the output.
+An optional `resultSelector` function can also be supplied as a second parameter.  If provided, the function is invoked with the last emitted value of the source observable, inner observable, and the current index (count of emissions) of the inner and outer observable.
 
-Because the source could continue to emits values while the inners observables are incomplete, there is a risk of your system being overloaded.  In this scenario, you would want to make use of the `concurrent` argument.  This optional argument allows you to control the number of concurrent values being subscribed to.
+Because the source could continue to emits values while the inners observables are incomplete, there is a risk of overloading.  In this scenario, the `concurrent` argument is put to use.  This optional argument allows you to control the number of concurrent values being subscribed.
 
 __*For instance...*__
 
@@ -60,13 +60,13 @@ Will emit:
 
 ### Arguments
 
-#### project : function(value: any, index: number): Observable
-Accepts the value from the source observable and map that value to a new observable.  You have the freedom to do whatever you want within the function, the only caveat is that you must return an observable.  This operator will not work otherwise because `mergeMap` will attempt to subscribe to this return value.
+#### project : function(value: any, index: number): Observable | Array | Iterable
+Invoked with the emitted value from the source observable, returning a new observable. If a previous inner subscription exists, it will be unsubscribed after this function is invoked, with a new subscription created with the returned observable.
 
-#### resultSelector : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any
-The `resultSelector` takes four arguments.  Two to track the outer and inner value. Two to track the outer and inner index.  When the inner observable emits a value, the `resultSelector` will identify the `(outerValue, innerValue, outerIndex, innerIndex)` of that value.  Outer refers to information from the source observable while inner refers to the current emitting inner observable.  This gives you great control and freedom over the emitted value.
+#### resultSelector? : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any
+The `resultSelector` is invoked with four values, the last emitted value from the source observable, the currently emitted value from the inner observable, and the index, or emission count for each of these observables. Because a new subscription is created on each emission from the source, the `innerIndex` will be reset each time a switch to a new observable occurs, on source emission. If a `resultSelector` function is provided, the result of this function will be emitted to subscribers of the `mergeMap` operator.
 
-#### concurrent : number
+#### concurrent? : number
 This is a number that restricts how many concurrent inner observables are being subscribed to at a time.  By default, this is inifite.  Because the source observable continues to emit, the values are being mapped to new inner observables.  Without any restriction, all of these inner observables would be subscribed to and emit concurrently.  This introduce a number of problems including confusion and overloading. `concurrent` puts a limit on how many are subscribed to at a time which would slow down and draw out the completion time.  As soon as one observable completes, the next will subscribed to and begin emission.
 
 
