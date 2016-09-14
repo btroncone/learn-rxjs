@@ -35,8 +35,6 @@ On each emission from the source, in this case a click event, the previous timer
 
 To drive this home, change any of the below examples to utilize [`mergeMap`](mergemap.md) instead of `switchMap`. You will see each emission from the source creating a new inner subscription without unsubscribing from previous inner observables. This is the main difference between `switchMap` and `mergeMap`, and why `switchMap` if often considered a safer default option.
 
-Now every
-
 ### Examples
 
 ##### Example 1: Restart interval every 5 seconds
