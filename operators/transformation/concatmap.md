@@ -16,10 +16,10 @@ Because the source observable continues to emit, the values are being mapped to 
 
 ### Arguments
 
-#### project: function(value: any, index: number): Observable | Array | Iterable
+#### [project: function(value: any, index: number): Observable | Array | Iterable](#example-3-supplying-a-projection-function)
 Invoked with the emitted value from the source observable, returning a new observable. If a previous inner subscription exists and incomplete, the returned observable is placed in a backlog waiting to be subscribe once the observable before it completes.
 
-#### resultSelector: function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any
+#### [resultSelector: function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any](#example-3-supplying-a-projection-function)
 The `resultSelector` is invoked with four values, the last emitted value from the source observable, the currently emitted value from the inner observable, and the index, or emission count for each of these observables. Because a new subscription is created on each emission from the source, the `innerIndex` will be reset each time a switch to a new observable occurs, on source emission. If a `resultSelector` function is provided, the result of this function will be emitted to subscribers of the `concatMap` operator.
 
 ### Examples
