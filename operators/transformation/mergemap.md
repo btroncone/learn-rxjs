@@ -1,17 +1,30 @@
-# mergeMap
-#### signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
+# mergeMap(project, resultSelector, concurrent)
+
+### TL;DR:
+Map values from source to inner observable. Subscribe to inner observable, emitting the emitted values to subscribers.
 
 ### Description
+The `mergeMap` operator subscribes to the observable returned from the `project` function, emitting all values emitted from this *inner* observable.  Each time the source emits a new value, the returned observable is merged with previous inner observables and their emissions flattened.  Unlike `switchMap`, multiple inner subscriptions can be maintained at a time.
 
-###### TL;DR: Map values from source to inner observable, merge output
+An optional `resultSelector` function can be provided as a second parameter. If provided, the function is invoked with the last emitted value of the source observable and inner observable, as well as the current index (count of emissions) of the inner and outer observable. The result of this function is emitted.
 
-The **mergeMap** operator takes a project function, subscribing to the returned observable and emitting the output.
+A third `number` parameter can be supplied, specifying the number of concurrent inner subscriptions to be maintained at single time.
 
-__*For instance...*__
+### Arguments
+
+#### [project : function(value: any, index: number): Observable](#example-1-mergemap-with-observable)
+Invoked with the emitted value from the source observable, returning a new observable. The returned observable will be subscribed to and merge with any pre-existing inner observables. Emitted values from the merged observables will be emitted to subscribers.
+
+#### [resultSelector? : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any](#example-3-mergemap-with-resultselector)
+The `resultSelector` is invoked with four values, the last emitted value from the source observable, the currently emitted value from the inner observable, and the index, or emission count for each of these observables. If a `resultSelector` function is provided, the result of this function will be emitted to subscribers of the `mergeMap` operator.
+
+#### [concurrent? : number](#example-4-mergemap-with-concurrent-value)
+This restricts the number of inner observables subscribed to at one time.  By default, there is no limit. When the concurrent limit is reached as soon as one observable completes the next subscription will occur.
+
+### Walkthrough
 
 Suppose you are initiating an HTTP request, for the sake of example we can imagine a `makeRequest` method which returns an observable.
-The `mergeMap` operator will subscribe to this observable, emitting the result to the outer subscriber. 
-
+The `mergeMap` operator will subscribe to this observable, emitting the result to the outer subscriber: 
 
 ```js
 Observable.of(url)
@@ -24,7 +37,7 @@ Observable.of(url)
   .mergeMap(makeRequest);
 ```
 
-If a promise is returned from the provided function, `.then` will be called with the result emitted to the outer subscriber.
+If a promise is returned from the provided function, `.then` will be called with the result emitted to the outer subscriber:
 
 ```js
 Observable.of(url)
@@ -34,7 +47,7 @@ Observable.of(url)
   .mergeMap(makePromiseRequest)
 ```
 
-Lastly, if an array or iterable is returned each item will be emitted in sequence. For instance:
+Lastly, if an array or iterable is returned each item will be emitted in sequence:
 
 ```js
 Observable.of([1,2,3])
@@ -48,7 +61,6 @@ Will emit:
 2
 3
 ```
-
 
 ---
 :bulb:  flatMap is an alias for mergeMap!
@@ -87,7 +99,7 @@ const example = source.mergeMap(val => myPromise(val));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 3: mergeMap with projection function
+##### Example 3: mergeMap with `resultSelector`
 
 ( [jsBin](http://jsbin.com/wajokocage/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/zu9a6vr4/) )
 
@@ -106,6 +118,34 @@ const example = source
       return `Source: ${valueFromSource}, Promise: ${valueFromPromise}`;
 });
 //output: "Source: Hello, Promise: Hello World From Promise!"
+const subscribe = example.subscribe(val => console.log(val));
+```
+
+##### Example 4: mergeMap with concurrent value
+
+( [jsBin](http://jsbin.com/qaqucuwise/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/2rmLxpyz/) )
+
+```js
+//emit value every 1s
+const source = Rx.Observable.interval(1000);
+
+const example = source.mergeMap(
+	//project
+	val => Rx.Observable.interval(5000).take(2),
+  //resultSelector
+  (oVal, iVal, oIndex, iIndex) => [oIndex, oVal, iIndex, iVal],
+  //concurrent
+  2 
+);
+/*
+		Output:
+		[0, 0, 0, 0] <--1st inner observable
+		[1, 1, 0, 0] <--2nd inner observable
+		[0, 0, 1, 1] <--1st inner observable
+		[1, 1, 1, 1] <--2nd inner observable
+		[2, 2, 0, 0] <--3rd inner observable
+		[3, 3, 0, 0] <--4th inner observable
+*/
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
