@@ -1,25 +1,24 @@
 # mergeMap(project, resultSelector, concurrent)
 
 ### TL;DR:
-Maps the source's emitted values to new observales.  These inner observables are then flatten with `mergeAll`.  They are then subscribed to and begin emission.
+Maps values from source to inner observable. Subscribes to inner observable(s), emitting the values emitted to subscriber.
 
 ### Description
-The `mergeMap` operator subscribes to observable returned from the `project` function, emitting all values emitted from this *inner* observable.  Each time the source emits a new value, the new observable is merged with preexisting ones and their emission are flatten into one continuous stream.  Unlike `switchMap`, many inner subscriptions can be maintained at a time.
+The `mergeMap` operator subscribes to the observable returned from the `project` function, emitting all values emitted from this *inner* observable.  Each time the source emits a new value, the returned observable is merged with previous inner observables and their emissions flattened.  Unlike `switchMap`, multiple inner subscriptions can be maintained at a time. .
 
-An optional `resultSelector` function can also be supplied as a second parameter.  If provided, the function is invoked with the last emitted value of the source observable, inner observable, and the current index (count of emissions) of the inner and outer observable.
+An optional `resultSelector` function can also be provided as a second parameter.  If provided, the function is invoked with the last emitted value of the source observable and inner observable, as well as the current index (count of emissions) of the inner and outer observable.
 
-Because the source could continue to emits values while the inners observables are incomplete, there is a risk of overloading.  In this scenario, the `concurrent` argument is put to use.  This optional argument allows you to control the number of concurrent values being subscribed.
 
 ### Arguments
 
 #### [project : function(value: any, index: number): Observable](#example-1-mergemap-with-observable)
-Invoked with the emitted value from the source observable, returning a new observable. The returned observable will be subscribed to and merge with any preexisting innber observables. Values from the merged observables will then be emitted in one continuous stream.
+Invoked with the emitted value from the source observable, returning a new observable. The returned observable will be subscribed to and merge with any preexisting inner observables. Values from the merged observables will then be emitted in one continuous stream.
 
 #### [resultSelector? : function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any](#example-3-mergemap-with-resultselector)
 The `resultSelector` is invoked with four values, the last emitted value from the source observable, the currently emitted value from the inner observable, and the index, or emission count for each of these observables. If a `resultSelector` function is provided, the result of this function will be emitted to subscribers of the `mergeMap` operator.
 
 #### [concurrent? : number](#example-4-mergemap-with-concurrent-value)
-This number restricts the number of inner observables subscribed to at one time.  By default, this is infinite. As soon as one observable completes, the next subscription will occur.
+This restricts the number of inner observables subscribed to at one time.  By default, this is infinite. As soon as one observable completes, the next subscription will occur.
 
 ### Walkthrough
 
