@@ -8,7 +8,7 @@ The `mergeMap` operator subscribes to the observable returned from the `project`
 
 An optional `resultSelector` function can be provided as a second parameter. If provided, the function is invoked with the last emitted value of the source observable and inner observable, as well as the current index (count of emissions) of the inner and outer observable. The result of this function is emitted.
 
-A third `number` parameter can be supplied, specifying the number of concurrent inner subscriptions to be maintained at single time.
+A third `concurrent` parameter can be supplied, specifying the number of inner subscriptions to be maintained at single time.
 
 ### Arguments
 
