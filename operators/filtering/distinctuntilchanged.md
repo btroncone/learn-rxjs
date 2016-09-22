@@ -3,7 +3,7 @@
 
 ### Description
 
-###### TL;DR: Only emit when the current value is different then the last
+###### TL;DR: Only emit when the current value is different than the last
 
 The **distinctUntilChanged** operator will emit values that are distinct from the source’s previous output. You can 
 dictate how this comparison is performed by providing a function that will compare the current and previous values. 
