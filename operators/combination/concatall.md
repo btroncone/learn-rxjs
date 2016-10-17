@@ -30,7 +30,7 @@ const example = source
   .map(val => Rx.Observable.of(val + 10))
   //merge values from inner observable
   .concatAll();
-//output: 'Example with Basic Observable 0', 'Example with Basic Observable 2'...
+//output: 'Example with Basic Observable 10', 'Example with Basic Observable 11'...
 const subscribe = example.subscribe(val => console.log('Example with Basic Observable:', val));
 ```
 
