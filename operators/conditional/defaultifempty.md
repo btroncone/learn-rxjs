@@ -1,11 +1,7 @@
 # defaultIfEmpty
 ####signature: `defaultIfEmpty(defaultValue: any): Observable`
 
-### Description
-
-###### TL;DR: Use given default when empty, or null
-
-The **deafultIfEmpty** will mirror the output emitted by the source observable.  If the source observable completes without emitting a value, the operator will emit the default value provided in the parameter (null is emitted if there is no parameter).
+## Emit given value if nothing is emitted before completion.
 
 ### Examples
 
