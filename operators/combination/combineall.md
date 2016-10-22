@@ -1,7 +1,7 @@
 # combineAll
 ####signature: `combineAll(project: function): Observable`
 
-## When source observable completes *use [combineLatest](combinelatest.md) with collected observables*.
+## When source observable completes use [combineLatest](combinelatest.md) with collected observables.
 
 ### Examples
 
