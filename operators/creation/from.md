@@ -1,14 +1,11 @@
 # from
 ####signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Turn an array, promise, or iterable into an observable
-
-The **from** operator turns any array, promise, or iterable into an observable. 
-In the case of a promise, the result of the promise will be emitted. For arrays and iterables, all contained values will be emitted as a sequence.
+## Turn an array, promise, or iterable into an observable.
 
 ---
+:bulb:  For arrays and iterables, all contained values will be emitted as a sequence!
+
 :bulb:  This operator can also be used to emit a string as a sequence of characters!
 
 ---
