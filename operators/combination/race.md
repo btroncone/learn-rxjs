@@ -1,12 +1,7 @@
 # race
 ####signature: `race(): Observable`
 
-### Description
-
-###### TL;DR: Use the first observable to emit
-
-The **race** operator accepts a variable number of observables, subscribing to each. 
-The first observable to emit will be used while the rest are ignored. 
+## The observable to emit first is used. 
 
 
 ### Examples
