@@ -1,7 +1,7 @@
 # every
 ####signature: `every(predicate: function, thisArg: any): Observable`
 
-## If every value passes predicate before completion emit true, else false.
+## If all values pass predicate before completion emit true, else false.
 
 ### Examples
 
