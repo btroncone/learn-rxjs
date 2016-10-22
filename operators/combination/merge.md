@@ -1,11 +1,7 @@
 # merge
 ####signature: `merge(input: Observable): Observable`
 
-### Description
-
-###### TL;DR: Merge outputs from multiple observables into a single source
-
-The **merge** operator accepts a variable number of observables, subscribing to each and emitting values as each emits. 
+### Turn **multiple observables** into a **single observable**.
 
 ---
 :bulb:  This operator can be used as either a static or instance method!
