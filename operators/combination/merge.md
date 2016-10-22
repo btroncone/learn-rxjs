@@ -1,7 +1,7 @@
 # merge
 ####signature: `merge(input: Observable): Observable`
 
-### Turn **multiple observables** into a **single observable**.
+### Turn *multiple observables* into a *single observable*.
 
 ---
 :bulb:  This operator can be used as either a static or instance method!
