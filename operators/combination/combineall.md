@@ -1,39 +1,7 @@
 # combineAll
 ####signature: `combineAll(project: function): Observable`
 
-### Description
-
-###### TL;DR: Output latest values from inner observables when outer observable completes
-
-The **combineAll** operator collects observables emitted from source, subscribing using [`combineLatest`](combinelatest.md) when the source observable completes. 
-
-__*For instance...*__
-
-1. Source observable emits 2 values, mapping to 2 inner interval observables
-
-  ```js
-  const source = Rx.Observable
-    .interval(1000)
-    .take(2)
-    /*
-      Maps to 2 observables:
-        Rx.Observable.interval(500).take(2)
-        Rx.Observable.interval(1000).take(2)
-    */
-    .map(val => Rx.Observable.interval(val + 500).take(2))
-  ```
-
-2. When complete, you can think of the output of `combineAll` the same as if you used [`combineLatest`](combinelatest.md) on the inner observables.
-
-  ```js
-  /*
-    Output: [0,0] [1,0] [1,1]
-  */
-  Rx.Observable.combineLatest(
-    Rx.Observable.interval(500).take(2)
-    Rx.Observable.interval(1000).take(2)
-  )
-  ```
+## When source observable completes *use [combineLatest](combinelatest.md) with collected observables*.
 
 ### Examples
 
