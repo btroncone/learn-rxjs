@@ -1,52 +1,14 @@
-# combineLatest(observables, project)
+# combineLatest
+####signature: `combineLatest(observables: ...Observable, project: function): Observable`
 
-### TL;DR:
-Combines given observables, emitting the last emitted value of each observables when any emits.  This is useful when you need to perform some calculation or logic dependant on the values from multiple sources.
+### When any observable emits a value, emit the *latest value from each*.
 
-### Description
-The `combineLatest` operator can be used as a static or instance method, accepting a variable number of observables.  It then subscribes to each observable, emitting an array of values when each observable has emitted at least one value. The `combineLatest` operator will continue to emit the last emitted value from each observable when any observable of the provided observables emits. The observable will complete when all inner observables complete.  
-
-This operator can also take an optional `project` function, invoked with the latest value from each observable upon each emission. The result of this projection will then be emitted to the subscriber. 
-
+---
 :bulb:  This operator can be used as either a static or instance method!
 
 :bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
 
-### Arguments
-
-### [observable(s) : Observable](#example-1-combining-observables-emitting-at-3-intervals)
-`combineLatest` accepts a variable number of observables.  Each provided observable is subscribed to, waiting for all observables to emit at least one value.  These values are then grouped together in an array and emitted.  After each observable has emitted at least one value, any emission from any observable will cause `combineLatest` to emit the last value from each. 
-
-### [project : function](#example-2-combinelatest-with-projection-function)
-The `project` is invoked with a variable number of values, dependant on the number of observables provided to `combineLatest`. For instance, with an example projection function of `(one, two, three) => one + two + three;`  `one` represent the value from the first observable in the given argumenents. The result of the `project` function is then emitted to the subscriber.
-
-### Walkthrough
-Suppose you have several inputs that rely on eachother to perform a calculation. When any stream emits a value the last value from each is required to take appropriate action. One way to perform this calculation would be to `map` to the appropriate result, as seen below:
-
-```js
-Observable.combineLatest(
-  observable1,
-  observable2,
-  observable3
-)
-/*
-  When any of the inner observables emit, supply latest from all three to calculate sum
-*/
-.map(([val1, val2, val3]) => val1 + val2 + val3) 
-```
-
- Another way would be to utilize the optional `project` function as the last parameter:
-
-```js
-Observable.combineLatest(
-  observable1,
-  observable2,
-  observable3,
-  (val1, val2, val3) => val1 + val2 + val3)
-)
-```
-
-These two approaches will arrive at the same result, it's truly a matter of style preference.
+---
 
 ### Examples
 
