@@ -1,7 +1,7 @@
 # combineLatest
 ####signature: `combineLatest(observables: ...Observable, project: function): Observable`
 
-### When any observable emits a value, emit the *latest value from each*.
+## When any observable emits a value, emit the latest value from each.
 
 ---
 :bulb:  This operator can be used as either a static or instance method!
