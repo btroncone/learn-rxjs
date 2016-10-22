@@ -1,11 +1,7 @@
 # every
 ####signature: `every(predicate: function, thisArg: any): Observable`
 
-### Description
-
-###### TL;DR: Does every emitted value pass condition?
-
-The **every** operator accepts a predicate function, testing every emission from the source against this function. If the result of the predicate for each emission is truthy the operator will return true, if not, it will return false.  Note that the **every** operator will only emit a value when the source completes. 
+## If every value passes predicate before completion emit true, else false.
 
 ### Examples
 
