@@ -1,11 +1,7 @@
 # fromEvent
 ####signature: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
 
-### Description
-
-###### TL;DR: Wrap event in observable
-
-*Description coming soon...*
+## Turn event into observable sequence.
 
 ### Examples
 
