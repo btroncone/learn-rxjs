@@ -1,11 +1,26 @@
-# concatMap
-####signature: `concatMap(project: function, resultSelector: function): Observable`
+# concatMap(project, resultSelector)
+
+### TL;DR:
+Maps the source's emitted values to new observales.  These inner observables are then flatten with `concatAll`.  They are then subscribed to once the previous completes and begin emission.
 
 ### Description
+The `concatMap` operator subscribes to observable returned from the `project` function, emitting all values emitted from this *inner* observable. Each time the source emits a new value, the operator waits for the previous *inner* observable to completes before subscribing to the new observable.  Until then, these observables are placed in a backlog.
 
-###### TL;DR: Map values from source to inner observable, subscribe and emit inner observable values in order
+An optional resultSelector function can also be supplied as a second parameter. If provided, the function is invoked with the last emitted value of the source observable, inner observable, and the current index (count of emissions) of the inner and outer observable.
 
-*Description coming soon!* 
+Because the source observable continues to emit, the values are being mapped to new inner observables.  If the inners observables are not completed in a timely fashion, you will end up with a backlog of observables waiting to be subscribe to.  This could lead to overloading problems if the backlog gets too large.
+
+:bulb: The reason it is called concat is because values emitted by an inner observable is concatted to the the previous.
+
+:warning: If your source significantly outpace your inner observables, you might see some performance issues.
+
+### Arguments
+
+#### [project: function(value: any, index: number): Observable | Array | Iterable](#example-3-supplying-a-projection-function)
+Invoked with the emitted value from the source observable, returning a new observable. If a previous inner subscription exists and incomplete, the returned observable is placed in a backlog waiting to be subscribe once the observable before it completes.
+
+#### [resultSelector: function(outerValue: any, innerValue: any, outerIndex: number, innerIndex: number): any](#example-3-supplying-a-projection-function)
+The `resultSelector` is invoked with four values, the last emitted value from the source observable, the currently emitted value from the inner observable, and the index, or emission count for each of these observables. Because a new subscription is created on each emission from the source, the `innerIndex` will be reset each time a switch to a new observable occurs, on source emission. If a `resultSelector` function is provided, the result of this function will be emitted to subscribers of the `concatMap` operator.
 
 ### Examples
 
@@ -25,7 +40,7 @@ const subscribe = example
 
 ##### Example 2: Map to promise
 
-( [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
+( [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97/) )
 
 
 ```js
