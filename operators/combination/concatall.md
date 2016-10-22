@@ -1,7 +1,7 @@
 # concatAll
 ####signature: `concatAll(): Observable`
 
-## Collect observables and *subscribe to next* when *previous completes*.
+## Collect observables and subscribe to next when previous completes.
 
 ---
 :warning:  Be wary of [backpressure](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/backpressure.md) when the source emits at a faster pace than inner observables complete!
