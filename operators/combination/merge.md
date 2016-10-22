@@ -1,18 +1,26 @@
-# merge
-####signature: `merge(input: Observable): Observable`
+# merge(source, concurrent, scheduler)
+
+### TL;DR:
+Merge outputs from multiple observables into a single source.
 
 ### Description
+The `merge` operator accepts a variable number of observables and subscribes to each.  The operator then meshes the output together into a single stream then completes when all inner observables completes.  `merge` utilize two additional parameters to control the rate of subscription.
 
-###### TL;DR: Merge outputs from multiple observables into a single source
+### Arguments
 
-The **merge** operator accepts a variable number of observables, subscribing to each and emitting values as each emits. 
+#### [source : Observable | Array | Promise | Iterable](#example-1-merging-multiple-observables-static-method)
+The sources must be observables, arrays, promises, and iterarble objects.  `merge` will take in any number of these arguments, separated by a comma, and subscribes to simultaneously.
 
----
+#### concurrent? : number
+This restricts the number of inner observables subscribed to at one time.  By default, there is no limit. When the concurrent limit is reached as soon as one observable completes the next subscription will occur.
+
+#### scheduler? : Scheduler
+By default, the scheduler is null.  When provided, the user can dictate when an action is to take place.  This allows order tasks and schedule execution.
+
 :bulb:  This operator can be used as either a static or instance method!
 
 :bulb:  If order not throughput is a primary concern, try [concat](concat.md) instead!
 
----
 
 ### Examples
 
