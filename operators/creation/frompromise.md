@@ -1,15 +1,12 @@
 # fromPromise
 ####signature: `fromPromise(promise: Promise, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Create an observable from a promise, emitting the result
-
-*Description coming soon...*
+## Create observable from promise, emitting result.
 
 ---
-:bulb:  Flattening operators can generally accept promises without wrapping!
+:bulb: Flattening operators can generally accept promises without wrapping!
 
+:bulb: You could also use [Observable.from](from.md) for the same result!
 ---
 
 ### Examples
