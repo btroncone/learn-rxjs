@@ -1,8 +1,6 @@
 # retry
 ####signature: `retry(number: number): Observable`
 
-### Description
-
 ## Use this when you need to retry an observable sequence a specific number of times should an error occur.
 
 ### Examples
