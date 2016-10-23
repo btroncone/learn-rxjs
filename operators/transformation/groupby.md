@@ -1,11 +1,7 @@
 # groupBy
 ####signature: `groupBy(keySelector: Function, elementSelector: Function): Observable`
 
-### Description
-
-###### TL;DR: Group into observables by provided value
-
-*Description coming soon...*
+## Group into observables based on provided value.
 
 ### Examples
 
