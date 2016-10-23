@@ -1,7 +1,7 @@
 # skip
 ####signature: `skip(the: Number): Observable`
 
-## Skip a provided number of emitted values.
+## Skip the provided number of emitted values.
 
 ### Examples
 
