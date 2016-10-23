@@ -1,11 +1,7 @@
 # sample
 ####signature: `sample(sampler: Observable): Observable`
 
-### Description
-
-###### TL;DR: Sample from source when supplied observable emits
-
-*Description coming soon...*
+## Sample from source when provided observable emits.
 
 ### Examples
 
