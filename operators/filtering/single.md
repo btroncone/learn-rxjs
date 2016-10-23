@@ -1,11 +1,7 @@
 # single
 ####signature: `single(a: Function): Observable`
 
-### Description
-
-###### TL;DR: Emit single item that matches condition
-
-*Description coming soon...*
+## Emit single item that passes expression.
 
 ### Examples
 
