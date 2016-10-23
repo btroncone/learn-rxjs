@@ -1,11 +1,7 @@
 # partition
 ####signature: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
 
-### Description
-
-###### TL;DR: Split one observable into two based on predicate
-
-*Description coming soon...*
+## Split one observable into two based on provided predicate.
 
 ### Examples
 
