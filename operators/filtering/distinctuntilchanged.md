@@ -1,16 +1,10 @@
 # distinctUntilChanged
 #### signature: ` distinctUntilChanged(compare: function): Observable`
 
-### Description
-
-###### TL;DR: Only emit when the current value is different than the last
-
-The **distinctUntilChanged** operator will emit values that are distinct from the source’s previous output. You can 
-dictate how this comparison is performed by providing a function that will compare the current and previous values. 
-A [strict equality comparison](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) is used by default.
+## Only emit when the current value is different than the last.
 
 ---
-:bulb:  distinctUntilChanged uses '===' comparison by default, object references must match!
+:bulb:  distinctUntilChanged uses `===` comparison by default, object references must match!
 
 ---
 
