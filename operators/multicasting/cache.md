@@ -1,11 +1,7 @@
 # cache
 ####signature: `cache(bufferSize: number, windowTime: number, scheduler : Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Share source and deliver specified number of latest emitted values upon subscription
-
-*Description coming soon...*
+## Share source and deliver the provided number of previously emitted values on subscription.
 
 
 ### Examples
