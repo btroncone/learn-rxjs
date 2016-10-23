@@ -1,11 +1,7 @@
 # delay
 ####signature: `delay(delay: number | Date, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Delay output by specified time
-
-*Description coming soon...*
+## Delay emitted values by given time.
 
 ### Examples
 

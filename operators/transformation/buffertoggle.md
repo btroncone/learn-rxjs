@@ -1,11 +1,7 @@
 # bufferToggle
 ####signature: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
 
-### Description
-
-###### TL;DR: Toggle on to catch emitted values from source, toggle off to emit buffered values as array
-
-*Description coming soon...*
+## Toggle on to catch emitted values from source, toggle off to emit buffered values as array.
 
 ### Examples
 

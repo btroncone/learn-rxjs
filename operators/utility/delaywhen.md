@@ -1,12 +1,7 @@
 # delayWhen
 ####signature: `delayWhen(selector: Function, sequence: Observable): Observable`
-*The gist: Delay output by specified time, determined by provided function...*
 
-### Description
-
-###### TL;DR: Given a group of observables, when one emits also emit latest values from each
-
-*Description coming soon...*
+## Delay emitted values determined by provided function.
 
 ### Examples
 

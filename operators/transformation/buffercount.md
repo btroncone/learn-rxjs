@@ -1,12 +1,7 @@
 # bufferCount
 ####signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
-*The gist: Collect output values until specified number is fulfilled then hand them over. Repeat...*
 
-### Description
-
-###### TL;DR: Collect emitted values until specified number is fulfilled, emit as array
-
-*Description coming soon...*
+## Collect emitted values until provided number is fulfilled, emit as array.
 
 ### Examples
 

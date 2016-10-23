@@ -1,12 +1,7 @@
 # scan
 ####signature: `scan(accumulator: function, seed: any): Observable`
 
-### Description
-
-###### TL;DR: Reduce over time
-
-The **scan** operator applies a reducer function to values received from the source, emitting the current accumulator. 
-You can think of scan as a reduce applied over time. If you only need a final value when the source observable has completed, reduce is also available.
+## Reduce over time.
 
 ---
 :bulb:  This operator is the core for many RxJS based [Redux](http://redux.js.org) implementations!

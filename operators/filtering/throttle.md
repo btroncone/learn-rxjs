@@ -1,11 +1,7 @@
 # throttle
 ####signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
 
-### Description
-
-###### TL;DR: Emit value only when specified duration, returned from provided function, has passed
-
-*Description coming soon...*
+## Emit value only when duration, determined by provided function, has passed.
 
 ### Examples
 

@@ -1,11 +1,7 @@
 # map
 ####signature: `map(project: Function, thisArg: any): Observable`
 
-### Description
-
-###### TL;DR: Apply projection to each value from source
-
-*Description coming soon!*
+## Apply projection with each value from source.
 
 ### Examples
 

@@ -1,11 +1,7 @@
 # create
 ####signature: `create(subscribe: function)`
 
-### Description
-
-###### TL;DR: Creates an observable with provided subscribe function
-
-*Description coming soon...*
+## Create an observable with given subscription function.
 
 ### Examples
 

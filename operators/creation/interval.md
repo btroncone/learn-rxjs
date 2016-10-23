@@ -1,11 +1,7 @@
 # interval
 ####signature: `interval(period: number, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Emits numbers in sequence for provided timeframe
-
-*Description coming soon...*
+## Emit numbers in sequence based on provided timeframe.
 
 ### Examples
 

@@ -1,11 +1,7 @@
 # pluck
 ####signature: `pluck(properties: ...args): Observable`
 
-### Description
-
-###### TL;DR: Pick out properties
-
-*Description coming soon...*
+## Select properties to emit.
 
 ### Examples
 

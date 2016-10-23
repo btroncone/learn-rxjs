@@ -1,11 +1,7 @@
 # empty
 ####signature: `empty(scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Observable that completes
-
-*Description coming soon...*
+## Observable that immediately completes.
 
 ### Examples
 

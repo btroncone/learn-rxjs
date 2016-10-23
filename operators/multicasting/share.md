@@ -1,11 +1,7 @@
 # share
 ####signature: `share(): Observable`
 
-### Description
-
-###### TL;DR: Share source among multiple subscribers
-
-*Description coming soon!*
+## Share source among multiple subscribers.
 
 ---
 :bulb:  share is like [multicast](multicast.md) with a Subject and refCount!

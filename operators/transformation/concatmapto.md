@@ -1,11 +1,7 @@
 # concatMapTo
 ####signature: `concatMapTo(observable: Observable, resultSelector: function): Observable`
 
-### Description
-
-###### TL;DR: When source emits subscribe to a single observable, merge results when complete
-
-*Description coming soon...*
+## Subscribe to provided observable when previous completes, emit values.
 
 ### Examples
 

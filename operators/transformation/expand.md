@@ -1,11 +1,7 @@
 # expand
 ####signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Recursively call provided function
-
-*Description coming soon...*
+## Recursively call provided function.
 
 ### Examples
 

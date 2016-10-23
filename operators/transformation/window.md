@@ -1,11 +1,7 @@
 # window
 ####signature: `window(windowBoundaries: Observable): Observable`
 
-### Description
-
-###### TL;DR: Observable of values for window of time
-
-*Description coming soon...*
+## Observable of values for window of time.
 
 ### Examples
 

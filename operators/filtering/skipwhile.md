@@ -1,11 +1,7 @@
 # skipWhile
 ####signature: `skipWhile(predicate: Function): Observable`
 
-### Description
-
-###### TL;DR: Skip emitted items from source until provided expression is false
-
-*Description coming soon...*
+## Skip emitted values from source until provided expression is false.
 
 ### Examples
 

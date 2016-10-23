@@ -1,11 +1,7 @@
 # publish
 ####signature: `publish() : ConnectableObservable`
 
-### Description
-
-###### TL;DR: Do nothing until connect is called, share source
-
-*Description coming soon...*
+## Share source and make hot by calling connect.
 
 ### Examples
 

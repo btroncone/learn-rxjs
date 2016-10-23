@@ -1,11 +1,7 @@
 # takeWhile
 ####signature: `takeWhile(predicate: function(value, index): boolean): Observable`
 
-### Description
-
-###### TL;DR: Emit values until one fails test
-
-*Description coming soon...*
+## Emit values until provided expression is false.
 
 ### Examples
 

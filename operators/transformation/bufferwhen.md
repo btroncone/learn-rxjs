@@ -1,11 +1,7 @@
 # bufferWhen
 ####signature: `bufferWhen(closingSelector: function): Observable`
 
-### Description
-
-###### TL;DR: Buffer all values until closing selector emits, emit buffered values
-
-*Description coming soon...*
+## Collect all values until closing selector emits, emit buffered values.
 
 ### Examples
 

@@ -1,11 +1,7 @@
 # range
 ####signature: `range(start: number, count: number, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Emits numbers within a specified range
-
-*Description coming soon...*
+## Emit numbers in provided range in sequence.
 
 ### Examples
 

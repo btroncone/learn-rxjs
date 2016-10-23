@@ -1,11 +1,7 @@
 # let
 ####signature: `let(function): Observable`
 
-### Description
-
-###### TL;DR: Let me have the whole observable
-
-*Description coming soon...*
+## Let me have the whole observable.
 
 ### Examples
 

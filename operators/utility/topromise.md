@@ -1,11 +1,7 @@
 # toPromise
 ####signature: `toPromise() : Promise`
 
-### Description
-
-###### TL;DR: Convert observable to promise
-
-*Description coming soon...*
+## Convert observable to promise.
 
 ### Examples
 

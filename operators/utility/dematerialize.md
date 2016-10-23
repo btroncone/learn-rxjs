@@ -1,11 +1,7 @@
 # dematerialize
 #### signature: `dematerialize(): Observable`
 
-### Description
-
-###### TL;DR: Turn notification objects into notification values
-
-*Description coming soon...*
+## Turn notification objects into notification values.
 
 ### Examples
 
