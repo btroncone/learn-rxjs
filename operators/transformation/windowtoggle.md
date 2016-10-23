@@ -1,11 +1,7 @@
 # windowToggle
 ####signature: `windowToggle(openings: Observable, closingSelector: function(value): Observable): Observable`
 
-### Description
-
-###### TL;DR: Collect and emit observable of values from source between opening and closing emission
-
-*Description coming soon...*
+## Collect and emit observable of values from source between opening and closing emission.
 
 ### Examples
 
