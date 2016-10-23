@@ -1,12 +1,7 @@
 # windowWhen
 ####signature: `windowWhen(closingSelector: function(): Observable): Observable`
-*The gist: Close window at specified time frame emitting observable of collected values from source, repeat...*
 
-### Description
-
-###### TL;DR: Given a group of observables, when one emits also emit latest values from each
-
-*Description coming soon...*
+## Close window at provided time frame emitting observable of collected values from source.
 
 ### Examples
 
