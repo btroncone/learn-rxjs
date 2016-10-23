@@ -2,7 +2,7 @@
 ####signature: `ignoreElements(): Observable`
 
 
-## Ignore everything but complete and error
+## Ignore everything but complete and error.
 
 
 ### Examples
