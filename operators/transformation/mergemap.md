@@ -1,7 +1,7 @@
 # mergeMap
 #### signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
 
-## Map to observable given provided function, emit values.
+## Map to observable, emit values.
 
 ---
 :bulb:  flatMap is an alias for mergeMap!
