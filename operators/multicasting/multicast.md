@@ -1,11 +1,7 @@
 # multicast
 ####signature: `multicast(selector: Function): Observable`
 
-### Description
-
-###### TL;DR: Share subscription to source given particular Subject
-
-*Description coming soon...*
+## Share source utilizing the provided Subject.
 
 ### Examples
 
