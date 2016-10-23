@@ -1,7 +1,7 @@
 #last
 ####signature: `last(predicate: function): Observable`
 
-## Emit the last value emitted from source on completion, based on provided argument(s).
+## Emit the last value emitted from source on completion, based on provided expression.
 
 ---
 :bulb: The counterpart to last is [**first**](first.md)!
