@@ -1,11 +1,7 @@
 # do
 ####signature: `do(nextOrObserver: function, error: function, complete: function): Observable`
 
-### Description
-
-###### TL;DR: Transparently perform actions, such as logging
-
-The **do** operator passes through emitted items from the source while performing any provided side-effects. Any values returned from do will be ignored while errors are forwarded to subscribers.
+## Transparently perform actions or side-effects, such as logging.
 
 ### Examples
 
