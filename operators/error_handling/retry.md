@@ -1,11 +1,7 @@
 # retry
 ####signature: `retry(number: number): Observable`
 
-### Description
-
-###### TL;DR: Retry provided number of times on error
-
-The **retry** operator mirrors the output of the source except in the case of an error.  When an error occurs [if the retry count has not been reached the source is resubscribed](https://github.com/ReactiveX/rxjs/blob/da8c1c24e988b9b557126be6dfbc714379322f73/src/operator/retry.ts#L57-L63). If the supplied retry count is reached and there is still an error, the [error will be emitted](https://github.com/ReactiveX/rxjs/blob/da8c1c24e988b9b557126be6dfbc714379322f73/src/operator/retry.ts#L56).
+## Use this when you need to retry an observable sequence a specific number of times should an error occur.
 
 ### Examples
 
