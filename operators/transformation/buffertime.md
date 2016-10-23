@@ -1,12 +1,7 @@
 # bufferTime
 ####signature: `bufferTime(bufferTimeSpan: number, bufferCreationInterval: number, scheduler: Scheduler): Observable`
-*The gist: Collect output values until specified time has passed then hand them over. Repeat...*
 
-### Description
-
-###### TL;DR: Collect emitted values until provided time has passed, emit as array
-
-*Description coming soon!*
+## Collect emitted values until provided time has passed, emit as array.
 
 ### Examples
 
