@@ -1,11 +1,7 @@
 # skipUntil
 ####signature: `skipUntil(the: Observable): Observable`
 
-### Description
-
-###### TL;DR: Skip emitted items from source until inner observable emits
-
-*Description coming soon...*
+## Skip emitted values from source until provided observable emits.
 
 ### Examples
 
