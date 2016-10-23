@@ -1,27 +1,11 @@
 #last(predicate, resultSelector, defaultValue)
 
-### TL;DR:
-Emits the last value emitted from source on completion, based on given argument(s).  Useful for scenarios where only the last value, or last value to pass a provided predicate expression is needed.
-
-### [last : Observable](#example-1-last-value-in-sequence)
-The **last** operator, by default, emits the last value received from the source upon completion.
+## Emit the last value emitted from source on completion, based on provided argument(s).
 
 ---
-
-### Arguments (optional)
-
-###[predicate : function](#example-2-last-value-to-pass-predicate)
-The `predicate` function is an optional argument that returns a boolean based on the conditional testing you wish to perform.  In addition, the predicate function would update a variable named `lastValue` to match the value that passed the test.  This allows you to add specifications to the single emitted value. If the supplied predicate returns `false`, the value will be ignored and the next value will be tested. If returned `true`, the value will be assigned to `lastValue`. Upon completion, `lastValue` and `index` would be emitted and the observable would completes.
-
-###[resultSelector : function](#example-3-last-with-result-selector)
-When a value is emitted you can perform a specified projection through the use of the optional `resultSelector` function.  This function is provided the value and index of the emitted item.  This index is the placement order of that value, or in other words, the number of items to be emitted before the current value (starting with `0`).
-
-###[defaultValue : any](#example-4-last-with-default-value)
-If the observable completes with no value being emitted, due to the `predicate` function or otherwise, an optional `default` value can be supplied to be emitted instead.  Without this value, an `EmptyError` will be thrown.
-
-Overall, the `last` operator is simple. By default, when the source observable completes the last value emitted will be emitted. If a predicate expression is supplied, the last value to pass this predicate will be emitted on completion. If no values pass the given predicate, and a default value is supplied, that is emitted on completion. A projection function can also be supplied, which will receieve the value and it's index, emitting the result of that function when the source observable completes.
-
 :bulb: The counterpart to last is [**first**](first.md)!
+
+---
 
 
 ### Examples
