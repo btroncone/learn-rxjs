@@ -1,11 +1,7 @@
 # buffer
 ####signature: `buffer(closingNotifier: Observable): Observable`
 
-### Description
-
-###### TL;DR: Collect output values until provided observable emits, emit as array
-
-*Description coming soon...*
+## Collect output values until provided observable emits, emit as array.
 
 ### Examples
 
