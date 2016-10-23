@@ -1,11 +1,7 @@
 # throttleTime
 ####signature: `throttleTime(duration: number, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Emit latest value when specified duration has passed
-
-*Description coming soon...*
+## Emit latest value when specified duration has passed
 
 ### Examples
 
