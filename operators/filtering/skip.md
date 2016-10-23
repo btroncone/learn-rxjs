@@ -1,11 +1,7 @@
 # skip
 ####signature: `skip(the: Number): Observable`
 
-### Description
-
-###### TL;DR: Skip a specified number of emitted items
-
-*Description coming soon...*
+## Skip a provided number of emitted values.
 
 ### Examples
 
