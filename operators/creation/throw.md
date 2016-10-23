@@ -1,11 +1,7 @@
 # throw
 ####signature: `throw(error: any, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Emit error
-
-*Description coming soon...*
+## Emit error on subscription.
 
 ### Examples
 
