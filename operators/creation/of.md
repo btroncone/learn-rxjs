@@ -1,12 +1,7 @@
 # of
 ####signature: ` of(...values, scheduler: Scheduler): Observable`
 
-### Description
-
-###### TL;DR: Emit provided values
-
-The **of** operator emits a variable number of provided parameters as a sequence. 
-Unlike the [**from**](from.md) operator, **of** will not emit items contained in arrays or iterables individually.
+## Emit variable amount of values in a sequence.
 
 ### Examples
 
