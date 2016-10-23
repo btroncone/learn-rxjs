@@ -1,11 +1,8 @@
 # timer
 ####signature: `timer(initialDelay: number | Date, period: number, scheduler: Scheduler): Observable`
 
-### Description
+## After given duration, emit numbers in sequence every specified duration.
 
-###### TL;DR: After given duration, emit numbers in sequence every specified duration
-
-*Description coming soon...*
 
 ### Examples
 
