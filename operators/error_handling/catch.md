@@ -1,11 +1,7 @@
 # catch
 ####signature: `catch(project : function): Observable`
 
-### Description
-
-###### TL;DR: Gracefully handle errors and exceptions
-
-The **catch** operator allows the capturing of errors and exceptions, returning an observable. **catch** is the most commonly used error handling operator.
+## Gracefully handle errors in an observable sequence.
 
 ---
 :warning:  Remember to return an observable from the catch function!
