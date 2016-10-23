@@ -3,7 +3,7 @@
 
 ### Description
 
-## Retry the previous observable sequence specified number of times.
+## Use this when you need to retry an observable sequence a specific number of times should an error occur.
 
 ### Examples
 
