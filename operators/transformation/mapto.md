@@ -1,11 +1,7 @@
 # mapTo
 ####signature: `mapTo(value: any): Observable`
 
-### Description
-
-###### TL;DR: Map to constant value
-
-*Description coming soon...*
+## Map emissions to constant value.
 
 ### Examples
 
