@@ -2,11 +2,8 @@
 ####signature: `ignoreElements(): Observable`
 
 
-### Description
+## Ignore everything but complete and error
 
-###### TL;DR: Ignore everything but complete and error
-
-*Description coming soon...*
 
 ### Examples
 
