@@ -1,7 +1,7 @@
 # retryWhen
 ####signature: `retryWhen(receives: (errors: Observable) => Observable, the: scheduler): Observable`
 
-## Use this when you need to retry an observable sequence on error based on some custom logic.
+## Use this when you need to retry an observable sequence on error based on custom criteria.
 
 ### Examples
 
