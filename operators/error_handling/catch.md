@@ -1,7 +1,7 @@
 # catch
 ####signature: `catch(project : function): Observable`
 
-## Gracefully handle errors in observable sequence
+## Gracefully handle errors in an observable sequence.
 
 ---
 :warning:  Remember to return an observable from the catch function!
