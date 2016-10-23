@@ -1,11 +1,7 @@
 # concatMap
 ####signature: `concatMap(project: function, resultSelector: function): Observable`
 
-### Description
-
-###### TL;DR: Map values from source to inner observable, subscribe and emit inner observable values in order
-
-*Description coming soon!* 
+## Map values to inner observable, subscribe and emit in order.
 
 ### Examples
 
