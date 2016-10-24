@@ -1,7 +1,7 @@
 # concat
 ####signature: `concat(observables: ...*): Observable`
 
-## Subscribe to the next observable when previous completes.
+## Subscribe to observables in order as previous completes, emit values.
 
 ---
 :bulb:  You can think of concat like a line at a ATM, the next transaction (subscription) cannot start until the previous completes!
