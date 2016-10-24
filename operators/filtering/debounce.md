@@ -1,7 +1,7 @@
 # debounce
 ####signature: `debounce(durationSelector: function): Observable`
 
-## Throw away all emitted values that take less then the specified time, based on selector function, between output.
+## Discard emitted values that take less than the specified time, based on selector function, between output.
 
 ---
 :bulb:  Though not as widely used as [debounceTime](debouncetime.md), **debounce** is important when the debounce rate is variable!
