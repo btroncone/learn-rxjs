@@ -9,6 +9,7 @@
     "copy-code-button",
     "edit-link",
     "github",
+    "github-buttons",
     "ga"
   ],
   "pluginsConfig": {
@@ -21,6 +22,14 @@
     },
     "ga": {
         "token": "UA-54001708-2"
+    },
+    "github-buttons": {
+      "repo": "btroncone/learn-rxjs",
+      "types": [
+        "star",
+        "watch"
+      ],
+      "size": "large"
     }
   }
 }
