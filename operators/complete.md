@@ -11,7 +11,6 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
 * [bufferTime](transformation/buffertime.md) :star:
 * [bufferToggle](transformation/buffertoggle.md)
 * [bufferWhen](transformation/bufferwhen.md)
-* [cache](multicasting/cache.md)
 * [catch](error_handling/catch.md) :star:
 * [combineAll](combination/combineall.md)
 * [combineLatest](combination/combinelatest.md) :star:
