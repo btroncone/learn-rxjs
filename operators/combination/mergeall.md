@@ -64,5 +64,6 @@ const example = interval
 ### Additional Resources
 * [mergeAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeAll) :newspaper: - Official docs
 * [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively) :video_camera: :dollar: - André Staltz
+
 ---
 > :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts)
