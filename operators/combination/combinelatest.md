@@ -78,6 +78,43 @@ const combinedProject = Rx.Observable
 const subscribe = combinedProject.subscribe(latestValuesProject => console.log(latestValuesProject));
 ```
 
+##### Example 3: Combining events from 2 buttons
+
+( [jsBin](http://jsbin.com/hiyetucite/edit?html,js,output) | [jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/1/) )
+
+```js
+// helper function to set HTML
+const setHtml = id => val => document.getElementById(id).innerHTML = val;
+
+const addOneClick$ = id => Rx.Observable
+    .fromEvent(document.getElementById(id), 'click')
+    // map every click to 1
+    .mapTo(1)
+    .startWith(0)
+    // keep a running total
+    .scan((acc, curr) => acc + curr)
+    // set HTML for appropriate element
+    .do(setHtml(`${id}Total`))
+  
+  
+const combineTotal$ = Rx.Observable
+  .combineLatest(
+    addOneClick$('red'),
+    addOneClick$('black')
+  )
+  .map(([val1, val2]) => val1 + val2)
+  .subscribe(setHtml('total'));
+```
+###### HTML
+```html
+<div>
+  <button id='red'>Red</button>
+  <button id='black'>Black</button>
+</div>
+<div id="redTotal"></div>
+<div id="blackTotal"></div>
+<div id="total"></div>
+```
 
 ### Additional Resources
 * [combineLatest](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest) :newspaper: - Official docs
