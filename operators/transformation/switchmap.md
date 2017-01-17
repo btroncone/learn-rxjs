@@ -60,6 +60,42 @@ const example = source.switchMap(() => Rx.Observable.interval(2000), (outerValue
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 4: Countdown timer with switchMap
+
+( [jsBin](http://jsbin.com/zahohikaha/1/edit?html,js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/ww7zg988/1/) )
+
+```js
+const countdownSeconds = 60;
+const setHTML = id => val => document.getElementById(id).innerHTML = val;
+const pauseButton = document.getElementById('pause');
+const resumeButton = document.getElementById('resume');
+const interval$ = Rx.Observable.interval(1000).mapTo(-1);
+
+const pause$ = Rx.Observable.fromEvent(pauseButton, 'click').mapTo(Rx.Observable.of(false))
+const resume$ = Rx.Observable.fromEvent(resumeButton, 'click').mapTo(interval$);
+
+const timer$ = Rx.Observable
+  .merge(pause$, resume$)
+  .startWith(interval$)
+  .switchMap(val => val)
+  // if pause button is clicked stop countdown
+  .scan((acc, curr) => curr ? curr + acc : acc, countdownSeconds)
+  .subscribe(setHTML('remaining'));
+```
+
+###### HTML
+```html
+<h4>
+Time remaining: <span id="remaining"></span>
+</h4>
+<button id="pause">
+Pause Timer
+</button>
+<button id="resume">
+Resume Timer
+</button>
+```
+
 ### Additional Resources
 * [switchMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap) :newspaper: - Official docs
 * [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
