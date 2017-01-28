@@ -2,7 +2,7 @@
 
 [Description Coming Soon]
 
-([JSBin](http://jsbin.com/desokepiju/1/edit?js,output)] | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/))
+([JSBin](http://jsbin.com/desokepiju/1/edit?js,output) | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/))
 ```ts
 // utility functions
 // utility functions
