@@ -11,6 +11,8 @@
 * [switchMap](../operators/transformation/switchmap.md)
 * [takeWhile](../operators/filtering/takewhile.md)
 
+#### Vanilla JS
+
 ( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
 ```ts
 // utility functions
