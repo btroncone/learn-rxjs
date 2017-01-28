@@ -2,6 +2,15 @@
 
 [Description Coming Soon]
 
+### Operators Used
+* [fromEvent](../operators/creation/fromevent.md)
+* [map](../operators/transformation/map.md)
+* [mapTo](../operators/transformation/mapto.md)
+* [scan](../operators/transformation/scan.md)
+* [startWith](../operators/combination/startwith.md)
+* [switchMap](../operators/transformation/switchmap.md)
+* [takeWhile](../operators/filtering/takewhile.md)
+
 ( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
 ```ts
 // utility functions
@@ -94,4 +103,3 @@ export class NumberTrackerComponent implements OnDestroy {
   }
 }
 ```
-
