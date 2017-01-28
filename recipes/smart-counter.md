@@ -35,7 +35,7 @@ const subscription = (function(currentNumber) {
       .do(v => currentNumber = v)
       .startWith(currentNumber)
       .subscribe(updateHTML('display'));
-}(0))
+}(0));
 
 ```
 
