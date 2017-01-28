@@ -2,7 +2,7 @@
 
 [Description Coming Soon]
 
-( [JSBin](http://jsbin.com/desokepiju/1/edit?js,output) | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
+( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
 ```ts
 // utility functions
 const takeUntilFunc = (endRange, currentNumber) => {
@@ -20,8 +20,8 @@ const updateHTML = id => val => document.getElementById(id).innerHTML = val;
 const input = document.getElementById('range');
 const updateButton = document.getElementById('update');
 
-(function(currentNumber) {
-  Rx.Observable
+const subscription = (function(currentNumber) {
+  return Rx.Observable
       .fromEvent(updateButton, 'click')
       .map(_ => parseInt(input.value))
       .switchMap(endRange => {
