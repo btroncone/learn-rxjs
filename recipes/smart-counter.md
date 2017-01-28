@@ -2,8 +2,9 @@
 
 [Description Coming Soon]
 
-([JSBin](http://jsbin.com/varetewiso/1/edit?html,js,output)] | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/1/))
+([JSBin](http://jsbin.com/desokepiju/1/edit?js,output)] | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/))
 ```ts
+// utility functions
 // utility functions
 const takeUntilFunc = (endRange, currentNumber) => {
   return endRange > currentNumber
@@ -19,10 +20,9 @@ const updateHTML = id => val => document.getElementById(id).innerHTML = val;
 // display
 const input = document.getElementById('range');
 const updateButton = document.getElementById('update');
-// keep track of current number
-let currentNumber = 0;
 
-Rx.Observable
+(function(currentNumber) {
+  Rx.Observable
       .fromEvent(updateButton, 'click')
       .map(_ => parseInt(input.value))
       .switchMap(endRange => {
@@ -34,7 +34,9 @@ Rx.Observable
             .takeWhile(takeUntilFunc(endRange, currentNumber))
       })
       .do(v => currentNumber = v)
-      .subscribe(updateHTML('display'))
+      .startWith(currentNumber)
+      .subscribe(updateHTML('display'));
+}(0))
 
 ```
 
