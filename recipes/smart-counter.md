@@ -1,15 +1,8 @@
 # Smart Counter
 
-[Description Coming Soon]
+An interesting element on interfaces which involve dynamically updating numbers is a smart counter, or odometer effect. Instead of jumping a number up and down, quickly counting to the desired number can achieve a cool effect. An example of a popular library that accomplishes this is [odometer](https://github.com/HubSpot/odometer) by [Hubspot](https://github.com/HubSpot). Let's see how we can accomplish something similar with just a few lines of RxJS.
 
-### Operators Used
-* [fromEvent](../operators/creation/fromevent.md)
-* [map](../operators/transformation/map.md)
-* [mapTo](../operators/transformation/mapto.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [takeWhile](../operators/filtering/takewhile.md)
+
 
 #### Vanilla JS
 
@@ -56,6 +49,8 @@ const subscription = (function(currentNumber) {
 <button id="update">Update</button>
 <h3 id="display">0</h3>
 ```
+
+We can easily take our vanilla smart counter and wrap it in any popular component based UI library. Below is an example of an Angular smart counter component which takes an `Input` of the updated end ranges and performs the appropriate transition.
 
 #### Angular Version
 
@@ -105,3 +100,12 @@ export class NumberTrackerComponent implements OnDestroy {
   }
 }
 ```
+
+### Operators Used
+* [fromEvent](../operators/creation/fromevent.md)
+* [map](../operators/transformation/map.md)
+* [mapTo](../operators/transformation/mapto.md)
+* [scan](../operators/transformation/scan.md)
+* [startWith](../operators/combination/startwith.md)
+* [switchMap](../operators/transformation/switchmap.md)
+* [takeWhile](../operators/filtering/takewhile.md)
