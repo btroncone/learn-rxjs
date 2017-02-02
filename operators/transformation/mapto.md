@@ -31,6 +31,8 @@ const example = source.mapTo('GOODBYE WORLD!');
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+* [Smart Counter](../../recipes/smart-counter.md)
 
 ### Additional Resources
 * [mapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mapTo) :newspaper: - Official docs
