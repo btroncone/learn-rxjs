@@ -46,6 +46,8 @@ subject.next({age: 30}); // {name: 'Joe', age: 30}
 subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
 ```
 
+### Related Recipes
+* [Smart Counter](../../recipes/smart-counter.md)
 
 ### Additional Resources
 * [scan](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan) :newspaper: - Official docs
