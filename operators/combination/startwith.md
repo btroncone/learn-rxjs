@@ -59,6 +59,9 @@ const example = source.startWith(-3, -2, -1);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+* [Smart Counter](../../recipes/smart-counter.md)
+
 ### Additional Resources
 * [startWith](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith) :newspaper: - Official docs
 * [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
