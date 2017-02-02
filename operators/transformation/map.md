@@ -31,6 +31,8 @@ const example = source.map(person => person.name);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+* [Smart Counter](../../recipes/smart-counter.md)
 
 ### Additional Resources
 * [map](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-map) :newspaper: - Official docs
