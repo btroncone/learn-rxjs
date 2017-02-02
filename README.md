@@ -47,9 +47,9 @@ This section helps solidify the major concepts needed to feel comfortable with r
 *Coming Soon!*
 
 #### Recipes
-Recipes, use-cases, and best-practices are included for solving common problems and scenarios with RxJS. 
+Recipes for common use-cases and interesting solutions with RxJS. 
 
-*Coming Soon!*
+[Complete Recipe Listing](/recipes/README.md)
 
 ## Introductory Resources
 
