@@ -97,7 +97,7 @@ Resume Timer
 ```
 
 ### Related Recipes
-* [Smart Counter](../../recipes/smart-counter.md)
+* [Smart Counter](../../recipes/smartcounter.md)
 
 ### Additional Resources
 * [switchMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap) :newspaper: - Official docs
