@@ -19,7 +19,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### Related Recipes
-* [Smart Counter](../../recipes/smart-counter.md)
+* [Smart Counter](../../recipes/smartcounter.md)
 
 ### Additional Resources
 * [fromEvent](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent) :newspaper: - Official docs
