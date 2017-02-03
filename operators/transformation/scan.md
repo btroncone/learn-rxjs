@@ -47,7 +47,7 @@ subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favori
 ```
 
 ### Related Recipes
-* [Smart Counter](../../recipes/smart-counter.md)
+* [Smart Counter](../../recipes/smartcounter.md)
 
 ### Additional Resources
 * [scan](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan) :newspaper: - Official docs
