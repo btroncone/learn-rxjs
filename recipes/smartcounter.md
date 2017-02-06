@@ -7,7 +7,7 @@ An interesting element on interfaces which involve dynamically updating numbers 
 #### Vanilla JS
 
 ( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
-```ts
+```js
 // utility functions
 const takeUntilFunc = (endRange, currentNumber) => {
   return endRange > currentNumber
@@ -54,7 +54,7 @@ We can easily take our vanilla smart counter and wrap it in any popular componen
 
 #### Angular Version
 
-```ts
+```js
 @Component({
   selector: 'number-tracker',
   template: `
