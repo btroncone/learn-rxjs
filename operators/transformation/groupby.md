@@ -17,7 +17,7 @@ const source = Rx.Observable.from(people);
 const example = source
   .groupBy(person => person.age)
   //return as array of each group
-  .flatMap(group => group.reduce((acc, curr) => [...acc, ...curr], []))
+  .flatMap(group => group.reduce((acc, curr) => [...acc, curr], []))
 /*
   output:
   [{age: 25, name: "Sue"},{age: 25, name: "Frank"}]
