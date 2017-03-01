@@ -66,6 +66,7 @@ jump start your learning experience!
 * [Creating Observable from Scratch](https://egghead.io/lessons/rxjs-creating-observable-from-scratch) - Ben Lesh
 * [Introduction to RxJS Marble Testing](https://egghead.io/lessons/rxjs-introduction-to-rxjs-marble-testing) - Brian Troncone
 * [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming) :dollar: - André Staltz
+* [Reactive Programming using Observables](https://www.youtube.com/watch?v=HT7JiiqnYYc&feature=youtu.be) - Jeremy Lund
 
 #### Exercises
 * [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar Husain
