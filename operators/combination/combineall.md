@@ -1,5 +1,5 @@
 # combineAll
-####signature: `combineAll(project: function): Observable`
+#### signature: `combineAll(project: function): Observable`
 
 ## When source observable completes use [combineLatest](combinelatest.md) with collected observables.
 
