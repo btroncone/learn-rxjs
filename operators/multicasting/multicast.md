@@ -1,5 +1,5 @@
 # multicast
-####signature: `multicast(selector: Function): Observable`
+#### signature: `multicast(selector: Function): Observable`
 
 ## Share source utilizing the provided Subject.
 
