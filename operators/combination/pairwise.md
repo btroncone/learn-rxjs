@@ -7,7 +7,7 @@
 
 ##### Example 1:
 
-( [jsBin](http://jsbin.com/gumiyufaqi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8va47bq3/) )
+( [jsBin](http://jsbin.com/keteyahido/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8va47bq3/) )
 
 ```js
 var interval = Rx.Observable.interval(1000);
