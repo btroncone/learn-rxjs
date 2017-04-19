@@ -1,13 +1,13 @@
 # pairwise
-####signature: `pairwise(): Observable<Array>`
+#### signature: `pairwise(): Observable<Array>`
 
-## Pair the previous value and the current value and emit them in an array.
+## Emit the previous and current values as an array.
 
 ### Examples
 
 ##### Example 1:
 
-( [jsFiddle](https://jsfiddle.net/ElHuy/s1a97n16/) )
+( [jsBin](http://jsbin.com/gumiyufaqi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8va47bq3/) )
 
 ```js
 var interval = Rx.Observable.interval(1000);
