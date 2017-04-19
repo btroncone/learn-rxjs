@@ -1,5 +1,5 @@
 # publish
-####signature: `publish() : ConnectableObservable`
+#### signature: `publish() : ConnectableObservable`
 
 ## Share source and make hot by calling connect.
 
