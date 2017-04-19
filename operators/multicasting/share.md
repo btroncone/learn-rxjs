@@ -1,5 +1,5 @@
 # share
-####signature: `share(): Observable`
+#### signature: `share(): Observable`
 
 ## Share source among multiple subscribers.
 
