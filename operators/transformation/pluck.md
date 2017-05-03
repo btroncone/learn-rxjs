@@ -1,5 +1,5 @@
 # pluck
-####signature: `pluck(properties: ...args): Observable`
+#### signature: `pluck(properties: ...args): Observable`
 
 ## Select properties to emit.
 

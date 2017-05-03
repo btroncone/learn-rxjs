@@ -1,5 +1,5 @@
 # of
-####signature: ` of(...values, scheduler: Scheduler): Observable`
+#### signature: ` of(...values, scheduler: Scheduler): Observable`
 
 ## Emit variable amount of values in a sequence.
 

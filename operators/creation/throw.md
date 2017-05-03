@@ -1,5 +1,5 @@
 # throw
-####signature: `throw(error: any, scheduler: Scheduler): Observable`
+#### signature: `throw(error: any, scheduler: Scheduler): Observable`
 
 ## Emit error on subscription.
 

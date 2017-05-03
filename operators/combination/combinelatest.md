@@ -1,5 +1,5 @@
 # combineLatest
-####signature: `combineLatest(observables: ...Observable, project: function): Observable`
+#### signature: `combineLatest(observables: ...Observable, project: function): Observable`
 
 ## When any observable emits a value, emit the latest value from each.
 

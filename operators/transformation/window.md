@@ -1,5 +1,5 @@
 # window
-####signature: `window(windowBoundaries: Observable): Observable`
+#### signature: `window(windowBoundaries: Observable): Observable`
 
 ## Observable of values for window of time.
 

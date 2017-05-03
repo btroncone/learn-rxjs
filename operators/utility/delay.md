@@ -1,5 +1,5 @@
 # delay
-####signature: `delay(delay: number | Date, scheduler: Scheduler): Observable`
+#### signature: `delay(delay: number | Date, scheduler: Scheduler): Observable`
 
 ## Delay emitted values by given time.
 

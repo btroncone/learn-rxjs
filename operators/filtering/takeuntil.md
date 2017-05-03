@@ -1,5 +1,5 @@
 # takeUntil
-####signature: ` takeUntil(notifier: Observable): Observable`
+#### signature: ` takeUntil(notifier: Observable): Observable`
 
 ## Emit values until provided observable emits.
 

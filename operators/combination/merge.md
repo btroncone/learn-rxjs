@@ -1,5 +1,5 @@
 # merge
-####signature: `merge(input: Observable): Observable`
+#### signature: `merge(input: Observable): Observable`
 
 ## Turn multiple observables into a single observable.
 

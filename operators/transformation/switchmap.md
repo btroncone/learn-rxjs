@@ -1,5 +1,5 @@
 #switchMap
-####signature: ` switchMap(project: function: Observable, resultSelector: function(outerValue, innerValue, outerIndex, innerIndex): any): Observable`
+#### signature: ` switchMap(project: function: Observable, resultSelector: function(outerValue, innerValue, outerIndex, innerIndex): any): Observable`
 
 ## Map to observable, complete previous inner observable, emit values.
 

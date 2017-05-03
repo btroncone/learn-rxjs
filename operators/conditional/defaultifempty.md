@@ -1,5 +1,5 @@
 # defaultIfEmpty
-####signature: `defaultIfEmpty(defaultValue: any): Observable`
+#### signature: `defaultIfEmpty(defaultValue: any): Observable`
 
 ## Emit given value if nothing is emitted before completion.
 

@@ -1,5 +1,5 @@
 # windowWhen
-####signature: `windowWhen(closingSelector: function(): Observable): Observable`
+#### signature: `windowWhen(closingSelector: function(): Observable): Observable`
 
 ## Close window at provided time frame emitting observable of collected values from source.
 

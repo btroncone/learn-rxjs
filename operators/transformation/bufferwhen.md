@@ -1,5 +1,5 @@
 # bufferWhen
-####signature: `bufferWhen(closingSelector: function): Observable`
+#### signature: `bufferWhen(closingSelector: function): Observable`
 
 ## Collect all values until closing selector emits, emit buffered values.
 

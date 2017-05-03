@@ -1,5 +1,5 @@
 # windowCount
-####signature: `windowCount(windowSize: number, startWindowEvery: number): Observable`
+#### signature: `windowCount(windowSize: number, startWindowEvery: number): Observable`
 
 ## Observable of values from source, emitted each time provided count is fulfilled.
 

@@ -1,5 +1,5 @@
 # race
-####signature: `race(): Observable`
+#### signature: `race(): Observable`
 
 ## The observable to emit first is used. 
 

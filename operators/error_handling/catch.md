@@ -1,5 +1,5 @@
 # catch
-####signature: `catch(project : function): Observable`
+#### signature: `catch(project : function): Observable`
 
 ## Gracefully handle errors in an observable sequence.
 

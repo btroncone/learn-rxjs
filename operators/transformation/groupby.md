@@ -1,5 +1,5 @@
 # groupBy
-####signature: `groupBy(keySelector: Function, elementSelector: Function): Observable`
+#### signature: `groupBy(keySelector: Function, elementSelector: Function): Observable`
 
 ## Group into observables based on provided value.
 

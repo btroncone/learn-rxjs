@@ -1,5 +1,5 @@
 # empty
-####signature: `empty(scheduler: Scheduler): Observable`
+#### signature: `empty(scheduler: Scheduler): Observable`
 
 ## Observable that immediately completes.
 

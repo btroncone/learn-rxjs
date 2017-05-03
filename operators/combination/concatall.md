@@ -1,5 +1,5 @@
 # concatAll
-####signature: `concatAll(): Observable`
+#### signature: `concatAll(): Observable`
 
 ## Collect observables and subscribe to next when previous completes.
 

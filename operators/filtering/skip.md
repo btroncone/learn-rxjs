@@ -1,5 +1,5 @@
 # skip
-####signature: `skip(the: Number): Observable`
+#### signature: `skip(the: Number): Observable`
 
 ## Skip the provided number of emitted values.
 

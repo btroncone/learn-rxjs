@@ -1,5 +1,5 @@
 # scan
-####signature: `scan(accumulator: function, seed: any): Observable`
+#### signature: `scan(accumulator: function, seed: any): Observable`
 
 ## Reduce over time.
 

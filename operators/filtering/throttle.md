@@ -1,5 +1,5 @@
 # throttle
-####signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
+#### signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
 
 ## Emit value only when duration, determined by provided function, has passed.
 

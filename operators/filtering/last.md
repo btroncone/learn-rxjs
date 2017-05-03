@@ -1,5 +1,5 @@
 #last
-####signature: `last(predicate: function): Observable`
+#### signature: `last(predicate: function): Observable`
 
 ## Emit the last value emitted from source on completion, based on provided expression.
 

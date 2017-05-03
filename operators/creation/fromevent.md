@@ -1,5 +1,5 @@
 # fromEvent
-####signature: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
+#### signature: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
 
 ## Turn event into observable sequence.
 

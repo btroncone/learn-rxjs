@@ -1,5 +1,5 @@
 # take
-####signature: ` take(count: number): Observable`
+#### signature: ` take(count: number): Observable`
 
 ## Emit provided number of values before completing.
 

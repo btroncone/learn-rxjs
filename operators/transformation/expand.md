@@ -1,5 +1,5 @@
 # expand
-####signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
+#### signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
 
 ## Recursively call provided function.
 

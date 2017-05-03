@@ -1,5 +1,5 @@
 # bufferToggle
-####signature: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
+#### signature: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
 
 ## Toggle on to catch emitted values from source, toggle off to emit buffered values as array.
 

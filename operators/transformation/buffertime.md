@@ -1,5 +1,5 @@
 # bufferTime
-####signature: `bufferTime(bufferTimeSpan: number, bufferCreationInterval: number, scheduler: Scheduler): Observable`
+#### signature: `bufferTime(bufferTimeSpan: number, bufferCreationInterval: number, scheduler: Scheduler): Observable`
 
 ## Collect emitted values until provided time has passed, emit as array.
 

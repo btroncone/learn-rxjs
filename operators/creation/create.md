@@ -1,5 +1,5 @@
 # create
-####signature: `create(subscribe: function)`
+#### signature: `create(subscribe: function)`
 
 ## Create an observable with given subscription function.
 

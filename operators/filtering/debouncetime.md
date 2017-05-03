@@ -1,5 +1,5 @@
 # debounceTime
-####signature: `debounceTime(dueTime: number, scheduler: Scheduler): Observable`
+#### signature: `debounceTime(dueTime: number, scheduler: Scheduler): Observable`
 
 ## Discard emitted values that take less than the specified time between output
 

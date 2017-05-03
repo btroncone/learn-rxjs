@@ -1,5 +1,5 @@
 # forkJoin
-####signature: `forkJoin(...args, selector : function): Observable`
+#### signature: `forkJoin(...args, selector : function): Observable`
 
 ## When all observables complete emit the last value from each.
 

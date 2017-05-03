@@ -1,5 +1,5 @@
 # delayWhen
-####signature: `delayWhen(selector: Function, sequence: Observable): Observable`
+#### signature: `delayWhen(selector: Function, sequence: Observable): Observable`
 
 ## Delay emitted values determined by provided function.
 

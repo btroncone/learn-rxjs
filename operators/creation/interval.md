@@ -1,5 +1,5 @@
 # interval
-####signature: `interval(period: number, scheduler: Scheduler): Observable`
+#### signature: `interval(period: number, scheduler: Scheduler): Observable`
 
 ## Emit numbers in sequence based on provided timeframe.
 

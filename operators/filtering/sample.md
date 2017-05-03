@@ -1,5 +1,5 @@
 # sample
-####signature: `sample(sampler: Observable): Observable`
+#### signature: `sample(sampler: Observable): Observable`
 
 ## Sample from source when provided observable emits.
 

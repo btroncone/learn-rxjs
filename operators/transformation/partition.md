@@ -1,5 +1,5 @@
 # partition
-####signature: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
+#### signature: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
 
 ## Split one observable into two based on provided predicate.
 

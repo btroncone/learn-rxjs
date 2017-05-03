@@ -1,5 +1,5 @@
 # bufferCount
-####signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
+#### signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 
 ## Collect emitted values until provided number is fulfilled, emit as array.
 

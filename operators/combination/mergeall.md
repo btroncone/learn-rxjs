@@ -1,5 +1,5 @@
 # mergeAll
-####signature: `mergeAll(concurrent: number): Observable`
+#### signature: `mergeAll(concurrent: number): Observable`
 
 ## Collect and subscribe to all observables.
 

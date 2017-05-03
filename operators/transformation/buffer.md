@@ -1,5 +1,5 @@
 # buffer
-####signature: `buffer(closingNotifier: Observable): Observable`
+#### signature: `buffer(closingNotifier: Observable): Observable`
 
 ## Collect output values until provided observable emits, emit as array.
 

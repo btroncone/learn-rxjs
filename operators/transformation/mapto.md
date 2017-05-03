@@ -1,5 +1,5 @@
 # mapTo
-####signature: `mapTo(value: any): Observable`
+#### signature: `mapTo(value: any): Observable`
 
 ## Map emissions to constant value.
 

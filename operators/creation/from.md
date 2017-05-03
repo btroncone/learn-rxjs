@@ -1,5 +1,5 @@
 # from
-####signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
+#### signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
 
 ## Turn an array, promise, or iterable into an observable.
 

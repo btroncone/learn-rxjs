@@ -1,5 +1,5 @@
 # zip
-####signature: `zip(observables: *): Observable`
+#### signature: `zip(observables: *): Observable`
 
 ### Description
 

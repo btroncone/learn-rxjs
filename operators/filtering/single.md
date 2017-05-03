@@ -1,5 +1,5 @@
 # single
-####signature: `single(a: Function): Observable`
+#### signature: `single(a: Function): Observable`
 
 ## Emit single item that passes expression.
 

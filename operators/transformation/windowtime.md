@@ -1,5 +1,5 @@
 # windowTime
-####signature: `windowTime(windowTimeSpan: number, windowCreationInterval: number, scheduler: Scheduler): Observable`
+#### signature: `windowTime(windowTimeSpan: number, windowCreationInterval: number, scheduler: Scheduler): Observable`
 
 ## Observable of values collected from source for each provided time span.
 

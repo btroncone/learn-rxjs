@@ -1,5 +1,5 @@
 # debounce
-####signature: `debounce(durationSelector: function): Observable`
+#### signature: `debounce(durationSelector: function): Observable`
 
 ## Discard emitted values that take less than the specified time, based on selector function, between output.
 

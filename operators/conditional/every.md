@@ -1,5 +1,5 @@
 # every
-####signature: `every(predicate: function, thisArg: any): Observable`
+#### signature: `every(predicate: function, thisArg: any): Observable`
 
 ## If all values pass predicate before completion emit true, else false.
 

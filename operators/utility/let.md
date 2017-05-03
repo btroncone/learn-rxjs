@@ -1,5 +1,5 @@
 # let
-####signature: `let(function): Observable`
+#### signature: `let(function): Observable`
 
 ## Let me have the whole observable.
 

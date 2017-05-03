@@ -1,5 +1,5 @@
 # toPromise
-####signature: `toPromise() : Promise`
+#### signature: `toPromise() : Promise`
 
 ## Convert observable to promise.
 

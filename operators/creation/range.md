@@ -1,5 +1,5 @@
 # range
-####signature: `range(start: number, count: number, scheduler: Scheduler): Observable`
+#### signature: `range(start: number, count: number, scheduler: Scheduler): Observable`
 
 ## Emit numbers in provided range in sequence.
 

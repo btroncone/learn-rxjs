@@ -1,5 +1,5 @@
 # concat
-####signature: `concat(observables: ...*): Observable`
+#### signature: `concat(observables: ...*): Observable`
 
 ## Subscribe to observables in order as previous completes, emit values.
 

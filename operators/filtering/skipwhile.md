@@ -1,5 +1,5 @@
 # skipWhile
-####signature: `skipWhile(predicate: Function): Observable`
+#### signature: `skipWhile(predicate: Function): Observable`
 
 ## Skip emitted values from source until provided expression is false.
 

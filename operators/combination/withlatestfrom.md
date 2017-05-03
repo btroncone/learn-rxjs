@@ -1,5 +1,5 @@
 # withLatestFrom
-####signature: `withLatestFrom(other: Observable, project: Function): Observable`
+#### signature: `withLatestFrom(other: Observable, project: Function): Observable`
 
 ## Also provide the last value from another observable.
 
