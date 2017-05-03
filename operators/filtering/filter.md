@@ -1,5 +1,5 @@
 # filter
-####signature: `filter(select: Function, thisArg: any): Observable`
+#### signature: `filter(select: Function, thisArg: any): Observable`
 
 ## Emit values that pass the provided condition.
 
