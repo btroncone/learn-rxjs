@@ -9,7 +9,7 @@
 
 ##### Example 1: Mapping to inner interval observable
 
-( [jsBin](http://jsbin.com/nebapesile/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
+( [jsBin](http://jsbin.com/cokinogime/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
 
 ```js
 //emit every 1s, take 2
