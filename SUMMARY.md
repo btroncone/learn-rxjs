@@ -11,6 +11,7 @@
         * [forkJoin](/operators/combination/forkjoin.md)
         * [merge](/operators/combination/merge.md)
         * [mergeAll](/operators/combination/mergeall.md)
+        * [pairwise](/operators/combination/pairwise.md)
         * [race](/operators/combination/race.md)
         * [startWith](/operators/combination/startwith.md)
         * [withLatestFrom](/operators/combination/withlatestfrom.md)
