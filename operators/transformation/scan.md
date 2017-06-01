@@ -57,7 +57,7 @@ console.clear();
 
 //The observable adds new value to the array which then randomly emits a random value form this array.
 const scanObs = Rx.Observable.interval(1000)
-	.scan((a,c) => a.concat(c), [])
+  .scan((a,c) => a.concat(c), [])
   .map(r => r[Math.floor(Math.random()*r.length)])
   .distinctUntilChanged()
   .subscribe(console.log);
