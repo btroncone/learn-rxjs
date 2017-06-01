@@ -50,12 +50,10 @@ subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favori
 
 ##### Example 3: Emitting random values from the accumulated array.
 
-( [jsFiddle](https://jsfiddle.net/ElHuy/r9r1k4bq/2/) )
+( [jsBin](http://jsbin.com/mudolideqo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/afjgf4tz/) )
 
 ```js
-console.clear();
-
-//The observable adds new value to the array which then randomly emits a random value form this array.
+// Accumulate values in an array, emit random values from this array.
 const scanObs = Rx.Observable.interval(1000)
   .scan((a,c) => a.concat(c), [])
   .map(r => r[Math.floor(Math.random()*r.length)])
