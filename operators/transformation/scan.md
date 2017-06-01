@@ -46,6 +46,23 @@ subject.next({age: 30}); // {name: 'Joe', age: 30}
 subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
 ```
 
+### Examples
+
+##### Example 3: Emitting random values from the accumulated array.
+
+( [jsFiddle](https://jsfiddle.net/ElHuy/r9r1k4bq/2/) )
+
+```js
+console.clear();
+
+//The observable adds new value to the array which then randomly emits a random value form this array.
+const scanObs = Rx.Observable.interval(1000)
+	.scan((a,c) => a.concat(c), [])
+  .map(r => r[Math.floor(Math.random()*r.length)])
+  .distinctUntilChanged()
+  .subscribe(console.log);
+```
+
 ### Related Recipes
 * [Smart Counter](../../recipes/smartcounter.md)
 
