@@ -25,7 +25,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Take the first 5 values from source
 
-( [jsBin](http://jsbin.com/lovawayefe/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/g1fhxgua/) )
+( [jsBin](http://jsbin.com/kexenuzulu/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/g1fhxgua/) )
 
 ```js
 //emit value every 1s
