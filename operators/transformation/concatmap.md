@@ -50,6 +50,22 @@ const example = source.concatMap(val => examplePromise(val), result => `${result
 const subscribe = example.subscribe(val => console.log('Example w/ Selector:', val));
 ```
 
+##### Example 4: Illustrating difference between concatMap and mergeMap
+
+( [jsBin](http://jsbin.com/kiwuvamafo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3xd74d89/) )
+
+```js
+const concatMapSub = Rx.Observable.of(2000, 1000)
+  .concatMap(v => Rx.Observable.of(v).delay(v))
+  // concatMap: 2000, mergeMap: 1000
+  .subscribe(v => console.log('concatMap:', v))
+
+const mergeMapSub = Rx.Observable.of(2000, 1000)
+  .mergeMap(v => Rx.Observable.of(v).delay(v))
+  // mergeMap: 1000, mergeMap: 2000
+  .subscribe(v => console.log('mergeMap:', v))
+```
+
 
 ### Additional Resources
 * [concatMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap) :newspaper: - Official docs
