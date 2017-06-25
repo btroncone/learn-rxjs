@@ -24,20 +24,19 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Throttle merged observable
 
-( [jsBin](http://jsbin.com/juqinaqika/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xhd1zy3m/) )
+( [jsBin](http://jsbin.com/takipadaza/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xhd1zy3m/) )
 
 ```js
-//merge observables that emit every 1s, immediately, and every 5s
 const source = Rx.Observable
 	.merge(
-        //emit every 2.25 seconds
-		    Rx.Observable.interval(2250),
-        //emit every 3 seconds
-        Rx.Observable.interval(3000)
-	);
-//throttle for 5 seconds
-const example = source.throttleTime(1500);
-//output: 0...1...2...2...4...5...6...5
+          //emit every .75 seconds
+	  Rx.Observable.interval(750),
+          //emit every 1 second
+          Rx.Observable.interval(1000)
+        );
+//throttle in middle of emitted values
+const example = source.throttleTime(1200);
+//output: 0...1...4...4...8...7
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
