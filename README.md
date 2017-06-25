@@ -71,6 +71,9 @@ jump start your learning experience!
 #### Exercises
 * [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar Husain
 
+#### Tools
+* [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
+
 *Interested in RxJS 4? Check out [Denis Stoyanov's](https://github.com/xgrommx) excellent [eBook](https://xgrommx.github.io/rx-book/)!*
 
 ### A Note On References
