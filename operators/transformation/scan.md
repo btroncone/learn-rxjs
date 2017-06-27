@@ -28,8 +28,6 @@ subject.next(2); //3
 subject.next(3); //6
 ```
 
-### Examples
-
 ##### Example 2: Accumulating an object
 
 ( [jsBin](http://jsbin.com/fusunoguqu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/36rbu38b/) )
@@ -45,8 +43,6 @@ subject.next({name: 'Joe'}); // {name: 'Joe'}
 subject.next({age: 30}); // {name: 'Joe', age: 30}
 subject.next({favoriteLanguage: 'JavaScript'}); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
 ```
-
-### Examples
 
 ##### Example 3: Emitting random values from the accumulated array.
 
