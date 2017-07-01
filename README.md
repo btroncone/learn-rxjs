@@ -17,6 +17,10 @@ and features references throughout to the best RxJS related material on the web.
 The goal is to supplement the [official docs](http://reactivex.io/rxjs/) and pre-existing learning material while offering a new, fresh perspective to clear any hurdles and tackle the pain points. 
 Learning Rx may be difficult but it is certainly worth the effort!
 
+## Translations
+
+* [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
+
 ## Content
 
 #### Operators
