@@ -17,6 +17,7 @@ and features references throughout to the best RxJS related material on the web.
 The goal is to supplement the [official docs](http://reactivex.io/rxjs/) and pre-existing learning material while offering a new, fresh perspective to clear any hurdles and tackle the pain points. 
 Learning Rx may be difficult but it is certainly worth the effort!
 
+
 ## Content
 
 #### Operators
@@ -36,9 +37,6 @@ This section contains all [RxJS 5 operators](/operators/README.md), included wit
 **OR...**
 
 [Complete listing in alphabetical order](/operators/complete.md)
-
-##### Translated Examples
-* [Chinese version of original RxJS 5 Operators By Example](https://gist.github.com/DrakeLeung/ecbcedab8534d4486a888ef777a76140) - Drake Leung
 
 #### Concepts
 Without a solid base knowledge of how Observables work behind the scenes, it's easy for much of RxJS to feel like 'magic'.
@@ -75,6 +73,9 @@ jump start your learning experience!
 * [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
 
 *Interested in RxJS 4? Check out [Denis Stoyanov's](https://github.com/xgrommx) excellent [eBook](https://xgrommx.github.io/rx-book/)!*
+
+## Translations
+* [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
 
 ### A Note On References
 All references included in this GitBook are resources, both free and paid, that helped me tremendously while learning RxJS.
