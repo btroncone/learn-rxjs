@@ -7,7 +7,7 @@
 
 ##### Example 1: Applying map with let
 
-( [jsBin](http://jsbin.com/sicavuvijo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/6n7w3b22/) )
+( [jsBin](http://jsbin.com/jiyupaxomo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/6n7w3b22/) )
 
 ```js
 //emit array as a sequence
