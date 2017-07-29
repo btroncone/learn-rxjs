@@ -14,7 +14,7 @@
 
 ( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combinelatest-spec.ts) )
 
-#####Example 1: Combining observables emitting at 3 intervals
+##### Example 1: Combining observables emitting at 3 intervals
 ( [jsBin](http://jsbin.com/zupiqozaro/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/) )
 
 ```js
