@@ -11,6 +11,7 @@ for nearly any use-case you will encounter.
 * [bufferWhen](bufferwhen.md)
 * [concatMap](concatmap.md) :star:
 * [concatMapTo](concatmapto.md)
+* [exhaustMap](exhaustmap.md)
 * [expand](expand.md)
 * [groupBy](groupby.md)
 * [map](map.md) :star:

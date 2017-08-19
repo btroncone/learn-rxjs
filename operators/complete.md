@@ -29,6 +29,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
 * [every](conditional/every.md)
 * [empty](creation/empty.md)
 * [expand](transformation/expand.md)
+* [exhaustMap](tranformation/exhaustmap.md)
 * [filter](filtering/filter.md) :star:
 * [first](filtering/first.md)
 * [forkJoin](combination/forkjoin.md)
