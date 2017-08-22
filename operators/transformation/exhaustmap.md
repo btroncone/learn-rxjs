@@ -3,8 +3,6 @@
 
 ## Map to inner observable, ignore other values until that observable completes.
 
----
-
 ### Examples
 
 ##### Example 1: exhaustMap with interval
