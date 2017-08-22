@@ -9,7 +9,7 @@
 
 ##### Example 1: exhaustMap with interval
 
-( [jsBin](http://jsbin.com/woposeqobo/1/edit?js,console) | [jsFiddle](http://jsbin.com/heluvanefa/1/edit?js,console) )
+( [jsBin](http://jsbin.com/woposeqobo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/9ovzapp9/) )
 
 ```js
 const interval = Rx.Observable.interval(1000);
@@ -36,6 +36,44 @@ const exhaustSub = Rx.Observable
   .exhaustMap(_ => interval.take(5))
   // output: 0, 1, 2, 3, 4
   .subscribe(val => console.log(val))
+```
+
+
+##### Example 2: Another exhaustMap with interval
+
+( [jsFiddle](https://jsfiddle.net/ElHuy/01o70pgv/1/) )
+
+```js
+console.clear();
+
+const firstInterval = Rx.Observable.interval(1000).take(10);
+const secondInterval = Rx.Observable.interval(1000).take(2);
+
+const exhaustSub = firstInterval.exhaustMap(f => {
+	console.log(`Emission of first interval: ${f}`);  //I placed the first console.log so we could get a glimpse to what's happening behind the scene.
+	return secondInterval;
+}).subscribe(s => console.log(s));
+
+/*
+	When we subscribeds to the first interval, it starts to emit a value (value 0).
+  This value is mapped to the second interval which then begins to emit (value 0).
+  While the second intervals emit, values from the first interval are still rolling out, but promptly ignored.
+  We can see this when firstInterval gives us our next value number 3 and not 1.
+  
+  Our output looks like this:
+    Emission of first interval: 0
+    0
+    1
+    Emission of first interval: 3
+    0
+    1
+    Emission of first interval: 6
+    0
+    1
+    Emission of first interval: 9
+    0
+    1
+*/
 ```
 
 
