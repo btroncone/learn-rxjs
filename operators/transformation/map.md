@@ -35,7 +35,7 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Smart Counter](../../recipes/smartcounter.md)
 
 ### Additional Resources
-* [map](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-map) :newspaper: - Official docs
+* [map](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-map) :newspaper: - Official docs
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) :video_camera: - Ben Lesh
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 
