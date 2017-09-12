@@ -5,7 +5,37 @@
 
 ### Examples
 
-##### Example 1: Applying map with let
+##### Example 1: Reusing error handling logic with let
+
+( [jsBin](http://jsbin.com/rosuborara/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qtq1h8vw/) )
+
+```js
+// custom error handling logic
+const retryThreeTimes = obs => obs.retry(3).catch(_ => Rx.Observable.of('ERROR!'));
+const examplePromise = val => new Promise(resolve => resolve(`Complete: ${val}`));
+
+//faking request
+const subscribe = Rx.Observable
+  .of('some_url')
+  .mergeMap(url => examplePromise(url))
+  // could reuse error handling logic in multiple places with let
+  .let(retryThreeTimes)
+  //output: Complete: some_url
+  .subscribe(result => console.log(result));
+
+const customizableRetry = retryTimes => obs => obs.retry(retryTimes).catch(_ => Rx.Observable.of('ERROR!'));
+
+//faking request
+const secondSubscribe = Rx.Observable
+  .of('some_url')
+  .mergeMap(url => examplePromise(url))
+  // could reuse error handling logic in multiple places with let
+  .let(customizableRetry(3))
+  //output: Complete: some_url
+  .subscribe(result => console.log(result));
+```
+
+##### Example 2: Applying map with let
 
 ( [jsBin](http://jsbin.com/jiyupaxomo/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/6n7w3b22/) )
 
@@ -30,7 +60,7 @@ const subscribe = source
   .subscribe(val => console.log('VALUE FROM ARRAY WITH let: ', val));
 ```
 
-##### Example 2: Applying multiple operators with let
+##### Example 3: Applying multiple operators with let
 
 ( [jsBin](http://jsbin.com/zamizapaho/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/gxsq1woc/) )
 
@@ -50,7 +80,7 @@ const subscribeTwo = source
   .subscribe(val => console.log('let WITH MULTIPLE OPERATORS: ', val));
 ```
 
-##### Example 3: Applying operators through function
+##### Example 4: Applying operators through function
 
 ( [jsBin](http://jsbin.com/vojelelamu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ah09dL9e/) )
 
