@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1:
+##### Example 1: 
 
 ( [jsBin](http://jsbin.com/sigivaputo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ElHuy/btygt1vL/) )
 
@@ -26,7 +26,7 @@ const defer = Rx.Observable.defer(() =>
 test(5);
 ```
 
-##### Example 2:
+##### Example 2: Defering response to user input
 
 ( [jsBin](http://jsbin.com/yekopoqege/1/edit?html,js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/98ca76v3/) )
 
