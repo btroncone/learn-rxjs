@@ -1,5 +1,5 @@
 # defer
-####signature: `defer(factoryFunction: Observable): Observable`
+#### signature: `defer(factoryFunction: Observable): Observable`
 
 ## Upon subscription, returns a new Observable through the Observable factory function.
 
@@ -7,15 +7,15 @@
 
 ##### Example 1:
 
-( [jsFiddle](https://jsfiddle.net/ElHuy/btygt1vL/) )
+( [jsBin](http://jsbin.com/sigivaputo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ElHuy/btygt1vL/) )
 
 ```js
 const defer = Rx.Observable.defer(() =>
 	Rx.Observable.interval(750)
   	.take(5));
 
-const test = a => {
-	if (a > 0) {
+ const test = a => {
+ if (a > 0) {
     --a;
     defer.subscribe(console.log);
     test(a);
@@ -28,18 +28,18 @@ test(5);
 
 ##### Example 2:
 
-( [jsFiddle](https://jsfiddle.net/ElHuy/r3dukfus/) )
+( [jsBin](http://jsbin.com/yekopoqege/1/edit?html,js,console,output) | [jsFiddle](https://jsfiddle.net/btroncone/98ca76v3/) )
 
 ```html
-<input id="input" >
+<input id="input">
 ```
 
 ```js
 let reply = '';
 const input = document.getElementById("input");
 const inputObs = Rx.Observable.fromEvent(input, 'keyup')
-  .map(i => reply = i.currentTarget.value)
-	.debounceTime(750)
+  .do(i => reply = i.currentTarget.value)
+  .debounceTime(750)
   .switchMap(_ => defer);
 
 const defer = Rx.Observable.defer(() => {
