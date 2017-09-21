@@ -1,7 +1,7 @@
 # forkJoin
 #### signature: `forkJoin(...args, selector : function): Observable`
 
-## When all observables complete emit the last value from each.
+## When all observables complete, emit the last value from each.
 
 ---
 :bulb:  If you want corresponding emissions from multiple observables as they occur, try [zip](zip.md)!
