@@ -45,7 +45,7 @@ A month later **Person A** decides to update their library. They no longer need 
 import 'rxjs/add/operator/take';
 ```
 
-**Person B** upgrades the dependency, builds their project, which now fails. They never included `switchMap` or `concatMap` themselves, it was **just working** based on the inclusion of a 3rd party dependency. If you were not aware this could be an issue that can take a bit to track down.
+**Person B** upgrades the dependency, builds their project, which now fails. They never included `switchMap` or `concatMap` themselves, it was **just working** based on the inclusion of a 3rd party dependency. If you were not aware this could be an issue it may take a bit to track down.
 
 ### The Solution
 
