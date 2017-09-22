@@ -90,6 +90,6 @@
 * [Recipes](/recipes/README.md)
    * [Smart Counter](/recipes/smartcounter.md)
 * [Concepts](/concepts/README.md)
-   * [Using Operators in Public Libraries](/concepts/operator-imports.md)
+   * [Understanding Operator Imports](/concepts/operator-imports.md)
 
 
