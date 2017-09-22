@@ -23,7 +23,7 @@ declare module '../../Observable' {
 }
 ```
 
-This is method is generally *OK* for private projects and modules, the issue arises when you are using these imports in say, an [npm](https://www.npmjs.com/) package or library to be consumed throughout your organization.
+This method is generally *OK* for private projects and modules, the issue arises when you are using these imports in say, an [npm](https://www.npmjs.com/) package or library to be consumed throughout your organization.
 
 ### A Quick Example
 
