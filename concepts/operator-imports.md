@@ -2,7 +2,7 @@
 
 A problem you may have run into in the past when consuming or creating a public library that depends on RxJS is handling operator inclusion. The most predominant way to include operators in your project is to import them like below:
 
-```ts
+```js
 import 'rxjs/add/operator/take';
 ```
 
@@ -10,7 +10,7 @@ This adds the imported operator to the `Observable` prototype for use throughout
 
 [(Source)](https://github.com/ReactiveX/rxjs/blob/master/src/add/operator/take.ts)
 
-```ts
+```js
 import { Observable } from '../../Observable';
 import { take } from '../../operator/take';
 
@@ -30,7 +30,7 @@ This is method is generally *OK* for private projects and modules, the issue ari
 To see where a problem can spring up, let's imagine **Person A** is creating a public Angular component library. In this library you need a few operators so you add the typical imports:
 
 *some-public-library.ts*
-```ts
+```js
 import 'rxjs/add/operator/take';
 import 'rxjs/add/operator/concatMap';
 import 'rxjs/add/operator/switchMap';
@@ -41,7 +41,7 @@ import 'rxjs/add/operator/switchMap';
 A month later **Person A** decides to update their library. They no longer need `switchMap` or `concatMap` so they remove the imports:
 
 *some-public-library.ts*
-```ts
+```js
 import 'rxjs/add/operator/take';
 ```
 
@@ -51,19 +51,19 @@ import 'rxjs/add/operator/take';
 
 Instead of importing operators like:
 
-```ts
+```js
 import 'rxjs/add/operator/take';
 ```
 
 We can instead import them like:
 
-```ts
+```js
 import { take } from 'rxjs/operator/take';
 ```
 
 This keeps them off the `Observable` prototype and let's us call them directly:
 
-```ts
+```js
 import { take } from 'rxjs/operator/take';
 import { of } from 'rxjs/observable/of';
 
@@ -75,7 +75,7 @@ take.call(
 
 This quickly gets **ugly** however, imagine we have a longer chain:
 
-```ts
+```js
 import { take } from 'rxjs/operator/take';
 import { map } from 'rxjs/operator/map';
 import { of } from 'rxjs/observable/of';
@@ -93,9 +93,9 @@ Pretty soon we have a block of code that is near impossible to understand. How c
 
 ### RxJS Helpers
 
-RxJS now comes with a [`pipe`](https://github.com/ReactiveX/rxjs/blob/755df9bf908108974e38aaff79887279f2cde008/src/Observable.ts#L305-L329) helper that alleviates the pain of not having operators on the prototype. We can take the ugly block of code from above:
+RxJS now comes with a [`pipe`](https://github.com/ReactiveX/rxjs/blob/755df9bf908108974e38aaff79887279f2cde008/src/Observable.ts#L305-L329) helper on `Observable` that alleviates the pain of not having operators on the prototype. We can take the ugly block of code from above:
 
-```ts
+```js
 import { take } from 'rxjs/operator/take';
 import { map } from 'rxjs/operator/map';
 import { of } from 'rxjs/observable/of';
@@ -111,9 +111,8 @@ map.call(
 
 And transform it into:
 
-```ts
-import { take } from 'rxjs/operator/take';
-import { map } from 'rxjs/operator/map';
+```js
+import { take, map } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 
 of(1,2,3)
