@@ -90,5 +90,6 @@
 * [Recipes](/recipes/README.md)
    * [Smart Counter](/recipes/smartcounter.md)
 * [Concepts](/concepts/README.md)
+   * [Understanding Operator Imports](/concepts/operator-imports.md)
 
 
