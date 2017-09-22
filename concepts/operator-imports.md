@@ -124,7 +124,7 @@ of(1,2,3)
 
 Much easier to read, right? If you are developing in Angular and using the [`@angular/cdk`](https://www.npmjs.com/package/@angular/cdk) you can utilize the `RxChain` function and helper methods right now for a similar feel:
 
-```ts
+```js
 import { of } from 'rxjs/observable/of';
 import { RxChain, map, debounceTime } from '@angular/cdk/rxjs';
 
