@@ -42,7 +42,7 @@ This section contains all [RxJS 5 operators](/operators/README.md), included wit
 Without a solid base knowledge of how Observables work behind the scenes, it's easy for much of RxJS to feel like 'magic'.
 This section helps solidify the major concepts needed to feel comfortable with reactive programming and Observables.
 
-*Coming Soon!*
+[Complete Concept Listing](/concepts/README.md)
 
 #### Recipes
 Recipes for common use-cases and interesting solutions with RxJS. 
