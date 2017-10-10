@@ -19,6 +19,7 @@ for nearly any use-case you will encounter.
 * [mergeMap](mergemap.md) :star:
 * [partition](partition.md)
 * [pluck](pluck.md)
+* [reduce](reduce.md)
 * [scan](scan.md) :star:
 * [switchMap](switchmap.md) :star:
 * [window](window.md)
