@@ -71,6 +71,7 @@
         * [mergeMap](/operators/transformation/mergemap.md)
         * [partition](/operators/transformation/partition.md)
         * [pluck](/operators/transformation/pluck.md)
+        * [reduce](/operators/transformation/reduce.md)
         * [scan](/operators/transformation/scan.md)
         * [switchMap](/operators/transformation/switchmap.md)
         * [window](/operators/transformation/window.md)
