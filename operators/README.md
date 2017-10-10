@@ -73,6 +73,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [mergeMap](transformation/mergemap.md) :star:
     * [partition](transformation/partition.md)
     * [pluck](transformation/pluck.md)
+    * [reduce](transformation/reduce.md)
     * [scan](transformation/scan.md) :star:
     * [switchMap](transformation/switchmap.md) :star:
     * [window](transformation/window.md)
