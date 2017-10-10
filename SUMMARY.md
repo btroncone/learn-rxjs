@@ -35,7 +35,6 @@
         * [retry](/operators/error_handling/retry.md)
         * [retryWhen](/operators/error_handling/retrywhen.md)
     * [Multicasting](/operators/multicasting/README.md)
-        * [cache](/operators/multicasting/cache.md)
         * [publish](/operators/multicasting/publish.md)
         * [multicast](/operators/multicasting/multicast.md)
         * [share](/operators/multicasting/share.md)
