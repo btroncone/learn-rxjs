@@ -3,7 +3,9 @@
 
 ## Reduces the values from source observable to a single value that's emitted when the source completes.
 
-> Just like `Array.prototype.reduce()`
+:bulb: Just like [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=a)
+
+:bulb: If you need the current accumulated value on each emission, try [scan](scan.md)!
 
 ### Examples
 
