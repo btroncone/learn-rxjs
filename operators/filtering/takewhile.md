@@ -18,6 +18,21 @@ const example = source.takeWhile(val => val <= 4);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+
+##### Example 2: Difference between takeWhile() and filter() 
+
+```js
+// emit 3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3
+const sourece = Rx.Observable.of(3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3)
+// allow values until value from source is equals 4, then complete
+source.takeWhile(it => it === 3 )
+// output: [3, 3, 3]
+source.filter(it => it === 3)
+// output: [3, 3, 3, 3, 3, 3, 3]
+```
+
+
+
 ### Related Recipes
 * [Smart Counter](../../recipes/smartcounter.md)
 
