@@ -66,7 +66,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [concatMap](transformation/concatmap.md) :star:
     * [concatMapTo](transformation/concatmapto.md)
     * [expand](transformation/expand.md)
-    * [exhaustMap](tranformation/exhaustmap.md)
+    * [exhaustMap](transformation/exhaustmap.md)
     * [groupBy](transformation/groupby.md)
     * [map](transformation/map.md) :star:
     * [mapTo](transformation/mapto.md)
