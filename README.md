@@ -72,6 +72,7 @@ jump start your learning experience!
 #### Tools
 * [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
 * [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
+* [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
 
 *Interested in RxJS 4? Check out [Denis Stoyanov's](https://github.com/xgrommx) excellent [eBook](https://xgrommx.github.io/rx-book/)!*
 
