@@ -34,14 +34,11 @@ const subscription = (function(currentNumber) {
   return Rx.Observable.fromEvent(updateButton, 'click')
     .map(_ => parseInt(input.value))
     .switchMap(endRange => {
-      return (
-        Rx.Observable.timer(0, 20)
-          .mapTo(positiveOrNegative(endRange, currentNumber))
-          .startWith(currentNumber)
-          .scan((acc, curr) => acc + curr)
-          // .delayWhen(//easing here)
-          .takeWhile(takeUntilFunc(endRange, currentNumber))
-      );
+      return Rx.Observable.timer(0, 20)
+        .mapTo(positiveOrNegative(endRange, currentNumber))
+        .startWith(currentNumber)
+        .scan((acc, curr) => acc + curr)
+        .takeWhile(takeUntilFunc(endRange, currentNumber));
     })
     .do(v => (currentNumber = v))
     .startWith(currentNumber)
