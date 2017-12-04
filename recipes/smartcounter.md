@@ -1,12 +1,18 @@
 # Smart Counter
 
-An interesting element on interfaces which involve dynamically updating numbers is a smart counter, or odometer effect. Instead of jumping a number up and down, quickly counting to the desired number can achieve a cool effect. An example of a popular library that accomplishes this is [odometer](https://github.com/HubSpot/odometer) by [Hubspot](https://github.com/HubSpot). Let's see how we can accomplish something similar with just a few lines of RxJS.
-
-
+An interesting element on interfaces which involve dynamically updating numbers
+is a smart counter, or odometer effect. Instead of jumping a number up and down,
+quickly counting to the desired number can achieve a cool effect. An example of
+a popular library that accomplishes this is
+[odometer](https://github.com/HubSpot/odometer) by
+[Hubspot](https://github.com/HubSpot). Let's see how we can accomplish something
+similar with just a few lines of RxJS.
 
 #### Vanilla JS
 
-( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) | [JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
+( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) |
+[JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
+
 ```js
 // utility functions
 const takeUntilFunc = (endRange, currentNumber) => {
@@ -19,38 +25,42 @@ const positiveOrNegative = (endRange, currentNumber) => {
   return endRange > currentNumber ? 1 : -1;
 };
 
-const updateHTML = id => val => document.getElementById(id).innerHTML = val;
+const updateHTML = id => val => (document.getElementById(id).innerHTML = val);
 // display
 const input = document.getElementById('range');
 const updateButton = document.getElementById('update');
 
 const subscription = (function(currentNumber) {
-  return Rx.Observable
-      .fromEvent(updateButton, 'click')
-      .map(_ => parseInt(input.value))
-      .switchMap(endRange => {
-        return Rx.Observable.timer(0, 20)
-            .mapTo(positiveOrNegative(endRange, currentNumber))
-            .startWith(currentNumber)
-            .scan((acc, curr) => acc + curr)
-            // .delayWhen(//easing here)
-            .takeWhile(takeUntilFunc(endRange, currentNumber))
-      })
-      .do(v => currentNumber = v)
-      .startWith(currentNumber)
-      .subscribe(updateHTML('display'));
-}(0));
-
+  return Rx.Observable.fromEvent(updateButton, 'click')
+    .map(_ => parseInt(input.value))
+    .switchMap(endRange => {
+      return (
+        Rx.Observable.timer(0, 20)
+          .mapTo(positiveOrNegative(endRange, currentNumber))
+          .startWith(currentNumber)
+          .scan((acc, curr) => acc + curr)
+          // .delayWhen(//easing here)
+          .takeWhile(takeUntilFunc(endRange, currentNumber))
+      );
+    })
+    .do(v => (currentNumber = v))
+    .startWith(currentNumber)
+    .subscribe(updateHTML('display'));
+})(0);
 ```
 
 ###### HTML
+
 ```html
 <input id="range" type="number">
 <button id="update">Update</button>
 <h3 id="display">0</h3>
 ```
 
-We can easily take our vanilla smart counter and wrap it in any popular component based UI library. Below is an example of an Angular smart counter component which takes an `Input` of the updated end ranges and performs the appropriate transition.
+We can easily take our vanilla smart counter and wrap it in any popular
+component based UI library. Below is an example of an Angular smart counter
+component which takes an `Input` of the updated end ranges and performs the
+appropriate transition.
 
 #### Angular Version
 
@@ -77,9 +87,6 @@ export class NumberTrackerComponent implements OnDestroy {
             .mapTo(this.positiveOrNegative(endRange, this.currentNumber))
             .startWith(this.currentNumber)
             .scan((acc, curr) => acc + curr)
-            // .delayWhen(i => {
-            //   easing here
-            // })
             .takeWhile(this.takeUntilFunc(endRange, this.currentNumber));
       })
       .subscribe(val => this.currentNumber = val);
@@ -102,6 +109,7 @@ export class NumberTrackerComponent implements OnDestroy {
 ```
 
 ### Operators Used
+
 * [fromEvent](../operators/creation/fromevent.md)
 * [map](../operators/transformation/map.md)
 * [mapTo](../operators/transformation/mapto.md)
