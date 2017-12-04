@@ -2,6 +2,8 @@
 
 Clear examples, explanations, and resources for RxJS.
 
+*By [@btroncone](https://twitter.com/BTroncone)*
+
 
 ## Introduction
 
