@@ -42,7 +42,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Increased duration between retries
 
-( [jsBin](http://jsbin.com/katafeduzu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/tLx1c3j6/1/) )
+( [jsBin](http://jsbin.com/nexuxoyifa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/tLx1c3j6/2/) )
 
 ```js
 //emit value every 1s
@@ -56,14 +56,15 @@ const example = source
     return val;
   })
   .retryWhen(attempts => {
-    return attempts.zip(Rx.Observable.range(1, 4)).flatMap(([error, i]) => {
+    return attempts.zip(Rx.Observable.range(1, 4)).mergeMap(([error, i]) => {
       if (i > 3) {
         return Rx.Observable.throw(error);
       }
       console.log(`Wait ${i} seconds, then retry!`);
       return Rx.Observable.timer(i * 1000);
     });
-  });
+  })
+  .catch(_ => Rx.Observable.of('Ouch, giving up!'))
 
 const subscribe = example.subscribe(val => console.log(val));
 ```
