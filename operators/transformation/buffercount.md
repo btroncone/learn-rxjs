@@ -1,4 +1,5 @@
 # bufferCount
+
 #### signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 
 ## Collect emitted values until provided number is fulfilled, emit as array.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Collect buffer and emit after specified number of values
 
-( [jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
+( [jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
 
 ```js
 //Create an observable that emits a value every second
@@ -16,12 +18,15 @@ const source = Rx.Observable.interval(1000);
 const bufferThree = source.bufferCount(3);
 //Print values to console
 //ex. output [0,1,2]...[3,4,5]
-const subscribe = bufferThree.subscribe(val => console.log('Buffered Values:', val));
+const subscribe = bufferThree.subscribe(val =>
+  console.log('Buffered Values:', val)
+);
 ```
 
 ##### Example 2: Overlapping buffers
 
-( [jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3c67qcz1/) )
+( [jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/3c67qcz1/) )
 
 ```js
 //Create an observable that emits a value every second
@@ -43,14 +48,19 @@ buffer 2: [1,2,3] Buffer of 3, emit buffer
 buffer 3: [2, 3]
 buffer 4: [3]
 */
-const bufferEveryOne = source.bufferCount(3,1);
+const bufferEveryOne = source.bufferCount(3, 1);
 //Print values to console
-const subscribe = bufferEveryOne.subscribe(val => console.log('Start Buffer Every 1:', val));
+const subscribe = bufferEveryOne.subscribe(val =>
+  console.log('Start Buffer Every 1:', val)
+);
 ```
 
-
 ### Additional Resources
-* [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount) :newspaper: - Official docs
+
+* [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount)
+  :newspaper: - Official docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferCount.ts)

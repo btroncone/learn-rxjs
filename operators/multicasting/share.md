@@ -1,10 +1,12 @@
 # share
+
 #### signature: `share(): Observable`
 
 ## Share source among multiple subscribers.
 
 ---
-:bulb:  share is like [multicast](multicast.md) with a Subject and refCount!
+
+:bulb: share is like [multicast](multicast.md) with a Subject and refCount!
 
 ---
 
@@ -12,7 +14,8 @@
 
 ##### Example 1: Multiple subscribers sharing source
 
-( [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/Lmesxxaq/) )
+( [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/Lmesxxaq/) )
 
 ```js
 //emit value in 1s
@@ -45,10 +48,14 @@ const subscribeThree = sharedExample.subscribe(val => console.log(val));
 const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ```
 
-
 ### Additional Resources
-* [share](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share) :newspaper: - Official docs
-* [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
+
+* [share](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share)
+  :newspaper: - Official docs
+* [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs)
+  :video_camera: :dollar: - John Linquist
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts)

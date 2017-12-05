@@ -1,4 +1,5 @@
 # delayWhen
+
 #### signature: `delayWhen(selector: Function, sequence: Observable): Observable`
 
 ## Delay emitted values determined by provided function.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Delay based on observable
 
-( [jsBin](http://jsbin.com/topohekuje/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) )
+( [jsBin](http://jsbin.com/topohekuje/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) )
 
 ```js
 //emit value every second
@@ -21,10 +23,14 @@ const delayWhenExample = message.delayWhen(delayForFiveSeconds);
 const subscribe = delayWhenExample.subscribe(val => console.log(val));
 ```
 
-
 ### Additional Resources
-* [delayWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delayWhen) :newspaper: - Official docs
-* [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+* [delayWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delayWhen)
+  :newspaper: - Official docs
+* [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
+  :video_camera: :dollar: - André Staltz
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/delayWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/delayWhen.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/delayWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/delayWhen.ts)

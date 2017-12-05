@@ -1,23 +1,21 @@
 # ignoreElements
+
 #### signature: `ignoreElements(): Observable`
 
-
 ## Ignore everything but complete and error.
-
 
 ### Examples
 
 ##### Example 1: Ignore all elements from source
 
-( [jsBin](http://jsbin.com/yiyefelubi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/59scjqss/) )
+( [jsBin](http://jsbin.com/yiyefelubi/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/59scjqss/) )
 
 ```js
 //emit value every 100ms
 const source = Rx.Observable.interval(100);
 //ignore everything but complete
-const example = source
-  .take(5)
-  .ignoreElements();
+const example = source.take(5).ignoreElements();
 //output: "COMPLETE!"
 const subscribe = example.subscribe(
   val => console.log(`NEXT: ${val}`),
@@ -28,7 +26,8 @@ const subscribe = example.subscribe(
 
 ##### Example 2: Only displaying error
 
-( [jsBin](http://jsbin.com/gogonawuze/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/srcwdgw6/) )
+( [jsBin](http://jsbin.com/gogonawuze/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/srcwdgw6/) )
 
 ```js
 //emit value every 100ms
@@ -36,7 +35,7 @@ const source = Rx.Observable.interval(100);
 //ignore everything but error
 const error = source
   .flatMap(val => {
-    if(val === 4){
+    if (val === 4) {
       return Rx.Observable.throw(`ERROR AT ${val}`);
     }
     return Rx.Observable.of(val);
@@ -50,9 +49,12 @@ const subscribe = error.subscribe(
 );
 ```
 
-
 ### Additional Resources
-* [ignoreElements](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements) :newspaper: - Official docs
+
+* [ignoreElements](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements)
+  :newspaper: - Official docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/ignoreElements.ts)

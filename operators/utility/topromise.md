@@ -1,4 +1,5 @@
 # toPromise
+
 #### signature: `toPromise() : Promise`
 
 ## Convert observable to promise.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Basic Promise
 
-( [jsBin](http://jsbin.com/favoqecixi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/thykc9up/) )
+( [jsBin](http://jsbin.com/favoqecixi/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/thykc9up/) )
 
 ```js
 //return basic observable
@@ -23,7 +25,8 @@ const example = sample('First Example')
 
 ##### Example 2: Using Promise.all
 
-( [jsBin](http://jsbin.com/hutiyicaco/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/xzu6u7hs/) )
+( [jsBin](http://jsbin.com/hutiyicaco/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/xzu6u7hs/) )
 
 ```js
 //return basic observable
@@ -37,16 +40,19 @@ const example = () => {
     sample('Promise 1').toPromise(),
     sample('Promise 2').toPromise()
   ]);
-}
+};
 //output: ["Promise 1", "Promise 2"]
 example().then(val => {
   console.log('Promise.all Result:', val);
 });
 ```
 
-
 ### Additional Resources
-* [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md) :newspaper: - Official Docs
+
+* [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md)
+  :newspaper: - Official Docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/toPromise.ts)

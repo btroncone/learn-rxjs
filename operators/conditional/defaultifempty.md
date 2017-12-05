@@ -1,4 +1,5 @@
 # defaultIfEmpty
+
 #### signature: `defaultIfEmpty(defaultValue: any): Observable`
 
 ## Emit given value if nothing is emitted before completion.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Default for empty value
 
-( [jsBin](http://jsbin.com/yawumoqatu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8ex96cov/) )
+( [jsBin](http://jsbin.com/yawumoqatu/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/8ex96cov/) )
 
 ```js
 const empty = Rx.Observable.of();
@@ -19,7 +21,8 @@ const subscribe = exampleOne.subscribe(val => console.log(val));
 
 ##### Example 2: Default for Observable.empty
 
-( [jsBin](http://jsbin.com/kojafuvesu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/3edw828p/) )
+( [jsBin](http://jsbin.com/kojafuvesu/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/3edw828p/) )
 
 ```js
 //empty observable
@@ -30,9 +33,12 @@ const example = empty.defaultIfEmpty('Observable.empty()!');
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-
 ### Additional Resources
-* [defaultIfEmpty](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-defaultIfEmpty) :newspaper: - Official docs
+
+* [defaultIfEmpty](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-defaultIfEmpty)
+  :newspaper: - Official docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/defaultIfEmpty.ts)

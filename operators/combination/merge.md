@@ -1,12 +1,15 @@
 # merge
+
 #### signature: `merge(input: Observable): Observable`
 
 ## Turn multiple observables into a single observable.
 
 ---
-:bulb:  This operator can be used as either a static or instance method!
 
-:bulb:  If order not throughput is a primary concern, try [concat](concat.md) instead!
+:bulb: This operator can be used as either a static or instance method!
+
+:bulb: If order not throughput is a primary concern, try [concat](concat.md)
+instead!
 
 ---
 
@@ -14,7 +17,8 @@
 
 ##### Example 1: merging multiple observables, static method
 
-( [jsBin](http://jsbin.com/conufujapi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
+( [jsBin](http://jsbin.com/conufujapi/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
 
 ```js
 //emit every 2.5 seconds
@@ -39,7 +43,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: merge 2 observables, instance method
 
-( [jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/me5ofcr0/) )
+( [jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/me5ofcr0/) )
 
 ```js
 //emit every 2.5 seconds
@@ -52,12 +57,18 @@ const example = first.merge(second);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-
 ### Additional Resources
-* [merge](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge) :newspaper: - Official docs
-* [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
-* [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming) :video_camera: :dollar: - André Staltz
-* [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
+
+* [merge](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge)
+  :newspaper: - Official docs
+* [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs)
+  :video_camera: :dollar: - John Linquist
+* [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming)
+  :video_camera: :dollar: - André Staltz
+* [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth)
+  :video_camera: :dollar: - André Staltz
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/merge.ts)

@@ -1,10 +1,12 @@
 # takeUntil
-#### signature: ` takeUntil(notifier: Observable): Observable`
+
+#### signature: `takeUntil(notifier: Observable): Observable`
 
 ## Emit values until provided observable emits.
 
 ---
-:bulb:  If you only need a specific number of values, try [take](take.md)!
+
+:bulb: If you only need a specific number of values, try [take](take.md)!
 
 ---
 
@@ -12,7 +14,8 @@
 
 ##### Example 1: Take values until timer emits
 
-( [jsBin](http://jsbin.com/yevuhukeja/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/zbe9dzb9/) )
+( [jsBin](http://jsbin.com/yevuhukeja/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/zbe9dzb9/) )
 
 ```js
 //emit value every 1s
@@ -25,9 +28,10 @@ const example = source.takeUntil(timer);
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: Take the first 5 even numbers 
+##### Example 2: Take the first 5 even numbers
 
-( [jsBin](http://jsbin.com/doquqecara/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/0dLeksLe/) )
+( [jsBin](http://jsbin.com/doquqecara/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/0dLeksLe/) )
 
 ```js
 //emit value every 1s
@@ -37,15 +41,14 @@ const isEven = val => val % 2 === 0;
 //only allow values that are even
 const evenSource = source.filter(isEven);
 //keep a running total of the number of even numbers out
-const evenNumberCount = evenSource
-	.scan((acc, _) => acc + 1, 0);
+const evenNumberCount = evenSource.scan((acc, _) => acc + 1, 0);
 //do not emit until 5 even numbers have been emitted
 const fiveEvenNumbers = evenNumberCount.filter(val => val > 5);
-  
+
 const example = evenSource
-	//also give me the current even number count for display
+  //also give me the current even number count for display
   .withLatestFrom(evenNumberCount)
-	.map(([val, count]) => `Even number (${count}) : ${val}`)
+  .map(([val, count]) => `Even number (${count}) : ${val}`)
   //when five even numbers have been emitted, complete source observable
   .takeUntil(fiveEvenNumbers);
 /*
@@ -58,10 +61,14 @@ const example = evenSource
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-
 ### Additional Resources
-* [takeUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeUntil) :newspaper: - Official docs
-* [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
+
+* [takeUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeUntil)
+  :newspaper: - Official docs
+* [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs)
+  :video_camera: :dollar: - John Linquist
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/takeUntil.ts)

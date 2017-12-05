@@ -1,14 +1,15 @@
 # race
+
 #### signature: `race(): Observable`
 
-## The observable to emit first is used. 
-
+## The observable to emit first is used.
 
 ### Examples
 
 ##### Example 1: race with 4 observables
 
-( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
+( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 
 ```js
 //take the first observable to emit
@@ -34,16 +35,25 @@ const subscribe = example.subscribe(val => console.log(val));
 console.clear();
 
 //Throws an error and ignore the rest of the observables.
-const first = Rx.Observable.of('first').delay(100).map(() => {throw 'error'});
+const first = Rx.Observable.of('first')
+  .delay(100)
+  .map(() => {
+    throw 'error';
+  });
 const second = Rx.Observable.of('second').delay(200);
 const third = Rx.Observable.of('third').delay(300);
 
-const race = Rx.Observable.race(first, second, third)
-	.subscribe(val => console.log(val));
+const race = Rx.Observable.race(first, second, third).subscribe(val =>
+  console.log(val)
+);
 ```
 
 ### Additional Resources
-* [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) :newspaper: - Official docs
+
+* [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race)
+  :newspaper: - Official docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts)

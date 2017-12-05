@@ -1,4 +1,5 @@
 # throw
+
 #### signature: `throw(error: any, scheduler: Scheduler): Observable`
 
 ## Emit error on subscription.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Throw error on subscription
 
-( [jsBin](http://jsbin.com/punubequju/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/mks82xqz/) )
+( [jsBin](http://jsbin.com/punubequju/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/mks82xqz/) )
 
 ```js
 //emits an error with specified value on subscription
@@ -20,10 +22,14 @@ const subscribe = source.subscribe({
 });
 ```
 
-
 ### Additional Resources
-* [throw](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-throw) :newspaper: - Official docs
-* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch) :video_camera: :dollar: - André Staltz
+
+* [throw](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-throw)
+  :newspaper: - Official docs
+* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
+  :video_camera: :dollar: - André Staltz
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/observable/ErrorObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/ErrorObservable.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/observable/ErrorObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/ErrorObservable.ts)

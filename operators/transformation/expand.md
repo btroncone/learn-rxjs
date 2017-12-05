@@ -1,4 +1,5 @@
 # expand
+
 #### signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
 
 ## Recursively call provided function.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Add one for each invocation
 
-( [jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
+( [jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
 
 ```js
 //emit 2
@@ -15,11 +17,11 @@ const source = Rx.Observable.of(2);
 const example = source
   //recursively call supplied function
   .expand(val => {
-       //2,3,4,5,6
-       console.log(`Passed value: ${val}`);
-       //3,4,5,6
-       return Rx.Observable.of(1 + val);
-    })
+    //2,3,4,5,6
+    console.log(`Passed value: ${val}`);
+    //3,4,5,6
+    return Rx.Observable.of(1 + val);
+  })
   //call 5 times
   .take(5);
 /*
@@ -38,9 +40,12 @@ const example = source
 const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ```
 
-
 ### Additional Resources
-* [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand) :newspaper: - Official docs
+
+* [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand)
+  :newspaper: - Official docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/expand.ts)

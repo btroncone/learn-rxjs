@@ -1,4 +1,5 @@
 # bufferWhen
+
 #### signature: `bufferWhen(closingSelector: function): Observable`
 
 ## Collect all values until closing selector emits, emit buffered values.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Emit buffer based on interval
 
-( [jsBin](http://jsbin.com/vugerupube/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/nr9agfuL/) )
+( [jsBin](http://jsbin.com/vugerupube/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/nr9agfuL/) )
 
 ```js
 //emit value every 1 second
@@ -18,12 +20,17 @@ const fiveSecondInterval = () => Rx.Observable.interval(5000);
 const bufferWhenExample = oneSecondInterval.bufferWhen(fiveSecondInterval);
 //log values
 //ex. output: [0,1,2,3]...[4,5,6,7,8]
-const subscribe = bufferWhenExample.subscribe(val => console.log('Emitted Buffer: ', val));
+const subscribe = bufferWhenExample.subscribe(val =>
+  console.log('Emitted Buffer: ', val)
+);
 ```
 
-
 ### Additional Resources
-* [bufferWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferWhen) :newspaper: - Official docs
+
+* [bufferWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferWhen)
+  :newspaper: - Official docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferWhen.ts)

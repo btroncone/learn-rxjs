@@ -1,4 +1,5 @@
 # concatMapTo
+
 #### signature: `concatMapTo(observable: Observable, resultSelector: function): Observable`
 
 ## Subscribe to provided observable when previous completes, emit values.
@@ -7,7 +8,8 @@
 
 ##### Example 1: Map to basic observable
 
-( [jsBin](http://jsbin.com/telovuhupa/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/La0bam0u/) )
+( [jsBin](http://jsbin.com/telovuhupa/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/La0bam0u/) )
 
 ```js
 //emit value every 2 seconds
@@ -22,7 +24,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Map to observable that emits at slower pace
 
-( [jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/s19wtscb/) )
+( [jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/s19wtscb/) )
 
 ```js
 //emit value every 2 seconds
@@ -35,10 +38,10 @@ const source = Rx.Observable.interval(1000).take(5);
   (interval emits every 1 second, basicTimer completes every 5)
 */
 //basicTimer will complete after 5 seconds, emitting 0,1,2,3,4
-const example = interval
-	.concatMapTo(source, 
-  	(firstInterval, secondInterval) => `${firstInterval} ${secondInterval}`
-   );
+const example = interval.concatMapTo(
+  source,
+  (firstInterval, secondInterval) => `${firstInterval} ${secondInterval}`
+);
 /*
   output: 0 0
           0 1
@@ -53,9 +56,12 @@ const example = interval
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-
 ### Additional Resources
-* [concatMapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo) :newspaper: - Official docs
+
+* [concatMapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo)
+  :newspaper: - Official docs
 
 ---
-> :file_folder: Source Code:  [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts)
+
+> :file_folder: Source Code:
+> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMapTo.ts)
