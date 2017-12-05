@@ -31,11 +31,11 @@ inner observable could cause memory leaks, for instance if you used
 [mergeMap](mergemap.md) with an interval and forgot to properly dispose of inner
 subscriptions. Remember, `switchMap` maintains only one inner subscription at a
 time, this can be seen clearly in the
-[first example](#example-1-restart-interval-every-5-seconds)
+[first example](#example-1-restart-interval-every-5-seconds).
 
 Be careful though, you probably want to avoid `switchMap` in scenarios where
 every request needs to complete, think writes to a database. `switchMap` could
-cancel a request mid-flight if the source emits quickly enough. In these
+cancel a request if the source emits quickly enough. In these
 scenarios [mergeMap](mergemap.md) is the correct option.
 
 ### Examples
