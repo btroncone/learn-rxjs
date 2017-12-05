@@ -26,9 +26,9 @@ similar to how you might use
 Be aware that if any of the inner observables supplied to `forkJoin` error you
 will lose the value of any other observables that would or have already
 completed if you do not [`catch`](../error_handling/catch.md) the
-[error correctly on the inner observable](#example-4-getting-successful-results-when-one-inner-observable-errors).
+[error correctly on the inner observable](#example-4-getting-successful-results-when-one-innner-observable-errors).
 If you are only concerned with all inner observables completing successfully you
-can [catch the error on the outside](example-3-handling-errors-on-outside).
+can [catch the error on the outside](#example-3-handling-errors-on-outside).
 
 It's also worth noting that if you have an observable that emits more than one
 item, and you are concerned with the previous emissions `forkJoin` is not the
