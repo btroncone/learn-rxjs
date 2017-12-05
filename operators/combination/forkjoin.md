@@ -100,7 +100,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 3: Handling errors on outside
 
 ( [jsBin](http://jsbin.com/gugawucixi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/j7p9vtfx/) )
+[jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) )
 
 ```js
 /*
@@ -122,7 +122,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 4: Getting successful results when one innner observable errors
 
 ( [jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/ackoj5rm/) )
+[jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) )
 
 ```js
 /*
