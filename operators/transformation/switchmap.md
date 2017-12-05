@@ -100,26 +100,25 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 4: Countdown timer with switchMap
 
-( [jsBin](http://jsbin.com/zahohikaha/1/edit?html,js,console,output) |
-[jsFiddle](https://jsfiddle.net/btroncone/ww7zg988/1/) )
+( [jsBin](http://jsbin.com/devedeqiga/edit?js,output) |
+[jsFiddle](https://jsfiddle.net/btroncone/ww7zg988/189/) )
 
 ```js
-const countdownSeconds = 60;
-const setHTML = id => val => (document.getElementById(id).innerHTML = val);
+const countdownSeconds = 10;
+const setHTML = id => val => document.getElementById(id).innerHTML = val;
 const pauseButton = document.getElementById('pause');
 const resumeButton = document.getElementById('resume');
 const interval$ = Rx.Observable.interval(1000).mapTo(-1);
 
-const pause$ = Rx.Observable.fromEvent(pauseButton, 'click').mapTo(
-  Rx.Observable.of(false)
-);
-const resume$ = Rx.Observable.fromEvent(resumeButton, 'click').mapTo(interval$);
+const pause$ = Rx.Observable.fromEvent(pauseButton, 'click').mapTo(false);
+const resume$ = Rx.Observable.fromEvent(resumeButton, 'click').mapTo(true);
 
-const timer$ = Rx.Observable.merge(pause$, resume$)
+const timer$ = Rx.Observable
+	.merge(pause$, resume$)
   .startWith(interval$)
-  .switchMap(val => val)
-  // if pause button is clicked stop countdown
-  .scan((acc, curr) => (curr ? curr + acc : acc), countdownSeconds)
+  .switchMap(val => val ? interval$ : Rx.Observable.empty())
+  .scan((acc, curr) => curr ? curr + acc : acc, countdownSeconds)
+  .takeWhile(v => v >= 0)
   .subscribe(setHTML('remaining'));
 ```
 
