@@ -7,7 +7,7 @@
 
 ##### Example 1:  Group by property
 
-( [jsBin](http://jsbin.com/zibomoluru/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
+( [jsBin](http://jsbin.com/buworowuye/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
 
 ```js
 const people = [{name: 'Sue', age:25},{name: 'Joe', age: 30},{name: 'Frank', age: 25}, {name: 'Sarah', age: 35}];
@@ -16,8 +16,8 @@ const source = Rx.Observable.from(people);
 //group by age
 const example = source
   .groupBy(person => person.age)
-  //return as array of each group
-  .flatMap(group => group.reduce((acc, curr) => [...acc, curr], []))
+  // return each item in group as array
+  .mergeMap(group => group.toArray())
 /*
   output:
   [{age: 25, name: "Sue"},{age: 25, name: "Frank"}]
