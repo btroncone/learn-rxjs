@@ -106,6 +106,23 @@ const example = source.mergeMap(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 5: mergeMap memory leak
+
+( [jsFiddle](https://jsfiddle.net/ElHuy/31y8cv1h/) )
+
+```js
+//Non-stopping source
+const source = Rx.Observable.interval(100);
+
+//Dangerous remapping
+const example = source.mergeMap(val => Rx.Observable.interval(50));
+
+//Waterfall of output.  After some seconds in you'll notice a lag in the output.
+//This is due to memory leaks and displays the danger of this operator if you're not careful.
+//You should also be able to see a significant change in CPU usage as well.
+const subscribe = example.subscribe(val => console.log(val));
+```
+
 
 ### Additional Resources
 * [mergeMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap) :newspaper: - Official docs
