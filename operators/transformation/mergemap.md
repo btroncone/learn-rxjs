@@ -26,14 +26,6 @@ of output.  Keep in mind this is a double edge sword.  If the source or inner
 observables are not completing in a timely manner, you'll have a  memory leak in
 your hand.
 
-
-[first example](#example-1-restart-interval-every-5-seconds).
-
-Be careful though, you probably want to avoid `switchMap` in scenarios where
-every request needs to complete, think writes to a database. `switchMap` could
-cancel a request if the source emits quickly enough. In these
-scenarios [mergeMap](mergemap.md) is the correct option.
-
 ### Examples
 
 ##### Example 1: mergeMap with observable
