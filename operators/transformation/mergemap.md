@@ -12,6 +12,21 @@
 
 ---
 
+### Why use `mergeMap`?
+
+`mergeMap` is for you when you want to observe all action from the source's emission
+after you've mapped them to a new observable. In other word, you want to see what
+each item is doing once you've passed them through your function.
+
+These emission could behave differently depending on the function you provided and 
+herein lies the strength of `mergeMap`.  This operators subcribes to all mapped 
+emissions, giving you new output as they come.  It doesn't wait for anything to
+complete or unsubscribes from anything else.  You simply get an unfiltered stream
+of output.  Keep in mind this is a double edge sword.  If the source or inner
+observables are not completing in a timely manner, you'll have a  memory leak in
+your hand.
+
+
 ### Examples
 
 ##### Example 1: mergeMap with observable
