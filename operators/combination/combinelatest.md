@@ -13,6 +13,26 @@ observables when a source completes!
 
 ---
 
+### Why use `combineLatest`?
+
+This operator is best used when you have multiple, long-lived observables that
+rely on eachother for some calculation or determination. Basic examples of this
+can be seen in [example three](#example-3-combining-events-from-two-buttons),
+where events from multiple buttons are being combined to produce a count of each
+and an overall total, or a
+[calculation of BMI](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest)
+from the RxJS documentation.
+
+Be aware that **`combineLatest` will not emit an initial value until each
+observable emits at least one value**. This is the same behavior as
+[`withLatestFrom`](withlatestfrom.md) and can be a _gotcha_ as there will be no
+output and no error but one (or more) of your inner observables is likely not
+functioning as intended, or a subscription is late.
+
+Lastly, if you are working with observables that only emit one value, or you
+only require the last value of each before completion, [`forkJoin`](forkjoin.md)
+is likely a better option.
+
 ### Examples
 
 (
@@ -21,8 +41,8 @@ observables when a source completes!
 
 ##### Example 1: Combining observables emitting at 3 intervals
 
-( [jsBin](http://jsbin.com/zupiqozaro/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/) )
+( [jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
+[jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) )
 
 ```js
 //timerOne emits first value at 1s, then once every 4s
@@ -35,21 +55,21 @@ const timerThree = Rx.Observable.timer(3000, 4000);
 //when one timer emits, emit the latest values from each timer as an array
 const combined = Rx.Observable.combineLatest(timerOne, timerTwo, timerThree);
 
-const subscribe = combined.subscribe(latestValues => {
-  //grab latest emitted values for timers one, two, and three
-  const [timerValOne, timerValTwo, timerValThree] = latestValues;
-  /*
+const subscribe = combined.subscribe(
+  ([timerValOne, timerValTwo, timerValThree]) => {
+    /*
   	Example:
     timerOne first tick: 'Timer One Latest: 1, Timer Two Latest:0, Timer Three Latest: 0
     timerTwo first tick: 'Timer One Latest: 1, Timer Two Latest:1, Timer Three Latest: 0
     timerThree first tick: 'Timer One Latest: 1, Timer Two Latest:1, Timer Three Latest: 1
   */
-  console.log(
-    `Timer One Latest: ${timerValOne}, 
-     Timer Two Latest: ${timerValTwo}, 
+    console.log(
+      `Timer One Latest: ${timerValOne},
+     Timer Two Latest: ${timerValTwo},
      Timer Three Latest: ${timerValThree}`
-  );
-});
+    );
+  }
+);
 ```
 
 ##### Example 2: combineLatest with projection function
@@ -84,8 +104,8 @@ const subscribe = combinedProject.subscribe(latestValuesProject =>
 
 ##### Example 3: Combining events from 2 buttons
 
-( [jsBin](http://jsbin.com/hiyetucite/edit?html,js,output) |
-[jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/1/) )
+( [jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
+[jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) )
 
 ```js
 // helper function to set HTML
@@ -116,9 +136,9 @@ const combineTotal$ = Rx.Observable.combineLatest(
   <button id='red'>Red</button>
   <button id='black'>Black</button>
 </div>
-<div id="redTotal"></div>
-<div id="blackTotal"></div>
-<div id="total"></div>
+<div>Red: <span id="redTotal"></span> </div>
+<div>Black: <span id="blackTotal"></span> </div>
+<div>Total: <span id="total"></span> </div>
 ```
 
 ### Additional Resources
