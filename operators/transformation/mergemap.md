@@ -18,13 +18,12 @@
 after you've mapped them to a new observable. In other word, you want to see what
 each item is doing once you've passed them through your function.
 
-These emission could behave differently depending on the function you provided and 
-herein lies the strength of `mergeMap`.  This operators subcribes to all mapped 
-emissions, giving you new output as they come.  It doesn't wait for anything to
-complete or unsubscribes from anything else.  You simply get an unfiltered stream
-of output.  Keep in mind this is a double edge sword.  If the source or inner
-observables are not completing in a timely manner, you'll have a  memory leak in
-your hand.
+Since this operator subscribes to all mapped emission, you have to make sure the inner
+observables completes in a timely manner. If you don't, you'll have a memory leak at
+hand. This could be completed automatically by the obs themselves, or you utilize a
+limiting operator such as `take` or `takeUntil`.  You could also limit how many ongoing
+inner observables there are with the `concurrent` parameter.
+
 
 ### Examples
 
