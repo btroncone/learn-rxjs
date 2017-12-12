@@ -14,16 +14,11 @@
 
 ### Why use `mergeMap`?
 
-`mergeMap` is for you when you want to observe all action from the source's emission
-after you've mapped them to a new observable. In other word, you want to see what
-each item is doing once you've passed them through your function.
+This operator is best used when you wish to flatten an inner observable but want to manually control the number of inner subscriptions. 
 
-Since this operator subscribes to all mapped emission, you have to make sure the inner
-observables completes in a timely manner. If you don't, you'll have a memory leak at
-hand. This could be completed automatically by the obs themselves, or you utilize a
-limiting operator such as `take` or `takeUntil`.  You could also limit how many ongoing
-inner observables there are with the `concurrent` parameter.
+For instance, when using [`switchMap`](switchmap.md) each inner subscription is completed when the source emits, allowing only one active inner subscription. In contrast, `mergeMap` allows for multiple inner subscriptions to be active at a time. Because of this, one of the most common use-case for `mergeMap` is requests that should not be canceled, think writes rather than reads. Note that if order must be maintained [`concatMap`](concatmap.md) is a better option.
 
+Be aware that because `mergeMap` maintains multiple active inner subscriptions at once it's possible to create a memory leak through long-lived inner observables. A basic example would be if you were mapping to an observable with an inner timer, or a stream of dom events. In these cases, if you still wish to utilize `mergeMap` you may want to take advantage of another operator to manage the completion of the inner subscription, think [`take`](../filtering/take.md) or [`takeUntil`](../filtering/takeuntil.md). You can also limit the number of active inner subscriptions at a time with the `concurrent` parameter, seen in [example 4](#example-4-mergemap-with-concurrent-value).
 
 ### Examples
 
