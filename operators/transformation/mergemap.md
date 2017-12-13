@@ -16,6 +16,15 @@ important, try [`concatMap`](concatmap.md)!
 
 ---
 
+### Why use `mergeMap`?
+
+This operator is best used when you wish to flatten an inner observable but want to manually control the number of inner subscriptions. 
+
+For instance, when using [`switchMap`](switchmap.md) each inner subscription is completed when the source emits, allowing only one active inner subscription. In contrast, `mergeMap` allows for multiple inner subscriptions to be active at a time. Because of this, one of the most common use-case for `mergeMap` is requests that should not be canceled, think writes rather than reads. Note that if order must be maintained [`concatMap`](concatmap.md) is a better option.
+
+Be aware that because `mergeMap` maintains multiple active inner subscriptions at once it's possible to create a memory leak through long-lived inner subscriptions. A basic example would be if you were mapping to an observable with an inner timer, or a stream of dom events. In these cases, if you still wish to utilize `mergeMap` you may want to take advantage of another operator to manage the completion of the inner subscription, think [`take`](../filtering/take.md) or [`takeUntil`](../filtering/takeuntil.md). You can also limit the number of active inner subscriptions at a time with the `concurrent` parameter, seen in [example 4](#example-4-mergemap-with-concurrent-value).
+
+
 ### Examples
 
 ##### Example 1: mergeMap with observable
