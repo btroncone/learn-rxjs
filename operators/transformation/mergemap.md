@@ -20,6 +20,7 @@ For instance, when using [`switchMap`](switchmap.md) each inner subscription is 
 
 Be aware that because `mergeMap` maintains multiple active inner subscriptions at once it's possible to create a memory leak through long-lived inner observables. A basic example would be if you were mapping to an observable with an inner timer, or a stream of dom events. In these cases, if you still wish to utilize `mergeMap` you may want to take advantage of another operator to manage the completion of the inner subscription, think [`take`](../filtering/take.md) or [`takeUntil`](../filtering/takeuntil.md). You can also limit the number of active inner subscriptions at a time with the `concurrent` parameter, seen in [example 4](#example-4-mergemap-with-concurrent-value).
 
+
 ### Examples
 
 ##### Example 1: mergeMap with observable
