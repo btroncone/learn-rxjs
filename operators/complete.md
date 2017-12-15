@@ -1,8 +1,9 @@
 # RxJS 5 Operators By Example
 
-A complete list of RxJS 5 operators with clear explanations, relevant resources, and executable examples.
+A complete list of RxJS 5 operators with clear explanations, relevant resources,
+and executable examples.
 
-*[Prefer a split by operator type?](README.md)*
+_[Prefer a split by operator type?](README.md)_
 
 ### Contents (In Alphabetical Order)
 
@@ -69,6 +70,7 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
 * [throttleTime](filtering/throttletime.md)
 * [throw](creation/throw.md)
 * [timer](creation/timer.md)
+* [timeout](utilit/timeout.md)
 * [toPromise](utility/topromise.md)
 * [scan](transformation/scan.md) :star:
 * [switchMap](transformation/switchmap.md) :star:
@@ -80,8 +82,11 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
 * [withLatestFrom](combination/withlatestfrom.md) :star:
 * [zip](combination/zip.md)
 
-:star: - *commonly used*
+:star: - _commonly used_
 
 ### Additional Resources
-* [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators) :newspaper: - Official Docs
-* [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are) :video_camera: :dollar: - André Staltz
+
+* [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators)
+  :newspaper: - Official Docs
+* [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are)
+  :video_camera: :dollar: - André Staltz
