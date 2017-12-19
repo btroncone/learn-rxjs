@@ -89,7 +89,7 @@ const source = Rx.Observable.concat(
   Rx.Observable.interval(1000),
   Rx.Observable.of('This', 'Never', 'Runs')
 );
-//outputs: 1,2,3,4....
+//outputs: 0,1,2,3,4....
 const subscribe = source.subscribe(val =>
   console.log(
     'Example: Source never completes, second observable never runs:',
