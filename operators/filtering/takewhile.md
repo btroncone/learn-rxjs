@@ -23,7 +23,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 2: Difference between takeWhile() and filter()
 
 ( [jsBin](http://jsbin.com/yatoqurewi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/r497jgw3/1/) )
+[jsFiddle](https://jsfiddle.net/r497jgw3/4/) )
 
 ```js
 // emit 3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3
@@ -36,7 +36,7 @@ source
   .subscribe(val => console.log('takeWhile', val));
 
 // output: [3, 3, 3, 3, 3, 3, 3]
-source.filter(it => it === 3).subscribe(val => console.log('filter', 3));
+source.filter(it => it === 3).subscribe(val => console.log('filter', val));
 ```
 
 ### Related Recipes
