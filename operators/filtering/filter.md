@@ -4,10 +4,17 @@
 
 ## Emit values that pass the provided condition.
 
+
+### Why use `filter`
+
+This operator lets us to reduce the noise in the data stream by allowing only emmission that pass our requirements to go through.  `filter` is often used when we are only interested in a subset of data such as only even numbers in the stream or only people named "Brendan". Note that the predicate function in `filter` also takes in the index of the emission which allows you to build logic around that.
+
 ---
 
 :bulb: If you would like to complete an observable when a condition fails, check
 out [takeWhile](takewhile.md)!
+
+:bulb:  `skip` and `take` are specific instances of `filter` that skips or takes the first concurrent number of emission indicated in the parameter.
 
 ---
 
@@ -63,6 +70,24 @@ const example = source.filter(num => num > 5);
 const subscribe = example.subscribe(val =>
   console.log(`Number greater than 5: ${val}`)
 );
+```
+
+##### Example 4: filter out specific indexes
+
+([jsFiddle](https://jsfiddle.net/ElHuy/j6fvpv3e/1/))
+
+```js
+//emit every second
+const source = Rx.Observable.of(1,2,3,4,5);
+//filter out all values until interval is greater than 5
+const example = source.filter((num, index) => (index > 1 && index < 4) ? false: true);
+/*
+  "Number greater than 5: 6"
+  "Number greater than 5: 7"
+  "Number greater than 5: 8"
+  "Number greater than 5: 9"
+*/
+const subscribe = example.subscribe(val => console.log(`Number that is not an index of 2 && 3: ${val}`));
 ```
 
 ### Additional Resources
