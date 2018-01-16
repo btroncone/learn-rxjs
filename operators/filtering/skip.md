@@ -4,10 +4,10 @@
 
 ## Skip the provided number of emitted values.
 
-###Why use `skip`?
-What skip allows you to do is to ignore the first however many emission from the source you want. The reasoning for the skip is entirely up to you. Perhaps you have an observable that always emit certain values at the beginning and you don't care for them. Perhaps those first few aren't needed and you don't want your observable to be noisy with unecessary emission. But at the end, you want to skip because you want to subscribe to your observable and are only interested in later portion of the emissions.
+### Why use `skip`?
+Skip allows you to ignore the first x emissions from the source. Generally `skip` is used when you have an observable that always emits certain values on subscription that you wish to ignore. Perhaps those first few aren't needed or you are subscribing to a `Replay` or `BehaviorSubject` and do not need to act on the initial values. Reach for `skip` if you are only concerned about later emissions.
 
-Think of it as a short hand of filtering the first handful of of indexes. `.filter((val, index) => index > 1)`
+You could mimic `skip` by using [`filter`](./filter.md) with indexes. Ex. `.filter((val, index) => index > 1)`
 
 ### Examples
 
@@ -27,7 +27,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 #### Example 2: Short hand for a specific filter use case
 
-([jsFiddle](https://jsfiddle.net/ElHuy/4jswLn3z/) )
+( [jsBin](http://jsbin.com/judamurego/edit?js,console) | [jsFiddle](https://jsfiddle.net/ElHuy/4jswLn3z/) )
 ```js
 const numArrayObs = Rx.from([1,2,3,4,5,6,7,8,9,10]);
 
