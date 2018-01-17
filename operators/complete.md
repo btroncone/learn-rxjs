@@ -23,14 +23,14 @@ _[Prefer a split by operator type?](README.md)_
 * [debounce](filtering/debounce.md)
 * [debounceTime](filtering/debouncetime.md) :star:
 * [defaultIfEmpty](conditional/defaultifempty.md)
-* [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
 * [delay](utility/delay.md)
 * [delayWhen](utility/delaywhen.md)
+* [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
 * [do](utility/do.md) :star:
-* [every](conditional/every.md)
 * [empty](creation/empty.md)
-* [expand](transformation/expand.md)
+* [every](conditional/every.md)
 * [exhaustMap](transformation/exhaustmap.md)
+* [expand](transformation/expand.md)
 * [filter](filtering/filter.md) :star:
 * [first](filtering/first.md)
 * [forkJoin](combination/forkjoin.md)
@@ -57,23 +57,23 @@ _[Prefer a split by operator type?](README.md)_
 * [retry](error_handling/retry.md)
 * [retryWhen](error_handling/retrywhen.md)
 * [sample](filtering/sample.md)
+* [scan](transformation/scan.md) :star:
 * [share](multicasting/share.md) :star:
 * [single](filtering/single.md)
 * [skip](filtering/skip.md)
 * [skipUntil](filtering/skipuntil.md)
 * [skipWhile](filtering/skipwhile.md)
 * [startWith](combination/startwith.md) :star:
+* [switchMap](transformation/switchmap.md) :star:
 * [take](filtering/take.md) :star:
 * [takeUntil](filtering/takeuntil.md) :star:
 * [takeWhile](filtering/takewhile.md)
 * [throttle](filtering/throttle.md)
 * [throttleTime](filtering/throttletime.md)
 * [throw](creation/throw.md)
-* [timer](creation/timer.md)
 * [timeout](utilit/timeout.md)
+* [timer](creation/timer.md)
 * [toPromise](utility/topromise.md)
-* [scan](transformation/scan.md) :star:
-* [switchMap](transformation/switchmap.md) :star:
 * [window](transformation/window.md)
 * [windowCount](transformation/windowcount.md)
 * [windowTime](transformation/windowtime.md)
