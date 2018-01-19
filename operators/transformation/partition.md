@@ -69,4 +69,4 @@ const subscribe = Rx.Observable.merge(
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/partition.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/partition.ts)

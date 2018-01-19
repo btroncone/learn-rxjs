@@ -28,4 +28,4 @@ const subscribe = example.subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/skipWhile.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/skipWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/skipWhile.ts)

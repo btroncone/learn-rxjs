@@ -56,4 +56,4 @@ const race = Rx.Observable.race(first, second, third).subscribe(val =>
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/race.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/race.ts)

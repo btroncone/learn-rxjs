@@ -71,4 +71,4 @@ const subscribe = example.subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/withLatestFrom.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/withLatestFrom.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/withLatestFrom.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/withLatestFrom.ts)

@@ -65,4 +65,4 @@ const subscribe = debouncedInterval.subscribe(val =>
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/debounce.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounce.ts)

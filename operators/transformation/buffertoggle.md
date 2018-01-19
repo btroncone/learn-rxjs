@@ -41,4 +41,4 @@ const subscribe = bufferToggleInterval.subscribe(val =>
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/bufferToggle.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferToggle.ts)

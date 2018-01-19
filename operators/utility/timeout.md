@@ -39,4 +39,4 @@ Rx.Observable.of(4000, 3000, 2000)
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/timeout.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/timeout.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts)

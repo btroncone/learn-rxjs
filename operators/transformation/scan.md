@@ -83,4 +83,4 @@ const scanObs = Rx.Observable.interval(1000)
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/scan.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts)

@@ -86,4 +86,4 @@ const mergeMapSub = Rx.Observable.of(2000, 1000)
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/concatMap.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concatMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concatMap.ts)

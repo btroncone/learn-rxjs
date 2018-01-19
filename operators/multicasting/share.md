@@ -58,4 +58,4 @@ const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/share.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/share.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/share.ts)

@@ -29,4 +29,4 @@ interval
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/pairwise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/pairwise.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/pairwise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/pairwise.ts)

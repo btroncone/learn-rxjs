@@ -37,4 +37,4 @@ const subscribe = myBufferedInterval.subscribe(val =>
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/buffer.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/buffer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/buffer.ts)

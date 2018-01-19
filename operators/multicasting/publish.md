@@ -49,4 +49,4 @@ setTimeout(() => {
   :newspaper: - Official docs
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/publish.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/publish.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/publish.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/publish.ts)

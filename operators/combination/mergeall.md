@@ -77,4 +77,4 @@ const example = interval
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/mergeAll.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeAll.ts)

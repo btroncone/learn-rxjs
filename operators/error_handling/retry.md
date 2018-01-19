@@ -47,4 +47,4 @@ const subscribe = example.subscribe({
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/retry.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/retry.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/retry.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/retry.ts)

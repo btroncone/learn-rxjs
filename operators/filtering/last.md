@@ -79,4 +79,4 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts](https://github.com/ReactiveX/rxjs/blob/master/src/operator/last.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/last.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/last.ts)
