@@ -5,7 +5,7 @@
 
 ### Examples
 
-##### Example 1: 
+##### Example 1: Defering to new interval
 
 ( [jsBin](http://jsbin.com/sigivaputo/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/ElHuy/btygt1vL/) )
 
