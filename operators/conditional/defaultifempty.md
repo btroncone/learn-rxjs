@@ -12,9 +12,12 @@
 [jsFiddle](https://jsfiddle.net/btroncone/8ex96cov/) )
 
 ```js
-const empty = Rx.Observable.of();
+import { defaultIfEmpty } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+
+const empty = of();
 //emit 'Observable.of() Empty!' when empty, else any values from source
-const exampleOne = empty.defaultIfEmpty('Observable.of() Empty!');
+const exampleOne = empty.pipe(defaultIfEmpty('Observable.of() Empty!'));
 //output: 'Observable.of() Empty!'
 const subscribe = exampleOne.subscribe(val => console.log(val));
 ```
@@ -25,10 +28,13 @@ const subscribe = exampleOne.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/3edw828p/) )
 
 ```js
+import { defaultIfEmpty } from 'rxjs/operators';
+import { empty } from 'rxjs/observable/empty';
+
 //empty observable
-const empty = Rx.Observable.empty();
+const empty = empty();
 //emit 'Observable.empty()!' when empty, else any values from source
-const example = empty.defaultIfEmpty('Observable.empty()!');
+const example = empty.pipe(defaultIfEmpty('Observable.empty()!'));
 //output: 'Observable.empty()!'
 const subscribe = example.subscribe(val => console.log(val));
 ```
