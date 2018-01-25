@@ -6,7 +6,7 @@
 
 ### Examples
 
-##### Example 1: Receieve latest value every 5 seconds
+##### Example 1: Receive latest value every 5 seconds
 
 ( [jsBin](http://jsbin.com/koqujayizo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/4zysLc3y/) )
