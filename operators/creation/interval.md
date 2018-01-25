@@ -28,4 +28,4 @@ const subscribe = source.subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/IntervalObservable.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/interval.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/interval.ts)

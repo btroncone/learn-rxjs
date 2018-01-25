@@ -35,4 +35,4 @@ _Coming soon..._
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/observable/EmptyObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/EmptyObservable.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts)

@@ -44,4 +44,4 @@ const subscribe = source.subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/TimerObservable.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/timer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/timer.ts)
