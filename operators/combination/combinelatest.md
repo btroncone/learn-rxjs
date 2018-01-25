@@ -45,15 +45,18 @@ is likely a better option.
 [jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { combineLatest } from 'rxjs/observable/combineLatest';
+
 //timerOne emits first value at 1s, then once every 4s
-const timerOne = Rx.Observable.timer(1000, 4000);
+const timerOne = timer(1000, 4000);
 //timerTwo emits first value at 2s, then once every 4s
-const timerTwo = Rx.Observable.timer(2000, 4000);
+const timerTwo = timer(2000, 4000);
 //timerThree emits first value at 3s, then once every 4s
-const timerThree = Rx.Observable.timer(3000, 4000);
+const timerThree = timer(3000, 4000);
 
 //when one timer emits, emit the latest values from each timer as an array
-const combined = Rx.Observable.combineLatest(timerOne, timerTwo, timerThree);
+const combined = combineLatest(timerOne, timerTwo, timerThree);
 
 const subscribe = combined.subscribe(
   ([timerValOne, timerValTwo, timerValThree]) => {
@@ -78,15 +81,18 @@ const subscribe = combined.subscribe(
 [jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { combineLatest } from 'rxjs/observable/combineLatest';
+
 //timerOne emits first value at 1s, then once every 4s
-const timerOne = Rx.Observable.timer(1000, 4000);
+const timerOne = timer(1000, 4000);
 //timerTwo emits first value at 2s, then once every 4s
-const timerTwo = Rx.Observable.timer(2000, 4000);
+const timerTwo = timer(2000, 4000);
 //timerThree emits first value at 3s, then once every 4s
-const timerThree = Rx.Observable.timer(3000, 4000);
+const timerThree = timer(3000, 4000);
 
 //combineLatest also takes an optional projection function
-const combinedProject = Rx.Observable.combineLatest(
+const combinedProject = combineLatest(
   timerOne,
   timerTwo,
   timerThree,
@@ -108,25 +114,31 @@ const subscribe = combinedProject.subscribe(latestValuesProject =>
 [jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) )
 
 ```js
+import { mapTo, startWith, scan, tap } from 'rxjs/observable/timer';
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import { combineLatest } from 'rxjs/observable/combineLatest';
+
 // helper function to set HTML
 const setHtml = id => val => (document.getElementById(id).innerHTML = val);
 
 const addOneClick$ = id =>
-  Rx.Observable.fromEvent(document.getElementById(id), 'click')
-    // map every click to 1
-    .mapTo(1)
-    .startWith(0)
-    // keep a running total
-    .scan((acc, curr) => acc + curr)
-    // set HTML for appropriate element
-    .do(setHtml(`${id}Total`));
+  fromEvent(document.getElementById(id), 'click')
+    .pipe(
+      // map every click to 1
+      mapTo(1)
+      startWith(0)
+      // keep a running total
+      scan((acc, curr) => acc + curr)
+      // set HTML for appropriate element
+      tap(setHtml(`${id}Total`))
+    );
 
-const combineTotal$ = Rx.Observable.combineLatest(
+const combineTotal$ = combineLatest(
   addOneClick$('red'),
   addOneClick$('black')
 )
-  .map(([val1, val2]) => val1 + val2)
-  .subscribe(setHtml('total'));
+.pipe(map(([val1, val2]) => val1 + val2))
+.subscribe(setHtml('total'));
 ```
 
 ###### HTML

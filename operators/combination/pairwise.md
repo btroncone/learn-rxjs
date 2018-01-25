@@ -12,12 +12,16 @@
 [jsFiddle](https://jsfiddle.net/btroncone/8va47bq3/) )
 
 ```js
-var interval = Rx.Observable.interval(1000);
+import { pairwise, take } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+
+var interval = interval(1000);
 
 //Returns: [0,1], [1,2], [2,3], [3,4], [4,5]
-interval
-  .pairwise()
-  .take(5)
+interval.pipe(
+    pairwise()
+    take(5)
+  )
   .subscribe(console.log);
 ```
 

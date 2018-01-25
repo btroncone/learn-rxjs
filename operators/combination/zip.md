@@ -26,16 +26,20 @@ source!
 [jsFiddle](https://jsfiddle.net/btroncone/ton462sg/) )
 
 ```js
-const sourceOne = Rx.Observable.of('Hello');
-const sourceTwo = Rx.Observable.of('World!');
-const sourceThree = Rx.Observable.of('Goodbye');
-const sourceFour = Rx.Observable.of('World!');
+import { delay } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+import { zip } from 'rxjs/observable/zip';
+
+const sourceOne = of('Hello');
+const sourceTwo = of('World!');
+const sourceThree = of('Goodbye');
+const sourceFour = of('World!');
 //wait until all observables have emitted a value then emit all as an array
-const example = Rx.Observable.zip(
+const example = zip(
   sourceOne,
-  sourceTwo.delay(1000),
-  sourceThree.delay(2000),
-  sourceFour.delay(3000)
+  sourceTwo.pipe(delay(1000)),
+  sourceThree.pipe(delay(2000)),
+  sourceFour.pipe(delay(3000))
 );
 //output: ["Hello", "World!", "Goodbye", "World!"]
 const subscribe = example.subscribe(val => console.log(val));
@@ -47,10 +51,14 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/oamyk3xr/) )
 
 ```js
+import { take } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+import { zip } from 'rxjs/observable/zip';
+
 //emit every 1s
-const interval = Rx.Observable.interval(1000);
+const interval = interval(1000);
 //when one observable completes no more values will be emitted
-const example = Rx.Observable.zip(interval, interval.take(2));
+const example = zip(interval, interval.pipe(take(2)));
 //output: [0,0]...[1,1]
 const subscribe = example.subscribe(val => console.log(val));
 ```

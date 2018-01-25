@@ -12,16 +12,20 @@
 [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 
 ```js
+import { mapTo } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+import { race } from 'rxjs/observable/race';
+
 //take the first observable to emit
-const example = Rx.Observable.race(
+const example = race(
   //emit every 1.5s
-  Rx.Observable.interval(1500),
+  interval(1500),
   //emit every 1s
-  Rx.Observable.interval(1000).mapTo('1s won!'),
+  interval(1000).pipe(mapTo('1s won!')),
   //emit every 2s
-  Rx.Observable.interval(2000),
+  interval(2000),
   //emit every 2.5s
-  Rx.Observable.interval(2500)
+  interval(2500)
 );
 //output: "1s won!"..."1s won!"...etc
 const subscribe = example.subscribe(val => console.log(val));
@@ -32,20 +36,23 @@ const subscribe = example.subscribe(val => console.log(val));
 ( [jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
 
 ```js
+import { delay, map } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+import { race } from 'rxjs/observable/race';
+
 console.clear();
 
 //Throws an error and ignore the rest of the observables.
-const first = Rx.Observable.of('first')
-  .delay(100)
-  .map(() => {
+const first = of('first').pipe(
+  delay(100),
+  map(() => {
     throw 'error';
-  });
-const second = Rx.Observable.of('second').delay(200);
-const third = Rx.Observable.of('third').delay(300);
-
-const race = Rx.Observable.race(first, second, third).subscribe(val =>
-  console.log(val)
+  })
 );
+const second = of('second').pipe(delay(200));
+const third = of('third').pipe(delay(300));
+
+const race = race(first, second, third).subscribe(val => console.log(val));
 ```
 
 ### Additional Resources

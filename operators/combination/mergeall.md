@@ -23,16 +23,20 @@ single operator instead!
 [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) )
 
 ```js
+import { map, mergeAll } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+
 const myPromise = val =>
   new Promise(resolve => setTimeout(() => resolve(`Result: ${val}`), 2000));
 //emit 1,2,3
-const source = Rx.Observable.of(1, 2, 3);
+const source = of(1, 2, 3);
 
-const example = source
-  //map each value to promise
-  .map(val => myPromise(val))
-  //emit result from source
-  .mergeAll();
+const example = source.pipe(
+    //map each value to promise
+    map(val => myPromise(val))
+    //emit result from source
+    mergeAll()
+  );
 
 /*
   output:
@@ -48,19 +52,19 @@ const subscribe = example.subscribe(val => console.log(val));
 ( [jsFiddle](https://jsfiddle.net/zra3zxhs/) )
 
 ```js
-console.clear();
+import { take, map, delay, mergeAll } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
 
-const interval = Rx.Observable.interval(500).take(5);
+const interval = interval(500).pipe(take(5));
 
 /*
-  interval is emitting a value every 0.5s.  This value is then being mapped to interval that 
-  is delayed for 1.0s.  The mergeAll operator takes an optional argument that determines how 
-  many inner observables to subscribe to at a time.  The rest of the observables are stored 
+  interval is emitting a value every 0.5s.  This value is then being mapped to interval that
+  is delayed for 1.0s.  The mergeAll operator takes an optional argument that determines how
+  many inner observables to subscribe to at a time.  The rest of the observables are stored
   in a backlog waiting to be subscribe.
 */
 const example = interval
-  .map(val => interval.delay(1000).take(3))
-  .mergeAll(2)
+  .pipe(map(val => interval.pipe(delay(1000), take(3))), mergeAll(2))
   .subscribe(val => console.log(val));
 /*
   The subscription is completed once the operator emits all values.

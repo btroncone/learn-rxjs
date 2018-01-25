@@ -16,13 +16,19 @@
 [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
 
 ```js
+import { take, map } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+
 //emit every 1s, take 2
-const source = Rx.Observable.interval(1000).take(2);
+const source = interval(1000).pipe(take(2));
 //map each emitted value from source to interval observable that takes 5 values
-const example = source.map(val =>
-  Rx.Observable.interval(1000)
-    .map(i => `Result (${val}): ${i}`)
-    .take(5)
+const example = source.pipe(
+  map(val =>
+    interval(1000).pipe(
+      map(i => `Result (${val}): ${i}`)
+      take(5)
+    )
+  )
 );
 /*
   2 values from source will map to 2 (inner) interval observables that emit every 1s

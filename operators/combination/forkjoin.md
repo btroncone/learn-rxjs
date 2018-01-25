@@ -43,6 +43,11 @@ correct choice. In these cases you may better off with an operator like
 [jsFiddle](https://jsfiddle.net/btroncone/5fj77920/81/) )
 
 ```js
+import { delay, take } from 'rxjs/operators';
+import { forkJoin } from 'rxjs/observable/forkJoin';
+import { of } from 'rxjs/observable/of';
+import { interval } from 'rxjs/observable/interval';
+
 const myPromise = val =>
   new Promise(resolve =>
     setTimeout(() => resolve(`Promise Resolved: ${val}`), 5000)
@@ -52,15 +57,15 @@ const myPromise = val =>
   when all observables complete, give the last
   emitted value from each as an array
 */
-const example = Rx.Observable.forkJoin(
+const example = forkJoin(
   //emit 'Hello' immediately
-  Rx.Observable.of('Hello'),
+  of('Hello'),
   //emit 'World' after 1 second
-  Rx.Observable.of('World').delay(1000),
+  of('World').pipe(delay(1000)),
   //emit 0 after 1 second
-  Rx.Observable.interval(1000).take(1),
+  interval(1000).pipe(take(1)),
   //emit 0...1 in 1 second interval
-  Rx.Observable.interval(1000).take(2),
+  interval(1000).pipe(take(2)),
   //promise that resolves to 'Promise Resolved' after 5 seconds
   myPromise('RESULT')
 );
@@ -74,23 +79,25 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/0b8Lnh7s/1/) )
 
 ```js
+import { mergeMap } from 'rxjs/operators';
+import { forkJoin } from 'rxjs/observable/forkJoin';
+import { of } from 'rxjs/observable/of';
+
 const myPromise = val =>
   new Promise(resolve =>
     setTimeout(() => resolve(`Promise Resolved: ${val}`), 5000)
   );
 
-const source = Rx.Observable.of([1, 2, 3, 4, 5]);
+const source = of([1, 2, 3, 4, 5]);
 //emit array of all 5 results
-const example = source.mergeMap(q =>
-  Rx.Observable.forkJoin(...q.map(myPromise))
-);
+const example = source.pipe(mergeMap(q => forkJoin(...q.map(myPromise))));
 /*
   output:
   [
-   "Promise Resolved: 1", 
-   "Promise Resolved: 2", 
-   "Promise Resolved: 3", 
-   "Promise Resolved: 4",    
+   "Promise Resolved: 1",
+   "Promise Resolved: 2",
+   "Promise Resolved: 3",
+   "Promise Resolved: 4",
    "Promise Resolved: 5"
   ]
 */
@@ -103,18 +110,23 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) )
 
 ```js
+import { delay, catch } from 'rxjs/operators';
+import { forkJoin } from 'rxjs/observable/forkJoin';
+import { of } from 'rxjs/observable/of';
+import { _throw } from 'rxjs/observable/throw';
+
 /*
   when all observables complete, give the last
   emitted value from each as an array
 */
-const example = Rx.Observable.forkJoin(
+const example = forkJoin(
   //emit 'Hello' immediately
-  Rx.Observable.of('Hello'),
+  of('Hello'),
   //emit 'World' after 1 second
-  Rx.Observable.of('World').delay(1000),
+  of('World').pipe(delay(1000)),
   // throw error
-  Rx.Observable.throw('This will error')
-).catch(error => Rx.Observable.of(error));
+  _throw('This will error')
+).pipe(catch(error => of(error)));
 //output: 'This will Error'
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -125,17 +137,22 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) )
 
 ```js
+import { delay, catch } from 'rxjs/operators';
+import { forkJoin } from 'rxjs/observable/forkJoin';
+import { of } from 'rxjs/observable/of';
+import { _throw } from 'rxjs/observable/throw';
+
 /*
   when all observables complete, give the last
   emitted value from each as an array
 */
-const example = Rx.Observable.forkJoin(
+const example = forkJoin(
   //emit 'Hello' immediately
-  Rx.Observable.of('Hello'),
+  of('Hello'),
   //emit 'World' after 1 second
-  Rx.Observable.of('World').delay(1000),
+  of('World').pipe(delay(1000)),
   // throw error
-  Rx.Observable.throw('This will error').catch(error => Rx.Observable.of(error))
+  _throw('This will error').pipe(catch(error => of(error)))
 );
 //output: ["Hello", "World", "This will error"]
 const subscribe = example.subscribe(val => console.log(val));

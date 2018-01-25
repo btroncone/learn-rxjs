@@ -19,13 +19,20 @@ emits, try [combinelatest](combinelatest.md)!
 [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) )
 
 ```js
+import { withLatestFrom, map } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+
 //emit every 5s
-const source = Rx.Observable.interval(5000);
+const source = interval(5000);
 //emit every 1s
-const secondSource = Rx.Observable.interval(1000);
-const example = source.withLatestFrom(secondSource).map(([first, second]) => {
-  return `First Source (5s): ${first} Second Source (1s): ${second}`;
-});
+const secondSource = interval(1000);
+const example = source.pipe(
+  withLatestFrom(secondSource).pipe(
+    map(([first, second]) => {
+      return `First Source (5s): ${first} Second Source (1s): ${second}`;
+    })
+  )
+);
 /*
   "First Source (5s): 0 Second Source (1s): 4"
   "First Source (5s): 1 Second Source (1s): 9"
@@ -41,17 +48,21 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/bywLL579/) )
 
 ```js
+import { withLatestFrom, map } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+
 //emit every 5s
-const source = Rx.Observable.interval(5000);
+const source = interval(5000);
 //emit every 1s
-const secondSource = Rx.Observable.interval(1000);
+const secondSource = interval(1000);
 //withLatestFrom slower than source
-const example = secondSource
-  //both sources must emit at least 1 value (5s) before emitting
-  .withLatestFrom(source)
-  .map(([first, second]) => {
-    return `Source (1s): ${first} Latest From (5s): ${second}`;
-  });
+const example = secondSource.pipe(
+    //both sources must emit at least 1 value (5s) before emitting
+    withLatestFrom(source)
+    map(([first, second]) => {
+      return `Source (1s): ${first} Latest From (5s): ${second}`;
+    })
+  );
 /*
   "Source (1s): 4 Latest From (5s): 0"
   "Source (1s): 5 Latest From (5s): 0"

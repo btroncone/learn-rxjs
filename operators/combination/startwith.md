@@ -24,10 +24,13 @@ can also start with an initial value!
 [jsFiddle](https://jsfiddle.net/btroncone/e8dn3ggp/) )
 
 ```js
+import { startWith } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+
 //emit (1,2,3)
-const source = Rx.Observable.of(1, 2, 3);
+const source = of(1, 2, 3);
 //start with 0
-const example = source.startWith(0);
+const example = source.pipe(startWith(0));
 //output: 0,1,2,3
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -38,10 +41,16 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/54r3g83e/) )
 
 ```js
+import { startWith, scan } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+
 //emit ('World!', 'Goodbye', 'World!')
-const source = Rx.Observable.of('World!', 'Goodbye', 'World!');
+const source = of('World!', 'Goodbye', 'World!');
 //start with 'Hello', concat current string to previous
-const example = source.startWith('Hello').scan((acc, curr) => `${acc} ${curr}`);
+const example = source.pipe(
+  startWith('Hello'),
+  scan((acc, curr) => `${acc} ${curr}`)
+);
 /*
   output:
   "Hello"
@@ -58,10 +67,13 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/ckcyj3ms/) )
 
 ```js
+import { startWith } from 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+
 //emit values in sequence every 1s
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 //start with -3, -2, -1
-const example = source.startWith(-3, -2, -1);
+const example = source.pipe(startWith(-3, -2, -1));
 //output: -3, -2, -1, 0, 1, 2....
 const subscribe = example.subscribe(val => console.log(val));
 ```

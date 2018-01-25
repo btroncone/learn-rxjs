@@ -28,12 +28,15 @@ instead!
 [jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) )
 
 ```js
+import { concat } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+
 //emits 1,2,3
-const sourceOne = Rx.Observable.of(1, 2, 3);
+const sourceOne = of(1, 2, 3);
 //emits 4,5,6
-const sourceTwo = Rx.Observable.of(4, 5, 6);
+const sourceTwo = of(4, 5, 6);
 //emit values from sourceOne, when complete, subscribe to sourceTwo
-const example = sourceOne.concat(sourceTwo);
+const example = sourceOne.pipe(concat(sourceTwo));
 //output: 1,2,3,4,5,6
 const subscribe = example.subscribe(val =>
   console.log('Example: Basic concat:', val)
@@ -46,13 +49,16 @@ const subscribe = example.subscribe(val =>
 [jsFiddle](https://jsfiddle.net/btroncone/5qdtvhu8/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { concat } from 'rxjs/observable/concat';
+
 //emits 1,2,3
-const sourceOne = Rx.Observable.of(1, 2, 3);
+const sourceOne = of(1, 2, 3);
 //emits 4,5,6
-const sourceTwo = Rx.Observable.of(4, 5, 6);
+const sourceTwo = of(4, 5, 6);
 
 //used as static
-const example = Rx.Observable.concat(sourceOne, sourceTwo);
+const example = concat(sourceOne, sourceTwo);
 //output: 1,2,3,4,5,6
 const subscribe = example.subscribe(val => console.log('Example: static', val));
 ```
@@ -63,15 +69,18 @@ const subscribe = example.subscribe(val => console.log('Example: static', val));
 [jsFiddle](https://jsfiddle.net/btroncone/L2s49msx/) )
 
 ```js
+import { delay, concat } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+
 //emits 1,2,3
-const sourceOne = Rx.Observable.of(1, 2, 3);
+const sourceOne = of(1, 2, 3);
 //emits 4,5,6
-const sourceTwo = Rx.Observable.of(4, 5, 6);
+const sourceTwo = of(4, 5, 6);
 
 //delay 3 seconds then emit
-const sourceThree = sourceOne.delay(3000);
+const sourceThree = sourceOne.pipe(delay(3000));
 //sourceTwo waits on sourceOne to complete before subscribing
-const example = sourceThree.concat(sourceTwo);
+const example = sourceThree.pipe(concat(sourceTwo));
 //output: 1,2,3,4,5,6
 const subscribe = example.subscribe(val =>
   console.log('Example: Delayed source one:', val)
@@ -84,11 +93,12 @@ const subscribe = example.subscribe(val =>
 [jsFiddle](https://jsfiddle.net/btroncone/4bhtb81u/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { of } from 'rxjs/observable/of';
+import { concat } from 'rxjs/observable/concat';
+
 //when source never completes, the subsequent observables never runs
-const source = Rx.Observable.concat(
-  Rx.Observable.interval(1000),
-  Rx.Observable.of('This', 'Never', 'Runs')
-);
+const source = concat(interval(1000), of('This', 'Never', 'Runs'));
 //outputs: 0,1,2,3,4....
 const subscribe = source.subscribe(val =>
   console.log(
