@@ -27,11 +27,10 @@ const source = interval(5000);
 //emit every 1s
 const secondSource = interval(1000);
 const example = source.pipe(
-  withLatestFrom(secondSource).pipe(
-    map(([first, second]) => {
-      return `First Source (5s): ${first} Second Source (1s): ${second}`;
-    })
-  )
+  withLatestFrom(secondSource),
+  map(([first, second]) => {
+    return `First Source (5s): ${first} Second Source (1s): ${second}`;
+  })
 );
 /*
   "First Source (5s): 0 Second Source (1s): 4"
@@ -58,7 +57,7 @@ const secondSource = interval(1000);
 //withLatestFrom slower than source
 const example = secondSource.pipe(
     //both sources must emit at least 1 value (5s) before emitting
-    withLatestFrom(source)
+    withLatestFrom(source),
     map(([first, second]) => {
       return `Source (1s): ${first} Latest From (5s): ${second}`;
     })
