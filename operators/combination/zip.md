@@ -56,9 +56,9 @@ import { interval } from 'rxjs/observable/interval';
 import { zip } from 'rxjs/observable/zip';
 
 //emit every 1s
-const interval = interval(1000);
+const source = interval(1000);
 //when one observable completes no more values will be emitted
-const example = zip(interval, interval.pipe(take(2)));
+const example = zip(source, source.pipe(take(2)));
 //output: [0,0]...[1,1]
 const subscribe = example.subscribe(val => console.log(val));
 ```
