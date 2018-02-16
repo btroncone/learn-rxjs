@@ -44,7 +44,8 @@ cancel a request if the source emits quickly enough. In these scenarios
 
 ##### Example 1: Restart interval every 5 seconds
 
-( [jsBin](http://jsbin.com/birepuveya/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-hbuxqv?file=index.ts) |
+[jsBin](http://jsbin.com/birepuveya/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/6pz981gd/) )
 
 ```js
@@ -55,14 +56,15 @@ import { switchMap } from 'rxjs/operators';
 //emit immediately, then every 5s
 const source = timer(0, 5000);
 //switch to new inner observable when source emits, emit items that are emitted
-const example = source.pipe(switchMap(() => interval(500));
+const example = source.pipe(switchMap(() => interval(500)));
 //output: 0,1,2,3,4,5,6,7,8,9...0,1,2,3,4,5,6,7,8
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ##### Example 2: Reset on every click
 
-( [jsBin](http://jsbin.com/zoruboxogo/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-kki7qa?file=index.ts) |
+[jsBin](http://jsbin.com/zoruboxogo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/y11v8aqz/) )
 
 ```js
@@ -82,7 +84,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: Using a `resultSelector` function
 
-( [jsBin](http://jsbin.com/qobapubeze/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-gwav6n?file=index.ts) |
+[jsBin](http://jsbin.com/qobapubeze/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nqfu534y/) )
 
 ```js
@@ -116,24 +119,33 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 4: Countdown timer with switchMap
 
-( [jsBin](http://jsbin.com/devedeqiga/edit?js,output) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-ed2iet?file=index.ts) |
+[jsBin](http://jsbin.com/devedeqiga/edit?js,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/ww7zg988/189/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import { merge } from 'rxjs/observable/merge';
+import { empty } from 'rxjs/observable/empty';
+import { switchMap, scan, takeWhile, startWith, mapTo } from 'rxjs/operators';
+
 const countdownSeconds = 10;
 const setHTML = id => val => (document.getElementById(id).innerHTML = val);
 const pauseButton = document.getElementById('pause');
 const resumeButton = document.getElementById('resume');
-const interval$ = Rx.Observable.interval(1000).mapTo(-1);
+const interval$ = interval(1000).pipe(mapTo(-1));
 
-const pause$ = Rx.Observable.fromEvent(pauseButton, 'click').mapTo(false);
-const resume$ = Rx.Observable.fromEvent(resumeButton, 'click').mapTo(true);
+const pause$ = fromEvent(pauseButton, 'click').pipe(mapTo(false));
+const resume$ = fromEvent(resumeButton, 'click').pipe(mapTo(true));
 
-const timer$ = Rx.Observable.merge(pause$, resume$)
-  .startWith(interval$)
-  .switchMap(val => (val ? interval$ : Rx.Observable.empty()))
-  .scan((acc, curr) => (curr ? curr + acc : acc), countdownSeconds)
-  .takeWhile(v => v >= 0)
+const timer$ = merge(pause$, resume$)
+  .pipe(
+    startWith(interval$),
+    switchMap(val => (val ? interval$ : empty())),
+    scan((acc, curr) => (curr ? curr + acc : acc), countdownSeconds),
+    takeWhile(v => v >= 0)
+  )
   .subscribe(setHTML('remaining'));
 ```
 
