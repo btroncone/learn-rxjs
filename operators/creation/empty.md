@@ -4,6 +4,8 @@
 
 ## Observable that immediately completes.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: empty immediately completes
@@ -12,8 +14,10 @@
 [jsFiddle](https://jsfiddle.net/btroncone/bz71mzuy/) )
 
 ```js
+import { empty } from 'rxjs/observable/empty';
+
 //Create observable that immediately completes
-const example = Rx.Observable.empty();
+const example = empty();
 //output: 'Complete!'
 const subscribe = example.subscribe({
   next: () => console.log('Next'),

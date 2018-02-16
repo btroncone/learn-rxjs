@@ -4,6 +4,8 @@
 
 ## If all values pass predicate before completion emit true, else false.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Some values false

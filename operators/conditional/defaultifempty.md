@@ -4,6 +4,8 @@
 
 ## Emit given value if nothing is emitted before completion.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Default for empty value

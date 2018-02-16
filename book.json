@@ -10,8 +10,7 @@
     "edit-link",
     "github",
     "github-buttons",
-    "ga",
-    "scripts"
+    "ga"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -28,9 +27,6 @@
       "repo": "btroncone/learn-rxjs",
       "types": ["star", "watch"],
       "size": "large"
-    },
-    "scripts": {
-      "files": ["./assets/misc-scripts.js"]
     }
   }
 }

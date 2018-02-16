@@ -4,6 +4,8 @@
 
 ## When source observable completes use [combineLatest](combinelatest.md) with collected observables.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 (
@@ -16,26 +18,21 @@
 [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
 
 ```js
-import { take, map } from 'rxjs/operators';
+import { take, map, combineAll } from 'rxjs/operators';
 import { interval } from 'rxjs/observable/interval';
 
 //emit every 1s, take 2
 const source = interval(1000).pipe(take(2));
 //map each emitted value from source to interval observable that takes 5 values
 const example = source.pipe(
-  map(val =>
-    interval(1000).pipe(
-      map(i => `Result (${val}): ${i}`),
-      take(5)
-    )
-  )
+  map(val => interval(1000).pipe(map(i => `Result (${val}): ${i}`), take(5)))
 );
 /*
   2 values from source will map to 2 (inner) interval observables that emit every 1s
   combineAll uses combineLatest strategy, emitting the last value from each
   whenever either observable emits a value
 */
-const combined = example.combineAll();
+const combined = example.pipe(combineAll());
 /*
   output:
   ["Result (0): 0", "Result (1): 0"]

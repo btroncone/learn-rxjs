@@ -25,6 +25,8 @@ declare module '../../Observable' {
 
 This method is generally *OK* for private projects and modules, the issue arises when you are using these imports in say, an [npm](https://www.npmjs.com/) package or library to be consumed throughout your organization.
 
+<div class="native-ad"></div>
+
 ### A Quick Example
 
 To see where a problem can spring up, let's imagine **Person A** is creating a public Angular component library. In this library you need a few operators so you add the typical imports:
@@ -91,13 +93,12 @@ map.call(
 
 Pretty soon we have a block of code that is near impossible to understand. How can we get the best of both worlds?
 
-### RxJS Helpers
+### Pipeable Operators
 
 RxJS now comes with a [`pipe`](https://github.com/ReactiveX/rxjs/blob/755df9bf908108974e38aaff79887279f2cde008/src/Observable.ts#L305-L329) helper on `Observable` that alleviates the pain of not having operators on the prototype. We can take the ugly block of code from above:
 
 ```js
-import { take } from 'rxjs/operator/take';
-import { map } from 'rxjs/operator/map';
+import { take, map } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 
 map.call(
@@ -122,16 +123,4 @@ of(1,2,3)
   );
 ```
 
-Much easier to read, right? If you are developing in Angular and using the [`@angular/cdk`](https://www.npmjs.com/package/@angular/cdk) you can utilize the `RxChain` function and helper methods right now for a similar feel:
-
-```js
-import { of } from 'rxjs/observable/of';
-import { RxChain, map, debounceTime } from '@angular/cdk/rxjs';
-
-RxChain
-  .from(of(1,2,3))
-  .call(map, val => val + 2)
-  .call(debounceTime, 1000)
-```
-
-Whichever approach you prefer, both make it easy for you to keep a readable operator chain while maintaining a clean prototype for other projects!
+Much easier to read, right? This also has the benefit of greatly reducing the RxJS bundle size in your application. For more on this, check out [Ashwin Sureshkumar's](https://twitter.com/Sureshkumar_Ash) excellent article [Reduce Angular app bundle size using lettable operators](https://hackernoon.com/rxjs-reduce-bundle-size-using-lettable-operators-418307295e85).

@@ -12,7 +12,7 @@ _[Prefer a split by operator type?](README.md)_
 * [bufferTime](transformation/buffertime.md) :star:
 * [bufferToggle](transformation/buffertoggle.md)
 * [bufferWhen](transformation/bufferwhen.md)
-* [catch](error_handling/catch.md) :star:
+* [catchError](error_handling/catch.md) :star:
 * [combineAll](combination/combineall.md)
 * [combineLatest](combination/combinelatest.md) :star:
 * [concat](combination/concat.md) :star:

@@ -4,6 +4,8 @@
 
 ## Collect and emit observable of values from source between opening and closing emission.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Toggle window at increasing interval
@@ -12,33 +14,40 @@
 [jsFiddle](https://jsfiddle.net/btroncone/3xmmuzy4/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { timer } from 'rxjs/observable/timer';
+import { tap, windowToggle, mergeAll } from 'rxjs/operators';
+
 //emit immediately then every 1s
-const source = Rx.Observable.timer(0, 1000);
+const source = timer(0, 1000);
 //toggle window on every 5
-const toggle = Rx.Observable.interval(5000);
-const example = source
+const toggle = interval(5000);
+const example = source.pipe(
   //turn window on every 5s
-  .windowToggle(toggle, val => Rx.Observable.interval(val * 1000))
-  .do(() => console.log('NEW WINDOW!'));
+  windowToggle(toggle, val => interval(val * 1000)),
+  tap(_ => console.log('NEW WINDOW!'))
+);
 
 const subscribeTwo = example
-  //window emits nested observable
-  .mergeAll()
-  /*
-  output:
-  "NEW WINDOW!"
-  5
-  "NEW WINDOW!"
-  10
-  11
-  "NEW WINDOW!"
-  15
-  16
-  "NEW WINDOW!"
-  20
-  21
-  22
-*/
+  .pipe(
+    //window emits nested observable
+    mergeAll()
+    /*
+        output:
+        "NEW WINDOW!"
+        5
+        "NEW WINDOW!"
+        10
+        11
+        "NEW WINDOW!"
+        15
+        16
+        "NEW WINDOW!"
+        20
+        21
+        22
+      */
+  )
   .subscribe(val => console.log(val));
 ```
 

@@ -4,6 +4,8 @@
 
 ## Emit latest value when specified duration has passed.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Receive latest value every 5 seconds
@@ -12,13 +14,16 @@
 [jsFiddle](https://jsfiddle.net/btroncone/4zysLc3y/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { throttleTime } 'rxjs/operators';
+
 //emit value every 1 second
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 /*
   throttle for five seconds
   last value emitted before throttle ends will be emitted from source
 */
-const example = source.throttleTime(5000);
+const example = source.pipe(throttleTime(5000));
 //output: 0...6...12
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -29,14 +34,18 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/xhd1zy3m/) )
 
 ```js
-const source = Rx.Observable.merge(
+import { interval } from 'rxjs/observable/interval';
+import { merge } from 'rxjs/observable/merge';
+import { throttleTime, ignoreElements } from 'rxjs/operators';
+
+const source = merge(
   //emit every .75 seconds
-  Rx.Observable.interval(750),
+  interval(750),
   //emit every 1 second
-  Rx.Observable.interval(1000)
+  interval(1000)
 );
 //throttle in middle of emitted values
-const example = source.throttleTime(1200);
+const example = source.pipe(throttleTime(1200));
 //output: 0...1...4...4...8...7
 const subscribe = example.subscribe(val => console.log(val));
 ```

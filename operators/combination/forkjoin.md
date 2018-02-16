@@ -35,6 +35,8 @@ item, and you are concerned with the previous emissions `forkJoin` is not the
 correct choice. In these cases you may better off with an operator like
 [combineLatest](combinelatest.md) or [zip](zip.md).
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Observables completing after different durations
@@ -110,7 +112,7 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) )
 
 ```js
-import { delay, catch } from 'rxjs/operators';
+import { delay, catchError } from 'rxjs/operators';
 import { forkJoin } from 'rxjs/observable/forkJoin';
 import { of } from 'rxjs/observable/of';
 import { _throw } from 'rxjs/observable/throw';
@@ -126,7 +128,7 @@ const example = forkJoin(
   of('World').pipe(delay(1000)),
   // throw error
   _throw('This will error')
-).pipe(catch(error => of(error)));
+).pipe(catchError(error => of(error)));
 //output: 'This will Error'
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -137,7 +139,7 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) )
 
 ```js
-import { delay, catch } from 'rxjs/operators';
+import { delay, catchError } from 'rxjs/operators';
 import { forkJoin } from 'rxjs/observable/forkJoin';
 import { of } from 'rxjs/observable/of';
 import { _throw } from 'rxjs/observable/throw';
@@ -152,7 +154,7 @@ const example = forkJoin(
   //emit 'World' after 1 second
   of('World').pipe(delay(1000)),
   // throw error
-  _throw('This will error').pipe(catch(error => of(error)))
+  _throw('This will error').pipe(catchError(error => of(error)))
 );
 //output: ["Hello", "World", "This will error"]
 const subscribe = example.subscribe(val => console.log(val));

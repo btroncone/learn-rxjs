@@ -4,6 +4,8 @@
 
 ## Turn event into observable sequence.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Observable from mouse clicks
@@ -12,10 +14,13 @@
 [jsFiddle](https://jsfiddle.net/btroncone/vbLz1pdx/) )
 
 ```js
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import { map } from 'rxjs/operators';
+
 //create observable that emits click events
-const source = Rx.Observable.fromEvent(document, 'click');
+const source = fromEvent(document, 'click');
 //map to string with given event timestamp
-const example = source.map(event => `Event time: ${event.timeStamp}`);
+const example = source.pipe(map(event => `Event time: ${event.timeStamp}`));
 //output (example): 'Event time: 7276.390000000001'
 const subscribe = example.subscribe(val => console.log(val));
 ```

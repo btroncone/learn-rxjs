@@ -4,6 +4,8 @@
 
 ## Skip emitted values from source until provided expression is false.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Skip while values below threshold
@@ -12,10 +14,13 @@
 [jsFiddle](https://jsfiddle.net/btroncone/3ymfxb09/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { skipWhile } from 'rxjs/operators';
+
 //emit every 1s
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 //skip emitted values from source while value is less than 5
-const example = source.skipWhile(val => val < 5);
+const example = source.pipe(skipWhile(val => val < 5));
 //output: 5...6...7...8........
 const subscribe = example.subscribe(val => console.log(val));
 ```

@@ -11,6 +11,8 @@ emits, try [combinelatest](combinelatest.md)!
 
 ---
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Latest value from quicker second source

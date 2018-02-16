@@ -4,6 +4,8 @@
 
 ## Map emissions to constant value.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Map every emission to string
@@ -12,10 +14,13 @@
 [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { mapTo } from 'rxjs/operators';
+
 //emit value every two seconds
-const source = Rx.Observable.interval(2000);
+const source = interval(2000);
 //map all emissions to one value
-const example = source.mapTo('HELLO WORLD!');
+const example = source.pipe(mapTo('HELLO WORLD!'));
 //output: 'HELLO WORLD!'...'HELLO WORLD!'...'HELLO WORLD!'...
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -26,10 +31,13 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/52fqL4nn/) )
 
 ```js
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import { mapTo } from 'rxjs/operators';
+
 //emit every click on document
-const source = Rx.Observable.fromEvent(document, 'click');
+const source = fromEvent(document, 'click');
 //map all emissions to one value
-const example = source.mapTo('GOODBYE WORLD!');
+const example = source.pipe(mapTo('GOODBYE WORLD!'));
 //output: (click)'GOODBYE WORLD!'...
 const subscribe = example.subscribe(val => console.log(val));
 ```

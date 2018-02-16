@@ -4,6 +4,8 @@
 
 ## Recursively call provided function.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Add one for each invocation
@@ -12,18 +14,23 @@
 [jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { of } from 'rxjs/observable/of';
+import { expand } from 'rxjs/operators';
+
 //emit 2
-const source = Rx.Observable.of(2);
-const example = source
+const source = of(2);
+const example = source.pipe(
   //recursively call supplied function
-  .expand(val => {
+  expand(val => {
     //2,3,4,5,6
     console.log(`Passed value: ${val}`);
     //3,4,5,6
-    return Rx.Observable.of(1 + val);
-  })
+    return of(1 + val);
+  }),
   //call 5 times
-  .take(5);
+  take(5)
+);
 /*
 	"RESULT: 2"
 	"Passed value: 2"

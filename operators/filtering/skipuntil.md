@@ -12,10 +12,14 @@
 [jsFiddle](https://jsfiddle.net/btroncone/xLu8nf77/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { timer } from 'rxjs/observable/timer';
+import { skipUntil } from 'rxjs/operators';
+
 //emit every 1s
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 //skip emitted values from source until inner observable emits (6s)
-const example = source.skipUntil(Rx.Observable.timer(6000));
+const example = source.pipe(skipUntil(timer(6000)));
 //output: 5...6...7...8........
 const subscribe = example.subscribe(val => console.log(val));
 ```

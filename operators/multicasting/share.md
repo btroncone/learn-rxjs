@@ -10,6 +10,8 @@
 
 ---
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Multiple subscribers sharing source
@@ -18,15 +20,20 @@
 [jsFiddle](https://jsfiddle.net/btroncone/Lmesxxaq/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { tap, mapTo, share } 'rxjs/operators';
+
 //emit value in 1s
-const source = Rx.Observable.timer(1000);
+const source = timer(1000);
 //log side effect, emit result
-const example = source
-  .do(() => console.log('***SIDE EFFECT***'))
-  .mapTo('***RESULT***');
+const example = source.pipe(
+  tap(() => console.log('***SIDE EFFECT***')),
+  mapTo('***RESULT***')
+);
+
 /*
   ***NOT SHARED, SIDE EFFECT WILL BE EXECUTED TWICE***
-  output: 
+  output:
   "***SIDE EFFECT***"
   "***RESULT***"
   "***SIDE EFFECT***"
@@ -36,10 +43,10 @@ const subscribe = example.subscribe(val => console.log(val));
 const subscribeTwo = example.subscribe(val => console.log(val));
 
 //share observable among subscribers
-const sharedExample = example.share();
+const sharedExample = example.pipe(share());
 /*
   ***SHARED, SIDE EFFECT EXECUTED ONCE***
-  output: 
+  output:
   "***SIDE EFFECT***"
   "***RESULT***"
   "***RESULT***"

@@ -4,6 +4,8 @@
 
 ## Collect output values until provided observable emits, emit as array.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Buffer until document click
@@ -12,14 +14,18 @@
 [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import { buffer } from 'rxjs/operators';
+
 //Create an observable that emits a value every second
-const myInterval = Rx.Observable.interval(1000);
+const myInterval = interval(1000);
 //Create an observable that emits every time document is clicked
-const bufferBy = Rx.Observable.fromEvent(document, 'click');
+const bufferBy = fromEvent(document, 'click');
 /*
 Collect all values emitted by our interval observable until we click document. This will cause the bufferBy Observable to emit a value, satisfying the buffer. Pass us all collected values since last buffer as an array.
 */
-const myBufferedInterval = myInterval.buffer(bufferBy);
+const myBufferedInterval = myInterval.pipe(buffer(bufferBy));
 //Print values to console
 //ex. output: [1,2,3] ... [4,5,6,7,8]
 const subscribe = myBufferedInterval.subscribe(val =>

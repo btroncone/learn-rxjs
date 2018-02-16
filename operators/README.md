@@ -34,7 +34,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   * [throw](creation/throw.md)
   * [timer](creation/timer.md)
 * [Error Handling](error_handling/README.md)
-  * [catch](error_handling/catch.md) :star:
+  * [catchError](error_handling/catch.md) :star:
   * [retry](error_handling/retry.md)
   * [retryWhen](error_handling/retrywhen.md)
 * [Filtering](filtering/README.md)

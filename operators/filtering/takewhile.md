@@ -4,6 +4,8 @@
 
 ## Emit values until provided expression is false.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Take values under limit
@@ -12,10 +14,13 @@
 [jsFiddle](https://jsfiddle.net/btroncone/yakd4jgc/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { takeWhile } 'rxjs/operators';
+
 //emit 1,2,3,4,5
-const source = Rx.Observable.of(1, 2, 3, 4, 5);
+const source = of(1, 2, 3, 4, 5);
 //allow values until value from source is greater than 4, then complete
-const example = source.takeWhile(val => val <= 4);
+const example = source.pipe(takeWhile(val => val <= 4));
 //output: 1,2,3,4
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -26,17 +31,23 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/r497jgw3/4/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { takeWhile, filter } 'rxjs/operators';
+
 // emit 3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3
-const source = Rx.Observable.of(3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3);
+const source = of(3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3);
 
 // allow values until value from source equals 3, then complete
 // output: [3, 3, 3]
 source
-  .takeWhile(it => it === 3)
-  .subscribe(val => console.log('takeWhile', val));
+  .pipe(takeWhile(it => it === 3))
+  .subscribe(val => console.log('takeWhile', val))
+
 
 // output: [3, 3, 3, 3, 3, 3, 3]
-source.filter(it => it === 3).subscribe(val => console.log('filter', val));
+source
+  .pipe(filter(it => it === 3))
+  .subscribe(val => console.log('filter', val));
 ```
 
 ### Related Recipes

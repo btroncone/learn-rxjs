@@ -19,20 +19,14 @@ must match!
 [jsFiddle](https://jsfiddle.net/btroncone/xc2vzct7/) )
 
 ```js
+import { from } from 'rxjs/observable/from';
+import { distinctUntilChanged } from 'rxjs/operators';
+
 //only output distinct values, based on the last emitted value
-const myArrayWithDuplicatesInARow = Rx.Observable.from([
-  1,
-  1,
-  2,
-  2,
-  3,
-  1,
-  2,
-  3
-]);
+const myArrayWithDuplicatesInARow = from([1, 1, 2, 2, 3, 1, 2, 3]);
 
 const distinctSub = myArrayWithDuplicatesInARow
-  .distinctUntilChanged()
+  .pipe(distinctUntilChanged())
   //output: 1,2,3,1,2,3
   .subscribe(val => console.log('DISTINCT SUB:', val));
 
@@ -47,16 +41,19 @@ const nonDistinctSub = myArrayWithDuplicatesInARow
 [jsFiddle](https://jsfiddle.net/btroncone/t4ava5b4/) )
 
 ```js
+import { from } from 'rxjs/observable/from';
+import { distinctUntilChanged } from 'rxjs/operators';
+
 const sampleObject = { name: 'Test' };
 //Objects must be same reference
-const myArrayWithDuplicateObjects = Rx.Observable.from([
+const myArrayWithDuplicateObjects = from([
   sampleObject,
   sampleObject,
   sampleObject
 ]);
 //only out distinct objects, based on last emitted value
 const nonDistinctObjects = myArrayWithDuplicateObjects
-  .distinctUntilChanged()
+  .pipe(distinctUntilChanged())
   //output: 'DISTINCT OBJECTS: {name: 'Test'}
   .subscribe(val => console.log('DISTINCT OBJECTS:', val));
 ```

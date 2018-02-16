@@ -19,13 +19,17 @@
 [jsFiddle](https://jsfiddle.net/btroncone/e5698yow/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { timer } from 'rxjs/observable/timer';
+import { debounce } from 'rxjs/operators';
+
 //emit four strings
-const example = Rx.Observable.of('WAIT', 'ONE', 'SECOND', 'Last will display');
+const example = of('WAIT', 'ONE', 'SECOND', 'Last will display');
 /*
-    Only emit values after a second has passed between the last emission, 
+    Only emit values after a second has passed between the last emission,
     throw away all other values
 */
-const debouncedExample = example.debounce(() => Rx.Observable.timer(1000));
+const debouncedExample = example.pipe(debounce(() => timer(1000)));
 /*
     In this example, all values but the last will be omitted
     output: 'Last will display'
@@ -39,12 +43,14 @@ const subscribe = debouncedExample.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/6ab34nq6/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { timer } from 'rxjs/observable/timer';
+import { debounce } from 'rxjs/operators';
+
 //emit value every 1 second, ex. 0...1...2
-const interval = Rx.Observable.interval(1000);
+const interval = interval(1000);
 //raise the debounce time by 200ms each second
-const debouncedInterval = interval.debounce(val =>
-  Rx.Observable.timer(val * 200)
-);
+const debouncedInterval = interval.pipe(debounce(val => timer(val * 200)));
 /*
   After 5 seconds, debounce time will be greater than interval time,
   all future values will be thrown away

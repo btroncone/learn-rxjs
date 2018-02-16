@@ -4,6 +4,8 @@
 
 ## Observable of values collected from source for each provided time span.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Open new window every specified duration
@@ -12,27 +14,33 @@
 [jsFiddle](https://jsfiddle.net/btroncone/g04b3qeb/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { windowTime, tap, mergeAll } from 'rxjs/operators';
+
 //emit immediately then every 1s
-const source = Rx.Observable.timer(0, 1000);
-const example = source
+const source = timer(0, 1000);
+const example = source.pipe(
   //start new window every 3s
-  .windowTime(3000)
-  .do(() => console.log('NEW WINDOW!'));
+  windowTime(3000),
+  tap(_ => console.log('NEW WINDOW!'))
+);
 
 const subscribeTwo = example
-  //window emits nested observable
-  .mergeAll()
-  /*
-  output:
-  "NEW WINDOW!"
-  0
-  1
-  2
-  "NEW WINDOW!"
-  3
-  4
-  5
-*/
+  .pipe(
+    //window emits nested observable
+    mergeAll()
+    /*
+        output:
+        "NEW WINDOW!"
+        0
+        1
+        2
+        "NEW WINDOW!"
+        3
+        4
+        5
+      */
+  )
   .subscribe(val => console.log(val));
 ```
 

@@ -4,6 +4,8 @@
 
 ## Emit error on subscription.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Throw error on subscription
@@ -12,8 +14,10 @@
 [jsFiddle](https://jsfiddle.net/btroncone/mks82xqz/) )
 
 ```js
+import { _throw } from 'rxjs/observable/throw';
+
 //emits an error with specified value on subscription
-const source = Rx.Observable.throw('This is an error!');
+const source = _throw('This is an error!');
 //output: 'Error: This is an error!'
 const subscribe = source.subscribe({
   next: val => console.log(val),
@@ -21,6 +25,10 @@ const subscribe = source.subscribe({
   error: val => console.log(`Error: ${val}`)
 });
 ```
+
+### Related Examples
+
+* [Throwing after 3 retries](../error_handling/retrywhen.md)
 
 ### Additional Resources
 

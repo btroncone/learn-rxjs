@@ -35,8 +35,10 @@ time, this can be seen clearly in the
 
 Be careful though, you probably want to avoid `switchMap` in scenarios where
 every request needs to complete, think writes to a database. `switchMap` could
-cancel a request if the source emits quickly enough. In these
-scenarios [mergeMap](mergemap.md) is the correct option.
+cancel a request if the source emits quickly enough. In these scenarios
+[mergeMap](mergemap.md) is the correct option.
+
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
 
 ### Examples
 
@@ -46,10 +48,14 @@ scenarios [mergeMap](mergemap.md) is the correct option.
 [jsFiddle](https://jsfiddle.net/btroncone/6pz981gd/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { interval } from 'rxjs/observable/interval';
+import { switchMap } from 'rxjs/operators';
+
 //emit immediately, then every 5s
-const source = Rx.Observable.timer(0, 5000);
+const source = timer(0, 5000);
 //switch to new inner observable when source emits, emit items that are emitted
-const example = source.switchMap(() => Rx.Observable.interval(500));
+const example = source.pipe(switchMap(() => interval(500));
 //output: 0,1,2,3,4,5,6,7,8,9...0,1,2,3,4,5,6,7,8
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -60,11 +66,15 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/y11v8aqz/) )
 
 ```js
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import { interval } from 'rxjs/observable/interval';
+import { switchMap, mapTo } from 'rxjs/operators';
+
 //emit every click
-const source = Rx.Observable.fromEvent(document, 'click');
+const source = fromEvent(document, 'click');
 //if another click comes within 3s, message will not be emitted
-const example = source.switchMap(val =>
-  Rx.Observable.interval(3000).mapTo('Hello, I made it!')
+const example = source.pipe(
+  switchMap(val => interval(3000).pipe(mapTo('Hello, I made it!')))
 );
 //(click)...3s...'Hello I made it!'...(click)...2s(click)...
 const subscribe = example.subscribe(val => console.log(val));
@@ -76,17 +86,23 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/nqfu534y/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { interval } from 'rxjs/observable/interval';
+import { switchMap } from 'rxjs/operators';
+
 //emit immediately, then every 5s
-const source = Rx.Observable.timer(0, 5000);
+const source = timer(0, 5000);
 //switch to new inner observable when source emits, invoke project function and emit values
-const example = source.switchMap(
-  () => Rx.Observable.interval(2000),
-  (outerValue, innerValue, outerIndex, innerIndex) => ({
-    outerValue,
-    innerValue,
-    outerIndex,
-    innerIndex
-  })
+const example = source.pipe(
+  switchMap(
+    _ => interval(2000),
+    (outerValue, innerValue, outerIndex, innerIndex) => ({
+      outerValue,
+      innerValue,
+      outerIndex,
+      innerIndex
+    })
+  )
 );
 /*
 	Output:
@@ -105,7 +121,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ```js
 const countdownSeconds = 10;
-const setHTML = id => val => document.getElementById(id).innerHTML = val;
+const setHTML = id => val => (document.getElementById(id).innerHTML = val);
 const pauseButton = document.getElementById('pause');
 const resumeButton = document.getElementById('resume');
 const interval$ = Rx.Observable.interval(1000).mapTo(-1);
@@ -113,11 +129,10 @@ const interval$ = Rx.Observable.interval(1000).mapTo(-1);
 const pause$ = Rx.Observable.fromEvent(pauseButton, 'click').mapTo(false);
 const resume$ = Rx.Observable.fromEvent(resumeButton, 'click').mapTo(true);
 
-const timer$ = Rx.Observable
-	.merge(pause$, resume$)
+const timer$ = Rx.Observable.merge(pause$, resume$)
   .startWith(interval$)
-  .switchMap(val => val ? interval$ : Rx.Observable.empty())
-  .scan((acc, curr) => curr ? curr + acc : acc, countdownSeconds)
+  .switchMap(val => (val ? interval$ : Rx.Observable.empty()))
+  .scan((acc, curr) => (curr ? curr + acc : acc), countdownSeconds)
   .takeWhile(v => v >= 0)
   .subscribe(setHTML('remaining'));
 ```

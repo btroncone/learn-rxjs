@@ -11,6 +11,8 @@
 
 ---
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Sum over time
@@ -19,9 +21,12 @@
 [jsFiddle](https://jsfiddle.net/btroncone/d2g2a2c6/) )
 
 ```js
-const subject = new Rx.Subject();
+import { Subject } from 'rxjs/Subject';
+import { startWith, scan } from 'rxjs/operators';
+
+const subject = new Subject();
 //basic scan example, sum over time starting with zero
-const example = subject.startWith(0).scan((acc, curr) => acc + curr);
+const example = subject.pipe(startWith(0), scan((acc, curr) => acc + curr));
 //log accumulated values
 const subscribe = example.subscribe(val =>
   console.log('Accumulated total:', val)
@@ -38,9 +43,14 @@ subject.next(3); //6
 [jsFiddle](https://jsfiddle.net/btroncone/36rbu38b/) )
 
 ```js
-const subject = new Rx.Subject();
+import { Subject } from 'rxjs/Subject';
+import { scan } from 'rxjs/operators';
+
+const subject = new Subject();
 //scan example building an object over time
-const example = subject.scan((acc, curr) => Object.assign({}, acc, curr), {});
+const example = subject.pipe(
+  scan((acc, curr) => Object.assign({}, acc, curr), {})
+);
 //log accumulated values
 const subscribe = example.subscribe(val =>
   console.log('Accumulated object:', val)
@@ -57,11 +67,16 @@ subject.next({ favoriteLanguage: 'JavaScript' }); // {name: 'Joe', age: 30, favo
 [jsFiddle](https://jsfiddle.net/btroncone/afjgf4tz/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { scan, map, distinctUntilChanged } from 'rxjs/operators';
+
 // Accumulate values in an array, emit random values from this array.
-const scanObs = Rx.Observable.interval(1000)
-  .scan((a, c) => a.concat(c), [])
-  .map(r => r[Math.floor(Math.random() * r.length)])
-  .distinctUntilChanged()
+const scanObs = interval(1000)
+  .pipe(
+    scan((a, c) => a.concat(c), []),
+    map(r => r[Math.floor(Math.random() * r.length)]),
+    distinctUntilChanged()
+  )
   .subscribe(console.log);
 ```
 

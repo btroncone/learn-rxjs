@@ -14,6 +14,8 @@ characters!
 
 ---
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Observable from array
@@ -22,8 +24,10 @@ characters!
 [jsFiddle](https://jsfiddle.net/btroncone/o7kb5e6j/) )
 
 ```js
+import { from } from 'rxjs/observable/from';
+
 //emit array as a sequence of values
-const arraySource = Rx.Observable.from([1, 2, 3, 4, 5]);
+const arraySource = from([1, 2, 3, 4, 5]);
 //output: 1,2,3,4,5
 const subscribe = arraySource.subscribe(val => console.log(val));
 ```
@@ -34,10 +38,10 @@ const subscribe = arraySource.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/2czc5sae/) )
 
 ```js
+import { from } from 'rxjs/observable/from';
+
 //emit result of promise
-const promiseSource = Rx.Observable.from(
-  new Promise(resolve => resolve('Hello World!'))
-);
+const promiseSource = from(new Promise(resolve => resolve('Hello World!')));
 //output: 'Hello World'
 const subscribe = promiseSource.subscribe(val => console.log(val));
 ```
@@ -48,12 +52,14 @@ const subscribe = promiseSource.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/ae6hu9a8/) )
 
 ```js
+import { from } from 'rxjs/observable/from';
+
 //works on js collections
 const map = new Map();
 map.set(1, 'Hi');
 map.set(2, 'Bye');
 
-const mapSource = Rx.Observable.from(map);
+const mapSource = from(map);
 //output: [1, 'Hi'], [2, 'Bye']
 const subscribe = mapSource.subscribe(val => console.log(val));
 ```
@@ -64,8 +70,10 @@ const subscribe = mapSource.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/hfvzjcvL/) )
 
 ```js
+import { from } from 'rxjs/observable/from';
+
 //emit string as a sequence
-const source = Rx.Observable.from('Hello World');
+const source = from('Hello World');
 //output: 'H','e','l','l','o',' ','W','o','r','l','d'
 const subscribe = source.subscribe(val => console.log(val));
 ```

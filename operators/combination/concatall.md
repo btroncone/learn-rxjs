@@ -15,6 +15,8 @@ a single operator instead!
 
 ---
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 (
@@ -35,10 +37,10 @@ import { interval } from 'rxjs/observable/interval';
 const source = interval(2000);
 const example = source.pipe(
   //for demonstration, add 10 to and return as observable
-  map(val => of(val + 10))
+  map(val => of(val + 10)),
   //merge values from inner observable
   concatAll()
-)
+);
 //output: 'Example with Basic Observable 10', 'Example with Basic Observable 11'...
 const subscribe = example.subscribe(val =>
   console.log('Example with Basic Observable:', val)
@@ -60,10 +62,10 @@ const samplePromise = val => new Promise(resolve => resolve(val));
 const source = interval(2000);
 
 const example = source.pipe(
-  map(val => samplePromise(val))
+  map(val => samplePromise(val)),
   //merge values from resolved promise
   concatAll()
-)
+);
 //output: 'Example with Promise 0', 'Example with Promise 1'...
 const subscribe = example.subscribe(val =>
   console.log('Example with Promise:', val)

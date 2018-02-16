@@ -4,6 +4,8 @@
 
 ## Delay emitted values determined by provided function.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Delay based on observable
@@ -12,12 +14,16 @@
 [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) )
 
 ```js
+import { interval } 'rxjs/observable/interval';
+import { timer } 'rxjs/observable/timer';
+import { delayWhen } from 'rxjs/operators';
+
 //emit value every second
-const message = Rx.Observable.interval(1000);
+const message = interval(1000);
 //emit value after five seconds
-const delayForFiveSeconds = () => Rx.Observable.timer(5000);
+const delayForFiveSeconds = () => timer(5000);
 //after 5 seconds, start emitting delayed interval values
-const delayWhenExample = message.delayWhen(delayForFiveSeconds);
+const delayWhenExample = message.pipe(delayWhen(delayForFiveSeconds));
 //log values, delayed for 5 seconds
 //ex. output: 5s....1...2...3
 const subscribe = delayWhenExample.subscribe(val => console.log(val));

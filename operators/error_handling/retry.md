@@ -4,6 +4,8 @@
 
 ## Retry an observable sequence a specific number of times should an error occur.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Retry 2 times on error
@@ -12,20 +14,26 @@
 [jsFiddle](https://jsfiddle.net/btroncone/hg7z16bo/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { of } from 'rxjs/observable/of';
+import { _throw } from 'rxjs/observable/throw';
+import { mergeMap, retry } 'rxjs/operators';
+
 //emit value every 1s
-const source = Rx.Observable.interval(1000);
-const example = source
-  .flatMap(val => {
+const source = interval(1000);
+const example = source.pipe(
+  mergeMap(val => {
     //throw error for demonstration
     if (val > 5) {
-      return Rx.Observable.throw('Error!');
+      return _throw('Error!');
     }
-    return Rx.Observable.of(val);
-  })
+    return of(val);
+  }),
   //retry 2 times on error
-  .retry(2);
+  retry(2)
+);
 /*
-  output: 
+  output:
   0..1..2..3..4..5..
   0..1..2..3..4..5..
   0..1..2..3..4..5..

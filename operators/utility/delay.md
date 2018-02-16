@@ -4,6 +4,8 @@
 
 ## Delay emitted values by given time.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Delay for increasing durations
@@ -12,14 +14,18 @@
 [jsFiddle](https://jsfiddle.net/btroncone/1kxtzcu6/) )
 
 ```js
+import { of } 'rxjs/observable/of';
+import { merge } from 'rxjs/observable/merge';
+import { mapTo, delay } from 'rxjs/operators';
+
 //emit one item
-const example = Rx.Observable.of(null);
+const example = of(null);
 //delay output of each by an extra second
-const message = Rx.Observable.merge(
-  example.mapTo('Hello'),
-  example.mapTo('World!').delay(1000),
-  example.mapTo('Goodbye').delay(2000),
-  example.mapTo('World!').delay(3000)
+const message = merge(
+  example.pipe(mapTo('Hello')),
+  example.pipe(mapTo('World!'), delay(1000)),
+  example.pipe(mapTo('Goodbye'), delay(2000)),
+  example.pipe(mapTo('World!'), delay(3000))
 );
 //output: 'Hello'...'World!'...'Goodbye'...'World!'
 const subscribe = message.subscribe(val => console.log(val));

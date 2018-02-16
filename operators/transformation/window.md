@@ -12,10 +12,13 @@
 [jsFiddle](https://jsfiddle.net/btroncone/rmgghg6d/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { window, scan, mergeAll } from 'rxjs/operators';
+
 //emit immediately then every 1s
-const source = Rx.Observable.timer(0, 1000);
-const example = source.window(Rx.Observable.interval(3000));
-const count = example.scan((acc, curr) => acc + 1, 0);
+const source = timer(0, 1000);
+const example = source.pipe(window(interval(3000)));
+const count = example.pipe(scan((acc, curr) => acc + 1, 0));
 /*
   "Window 1:"
   0
@@ -28,7 +31,9 @@ const count = example.scan((acc, curr) => acc + 1, 0);
   ...
 */
 const subscribe = count.subscribe(val => console.log(`Window ${val}:`));
-const subscribeTwo = example.mergeAll().subscribe(val => console.log(val));
+const subscribeTwo = example
+  .pipe(mergeAll())
+  .subscribe(val => console.log(val));
 ```
 
 ### Additional Resources

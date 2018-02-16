@@ -4,6 +4,8 @@
 
 ## Emit value only when duration, determined by provided function, has passed.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Throttle for 2 seconds, based on second observable
@@ -12,10 +14,13 @@
 [jsFiddle](https://jsfiddle.net/btroncone/h8na4m0p/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { throttle } from 'rxjs/operators';
+
 //emit value every 1 second
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 //throttle for 2 seconds, emit latest value
-const example = source.throttle(val => Rx.Observable.interval(2000));
+const example = source.pipe(throttle(val => interval(2000)));
 //output: 0...3...6...9
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -26,8 +31,11 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/w5Lbzz9f/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { throttle, map } from 'rxjs/operators';
+
 //emit value every 1 second
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 //incrementally increase the time to resolve based on source
 const promise = val =>
   new Promise(resolve =>
@@ -35,8 +43,11 @@ const promise = val =>
   );
 //when promise resolves emit item from source
 const example = source
-  .throttle(promise)
-  .map(val => `Throttled off Promise: ${val}`);
+  .pipe(
+    throttle(promise),
+    map(val => `Throttled off Promise: ${val}`);
+  );
+
 
 const subscribe = example.subscribe(val => console.log(val));
 ```

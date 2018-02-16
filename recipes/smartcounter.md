@@ -8,6 +8,8 @@ a popular library that accomplishes this is
 [Hubspot](https://github.com/HubSpot). Let's see how we can accomplish something
 similar with just a few lines of RxJS.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 #### Vanilla JS
 
 ( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) |
@@ -31,18 +33,20 @@ const input = document.getElementById('range');
 const updateButton = document.getElementById('update');
 
 const subscription = (function(currentNumber) {
-  return Rx.Observable.fromEvent(updateButton, 'click')
-    .map(_ => parseInt(input.value))
-    .switchMap(endRange => {
-      return Rx.Observable.timer(0, 20)
-        .mapTo(positiveOrNegative(endRange, currentNumber))
-        .startWith(currentNumber)
-        .scan((acc, curr) => acc + curr)
-        .takeWhile(takeUntilFunc(endRange, currentNumber));
-    })
-    .do(v => (currentNumber = v))
-    .startWith(currentNumber)
-    .subscribe(updateHTML('display'));
+  return fromEvent(updateButton, 'click').pipe(
+    map(_ => parseInt(input.value)),
+    switchMap(endRange => {
+      return timer(0, 20).pipe(
+        mapTo(positiveOrNegative(endRange, currentNumber)),
+        startWith(currentNumber),
+        scan((acc, curr) => acc + curr),
+        takeWhile(takeUntilFunc(endRange, currentNumber));
+      )
+    }),
+    tap(v => (currentNumber = v)),
+    startWith(currentNumber)
+  )
+  .subscribe(updateHTML('display'));
 })(0);
 ```
 
@@ -75,17 +79,21 @@ export class NumberTrackerComponent implements OnDestroy {
   }
   public currentNumber = 0;
   private _counterSub$ = new Subject();
-  private _subscription : Subscription;
+  private _onDestroy$ = new Subject();
 
   constructor() {
-    this._subscription = this._counterSub$
-      .switchMap(endRange => {
-        return timer(0, 20)
-            .mapTo(this.positiveOrNegative(endRange, this.currentNumber))
-            .startWith(this.currentNumber)
-            .scan((acc, curr) => acc + curr)
-            .takeWhile(this.takeUntilFunc(endRange, this.currentNumber));
-      })
+    this._counterSub$
+      .pipe(
+        switchMap(endRange => {
+          return timer(0, 20).pipe(
+            mapTo(this.positiveOrNegative(endRange, this.currentNumber)),
+            startWith(this.currentNumber),
+            scan((acc, curr) => acc + curr),
+            takeWhile(this.takeUntilFunc(endRange, this.currentNumber))
+          )
+        }),
+        takeUntil(this._onDestroy$)
+      )
       .subscribe(val => this.currentNumber = val);
   }
 
@@ -100,7 +108,8 @@ export class NumberTrackerComponent implements OnDestroy {
   }
 
   ngOnDestroy() {
-    this._subscription.unsubscribe();
+    this._onDestroy$.next();
+    this._onDestroy$.complete();
   }
 }
 ```

@@ -4,6 +4,8 @@
 
 ## Share source utilizing the provided Subject.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: multicast with standard Subject
@@ -12,16 +14,22 @@
 [jsFiddle](https://jsfiddle.net/btroncone/x2z7p1gm/) )
 
 ```js
-//emit every 2 seconds, take 5
-const source = Rx.Observable.interval(2000).take(5);
+import { interval } from 'rxjs/observable/of';
+import { Subject } from 'rxjs/Subject';
+import { take, tap, multicast } 'rxjs/operators';
 
-const example = source
+//emit every 2 seconds, take 5
+const source = interval(2000).pipe(take(5));
+
+const example = source.pipe(
   //since we are multicasting below, side effects will be executed once
-  .do(() => console.log('Side Effect #1'))
-  .mapTo('Result!');
+  tap(() => console.log('Side Effect #1')),
+  mapTo('Result!');
+);
+
 
 //subscribe subject to source upon connect()
-const multi = example.multicast(() => new Rx.Subject());
+const multi = example.pipe(multicast(() => new Subject()));
 /*
   subscribers will share source
   output:
@@ -42,16 +50,20 @@ multi.connect();
 [jsFiddle](https://jsfiddle.net/btroncone/oj68u58j/) )
 
 ```js
+import { interval } from 'rxjs/observable/of';
+import { take, multicast } 'rxjs/operators';
+
 //emit every 2 seconds, take 5
-const source = Rx.Observable.interval(2000).take(5);
+const source = interval(2000).pipe(take(5));
 
 //example with ReplaySubject
-const example = source
+const example = source.pipe(
   //since we are multicasting below, side effects will be executed once
-  .do(() => console.log('Side Effect #2'))
-  .mapTo('Result Two!');
+  tap(_ => console.log('Side Effect #2')),
+  mapTo('Result Two!')
+);
 //can use any type of subject
-const multi = example.multicast(() => new Rx.ReplaySubject(5));
+const multi = example.pipe(multicast(() => new Rx.ReplaySubject(5)));
 //subscribe subject to source
 multi.connect();
 

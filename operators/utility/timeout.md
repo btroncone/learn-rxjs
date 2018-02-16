@@ -4,6 +4,8 @@
 
 ## Error if no value is emitted before specified duration
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Timeout after 2.5 seconds
@@ -12,22 +14,28 @@
 [jsFiddle](https://jsfiddle.net/btroncone/nr4e1ofy/1/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { concatMap, timeout, catchError } from 'rxjs/operators';
+
 // simulate request
 function makeRequest(timeToDelay) {
-  return Rx.Observable.of('Request Complete!').delay(timeToDelay);
+  return of('Request Complete!').pipe(delay(timeToDelay));
 }
 
-Rx.Observable.of(4000, 3000, 2000)
-  .concatMap(duration =>
-    makeRequest(duration)
-      .timeout(2500)
-      .catch(error => Rx.Observable.of(`Request timed out after: ${duration}`))
+of(4000, 3000, 2000)
+  .pipe(
+    concatMap(duration =>
+      makeRequest(duration).pipe(
+        timeout(2500),
+        catchError(error => of(`Request timed out after: ${duration}`))
+      )
+    )
   )
   /*
-  *  "Request timed out after: 4000"
-  *  "Request timed out after: 3000"
-  *  "Request Complete!"
-  */
+    *  "Request timed out after: 4000"
+    *  "Request timed out after: 3000"
+    *  "Request Complete!"
+    */
   .subscribe(val => console.log(val));
 ```
 

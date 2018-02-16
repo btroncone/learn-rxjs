@@ -4,6 +4,8 @@
 
 ## Emit numbers in sequence based on provided timeframe.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Emit sequence of values at 1 second interval
@@ -12,8 +14,10 @@
 [jsFiddle](https://jsfiddle.net/btroncone/x3mrwzr0/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+
 //emit value in sequence every 1 second
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 //output: 0,1,2,3,4,5....
 const subscribe = source.subscribe(val => console.log(val));
 ```

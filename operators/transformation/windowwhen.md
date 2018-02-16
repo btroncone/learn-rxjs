@@ -4,6 +4,8 @@
 
 ## Close window at provided time frame emitting observable of collected values from source.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Open and close window at interval
@@ -12,16 +14,21 @@
 [jsFiddle](https://jsfiddle.net/btroncone/gnx9fb3h/) )
 
 ```js
-//emit immediately then every 1s
-const source = Rx.Observable.timer(0, 1000);
-const example = source
-  //close window every 5s and emit observable of collected values from source
-  .windowWhen(val => Rx.Observable.interval(5000))
-  .do(() => console.log('NEW WINDOW!'));
+import { timer } from 'rxjs/observable/timer';
+import { interval } from 'rxjs/observable/interval';
+import { windowWhen, tap, mergeAll } from 'rxjs/operators';
 
-const subscribeTwo = example
+//emit immediately then every 1s
+const source = timer(0, 1000);
+const example = source.pipe(
+  //close window every 5s and emit observable of collected values from source
+  windowWhen(val => interval(5000)),
+  tap(_ => console.log('NEW WINDOW!'))
+);
+
+const subscribeTwo = example.pipe(
   //window emits nested observable
-  .mergeAll()
+  mergeAll()
   /*
   output:
   "NEW WINDOW!"

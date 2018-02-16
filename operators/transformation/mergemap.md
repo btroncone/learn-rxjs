@@ -18,12 +18,28 @@ important, try [`concatMap`](concatmap.md)!
 
 ### Why use `mergeMap`?
 
-This operator is best used when you wish to flatten an inner observable but want to manually control the number of inner subscriptions. 
+This operator is best used when you wish to flatten an inner observable but want
+to manually control the number of inner subscriptions.
 
-For instance, when using [`switchMap`](switchmap.md) each inner subscription is completed when the source emits, allowing only one active inner subscription. In contrast, `mergeMap` allows for multiple inner subscriptions to be active at a time. Because of this, one of the most common use-case for `mergeMap` is requests that should not be canceled, think writes rather than reads. Note that if order must be maintained [`concatMap`](concatmap.md) is a better option.
+For instance, when using [`switchMap`](switchmap.md) each inner subscription is
+completed when the source emits, allowing only one active inner subscription. In
+contrast, `mergeMap` allows for multiple inner subscriptions to be active at a
+time. Because of this, one of the most common use-case for `mergeMap` is
+requests that should not be canceled, think writes rather than reads. Note that
+if order must be maintained [`concatMap`](concatmap.md) is a better option.
 
-Be aware that because `mergeMap` maintains multiple active inner subscriptions at once it's possible to create a memory leak through long-lived inner subscriptions. A basic example would be if you were mapping to an observable with an inner timer, or a stream of dom events. In these cases, if you still wish to utilize `mergeMap` you may want to take advantage of another operator to manage the completion of the inner subscription, think [`take`](../filtering/take.md) or [`takeUntil`](../filtering/takeuntil.md). You can also limit the number of active inner subscriptions at a time with the `concurrent` parameter, seen in [example 4](#example-4-mergemap-with-concurrent-value).
+Be aware that because `mergeMap` maintains multiple active inner subscriptions
+at once it's possible to create a memory leak through long-lived inner
+subscriptions. A basic example would be if you were mapping to an observable
+with an inner timer, or a stream of dom events. In these cases, if you still
+wish to utilize `mergeMap` you may want to take advantage of another operator to
+manage the completion of the inner subscription, think
+[`take`](../filtering/take.md) or [`takeUntil`](../filtering/takeuntil.md). You
+can also limit the number of active inner subscriptions at a time with the
+`concurrent` parameter, seen in
+[example 4](#example-4-mergemap-with-concurrent-value).
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
 
 ### Examples
 
@@ -33,10 +49,13 @@ Be aware that because `mergeMap` maintains multiple active inner subscriptions a
 [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { mergeMap } from 'rxjs/operators';
+
 //emit 'Hello'
-const source = Rx.Observable.of('Hello');
+const source = of('Hello');
 //map to inner observable and flatten
-const example = source.mergeMap(val => Rx.Observable.of(`${val} World!`));
+const example = source.pipe(mergeMap(val => of(`${val} World!`)));
 //output: 'Hello World!'
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -47,13 +66,16 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/o9kxpvsv/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { mergeMap } from 'rxjs/operators';
+
 //emit 'Hello'
-const source = Rx.Observable.of('Hello');
+const source = of('Hello');
 //mergeMap also emits result of promise
 const myPromise = val =>
   new Promise(resolve => resolve(`${val} World From Promise!`));
 //map to promise and emit result
-const example = source.mergeMap(val => myPromise(val));
+const example = source.pipe(mergeMap(val => myPromise(val)));
 //output: 'Hello World From Promise'
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -64,20 +86,25 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/zu9a6vr4/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { mergeMap } from 'rxjs/operators';
+
 /*
   you can also supply a second argument which receives the source value and emitted
   value of inner observable or promise
 */
 //emit 'Hello'
-const source = Rx.Observable.of('Hello');
+const source = of('Hello');
 //mergeMap also emits result of promise
 const myPromise = val =>
   new Promise(resolve => resolve(`${val} World From Promise!`));
-const example = source.mergeMap(
-  val => myPromise(val),
-  (valueFromSource, valueFromPromise) => {
-    return `Source: ${valueFromSource}, Promise: ${valueFromPromise}`;
-  }
+const example = source.pipe(
+  mergeMap(
+    val => myPromise(val),
+    (valueFromSource, valueFromPromise) => {
+      return `Source: ${valueFromSource}, Promise: ${valueFromPromise}`;
+    }
+  )
 );
 //output: "Source: Hello, Promise: Hello World From Promise!"
 const subscribe = example.subscribe(val => console.log(val));
@@ -89,16 +116,21 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/2rmLxpyz/) )
 
 ```js
-//emit value every 1s
-const source = Rx.Observable.interval(1000);
+import { interval } from 'rxjs/observable/interval';
+import { mergeMap, take } from 'rxjs/operators';
 
-const example = source.mergeMap(
-  //project
-  val => Rx.Observable.interval(5000).take(2),
-  //resultSelector
-  (oVal, iVal, oIndex, iIndex) => [oIndex, oVal, iIndex, iVal],
-  //concurrent
-  2
+//emit value every 1s
+const source = interval(1000);
+
+const example = source.pipe(
+  mergeMap(
+    //project
+    val => interval(5000).pipe(take(2)),
+    //resultSelector
+    (oVal, iVal, oIndex, iIndex) => [oIndex, oVal, iIndex, iVal],
+    //concurrent
+    2
+  )
 );
 /*
 		Output:

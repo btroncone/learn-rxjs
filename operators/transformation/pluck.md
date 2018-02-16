@@ -4,6 +4,8 @@
 
 ## Select properties to emit.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Pluck object property
@@ -12,12 +14,12 @@
 [jsFiddle](https://jsfiddle.net/btroncone/58v9xq0f/) )
 
 ```js
-const source = Rx.Observable.from([
-  { name: 'Joe', age: 30 },
-  { name: 'Sarah', age: 35 }
-]);
+import { from } from 'rxjs/observable/from';
+import { pluck } from 'rxjs/operators';
+
+const source = from([{ name: 'Joe', age: 30 }, { name: 'Sarah', age: 35 }]);
 //grab names
-const example = source.pluck('name');
+const example = source.pipe(pluck('name'));
 //output: "Joe", "Sarah"
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -28,13 +30,16 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/n592m597/) )
 
 ```js
-const source = Rx.Observable.from([
+import { from } from 'rxjs/observable/from';
+import { pluck } from 'rxjs/operators';
+
+const source = from([
   { name: 'Joe', age: 30, job: { title: 'Developer', language: 'JavaScript' } },
   //will return undefined when no job is found
   { name: 'Sarah', age: 35 }
 ]);
 //grab title property under job
-const example = source.pluck('job', 'title');
+const example = source.pipe(pluck('job', 'title'));
 //output: "Developer" , undefined
 const subscribe = example.subscribe(val => console.log(val));
 ```

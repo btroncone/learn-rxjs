@@ -19,16 +19,18 @@ of user input must be controlled!
 [jsFiddle](https://jsfiddle.net/btroncone/7kbg4q2e/) )
 
 ```js
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import { timer } from 'rxjs/observable/timer';
+import { debounceTime, map } from 'rxjs/operators';
+
 const input = document.getElementById('example');
 
 //for every keyup, map to current input value
-const example = Rx.Observable.fromEvent(input, 'keyup').map(
-  i => i.currentTarget.value
-);
+const example = fromEvent(input, 'keyup').pipe(map(i => i.currentTarget.value));
 
 //wait .5s between keyups to emit current value
 //throw away all other values
-const debouncedInput = example.debounceTime(500);
+const debouncedInput = example.pipe(debounceTime(500));
 
 //log values
 const subscribe = debouncedInput.subscribe(val => {

@@ -10,6 +10,8 @@
 :bulb: If you need the current accumulated value on each emission, try
 [scan](scan.md)!
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Sum a stream of numbers
@@ -18,8 +20,11 @@
 [jsFiddle](https://jsfiddle.net/f8fw7yka/) )
 
 ```js
-const source = Rx.Observable.of(1, 2, 3, 4);
-const example = source.reduce((acc, val) => acc + val);
+import { of } from 'rxjs/observable/of';
+import { reduce } from 'rxjs/operators';
+
+const source = of(1, 2, 3, 4);
+const example = source.pipe(reduce((acc, val) => acc + val));
 //output: Sum: 10'
 const subscribe = example.subscribe(val => console.log('Sum:', val));
 ```

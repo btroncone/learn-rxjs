@@ -4,6 +4,8 @@
 
 ## Map values to inner observable, subscribe and emit in order.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Map to inner observable
@@ -12,10 +14,13 @@
 [jsFiddle](https://jsfiddle.net/btroncone/y3yx666r/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { concatMap } from 'rxjs/operators';
+
 //emit 'Hello' and 'Goodbye'
-const source = Rx.Observable.of('Hello', 'Goodbye');
+const source = of('Hello', 'Goodbye');
 // map value from source into inner observable, when complete emit result and move to next
-const example = source.concatMap(val => Rx.Observable.of(`${val} World!`));
+const example = source.pipe(concatMap(val => of(`${val} World!`)));
 //output: 'Example One: 'Hello World', Example One: 'Goodbye World'
 const subscribe = example.subscribe(val => console.log('Example One:', val));
 ```
@@ -26,12 +31,15 @@ const subscribe = example.subscribe(val => console.log('Example One:', val));
 [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { concatMap } from 'rxjs/operators';
+
 //emit 'Hello' and 'Goodbye'
-const source = Rx.Observable.of('Hello', 'Goodbye');
+const source = of('Hello', 'Goodbye');
 //example with promise
 const examplePromise = val => new Promise(resolve => resolve(`${val} World!`));
 // map value from source into inner observable, when complete emit result and move to next
-const example = source.concatMap(val => examplePromise(val));
+const example = source.pipe(concatMap(val => examplePromise(val)));
 //output: 'Example w/ Promise: 'Hello World', Example w/ Promise: 'Goodbye World'
 const subscribe = example.subscribe(val =>
   console.log('Example w/ Promise:', val)
@@ -44,14 +52,19 @@ const subscribe = example.subscribe(val =>
 [jsFiddle](https://jsfiddle.net/btroncone/5sr5zzgy/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { concatMap } from 'rxjs/operators';
+
 //emit 'Hello' and 'Goodbye'
-const source = Rx.Observable.of('Hello', 'Goodbye');
+const source = of('Hello', 'Goodbye');
 //example with promise
 const examplePromise = val => new Promise(resolve => resolve(`${val} World!`));
 //result of first param passed to second param selector function before being  returned
-const example = source.concatMap(
-  val => examplePromise(val),
-  result => `${result} w/ selector!`
+const example = source.pipe(
+  concatMap(
+    val => examplePromise(val),
+    result => `${result} w/ selector!`
+  )
 );
 //output: 'Example w/ Selector: 'Hello w/ Selector', Example w/ Selector: 'Goodbye w/ Selector'
 const subscribe = example.subscribe(val =>
@@ -65,13 +78,20 @@ const subscribe = example.subscribe(val =>
 [jsFiddle](https://jsfiddle.net/btroncone/3xd74d89/) )
 
 ```js
-const concatMapSub = Rx.Observable.of(2000, 1000)
-  .concatMap(v => Rx.Observable.of(v).delay(v))
+import { of } from 'rxjs/observable/of';
+import { buffer } from 'rxjs/operators';
+
+const concatMapSub = of(2000, 1000)
+  .pipe(
+   concatMap(v => of(v).pipe(delay(v)))
+  )
   // concatMap: 2000, concatMap: 1000
   .subscribe(v => console.log('concatMap:', v));
 
-const mergeMapSub = Rx.Observable.of(2000, 1000)
-  .mergeMap(v => Rx.Observable.of(v).delay(v))
+const mergeMapSub = of(2000, 1000)
+  .pipe(
+    mergeMap(v => of(v).pipe(delay(v)))
+  )
   // mergeMap: 1000, mergeMap: 2000
   .subscribe(v => console.log('mergeMap:', v));
 ```

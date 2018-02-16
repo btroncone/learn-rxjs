@@ -4,6 +4,8 @@
 
 ## Retry an observable sequence on error based on custom criteria.
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 ##### Example 1: Trigger retry after specified duration
@@ -12,25 +14,31 @@
 [jsFiddle](https://jsfiddle.net/btroncone/49mkhsyr/) )
 
 ```js
+import { timer } from 'rxjs/observable/timer';
+import { interval } from 'rxjs/observable/interval';
+import { map, tap, retryWhen, delayWhen } from 'rxjs/operators';
+
 //emit value every 1s
-const source = Rx.Observable.interval(1000);
-const example = source
-  .map(val => {
+const source = interval(1000);
+const example = source.pipe(
+  map(val => {
     if (val > 5) {
       //error will be picked up by retryWhen
       throw val;
     }
     return val;
-  })
-  .retryWhen(errors =>
-    errors
+  }),
+  retryWhen(errors =>
+    errors.pipe(
       //log error message
-      .do(val => console.log(`Value ${val} was too high!`))
+      tap(val => console.log(`Value ${val} was too high!`)),
       //restart in 5 seconds
-      .delayWhen(val => Rx.Observable.timer(val * 1000))
-  );
+      delayWhen(val => timer(val * 1000))
+    )
+  )
+);
 /*
-  output: 
+  output:
   0
   1
   2
@@ -49,26 +57,34 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/tLx1c3j6/2/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { of } from 'rxjs/observable/of';
+import { range } from 'rxjs/observable/range';
+import { timer } from 'rxjs/observable/timer';
+import { map, catchError, retryWhen, zip, mergeMap } from 'rxjs/operators';
+
 //emit value every 1s
-const source = Rx.Observable.interval(1000);
-const example = source
-  .map(val => {
+const source = interval(1000);
+const example = source.pipe(
+  map(val => {
     if (val > 2) {
       //error will be picked up by retryWhen
       throw val;
     }
     return val;
-  })
-  .retryWhen(attempts => {
-    return attempts.zip(Rx.Observable.range(1, 4)).mergeMap(([error, i]) => {
+  }),
+  retryWhen(attempts => {
+    return attempts.zip(range(1, 4)).mergeMap(([error, i]) => {
       if (i > 3) {
-        return Rx.Observable.throw(error);
+        return _throw(error);
       }
       console.log(`Wait ${i} seconds, then retry!`);
-      return Rx.Observable.timer(i * 1000);
+      return timer(i * 1000);
     });
-  })
-  .catch(_ => Rx.Observable.of('Ouch, giving up!'));
+  }),
+  catchError(_ => of('Ouch, giving up!'));
+)
+
 
 const subscribe = example.subscribe(val => console.log(val));
 ```

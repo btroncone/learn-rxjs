@@ -11,6 +11,8 @@ single operator instead!
 
 ---
 
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+
 ### Examples
 
 (
@@ -32,11 +34,11 @@ const myPromise = val =>
 const source = of(1, 2, 3);
 
 const example = source.pipe(
-    //map each value to promise
-    map(val => myPromise(val))
-    //emit result from source
-    mergeAll()
-  );
+  //map each value to promise
+  map(val => myPromise(val)),
+  //emit result from source
+  mergeAll()
+);
 
 /*
   output:

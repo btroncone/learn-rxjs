@@ -4,6 +4,8 @@
 
 ## Create observable from promise, emitting result.
 
+
+
 ---
 
 :bulb: Flattening operators can generally accept promises without wrapping!
@@ -11,6 +13,8 @@
 :bulb: You could also use [Observable.from](from.md) for the same result!
 
 ---
+
+<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
 
 ### Examples
 
@@ -20,6 +24,10 @@
 [jsFiddle](https://jsfiddle.net/btroncone/upy6nr6n/) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { fromPromise } from 'rxjs/observable/fromPromise';
+import { mergeMap, catchError } from 'rxjs/operators';
+
 //example promise that will resolve or reject based on input
 const myPromise = willReject => {
   return new Promise((resolve, reject) => {
@@ -30,13 +38,14 @@ const myPromise = willReject => {
   });
 };
 //emit true, then false
-const source = Rx.Observable.of(true, false);
-const example = source.mergeMap(val =>
-  Rx.Observable
-    //turn promise into observable
-    .fromPromise(myPromise(val))
-    //catch and gracefully handle rejections
-    .catch(error => Rx.Observable.of(`Error: ${error}`))
+const source = of(true, false);
+const example = source.pipe(
+  mergeMap(val =>
+    fromPromise(myPromise(val)).pipe(
+      //catch and gracefully handle rejections
+      catchError(error => of(`Error: ${error}`))
+    )
+  )
 );
 //output: 'Error: Rejected!', 'Resolved!'
 const subscribe = example.subscribe(val => console.log(val));

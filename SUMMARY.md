@@ -31,7 +31,7 @@
     * [throw](/operators/creation/throw.md)
     * [timer](/operators/creation/timer.md)
   * [Error Handling](/operators/error_handling/README.md)
-    * [catch](/operators/error_handling/catch.md)
+    * [catchError](/operators/error_handling/catch.md)
     * [retry](/operators/error_handling/retry.md)
     * [retryWhen](/operators/error_handling/retrywhen.md)
   * [Multicasting](/operators/multicasting/README.md)
