@@ -39,7 +39,7 @@ can also limit the number of active inner subscriptions at a time with the
 `concurrent` parameter, seen in
 [example 4](#example-4-mergemap-with-concurrent-value).
 
-<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+<div class="ua-ad"><a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a></div>
 
 ### Examples
 

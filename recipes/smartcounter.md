@@ -8,7 +8,7 @@ a popular library that accomplishes this is
 [Hubspot](https://github.com/HubSpot). Let's see how we can accomplish something
 similar with just a few lines of RxJS.
 
-<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+<div class="ua-ad"><a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a></div>
 
 #### Vanilla JS
 

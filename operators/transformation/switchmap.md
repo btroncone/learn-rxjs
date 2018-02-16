@@ -38,7 +38,7 @@ every request needs to complete, think writes to a database. `switchMap` could
 cancel a request if the source emits quickly enough. In these scenarios
 [mergeMap](mergemap.md) is the correct option.
 
-<a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a>
+<div class="ua-ad"><a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a></div>
 
 ### Examples
 
