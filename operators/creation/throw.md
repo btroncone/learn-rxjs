@@ -40,4 +40,4 @@ const subscribe = source.subscribe({
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/ErrorObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/ErrorObservable.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/throwError.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/throwError.ts)
