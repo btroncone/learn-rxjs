@@ -91,4 +91,4 @@ const exhaustSub = firstInterval
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/exhaustMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/exhaustMap.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/exhaustMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/exhaustMap.ts)

@@ -65,4 +65,4 @@ const race = race(first, second, third).subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/race.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/race.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/race.ts)

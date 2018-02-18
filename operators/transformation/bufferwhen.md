@@ -38,4 +38,4 @@ const subscribe = bufferWhenExample.subscribe(val =>
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferWhen.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/bufferWhen.ts)

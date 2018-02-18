@@ -39,4 +39,4 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/reduce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/reduce.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/reduce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/reduce.ts)

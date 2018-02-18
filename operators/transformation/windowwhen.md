@@ -55,4 +55,4 @@ const subscribeTwo = example.pipe(
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowWhen.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/windowWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/windowWhen.ts)

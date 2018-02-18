@@ -80,4 +80,4 @@ const subscribe = merge(
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/partition.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/partition.ts)

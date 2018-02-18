@@ -54,4 +54,4 @@ const subscribeTwo = example
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowCount.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/windowCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/windowCount.ts)
