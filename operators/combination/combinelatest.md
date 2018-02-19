@@ -37,14 +37,11 @@ is likely a better option.
 
 ### Examples
 
-(
-[example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combinelatest-spec.ts)
-)
-
 ##### Example 1: Combining observables emitting at 3 intervals
 
 ( [jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) )
+[jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-hb2xpk?file=index.ts) )
 
 ```js
 import { timer } from 'rxjs/observable/timer';
@@ -80,7 +77,8 @@ const subscribe = combined.subscribe(
 ##### Example 2: combineLatest with projection function
 
 ( [jsBin](http://jsbin.com/codotapula/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) )
+[jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-4vyklu?file=index.ts) )
 
 ```js
 import { timer } from 'rxjs/observable/timer';
@@ -113,12 +111,13 @@ const subscribe = combinedProject.subscribe(latestValuesProject =>
 ##### Example 3: Combining events from 2 buttons
 
 ( [jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
-[jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) )
+[jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-hj11pb?file=index.ts) )
 
 ```js
-import { mapTo, startWith, scan, tap } from 'rxjs/observable/timer';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { combineLatest } from 'rxjs/observable/combineLatest';
+import { map, mapTo, startWith, scan, tap } from 'rxjs/operators';
 
 // helper function to set HTML
 const setHtml = id => val => (document.getElementById(id).innerHTML = val);
@@ -127,10 +126,10 @@ const addOneClick$ = id =>
   fromEvent(document.getElementById(id), 'click')
     .pipe(
       // map every click to 1
-      mapTo(1)
-      startWith(0)
+      mapTo(1),
+      startWith(0),
       // keep a running total
-      scan((acc, curr) => acc + curr)
+      scan((acc, curr) => acc + curr),
       // set HTML for appropriate element
       tap(setHtml(`${id}Total`))
     );
