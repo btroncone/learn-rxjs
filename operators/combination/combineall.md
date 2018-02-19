@@ -8,14 +8,11 @@
 
 ### Examples
 
-(
-[example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combineall-spec.ts)
-)
-
 ##### Example 1: Mapping to inner interval observable
 
 ( [jsBin](http://jsbin.com/cokinogime/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
+[jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-ep3xxa?file=index.ts) )
 
 ```js
 import { take, map, combineAll } from 'rxjs/operators';
