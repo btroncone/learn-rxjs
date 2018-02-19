@@ -19,14 +19,11 @@ a single operator instead!
 
 ### Examples
 
-(
-[example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concatall-spec.ts)
-)
-
 ##### Example 1: concatAll with observable
 
 ( [jsBin](http://jsbin.com/nakinenuva/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/8dfuf2y6/) )
+[jsFiddle](https://jsfiddle.net/btroncone/8dfuf2y6/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-fbcja3?file=index.ts) )
 
 ```js
 import { map, concatAll } from 'rxjs/operators';
@@ -50,7 +47,8 @@ const subscribe = example.subscribe(val =>
 ##### Example 2: concatAll with promise
 
 ( [jsBin](http://jsbin.com/bekegeyopu/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/w7kp7qLs/) )
+[jsFiddle](https://jsfiddle.net/btroncone/w7kp7qLs/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-rkzrnz?file=index.ts) )
 
 ```js
 import { map, concatAll } from 'rxjs/operators';
@@ -75,7 +73,8 @@ const subscribe = example.subscribe(val =>
 ##### Example 3: Delay while inner observables complete
 
 ( [jsBin](http://jsbin.com/pojolatile/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/8230ucbg/) )
+[jsFiddle](https://jsfiddle.net/btroncone/8230ucbg/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-r5rvqx?file=index.ts) )
 
 ```js
 import { take, concatAll } from 'rxjs/operators';
@@ -98,7 +97,7 @@ const example = source.pipe(concatAll());
   obs3: 0 (complete)
 */
 
-const subscribe = example.subscribe(val => console.log(val));
+const subscribe = example.subscribe(console.log);
 ```
 
 ### Additional Resources
