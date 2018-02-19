@@ -20,14 +20,11 @@ instead!
 
 ### Examples
 
-(
-[example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concat-spec.ts)
-)
-
 ##### Example 1: concat 2 basic observables
 
 ( [jsBin](http://jsbin.com/gegubutele/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) )
+[jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) | 
+[stackBlitz](https://stackblitz.com/edit/typescript-gp2o8c?file=index.ts) )
 
 ```js
 import { concat } from 'rxjs/operators';
@@ -48,7 +45,8 @@ const subscribe = example.subscribe(val =>
 ##### Example 2: concat as static method
 
 ( [jsBin](http://jsbin.com/xihagewune/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/5qdtvhu8/) )
+[jsFiddle](https://jsfiddle.net/btroncone/5qdtvhu8/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-fgbjo4?file=index.ts) )
 
 ```js
 import { of } from 'rxjs/observable/of';
@@ -68,7 +66,8 @@ const subscribe = example.subscribe(val => console.log('Example: static', val));
 ##### Example 3: concat with delayed source
 
 ( [jsBin](http://jsbin.com/nezonosubi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/L2s49msx/) )
+[jsFiddle](https://jsfiddle.net/btroncone/L2s49msx/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-jkh4gk?file=index.ts) )
 
 ```js
 import { delay, concat } from 'rxjs/operators';
@@ -92,7 +91,8 @@ const subscribe = example.subscribe(val =>
 ##### Example 4: concat with source that does not complete
 
 ( [jsBin](http://jsbin.com/vixajoxaze/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/4bhtb81u/) )
+[jsFiddle](https://jsfiddle.net/btroncone/4bhtb81u/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-c8snpe?file=index.ts) )
 
 ```js
 import { interval } from 'rxjs/observable/interval';
