@@ -42,7 +42,8 @@ correct choice. In these cases you may better off with an operator like
 ##### Example 1: Observables completing after different durations
 
 ( [jsBin](http://jsbin.com/remiduhimu/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/5fj77920/81/) )
+[jsFiddle](https://jsfiddle.net/btroncone/5fj77920/81/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-x6bu8b?file=index.ts) )
 
 ```js
 import { delay, take } from 'rxjs/operators';
@@ -72,13 +73,14 @@ const example = forkJoin(
   myPromise('RESULT')
 );
 //output: ["Hello", "World", 0, 1, "Promise Resolved: RESULT"]
-const subscribe = example.subscribe(val => console.log(val));
+const subscribe = example.subscribe(onsole.log);
 ```
 
 ##### Example 2: Making a variable number of requests
 
 ( [jsBin](http://jsbin.com/febejakapi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/0b8Lnh7s/1/) )
+[jsFiddle](https://jsfiddle.net/btroncone/0b8Lnh7s/1/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-x6bu8b?file=index.ts) )
 
 ```js
 import { mergeMap } from 'rxjs/operators';
@@ -109,7 +111,8 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 3: Handling errors on outside
 
 ( [jsBin](http://jsbin.com/gugawucixi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) )
+[jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-p29z54?file=index.ts) )
 
 ```js
 import { delay, catchError } from 'rxjs/operators';
@@ -136,7 +139,8 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 4: Getting successful results when one innner observable errors
 
 ( [jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) )
+[jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) |
+[stackBlitz](https://stackblitz.com/edit/typescript-kudrbz?file=index.ts) )
 
 ```js
 import { delay, catchError } from 'rxjs/operators';
@@ -162,7 +166,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 5: forkJoin in Angular
 
-( [plunker](https://plnkr.co/edit/ElTrOg8NfR3WbbAfjBXQ?p=preview) )
+( [plunker](https://plnkr.co/edit/ElTrOg8NfR3WbbAfjBXQ?p=preview) |
+[stackBlitz](https://stackblitz.com/edit/typescript-mzfuut?file=index.ts) )
 
 ```js
 @Injectable()
