@@ -167,7 +167,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 5: forkJoin in Angular
 
 ( [plunker](https://plnkr.co/edit/ElTrOg8NfR3WbbAfjBXQ?p=preview) |
-[stackBlitz](https://stackblitz.com/edit/typescript-mzfuut?file=index.ts) )
+[stackBlitz](https://stackblitz.com/edit/angular-zur7zq?file=app/app.component.ts) )
 
 ```js
 @Injectable()
