@@ -51,42 +51,76 @@ const example = source.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: Increased duration between retries
+##### Example 2: Customizable retry with increased duration
 
-( [jsBin](http://jsbin.com/nexuxoyifa/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/tLx1c3j6/2/) )
-
-```js
-import { interval } from 'rxjs/observable/interval';
-import { of } from 'rxjs/observable/of';
-import { range } from 'rxjs/observable/range';
-import { timer } from 'rxjs/observable/timer';
-import { map, catchError, retryWhen, zip, mergeMap } from 'rxjs/operators';
-
-//emit value every 1s
-const source = interval(1000);
-const example = source.pipe(
-  map(val => {
-    if (val > 2) {
-      //error will be picked up by retryWhen
-      throw val;
-    }
-    return val;
-  }),
-  retryWhen(attempts => {
-    return attempts.zip(range(1, 4)).mergeMap(([error, i]) => {
-      if (i > 3) {
-        return _throw(error);
-      }
-      console.log(`Wait ${i} seconds, then retry!`);
-      return timer(i * 1000);
-    });
-  }),
-  catchError(_ => of('Ouch, giving up!'));
+(
+[StackBlitz](https://stackblitz.com/edit/angular-r1x9p9?file=app%2Frxjs-utils.ts)
 )
 
+```js
+import { Observable } from 'rxjs/Observable';
+import { range } from 'rxjs/observable/range';
+import { _throw } from 'rxjs/observable/throw';
+import { timer } from 'rxjs/observable/timer';
+import { mergeMap, zip } from 'rxjs/operators';
 
-const subscribe = example.subscribe(val => console.log(val));
+export const genericRetryStrategy = (
+  retryAttempts: number,
+  ...statusCodes: number[]
+) => (attempts: Observable<any>) => {
+  return attempts.pipe(
+    zip(range(1, retryAttempts + 1)),
+    mergeMap(([error, i]) => {
+      // if maximum number of retries have been met
+      // or response is a status code we don't wish to retry, throw error
+      if (i > retryAttempts || statusCodes.find(e => e === error.status)) {
+        return _throw(error);
+      }
+      console.log(`Attempt ${i}: retrying in ${i} seconds`);
+      // retry after 1s, 2s, etc...
+      return timer(i * 1000);
+    })
+  );
+};
+```
+
+```js
+import { Component, OnInit } from '@angular/core';
+import { catchError, retryWhen  } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+import { genericRetryStrategy } from './rxjs-utils';
+import { AppService } from './app.service';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent implements OnInit  {
+  constructor(private _appService: AppService) {}
+
+  ngOnInit() {
+    this._appService
+      .getData(500)
+      .pipe(
+        retryWhen(genericRetryStrategy(3)),
+        catchError(error => of(error))
+      )
+      .subscribe(console.log);
+
+    // excluding status code, delay for logging clarity
+    setTimeout(() => {
+    this._appService
+      .getData(500)
+      .pipe(
+        retryWhen(genericRetryStrategy(3, 500)),
+        catchError(error => of(error))
+      )
+      .subscribe(e => console.log('Exluded code:', e.status));
+
+    }, 8000);
+  }
+}
 ```
 
 ### Additional Resources
