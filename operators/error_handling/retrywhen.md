@@ -64,21 +64,29 @@ import { _throw } from 'rxjs/observable/throw';
 import { timer } from 'rxjs/observable/timer';
 import { mergeMap, zip } from 'rxjs/operators';
 
-export const genericRetryStrategy = (
-  retryAttempts: number,
-  ...statusCodes: number[]
-) => (attempts: Observable<any>) => {
+export const genericRetryStrategy = ({
+  retryAttempts = 3,
+  scalingDuration = 1000,
+  excludedStatusCodes = []
+}: {
+  retryAttempts?: number,
+  scalingDuration?: number,
+  excludedStatusCodes?: number[]
+} = {}) => (attempts: Observable<any>) => {
   return attempts.pipe(
     zip(range(1, retryAttempts + 1)),
     mergeMap(([error, i]) => {
       // if maximum number of retries have been met
       // or response is a status code we don't wish to retry, throw error
-      if (i > retryAttempts || statusCodes.find(e => e === error.status)) {
+      if (
+        i > retryAttempts ||
+        excludedStatusCodes.find(e => e === error.status)
+      ) {
         return _throw(error);
       }
-      console.log(`Attempt ${i}: retrying in ${i} seconds`);
+      console.log(`Attempt ${i}: retrying in ${i * scalingDuration}ms`);
       // retry after 1s, 2s, etc...
-      return timer(i * 1000);
+      return timer(i * scalingDuration);
     })
   );
 };
@@ -103,7 +111,7 @@ export class AppComponent implements OnInit  {
     this._appService
       .getData(500)
       .pipe(
-        retryWhen(genericRetryStrategy(3)),
+        retryWhen(genericRetryStrategy()),
         catchError(error => of(error))
       )
       .subscribe(console.log);
@@ -113,7 +121,10 @@ export class AppComponent implements OnInit  {
     this._appService
       .getData(500)
       .pipe(
-        retryWhen(genericRetryStrategy(3, 500)),
+        retryWhen(genericRetryStrategy({
+          scalingDuration: 2000,
+          excludedStatusCodes: [500]
+        })),
         catchError(error => of(error))
       )
       .subscribe(e => console.log('Exluded code:', e.status));
