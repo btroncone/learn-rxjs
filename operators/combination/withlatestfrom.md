@@ -17,7 +17,8 @@ emits, try [combinelatest](combinelatest.md)!
 
 ##### Example 1: Latest value from quicker second source
 
-( [jsBin](http://jsbin.com/fitekeseru/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-sekrr5?file=index.ts) |
+[jsBin](http://jsbin.com/fitekeseru/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) )
 
 ```js
@@ -45,7 +46,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Slower second source
 
-( [jsBin](http://jsbin.com/vujekucuxa/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-unq2gn?file=index.ts) |
+[jsBin](http://jsbin.com/vujekucuxa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/bywLL579/) )
 
 ```js
@@ -58,12 +60,12 @@ const source = interval(5000);
 const secondSource = interval(1000);
 //withLatestFrom slower than source
 const example = secondSource.pipe(
-    //both sources must emit at least 1 value (5s) before emitting
-    withLatestFrom(source),
-    map(([first, second]) => {
-      return `Source (1s): ${first} Latest From (5s): ${second}`;
-    })
-  );
+  //both sources must emit at least 1 value (5s) before emitting
+  withLatestFrom(source),
+  map(([first, second]) => {
+    return `Source (1s): ${first} Latest From (5s): ${second}`;
+  })
+);
 /*
   "Source (1s): 4 Latest From (5s): 0"
   "Source (1s): 5 Latest From (5s): 0"

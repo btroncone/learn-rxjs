@@ -19,7 +19,8 @@ instead!
 
 ##### Example 1: merging multiple observables, static method
 
-( [jsBin](http://jsbin.com/conufujapi/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-rkpu4e?file=index.ts) |
+[jsBin](http://jsbin.com/conufujapi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
 
 ```js
@@ -49,7 +50,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: merge 2 observables, instance method
 
-( [jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-nq3sfo?file=index.ts) |
+[jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/me5ofcr0/) )
 
 ```js

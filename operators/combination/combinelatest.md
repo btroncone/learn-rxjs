@@ -43,7 +43,8 @@ is likely a better option.
 
 ##### Example 1: Combining observables emitting at 3 intervals
 
-( [jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-wmfmtv?file=index.ts) |
+[jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) )
 
 ```js
@@ -79,7 +80,8 @@ const subscribe = combined.subscribe(
 
 ##### Example 2: combineLatest with projection function
 
-( [jsBin](http://jsbin.com/codotapula/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-fcmjfl?file=index.ts) |
+[jsBin](http://jsbin.com/codotapula/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) )
 
 ```js
@@ -112,11 +114,12 @@ const subscribe = combinedProject.subscribe(latestValuesProject =>
 
 ##### Example 3: Combining events from 2 buttons
 
-( [jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-sfbopd?file=index.ts) |
+[jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) )
 
 ```js
-import { mapTo, startWith, scan, tap } from 'rxjs/observable/timer';
+import { mapTo, startWith, scan, tap, map } from 'rxjs/operators';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { combineLatest } from 'rxjs/observable/combineLatest';
 
@@ -124,23 +127,19 @@ import { combineLatest } from 'rxjs/observable/combineLatest';
 const setHtml = id => val => (document.getElementById(id).innerHTML = val);
 
 const addOneClick$ = id =>
-  fromEvent(document.getElementById(id), 'click')
-    .pipe(
-      // map every click to 1
-      mapTo(1)
-      startWith(0)
-      // keep a running total
-      scan((acc, curr) => acc + curr)
-      // set HTML for appropriate element
-      tap(setHtml(`${id}Total`))
-    );
+  fromEvent(document.getElementById(id), 'click').pipe(
+    // map every click to 1
+    mapTo(1),
+    startWith(0),
+    // keep a running total
+    scan((acc, curr) => acc + curr),
+    // set HTML for appropriate element
+    tap(setHtml(`${id}Total`))
+  );
 
-const combineTotal$ = combineLatest(
-  addOneClick$('red'),
-  addOneClick$('black')
-)
-.pipe(map(([val1, val2]) => val1 + val2))
-.subscribe(setHtml('total'));
+const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
+  .pipe(map(([val1, val2]) => val1 + val2))
+  .subscribe(setHtml('total'));
 ```
 
 ###### HTML

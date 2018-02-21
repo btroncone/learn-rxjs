@@ -10,19 +10,17 @@
 
 ##### Example 1:
 
-( [jsBin](http://jsbin.com/keteyahido/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-hpjuv6?file=index.ts) |
+[jsBin](http://jsbin.com/keteyahido/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/8va47bq3/) )
 
 ```js
 import { pairwise, take } from 'rxjs/operators';
 import { interval } from 'rxjs/observable/interval';
 
-
 //Returns: [0,1], [1,2], [2,3], [3,4], [4,5]
-interval(1000).pipe(
-    pairwise(),
-    take(5)
-  )
+interval(1000)
+  .pipe(pairwise(), take(5))
   .subscribe(console.log);
 ```
 

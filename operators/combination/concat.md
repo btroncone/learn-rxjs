@@ -26,7 +26,8 @@ instead!
 
 ##### Example 1: concat 2 basic observables
 
-( [jsBin](http://jsbin.com/gegubutele/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-oqm79a?file=index.ts) |
+[jsBin](http://jsbin.com/gegubutele/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) )
 
 ```js
@@ -47,7 +48,8 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 2: concat as static method
 
-( [jsBin](http://jsbin.com/xihagewune/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-oqtzx7?file=index.ts) |
+[jsBin](http://jsbin.com/xihagewune/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5qdtvhu8/) )
 
 ```js
@@ -62,12 +64,13 @@ const sourceTwo = of(4, 5, 6);
 //used as static
 const example = concat(sourceOne, sourceTwo);
 //output: 1,2,3,4,5,6
-const subscribe = example.subscribe(val => console.log('Example: static', val));
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ##### Example 3: concat with delayed source
 
-( [jsBin](http://jsbin.com/nezonosubi/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-rkvfgp?file=index.ts) |
+[jsBin](http://jsbin.com/nezonosubi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/L2s49msx/) )
 
 ```js
@@ -91,7 +94,8 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 4: concat with source that does not complete
 
-( [jsBin](http://jsbin.com/vixajoxaze/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-pccj1d?file=index.ts) |
+[jsBin](http://jsbin.com/vixajoxaze/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/4bhtb81u/) )
 
 ```js

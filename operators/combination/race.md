@@ -10,7 +10,8 @@
 
 ##### Example 1: race with 4 observables
 
-( [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-cuzgkn?file=index.ts) |
+[jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 
 ```js
@@ -35,16 +36,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: race with an error
 
-( [jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-ptcwjp?file=index.ts) |
+[jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
 
 ```js
 import { delay, map } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 import { race } from 'rxjs/observable/race';
 
-console.clear();
-
-//Throws an error and ignore the rest of the observables.
+//Throws an error and ignores the other observables.
 const first = of('first').pipe(
   delay(100),
   map(_ => {
@@ -54,7 +54,7 @@ const first = of('first').pipe(
 const second = of('second').pipe(delay(200));
 const third = of('third').pipe(delay(300));
 
-const race = race(first, second, third).subscribe(val => console.log(val));
+race(first, second, third).subscribe(val => console.log(val));
 ```
 
 ### Additional Resources

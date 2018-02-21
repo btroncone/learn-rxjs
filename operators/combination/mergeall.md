@@ -21,7 +21,8 @@ single operator instead!
 
 ##### Example 1: mergeAll with promises
 
-( [jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-w2kazd?file=index.ts) |
+[jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) )
 
 ```js
@@ -51,13 +52,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: mergeAll with _concurrent_ parameter
 
-( [jsFiddle](https://jsfiddle.net/zra3zxhs/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-qbxs2y?file=index.ts) |
+[jsFiddle](https://jsfiddle.net/zra3zxhs/) )
 
 ```js
 import { take, map, delay, mergeAll } from 'rxjs/operators';
 import { interval } from 'rxjs/observable/interval';
 
-const interval = interval(500).pipe(take(5));
+const source = interval(500).pipe(take(5));
 
 /*
   interval is emitting a value every 0.5s.  This value is then being mapped to interval that
@@ -65,8 +67,8 @@ const interval = interval(500).pipe(take(5));
   many inner observables to subscribe to at a time.  The rest of the observables are stored
   in a backlog waiting to be subscribe.
 */
-const example = interval
-  .pipe(map(val => interval.pipe(delay(1000), take(3))), mergeAll(2))
+const example = source
+  .pipe(map(val => source.pipe(delay(1000), take(3))), mergeAll(2))
   .subscribe(val => console.log(val));
 /*
   The subscription is completed once the operator emits all values.

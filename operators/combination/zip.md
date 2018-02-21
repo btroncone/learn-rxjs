@@ -24,7 +24,8 @@ source!
 
 ##### Example 1: zip multiple observables emitting at alternate intervals
 
-( [jsBin](http://jsbin.com/lireyisira/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-wd2mba?file=index.ts) |
+[jsBin](http://jsbin.com/lireyisira/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ton462sg/) )
 
 ```js
@@ -49,7 +50,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: zip when 1 observable completes
 
-( [jsBin](http://jsbin.com/fisitatesa/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-q1sucs?file=index.ts) |
+[jsBin](http://jsbin.com/fisitatesa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/oamyk3xr/) )
 
 ```js

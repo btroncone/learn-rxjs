@@ -41,7 +41,8 @@ correct choice. In these cases you may better off with an operator like
 
 ##### Example 1: Observables completing after different durations
 
-( [jsBin](http://jsbin.com/remiduhimu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-2qr3qi?file=index.ts) |
+[jsBin](http://jsbin.com/remiduhimu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5fj77920/81/) )
 
 ```js
@@ -77,7 +78,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Making a variable number of requests
 
-( [jsBin](http://jsbin.com/febejakapi/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-uxbl41?file=index.ts) |
+[jsBin](http://jsbin.com/febejakapi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/0b8Lnh7s/1/) )
 
 ```js
@@ -108,7 +110,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: Handling errors on outside
 
-( [jsBin](http://jsbin.com/gugawucixi/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-3fgrkn?file=index.ts) |
+[jsBin](http://jsbin.com/gugawucixi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) )
 
 ```js
@@ -135,7 +138,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 4: Getting successful results when one innner observable errors
 
-( [jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-z2nedm?file=index.ts) |
+[jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) )
 
 ```js

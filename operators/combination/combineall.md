@@ -14,7 +14,8 @@
 
 ##### Example 1: Mapping to inner interval observable
 
-( [jsBin](http://jsbin.com/cokinogime/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-itxyuv?file=index.ts) |
+[jsBin](http://jsbin.com/cokinogime/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
 
 ```js
