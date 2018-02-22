@@ -99,7 +99,7 @@ export class NumberTrackerComponent implements OnDestroy {
             mapTo(this.positiveOrNegative(endRange, this.currentNumber)),
             startWith(this.currentNumber),
             scan((acc: number, curr: number) => acc + curr),
-            takeWhile(this.takeUntilFunc(endRange, this.currentNumber))
+            takeWhile(this.isApproachingRange(endRange, this.currentNumber))
           )
         }),
         takeUntil(this._onDestroy$)
@@ -111,7 +111,7 @@ export class NumberTrackerComponent implements OnDestroy {
     return endRange > currentNumber ? 1 : -1;
   }
 
-  private takeUntilFunc(endRange, currentNumber) {
+  private isApproachingRange(endRange, currentNumber) {
     return endRange > currentNumber
       ? val => val <= endRange
       : val => val >= endRange;
