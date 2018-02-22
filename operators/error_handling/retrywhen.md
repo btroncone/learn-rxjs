@@ -54,40 +54,46 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 2: Customizable retry with increased duration
 
 (
-[StackBlitz](https://stackblitz.com/edit/angular-r1x9p9?file=app%2Frxjs-utils.ts)
+[StackBlitz](https://stackblitz.com/edit/angular-cwnknr?file=app%2Frxjs-utils.ts)
 )
+
+_Credit to [Maxim Koretskyi](https://twitter.com/maxim_koretskyi) for the
+optimization_
 
 ```js
 import { Observable } from 'rxjs/Observable';
-import { range } from 'rxjs/observable/range';
 import { _throw } from 'rxjs/observable/throw';
 import { timer } from 'rxjs/observable/timer';
-import { mergeMap, zip } from 'rxjs/operators';
+import { mergeMap, finalize } from 'rxjs/operators';
 
 export const genericRetryStrategy = ({
-  retryAttempts = 3,
+  maxRetryAttempts = 3,
   scalingDuration = 1000,
   excludedStatusCodes = []
 }: {
-  retryAttempts?: number,
+  maxRetryAttempts?: number,
   scalingDuration?: number,
   excludedStatusCodes?: number[]
 } = {}) => (attempts: Observable<any>) => {
   return attempts.pipe(
-    zip(range(1, retryAttempts + 1)),
-    mergeMap(([error, i]) => {
+    mergeMap((error, i) => {
+      const retryAttempt = i + 1;
       // if maximum number of retries have been met
       // or response is a status code we don't wish to retry, throw error
       if (
-        i > retryAttempts ||
+        retryAttempt > maxRetryAttempts ||
         excludedStatusCodes.find(e => e === error.status)
       ) {
         return _throw(error);
       }
-      console.log(`Attempt ${i}: retrying in ${i * scalingDuration}ms`);
+      console.log(
+        `Attempt ${retryAttempt}: retrying in ${retryAttempt *
+          scalingDuration}ms`
+      );
       // retry after 1s, 2s, etc...
-      return timer(i * scalingDuration);
-    })
+      return timer(retryAttempt * scalingDuration);
+    }),
+    finalize(() => console.log('We are done!'))
   );
 };
 ```
