@@ -65,7 +65,16 @@ appropriate transition.
 
 #### Angular Version
 
+(
+[StackBlitz](https://stackblitz.com/edit/angular-gcnqlq?file=app%2Fnumber-tracker.component.ts)
+)
+
 ```js
+import { Component, Input, OnDestroy } from '@angular/core';
+import { Subject } from 'rxjs/Subject';
+import { timer } from 'rxjs/observable/timer';
+import { switchMap, startWith, scan, takeWhile, takeUntil, mapTo } from 'rxjs/operators';
+
 @Component({
   selector: 'number-tracker',
   template: `
@@ -77,6 +86,7 @@ export class NumberTrackerComponent implements OnDestroy {
   set end(endRange: number) {
     this._counterSub$.next(endRange);
   }
+  @Input() countInterval = 20;
   public currentNumber = 0;
   private _counterSub$ = new Subject();
   private _onDestroy$ = new Subject();
@@ -85,16 +95,16 @@ export class NumberTrackerComponent implements OnDestroy {
     this._counterSub$
       .pipe(
         switchMap(endRange => {
-          return timer(0, 20).pipe(
+          return timer(0, this.countInterval).pipe(
             mapTo(this.positiveOrNegative(endRange, this.currentNumber)),
             startWith(this.currentNumber),
-            scan((acc, curr) => acc + curr),
+            scan((acc: number, curr: number) => acc + curr),
             takeWhile(this.takeUntilFunc(endRange, this.currentNumber))
           )
         }),
         takeUntil(this._onDestroy$)
       )
-      .subscribe(val => this.currentNumber = val);
+      .subscribe((val: number) => this.currentNumber = val);
   }
 
   private positiveOrNegative(endRange, currentNumber) {
@@ -112,6 +122,21 @@ export class NumberTrackerComponent implements OnDestroy {
     this._onDestroy$.complete();
   }
 }
+```
+
+###### HTML
+
+```html
+<p>
+  <input type="number"
+    (keyup.enter)="counterNumber = vanillaInput.value"
+    #vanillaInput>
+  <button
+    (click)="counterNumber = vanillaInput.value">
+    Update number
+  </button>
+</p>
+<number-tracker [end]="counterNumber"></number-tracker>
 ```
 
 ### Operators Used
