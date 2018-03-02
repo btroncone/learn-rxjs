@@ -57,8 +57,10 @@ const secondInterval = interval(1000).pipe(take(2));
 
 const exhaustSub = firstInterval
   .pipe(
-    tap(i => console.log(`Emission of first interval: ${i}`)),
-    exhaustMap(f => secondInterval)
+    exhaustMap(f => {
+      console.log(`Emission Corrected of first interval: ${f}`);
+      return secondInterval;
+    })
   )
   /*
     When we subscribed to the first interval, it starts to emit a values (startinng 0).
