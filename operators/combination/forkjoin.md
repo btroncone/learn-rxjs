@@ -136,7 +136,7 @@ const example = forkJoin(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 4: Getting successful results when one innner observable errors
+##### Example 4: Getting successful results when one inner observable errors
 
 ( [StackBlitz](https://stackblitz.com/edit/typescript-z2nedm?file=index.ts) |
 [jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
