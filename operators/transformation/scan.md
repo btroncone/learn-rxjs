@@ -6,8 +6,8 @@
 
 ---
 
-:bulb: This operator is the core for many RxJS based
-[Redux](http://redux.js.org) implementations!
+:bulb: You can create [Redux](http://redux.js.org)-like state management with
+scan!
 
 ---
 
@@ -17,29 +17,24 @@
 
 ##### Example 1: Sum over time
 
-( [jsBin](http://jsbin.com/kozidakose/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/d2g2a2c6/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-jkisea?file=index.ts) )
 
 ```js
-import { Subject } from 'rxjs/Subject';
-import { startWith, scan } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+import { scan } from 'rxjs/operators';
 
-const subject = new Subject();
-//basic scan example, sum over time starting with zero
-const example = subject.pipe(startWith(0), scan((acc, curr) => acc + curr));
-//log accumulated values
-const subscribe = example.subscribe(val =>
-  console.log('Accumulated total:', val)
-);
-//next values into subject, adding to the current sum
-subject.next(1); //1
-subject.next(2); //3
-subject.next(3); //6
+const source = of(1, 2, 3);
+// basic scan example, sum over time starting with zero
+const example = source.pipe(scan((acc, curr) => acc + curr, 0));
+// log accumulated values
+// output: 1,3,6
+const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ##### Example 2: Accumulating an object
 
-( [jsBin](http://jsbin.com/fusunoguqu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-pjmrta?file=index.ts) |
+[jsBin](http://jsbin.com/fusunoguqu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/36rbu38b/) )
 
 ```js
@@ -56,15 +51,17 @@ const subscribe = example.subscribe(val =>
   console.log('Accumulated object:', val)
 );
 //next values into subject, adding properties to object
-subject.next({ name: 'Joe' }); // {name: 'Joe'}
-subject.next({ age: 30 }); // {name: 'Joe', age: 30}
-subject.next({ favoriteLanguage: 'JavaScript' }); // {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
+// {name: 'Joe'}
+subject.next({ name: 'Joe' });
+// {name: 'Joe', age: 30}
+subject.next({ age: 30 });
+// {name: 'Joe', age: 30, favoriteLanguage: 'JavaScript'}
+subject.next({ favoriteLanguage: 'JavaScript' });
 ```
 
 ##### Example 3: Emitting random values from the accumulated array.
 
-( [jsBin](http://jsbin.com/mudolideqo/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/afjgf4tz/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-sxhtbf?file=index.ts) )
 
 ```js
 import { interval } from 'rxjs/observable/interval';
@@ -73,7 +70,7 @@ import { scan, map, distinctUntilChanged } from 'rxjs/operators';
 // Accumulate values in an array, emit random values from this array.
 const scanObs = interval(1000)
   .pipe(
-    scan((a, c) => a.concat(c), []),
+    scan((a, c) => [...a, c], []),
     map(r => r[Math.floor(Math.random() * r.length)]),
     distinctUntilChanged()
   )

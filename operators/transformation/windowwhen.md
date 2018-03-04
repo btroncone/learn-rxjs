@@ -10,7 +10,8 @@
 
 ##### Example 1: Open and close window at interval
 
-( [jsBin](http://jsbin.com/tuhaposemo/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-bgpaoi?file=index.ts) |
+[jsBin](http://jsbin.com/tuhaposemo/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/gnx9fb3h/) )
 
 ```js
@@ -22,28 +23,30 @@ import { windowWhen, tap, mergeAll } from 'rxjs/operators';
 const source = timer(0, 1000);
 const example = source.pipe(
   //close window every 5s and emit observable of collected values from source
-  windowWhen(val => interval(5000)),
+  windowWhen(() => interval(5000)),
   tap(_ => console.log('NEW WINDOW!'))
 );
 
-const subscribeTwo = example.pipe(
-  //window emits nested observable
-  mergeAll()
-  /*
-  output:
-  "NEW WINDOW!"
-  0
-  1
-  2
-  3
-  4
-  "NEW WINDOW!"
-  5
-  6
-  7
-  8
-  9
-*/
+const subscribeTwo = example
+  .pipe(
+    //window emits nested observable
+    mergeAll()
+    /*
+      output:
+      "NEW WINDOW!"
+      0
+      1
+      2
+      3
+      4
+      "NEW WINDOW!"
+      5
+      6
+      7
+      8
+      9
+    */
+  )
   .subscribe(val => console.log(val));
 ```
 

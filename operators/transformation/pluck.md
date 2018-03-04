@@ -10,7 +10,8 @@
 
 ##### Example 1: Pluck object property
 
-( [jsBin](http://jsbin.com/zokaxiwahe/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-1pxyt1?file=index.ts) |
+[jsBin](http://jsbin.com/zokaxiwahe/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/58v9xq0f/) )
 
 ```js
@@ -26,7 +27,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Pluck nested properties
 
-( [jsBin](http://jsbin.com/joqesidugu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-ybhnsd?file=index.ts) |
+[jsBin](http://jsbin.com/joqesidugu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/n592m597/) )
 
 ```js

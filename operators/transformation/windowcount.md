@@ -10,7 +10,8 @@
 
 ##### Example 1: Start new window every x items emitted
 
-( [jsBin](http://jsbin.com/nezuvacexe/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-uhg3vb?file=index.ts) |
+[jsBin](http://jsbin.com/nezuvacexe/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/xjgbnqp5/) )
 
 ```js
@@ -30,18 +31,18 @@ const subscribeTwo = example
     //window emits nested observable
     mergeAll()
     /*
-        output:
-        "NEW WINDOW!"
-        0
-        1
-        2
-        3
-        "NEW WINDOW!"
-        4
-        5
-        6
-        7
-      */
+            output:
+            "NEW WINDOW!"
+            0
+            1
+            2
+            3
+            "NEW WINDOW!"
+            4
+            5
+            6
+            7
+          */
   )
   .subscribe(val => console.log(val));
 ```

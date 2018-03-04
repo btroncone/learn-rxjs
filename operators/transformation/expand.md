@@ -10,13 +10,14 @@
 
 ##### Example 1: Add one for each invocation
 
-( [jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-okxzcb?file=index.ts) |
+[jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
 
 ```js
 import { interval } from 'rxjs/observable/interval';
 import { of } from 'rxjs/observable/of';
-import { expand } from 'rxjs/operators';
+import { expand, take } from 'rxjs/operators';
 
 //emit 2
 const source = of(2);

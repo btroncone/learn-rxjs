@@ -8,7 +8,7 @@
 
 ##### Example 1: Buffer for 2 seconds
 
-( [jsBin](http://jsbin.com/bafakiyife/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-9dbkwq?file=index.ts) | [jsBin](http://jsbin.com/bafakiyife/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/vx7vwg01/) )
 
 ```js
@@ -25,7 +25,7 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 2: Multiple active buffers
 
-( [jsBin](http://jsbin.com/tadiwiniri/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-n9btgb?file=index.ts) | [jsBin](http://jsbin.com/tadiwiniri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/7k4ygj1x/) )
 
 ```js

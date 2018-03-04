@@ -8,26 +8,46 @@
 
 ### Examples
 
-##### Example 1: Map to inner observable
+##### Example 1: Demonstrating the difference between `concatMap` and [`mergeMap`](./mergemap.md)
 
-( [jsBin](http://jsbin.com/powivemaxu/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/y3yx666r/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-skud3w?file=index.ts) )
+
+:bulb: Note the difference between `concatMap` and [`mergeMap`](./mergemap.md).
+Because `concatMap` does not subscribe to the next observable until the previous
+completes, the value from the source delayed by 2000ms will be emitted first.
+Contrast this with [`mergeMap`](./mergemap.md) which subscribes immediately to
+inner observables, the observable with the lesser delay (1000ms) will emit,
+followed by the observable which takes 2000ms to complete.
 
 ```js
 import { of } from 'rxjs/observable/of';
-import { concatMap } from 'rxjs/operators';
+import { concatMap, delay, mergeMap } from 'rxjs/operators';
 
-//emit 'Hello' and 'Goodbye'
-const source = of('Hello', 'Goodbye');
+//emit delay value
+const source = of(2000, 1000);
 // map value from source into inner observable, when complete emit result and move to next
-const example = source.pipe(concatMap(val => of(`${val} World!`)));
-//output: 'Example One: 'Hello World', Example One: 'Goodbye World'
-const subscribe = example.subscribe(val => console.log('Example One:', val));
+const example = source.pipe(
+  concatMap(val => of(`Delayed by: ${val}ms`).pipe(delay(val)))
+);
+//output: With concatMap: Delayed by: 2000ms, With concatMap: Delayed by: 1000ms
+const subscribe = example.subscribe(val =>
+  console.log(`With concatMap: ${val}`)
+);
+
+// showing the difference between concatMap and mergeMap
+const mergeMapExample = source
+  .pipe(
+    // just so we can log this after the first example has run
+    delay(5000),
+    mergeMap(val => of(`Delayed by: ${val}ms`).pipe(delay(val)))
+  )
+  .subscribe(val => console.log(`With mergeMap: ${val}`));
 ```
 
 ##### Example 2: Map to promise
 
-( [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-svgsod?file=index.ts) |
+[jsBin](http://jsbin.com/celixodeba/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
 
 ```js
@@ -48,7 +68,8 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 3: Supplying a projection function
 
-( [jsBin](http://jsbin.com/vihacewozo/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-u6tie6?file=index.ts) |
+[jsBin](http://jsbin.com/vihacewozo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5sr5zzgy/) )
 
 ```js
@@ -61,39 +82,12 @@ const source = of('Hello', 'Goodbye');
 const examplePromise = val => new Promise(resolve => resolve(`${val} World!`));
 //result of first param passed to second param selector function before being  returned
 const example = source.pipe(
-  concatMap(
-    val => examplePromise(val),
-    result => `${result} w/ selector!`
-  )
+  concatMap(val => examplePromise(val), result => `${result} w/ selector!`)
 );
 //output: 'Example w/ Selector: 'Hello w/ Selector', Example w/ Selector: 'Goodbye w/ Selector'
 const subscribe = example.subscribe(val =>
   console.log('Example w/ Selector:', val)
 );
-```
-
-##### Example 4: Illustrating difference between concatMap and mergeMap
-
-( [jsBin](http://jsbin.com/kiwuvamafo/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/3xd74d89/) )
-
-```js
-import { of } from 'rxjs/observable/of';
-import { buffer } from 'rxjs/operators';
-
-const concatMapSub = of(2000, 1000)
-  .pipe(
-   concatMap(v => of(v).pipe(delay(v)))
-  )
-  // concatMap: 2000, concatMap: 1000
-  .subscribe(v => console.log('concatMap:', v));
-
-const mergeMapSub = of(2000, 1000)
-  .pipe(
-    mergeMap(v => of(v).pipe(delay(v)))
-  )
-  // mergeMap: 1000, mergeMap: 2000
-  .subscribe(v => console.log('mergeMap:', v));
 ```
 
 ### Additional Resources

@@ -10,7 +10,7 @@
 
 ##### Example 1: Emit buffer based on interval
 
-( [jsBin](http://jsbin.com/vugerupube/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-mn6za1?file=index.ts) | [jsBin](http://jsbin.com/vugerupube/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nr9agfuL/) )
 
 ```js

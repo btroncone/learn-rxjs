@@ -10,12 +10,13 @@
 
 ##### Example 1: Group by property
 
-( [jsBin](http://jsbin.com/buworowuye/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-j7mjt7?file=index.ts) |
+[jsBin](http://jsbin.com/buworowuye/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { groupBy, mergeMap } from 'rxjs/operators';
+import { groupBy, mergeMap, toArray } from 'rxjs/operators';
 
 const people = [
   { name: 'Sue', age: 25 },
@@ -29,7 +30,7 @@ const source = from(people);
 const example = source.pipe(
   groupBy(person => person.age),
   // return each item in group as array
-  mergeMap(group => group.toArray())
+  mergeMap(group => group.pipe(toArray()))
 );
 /*
   output:

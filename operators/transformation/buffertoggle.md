@@ -10,7 +10,7 @@
 
 ##### Example 1: Toggle buffer on and off at interval
 
-( [jsBin](http://jsbin.com/relavezugo/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-41puau?file=index.ts) | [jsBin](http://jsbin.com/relavezugo/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/6ad3w3wf/) )
 
 ```js

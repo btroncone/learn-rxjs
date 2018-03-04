@@ -8,25 +8,29 @@
 
 ### Examples
 
-##### Example 1: Map to basic observable
+##### Example 1: Map to basic observable (simulating request)
 
-( [jsBin](http://jsbin.com/telovuhupa/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/La0bam0u/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-fkkh6c?file=index.ts) )
 
 ```js
+import { of } from 'rxjs/observable/of';
+import { interval } from 'rxjs/observable/interval';
+import { concatMapTo, delay, take } from 'rxjs/operators';
+
 //emit value every 2 seconds
-const interval = Rx.Observable.interval(2000);
-const message = Rx.Observable.of('Second(s) elapsed!');
-//when interval emits, subscribe to message until complete, merge for result
-const example = interval.concatMapTo(message, (time, msg) => `${time} ${msg}`);
-//log values
-//output: '0 Second(s) elapsed', '1 Second(s) elapsed'
+const sampleInterval = interval(500).pipe(take(5));
+const fakeRequest = of('Network request complete').pipe(delay(3000));
+//wait for first to complete before next is subscribed
+const example = sampleInterval.pipe(concatMapTo(fakeRequest));
+//result
+//output: Network request complete...3s...Network request complete'
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: Map to observable that emits at slower pace
+##### Example 2: Using projection with `concatMap`
 
-( [jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-4udcui?file=index.ts) |
+[jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/s19wtscb/) )
 
 ```js
@@ -41,7 +45,7 @@ const source = interval(1000).pipe(take(5));
   than the inner observable completes, memory issues can arise.
   (interval emits every 1 second, basicTimer completes every 5)
 */
-//basicTimer will complete after 5 seconds, emitting 0,1,2,3,4
+// basicTimer will complete after 5 seconds, emitting 0,1,2,3,4
 const example = interval.pipe(
   concatMapTo(
     source,

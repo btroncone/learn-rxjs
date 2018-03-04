@@ -10,14 +10,17 @@
 
 ##### Example 1: Collect buffer and emit after specified number of values
 
-( [jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-8qxfpn?file=index.ts) | [jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
 
 ```js
+import { interval } from 'rxjs/observable/interval';
+import { bufferCount } from 'rxjs/operators';
+
 //Create an observable that emits a value every second
-const source = Rx.Observable.interval(1000);
+const source = interval(1000);
 //After three values are emitted, pass on as an array of buffered values
-const bufferThree = source.bufferCount(3);
+const bufferThree = source.pipe(bufferCount(3));
 //Print values to console
 //ex. output [0,1,2]...[3,4,5]
 const subscribe = bufferThree.subscribe(val =>
@@ -27,7 +30,7 @@ const subscribe = bufferThree.subscribe(val =>
 
 ##### Example 2: Overlapping buffers
 
-( [jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-1otlmo?file=index.ts) | [jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/3c67qcz1/) )
 
 ```js

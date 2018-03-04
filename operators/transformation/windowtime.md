@@ -10,7 +10,8 @@
 
 ##### Example 1: Open new window every specified duration
 
-( [jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-vkkkef?file=index.ts) |
+[jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/g04b3qeb/) )
 
 ```js
@@ -30,16 +31,16 @@ const subscribeTwo = example
     //window emits nested observable
     mergeAll()
     /*
-        output:
-        "NEW WINDOW!"
-        0
-        1
-        2
-        "NEW WINDOW!"
-        3
-        4
-        5
-      */
+            output:
+            "NEW WINDOW!"
+            0
+            1
+            2
+            "NEW WINDOW!"
+            3
+            4
+            5
+          */
   )
   .subscribe(val => console.log(val));
 ```

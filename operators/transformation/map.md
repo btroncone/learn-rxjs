@@ -10,7 +10,8 @@
 
 ##### Example 1: Add 10 to each number
 
-( [jsBin](http://jsbin.com/padasukano/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-s7jb9n?file=index.ts) |
+[jsBin](http://jsbin.com/padasukano/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/yd38awLa/) )
 
 ```js
@@ -27,7 +28,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Map to single property
 
-( [jsBin](http://jsbin.com/detozumale/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-6ynh1a?file=index.ts) |
+[jsBin](http://jsbin.com/detozumale/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/tdLd5tgc/) )
 
 ```js
@@ -40,8 +42,8 @@ const source = from([
   { name: 'Frank', age: 20 },
   { name: 'Ryan', age: 50 }
 ]);
-//grab each persons name
-const example = source.pipe(map(person => person.name));
+//grab each persons name, could also use pluck for this scenario
+const example = source.pipe(map(({ name }) => name));
 //output: "Joe","Frank","Ryan"
 const subscribe = example.subscribe(val => console.log(val));
 ```

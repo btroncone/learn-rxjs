@@ -10,7 +10,8 @@
 
 ##### Example 1: Split even and odd numbers
 
-( [jsBin](http://jsbin.com/hipehexaku/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-kyndxr?file=index.ts) |
+[jsBin](http://jsbin.com/hipehexaku/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) )
 
 ```js
@@ -37,12 +38,13 @@ const subscribe = merge(
 
 ##### Example 2: Split success and errors
 
-( [jsBin](http://jsbin.com/kukuguhuri/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-hiqolh?file=index.ts) |
+[jsBin](http://jsbin.com/kukuguhuri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/fe246u5p/) )
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { of } from 'rxjs/observable/from';
+import { of } from 'rxjs/observable/of';
 import { merge } from 'rxjs/observable/merge';
 import { map, partition, catchError } from 'rxjs/operators';
 

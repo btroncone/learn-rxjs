@@ -8,7 +8,8 @@
 
 ##### Example 1: Open window specified by inner observable
 
-( [jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-qt3rbn?file=index.ts) |
+[jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/rmgghg6d/) )
 
 ```js

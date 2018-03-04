@@ -16,7 +16,8 @@
 
 ##### Example 1: Sum a stream of numbers
 
-( [jsBin](http://jsbin.com/dakuneneho/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-bbmye7?file=index.ts) |
+[jsBin](http://jsbin.com/dakuneneho/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/f8fw7yka/) )
 
 ```js
