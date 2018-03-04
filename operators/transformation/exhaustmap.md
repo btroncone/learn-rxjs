@@ -31,16 +31,16 @@ const exhaustSub = merge(
 )
   .pipe(exhaustMap(_ => sourceInterval.pipe(take(5))))
   /*
-               *  The first emitted value (of(true)) will be mapped
-               *  to an interval observable emitting 1 value every
-               *  second, completing after 5.
-               *  Because the emissions from the delayed interval
-               *  fall while this observable is still active they will be ignored.
-               *
-               *  Contrast this with concatMap which would queue,
-               *  switchMap which would switch to a new inner observable each emission,
-               *  and mergeMap which would maintain a new subscription for each emitted value.
-               */
+                 *  The first emitted value (of(true)) will be mapped
+                 *  to an interval observable emitting 1 value every
+                 *  second, completing after 5.
+                 *  Because the emissions from the delayed interval
+                 *  fall while this observable is still active they will be ignored.
+                 *
+                 *  Contrast this with concatMap which would queue,
+                 *  switchMap which would switch to a new inner observable each emission,
+                 *  and mergeMap which would maintain a new subscription for each emitted value.
+                 */
   // output: 0, 1, 2, 3, 4
   .subscribe(val => console.log(val));
 ```
@@ -66,31 +66,31 @@ const exhaustSub = firstInterval
     })
   )
   /*
-              When we subscribed to the first interval, it starts to emit a values (starting 0).
-              This value is mapped to the second interval which then begins to emit (starting 0).  
-              While the second interval is active, values from the first interval are ignored.
-              We can see this when firstInterval emits number 3,6, and so on...
+                When we subscribed to the first interval, it starts to emit a values (starting 0).
+                This value is mapped to the second interval which then begins to emit (starting 0).  
+                While the second interval is active, values from the first interval are ignored.
+                We can see this when firstInterval emits number 3,6, and so on...
 
-                Output:
-                Emission of first interval: 0
-                0
-                1
-                Emission of first interval: 3
-                0
-                1
-                Emission of first interval: 6
-                0
-                1
-                Emission of first interval: 9
-                0
-                1
-            */
+                  Output:
+                  Emission of first interval: 0
+                  0
+                  1
+                  Emission of first interval: 3
+                  0
+                  1
+                  Emission of first interval: 6
+                  0
+                  1
+                  Emission of first interval: 9
+                  0
+                  1
+              */
   .subscribe(s => console.log(s));
 ```
 
 ### Outside Examples
 
-#### `exhaustMap` for login effect in [@ngrx example app](https://github.com/ngrx/platform/tree/a9e522953832b09bb329bac4524637bc608c450a/example-app)
+##### `exhaustMap` for login effect in [@ngrx example app](https://github.com/ngrx/platform/tree/a9e522953832b09bb329bac4524637bc608c450a/example-app)
 
 (
 [Source](https://github.com/ngrx/platform/blob/a9e522953832b09bb329bac4524637bc608c450a/example-app/app/auth/effects/auth.effects.ts#L18-L30)
