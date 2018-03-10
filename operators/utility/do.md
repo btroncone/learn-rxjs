@@ -1,4 +1,4 @@
-# do
+# do / tap
 
 #### signature: `do(nextOrObserver: function, error: function, complete: function): Observable`
 
