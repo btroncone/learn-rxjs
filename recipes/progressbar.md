@@ -13,7 +13,7 @@ array of results, utilizing the
 ### Example Code
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-5-progress-bar-zubdxz?file=index.ts)
+[StackBlitz](https://stackblitz.com/edit/rxjs-5-progress-bar-x33rrw?file=index.ts)
 )
 
 ```js
@@ -21,9 +21,9 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { empty } from 'rxjs/observable/empty';
 import { fromEvent } from 'rxjs/observable/fromEvent';
-import { delay, concat, tap, switchMap, bufferCount } from 'rxjs/operators';
+import { from } from 'rxjs/observable/from';
+import { delay, concat, concatMapTo, tap, switchMapTo, bufferCount, concatAll, count, scan, withLatestFrom, share } from 'rxjs/operators';
 
-// simulate variable length requests
 const requestOne: Observable<string> = of('first').pipe(delay(500));
 const requestTwo: Observable<string> = of('second').pipe(delay(800));
 const requestThree: Observable<string> = of('third').pipe(delay(1100));
@@ -48,6 +48,12 @@ const updateProgress = progressRatio => {
 const updateContent = newContent => {
   content.innerHTML += newContent;
 };
+
+const displayData = data => {
+  updateContent(`<div class="content-item">${data}</div>`);
+  console.log('ALL THE RESULTS: ', data);
+}
+
 // simulate 5 seperate requests that complete at variable length
 const observables: Array<Observable<string>> = [
   requestOne,
@@ -56,26 +62,30 @@ const observables: Array<Observable<string>> = [
   requestFour,
   requestFive
 ];
-let count: number = 0;
 
-fromEvent(loadButton, 'click')
-  .pipe(
-    tap(_ => {
-      count = 0;
-      updateProgress(count);
-    }),
-    switchMap(_ => empty().pipe(concat(...observables))),
-    tap(data => {
-      count++;
-      updateProgress(count / observables.length);
-      updateContent(`<div class="content-item">${data}</div>`);
-    }),
-    // emit results as array on completion
-    bufferCount(observables.length)
-  )
-  .subscribe(results => {
-    console.log('ALL THE RESULTS: ', results);
-  });
+const array$ = from(observables);
+const requests$ = array$.pipe(concatAll());
+const clicks$ = fromEvent(loadButton, 'click');
+
+const progress$ = clicks$
+.pipe(
+  switchMapTo(requests$),
+  share()
+)
+
+const count$ = array$.pipe(count())
+
+const ratio$ = progress$
+.pipe(
+  scan(current => current + 1, 0),
+  withLatestFrom(count$, (current, count) => current / count)
+)
+
+clicks$
+  .pipe(switchMapTo(ratio$))
+  .subscribe(updateProgress)
+
+progress$.subscribe(displayData);
 ```
 
 ##### html
@@ -93,6 +103,8 @@ Load Data
 
 </div>
 ```
+
+_Thanks to [@johnlinquist](https://twitter.com/johnlindquist) for the additional help with example!_
 
 ### Operators Used
 
