@@ -29,12 +29,16 @@ const example = source.pipe(
   tap(val => console.log(`BEFORE MAP: ${val}`)),
   map(val => val + 10),
   tap(val => console.log(`AFTER MAP: ${val}`))
-)
-  
+);
+
 //'do' does not transform values
 //output: 11...12...13...14...15
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
+### Related Recipes
+
+* [Progress Bar](../../recipes/progressbar.md)
 
 ### Additional Resources
 
