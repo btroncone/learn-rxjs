@@ -78,6 +78,8 @@ fromEvent(loadButton, 'click')
   });
 ```
 
+##### html
+
 ```html
 <div class="progress-container">
   <div class="progress" id="progress"></div>
