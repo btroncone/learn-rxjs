@@ -91,6 +91,6 @@
   * [Full Listing](/operators/complete.md)
 * [Recipes](/recipes/README.md)
   * [Smart Counter](/recipes/smartcounter.md)
-  * [Smart Counter](/recipes/progressbar.md)
+  * [Progress Bar](/recipes/progressbar.md)
 * [Concepts](/concepts/README.md)
   * [Understanding Operator Imports](/concepts/operator-imports.md)
