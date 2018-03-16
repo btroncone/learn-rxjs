@@ -84,7 +84,7 @@ const ratio$ = progress$.pipe(
 
 clicks$.pipe(switchMapTo(ratio$)).subscribe(updateProgress);
 
-progress$.bufferCount(observables.length).subscribe(displayData);
+progress$.subscribe(displayData);
 ```
 
 ##### html
