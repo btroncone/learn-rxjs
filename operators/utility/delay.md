@@ -31,6 +31,10 @@ const message = merge(
 const subscribe = message.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+* [Progress Bar](../../recipes/progressbar.md)
+
 ### Additional Resources
 
 * [delay](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delay)
