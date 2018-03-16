@@ -57,7 +57,6 @@ const updateContent = newContent => {
 
 const displayData = data => {
   updateContent(`<div class="content-item">${data}</div>`);
-  console.log('ALL THE RESULTS: ', data);
 };
 
 // simulate 5 seperate requests that complete at variable length
