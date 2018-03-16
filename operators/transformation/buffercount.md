@@ -10,7 +10,8 @@
 
 ##### Example 1: Collect buffer and emit after specified number of values
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-8qxfpn?file=index.ts) | [jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-8qxfpn?file=index.ts) |
+[jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
 
 ```js
@@ -30,7 +31,8 @@ const subscribe = bufferThree.subscribe(val =>
 
 ##### Example 2: Overlapping buffers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-1otlmo?file=index.ts) | [jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-1otlmo?file=index.ts) |
+[jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/3c67qcz1/) )
 
 ```js
@@ -62,6 +64,10 @@ const subscribe = bufferEveryOne.subscribe(val =>
   console.log('Start Buffer Every 1:', val)
 );
 ```
+
+### Related Recipes
+
+* [Progress Bar](../../recipes/progressbar.md)
 
 ### Additional Resources
 

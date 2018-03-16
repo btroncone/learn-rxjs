@@ -166,6 +166,7 @@ Resume Timer
 ### Related Recipes
 
 * [Smart Counter](../../recipes/smartcounter.md)
+* [Progress Bar](../../recipes/progressbar.md)
 
 ### Additional Resources
 
