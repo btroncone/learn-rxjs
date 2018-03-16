@@ -70,7 +70,7 @@ fromEvent(loadButton, 'click')
       updateProgress(count / observables.length);
       updateContent(`<div class="content-item">${data}</div>`);
     }),
-    // emit results as array completion
+    // emit results as array on completion
     bufferCount(observables.length)
   )
   .subscribe(results => {
