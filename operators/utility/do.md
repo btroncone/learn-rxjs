@@ -36,10 +36,6 @@ const example = source.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Related Recipes
-
-* [Progress Bar](../../recipes/progressbar.md)
-
 ### Additional Resources
 
 * [do](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/do.ts)

@@ -65,10 +65,6 @@ const subscribe = bufferEveryOne.subscribe(val =>
 );
 ```
 
-### Related Recipes
-
-* [Progress Bar](../../recipes/progressbar.md)
-
 ### Additional Resources
 
 * [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount)

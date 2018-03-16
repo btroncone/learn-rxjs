@@ -55,6 +55,10 @@ const subscribeThree = sharedExample.subscribe(val => console.log(val));
 const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+* [Progress Bar](../../recipes/progressbar.md)
+
 ### Additional Resources
 
 * [share](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-share)

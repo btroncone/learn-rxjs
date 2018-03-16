@@ -104,6 +104,10 @@ const example = source.pipe(concatAll());
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+* [Progress Bar](../../recipes/progressbar.md)
+
 ### Additional Resources
 
 * [concatAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll)

@@ -78,6 +78,10 @@ const source = from('Hello World');
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+* [Progress Bar](../../recipes/progressbar.md)
+
 ### Additional Resources
 
 * [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from)
