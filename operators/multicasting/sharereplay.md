@@ -1,6 +1,6 @@
 # shareReplay
 
-#### signature: `share(bufferSize?: number, windowTime?: number, scheduler?I IScheduler): Observable`
+#### signature: `shareReplay(bufferSize?: number, windowTime?: number, scheduler?I IScheduler): Observable`
 
 ## Share source and replay specified number of emissions on subscription.
 
@@ -152,10 +152,10 @@ const routeEnd = new Subject<{data: any, url: string}>();
 const lastUrl = routeEnd.pipe(
   tap(_ => console.log('executed')),
   pluck('url'),
-  shareReplay(1)
+  // defaults to last 1 value
+  shareReplay()
 );
 // requires initial subscription
-// logged: 'executed'
 const initialSubscriber = lastUrl.subscribe(console.log)
 // simulate route change
 // logged: 'executed', 'my-path'
