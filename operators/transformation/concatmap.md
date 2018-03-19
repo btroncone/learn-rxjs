@@ -100,4 +100,4 @@ const subscribe = example.subscribe(val =>
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/concatMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/concatMap.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concatMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concatMap.ts)

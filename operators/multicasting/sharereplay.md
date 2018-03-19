@@ -172,4 +172,4 @@ const lateSubscriber = lastUrl.subscribe(console.log);
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/shareReplay.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/shareReplay.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/shareReplay.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/shareReplay.ts)

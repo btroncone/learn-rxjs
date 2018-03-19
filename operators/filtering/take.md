@@ -98,4 +98,4 @@ const subscribe = oneClickEvent.subscribe();
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/take.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts)

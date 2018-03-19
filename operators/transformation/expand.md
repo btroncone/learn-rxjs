@@ -56,4 +56,4 @@ const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/expand.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/expand.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/expand.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/expand.ts)
