@@ -152,7 +152,8 @@ const routeEnd = new Subject<{data: any, url: string}>();
 const lastUrl = routeEnd.pipe(
   tap(_ => console.log('executed')),
   pluck('url'),
-  shareReplay(1)
+  // defaults to last 1 value
+  shareReplay()
 );
 // requires initial subscription
 const initialSubscriber = lastUrl.subscribe(console.log)
