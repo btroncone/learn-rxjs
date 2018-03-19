@@ -92,5 +92,6 @@
 * [Recipes](/recipes/README.md)
   * [Smart Counter](/recipes/smartcounter.md)
   * [Progress Bar](/recipes/progressbar.md)
+  * [Game Loop](/recipes/gameloop.md)
 * [Concepts](/concepts/README.md)
   * [Understanding Operator Imports](/concepts/operator-imports.md)
