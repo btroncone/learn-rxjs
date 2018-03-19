@@ -1,6 +1,6 @@
 # shareReplay
 
-#### signature: `share(bufferSize?: number, windowTime?: number, scheduler?I IScheduler): Observable`
+#### signature: `shareReplay(bufferSize?: number, windowTime?: number, scheduler?I IScheduler): Observable`
 
 ## Share source and replay specified number of emissions on subscription.
 
