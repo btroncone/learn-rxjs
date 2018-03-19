@@ -150,4 +150,4 @@ export class AppComponent implements OnInit  {
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/retryWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/retryWhen.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/retryWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/retryWhen.ts)

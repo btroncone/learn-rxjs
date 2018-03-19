@@ -166,4 +166,4 @@ const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/combineLatest.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/combineLatest.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineLatest.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineLatest.ts)

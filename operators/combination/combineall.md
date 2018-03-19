@@ -57,4 +57,4 @@ const subscribe = combined.subscribe(val => console.log(val));
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/combineAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/combineAll.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineAll.ts)

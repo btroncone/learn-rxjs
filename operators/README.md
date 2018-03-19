@@ -59,6 +59,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   * [multicast](multicasting/multicast.md)
   * [publish](multicasting/publish.md)
   * [share](multicasting/share.md) :star:
+  * [shareReplay](multicasting/sharereplay.md) :star:
 * [Transformation](transformation/README.md)
   * [buffer](transformation/buffer.md)
   * [bufferCount](transformation/buffercount.md)

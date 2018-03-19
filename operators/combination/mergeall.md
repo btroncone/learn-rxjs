@@ -85,4 +85,4 @@ const example = source
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/patching/operator/mergeAll.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeAll.ts)

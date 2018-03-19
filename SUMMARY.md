@@ -38,6 +38,7 @@
     * [publish](/operators/multicasting/publish.md)
     * [multicast](/operators/multicasting/multicast.md)
     * [share](/operators/multicasting/share.md)
+    * [shareReplay](/operators/multicasting/sharereplay.md)
   * [Filtering](/operators/filtering/README.md)
     * [debounce](/operators/filtering/debounce.md)
     * [debounceTime](/operators/filtering/debouncetime.md)
