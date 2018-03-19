@@ -29,6 +29,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 * [Smart Counter](../../recipes/smartcounter.md)
 * [Progress Bar](../../recipes/progressbar.md)
+* [Game Loop](../../recipes/gameloop.md)
 
 ### Additional Resources
 

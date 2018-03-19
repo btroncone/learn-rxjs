@@ -58,6 +58,7 @@ const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ### Related Recipes
 
 * [Progress Bar](../../recipes/progressbar.md)
+* [Game Loop](../../recipes/gameloop.md)
 
 ### Additional Resources
 

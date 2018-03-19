@@ -51,6 +51,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 * [Smart Counter](../../recipes/smartcounter.md)
+* [Game Loop](../../recipes/gameloop.md)
 
 ### Additional Resources
 

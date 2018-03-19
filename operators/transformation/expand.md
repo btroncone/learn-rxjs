@@ -48,6 +48,10 @@ const example = source.pipe(
 const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ```
 
+### Related Recipes
+
+* [Game Loop](../../recipes/gameloop.md)
+
 ### Additional Resources
 
 * [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand)

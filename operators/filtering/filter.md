@@ -71,6 +71,10 @@ const subscribe = example.subscribe(val =>
 );
 ```
 
+### Related Recipes
+
+* [Game Loop](../../recipes/gameloop.md)
+
 ### Additional Resources
 
 * [filter](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter)
