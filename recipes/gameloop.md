@@ -264,4 +264,5 @@ frames$
 * [fromEvent](../operators/creation/fromevent.md)
 * [map](../operators/transformation/map.md)
 * [share](../operators/multicasting/share.md)
+* [tap](../operators/utility/do.md)
 * [withLatestFrom](../operators/transformation/withlatestfrom.md)
