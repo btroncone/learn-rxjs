@@ -155,7 +155,6 @@ const lastUrl = routeEnd.pipe(
   shareReplay(1)
 );
 // requires initial subscription
-// logged: 'executed'
 const initialSubscriber = lastUrl.subscribe(console.log)
 // simulate route change
 // logged: 'executed', 'my-path'
