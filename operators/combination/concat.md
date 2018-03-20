@@ -11,7 +11,7 @@
 
 :bulb: This operator can be used as either a static or instance method!
 
-:bulb: If throughput, not order, is not a primary concern, try [merge](merge.md)
+:bulb: If throughput, not order, is a primary concern, try [merge](merge.md)
 instead!
 
 ---
