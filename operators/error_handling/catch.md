@@ -42,7 +42,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ```js
 import { timer } from 'rxjs/observable/timer';
 import { fromPromise } from 'rxjs/observable/timer';
-import { of } from 'rxjs/observable/timer';
+import { of } from 'rxjs/observable/of';
 import { mergeMap, catchError } from 'rxjs/operators';
 
 //create promise that immediately rejects
