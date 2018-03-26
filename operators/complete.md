@@ -59,7 +59,7 @@ _[Prefer a split by operator type?](README.md)_
 * [sample](filtering/sample.md)
 * [scan](transformation/scan.md) :star:
 * [share](multicasting/share.md) :star:
-* [share](multicasting/sharereplay.md) :star:
+* [shareReplay](multicasting/sharereplay.md) :star:
 * [single](filtering/single.md)
 * [skip](filtering/skip.md)
 * [skipUntil](filtering/skipuntil.md)
