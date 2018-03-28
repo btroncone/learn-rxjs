@@ -119,9 +119,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 4: Countdown timer with switchMap
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-ed2iet?file=index.ts) |
-[jsBin](http://jsbin.com/devedeqiga/edit?js,output) |
-[jsFiddle](https://jsfiddle.net/btroncone/ww7zg988/189/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-ur5svp?file=index.ts) )
 
 ```js
 import { interval } from 'rxjs/observable/interval';
@@ -141,7 +139,7 @@ const resume$ = fromEvent(resumeButton, 'click').pipe(mapTo(true));
 
 const timer$ = merge(pause$, resume$)
   .pipe(
-    startWith(interval$),
+    startWith(true),
     switchMap(val => (val ? interval$ : empty())),
     scan((acc, curr) => (curr ? curr + acc : acc), countdownSeconds),
     takeWhile(v => v >= 0)
@@ -172,6 +170,7 @@ Resume Timer
 
 * [switchMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap)
   :newspaper: - Official docs
+* [Avoiding switchMap-Related Bugs](https://blog.angularindepth.com/switchmap-bugs-b6de69155524) - Nicholas Jamieson
 * [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
 * [Use RxJS switchMap to map and flatten higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-switchmap-to-map-and-flatten-higher-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
