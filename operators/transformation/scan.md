@@ -17,7 +17,7 @@ scan!
 
 ##### Example 1: Sum over time
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-jkisea?file=index.ts) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-jkisea?file=index.ts&devtoolsheight=50) )
 
 ```js
 import { of } from 'rxjs/observable/of';
@@ -33,7 +33,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Accumulating an object
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-pjmrta?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-pjmrta?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/fusunoguqu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/36rbu38b/) )
 
@@ -61,7 +61,7 @@ subject.next({ favoriteLanguage: 'JavaScript' });
 
 ##### Example 3: Emitting random values from the accumulated array.
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-sxhtbf?file=index.ts) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-sxhtbf?file=index.ts&devtoolsheight=50) )
 
 ```js
 import { interval } from 'rxjs/observable/interval';

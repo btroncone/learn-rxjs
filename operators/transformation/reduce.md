@@ -16,7 +16,7 @@
 
 ##### Example 1: Sum a stream of numbers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-bbmye7?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-bbmye7?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/dakuneneho/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/f8fw7yka/) )
 

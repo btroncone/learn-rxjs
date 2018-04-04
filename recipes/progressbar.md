@@ -11,7 +11,7 @@ completes.
 ### Example Code
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-5-progress-bar-x33rrw?file=index.ts)
+[StackBlitz](https://stackblitz.com/edit/rxjs-5-progress-bar-x33rrw?file=index.ts&devtoolsheight=50)
 )
 
 ```js

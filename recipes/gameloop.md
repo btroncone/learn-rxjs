@@ -9,7 +9,7 @@ This recipe demonstrates one way you might create a Game Loop as a combined set 
 ### Example Code
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-5-based-game-loop?file=index.ts)
+[StackBlitz](https://stackblitz.com/edit/rxjs-5-based-game-loop?file=index.ts&devtoolsheight=50)
 )
 
 

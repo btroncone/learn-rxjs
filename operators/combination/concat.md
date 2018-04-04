@@ -26,7 +26,7 @@ instead!
 
 ##### Example 1: concat 2 basic observables
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-oqm79a?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-oqm79a?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/gegubutele/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) )
 
@@ -48,7 +48,7 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 2: concat as static method
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-oqtzx7?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-oqtzx7?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/xihagewune/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5qdtvhu8/) )
 
@@ -69,7 +69,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: concat with delayed source
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-rkvfgp?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-rkvfgp?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/nezonosubi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/L2s49msx/) )
 
@@ -94,7 +94,7 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 4: concat with source that does not complete
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-pccj1d?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-pccj1d?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/vixajoxaze/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/4bhtb81u/) )
 

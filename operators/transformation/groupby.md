@@ -10,7 +10,7 @@
 
 ##### Example 1: Group by property
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-j7mjt7?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-j7mjt7?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/buworowuye/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
 

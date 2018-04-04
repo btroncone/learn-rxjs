@@ -17,7 +17,7 @@ emits, try [combinelatest](combinelatest.md)!
 
 ##### Example 1: Latest value from quicker second source
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-sekrr5?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-sekrr5?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/fitekeseru/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) )
 
@@ -46,7 +46,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Slower second source
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-unq2gn?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-unq2gn?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/vujekucuxa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/bywLL579/) )
 

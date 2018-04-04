@@ -43,7 +43,7 @@ is likely a better option.
 
 ##### Example 1: Combining observables emitting at 3 intervals
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-wmfmtv?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-wmfmtv?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) )
 
@@ -80,7 +80,7 @@ const subscribe = combined.subscribe(
 
 ##### Example 2: combineLatest with projection function
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-fcmjfl?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-fcmjfl?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/codotapula/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) )
 
@@ -114,7 +114,7 @@ const subscribe = combinedProject.subscribe(latestValuesProject =>
 
 ##### Example 3: Combining events from 2 buttons
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-sfbopd?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-sfbopd?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) )
 

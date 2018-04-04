@@ -10,7 +10,7 @@
 
 ##### Example 1: Start new window every x items emitted
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-uhg3vb?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-uhg3vb?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/nezuvacexe/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/xjgbnqp5/) )
 

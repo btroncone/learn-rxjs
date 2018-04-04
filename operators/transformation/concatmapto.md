@@ -10,7 +10,7 @@
 
 ##### Example 1: Map to basic observable (simulating request)
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-fkkh6c?file=index.ts) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-fkkh6c?file=index.ts&devtoolsheight=50) )
 
 ```js
 import { of } from 'rxjs/observable/of';
@@ -29,7 +29,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Using projection with `concatMap`
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-4udcui?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-4udcui?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/s19wtscb/) )
 

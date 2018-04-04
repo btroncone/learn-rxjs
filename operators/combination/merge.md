@@ -19,7 +19,7 @@ instead!
 
 ##### Example 1: merging multiple observables, static method
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-rkpu4e?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-rkpu4e?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/conufujapi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
 
@@ -50,7 +50,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: merge 2 observables, instance method
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-nq3sfo?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-nq3sfo?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/me5ofcr0/) )
 

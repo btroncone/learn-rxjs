@@ -10,7 +10,7 @@
 
 ##### Example 1: Add one for each invocation
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-okxzcb?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-okxzcb?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
 

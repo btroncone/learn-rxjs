@@ -10,7 +10,7 @@
 
 ##### Example 1: Open and close window at interval
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-bgpaoi?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-bgpaoi?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/tuhaposemo/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/gnx9fb3h/) )
 

@@ -10,7 +10,7 @@
 
 ##### Example 1: Collect buffer and emit after specified number of values
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-8qxfpn?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-8qxfpn?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/suveqaromu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
 
@@ -31,7 +31,7 @@ const subscribe = bufferThree.subscribe(val =>
 
 ##### Example 2: Overlapping buffers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-1otlmo?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-1otlmo?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/kiloxiraya/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/3c67qcz1/) )
 

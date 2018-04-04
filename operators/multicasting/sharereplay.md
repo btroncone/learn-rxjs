@@ -139,7 +139,7 @@ source, sending values through an internal `ReplaySubject`:
 
 ##### Example 1: Multiple subscribers sharing source
 
-( [Stackblitz](https://stackblitz.com/edit/typescript-qfhryg?file=index.ts) )
+( [Stackblitz](https://stackblitz.com/edit/typescript-qfhryg?file=index.ts&devtoolsheight=50) )
 
 ```js
 import { Subject } from 'rxjs/Subject';

@@ -10,7 +10,7 @@
 
 ##### Example 1: Split even and odd numbers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-kyndxr?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-kyndxr?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/hipehexaku/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) )
 
@@ -38,7 +38,7 @@ const subscribe = merge(
 
 ##### Example 2: Split success and errors
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-hiqolh?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-hiqolh?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/kukuguhuri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/fe246u5p/) )
 

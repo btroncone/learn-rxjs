@@ -10,7 +10,7 @@
 
 ##### Example 1: race with 4 observables
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-cuzgkn?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-cuzgkn?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 
@@ -36,7 +36,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: race with an error
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-ptcwjp?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-ptcwjp?file=index.ts&devtoolsheight=50) |
 [jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
 
 ```js

@@ -22,7 +22,7 @@ can also start with an initial value!
 
 ##### Example 1: startWith on number sequence
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-e4fhpw?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-e4fhpw?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/lezuravizu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/e8dn3ggp/) )
 
@@ -40,7 +40,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: startWith for initial scan value
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-a6k8a8?file=index.ts) | |
+( [StackBlitz](https://stackblitz.com/edit/typescript-a6k8a8?file=index.ts&devtoolsheight=50) | |
 [jsBin](http://jsbin.com/gemevuzoha/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/54r3g83e/) )
 
@@ -67,7 +67,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: startWith multiple values
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qyxyhu?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-qyxyhu?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/cumupemuxa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ckcyj3ms/) )
 

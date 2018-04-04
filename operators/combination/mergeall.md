@@ -21,7 +21,7 @@ single operator instead!
 
 ##### Example 1: mergeAll with promises
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-w2kazd?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-w2kazd?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) )
 
@@ -52,7 +52,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: mergeAll with _concurrent_ parameter
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qbxs2y?file=index.ts) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-qbxs2y?file=index.ts&devtoolsheight=50) |
 [jsFiddle](https://jsfiddle.net/zra3zxhs/) )
 
 ```js
