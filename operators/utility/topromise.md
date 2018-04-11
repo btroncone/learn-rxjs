@@ -42,6 +42,7 @@ const sample = val => of(val).pipe(delay(5000));
 /*
   convert each to promise and use Promise.all
   to wait for all to resolve
+  (you should probably use forkJoin and no 'toPromise' instead!)
 */
 const example = () => {
   return Promise.all([

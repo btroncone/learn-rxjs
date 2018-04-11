@@ -16,7 +16,9 @@
 
 ##### Example 1: Logging with do
 
-( [jsBin](http://jsbin.com/jimazuriva/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-s1aymr?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/jimazuriva/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/qtyakorq/) )
 
 ```js

@@ -10,12 +10,14 @@
 
 ##### Example 1: Timeout after 2.5 seconds
 
-( [jsBin](http://jsbin.com/gonakiniho/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-gl1hhr?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/gonakiniho/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nr4e1ofy/1/) )
 
 ```js
 import { of } from 'rxjs/observable/of';
-import { concatMap, timeout, catchError } from 'rxjs/operators';
+import { concatMap, timeout, catchError, delay } from 'rxjs/operators';
 
 // simulate request
 function makeRequest(timeToDelay) {
@@ -32,10 +34,10 @@ of(4000, 3000, 2000)
     )
   )
   /*
-    *  "Request timed out after: 4000"
-    *  "Request timed out after: 3000"
-    *  "Request Complete!"
-    */
+      *  "Request timed out after: 4000"
+      *  "Request timed out after: 3000"
+      *  "Request Complete!"
+      */
   .subscribe(val => console.log(val));
 ```
 

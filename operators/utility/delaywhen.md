@@ -10,12 +10,14 @@
 
 ##### Example 1: Delay based on observable
 
-( [jsBin](http://jsbin.com/topohekuje/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ydbk4j?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/topohekuje/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) )
 
 ```js
-import { interval } 'rxjs/observable/interval';
-import { timer } 'rxjs/observable/timer';
+import { interval } from 'rxjs/observable/interval';
+import { timer } from 'rxjs/observable/timer';
 import { delayWhen } from 'rxjs/operators';
 
 //emit value every second

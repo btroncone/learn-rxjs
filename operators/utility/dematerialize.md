@@ -10,21 +10,24 @@
 
 ##### Example 1: Converting notifications to values
 
-( [jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-xhldsy?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/jw08mouy/) )
 
 ```js
-import { from } 'rxjs/observable/from';
+import { from } from 'rxjs/observable/from';
+import { dematerialize } from 'rxjs/operators';
 import { Notification } from 'rxjs/Notification';
 
 //emit next and error notifications
 const source = from([
   Notification.createNext('SUCCESS!'),
   Notification.createError('ERROR!')
-  ]).pipe(
-    //turn notification objects into notification values
-    dematerialize()
-  )
+]).pipe(
+  //turn notification objects into notification values
+  dematerialize()
+);
 
 //output: 'NEXT VALUE: SUCCESS' 'ERROR VALUE: 'ERROR!'
 const subscription = source.subscribe({
