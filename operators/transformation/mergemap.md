@@ -45,8 +45,9 @@ can also limit the number of active inner subscriptions at a time with the
 
 ##### Example 1: mergeMap with observable
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-4mlj3e?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/mojurubana/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-4mlj3e?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/mojurubana/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) )
 
 ```js
@@ -63,8 +64,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: mergeMap with promise
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-cxgrtg?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/vuhecorana/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-cxgrtg?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/vuhecorana/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/o9kxpvsv/) )
 
 ```js
@@ -84,8 +86,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: mergeMap with `resultSelector`
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-rlfc72?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/wajokocage/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-rlfc72?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/wajokocage/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/zu9a6vr4/) )
 
 ```js
@@ -115,8 +118,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 4: mergeMap with concurrent value
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-arsrsh?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/qaqucuwise/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-arsrsh?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/qaqucuwise/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/2rmLxpyz/) )
 
 ```js
@@ -147,6 +151,10 @@ const example = source.pipe(
 */
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
+### Related Recipes
+
+* [HTTP Polling](../../recipes/http-polling.md)
 
 ### Additional Resources
 

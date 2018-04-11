@@ -10,8 +10,9 @@
 
 ##### Example 1: Map every emission to string
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-zdgcuu?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/qujolenili/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-zdgcuu?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/qujolenili/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) )
 
 ```js
@@ -28,8 +29,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Mapping clicks to string
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qm5spu?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/xaheciwara/1/edit?js,console,output) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-qm5spu?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/xaheciwara/1/edit?js,console,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/52fqL4nn/) )
 
 ```js
@@ -46,6 +48,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+* [HTTP Polling](../../recipes/http-polling.md)
 * [Smart Counter](../../recipes/smartcounter.md)
 
 ### Additional Resources

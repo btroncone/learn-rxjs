@@ -183,8 +183,11 @@ fromEvent(startButton, 'click')
 
 ### Operators Used
 
+* [filter](../operators/filtering/filter.md)
 * [fromEvent](../operators/creation/fromevent.md)
-* [fromPromise](../operators/creation/frompromise.md)
+* [from](../operators/creation/from.md)
 * [map](../operators/transformation/map.md)
+* [mapTo](../operators/transformation/mapTo.md)
+* [mergeMap](../operators/transformation/mergemap.md)
 * [switchMap](../operators/transformation/switchmap.md)
 * [timer](../operators/creation/timer.md)
