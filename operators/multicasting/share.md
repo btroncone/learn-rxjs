@@ -16,12 +16,14 @@
 
 ##### Example 1: Multiple subscribers sharing source
 
-( [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ufnzzz?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/jobiyomari/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/Lmesxxaq/) )
 
 ```js
 import { timer } from 'rxjs/observable/timer';
-import { tap, mapTo, share } 'rxjs/operators';
+import { tap, mapTo, share } from 'rxjs/operators';
 
 //emit value in 1s
 const source = timer(1000);

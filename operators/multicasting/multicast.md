@@ -10,13 +10,15 @@
 
 ##### Example 1: multicast with standard Subject
 
-( [jsBin](http://jsbin.com/zexuyosuvi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-tmyiu7?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/zexuyosuvi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/x2z7p1gm/) )
 
 ```js
-import { interval } from 'rxjs/observable/of';
+import { interval } from 'rxjs/observable/interval';
 import { Subject } from 'rxjs/Subject';
-import { take, tap, multicast } 'rxjs/operators';
+import { take, tap, multicast, mapTo } from 'rxjs/operators';
 
 //emit every 2 seconds, take 5
 const source = interval(2000).pipe(take(5));
@@ -24,9 +26,8 @@ const source = interval(2000).pipe(take(5));
 const example = source.pipe(
   //since we are multicasting below, side effects will be executed once
   tap(() => console.log('Side Effect #1')),
-  mapTo('Result!');
+  mapTo('Result!')
 );
-
 
 //subscribe subject to source upon connect()
 const multi = example.pipe(multicast(() => new Subject()));
@@ -46,12 +47,15 @@ multi.connect();
 
 ##### Example 2: multicast with ReplaySubject
 
-( [jsBin](http://jsbin.com/ruhexuhike/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-gdhvct?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/ruhexuhike/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/oj68u58j/) )
 
 ```js
-import { interval } from 'rxjs/observable/of';
-import { take, multicast } 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
+import { take, multicast, tap, mapTo } from 'rxjs/operators';
 
 //emit every 2 seconds, take 5
 const source = interval(2000).pipe(take(5));
@@ -63,7 +67,7 @@ const example = source.pipe(
   mapTo('Result Two!')
 );
 //can use any type of subject
-const multi = example.pipe(multicast(() => new Rx.ReplaySubject(5)));
+const multi = example.pipe(multicast(() => new ReplaySubject(5)));
 //subscribe subject to source
 multi.connect();
 

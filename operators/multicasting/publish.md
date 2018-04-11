@@ -10,12 +10,14 @@
 
 ##### Example 1: Connect observable after subscribers
 
-( [jsBin](http://jsbin.com/laguvecixi/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-gdhvct?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/laguvecixi/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/fpe6csaz/) )
 
 ```js
-import { interval } from 'rxjs/observable/of';
-import { publish, tap } 'rxjs/operators';
+import { interval } from 'rxjs/observable/interval';
+import { publish, tap } from 'rxjs/operators';
 
 //emit value every 1 second
 const source = interval(1000);
@@ -25,7 +27,6 @@ const example = source.pipe(
   //do nothing until connect() is called
   publish()
 );
-
 
 /*
   source will not emit values until connect() is called
