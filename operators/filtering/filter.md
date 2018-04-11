@@ -73,6 +73,7 @@ const subscribe = example.subscribe(val =>
 
 ### Related Recipes
 
+* [HTTP Polling](../../recipes/http-polling.md)
 * [Game Loop](../../recipes/gameloop.md)
 
 ### Additional Resources

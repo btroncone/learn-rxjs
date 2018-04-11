@@ -81,6 +81,7 @@ const subscribe = source.subscribe(val => console.log(val));
 ### Related Recipes
 
 * [Progress Bar](../../recipes/progressbar.md)
+* [HTTP Polling](../../recipes/http-polling.md)
 
 ### Additional Resources
 

@@ -4,8 +4,6 @@
 
 ## Create observable from promise, emitting result.
 
-
-
 ---
 
 :bulb: Flattening operators can generally accept promises without wrapping!
@@ -50,11 +48,6 @@ const example = source.pipe(
 //output: 'Error: Rejected!', 'Resolved!'
 const subscribe = example.subscribe(val => console.log(val));
 ```
-
-### Related Recipes
-
-* [HTTP Polling](../../recipes/http-polling.md)
-
 
 ### Additional Resources
 
