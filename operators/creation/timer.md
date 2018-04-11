@@ -40,6 +40,11 @@ const source = timer(1000, 2000);
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+* [HTTP Polling](../../recipes/http-polling.md)
+
+
 ### Additional Resources
 
 * [timer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer)

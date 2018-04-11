@@ -51,6 +51,11 @@ const example = source.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+* [HTTP Polling](../../recipes/http-polling.md)
+
+
 ### Additional Resources
 
 * [fromPromise](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromPromise)
