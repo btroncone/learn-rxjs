@@ -67,6 +67,9 @@ const example = first.pipe(merge(second));
 //output: 0,1,0,2....
 const subscribe = example.subscribe(val => console.log(val));
 ```
+### Related Recipes
+
+* [HTTP Polling](../../recipes/http-polling.md)
 
 ### Additional Resources
 
