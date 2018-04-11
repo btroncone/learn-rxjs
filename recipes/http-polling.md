@@ -11,7 +11,9 @@ This recipe demonstrates one way you can achieve polling an HTTP endpoint on an 
 (
 [StackBlitz](https://stackblitz.com/edit/rxjs-http-poll-recipe?file=index.ts&devtoolsheight=50)
 )
-```
+
+
+```js
 // Import stylesheets
 import './style.css';
 
