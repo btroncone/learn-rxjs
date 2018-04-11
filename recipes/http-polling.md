@@ -37,7 +37,7 @@ function mapCats(response): Observable<string> {
 
   return from(new Promise((resolve, reject) => {
       var blob = new Blob([response], {type: "image/png"});
-      let reader = new FileReader();      
+      let reader = new FileReader();
       reader.onload = (data: any) => {
         resolve(data.target.result);
       };
@@ -62,7 +62,7 @@ let pollingSub: Subscription;
 /*************************/
 
 /**
- * This function will make an AJAX request to the given Url, map the 
+ * This function will make an AJAX request to the given Url, map the
  * JSON parsed repsonse with the provided mapper function, and emit
  * the result onto the returned observable.
  */
@@ -70,7 +70,7 @@ function requestData(url: string, mapFunc: (any) => Observable<string>): Observa
   console.log(url)
   const xhr = new XMLHttpRequest();
   return from(new Promise<string>((resolve, reject) => {
-    
+
     // This is generating a random size for a placekitten image
     //   so that we get new cats each request.
     const w = Math.round(Math.random() * 400);
@@ -136,13 +136,13 @@ function updateDom(result) {
 function watchForData(category: RequestCategory) {
     // Start  new Poll
     return startPolling(category, 5000).pipe(
-      tap(updateDom), 
+      tap(updateDom),
       takeUntil(
         // stop polling on either button click or change of categories
         merge(
-          stopPolling$, 
+          stopPolling$,
           merge(catsClick$, meatsClick$).pipe(filter(c => c !== category))
-        ) 
+        )
       ),
       // for demo purposes only
       finalize(() => pollingStatus.innerHTML = 'Stopped')
@@ -181,6 +181,7 @@ fromEvent(startButton, 'click')
 * [from](../operators/creation/from.md)
 * [map](../operators/transformation/map.md)
 * [mapTo](../operators/transformation/mapTo.md)
+* [merge](../operators/combination/merge.md)
 * [mergeMap](../operators/transformation/mergemap.md)
 * [switchMap](../operators/transformation/switchmap.md)
 * [timer](../operators/creation/timer.md)
