@@ -1,6 +1,6 @@
 # startWith
 
-####signature: `startWith(an: Values): Observable`
+#### signature: `startWith(an: Values): Observable`
 
 ## Emit given value first.
 
