@@ -96,4 +96,5 @@
   * [Progress Bar](/recipes/progressbar.md)
   * [Smart Counter](/recipes/smartcounter.md)
 * [Concepts](/concepts/README.md)
+  * [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
   * [Understanding Operator Imports](/concepts/operator-imports.md)
