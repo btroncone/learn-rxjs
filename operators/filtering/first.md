@@ -1,4 +1,4 @@
-#first
+# first
 
 #### signature: `first(predicate: function, select: function)`
 

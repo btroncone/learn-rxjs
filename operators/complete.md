@@ -7,12 +7,14 @@ _[Prefer a split by operator type?](README.md)_
 
 ### Contents (In Alphabetical Order)
 
+* [audit](filtering/audit.md)
+* [auditTime](filtering/audittime.md)
 * [buffer](transformation/buffer.md)
 * [bufferCount](transformation/buffercount.md)
 * [bufferTime](transformation/buffertime.md) :star:
 * [bufferToggle](transformation/buffertoggle.md)
 * [bufferWhen](transformation/bufferwhen.md)
-* [catchError](error_handling/catch.md) :star:
+* [catch / catchError](error_handling/catch.md) :star:
 * [combineAll](combination/combineall.md)
 * [combineLatest](combination/combinelatest.md) :star:
 * [concat](combination/concat.md) :star:
@@ -26,12 +28,13 @@ _[Prefer a split by operator type?](README.md)_
 * [delay](utility/delay.md)
 * [delayWhen](utility/delaywhen.md)
 * [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
-* [do](utility/do.md) :star:
+* [do / tap](utility/do.md) :star:
 * [empty](creation/empty.md)
 * [every](conditional/every.md)
 * [exhaustMap](transformation/exhaustmap.md)
 * [expand](transformation/expand.md)
 * [filter](filtering/filter.md) :star:
+* [finalize / finally](utility/finalize.md)
 * [first](filtering/first.md)
 * [forkJoin](combination/forkjoin.md)
 * [from](creation/from.md) :star:
@@ -46,7 +49,7 @@ _[Prefer a split by operator type?](README.md)_
 * [mapTo](transformation/mapto.md)
 * [merge](combination/merge.md) :star:
 * [mergeAll](combination/mergeall.md)
-* [mergeMap](transformation/mergemap.md) :star:
+* [mergeMap / flatMap](transformation/mergemap.md) :star:
 * [multicast](multicasting/multicast.md)
 * [of](creation/of.md) :star:
 * [partition](transformation/partition.md)

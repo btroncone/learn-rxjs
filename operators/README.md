@@ -34,10 +34,12 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   * [throw](creation/throw.md)
   * [timer](creation/timer.md)
 * [Error Handling](error_handling/README.md)
-  * [catchError](error_handling/catch.md) :star:
+  * [catch / catchError](error_handling/catch.md) :star:
   * [retry](error_handling/retry.md)
   * [retryWhen](error_handling/retrywhen.md)
 * [Filtering](filtering/README.md)
+  * [audit](filtering/audit.md)
+  * [auditTime](filtering/audittime.md)
   * [debounce](filtering/debounce.md)
   * [debounceTime](filtering/debouncetime.md) :star:
   * [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
@@ -73,7 +75,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   * [groupBy](transformation/groupby.md)
   * [map](transformation/map.md) :star:
   * [mapTo](transformation/mapto.md)
-  * [mergeMap](transformation/mergemap.md) :star:
+  * [mergeMap / flatMap](transformation/mergemap.md) :star:
   * [partition](transformation/partition.md)
   * [pluck](transformation/pluck.md)
   * [reduce](transformation/reduce.md)
@@ -85,9 +87,10 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   * [windowToggle](transformation/windowtoggle.md)
   * [windowWhen](transformation/windowwhen.md)
 * [Utility](utility/README.md)
-  * [do](utility/do.md) :star:
+  * [do / tap](utility/do.md) :star:
   * [delay](utility/delay.md)
   * [delayWhen](utility/delaywhen.md)
+  * [finalize / finally](finalize.md)
   * [let](utility/let.md)
   * [toPromise](utility/topromise.md)
   * [timeout](utility/timeout.md)

@@ -5,10 +5,11 @@ provide helpful utilities in your observable toolkit.
 
 ## Contents
 
-* [do](do.md) :star:
-* [delay](delay.md)
+* [do / tap](do.md) :star:
+* [delay](delay.md) :star:
 * [delayWhen](delaywhen.md)
 * [dematerialize](dematerialize.md)
+* [finalize / finally](finalize.md)
 * [let](let.md)
 * [timeout](timeout.md)
 * [toPromise](topromise.md)

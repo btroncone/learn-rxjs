@@ -1,9 +1,11 @@
 # Transformation Operators
 
-Transforming values as they pass through the operator chain is a common task. These operators provide transformation techniques
-for nearly any use-case you will encounter.
+Transforming values as they pass through the operator chain is a common task.
+These operators provide transformation techniques for nearly any use-case you
+will encounter.
 
 ## Contents
+
 * [buffer](buffer.md)
 * [bufferCount](buffercount.md)
 * [bufferTime](buffertime.md) :star:
@@ -16,7 +18,7 @@ for nearly any use-case you will encounter.
 * [groupBy](groupby.md)
 * [map](map.md) :star:
 * [mapTo](mapto.md)
-* [mergeMap](mergemap.md) :star:
+* [mergeMap / flatMap](mergemap.md) :star:
 * [partition](partition.md)
 * [pluck](pluck.md)
 * [reduce](reduce.md)
@@ -28,4 +30,4 @@ for nearly any use-case you will encounter.
 * [windowToggle](windowtoggle.md)
 * [windowWhen](windowwhen.md)
 
-:star: - *commonly used*
+:star: - _commonly used_
