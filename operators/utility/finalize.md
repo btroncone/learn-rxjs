@@ -6,6 +6,10 @@
 
 ### [ Examples Coming Soon! ]
 
+### Related Recipes
+
+* [HTTP Polling](../../recipes/http-polling.md)
+
 ### Additional Resources
 
 * [finalize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-finalize)
