@@ -6,9 +6,9 @@
 
 ---
 
-:bulb: Flattening operators can generally accept promises without wrapping!
+:bulb: Flattening operators can accept promises without wrapping!
 
-:bulb: You could also use [Observable.from](from.md) for the same result!
+:bulb: You could also use [from](from.md) for the same result!
 
 ---
 
