@@ -21,7 +21,7 @@
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //no arguments, emit last value
