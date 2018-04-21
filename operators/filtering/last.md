@@ -21,7 +21,7 @@
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //no arguments, emit last value
@@ -37,7 +37,7 @@ const subscribe = example.subscribe(val => console.log(`Last value: ${val}`));
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //emit last even number
@@ -55,7 +55,7 @@ const subscribeTwo = exampleTwo.subscribe(val =>
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //supply an option projection function for the second parameter
@@ -76,7 +76,7 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //no values will pass given predicate, emit default
