@@ -25,6 +25,7 @@
 
 ```js
 import { _throw } from 'rxjs/observable/throw';
+import { of } from 'rxjs/observable/of';
 import { catchError } from 'rxjs/operators';
 //emit error
 const source = _throw('This is an error!');
