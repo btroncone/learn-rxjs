@@ -52,8 +52,8 @@ const routeEnd = new Subject<{data: any, url: string}>();
 const lastUrl = routeEnd.pipe(
   tap(_ => console.log('executed')),
   pluck('url'),
-  // defaults to last 1 value
-  shareReplay()
+  // defaults to all values so we set it to just keep and replay last one
+  shareReplay(1)
 );
 
 // requires initial subscription
@@ -139,7 +139,7 @@ source, sending values through an internal `ReplaySubject`:
 
 ##### Example 1: Multiple subscribers sharing source
 
-( [Stackblitz](https://stackblitz.com/edit/typescript-qfhryg?file=index.ts&devtoolsheight=50) )
+( [Stackblitz](https://stackblitz.com/edit/typescript-bk5uq6?file=index.ts&devtoolsheight=50) )
 
 ```js
 import { Subject } from 'rxjs/Subject';
@@ -152,7 +152,7 @@ const routeEnd = new Subject<{data: any, url: string}>();
 const lastUrl = routeEnd.pipe(
   tap(_ => console.log('executed')),
   pluck('url'),
-  // defaults to last 1 value
+  // defaults to all values so we set it to just keep and replay last one
   shareReplay()
 );
 // requires initial subscription
