@@ -88,7 +88,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   * [windowWhen](transformation/windowwhen.md)
 * [Utility](utility/README.md)
   * [do / tap](utility/do.md) :star:
-  * [delay](utility/delay.md)
+  * [delay](utility/delay.md) :star:
   * [delayWhen](utility/delaywhen.md)
   * [finalize / finally](finalize.md)
   * [let](utility/let.md)
