@@ -40,7 +40,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [do](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/do.ts)
+* [do](http://reactivex.io/documentation/operators/do.html)
   :newspaper: - Official docs
 * [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
