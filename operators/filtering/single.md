@@ -15,7 +15,7 @@
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { single } 'rxjs/operators';
+import { single } from 'rxjs/operators';
 
 //emit (1,2,3,4,5)
 const source = from([1, 2, 3, 4, 5]);

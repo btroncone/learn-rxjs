@@ -15,7 +15,7 @@
 
 ```js
 import { interval } from 'rxjs/observable/interval';
-import { throttleTime } 'rxjs/operators';
+import { throttleTime } from 'rxjs/operators';
 
 //emit value every 1 second
 const source = interval(1000);

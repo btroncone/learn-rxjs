@@ -15,7 +15,7 @@
 
 ```js
 import { of } from 'rxjs/observable/of';
-import { takeWhile } 'rxjs/operators';
+import { takeWhile } from 'rxjs/operators';
 
 //emit 1,2,3,4,5
 const source = of(1, 2, 3, 4, 5);
@@ -32,7 +32,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ```js
 import { of } from 'rxjs/observable/of';
-import { takeWhile, filter } 'rxjs/operators';
+import { takeWhile, filter } from 'rxjs/operators';
 
 // emit 3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3
 const source = of(3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3);

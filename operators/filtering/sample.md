@@ -15,7 +15,7 @@
 
 ```js
 import { interval } from 'rxjs/observable/interval';
-import { sample } 'rxjs/operators';
+import { sample } from 'rxjs/operators';
 
 //emit value every 1s
 const source = interval(1000);
@@ -34,7 +34,7 @@ const subscribe = example.subscribe(val => console.log(val));
 import { interval } from 'rxjs/observable/interval';
 import { zip } from 'rxjs/observable/zip';
 import { from } from 'rxjs/observable/from';
-import { sample } 'rxjs/operators';
+import { sample } from 'rxjs/operators';
 
 const source = zip(
   //emit 'Joe', 'Frank' and 'Bob' in sequence
@@ -58,7 +58,7 @@ From [Stack Overflow](https://stackoverflow.com/a/44865892/2774547) By
 
 ```js
 import { fromEvent } from 'rxjs/observable/interval';
-import { sample, mapTo } 'rxjs/operators';
+import { sample, mapTo } from 'rxjs/operators';
 
 const listener = merge(
     fromEvent(element, 'mousedown').mapTo(false),
