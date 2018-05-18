@@ -27,7 +27,7 @@ You could mimic `skip` by using [`filter`](./filter.md) with indexes. Ex.
 
 ```js
 import { interval } from 'rxjs/observable/interval';
-import { skip } 'rxjs/operators';
+import { skip } from 'rxjs/operators';
 
 //emit every 1s
 const source = interval(1000);
@@ -44,7 +44,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ```js
 import { from } from 'rxjs/observable/from';
-import { skip, filter } 'rxjs/operators';
+import { skip, filter } from 'rxjs/operators';
 
 const numArrayObs = from([1,2,3,4,5,6,7,8,9,10]);
 

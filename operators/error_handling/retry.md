@@ -17,7 +17,7 @@
 import { interval } from 'rxjs/observable/interval';
 import { of } from 'rxjs/observable/of';
 import { _throw } from 'rxjs/observable/throw';
-import { mergeMap, retry } 'rxjs/operators';
+import { mergeMap, retry } from 'rxjs/operators';
 
 //emit value every 1s
 const source = interval(1000);

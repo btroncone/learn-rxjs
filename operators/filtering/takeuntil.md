@@ -22,7 +22,7 @@
 ```js
 import { interval } from 'rxjs/observable/interval';
 import { timer } from 'rxjs/observable/timer';
-import { takeUntil } 'rxjs/operators';
+import { takeUntil } from 'rxjs/operators';
 
 //emit value every 1s
 const source = interval(1000);
@@ -41,7 +41,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ```js
 import { interval } from 'rxjs/observable/interval';
-import { takeUntil, filter, scan, map, withLatestFrom } 'rxjs/operators';
+import { takeUntil, filter, scan, map, withLatestFrom } from 'rxjs/operators';
 
 //emit value every 1s
 const source = interval(1000);
