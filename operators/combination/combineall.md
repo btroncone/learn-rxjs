@@ -14,13 +14,13 @@
 
 ##### Example 1: Mapping to inner interval observable
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-itxyuv?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/cokinogime/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/pvj1nbLa/) )
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-fbxfyh?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 import { take, map, combineAll } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
+import { interval } from 'rxjs';
 
 //emit every 1s, take 2
 const source = interval(1000).pipe(take(2));
