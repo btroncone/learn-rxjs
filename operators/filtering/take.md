@@ -63,7 +63,7 @@ const example = interval.pipe(take(5));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 3: Taking first click loclation
+##### Example 3: Taking first click location
 
 ([jsFiddle](https://jsfiddle.net/ElHuy/9c5j064x/))
 
