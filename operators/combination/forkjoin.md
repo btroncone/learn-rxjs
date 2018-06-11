@@ -202,7 +202,7 @@ export class App {
     // simulate 3 requests with different delays
     forkJoin(
       this._myService.makeRequest('Request One', 2000),
-      this._myService.makeRequest('Request Two', 1000)
+      this._myService.makeRequest('Request Two', 1000),
       this._myService.makeRequest('Request Three', 3000)
     )
     .subscribe(([res1, res2, res3]) => {
