@@ -25,7 +25,7 @@
 
 ```js
 import { _throw } from 'rxjs/observable/throw';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 //emit error
 const source = _throw('This is an error!');
@@ -43,7 +43,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ```js
 import { timer } from 'rxjs/observable/timer';
 import { fromPromise } from 'rxjs/observable/fromPromise';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 import { mergeMap, catchError } from 'rxjs/operators';
 
 //create promise that immediately rejects
