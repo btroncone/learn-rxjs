@@ -20,11 +20,14 @@
 
 ##### Example 1: First value from sequence
 
-( [jsBin](http://jsbin.com/kayenuxoma/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-t8hseq?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/kayenuxoma/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/uncey4v9/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { first } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
@@ -36,11 +39,14 @@ const subscribe = example.subscribe(val => console.log(`First value: ${val}`));
 
 ##### Example 2: First value to pass predicate
 
-( [jsBin](http://jsbin.com/pujowawovu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bw5byu?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/pujowawovu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/pt36r8cu/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { first } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
@@ -52,40 +58,30 @@ const subscribe = example.subscribe(val =>
 );
 ```
 
-##### Example 3: Using optional projection function
+##### Example 3: Utilizing default value
 
-( [jsBin](http://jsbin.com/qijekijaja/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/qosu0cx6/) )
-
-```js
-const source = Rx.Observable.from([1, 2, 3, 4, 5]);
-//using optional projection function
-const example = source.first(
-  num => num % 2 === 0,
-  (result, index) => `First even: ${result} is at index: ${index}`
-);
-//output: "First even: 2 at index: 1"
-const subscribe = example.subscribe(val => console.log(val));
-```
-
-##### Example 4: Utilizing default value
-
-( [jsBin](http://jsbin.com/qoganeleqa/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-2pkzpv?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/qoganeleqa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/owx2jdg1/3/) )
 
 ```js
-const source = Rx.Observable.from([1, 2, 3, 4, 5]);
+// RxJS v6+
+import { from } from 'rxjs';
+import { first } from 'rxjs/operators';
+
+const source = from([1, 2, 3, 4, 5]);
 //no value will pass, emit default
-const example = source.first(val => val > 5, val => `Value: ${val}`, 'Nothing');
+const example = source.pipe(first(val => val > 5, 'Nothing'));
 //output: 'Nothing'
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ### Additional Resources
 
-* [first](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-first)
+- [first](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-first)
   :newspaper: - Official docs
-* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

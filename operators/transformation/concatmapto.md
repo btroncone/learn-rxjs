@@ -13,8 +13,8 @@
 ( [StackBlitz](https://stackblitz.com/edit/typescript-fkkh6c?file=index.ts&devtoolsheight=50) )
 
 ```js
-import { of } from 'rxjs/observable/of';
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { of, interval } from 'rxjs';
 import { concatMapTo, delay, take } from 'rxjs/operators';
 
 //emit value every 2 seconds
@@ -34,7 +34,8 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/s19wtscb/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { concatMapTo, take } from 'rxjs/operators';
 //emit value every 2 seconds
 const interval = interval(2000);

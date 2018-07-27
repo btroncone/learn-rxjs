@@ -16,9 +16,9 @@
 [jsFiddle](https://jsfiddle.net/btroncone/jw08mouy/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from, Notification } from 'rxjs/observable/from';
 import { dematerialize } from 'rxjs/operators';
-import { Notification } from 'rxjs/Notification';
 
 //emit next and error notifications
 const source = from([

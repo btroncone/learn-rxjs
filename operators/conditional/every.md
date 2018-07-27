@@ -11,13 +11,14 @@
 ##### Example 1: Some values false
 
 (
-[Stackblitz](https://stackblitz.com/edit/typescript-8pv2ag?file=index.ts&devtoolsheight=100)
+[Stackblitz](https://stackblitz.com/edit/typescript-299d7s?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/cibijotase/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/1b46tsm7/) )
 
 ```js
+// RxJS v6+
 import { every } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 //emit 5 values
 const source = of(1, 2, 3, 4, 5);
@@ -32,13 +33,14 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 2: All values true
 
 (
-[Stackblitz](https://stackblitz.com/edit/typescript-pzywh8?file=index.ts&devtoolsheight=100)
+[Stackblitz](https://stackblitz.com/edit/typescript-ztrzqe?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/yuxefiviko/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/x34nLmcj/) )
 
 ```js
+// RxJS v6+
 import { every } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 //emit 5 values
 const allEvens = of(2, 4, 6, 8, 10);
@@ -52,7 +54,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [every](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-every)
+- [every](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-every)
   :newspaper: - Official docs
 
 ---

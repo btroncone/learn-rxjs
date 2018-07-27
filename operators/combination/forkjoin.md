@@ -41,15 +41,15 @@ correct choice. In these cases you may better off with an operator like
 
 ##### Example 1: Observables completing after different durations
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-2qr3qi?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/remiduhimu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bqxg9x?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/remiduhimu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5fj77920/81/) )
 
 ```js
+// RxJS v6+
 import { delay, take } from 'rxjs/operators';
-import { forkJoin } from 'rxjs/observable/forkJoin';
-import { of } from 'rxjs/observable/of';
-import { interval } from 'rxjs/observable/interval';
+import { forkJoin, of, interval } from 'rxjs';
 
 const myPromise = val =>
   new Promise(resolve =>
@@ -78,14 +78,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Making a variable number of requests
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-uxbl41?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/febejakapi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-3mbbjw?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/febejakapi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/0b8Lnh7s/1/) )
 
 ```js
+// RxJS v6+
 import { mergeMap } from 'rxjs/operators';
-import { forkJoin } from 'rxjs/observable/forkJoin';
-import { of } from 'rxjs/observable/of';
+import { forkJoin, of } from 'rxjs';
 
 const myPromise = val =>
   new Promise(resolve =>
@@ -110,15 +111,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: Handling errors on outside
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-3fgrkn?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/gugawucixi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-xgskpm?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/gugawucixi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) )
 
 ```js
+// RxJS v6+
 import { delay, catchError } from 'rxjs/operators';
-import { forkJoin } from 'rxjs/observable/forkJoin';
-import { of } from 'rxjs/observable/of';
-import { _throw } from 'rxjs/observable/throw';
+import { forkJoin, of, throwError } from 'rxjs';
 
 /*
   when all observables complete, give the last
@@ -138,15 +139,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 4: Getting successful results when one inner observable errors
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-z2nedm?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-hydgiu?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) )
 
 ```js
+// RxJS v6+
 import { delay, catchError } from 'rxjs/operators';
-import { forkJoin } from 'rxjs/observable/forkJoin';
-import { of } from 'rxjs/observable/of';
-import { _throw } from 'rxjs/observable/throw';
+import { forkJoin, of, throwError } from 'rxjs';
 
 /*
   when all observables complete, give the last
@@ -216,7 +217,7 @@ export class App {
 
 ### Additional Resources
 
-* [forkJoin](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin)
+- [forkJoin](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin)
   :newspaper: - Official docs
 
 ---

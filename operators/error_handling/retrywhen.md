@@ -10,12 +10,14 @@
 
 ##### Example 1: Trigger retry after specified duration
 
-( [jsBin](http://jsbin.com/miduqexalo/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-zpbsw6?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/miduqexalo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/49mkhsyr/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { timer, interval } from 'rxjs';
 import { map, tap, retryWhen, delayWhen } from 'rxjs/operators';
 
 //emit value every 1s
@@ -57,13 +59,8 @@ const subscribe = example.subscribe(val => console.log(val));
 [StackBlitz](https://stackblitz.com/edit/angular-cwnknr?file=app%2Frxjs-utils.ts)
 )
 
-_Credit to [Maxim Koretskyi](https://twitter.com/maxim_koretskyi) for the
-optimization_
-
 ```js
-import { Observable } from 'rxjs/Observable';
-import { _throw } from 'rxjs/observable/throw';
-import { timer } from 'rxjs/observable/timer';
+import { Observable, _throw, timer } from 'rxjs';
 import { mergeMap, finalize } from 'rxjs/operators';
 
 export const genericRetryStrategy = ({
@@ -101,7 +98,7 @@ export const genericRetryStrategy = ({
 ```js
 import { Component, OnInit } from '@angular/core';
 import { catchError, retryWhen  } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 import { genericRetryStrategy } from './rxjs-utils';
 import { AppService } from './app.service';
 
@@ -142,9 +139,9 @@ export class AppComponent implements OnInit  {
 
 ### Additional Resources
 
-* [retryWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retryWhen)
+- [retryWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retryWhen)
   :newspaper: - Official docs
-* [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

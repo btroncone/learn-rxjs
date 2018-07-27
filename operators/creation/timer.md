@@ -10,11 +10,14 @@
 
 ##### Example 1: timer emits 1 value then completes
 
-( [jsBin](http://jsbin.com/pazajanehu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-fvkzgg?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/pazajanehu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/vpx0y8fu/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
+// RxJS v6+
+import { timer } from 'rxjs';
 
 //emit 0 after 1 second then complete, since no second argument is supplied
 const source = timer(1000);
@@ -24,11 +27,14 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ##### Example 2: timer emits after 1 second, then every 2 seconds
 
-( [jsBin](http://jsbin.com/kejidofuje/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-h9pzxr?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/kejidofuje/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/30ddov8j/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
+// RxJS v6+
+import { timer } from 'rxjs';
 
 /*
   timer takes a second argument, how often to emit subsequent values
@@ -42,14 +48,13 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [HTTP Polling](../../recipes/http-polling.md)
-
+- [HTTP Polling](../../recipes/http-polling.md)
 
 ### Additional Resources
 
-* [timer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer)
+- [timer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer)
   :newspaper: - Official docs
-* [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
+- [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz
 
 ---

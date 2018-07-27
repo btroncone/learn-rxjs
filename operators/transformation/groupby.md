@@ -15,7 +15,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { groupBy, mergeMap, toArray } from 'rxjs/operators';
 
 const people = [

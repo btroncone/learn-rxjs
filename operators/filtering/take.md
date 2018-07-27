@@ -31,12 +31,15 @@ number of emissions while `skip` will skip the first _n_ number of emissions.
 
 ##### Example 1: Take 1 value from source
 
-( [jsBin](http://jsbin.com/vaxitupiwi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-uk92ax?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/vaxitupiwi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/f9bz0tr3/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
-import { take } 'rxjs/operators';
+// RxJS v6+
+import { of } from 'rxjs';
+import { take } from 'rxjs/operators';
 
 //emit 1,2,3,4,5
 const source = of(1, 2, 3, 4, 5);
@@ -48,24 +51,28 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Take the first 5 values from source
 
-( [jsBin](http://jsbin.com/kexenuzulu/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-3ujuth?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/kexenuzulu/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/g1fhxgua/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { take } 'rxjs/operators';
+// RxJS v6+
+import { interval } from 'rxjs';
+import { take } from 'rxjs/operators';
 
 //emit value every 1s
-const interval = interval(1000);
+const interval$ = interval(1000);
 //take the first 5 emitted values
-const example = interval.pipe(take(5));
+const example = interval$.pipe(take(5));
 //output: 0,1,2,3,4
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 3: Taking first click loclation
+##### Example 3: Taking first click location
 
-([jsFiddle](https://jsfiddle.net/ElHuy/9c5j064x/))
+([StackBlitz](https://stackblitz.com/edit/typescript-8g9xt5?file=index.ts&devtoolsheight=50)
+| [jsFiddle](https://jsfiddle.net/ElHuy/9c5j064x/))
 
 ```html
 <div id="locationDisplay">
@@ -74,25 +81,27 @@ const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ```js
-import { fromEvent } from 'rxjs/observable/fromEvent';
-import { take, tap } 'rxjs/operators';
+// RxJS v6+
+import { fromEvent } from 'rxjs';
+import { take, tap } from 'rxjs/operators';
 
 const oneClickEvent = fromEvent(document, 'click').pipe(
-    take(1),
-    tap(v => {
-      document.getElementById('locationDisplay').innerHTML
-        = `Your first click was on location ${v.screenX}:${v.screenY}`;
-    })
-  )
+  take(1),
+  tap(v => {
+    document.getElementById(
+      'locationDisplay'
+    ).innerHTML = `Your first click was on location ${v.screenX}:${v.screenY}`;
+  })
+);
 
 const subscribe = oneClickEvent.subscribe();
 ```
 
 ### Additional Resources
 
-* [take](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take)
+- [take](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take)
   :newspaper: - Official docs
-* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

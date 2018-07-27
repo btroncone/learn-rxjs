@@ -19,14 +19,15 @@ instead!
 
 ##### Example 1: merging multiple observables, static method
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-rkpu4e?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/conufujapi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ohq6rx?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/conufujapi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/qvq9dscu/) )
 
 ```js
+// RxJS v6+
 import { mapTo } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
-import { merge } from 'rxjs/observable/merge';
+import { interval, merge } from 'rxjs';
 
 //emit every 2.5 seconds
 const first = interval(2500);
@@ -50,13 +51,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: merge 2 observables, instance method
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-nq3sfo?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bcsl1r?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/wuwujokaqu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/me5ofcr0/) )
 
 ```js
+// RxJS v6+
 import { merge } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
+import { interval } from 'rxjs';
 
 //emit every 2.5 seconds
 const first = interval(2500);
@@ -67,19 +70,20 @@ const example = first.pipe(merge(second));
 //output: 0,1,0,2....
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
 ### Related Recipes
 
-* [HTTP Polling](../../recipes/http-polling.md)
+- [HTTP Polling](../../recipes/http-polling.md)
 
 ### Additional Resources
 
-* [merge](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge)
+- [merge](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge)
   :newspaper: - Official docs
-* [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs)
+- [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
-* [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming)
+- [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming)
   :video_camera: :dollar: - André Staltz
-* [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

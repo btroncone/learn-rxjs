@@ -8,12 +8,14 @@
 
 ##### Example 1: Open window specified by inner observable
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qt3rbn?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-qt3rbn?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/rmgghg6d/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
+// RxJS v6+
+import { timer } from 'rxjs';
 import { window, scan, mergeAll } from 'rxjs/operators';
 
 //emit immediately then every 1s
@@ -39,9 +41,9 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-* [window](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window)
+- [window](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-window)
   :newspaper: - Official docs
-* [Split an RxJS observable with window](https://egghead.io/lessons/rxjs-split-an-rxjs-observable-with-window?course=use-higher-order-observables-in-rxjs-effectively)
+- [Split an RxJS observable with window](https://egghead.io/lessons/rxjs-split-an-rxjs-observable-with-window?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
 
 ---

@@ -10,12 +10,14 @@
 
 ##### Example 1: Open new window every specified duration
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-vkkkef?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-vkkkef?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/g04b3qeb/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
+// RxJS v6+
+import { timer } from 'rxjs';
 import { windowTime, tap, mergeAll } from 'rxjs/operators';
 
 //emit immediately then every 1s
@@ -47,7 +49,7 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-* [windowTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime)
+- [windowTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime)
   :newspaper: - Official docs
 
 ---

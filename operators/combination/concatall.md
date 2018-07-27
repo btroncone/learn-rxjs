@@ -25,14 +25,15 @@ a single operator instead!
 
 ##### Example 1: concatAll with observable
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-yxntdx?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/nakinenuva/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-zwtpc7?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/nakinenuva/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/8dfuf2y6/) )
 
 ```js
+// RxJS v6+
 import { map, concatAll } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
-import { interval } from 'rxjs/observable/interval';
+import { of, interval } from 'rxjs';
 
 //emit a value every 2 seconds
 const source = interval(2000);
@@ -50,13 +51,15 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 2: concatAll with promise
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-4o4fu7?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/bekegeyopu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-3w4px3?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/bekegeyopu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/w7kp7qLs/) )
 
 ```js
+// RxJS v6+
 import { map, concatAll } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
+import { interval } from 'rxjs';
 
 //create and resolve basic promise
 const samplePromise = val => new Promise(resolve => resolve(val));
@@ -76,14 +79,15 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 3: Delay while inner observables complete
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-ad2emh?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/pojolatile/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ft3rbf?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/pojolatile/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/8230ucbg/) )
 
 ```js
+// RxJS v6+
 import { take, concatAll } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
-import { of } from 'rxjs/observable/of';
+import { interval, of } from 'rxjs/observable/interval';
 
 const obs1 = interval(1000).pipe(take(5));
 const obs2 = interval(500).pipe(take(2));
@@ -106,13 +110,13 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [Progress Bar](../../recipes/progressbar.md)
+- [Progress Bar](../../recipes/progressbar.md)
 
 ### Additional Resources
 
-* [concatAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll)
+- [concatAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll)
   :newspaper: - Official docs
-* [Flatten a higher order observable with concatAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-concatall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
+- [Flatten a higher order observable with concatAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-concatall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
 
 ---

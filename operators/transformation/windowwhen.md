@@ -10,13 +10,14 @@
 
 ##### Example 1: Open and close window at interval
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-bgpaoi?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/tuhaposemo/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bgpaoi?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/tuhaposemo/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/gnx9fb3h/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval, timer } from 'rxjs';
 import { windowWhen, tap, mergeAll } from 'rxjs/operators';
 
 //emit immediately then every 1s
@@ -52,7 +53,7 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-* [windowWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowWhen)
+- [windowWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowWhen)
   :newspaper: - Official docs
 
 ---

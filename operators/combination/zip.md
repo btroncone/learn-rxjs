@@ -2,13 +2,7 @@
 
 #### signature: `zip(observables: *): Observable`
 
-### Description
-
-###### TL;DR: After all observables emit, emit values as an array
-
-The **zip** operator will subscribe to all inner observables, waiting for each
-to emit a value. Once this occurs, all values with the corresponding index will
-be emitted. This will continue until at least one inner observable completes.
+## After all observables emit, emit values as an array
 
 ---
 
@@ -24,14 +18,15 @@ source!
 
 ##### Example 1: zip multiple observables emitting at alternate intervals
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-wd2mba?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/lireyisira/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-5az27c?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/lireyisira/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ton462sg/) )
 
 ```js
+// RxJS v6+
 import { delay } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
-import { zip } from 'rxjs/observable/zip';
+import { of, zip } from 'rxjs';
 
 const sourceOne = of('Hello');
 const sourceTwo = of('World!');
@@ -50,14 +45,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: zip when 1 observable completes
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-q1sucs?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/fisitatesa/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-f4qgry?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/fisitatesa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/oamyk3xr/) )
 
 ```js
+// RxJS v6+
 import { take } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
-import { zip } from 'rxjs/observable/zip';
+import { interval, zip } from 'rxjs';
 
 //emit every 1s
 const source = interval(1000);
@@ -69,9 +65,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip)
+- [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip)
   :newspaper: - Official docs
-* [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

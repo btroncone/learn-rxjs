@@ -16,7 +16,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 
 //emit value every two seconds
@@ -35,7 +36,8 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/52fqL4nn/) )
 
 ```js
-import { fromEvent } from 'rxjs/observable/fromEvent';
+// RxJS v6+
+import { fromEvent } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 
 //emit every click on document

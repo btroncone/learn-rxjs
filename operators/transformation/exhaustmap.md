@@ -15,9 +15,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/9ovzapp9/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { merge } from 'rxjs/observable/merge';
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { interval, merge, of } from 'rxjs';
 import { delay, take, exhaustMap } from 'rxjs/operators';
 
 const sourceInterval = interval(1000);
@@ -52,7 +51,8 @@ const exhaustSub = merge(
 [jsFiddle](https://jsfiddle.net/btroncone/5ck8yg5k/3/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { exhaustMap, tap, take } from 'rxjs/operators';
 
 const firstInterval = interval(1000).pipe(take(10));

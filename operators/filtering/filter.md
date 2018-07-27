@@ -15,11 +15,12 @@ out [takeWhile](takewhile.md)!
 
 ##### Example 1: filter for even numbers
 
-( [jsBin](http://jsbin.com/vafogoluye/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-4g4cys?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/vafogoluye/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/tkz0fuy2/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
 //emit (1,2,3,4,5)
@@ -32,11 +33,12 @@ const subscribe = example.subscribe(val => console.log(`Even number: ${val}`));
 
 ##### Example 2: filter objects based on property
 
-( [jsBin](http://jsbin.com/qihagaxuso/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-n73fsn?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/qihagaxuso/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/yjdsoug1/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
 //emit ({name: 'Joe', age: 31}, {name: 'Bob', age:25})
@@ -49,11 +51,12 @@ const subscribe = example.subscribe(val => console.log(`Over 30: ${val.name}`));
 
 ##### Example 3: filter for number greater than specified value
 
-( [jsBin](http://jsbin.com/rakabaheyu/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-eyvvfu?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/rakabaheyu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/g1tgreha/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
 //emit every second

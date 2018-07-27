@@ -1,4 +1,4 @@
-# of
+# of / just
 
 #### signature: `of(...values, scheduler: Scheduler): Observable`
 
@@ -8,23 +8,30 @@
 
 ##### Example 1: Emitting a sequence of numbers
 
-( [jsBin](http://jsbin.com/kodixitoji/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-kbpvmm?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/kodixitoji/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/f7b35ayz/) )
 
 ```js
+// RxJS v6+
+import { of } from 'rxjs';
 //emits any number of provided values in sequence
-const source = Rx.Observable.of(1, 2, 3, 4, 5);
+const source = of(1, 2, 3, 4, 5);
 //output: 1,2,3,4,5
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
 ##### Example 2: Emitting an object, array, and function
 
-( [jsBin](http://jsbin.com/xevobujama/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-m1jbw9?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/xevobujama/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/d9rng4dj/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 //emits values of any type
 const source = of({ name: 'Brian' }, [1, 2, 3], function hello() {
   return 'Hello';
@@ -35,9 +42,9 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [of](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of)
+- [of](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of)
   :newspaper: - Official docs
-* [Creation operators: of](https://egghead.io/lessons/rxjs-creation-operator-of?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
+- [Creation operators: of](https://egghead.io/lessons/rxjs-creation-operator-of?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz
 
 ---

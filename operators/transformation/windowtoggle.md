@@ -10,13 +10,14 @@
 
 ##### Example 1: Toggle window at increasing interval
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-t14gn2?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/xasofupuka/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-t14gn2?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/xasofupuka/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/3xmmuzy4/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { timer } from 'rxjs/observable/timer';
+// RxJS v6+
+import { timer, interval } from 'rxjs';
 import { tap, windowToggle, mergeAll } from 'rxjs/operators';
 
 //emit immediately then every 1s
@@ -54,9 +55,9 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-* [windowToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle)
+- [windowToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle)
   :newspaper: - Official docs
-* [Split an RxJS observable conditionally with windowToggle](https://egghead.io/lessons/rxjs-split-an-rxjs-observable-conditionally-with-windowtoggle?course=use-higher-order-observables-in-rxjs-effectively)
+- [Split an RxJS observable conditionally with windowToggle](https://egghead.io/lessons/rxjs-split-an-rxjs-observable-conditionally-with-windowtoggle?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
 
 ---

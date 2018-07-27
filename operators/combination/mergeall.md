@@ -21,13 +21,15 @@ single operator instead!
 
 ##### Example 1: mergeAll with promises
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-w2kazd?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-y4ncvc?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/worecuhiba/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/0sc4nsxa/) )
 
 ```js
+// RxJS v6+
 import { map, mergeAll } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 const myPromise = val =>
   new Promise(resolve => setTimeout(() => resolve(`Result: ${val}`), 2000));
@@ -52,12 +54,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: mergeAll with _concurrent_ parameter
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qbxs2y?file=index.ts&devtoolsheight=50) |
-[jsFiddle](https://jsfiddle.net/zra3zxhs/) )
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-xpaqjh?file=index.ts&devtoolsheight=100)
+| [jsFiddle](https://jsfiddle.net/zra3zxhs/) )
 
 ```js
+// RxJS v6+
 import { take, map, delay, mergeAll } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
+import { interval } from 'rxjs';
 
 const source = interval(500).pipe(take(5));
 
@@ -68,7 +72,15 @@ const source = interval(500).pipe(take(5));
   in a backlog waiting to be subscribe.
 */
 const example = source
-  .pipe(map(val => source.pipe(delay(1000), take(3))), mergeAll(2))
+  .pipe(
+    map(val =>
+      source.pipe(
+        delay(1000),
+        take(3)
+      )
+    ),
+    mergeAll(2)
+  )
   .subscribe(val => console.log(val));
 /*
   The subscription is completed once the operator emits all values.
@@ -77,9 +89,9 @@ const example = source
 
 ### Additional Resources
 
-* [mergeAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeAll)
+- [mergeAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeAll)
   :newspaper: - Official docs
-* [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
+- [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
 
 ---

@@ -15,7 +15,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/ky9myc5b/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { bufferCount } from 'rxjs/operators';
 
 //Create an observable that emits a value every second
@@ -36,6 +37,7 @@ const subscribe = bufferThree.subscribe(val =>
 [jsFiddle](https://jsfiddle.net/btroncone/3c67qcz1/) )
 
 ```js
+// RxJS v6+
 import { interval } from 'rxjs/observable/interval';
 import { bufferCount } from 'rxjs/operators';
 

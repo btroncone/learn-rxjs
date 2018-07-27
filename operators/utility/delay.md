@@ -16,8 +16,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/1kxtzcu6/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
-import { merge } from 'rxjs/observable/merge';
+// RxJS v6+
+import { of, merge } from 'rxjs';
 import { mapTo, delay } from 'rxjs/operators';
 
 //emit one item
@@ -25,9 +25,18 @@ const example = of(null);
 //delay output of each by an extra second
 const message = merge(
   example.pipe(mapTo('Hello')),
-  example.pipe(mapTo('World!'), delay(1000)),
-  example.pipe(mapTo('Goodbye'), delay(2000)),
-  example.pipe(mapTo('World!'), delay(3000))
+  example.pipe(
+    mapTo('World!'),
+    delay(1000)
+  ),
+  example.pipe(
+    mapTo('Goodbye'),
+    delay(2000)
+  ),
+  example.pipe(
+    mapTo('World!'),
+    delay(3000)
+  )
 );
 //output: 'Hello'...'World!'...'Goodbye'...'World!'
 const subscribe = message.subscribe(val => console.log(val));
@@ -35,13 +44,13 @@ const subscribe = message.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [Progress Bar](../../recipes/progressbar.md)
+- [Progress Bar](../../recipes/progressbar.md)
 
 ### Additional Resources
 
-* [delay](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delay)
+- [delay](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delay)
   :newspaper: - Official docs
-* [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

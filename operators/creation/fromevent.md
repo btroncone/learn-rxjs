@@ -10,11 +10,14 @@
 
 ##### Example 1: Observable from mouse clicks
 
-( [jsBin](http://jsbin.com/xikapewoqa/1/edit?js,console,output) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-mfyefr?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/xikapewoqa/1/edit?js,console,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/vbLz1pdx/) )
 
 ```js
-import { fromEvent } from 'rxjs/observable/fromEvent';
+// RxJS v6+
+import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 //create observable that emits click events
@@ -27,14 +30,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [Smart Counter](../../recipes/smartcounter.md)
-* [Progress Bar](../../recipes/progressbar.md)
-* [Game Loop](../../recipes/gameloop.md)
-* [HTTP Polling](../../recipes/http-polling.md)
+- [Smart Counter](../../recipes/smartcounter.md)
+- [Progress Bar](../../recipes/progressbar.md)
+- [Game Loop](../../recipes/gameloop.md)
+- [HTTP Polling](../../recipes/http-polling.md)
 
 ### Additional Resources
 
-* [fromEvent](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent)
+- [fromEvent](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent)
   :newspaper: - Official docs
 
 ---

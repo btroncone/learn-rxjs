@@ -10,12 +10,15 @@
 
 ##### Example 1: Receive latest value every 5 seconds
 
-( [jsBin](http://jsbin.com/koqujayizo/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-en2zqe?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/koqujayizo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/4zysLc3y/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { throttleTime } 'rxjs/operators';
+// RxJS v6+
+import { interval } from 'rxjs';
+import { throttleTime } from 'rxjs/operators';
 
 //emit value every 1 second
 const source = interval(1000);
@@ -30,12 +33,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Throttle merged observable
 
-( [jsBin](http://jsbin.com/takipadaza/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bkcjfj?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/takipadaza/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/xhd1zy3m/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { merge } from 'rxjs/observable/merge';
+// RxJS v6+
+import { interval, merge } from 'rxjs';
 import { throttleTime, ignoreElements } from 'rxjs/operators';
 
 const source = merge(
@@ -52,9 +57,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [throttleTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime)
+- [throttleTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime)
   :newspaper: - Official docs
-* [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

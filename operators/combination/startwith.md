@@ -22,13 +22,15 @@ can also start with an initial value!
 
 ##### Example 1: startWith on number sequence
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-e4fhpw?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/lezuravizu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-2qrwjt?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/lezuravizu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/e8dn3ggp/) )
 
 ```js
+// RxJS v6+
 import { startWith } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 //emit (1,2,3)
 const source = of(1, 2, 3);
@@ -40,13 +42,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: startWith for initial scan value
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-a6k8a8?file=index.ts&devtoolsheight=50) | |
-[jsBin](http://jsbin.com/gemevuzoha/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-8gkbsc?file=index.ts&devtoolsheight=100)
+| | [jsBin](http://jsbin.com/gemevuzoha/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/54r3g83e/) )
 
 ```js
+// RxJS v6+
 import { startWith, scan } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 //emit ('World!', 'Goodbye', 'World!')
 const source = of('World!', 'Goodbye', 'World!');
@@ -67,13 +71,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: startWith multiple values
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qyxyhu?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/cumupemuxa/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ek45ff?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/cumupemuxa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ckcyj3ms/) )
 
 ```js
+// RxJS v6+
 import { startWith } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
+import { interval } from 'rxjs';
 
 //emit values in sequence every 1s
 const source = interval(1000);
@@ -85,17 +91,17 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [Smart Counter](../../recipes/smartcounter.md)
+- [Smart Counter](../../recipes/smartcounter.md)
 
 ### Additional Resources
 
-* [startWith](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith)
+- [startWith](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith)
   :newspaper: - Official docs
-* [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs)
+- [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
-* [Clear data while loading with startWith](https://egghead.io/lessons/rxjs-reactive-programming-clear-data-while-loading-with-rxjs-startwith?course=introduction-to-reactive-programming)
+- [Clear data while loading with startWith](https://egghead.io/lessons/rxjs-reactive-programming-clear-data-while-loading-with-rxjs-startwith?course=introduction-to-reactive-programming)
   :video_camera: :dollar: - André Staltz
-* [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

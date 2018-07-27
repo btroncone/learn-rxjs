@@ -26,13 +26,15 @@ instead!
 
 ##### Example 1: concat 2 basic observables
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-oqm79a?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/gegubutele/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ec6wed?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/gegubutele/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) )
 
 ```js
+// RxJS v6+
 import { concat } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 //emits 1,2,3
 const sourceOne = of(1, 2, 3);
@@ -48,13 +50,14 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 2: concat as static method
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-oqtzx7?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/xihagewune/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ks8chl?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/xihagewune/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5qdtvhu8/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
-import { concat } from 'rxjs/observable/concat';
+// RxJS v6+
+import { of, concat } from 'rxjs';
 
 //emits 1,2,3
 const sourceOne = of(1, 2, 3);
@@ -69,13 +72,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: concat with delayed source
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-rkvfgp?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/nezonosubi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-vsphry?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/nezonosubi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/L2s49msx/) )
 
 ```js
+// RxJS v6+
 import { delay, concat } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs';
 
 //emits 1,2,3
 const sourceOne = of(1, 2, 3);
@@ -94,14 +99,14 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 4: concat with source that does not complete
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-pccj1d?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/vixajoxaze/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-njc2jw?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/vixajoxaze/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/4bhtb81u/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { of } from 'rxjs/observable/of';
-import { concat } from 'rxjs/observable/concat';
+// RxJS v6+
+import { interval, of, concat } from 'rxjs';
 
 //when source never completes, the subsequent observables never runs
 const source = concat(interval(1000), of('This', 'Never', 'Runs'));
@@ -116,9 +121,9 @@ const subscribe = source.subscribe(val =>
 
 ### Additional Resources
 
-* [concat](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concat)
+- [concat](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concat)
   :newspaper: - Official docs
-* [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

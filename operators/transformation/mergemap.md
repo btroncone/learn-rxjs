@@ -51,7 +51,8 @@ can also limit the number of active inner subscriptions at a time with the
 [jsFiddle](https://jsfiddle.net/btroncone/41awjgda/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
 
 //emit 'Hello'
@@ -70,7 +71,8 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/o9kxpvsv/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
 
 //emit 'Hello'
@@ -92,7 +94,8 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/zu9a6vr4/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
 
 /*
@@ -124,7 +127,8 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/2rmLxpyz/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { mergeMap, take } from 'rxjs/operators';
 
 //emit value every 1s

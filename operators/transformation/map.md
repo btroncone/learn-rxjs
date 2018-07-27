@@ -15,7 +15,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/yd38awLa/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 //emit (1,2,3,4,5)
@@ -33,7 +34,8 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/tdLd5tgc/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 //emit ({name: 'Joe', age: 30}, {name: 'Frank', age: 20},{name: 'Ryan', age: 50})

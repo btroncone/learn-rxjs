@@ -15,7 +15,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { partition, map } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5, 6]);
@@ -43,9 +44,8 @@ const subscribe = merge(
 [jsFiddle](https://jsfiddle.net/btroncone/fe246u5p/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
-import { of } from 'rxjs/observable/of';
-import { merge } from 'rxjs/observable/merge';
+// RxJS v6+
+import { merge, of, from } from 'rxjs';
 import { map, partition, catchError } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5, 6]);

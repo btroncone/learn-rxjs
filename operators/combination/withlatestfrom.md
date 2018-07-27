@@ -17,13 +17,15 @@ emits, try [combinelatest](combinelatest.md)!
 
 ##### Example 1: Latest value from quicker second source
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-sekrr5?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/fitekeseru/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-tznzbj?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/fitekeseru/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/9c3pfgpk/) )
 
 ```js
+// RxJS v6+
 import { withLatestFrom, map } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
+import { interval } from 'rxjs';
 
 //emit every 5s
 const source = interval(5000);
@@ -46,13 +48,15 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Slower second source
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-unq2gn?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/vujekucuxa/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-gigsdv?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/vujekucuxa/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/bywLL579/) )
 
 ```js
+// RxJS v6+
 import { withLatestFrom, map } from 'rxjs/operators';
-import { interval } from 'rxjs/observable/interval';
+import { interval } from 'rxjs';
 
 //emit every 5s
 const source = interval(5000);
@@ -77,14 +81,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [Progress Bar](../../recipes/progressbar.md)
-* [Game Loop](../../recipes/gameloop.md)
+- [Progress Bar](../../recipes/progressbar.md)
+- [Game Loop](../../recipes/gameloop.md)
 
 ### Additional Resources
 
-* [withLatestFrom](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-withLatestFrom)
+- [withLatestFrom](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-withLatestFrom)
   :newspaper: - Official docs
-* [Combination operator: withLatestFrom](https://egghead.io/lessons/rxjs-combination-operator-withlatestfrom?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Combination operator: withLatestFrom](https://egghead.io/lessons/rxjs-combination-operator-withlatestfrom?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

@@ -15,6 +15,7 @@
 [jsFiddle](https://jsfiddle.net/btroncone/58v9xq0f/) )
 
 ```js
+// RxJS v6+
 import { from } from 'rxjs/observable/from';
 import { pluck } from 'rxjs/operators';
 
@@ -32,6 +33,7 @@ const subscribe = example.subscribe(val => console.log(val));
 [jsFiddle](https://jsfiddle.net/btroncone/n592m597/) )
 
 ```js
+// RxJS v6+
 import { from } from 'rxjs/observable/from';
 import { pluck } from 'rxjs/operators';
 

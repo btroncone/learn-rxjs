@@ -43,13 +43,14 @@ is likely a better option.
 
 ##### Example 1: Combining observables emitting at 3 intervals
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-wmfmtv?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-vadvm2?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
-import { combineLatest } from 'rxjs/observable/combineLatest';
+// RxJS v6+
+import { timer, combineLatest } from 'rxjs';
 
 //timerOne emits first value at 1s, then once every 4s
 const timerOne = timer(1000, 4000);
@@ -80,13 +81,14 @@ const subscribe = combined.subscribe(
 
 ##### Example 2: combineLatest with projection function
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-fcmjfl?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/codotapula/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-prtbvd?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/codotapula/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) )
 
 ```js
-import { timer } from 'rxjs/observable/timer';
-import { combineLatest } from 'rxjs/observable/combineLatest';
+// RxJS v6+
+import { timer, combineLatest } from 'rxjs';
 
 //timerOne emits first value at 1s, then once every 4s
 const timerOne = timer(1000, 4000);
@@ -114,14 +116,15 @@ const subscribe = combinedProject.subscribe(latestValuesProject =>
 
 ##### Example 3: Combining events from 2 buttons
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-sfbopd?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ihcxud?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) )
 
 ```js
+// RxJS v6+
+import { fromEvent, combineLatest } from 'rxjs';
 import { mapTo, startWith, scan, tap, map } from 'rxjs/operators';
-import { fromEvent } from 'rxjs/observable/fromEvent';
-import { combineLatest } from 'rxjs/observable/combineLatest';
 
 // helper function to set HTML
 const setHtml = id => val => (document.getElementById(id).innerHTML = val);
@@ -156,11 +159,11 @@ const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
 
 ### Additional Resources
 
-* [combineLatest](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest)
+- [combineLatest](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest)
   :newspaper: - Official docs
-* [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs)
+- [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
-* [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

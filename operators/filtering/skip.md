@@ -22,12 +22,15 @@ You could mimic `skip` by using [`filter`](./filter.md) with indexes. Ex.
 
 ##### Example 1: Skipping values before emission
 
-( [jsBin](http://jsbin.com/hacepudabi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-o5ydjf?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/hacepudabi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ar1eqbya/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { skip } 'rxjs/operators';
+// RxJS v6+
+import { interval } from 'rxjs';
+import { skip } from 'rxjs/operators';
 
 //emit every 1s
 const source = interval(1000);
@@ -39,23 +42,24 @@ const subscribe = example.subscribe(val => console.log(val));
 
 #### Example 2: Short hand for a specific filter use case
 
-( [jsBin](http://jsbin.com/judamurego/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-yl3ap1?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/judamurego/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/ElHuy/4jswLn3z/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
-import { skip, filter } 'rxjs/operators';
+// RxJS v6+
+import { from } from 'rxjs';
+import { skip, filter } from 'rxjs/operators';
 
-const numArrayObs = from([1,2,3,4,5,6,7,8,9,10]);
-
-// 3,4,5...
-const skipObs = numArrayObs.pipe(skip(2))
-    .subscribe(console.log);
+const numArrayObs = from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 // 3,4,5...
-const filterObs = numArrayObs.pipe(
-    filter((val, index) => index > 1)
-  )
+const skipObs = numArrayObs.pipe(skip(2)).subscribe(console.log);
+
+// 3,4,5...
+const filterObs = numArrayObs
+  .pipe(filter((val, index) => index > 1))
   .subscribe(console.log);
 
 //Same output!
@@ -63,9 +67,9 @@ const filterObs = numArrayObs.pipe(
 
 ### Additional Resources
 
-* [skip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skip)
+- [skip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skip)
   :newspaper: - Official docs
-* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

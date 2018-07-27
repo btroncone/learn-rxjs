@@ -8,7 +8,7 @@
 
 ### Additional Resources
 
-* [finalize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-auditTime)
+* [auditTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-auditTime)
   :newspaper: - Official docs
 
 ---

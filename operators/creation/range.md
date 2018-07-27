@@ -10,11 +10,14 @@
 
 ##### Example 1: Emit range 1-10
 
-( [jsBin](http://jsbin.com/yalefomage/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-r5zrww?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/yalefomage/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/cfvfgwn9/) )
 
 ```js
-import { range } from 'rxjs/observable/range';
+// RxJS v6+
+import { range } from 'rxjs';
 
 //emit 1-10 in sequence
 const source = range(1, 10);
@@ -24,7 +27,7 @@ const example = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [range](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range)
+- [range](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range)
   :newspaper: - Official docs
 
 ---

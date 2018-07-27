@@ -10,11 +10,14 @@
 
 ##### Example 1: Emit sequence of values at 1 second interval
 
-( [jsBin](http://jsbin.com/vigohomabo/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ohddud?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/vigohomabo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/x3mrwzr0/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 
 //emit value in sequence every 1 second
 const source = interval(1000);
@@ -24,9 +27,9 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [interval](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-interval)
+- [interval](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-interval)
   :newspaper: - Official docs
-* [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
+- [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz
 
 ---

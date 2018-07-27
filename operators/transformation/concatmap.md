@@ -20,7 +20,8 @@ inner observables, the observable with the lesser delay (1000ms) will emit,
 followed by the observable which takes 2000ms to complete.
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { concatMap, delay, mergeMap } from 'rxjs/operators';
 
 //emit delay value
@@ -51,7 +52,8 @@ const mergeMapExample = source
 [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { concatMap } from 'rxjs/operators';
 
 //emit 'Hello' and 'Goodbye'
@@ -73,7 +75,8 @@ const subscribe = example.subscribe(val =>
 [jsFiddle](https://jsfiddle.net/btroncone/5sr5zzgy/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { concatMap } from 'rxjs/operators';
 
 //emit 'Hello' and 'Goodbye'

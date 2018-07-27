@@ -14,6 +14,7 @@
 [jsFiddle](https://jsfiddle.net/btroncone/thykc9up/) )
 
 ```js
+// RxJS v6+
 import { of } from 'rxjs/observable/of';
 import { toPromise, delay } from 'rxjs/operators';
 
@@ -34,8 +35,8 @@ const example = sample('First Example')
 [jsFiddle](https://jsfiddle.net/btroncone/xzu6u7hs/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
-import { delay } from 'rxjs/operators';
+// RxJS v6+
+import { of, delay } from 'rxjs';
 
 //return basic observable
 const sample = val => of(val).pipe(delay(5000));

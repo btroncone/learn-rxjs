@@ -8,12 +8,14 @@
 
 ##### Example 1: Skip until observable emits
 
-( [jsBin](http://jsbin.com/tapizososu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-gs4mps?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/tapizososu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/xLu8nf77/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { timer } from 'rxjs/observable/timer';
+// RxJS v6+
+import { interval, timer } from 'rxjs';
 import { skipUntil } from 'rxjs/operators';
 
 //emit every 1s
@@ -26,7 +28,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [skipUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipUntil)
+- [skipUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipUntil)
   :newspaper: - Official docs
 
 ---

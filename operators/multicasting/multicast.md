@@ -11,13 +11,13 @@
 ##### Example 1: multicast with standard Subject
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-tmyiu7?file=index.ts&devtoolsheight=100)
+[StackBlitz](https://stackblitz.com/edit/typescript-vge8sk?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/zexuyosuvi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/x2z7p1gm/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { Subject } from 'rxjs/Subject';
+// RxJS v6+
+import { Subject, interval } from 'rxjs';
 import { take, tap, multicast, mapTo } from 'rxjs/operators';
 
 //emit every 2 seconds, take 5
@@ -48,13 +48,13 @@ multi.connect();
 ##### Example 2: multicast with ReplaySubject
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-gdhvct?file=index.ts&devtoolsheight=100)
+[StackBlitz](https://stackblitz.com/edit/typescript-n5ghjj?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/ruhexuhike/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/oj68u58j/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { ReplaySubject } from 'rxjs/ReplaySubject';
+// RxJS v6+
+import { interval, ReplaySubject } from 'rxjs';
 import { take, multicast, tap, mapTo } from 'rxjs/operators';
 
 //emit every 2 seconds, take 5
@@ -82,7 +82,7 @@ setTimeout(() => {
 
 ### Additional Resources
 
-* [multicast](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-multicast)
+- [multicast](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-multicast)
   :newspaper: - Official docs
 
 ---

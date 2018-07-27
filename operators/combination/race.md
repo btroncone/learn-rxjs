@@ -10,11 +10,13 @@
 
 ##### Example 1: race with 4 observables
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-cuzgkn?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-cvfmug?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/goqiwobeno/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/8jcmb1ec/) )
 
 ```js
+// RxJS v6+
 import { mapTo } from 'rxjs/operators';
 import { interval } from 'rxjs/observable/interval';
 import { race } from 'rxjs/observable/race';
@@ -36,13 +38,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: race with an error
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-ptcwjp?file=index.ts&devtoolsheight=50) |
-[jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-in6fw6?file=index.ts&devtoolsheight=100)
+| [jsFiddle](https://jsfiddle.net/gbeL4t55/2/) )
 
 ```js
+// RxJS v6+
 import { delay, map } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
-import { race } from 'rxjs/observable/race';
+import { of, race } from 'rxjs';
 
 //Throws an error and ignores the other observables.
 const first = of('first').pipe(
@@ -53,13 +56,13 @@ const first = of('first').pipe(
 );
 const second = of('second').pipe(delay(200));
 const third = of('third').pipe(delay(300));
-
+// nothing logged
 race(first, second, third).subscribe(val => console.log(val));
 ```
 
 ### Additional Resources
 
-* [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race)
+- [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race)
   :newspaper: - Official docs
 
 ---

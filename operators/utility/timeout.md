@@ -16,7 +16,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/nr4e1ofy/1/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { concatMap, timeout, catchError, delay } from 'rxjs/operators';
 
 // simulate request

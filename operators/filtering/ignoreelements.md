@@ -10,17 +10,23 @@
 
 ##### Example 1: Ignore all elements from source
 
-( [jsBin](http://jsbin.com/yiyefelubi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-jpjcpg?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/yiyefelubi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/59scjqss/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { take, ignoreElements } from 'rxjs/operators';
 
 //emit value every 100ms
 const source = interval(100);
 //ignore everything but complete
-const example = source.pipe(take(5), ignoreElements());
+const example = source.pipe(
+  take(5),
+  ignoreElements()
+);
 //output: "COMPLETE!"
 const subscribe = example.subscribe(
   val => console.log(`NEXT: ${val}`),
@@ -31,13 +37,14 @@ const subscribe = example.subscribe(
 
 ##### Example 2: Only displaying error
 
-( [jsBin](http://jsbin.com/gogonawuze/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-3yxv9z?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/gogonawuze/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/srcwdgw6/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { _throw } from 'rxjs/observable/throw';
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { interval, throwError, of } from 'rxjs';
 import { mergeMap, ignoreElements } from 'rxjs/operators';
 
 //emit value every 100ms
@@ -46,7 +53,7 @@ const source = interval(100);
 const error = source.pipe(
   mergeMap(val => {
     if (val === 4) {
-      return _throw(`ERROR AT ${val}`);
+      return throwError(`ERROR AT ${val}`);
     }
     return of(val);
   }),
@@ -62,7 +69,7 @@ const subscribe = error.subscribe(
 
 ### Additional Resources
 
-* [ignoreElements](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements)
+- [ignoreElements](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements)
   :newspaper: - Official docs
 
 ---

@@ -19,6 +19,7 @@
 )
 
 ```js
+// RxJS v6+
 import { take, map, combineAll } from 'rxjs/operators';
 import { interval } from 'rxjs';
 

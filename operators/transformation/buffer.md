@@ -15,8 +15,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { fromEvent } from 'rxjs/observable/fromEvent';
+// RxJS v6+
+import { interval, fromEvent } from 'rxjs';
 import { buffer } from 'rxjs/operators';
 
 //Create an observable that emits a value every second

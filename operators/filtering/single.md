@@ -10,12 +10,15 @@
 
 ##### Example 1: Emit first number passing predicate
 
-( [jsBin](http://jsbin.com/solecibuza/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-qhynlr?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/solecibuza/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/26r5y90s/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
-import { single } 'rxjs/operators';
+// RxJS v6+
+import { from } from 'rxjs';
+import { single } from 'rxjs/operators';
 
 //emit (1,2,3,4,5)
 const source = from([1, 2, 3, 4, 5]);
@@ -27,7 +30,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [single](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-single)
+- [single](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-single)
   :newspaper: - Official docs
 
 ---

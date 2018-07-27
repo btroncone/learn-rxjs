@@ -6,6 +6,8 @@
 
 ---
 
+:bulb: This operator can be used to convert a promise to an observable!
+
 :bulb: For arrays and iterables, all contained values will be emitted as a
 sequence!
 
@@ -20,11 +22,14 @@ characters!
 
 ##### Example 1: Observable from array
 
-( [jsBin](http://jsbin.com/foceyuketi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-sckwsw?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/foceyuketi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/o7kb5e6j/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 
 //emit array as a sequence of values
 const arraySource = from([1, 2, 3, 4, 5]);
@@ -34,11 +39,14 @@ const subscribe = arraySource.subscribe(val => console.log(val));
 
 ##### Example 2: Observable from promise
 
-( [jsBin](http://jsbin.com/tamofinujo/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-clpg1f?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/tamofinujo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/2czc5sae/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 
 //emit result of promise
 const promiseSource = from(new Promise(resolve => resolve('Hello World!')));
@@ -48,11 +56,14 @@ const subscribe = promiseSource.subscribe(val => console.log(val));
 
 ##### Example 3: Observable from collection
 
-( [jsBin](http://jsbin.com/tezohobudu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-drfckx?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/tezohobudu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/ae6hu9a8/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 
 //works on js collections
 const map = new Map();
@@ -66,11 +77,14 @@ const subscribe = mapSource.subscribe(val => console.log(val));
 
 ##### Example 4: Observable from string
 
-( [jsBin](http://jsbin.com/wenozubana/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-19nejh?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/wenozubana/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/hfvzjcvL/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 
 //emit string as a sequence
 const source = from('Hello World');
@@ -80,14 +94,14 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [Progress Bar](../../recipes/progressbar.md)
-* [HTTP Polling](../../recipes/http-polling.md)
+- [Progress Bar](../../recipes/progressbar.md)
+- [HTTP Polling](../../recipes/http-polling.md)
 
 ### Additional Resources
 
-* [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from)
+- [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from)
   :newspaper: - Official docs
-* [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
+- [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz
 
 ---

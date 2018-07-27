@@ -10,11 +10,14 @@
 
 ##### Example 1: Skip while values below threshold
 
-( [jsBin](http://jsbin.com/bemikuleya/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-p5kapz?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/bemikuleya/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/3ymfxb09/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { skipWhile } from 'rxjs/operators';
 
 //emit every 1s
@@ -27,7 +30,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [skipWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipWhile)
+- [skipWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipWhile)
   :newspaper: - Official docs
 
 ---

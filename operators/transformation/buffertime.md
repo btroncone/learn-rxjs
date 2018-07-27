@@ -12,6 +12,9 @@
 [jsFiddle](https://jsfiddle.net/btroncone/vx7vwg01/) )
 
 ```js
+// RxJS v6+
+import { bufferTime, interval } from 'rxjs';
+
 //Create an observable that emits a value every 500ms
 const source = Rx.Observable.interval(500);
 //After 2 seconds have passed, emit buffered values as an array
@@ -29,8 +32,8 @@ const subscribe = example.subscribe(val =>
 [jsFiddle](https://jsfiddle.net/btroncone/7k4ygj1x/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { bufferTime } from 'rxjs/operators';
+// RxJS v6+
+import { bufferTime, interval } from 'rxjs';
 
 //Create an observable that emits a value every 500ms
 const source = interval(500);

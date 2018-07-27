@@ -15,12 +15,12 @@ of user input must be controlled!
 
 ##### Example 1: Debouncing based on time between input
 
-( [jsBin](http://jsbin.com/kacijarogi/1/edit?js,console,output) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-adheqt?file=index.ts&devtoolsheight=50) | [jsBin](http://jsbin.com/kacijarogi/1/edit?js,console,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/7kbg4q2e/) )
 
 ```js
-import { fromEvent } from 'rxjs/observable/fromEvent';
-import { timer } from 'rxjs/observable/timer';
+// RxJS v6+
+import { fromEvent, timer } from 'rxjs';
 import { debounceTime, map } from 'rxjs/operators';
 
 const input = document.getElementById('example');

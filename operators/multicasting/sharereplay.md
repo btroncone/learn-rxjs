@@ -139,11 +139,13 @@ source, sending values through an internal `ReplaySubject`:
 
 ##### Example 1: Multiple subscribers sharing source
 
-( [Stackblitz](https://stackblitz.com/edit/typescript-qfhryg?file=index.ts&devtoolsheight=50) )
+(
+[Stackblitz](https://stackblitz.com/edit/typescript-9cfnxm?file=index.ts&devtoolsheight=100)
+)
 
 ```js
-import { Subject } from 'rxjs/Subject';
-import { ReplaySubject } from 'rxjs/ReplaySubject';
+// RxJS v6+
+import { Subject, ReplaySubject } from 'rxjs';
 import { pluck, share, shareReplay, tap } from 'rxjs/operators';
 
 // simulate url change with subject
@@ -166,7 +168,7 @@ const lateSubscriber = lastUrl.subscribe(console.log);
 
 ### Additional Resources
 
-* [shareReplay](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-shareReplay)
+- [shareReplay](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-shareReplay)
   :newspaper: - Official docs
 
 ---

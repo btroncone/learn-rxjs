@@ -15,11 +15,12 @@ must match!
 
 ##### Example 1: distinctUntilChanged with basic values
 
-( [jsBin](http://jsbin.com/qoyoxeheva/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-bsb8mw?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/qoyoxeheva/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/xc2vzct7/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { distinctUntilChanged } from 'rxjs/operators';
 
 //only output distinct values, based on the last emitted value
@@ -37,11 +38,12 @@ const nonDistinctSub = myArrayWithDuplicatesInARow
 
 ##### Example 2: distinctUntilChanged with objects
 
-( [jsBin](http://jsbin.com/mexocipave/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-moe7mh?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/mexocipave/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/t4ava5b4/) )
 
 ```js
-import { from } from 'rxjs/observable/from';
+// RxJS v6+
+import { from } from 'rxjs';
 import { distinctUntilChanged } from 'rxjs/operators';
 
 const sampleObject = { name: 'Test' };

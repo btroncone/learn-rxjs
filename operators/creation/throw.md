@@ -10,14 +10,17 @@
 
 ##### Example 1: Throw error on subscription
 
-( [jsBin](http://jsbin.com/punubequju/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-5d3stz?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/punubequju/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/mks82xqz/) )
 
 ```js
-import { _throw } from 'rxjs/observable/throw';
+// RxJS v6+
+import { throwError } from 'rxjs';
 
 //emits an error with specified value on subscription
-const source = _throw('This is an error!');
+const source = throwError('This is an error!');
 //output: 'Error: This is an error!'
 const subscribe = source.subscribe({
   next: val => console.log(val),
@@ -28,13 +31,13 @@ const subscribe = source.subscribe({
 
 ### Related Examples
 
-* [Throwing after 3 retries](../error_handling/retrywhen.md)
+- [Throwing after 3 retries](../error_handling/retrywhen.md)
 
 ### Additional Resources
 
-* [throw](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-throw)
+- [throw](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-throw)
   :newspaper: - Official docs
-* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
+- [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz
 
 ---

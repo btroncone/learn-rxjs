@@ -16,13 +16,15 @@
 
 ##### Example 1: Sum a stream of numbers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-bbmye7?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/dakuneneho/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bbmye7?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/dakuneneho/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/f8fw7yka/) )
 
 ```js
+// RxJS v6+
 import { of } from 'rxjs/observable/of';
-import { reduce } from 'rxjs/operators';
+import { reduce } from 'rxjs';
 
 const source = of(1, 2, 3, 4);
 const example = source.pipe(reduce((acc, val) => acc + val));
@@ -32,9 +34,9 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 
 ### Additional Resources
 
-* [reduce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-reduce)
+- [reduce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-reduce)
   :newspaper: - Official docs
-* [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
+- [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
   :video_camera: - Academind
 
 ---

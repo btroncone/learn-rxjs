@@ -11,12 +11,13 @@
 ##### Example 1: Connect observable after subscribers
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-gdhvct?file=index.ts&devtoolsheight=100)
+[StackBlitz](https://stackblitz.com/edit/typescript-zje8ms?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/laguvecixi/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/fpe6csaz/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { publish, tap } from 'rxjs/operators';
 
 //emit value every 1 second
@@ -53,7 +54,7 @@ setTimeout(() => {
 
 ### Additional Resources
 
-* [publish](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-publish)
+- [publish](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-publish)
   :newspaper: - Official docs
 
 > :file_folder: Source Code:

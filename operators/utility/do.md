@@ -22,7 +22,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/qtyakorq/) )
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
 
 const source = of(1, 2, 3, 4, 5);

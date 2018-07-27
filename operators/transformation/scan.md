@@ -17,10 +17,13 @@ scan!
 
 ##### Example 1: Sum over time
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-jkisea?file=index.ts&devtoolsheight=50) )
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-jkisea?file=index.ts&devtoolsheight=50)
+)
 
 ```js
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { of } from 'rxjs';
 import { scan } from 'rxjs/operators';
 
 const source = of(1, 2, 3);
@@ -33,12 +36,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Accumulating an object
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-pjmrta?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/fusunoguqu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-pjmrta?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/fusunoguqu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/36rbu38b/) )
 
 ```js
-import { Subject } from 'rxjs/Subject';
+// RxJS v6+
+import { Subject } from 'rxjs';
 import { scan } from 'rxjs/operators';
 
 const subject = new Subject();
@@ -61,10 +66,13 @@ subject.next({ favoriteLanguage: 'JavaScript' });
 
 ##### Example 3: Emitting random values from the accumulated array.
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-sxhtbf?file=index.ts&devtoolsheight=50) )
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-sxhtbf?file=index.ts&devtoolsheight=50)
+)
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { scan, map, distinctUntilChanged } from 'rxjs/operators';
 
 // Accumulate values in an array, emit random values from this array.
@@ -79,18 +87,18 @@ const scanObs = interval(1000)
 
 ### Related Recipes
 
-* [Smart Counter](../../recipes/smartcounter.md)
-* [Progress Bar](../../recipes/progressbar.md)
+- [Smart Counter](../../recipes/smartcounter.md)
+- [Progress Bar](../../recipes/progressbar.md)
 
 ### Additional Resources
 
-* [scan](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan)
+- [scan](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan)
   :newspaper: - Official docs
-* [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
+- [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
   :video_camera: - Ben Lesh
-* [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs)
+- [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
-* [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

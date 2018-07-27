@@ -14,7 +14,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/nr9agfuL/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
+// RxJS v6+
+import { interval } from 'rxjs';
 import { bufferWhen } from 'rxjs/operators';
 
 //emit value every 1 second

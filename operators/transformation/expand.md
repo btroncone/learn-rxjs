@@ -15,8 +15,8 @@
 [jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
 
 ```js
-import { interval } from 'rxjs/observable/interval';
-import { of } from 'rxjs/observable/of';
+// RxJS v6+
+import { interval, of } from 'rxjs';
 import { expand, take } from 'rxjs/operators';
 
 //emit 2
