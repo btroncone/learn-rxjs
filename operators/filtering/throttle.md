@@ -2,7 +2,7 @@
 
 #### signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
 
-## Emit value only when duration, determined by provided function, has passed.
+## Emit value on the leading edge of an interval, but suppress new values until `durationSelector` has completed.
 
 <div class="ua-ad"><a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a></div>
 
