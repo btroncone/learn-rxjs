@@ -11,13 +11,13 @@
 ##### Example 1: Converting notifications to values
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-xhldsy?file=index.ts&devtoolsheight=100)
+[StackBlitz](https://stackblitz.com/edit/typescript-bxdwbg?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/jw08mouy/) )
 
 ```js
 // RxJS v6+
-import { from, Notification } from 'rxjs/observable/from';
+import { from, Notification } from 'rxjs';
 import { dematerialize } from 'rxjs/operators';
 
 //emit next and error notifications
@@ -38,7 +38,7 @@ const subscription = source.subscribe({
 
 ### Additional Resources
 
-* [dematerialize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-dematerialize)
+- [dematerialize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-dematerialize)
   :newspaper: - Official docs
 
 ---

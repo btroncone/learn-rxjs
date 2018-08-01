@@ -11,7 +11,7 @@
 ##### Example 1: Timeout after 2.5 seconds
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-gl1hhr?file=index.ts&devtoolsheight=100)
+[StackBlitz](https://stackblitz.com/edit/typescript-eegqyz?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/gonakiniho/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nr4e1ofy/1/) )
 
@@ -44,7 +44,7 @@ of(4000, 3000, 2000)
 
 ### Additional Resources
 
-* [timeout](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/timeout.md)
+- [timeout](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/timeout.md)
   :newspaper: - Official Docs
 
 ---

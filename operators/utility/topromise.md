@@ -4,6 +4,12 @@
 
 ## Convert observable to promise.
 
+---
+
+:warning: `toPromise` has been deprecated! (RxJS 5.5+)
+
+---
+
 <div class="ua-ad"><div class="ua-ad"><a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a></div></div>
 
 ### Examples
@@ -14,15 +20,11 @@
 [jsFiddle](https://jsfiddle.net/btroncone/thykc9up/) )
 
 ```js
-// RxJS v6+
-import { of } from 'rxjs/observable/of';
-import { toPromise, delay } from 'rxjs/operators';
-
 //return basic observable
-const sample = val => of(val).pipe(delay(5000));
+const sample = val => Rx.Observable.of(val).delay(5000);
 //convert basic observable to promise
 const example = sample('First Example')
-  .pipe(toPromise())
+  .toPromise()
   //output: 'First Example'
   .then(result => {
     console.log('From Promise:', result);
@@ -35,20 +37,16 @@ const example = sample('First Example')
 [jsFiddle](https://jsfiddle.net/btroncone/xzu6u7hs/) )
 
 ```js
-// RxJS v6+
-import { of, delay } from 'rxjs';
-
 //return basic observable
-const sample = val => of(val).pipe(delay(5000));
+const sample = val => Rx.Observable.of(val).delay(5000);
 /*
   convert each to promise and use Promise.all
   to wait for all to resolve
-  (you should probably use forkJoin and no 'toPromise' instead!)
 */
 const example = () => {
   return Promise.all([
-    sample('Promise 1').pipe(toPromise()),
-    sample('Promise 2').pipe(toPromise())
+    sample('Promise 1').toPromise(),
+    sample('Promise 2').toPromise()
   ]);
 };
 //output: ["Promise 1", "Promise 2"]
@@ -59,7 +57,7 @@ example().then(val => {
 
 ### Additional Resources
 
-* [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md)
+- [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md)
   :newspaper: - Official Docs
 
 ---

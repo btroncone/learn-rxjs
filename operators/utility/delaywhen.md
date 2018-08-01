@@ -11,7 +11,7 @@
 ##### Example 1: Delay based on observable
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-ydbk4j?file=index.ts&devtoolsheight=100)
+[StackBlitz](https://stackblitz.com/edit/typescript-5yzn8g?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/topohekuje/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) )
 

@@ -17,7 +17,7 @@
 ##### Example 1: Logging with do
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-s1aymr?file=index.ts&devtoolsheight=100)
+[StackBlitz](https://stackblitz.com/edit/typescript-cd2gjp?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/jimazuriva/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/qtyakorq/) )
 
@@ -41,11 +41,11 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [do](http://reactivex.io/documentation/operators/do.html)
-  :newspaper: - Official docs
-* [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
+- [do](http://reactivex.io/documentation/operators/do.html) :newspaper: -
+  Official docs
+- [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
-* [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---
