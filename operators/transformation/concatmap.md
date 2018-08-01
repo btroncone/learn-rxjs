@@ -10,7 +10,7 @@
 
 ##### Example 1: Demonstrating the difference between `concatMap` and [`mergeMap`](./mergemap.md)
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-skud3w?file=index.ts&devtoolsheight=50) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-pkyxa1?file=index.ts&devtoolsheight=100) )
 
 :bulb: Note the difference between `concatMap` and [`mergeMap`](./mergemap.md).
 Because `concatMap` does not subscribe to the next observable until the previous
@@ -47,7 +47,7 @@ const mergeMapExample = source
 
 ##### Example 2: Map to promise
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-svgsod?file=index.ts&devtoolsheight=50) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-rv9byk?file=index.ts&devtoolsheight=100) |
 [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
 
@@ -70,7 +70,7 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 3: Supplying a projection function
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-u6tie6?file=index.ts&devtoolsheight=50) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-2elzt7?file=index.ts&devtoolsheight=100) |
 [jsBin](http://jsbin.com/vihacewozo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5sr5zzgy/) )
 

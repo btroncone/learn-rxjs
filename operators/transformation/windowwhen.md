@@ -11,7 +11,7 @@
 ##### Example 1: Open and close window at interval
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-bgpaoi?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-52tu8k?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/tuhaposemo/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/gnx9fb3h/) )
 

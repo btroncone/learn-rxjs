@@ -11,7 +11,7 @@
 ##### Example 1: Toggle window at increasing interval
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-t14gn2?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-3nsyte?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/xasofupuka/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/3xmmuzy4/) )
 

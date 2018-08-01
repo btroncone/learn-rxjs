@@ -10,7 +10,7 @@
 
 ##### Example 1: Add 10 to each number
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-s7jb9n?file=index.ts&devtoolsheight=50) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-a7bnxb?file=index.ts&devtoolsheight=100) |
 [jsBin](http://jsbin.com/padasukano/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/yd38awLa/) )
 
@@ -29,7 +29,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Map to single property
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-6ynh1a?file=index.ts&devtoolsheight=50) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-qgpnju?file=index.ts&devtoolsheight=100) |
 [jsBin](http://jsbin.com/detozumale/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/tdLd5tgc/) )
 

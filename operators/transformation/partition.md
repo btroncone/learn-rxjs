@@ -10,13 +10,14 @@
 
 ##### Example 1: Split even and odd numbers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-kyndxr?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/hipehexaku/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-gr3ljs?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/hipehexaku/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/q0xo7gvv/) )
 
 ```js
 // RxJS v6+
-import { from } from 'rxjs';
+import { from, merge } from 'rxjs';
 import { partition, map } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5, 6]);
@@ -39,8 +40,9 @@ const subscribe = merge(
 
 ##### Example 2: Split success and errors
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-hiqolh?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/kukuguhuri/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-vmfvp8?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/kukuguhuri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/fe246u5p/) )
 
 ```js
@@ -76,7 +78,7 @@ const subscribe = merge(
 
 ### Additional Resources
 
-* [partition](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-partition)
+- [partition](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-partition)
   :newspaper: - Official docs
 
 ---

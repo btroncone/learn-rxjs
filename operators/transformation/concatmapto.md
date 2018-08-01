@@ -29,7 +29,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Using projection with `concatMap`
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-4udcui?file=index.ts&devtoolsheight=50) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-8kcfm1?file=index.ts&devtoolsheight=100) |
 [jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/s19wtscb/) )
 
@@ -38,7 +38,7 @@ const subscribe = example.subscribe(val => console.log(val));
 import { interval } from 'rxjs';
 import { concatMapTo, take } from 'rxjs/operators';
 //emit value every 2 seconds
-const interval = interval(2000);
+const interval$ = interval(2000);
 //emit value every second for 5 seconds
 const source = interval(1000).pipe(take(5));
 /*
@@ -47,7 +47,7 @@ const source = interval(1000).pipe(take(5));
   (interval emits every 1 second, basicTimer completes every 5)
 */
 // basicTimer will complete after 5 seconds, emitting 0,1,2,3,4
-const example = interval.pipe(
+const example = interval$.pipe(
   concatMapTo(
     source,
     (firstInterval, secondInterval) => `${firstInterval} ${secondInterval}`

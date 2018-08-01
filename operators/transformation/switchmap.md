@@ -45,7 +45,7 @@ cancel a request if the source emits quickly enough. In these scenarios
 ##### Example 1: Restart interval every 5 seconds
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-hbuxqv?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-eb62ap?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/birepuveya/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/6pz981gd/) )
 
@@ -65,7 +65,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 2: Reset on every click
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-kki7qa?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-s4pvix?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/zoruboxogo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/y11v8aqz/) )
 
@@ -87,7 +87,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 3: Using a `resultSelector` function
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-gwav6n?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-bmibzi?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/qobapubeze/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nqfu534y/) )
 
@@ -122,9 +122,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 4: Countdown timer with switchMap
 
-(
-[StackBlitz](https://stackblitz.com/edit/typescript-ur5svp?file=index.ts&devtoolsheight=50)
-)
+( [StackBlitz](https://stackblitz.com/edit/typescript-ivdebg?file=index.ts) )
 
 ```js
 // RxJS v6+

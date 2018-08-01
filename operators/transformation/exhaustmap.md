@@ -10,7 +10,7 @@
 
 ##### Example 1: exhaustMap with interval
 
-( [Stackblitz](https://stackblitz.com/edit/typescript-duwrhu?file=index.ts&devtoolsheight=50) |
+( [Stackblitz](https://stackblitz.com/edit/typescript-3qydhn?file=index.ts&devtoolsheight=100) |
 [jsBin](http://jsbin.com/woposeqobo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/9ovzapp9/) )
 
@@ -46,7 +46,7 @@ const exhaustSub = merge(
 
 ##### Example 2: Another exhaustMap with interval
 
-( [Stackblitz](https://stackblitz.com/edit/typescript-crlz2s?file=index.ts&devtoolsheight=50) |
+( [Stackblitz](https://stackblitz.com/edit/typescript-vxussb?file=index.ts&devtoolsheight=100) |
 [jsBin](http://jsbin.com/fizuduzuti/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5ck8yg5k/3/) )
 

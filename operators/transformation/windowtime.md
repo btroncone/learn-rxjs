@@ -11,7 +11,7 @@
 ##### Example 1: Open new window every specified duration
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-vkkkef?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-hkrjsc?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/mifayacoqo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/g04b3qeb/) )
 

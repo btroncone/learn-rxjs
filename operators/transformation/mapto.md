@@ -11,7 +11,7 @@
 ##### Example 1: Map every emission to string
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-zdgcuu?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-fipd7a?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/qujolenili/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) )
 
@@ -31,7 +31,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 2: Mapping clicks to string
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-qm5spu?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-btghci?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/xaheciwara/1/edit?js,console,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/52fqL4nn/) )
 

@@ -10,13 +10,14 @@
 
 ##### Example 1: Pluck object property
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-1pxyt1?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/zokaxiwahe/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-jkda4e?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/zokaxiwahe/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/58v9xq0f/) )
 
 ```js
 // RxJS v6+
-import { from } from 'rxjs/observable/from';
+import { from } from 'rxjs';
 import { pluck } from 'rxjs/operators';
 
 const source = from([{ name: 'Joe', age: 30 }, { name: 'Sarah', age: 35 }]);
@@ -28,13 +29,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Pluck nested properties
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-ybhnsd?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/joqesidugu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-rinjzk?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/joqesidugu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/n592m597/) )
 
 ```js
 // RxJS v6+
-import { from } from 'rxjs/observable/from';
+import { from } from 'rxjs';
 import { pluck } from 'rxjs/operators';
 
 const source = from([
@@ -50,7 +52,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [pluck](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck)
+- [pluck](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck)
   :newspaper: - Official docs
 
 ---

@@ -8,17 +8,18 @@
 
 ##### Example 1: Buffer for 2 seconds
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-9dbkwq?file=index.ts&devtoolsheight=50) | [jsBin](http://jsbin.com/bafakiyife/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-haqxd1?file=index.ts&devtoolsheight=50) | [jsBin](http://jsbin.com/bafakiyife/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/vx7vwg01/) )
 
 ```js
 // RxJS v6+
-import { bufferTime, interval } from 'rxjs';
+import { interval } from 'rxjs';
+import { bufferTime } from 'rxjs/operators';
 
 //Create an observable that emits a value every 500ms
-const source = Rx.Observable.interval(500);
+const source = interval(500);
 //After 2 seconds have passed, emit buffered values as an array
-const example = source.bufferTime(2000);
+const example = source.pipe(bufferTime(2000));
 //Print values to console
 //ex. output [0,1,2]...[3,4,5,6]
 const subscribe = example.subscribe(val =>
@@ -28,12 +29,13 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 2: Multiple active buffers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-n9btgb?file=index.ts&devtoolsheight=50) | [jsBin](http://jsbin.com/tadiwiniri/1/edit?js,console) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-9blquz?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/tadiwiniri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/7k4ygj1x/) )
 
 ```js
 // RxJS v6+
-import { bufferTime, interval } from 'rxjs';
+import { interval } from 'rxjs';
+import { bufferTime } from 'rxjs/operators';
 
 //Create an observable that emits a value every 500ms
 const source = interval(500);

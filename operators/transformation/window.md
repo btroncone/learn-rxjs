@@ -9,13 +9,13 @@
 ##### Example 1: Open window specified by inner observable
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-qt3rbn?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-avymzq?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/jituvajeri/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/rmgghg6d/) )
 
 ```js
 // RxJS v6+
-import { timer } from 'rxjs';
+import { timer, interval } from 'rxjs';
 import { window, scan, mergeAll } from 'rxjs/operators';
 
 //emit immediately then every 1s

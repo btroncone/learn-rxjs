@@ -10,7 +10,7 @@
 
 ##### Example 1: Buffer until document click
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-p1fckr?file=index.ts&devtoolsheight=50) |
+( [StackBlitz](https://stackblitz.com/edit/typescript-nwp2cl?file=index.ts&devtoolsheight=50) |
 [jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) )
 

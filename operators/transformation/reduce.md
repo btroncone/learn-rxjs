@@ -17,14 +17,14 @@
 ##### Example 1: Sum a stream of numbers
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-bbmye7?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/typescript-hdsv5e?file=index.ts&devtoolsheight=100)
 | [jsBin](http://jsbin.com/dakuneneho/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/f8fw7yka/) )
 
 ```js
 // RxJS v6+
-import { of } from 'rxjs/observable/of';
-import { reduce } from 'rxjs';
+import { of } from 'rxjs';
+import { reduce } from 'rxjs/operators';
 
 const source = of(1, 2, 3, 4);
 const example = source.pipe(reduce((acc, val) => acc + val));
