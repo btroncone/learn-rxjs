@@ -11,15 +11,13 @@ completes.
 ### Example Code
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-5-progress-bar-x33rrw?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/rxjs-5-progress-bar-wxdxwe?file=index.ts&devtoolsheight=50)
 )
 
 ```js
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
-import { empty } from 'rxjs/observable/empty';
-import { fromEvent } from 'rxjs/observable/fromEvent';
-import { from } from 'rxjs/observable/from';
+import './style.css';
+
+import { Observable, of, empty, fromEvent, from } from 'rxjs';
 import {
   delay,
   switchMapTo,
@@ -72,7 +70,10 @@ const array$ = from(observables);
 const requests$ = array$.pipe(concatAll());
 const clicks$ = fromEvent(loadButton, 'click');
 
-const progress$ = clicks$.pipe(switchMapTo(requests$), share());
+const progress$ = clicks$.pipe(
+  switchMapTo(requests$),
+  share()
+);
 
 const count$ = array$.pipe(count());
 
@@ -107,11 +108,11 @@ help with example!_
 
 ### Operators Used
 
-* [concatAll](../operators/transformation/concatall.md)
-* [delay](../operators/utility/delay.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [from](../operators/creation/from.md)
-* [scan](../operators/transformation/scan.md)
-* [share](../operators/multicasting/share.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [withLatestFrom](../operators/transformation/withlatestfrom.md)
+- [concatAll](../operators/transformation/concatall.md)
+- [delay](../operators/utility/delay.md)
+- [fromEvent](../operators/creation/fromevent.md)
+- [from](../operators/creation/from.md)
+- [scan](../operators/transformation/scan.md)
+- [share](../operators/multicasting/share.md)
+- [switchMap](../operators/transformation/switchmap.md)
+- [withLatestFrom](../operators/transformation/withlatestfrom.md)

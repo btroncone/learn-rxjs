@@ -12,21 +12,14 @@ easy to reason about as a stream of data.
 ### Example Code
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-http-poll-recipe-olrk2t?file=index.ts&devtoolsheight=50)
+[StackBlitz](https://stackblitz.com/edit/rxjs-http-poll-recipe-jc5cj7?file=index.ts&devtoolsheight=50)
 )
 
 ```js
 // Import stylesheets
 import './style.css';
 
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-import { of } from 'rxjs/observable/of';
-import { fromEvent } from 'rxjs/observable/fromEvent';
-import { from } from 'rxjs/observable/from';
-import { timer } from 'rxjs/observable/timer';
-import { empty } from 'rxjs/observable/empty';
-import { merge } from 'rxjs/observable/merge';
+import { Observable, Subscription, of, fromEvent, from, empty, merge, timer } from 'rxjs';
 import { map, mapTo, switchMap, tap, mergeMap, takeUntil, filter, finalize } from 'rxjs/operators';
 
 declare type RequestCategory = 'cats' | 'meats';
@@ -176,12 +169,12 @@ fromEvent(startButton, 'click')
 
 ### Operators Used
 
-* [filter](../operators/filtering/filter.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [from](../operators/creation/from.md)
-* [map](../operators/transformation/map.md)
-* [mapTo](../operators/transformation/mapTo.md)
-* [merge](../operators/combination/merge.md)
-* [mergeMap](../operators/transformation/mergemap.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [timer](../operators/creation/timer.md)
+- [filter](../operators/filtering/filter.md)
+- [fromEvent](../operators/creation/fromevent.md)
+- [from](../operators/creation/from.md)
+- [map](../operators/transformation/map.md)
+- [mapTo](../operators/transformation/mapTo.md)
+- [merge](../operators/combination/merge.md)
+- [mergeMap](../operators/transformation/mergemap.md)
+- [switchMap](../operators/transformation/switchmap.md)
+- [timer](../operators/creation/timer.md)
