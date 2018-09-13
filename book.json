@@ -29,13 +29,15 @@
           "user": "btroncone",
           "repo": "learn-rxjs",
           "type": "star",
-          "size": "small"
+          "size": "small",
+          "count": true
         },
         {
           "user": "btroncone",
           "repo": "learn-rxjs",
           "type": "watch",
-          "size": "small"
+          "size": "small",
+          "count": true
         }
       ]
     }
