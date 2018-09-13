@@ -1,6 +1,6 @@
-# RxJS 5 Operators By Example
+# RxJS Operators By Example
 
-A complete list of RxJS 5 operators with clear explanations, relevant resources,
+A complete list of RxJS operators with clear explanations, relevant resources,
 and executable examples.
 
 _[Prefer a complete list in alphabetical order?](complete.md)_

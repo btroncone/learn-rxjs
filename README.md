@@ -36,21 +36,21 @@ points. Learning Rx may be difficult but it is certainly worth the effort!
 
 Operators are the horse-power behind observables, providing an elegant,
 declarative solution to complex asynchronous tasks. This section contains all
-[RxJS 5 operators](/operators/README.md), included with clear, executable
-examples in both [JSBin](https://jsbin.com) and
-[JSFiddle](https://jsfiddle.net). Links to additional resources and recipes for
-each operator are also provided, when applicable.
+[RxJS operators](/operators/README.md), included with clear, executable examples
+in both [JSBin](https://jsbin.com) and [JSFiddle](https://jsfiddle.net). Links
+to additional resources and recipes for each operator are also provided, when
+applicable.
 
 ##### Categories
 
-* [Combination](/operators/combination/README.md)
-* [Conditional](/operators/conditional/README.md)
-* [Creation](/operators/creation/README.md)
-* [Error Handling](/operators/error_handling/README.md)
-* [Multicasting](/operators/multicasting/README.md)
-* [Filtering](/operators/filtering/README.md)
-* [Transformation](/operators/transformation/README.md)
-* [Utility](/operators/utility/README.md)
+- [Combination](/operators/combination/README.md)
+- [Conditional](/operators/conditional/README.md)
+- [Creation](/operators/creation/README.md)
+- [Error Handling](/operators/error_handling/README.md)
+- [Multicasting](/operators/multicasting/README.md)
+- [Filtering](/operators/filtering/README.md)
+- [Transformation](/operators/transformation/README.md)
+- [Utility](/operators/utility/README.md)
 
 **OR...**
 
@@ -79,37 +79,37 @@ experience!
 
 #### Reading
 
-* [RxJS Introduction](http://reactivex.io/rxjs/manual/overview.html#introduction) -
+- [RxJS Introduction](http://reactivex.io/rxjs/manual/overview.html#introduction) -
   Official Docs
-* [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) -
+- [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) -
   André Staltz
 
 #### Videos
 
-* [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) -
+- [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) -
   Jafar Husain
-* [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
-* [Creating Observable from Scratch](https://egghead.io/lessons/rxjs-creating-observable-from-scratch) -
+- [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
+- [Creating Observable from Scratch](https://egghead.io/lessons/rxjs-creating-observable-from-scratch) -
   Ben Lesh
-* [Introduction to RxJS Marble Testing](https://egghead.io/lessons/rxjs-introduction-to-rxjs-marble-testing) -
+- [Introduction to RxJS Marble Testing](https://egghead.io/lessons/rxjs-introduction-to-rxjs-marble-testing) -
   Brian Troncone
-* [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming)
+- [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming)
   :dollar: - André Staltz
-* [Reactive Programming using Observables](https://www.youtube.com/watch?v=HT7JiiqnYYc&feature=youtu.be) -
+- [Reactive Programming using Observables](https://www.youtube.com/watch?v=HT7JiiqnYYc&feature=youtu.be) -
   Jeremy Lund
 
 #### Exercises
 
-* [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar
+- [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar
   Husain
 
 #### Tools
 
-* [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) -
+- [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) -
   André Staltz
-* [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) -
+- [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) -
   Misha Moroshko
-* [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) -
+- [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) -
   Cédric Soulas
 
 _Interested in RxJS 4? Check out [Denis Stoyanov's](https://github.com/xgrommx)
@@ -117,7 +117,7 @@ excellent [eBook](https://xgrommx.github.io/rx-book/)!_
 
 ## Translations
 
-* [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
+- [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
 
 ### A Note On References
 
