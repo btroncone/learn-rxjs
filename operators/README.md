@@ -89,7 +89,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [do / tap](utility/do.md) :star:
   - [delay](utility/delay.md)
   - [delayWhen](utility/delaywhen.md)
-  - [finalize / finally](finalize.md)
+  - [finalize / finally](utility/finalize.md)
   - [let](utility/let.md)
   - [toPromise](utility/topromise.md)
   - [timeout](utility/timeout.md)
