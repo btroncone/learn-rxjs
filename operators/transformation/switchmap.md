@@ -23,7 +23,7 @@ cancelling effect. On each emission the previous inner observable (the result of
 the function you supplied) is cancelled and the new observable is subscribed.
 You can remember this by the phrase **switch to a new observable**.
 
-This works perfect for scenarios like
+This works perfectly for scenarios like
 [typeaheads](https://angular-2-training-book.rangle.io/handout/http/search_with_switchmap.html)
 where you are no longer concerned with the response of the previous request when
 a new input arrives. This also is a safe option in situations where a long lived
