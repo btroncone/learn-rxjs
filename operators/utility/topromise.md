@@ -6,7 +6,7 @@
 
 ---
 
-:warning: `toPromise` has been deprecated! (RxJS 5.5+)
+:warning: `toPromise` is not a pipable operator, as it does not return an observable.
 
 ---
 
