@@ -2,7 +2,7 @@
 
 #### signature: `of(...values, scheduler: Scheduler): Observable`
 
-## Emit variable amount of values in a sequence.
+## Emit variable amount of values in a sequence and then emits a complete notification.
 
 ### Examples
 
