@@ -24,7 +24,7 @@
 ```js
 // RxJS v6+
 import { from } from 'rxjs';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //no arguments, emit last value
@@ -43,7 +43,7 @@ const subscribe = example.subscribe(val => console.log(`Last value: ${val}`));
 ```js
 // RxJS v6+
 import { from } from 'rxjs';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //emit last even number
@@ -64,7 +64,7 @@ const subscribeTwo = exampleTwo.subscribe(val =>
 ```js
 // RxJS v6+
 import { from } from 'rxjs';
-import { last } 'rxjs/operators';
+import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
 //no values will pass given predicate, emit default
