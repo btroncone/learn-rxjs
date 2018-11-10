@@ -18,7 +18,7 @@
 ```js
 // RxJS v6+
 import { interval } from 'rxjs';
-import { sample } 'rxjs/operators';
+import { sample } from 'rxjs/operators';
 
 //emit value every 1s
 const source = interval(1000);
