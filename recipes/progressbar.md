@@ -57,7 +57,7 @@ const displayData = data => {
   updateContent(`<div class="content-item">${data}</div>`);
 };
 
-// simulate 5 seperate requests that complete at variable length
+// simulate 5 separate requests that complete at variable length
 const observables: Array<Observable<string>> = [
   requestOne,
   requestTwo,
