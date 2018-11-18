@@ -7,7 +7,7 @@ interval. This is a common task in web applications, and one that RxJS tends to
 handle really well as the continuous series of HTTP requests and responses is
 easy to reason about as a stream of data.
 
-<div class="ua-ad"><a href="https://ultimateangular.com/?ref=76683_kee7y7vk"><img src="https://ultimateangular.com/assets/img/banners/ua-leader.svg"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/uc-leader.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
