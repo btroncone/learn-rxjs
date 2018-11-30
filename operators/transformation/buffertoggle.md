@@ -41,6 +41,23 @@ const subscribe = bufferToggleInterval.subscribe(val =>
 );
 ```
 
+##### Example 2: Toggle buffer on and off on mouse down/up
+( [StackBlitz](https://stackblitz.com/edit/rxjs-buffertoggle-mousemove) )
+
+```js
+import { fromEvent } from 'rxjs';
+import { bufferToggle } from 'rxjs/operators';
+
+fromEvent(document, 'mousemove')
+  .pipe(
+    bufferToggle(
+      fromEvent(document, 'mousedown'),
+      _ => fromEvent(document, 'mouseup')
+    )
+  )
+.subscribe(console.log)
+```
+
 ### Additional Resources
 
 * [bufferToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle)
