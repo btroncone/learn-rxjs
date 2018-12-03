@@ -11,6 +11,7 @@ provide helpful utilities in your observable toolkit.
 * [dematerialize](dematerialize.md)
 * [finalize / finally](finalize.md)
 * [let](let.md)
+* [repeat](repeat.md)
 * [timeout](timeout.md)
 * [toPromise](topromise.md)
 
