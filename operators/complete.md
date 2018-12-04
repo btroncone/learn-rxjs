@@ -56,6 +56,7 @@ _[Prefer a split by operator type?](README.md)_
 - [publish](multicasting/publish.md)
 - [race](combination/race.md)
 - [range](creation/range.md)
+- [repeat](utility/repeat.md)
 - [retry](error_handling/retry.md)
 - [retryWhen](error_handling/retrywhen.md)
 - [sample](filtering/sample.md)

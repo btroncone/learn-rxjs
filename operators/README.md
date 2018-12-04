@@ -91,6 +91,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [delayWhen](utility/delaywhen.md)
   - [finalize / finally](utility/finalize.md)
   - [let](utility/let.md)
+  - [repeat](utility/repeat.md)
   - [toPromise](utility/topromise.md)
   - [timeout](utility/timeout.md)
 

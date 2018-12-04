@@ -89,6 +89,7 @@
     - [dematerialize](/operators/utility/dematerialize.md)
     - [finalize / finally](operators/utility/finalize.md)
     - [let](/operators/utility/let.md)
+    - [repeat](/operators/utility/repeat.md)
     - [timeout](/operators/utility/timeout.md)
     - [toPromise](/operators/utility/topromise.md)
   - [Full Listing](/operators/complete.md)
