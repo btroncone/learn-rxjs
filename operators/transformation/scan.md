@@ -85,6 +85,34 @@ const scanObs = interval(1000)
   .subscribe(console.log);
 ```
 
+##### Example 4: Accumulating http responses over time
+
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-scan-accumulate-request-responses?file=index.ts&devtoolsheight=100)
+)
+
+```js
+// RxJS v6+
+import { interval, of } from 'rxjs';
+import { scan, delay, repeat, mergeMap } from 'rxjs/operators';
+
+const fakeRequest = of('response').pipe(delay(2000));
+
+// output: 
+// ['response'],
+// ['response','response'],
+// ['response','response','response'],
+// etc...
+
+interval(1000)
+  .pipe(
+    mergeMap(_ => fakeRequest),
+    scan<string>((allResponses, currentResponse) => 
+      [...allResponses, currentResponse], []),
+  )
+  .subscribe(console.log);
+```
+
 ### Related Recipes
 
 - [Smart Counter](../../recipes/smartcounter.md)
