@@ -63,6 +63,23 @@ const example = zip(source, source.pipe(take(2)));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 3: get X/Y coordinates of drag start/finish (mouse down/up)
+
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-zip-mousedownup-coordinates?file=index.ts&devtoolsheight=50) )
+
+```js
+// RxJS v6+
+import { fromEvent, zip } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+const documentEvent = eventName => fromEvent(document, eventName)
+  .pipe(map((e: MouseEvent) => ({x: e.clientX, y: e.clientY})));
+
+zip(documentEvent('mousedown'), documentEvent('mouseup'))
+  .subscribe(e => console.log(JSON.stringify(e)));
+```
+
 ### Additional Resources
 
 - [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip)
