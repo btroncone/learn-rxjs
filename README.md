@@ -111,6 +111,7 @@ experience!
   Misha Moroshko
 - [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) -
   Cédric Soulas
+- [Rx Visualization - Visualizes programming with RxJS](https://fingerpich.github.io/rx-visualization/) - Mojtaba Zarei
 
 _Interested in RxJS 4? Check out [Denis Stoyanov's](https://github.com/xgrommx)
 excellent [eBook](https://xgrommx.github.io/rx-book/)!_
