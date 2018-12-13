@@ -1,15 +1,17 @@
 # HTTP Polling
 
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/uc-leader.svg" style="width:100%;max-width:100%"></a></div>
+
+### Examples
+
+##### Example 1
+
 _By [@barryrowe](https://twitter.com/barryrowe)_
 
 This recipe demonstrates one way you can achieve polling an HTTP endpoint on an
 interval. This is a common task in web applications, and one that RxJS tends to
 handle really well as the continuous series of HTTP requests and responses is
 easy to reason about as a stream of data.
-
-<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/uc-leader.svg" style="width:100%;max-width:100%"></a></div>
-
-### Example Code
 
 (
 [StackBlitz](https://stackblitz.com/edit/rxjs-http-poll-recipe-jc5cj7?file=index.ts&devtoolsheight=50)
@@ -178,3 +180,35 @@ fromEvent(startButton, 'click')
 - [mergeMap](../operators/transformation/mergemap.md)
 - [switchMap](../operators/transformation/switchmap.md)
 - [timer](../operators/creation/timer.md)
+
+
+##### Example 2: Simple http polling
+
+_By [@adamlubek](https://github.com/adamlubek)_
+
+This recipe demonstrates polling an HTTP endpoint using repeat. It waits for 3 seconds following the response to poll again. Code below is simplifed to demonstrate bare bones of solution but link below contains verbose logging and error handling.
+
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-http-polling?file=index.ts&devtoolsheight=80) )
+
+```js
+// RxJS v6+
+import { of } from 'rxjs';
+import { delay, tap, mergeMap, repeat } from 'rxjs/operators';
+
+const fakeDelayedRequest = () => of(new Date()).pipe(delay(1000));
+
+const display = response => {
+  document.open();
+  document.write(response);
+};
+
+const poll = of({}).pipe(
+  mergeMap(_ => fakeDelayedRequest()),
+  tap(display),
+  delay(3000),
+  repeat()
+);
+
+poll.subscribe();
+```
