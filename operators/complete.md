@@ -40,6 +40,7 @@ _[Prefer a split by operator type?](README.md)_
 - [from](creation/from.md) :star:
 - [fromEvent](creation/fromevent.md)
 - [groupBy](transformation/groupby.md)
+- [iif](conditional/iif.md)
 - [ignoreElements](filtering/ignoreelements.md)
 - [interval](creation/interval.md)
 - [last](filtering/last.md)
