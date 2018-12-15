@@ -15,18 +15,18 @@
 
 ```js
 // RxJS v6+
-import { fromEvent, iif, of, interval, pipe } from 'rxjs';
+import { iif, of, interval } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
 
-const obsOne$ = of('R');
-const obsTwo$ = of('X');
+const r$ = of('R');
+const x$ = of('X');
 
 interval(1000).pipe(
   mergeMap(v =>
     iif(
       () => v % 4 === 0,
-      obsOne$,
-      obsTwo$
+      r$,
+      x$
     ))
 ).subscribe(console.log);
 
@@ -44,8 +44,8 @@ interval(1000).pipe(
 import { fromEvent, iif, of } from 'rxjs';
 import { mergeMap, map, throttleTime, filter } from 'rxjs/operators';
 
-const obsOne$ = of(`I'm saying R!!`);
-const obsTwo$ = of(`X's always win!!`);
+const r$ = of(`I'm saying R!!`);
+const x$ = of(`X's always win!!`);
 
 fromEvent(document, 'mousemove').pipe(
   throttleTime(50),
@@ -54,10 +54,10 @@ fromEvent(document, 'mousemove').pipe(
   mergeMap(yCoord =>
     iif(
       () => yCoord < 110,
-      obsOne$,
-      obsTwo$
+      r$,
+      x$
     ))
-).subscribe(v => console.log);
+).subscribe(console.log);
 
 ```
 
