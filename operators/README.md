@@ -22,6 +22,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
 - [Conditional](conditional/README.md)
   - [defaultIfEmpty](conditional/defaultifempty.md)
   - [every](conditional/every.md)
+  - [iif](conditional/iif.md)
 - [Creation](creation/README.md)
   - [create](creation/create.md)
   - [empty](creation/empty.md)
