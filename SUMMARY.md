@@ -95,6 +95,7 @@
     - [toPromise](/operators/utility/topromise.md)
   - [Full Listing](/operators/complete.md)
 - [Recipes](/recipes/README.md)
+  - [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
   - [Http Polling](/recipes/http-polling.md)
   - [Game Loop](/recipes/gameloop.md)
   - [Progress Bar](/recipes/progressbar.md)
