@@ -55,6 +55,10 @@ const example = source.pipe(throttleTime(1200));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+- [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
+
 ### Additional Resources
 
 - [throttleTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-throttleTime)

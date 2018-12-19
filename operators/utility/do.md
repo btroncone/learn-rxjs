@@ -39,6 +39,10 @@ const example = source.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+- [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
+
 ### Additional Resources
 
 - [do](http://reactivex.io/documentation/operators/do.html) :newspaper: -
