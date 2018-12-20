@@ -1,4 +1,4 @@
-# Horizontal scroll indicator
+# Type Ahead
 
 _By [adamlubek](https://github.com/adamlubek)_
 
