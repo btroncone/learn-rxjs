@@ -38,6 +38,10 @@ const subscribe = debouncedInput.subscribe(val => {
 });
 ```
 
+### Related Recipes
+
+- [Type Ahead](../../recipes/type-ahead.md)
+
 ### Additional Resources
 
 * [debounceTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounceTime)

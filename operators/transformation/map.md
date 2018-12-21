@@ -52,9 +52,10 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [Smart Counter](../../recipes/smartcounter.md)
-* [Game Loop](../../recipes/gameloop.md)
-* [HTTP Polling](../../recipes/http-polling.md)
+- [Smart Counter](../../recipes/smartcounter.md)
+- [Game Loop](../../recipes/gameloop.md)
+- [HTTP Polling](../../recipes/http-polling.md)
+- [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 

@@ -40,6 +40,10 @@ const source = of({ name: 'Brian' }, [1, 2, 3], function hello() {
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+- [Type Ahead](../../recipes/type-ahead.md)
+
 ### Additional Resources
 
 - [of](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of)

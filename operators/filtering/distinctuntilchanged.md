@@ -60,6 +60,10 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
   .subscribe(val => console.log('DISTINCT OBJECTS:', val));
 ```
 
+### Related Recipes
+
+- [Type Ahead](../../recipes/type-ahead.md)
+
 ### Additional Resources
 
 * [distinctUntilChanged](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged)

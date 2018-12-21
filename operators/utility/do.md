@@ -42,6 +42,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
+- [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 
