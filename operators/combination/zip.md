@@ -80,6 +80,31 @@ zip(documentEvent('mousedown'), documentEvent('mouseup'))
   .subscribe(e => console.log(JSON.stringify(e)));
 ```
 
+##### Example 4: mouse click duration
+
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-zip-mouseclickduration?file=index.ts&devtoolsheight=50) )
+
+```js
+// RxJS v6+
+import { fromEvent, zip } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+const eventTime = eventName =>
+  fromEvent(document, eventName).pipe(map(() => new Date()));
+
+const mouseClickDuration =
+  zip(
+    eventTime('mousedown'),
+    eventTime('mouseup')
+  ).pipe(
+    map(([start, end]) =>
+      Math.abs((start.getTime() - end.getTime())))
+  );
+  
+mouseClickDuration.subscribe(console.log);
+```
+
 ### Additional Resources
 
 - [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip)
