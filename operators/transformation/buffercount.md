@@ -67,6 +67,31 @@ const subscribe = bufferEveryOne.subscribe(val =>
 );
 ```
 
+##### Example 3: Last n keyboard presses tracking
+
+( [StackBlitz](https://stackblitz.com/edit/rxjs-buffecount-keypresses-tracking?file=index.ts&devtoolsheight=50) )
+
+```js
+// RxJS v6+
+import { fromEvent, of } from 'rxjs';
+import { bufferCount, map, mergeMap, tap } from 'rxjs/operators';
+
+const fakeKeyPressesPost = keypresses => of(201)
+  .pipe(
+    tap(_ =>  {
+      console.log(`received key presses are: ${keypresses}`);
+      document.getElementById('output').innerText = keypresses;
+    })
+  );
+
+fromEvent(document, 'keydown')
+  .pipe(
+    map((e: KeyboardEvent) => e.key),
+    bufferCount(5),
+    mergeMap(fakeKeyPressesPost)
+  ).subscribe();
+```
+
 ### Additional Resources
 
 * [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount)
