@@ -67,7 +67,7 @@ const subscribe = bufferEveryOne.subscribe(val =>
 );
 ```
 
-##### Example 3: Last n keyboard pressess tracking
+##### Example 3: Last n keyboard presses tracking
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-buffecount-keypresses-tracking?file=index.ts&devtoolsheight=50) )
 
