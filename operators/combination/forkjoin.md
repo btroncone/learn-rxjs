@@ -19,7 +19,7 @@ value!
 This operator is best used when you have a group of observables and only care
 about the final emitted value of each. One common use case for this is if you
 wish to issue multiple requests on page load (or some other event) and only want
-to take action when a response has been receieved for all. In this way it is
+to take action when a response has been received for all. In this way it is
 similar to how you might use
 [`Promise.all`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all).
 
