@@ -6,3 +6,4 @@ For use-cases that depend on a specific condition to be met, these operators do 
 * [defaultIfEmpty](defaultifempty.md)
 * [every](every.md)
 * [iif](iif.md)
+* [sequenceequal](sequenceequal.md)
