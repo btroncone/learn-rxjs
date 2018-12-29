@@ -20,6 +20,7 @@
     - [defaultIfEmpty](/operators/conditional/defaultifempty.md)
     - [every](/operators/conditional/every.md)
     - [iif](/operators/conditional/iif.md)
+    - [sequenceequal](/operators/conditional/sequenceequal.md)
   - [Creation](/operators/creation/README.md)
     - [create](/operators/creation/create.md)
     - [empty](/operators/creation/empty.md)
