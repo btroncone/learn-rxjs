@@ -62,6 +62,7 @@ _[Prefer a split by operator type?](README.md)_
 - [retryWhen](error_handling/retrywhen.md)
 - [sample](filtering/sample.md)
 - [scan](transformation/scan.md) :star:
+- [sequenceequal](conditional/sequenceequal.md)
 - [share](multicasting/share.md) :star:
 - [shareReplay](multicasting/sharereplay.md) :star:
 - [single](filtering/single.md)
