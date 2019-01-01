@@ -59,4 +59,3 @@ Get continents
 - [of](../operators/creation/of.md)
 - [switchMap](../operators/transformation/switchmap.md)
 - [tap](../operators/utility/do.md)
-- [throttleTime](../operators/filtering/throttletime.md)
