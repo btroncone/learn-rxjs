@@ -9,6 +9,7 @@ _[Prefer a split by operator type?](README.md)_
 
 - [audit](filtering/audit.md)
 - [auditTime](filtering/audittime.md)
+- [BehaviorSubject](subjects/behaviorsubject.md)
 - [buffer](transformation/buffer.md)
 - [bufferCount](transformation/buffercount.md)
 - [bufferTime](transformation/buffertime.md) :star:
