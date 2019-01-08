@@ -49,6 +49,7 @@ applicable.
 - [Error Handling](/operators/error_handling/README.md)
 - [Multicasting](/operators/multicasting/README.md)
 - [Filtering](/operators/filtering/README.md)
+- [Subjects](/operators/subjects/README.md)
 - [Transformation](/operators/transformation/README.md)
 - [Utility](/operators/utility/README.md)
 
