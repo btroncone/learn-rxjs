@@ -1,8 +1,6 @@
 # Summary
 
 ### Learn RxJS
-- [Internal](/internal/README.md)
-  - [BehaviorSubject](/internal/behaviorsubject.md)
 - [Operators](/operators/README.md)
   - [Combination](/operators/combination/README.md)
     - [combineAll](/operators/combination/combineall.md)
