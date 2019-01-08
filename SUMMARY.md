@@ -61,6 +61,8 @@
     - [takeWhile](/operators/filtering/takewhile.md)
     - [throttle](/operators/filtering/throttle.md)
     - [throttleTime](/operators/filtering/throttletime.md)
+  - [Subjects](/operators/subjects/README.md)
+    - [BehaviorSubject](/operators/subjects/behaviorsubject.md)
   - [Transformation](/operators/transformation/README.md)
     - [buffer](/operators/transformation/buffer.md)
     - [bufferCount](/operators/transformation/buffercount.md)
