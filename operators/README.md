@@ -63,6 +63,8 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [publish](multicasting/publish.md)
   - [share](multicasting/share.md) :star:
   - [shareReplay](multicasting/sharereplay.md) :star:
+- [Subjects](subjects/README.md)
+  - [BehaviorSubject](subjects/behaviorsubject.md)
 - [Transformation](transformation/README.md)
   - [buffer](transformation/buffer.md)
   - [bufferCount](transformation/buffercount.md)
