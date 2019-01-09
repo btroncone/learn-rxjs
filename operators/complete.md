@@ -7,10 +7,8 @@ _[Prefer a split by operator type?](README.md)_
 
 ### Contents (In Alphabetical Order)
 
-- [AsyncSubject](subjects/asyncsubject.md)
 - [audit](filtering/audit.md)
 - [auditTime](filtering/audittime.md)
-- [BehaviorSubject](subjects/behaviorsubject.md)
 - [buffer](transformation/buffer.md)
 - [bufferCount](transformation/buffercount.md)
 - [bufferTime](transformation/buffertime.md) :star:
@@ -60,7 +58,6 @@ _[Prefer a split by operator type?](README.md)_
 - [race](combination/race.md)
 - [range](creation/range.md)
 - [repeat](utility/repeat.md)
-- [ReplaySubject](subjects/replaysubject.md)
 - [retry](error_handling/retry.md)
 - [retryWhen](error_handling/retrywhen.md)
 - [sample](filtering/sample.md)
@@ -73,7 +70,6 @@ _[Prefer a split by operator type?](README.md)_
 - [skipUntil](filtering/skipuntil.md)
 - [skipWhile](filtering/skipwhile.md)
 - [startWith](combination/startwith.md) :star:
-- [Subject](subjects/subject.md)
 - [switchMap](transformation/switchmap.md) :star:
 - [take](filtering/take.md) :star:
 - [takeUntil](filtering/takeuntil.md) :star:
