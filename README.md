@@ -60,7 +60,7 @@ applicable.
 
 A Subject is a special type of Observable that allows values to be multicasted to many Observables. Subjects are like EventEmitters.
 
-- [What is a Subject?](/subjects/what-is-a-subject.md)
+- [What is a Subject?](/subjects/README.md)
 - [AsyncSubject](/subjects/asyncsubject.md)
 - [BehaviorSubject](/subjects/behaviorsubject.md)
 - [ReplaySubject](/subjects/replaysubject.md)
