@@ -41,7 +41,7 @@ in both [JSBin](https://jsbin.com) and [JSFiddle](https://jsfiddle.net). Links
 to additional resources and recipes for each operator are also provided, when
 applicable.
 
-##### Categories
+##### Operator Categories
 
 - [Combination](/operators/combination/README.md)
 - [Conditional](/operators/conditional/README.md)
@@ -57,6 +57,16 @@ applicable.
 
 [Complete listing in alphabetical order](/operators/complete.md)
 
+#### Understanding Subjects
+
+Description WIP
+
+- [What is a Subject?](/subjects/what-is-a-subject.md)
+- [AsyncSubject](/subjects/asyncsubject.md)
+- [BehaviorSubject](/subjects/behaviorsubject.md)
+- [ReplaySubject](/subjects/replaysubject.md)
+- [Subject](/subjects/subject.md)
+
 #### Concepts
 
 Without a solid base knowledge of how Observables work behind the scenes, it's
@@ -64,13 +74,19 @@ easy for much of RxJS to feel like 'magic'. This section helps solidify the
 major concepts needed to feel comfortable with reactive programming and
 Observables.
 
-[Complete Concept Listing](/concepts/README.md)
+- [RxJS v5 -> v6 Upgrade](rxjs5-6.md)
+- [Understanding Operator Imports](operator-imports.md)
 
 #### Recipes
 
 Recipes for common use-cases and interesting solutions with RxJS.
 
-[Complete Recipe Listing](/recipes/README.md)
+- [Game Loop](gameloop.md)
+- [Horizontal Scroll Indicator](horizontal-scroll-indicator.md)
+- [HTTP Polling](http-polling.md)
+- [Progress Bar](progressbar.md)
+- [Smart Counter](smartcounter.md)
+- [Type Ahead](type-ahead.md)
 
 ## Introductory Resources
 
