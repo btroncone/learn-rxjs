@@ -17,5 +17,9 @@ There are 4 variants of subjects:
 
 ### Additional Resources
 
+* [Official overview](http://reactivex.io/rxjs/manual/overview.html#subject)
+  :newspaper:
+* [Official documentation](http://reactivex.io/documentation/subject.html)
+  :newspaper:
 * [On The Subject Of Subjects (in RxJS)](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93)
   :newspaper: - Ben Lesh
