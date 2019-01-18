@@ -2,7 +2,7 @@
 
 A Subject is a special type of Observable which shares a single execution path among observers. 
 
-You can think of this as a single speaker talking at a microphone in a room full of people. Their message (the subject) is being delivered to multiple people (the observers) at once. This is the basis of *multicasting*. Typical observables would be comparable to a 1 on 1 conversation.
+You can think of this as a single speaker talking at a microphone in a room full of people. Their message (the subject) is being delivered  to many (multicast) people (the observers) at once. This is the basis of **multicasting**. Typical observables would be comparable to a 1 on 1 conversation.
 
 There are 4 variants of subjects:
 
