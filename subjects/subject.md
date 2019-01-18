@@ -1,6 +1,6 @@
 # Subject
 
-##  A Subject is a special type of Observable that allows values to be multicasted to many Observables. Subjects are like EventEmitters.
+##  A special type of Observable which shares a single execution path among observers
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/uc-leader.svg" style="width:100%;max-width:100%"></a></div>
 
