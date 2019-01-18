@@ -58,7 +58,7 @@ applicable.
 
 #### Understanding Subjects
 
-A Subject is a special type of Observable that allows values to be multicasted to many Observables. Subjects are like EventEmitters.
+A Subject is a special type of Observable which shares a single execution path among observers. 
 
 - [What is a Subject?](/subjects/README.md)
 - [AsyncSubject](/subjects/asyncsubject.md)
