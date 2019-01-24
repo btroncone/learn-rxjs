@@ -17,11 +17,11 @@ import { AsyncSubject } from 'rxjs';
 
 const sub = new AsyncSubject();
 
-sub.asObservable().subscribe(console.log);
+sub.subscribe(console.log);
 
 sub.next(123); //nothing logged
 
-sub.asObservable().subscribe(console.log);
+sub.subscribe(console.log);
 
 sub.next(456); //nothing logged
 sub.complete(); //456, 456 logged by both subscribers
