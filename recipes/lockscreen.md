@@ -184,4 +184,4 @@ Password:
 - [takeUntil](../operators/filtering/takeuntil.md)
 - [tap](../operators/utility/do.md)
 - [throttleTime](../operators/filtering/throttletime.md)
-- [toArray](../operators/transformation/toArray.md)
+- [toArray](../operators/transformation/toarray.md)
