@@ -76,6 +76,10 @@ const example = evenSource.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+- [Lockscreen](../../recipes/lockscreen.md)
+
 ### Additional Resources
 
 - [takeUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeUntil)
