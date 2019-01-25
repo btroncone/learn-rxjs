@@ -96,6 +96,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 - [Progress Bar](../../recipes/progressbar.md)
 - [HTTP Polling](../../recipes/http-polling.md)
+- [Lockscreen](../../recipes/lockscreen.md)
 
 ### Additional Resources
 
