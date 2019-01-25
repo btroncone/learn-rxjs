@@ -167,6 +167,7 @@ Resume Timer
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Progress Bar](../../recipes/progressbar.md)
 - [HTTP Polling](../../recipes/http-polling.md)
+- [Lockscreen](../../recipes/lockscreen.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
