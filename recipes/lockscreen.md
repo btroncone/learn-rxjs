@@ -181,7 +181,7 @@ Password:
 - [sequenceEqual](../operators/conditional/sequenceequal.md)
 - [Subject](../subjects/subject.md)
 - [switchMap](../operators/transformation/switchmap.md)
-- [takeUntil](../operators/filtering/takeuntil/md)
+- [takeUntil](../operators/filtering/takeuntil.md)
 - [tap](../operators/utility/do.md)
 - [throttleTime](../operators/filtering/throttletime.md)
 - [toArray](../operators/transformation/toArray.md)
