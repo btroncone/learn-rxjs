@@ -62,6 +62,7 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
 
 ### Related Recipes
 
+- [Lockscreen](../../recipes/lockscreen.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
