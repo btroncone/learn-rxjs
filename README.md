@@ -60,7 +60,7 @@ applicable.
 
 A Subject is a special type of Observable which shares a single execution path among observers. 
 
-- [What is a Subject?](/subjects/README.md)
+- [Overview](/subjects/README.md)
 - [AsyncSubject](/subjects/asyncsubject.md)
 - [BehaviorSubject](/subjects/behaviorsubject.md)
 - [ReplaySubject](/subjects/replaysubject.md)
