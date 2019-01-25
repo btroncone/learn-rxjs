@@ -79,6 +79,7 @@ _[Prefer a split by operator type?](README.md)_
 - [throw](creation/throw.md)
 - [timeout](utilit/timeout.md)
 - [timer](creation/timer.md)
+- [toArray](transformation/toarray.md)
 - [toPromise](utility/topromise.md)
 - [window](transformation/window.md)
 - [windowCount](transformation/windowcount.md)

@@ -78,6 +78,7 @@
     - [reduce](/operators/transformation/reduce.md)
     - [scan](/operators/transformation/scan.md)
     - [switchMap](/operators/transformation/switchmap.md)
+    - [toArray](/operators/transformation/toarray.md)
     - [window](/operators/transformation/window.md)
     - [windowCount](/operators/transformation/windowcount.md)
     - [windowTime](/operators/transformation/windowtime.md)
