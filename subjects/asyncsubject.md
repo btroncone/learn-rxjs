@@ -1,6 +1,6 @@
 # AsyncSubject
 
-## A Subject that only emits a its last value upon completion
+## A Subject that only emits its last value upon completion
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/uc-leader.svg" style="width:100%;max-width:100%"></a></div>
 
