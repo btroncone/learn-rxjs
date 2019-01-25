@@ -82,6 +82,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [reduce](transformation/reduce.md)
   - [scan](transformation/scan.md) :star:
   - [switchMap](transformation/switchmap.md) :star:
+  - [toArray](transformation/toarray.md)
   - [window](transformation/window.md)
   - [windowCount](transformation/windowcount.md)
   - [windowTime](transformation/windowtime.md)
