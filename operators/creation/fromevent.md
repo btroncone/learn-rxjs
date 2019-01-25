@@ -35,6 +35,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Game Loop](../../recipes/gameloop.md)
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
+- [Lockscreen](../../recipes/lockscreen.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
