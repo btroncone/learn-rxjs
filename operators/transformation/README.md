@@ -24,6 +24,7 @@ will encounter.
 * [reduce](reduce.md)
 * [scan](scan.md) :star:
 * [switchMap](switchmap.md) :star:
+* [toArray](toarray.md)
 * [window](window.md)
 * [windowCount](windowcount.md)
 * [windowTime](windowtime.md)
