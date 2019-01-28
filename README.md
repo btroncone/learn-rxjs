@@ -80,13 +80,13 @@ Observables.
 
 Recipes for common use-cases and interesting solutions with RxJS.
 
-- [Game Loop](gameloop.md)
-- [Horizontal Scroll Indicator](horizontal-scroll-indicator.md)
-- [HTTP Polling](http-polling.md)
-- [Lockscreen](lockscreen.md)
-- [Progress Bar](progressbar.md)
-- [Smart Counter](smartcounter.md)
-- [Type Ahead](type-ahead.md)
+- [Game Loop](/recipes/gameloop.md)
+- [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
+- [HTTP Polling](/recipes/http-polling.md)
+- [Lockscreen](/recipes/lockscreen.md)
+- [Progress Bar](/recipes/progressbar.md)
+- [Smart Counter](/recipes/smartcounter.md)
+- [Type Ahead](/recipes/type-ahead.md)
 
 ## Introductory Resources
 
