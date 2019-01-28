@@ -104,6 +104,7 @@
   - [Game Loop](/recipes/gameloop.md)
   - [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
   - [Http Polling](/recipes/http-polling.md)
+  - [Lockscreen](/recipes/lockscreen.md)
   - [Progress Bar](/recipes/progressbar.md)
   - [Smart Counter](/recipes/smartcounter.md)
   - [Type Ahead](/recipes/type-ahead.md)
