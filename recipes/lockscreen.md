@@ -14,6 +14,12 @@ This recipe demonstrates RxJs implementation of lockscreen functionality (known 
 
 #### index.ts
 ```js
+/*
+  Use mouse to 'swipe' across the lock pad.
+  Pad will turn green if password is correct or red if password is incorrect.
+  You cas set password to whatever sequence you like.
+*/
+
 // RxJS v6+
 import { from, fromEvent, Subject, merge } from 'rxjs';
 import { switchMap, takeUntil, repeat, tap, map, throttleTime, distinctUntilChanged, filter, toArray, sequenceEqual } from 'rxjs/operators';
