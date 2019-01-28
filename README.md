@@ -73,8 +73,8 @@ easy for much of RxJS to feel like 'magic'. This section helps solidify the
 major concepts needed to feel comfortable with reactive programming and
 Observables.
 
-- [RxJS v5 -> v6 Upgrade](rxjs5-6.md)
-- [Understanding Operator Imports](operator-imports.md)
+- [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
+- [Understanding Operator Imports](/concepts/operator-imports.md)
 
 #### Recipes
 
