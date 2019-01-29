@@ -183,6 +183,7 @@ Password:
 - [fromEvent](../operators/creation/fromevent.md)
 - [map](../operators/transformation/map.md)
 - [merge](../operators/combination/merge.md)
+- [pluck](../operators/transformation/pluck.md)
 - [repeat](../operators/utility/repeat.md)
 - [sequenceEqual](../operators/conditional/sequenceequal.md)
 - [Subject](../subjects/subject.md)
