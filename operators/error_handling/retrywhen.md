@@ -34,7 +34,7 @@ const example = source.pipe(
     errors.pipe(
       //log error message
       tap(val => console.log(`Value ${val} was too high!`)),
-      //restart in 5 seconds
+      //restart in 6 seconds
       delayWhen(val => timer(val * 1000))
     )
   )
@@ -48,7 +48,7 @@ const example = source.pipe(
   4
   5
   "Value 6 was too high!"
-  --Wait 5 seconds then repeat
+  --Wait 6 seconds then repeat
 */
 const subscribe = example.subscribe(val => console.log(val));
 ```
