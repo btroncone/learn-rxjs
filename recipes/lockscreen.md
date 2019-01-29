@@ -22,7 +22,7 @@ This recipe demonstrates RxJs implementation of lockscreen functionality (known 
 
 // RxJS v6+
 import { from, fromEvent, Subject, merge } from 'rxjs';
-import { switchMap, takeUntil, repeat, tap, map, throttleTime, distinctUntilChanged, filter, toArray, sequenceEqual } from 'rxjs/operators';
+import { switchMap, takeUntil, repeat, tap, map, throttleTime, distinctUntilChanged, filter, toArray, sequenceEqual, pluck } from 'rxjs/operators';
 import { pads, resetPasswordPad, setResult, setTouched, updateCurrentPassword } from './dom-updater';
 
 const sub = new Subject();
@@ -49,7 +49,7 @@ const actualPassword$ = fromEvent(document, 'mousedown')
       v.y > r.top &&
       v.y < r.bottom)),
     filter(v => !!v),
-    map(({id}) => id),
+    pluck('id'),
     distinctUntilChanged(),
     tap(setTouched),
     tap(updateCurrentPassword),
