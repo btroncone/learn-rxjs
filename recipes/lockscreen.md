@@ -48,8 +48,8 @@ const actualPassword$ = fromEvent(document, 'mousedown')
       v.x < r.right &&
       v.y > r.top &&
       v.y < r.bottom)),
-    map(v => v ? v.id : v),
-    filter(v => v !== undefined),
+    filter(v => !!v),
+    map(({id}) => id),
     distinctUntilChanged(),
     tap(setTouched),
     tap(updateCurrentPassword),
