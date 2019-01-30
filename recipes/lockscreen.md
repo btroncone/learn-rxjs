@@ -19,11 +19,10 @@ This recipe demonstrates RxJs implementation of lockscreen functionality (known 
   Pad will turn green if password is correct or red if password is incorrect.
   You can set password to whatever sequence you like.
 */
-
 // RxJS v6+
-import { from, fromEvent, Subject, merge } from 'rxjs';
+import { from, fromEvent, Subject, merge, pipe } from 'rxjs';
 import { switchMap, takeUntil, repeat, tap, map, throttleTime, distinctUntilChanged, filter, toArray, sequenceEqual, pluck } from 'rxjs/operators';
-import { pads, resetPasswordPad, setResult, setTouched, updateCurrentPassword } from './dom-updater';
+import { displaySelectedNumbersSoFar, markTouchedPad, pads, resetPasswordPad, setResult } from './dom-updater';
 
 const sub = new Subject();
 const expectedPasswordUpdate$ = fromEvent(document.getElementById('expectedPassword'), 'keyup')
@@ -34,25 +33,33 @@ const expectedPasswordUpdate$ = fromEvent(document.getElementById('expectedPassw
 let expectedPassword = [1, 2, 5, 2];
 const expectedPassword$ = sub.pipe(tap((v: any) => expectedPassword = v));
 
+const takeMouseSwipe = pipe(
+  switchMap(_ => fromEvent(document, 'mousemove')),
+  takeUntil(fromEvent(document, 'mouseup')),
+  throttleTime(50),
+);
 const checkIfPasswordMatch = password => from(password).pipe(sequenceEqual(from(expectedPassword)));
+const getXYCoordsOfMousePosition = ({ clientX, clientY }: MouseEvent) => ({ x: clientX, y: clientY });
+const findSelectedPad = v => pads.find(r =>
+  v.x > r.left &&
+  v.x < r.right &&
+  v.y > r.top &&
+  v.y < r.bottom);
+const getIdOfSelectedPad = pipe(
+  filter(v => !!v),
+  pluck('id'),
+  distinctUntilChanged()
+);
 
 const actualPassword$ = fromEvent(document, 'mousedown')
   .pipe(
     tap(resetPasswordPad),
-    switchMap(_ => fromEvent(document, 'mousemove')),
-    takeUntil(fromEvent(document, 'mouseup')),
-    throttleTime(50),
-    map(({ clientX, clientY }: MouseEvent) => ({ x: clientX, y: clientY })),
-    map(v => pads.find(r =>
-      v.x > r.left &&
-      v.x < r.right &&
-      v.y > r.top &&
-      v.y < r.bottom)),
-    filter(v => !!v),
-    pluck('id'),
-    distinctUntilChanged(),
-    tap(setTouched),
-    tap(updateCurrentPassword),
+    takeMouseSwipe,
+    map(getXYCoordsOfMousePosition),
+    map(findSelectedPad),
+    getIdOfSelectedPad,
+    tap(markTouchedPad),
+    tap(displaySelectedNumbersSoFar),
     toArray(),
     switchMap(checkIfPasswordMatch),
     tap(setResult),
@@ -68,6 +75,7 @@ merge(
 
 #### dom-updater.ts
 ```js
+
 const createPadObject = (id, rectange) => ({
   id: id,
   left: rectange.left,
@@ -88,7 +96,7 @@ export const pads = Array
   .from({ length: 9 }, (_, n) => n + 1)
   .map(v => createPadObject(v, getPad(v).getBoundingClientRect()));
 
-export const setTouched = v => {
+export const markTouchedPad = v => {
   const pad = getPad(v);
   pad.style.background = 'lightgrey';
   if (!pad.animate) return; //animate does not work in IE
@@ -109,7 +117,7 @@ export const setResult = result => {
   setResultText('Password ' + (result ? 'matches :)' : 'does not match :('));
 }
 
-export const updateCurrentPassword = v =>
+export const displaySelectedNumbersSoFar = v =>
   document.getElementById('result').textContent += v;
 
 export const resetPasswordPad = () => {
