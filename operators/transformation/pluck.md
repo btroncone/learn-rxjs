@@ -49,6 +49,9 @@ const example = source.pipe(pluck('job', 'title'));
 //output: "Developer" , undefined
 const subscribe = example.subscribe(val => console.log(val));
 ```
+### Related Recipes
+
+- [Lockscreen](../../recipes/lockscreen.md)
 
 ### Additional Resources
 

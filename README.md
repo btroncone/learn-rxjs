@@ -83,6 +83,7 @@ Recipes for common use-cases and interesting solutions with RxJS.
 - [Game Loop](/recipes/gameloop.md)
 - [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
 - [HTTP Polling](/recipes/http-polling.md)
+- [Lockscreen](/recipes/lockscreen.md)
 - [Progress Bar](/recipes/progressbar.md)
 - [Smart Counter](/recipes/smartcounter.md)
 - [Type Ahead](/recipes/type-ahead.md)

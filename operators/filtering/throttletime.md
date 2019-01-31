@@ -58,6 +58,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
+- [Lockscreen](../../recipes/lockscreen.md)
 
 ### Additional Resources
 

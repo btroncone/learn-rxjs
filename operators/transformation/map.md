@@ -55,6 +55,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Game Loop](../../recipes/gameloop.md)
 - [HTTP Polling](../../recipes/http-polling.md)
+- [Lockscreen](../../recipes/lockscreen.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources

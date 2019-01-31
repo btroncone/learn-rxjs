@@ -29,6 +29,10 @@ interval(100)
 // output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+### Related Recipes
+
+- [Lockscreen](../../recipes/lockscreen.md)
+
 ### Additional Resources
 
 - [toArray](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-toArray)

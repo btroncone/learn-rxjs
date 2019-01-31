@@ -60,6 +60,10 @@ fromEvent(document, 'keydown')
   
 ```
 
+### Related Recipes
+
+- [Lockscreen](../../recipes/lockscreen.md)
+
 ### Additional Resources
 
 - [sequenceEqual](https://rxjs-dev.firebaseapp.com/api/operators/sequenceEqual)
