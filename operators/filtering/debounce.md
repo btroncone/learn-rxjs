@@ -11,11 +11,15 @@
 
 ---
 
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+
 ### Examples
 
 ##### Example 1: Debounce on timer
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-dzjbra?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/sorimeyoro/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-dzjbra?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/sorimeyoro/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/e5698yow/) )
 
 ```js
@@ -39,7 +43,9 @@ const subscribe = debouncedExample.subscribe(val => console.log(val));
 
 ##### Example 2: Debounce at increasing interval
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qnfidr?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/sotaretese/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-qnfidr?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/sotaretese/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/6ab34nq6/) )
 
 ```js
@@ -63,9 +69,9 @@ const subscribe = debouncedInterval.subscribe(val =>
 
 ### Additional Resources
 
-* [debounce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce)
+- [debounce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce)
   :newspaper: - Official docs
-* [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---
