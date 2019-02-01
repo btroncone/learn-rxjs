@@ -28,7 +28,7 @@ material on the web. The goal is to supplement the
 while offering a new, fresh perspective to clear any hurdles and tackle the pain
 points. Learning Rx may be difficult but it is certainly worth the effort!
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/uc-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
 ## Content
 

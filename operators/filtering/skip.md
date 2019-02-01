@@ -16,7 +16,7 @@ emissions.
 You could mimic `skip` by using [`filter`](./filter.md) with indexes. Ex.
 `.filter((val, index) => index > 1)`
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/uc-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
