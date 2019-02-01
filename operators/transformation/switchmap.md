@@ -162,6 +162,45 @@ Resume Timer
 </button>
 ```
 
+##### Example 5: switchMap error handling comparison
+
+( [StackBlitz](https://stackblitz.com/edit/rxjs-switchmap-errors?file=index.ts&devtoolsheight=80) )
+
+```js
+// RxJS v6+
+import { fromEvent, of, throwError } from 'rxjs';
+import { switchMap, tap, catchError } from 'rxjs/operators';
+
+const fakeRequest$ = of().pipe(
+  tap(_ => console.log('fakeRequest')),
+  throwError
+);
+
+// this will only listen to first click and stop sending 'fakeRequests' due to catchError being placed outside switch map pipe. 
+// catchError requires to return new observable which effectively ends fromEvent stream.
+const iWillStopListening$ =
+  fromEvent(document.getElementById('stopped'), 'click')
+    .pipe(
+      switchMap(_ => fakeRequest$),
+      catchError(_ => of('no more requests!!!'))
+    );
+    
+    
+// this will continue sending 'fakeRequests' due to catchError being placed directly on fakeRequest$ pipe.
+// catchError in this case will only end fakeRequest$ stream without affecting fromEvent stream.
+const iWillContinueListening$ =
+  fromEvent(document.getElementById('continued'), 'click')
+    .pipe(
+      switchMap(_ =>
+        fakeRequest$.pipe(
+          catchError(_ => of('keep on clicking!!!'))
+        ))
+    );
+
+iWillStopListening$.subscribe(console.log);
+iWillContinueListening$.subscribe(console.log);
+```
+
 ### Related Recipes
 
 - [Smart Counter](../../recipes/smartcounter.md)
