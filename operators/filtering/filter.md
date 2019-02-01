@@ -11,11 +11,15 @@ out [takeWhile](takewhile.md)!
 
 ---
 
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+
 ### Examples
 
 ##### Example 1: filter for even numbers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-4g4cys?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/vafogoluye/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-4g4cys?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/vafogoluye/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/tkz0fuy2/) )
 
 ```js
@@ -33,7 +37,9 @@ const subscribe = example.subscribe(val => console.log(`Even number: ${val}`));
 
 ##### Example 2: filter objects based on property
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-n73fsn?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/qihagaxuso/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-n73fsn?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/qihagaxuso/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/yjdsoug1/) )
 
 ```js
@@ -51,7 +57,9 @@ const subscribe = example.subscribe(val => console.log(`Over 30: ${val.name}`));
 
 ##### Example 3: filter for number greater than specified value
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-eyvvfu?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/rakabaheyu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-eyvvfu?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/rakabaheyu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/g1tgreha/) )
 
 ```js
@@ -76,17 +84,17 @@ const subscribe = example.subscribe(val =>
 
 ### Related Recipes
 
-* [HTTP Polling](../../recipes/http-polling.md)
-* [Game Loop](../../recipes/gameloop.md)
-* [Lockscreen](../../recipes/lockscreen.md)
+- [HTTP Polling](../../recipes/http-polling.md)
+- [Game Loop](../../recipes/gameloop.md)
+- [Lockscreen](../../recipes/lockscreen.md)
 
 ### Additional Resources
 
-* [filter](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter)
+- [filter](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter)
   :newspaper: - Official docs
-* [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
+- [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
-* [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

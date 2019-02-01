@@ -11,11 +11,15 @@ must match!
 
 ---
 
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+
 ### Examples
 
 ##### Example 1: distinctUntilChanged with basic values
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-bsb8mw?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/qoyoxeheva/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bsb8mw?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/qoyoxeheva/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/xc2vzct7/) )
 
 ```js
@@ -38,7 +42,9 @@ const nonDistinctSub = myArrayWithDuplicatesInARow
 
 ##### Example 2: distinctUntilChanged with objects
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-moe7mh?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/mexocipave/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-moe7mh?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/mexocipave/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/t4ava5b4/) )
 
 ```js
@@ -67,9 +73,9 @@ const nonDistinctObjects = myArrayWithDuplicateObjects
 
 ### Additional Resources
 
-* [distinctUntilChanged](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged)
+- [distinctUntilChanged](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-distinctUntilChanged)
   :newspaper: - Official docs
-* [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---

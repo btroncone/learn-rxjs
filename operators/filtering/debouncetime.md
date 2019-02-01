@@ -11,11 +11,15 @@ of user input must be controlled!
 
 ---
 
+<div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+
 ### Examples
 
 ##### Example 1: Debouncing based on time between input
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-adheqt?file=index.ts&devtoolsheight=50) | [jsBin](http://jsbin.com/kacijarogi/1/edit?js,console,output) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-adheqt?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/kacijarogi/1/edit?js,console,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/7kbg4q2e/) )
 
 ```js
@@ -44,9 +48,9 @@ const subscribe = debouncedInput.subscribe(val => {
 
 ### Additional Resources
 
-* [debounceTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounceTime)
+- [debounceTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounceTime)
   :newspaper: - Official docs
-* [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---
