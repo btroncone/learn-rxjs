@@ -68,7 +68,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-catcherror-withmapoperators?file=index.ts&devtoolsheight=80) )
 
-```
+```js
 // switchMap in example below can be replaced with mergeMap/concatMap/exhaustMap, the same behaviour applies
 import { throwError, fromEvent, of } from 'rxjs';
 import { catchError, tap, switchMap, mergeMap, concatMap, exhaustMap } from 'rxjs/operators';
