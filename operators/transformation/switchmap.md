@@ -169,6 +169,7 @@ Resume Timer
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Type Ahead](../../recipes/type-ahead.md)
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 
 ### Additional Resources
 
