@@ -34,9 +34,11 @@ let expectedPassword = [1, 2, 5, 2];
 const expectedPassword$ = sub.pipe(tap((v: any) => expectedPassword = v));
 
 const takeMouseSwipe = pipe(
+  // take mouse moves
   switchMap(_ => fromEvent(document, 'mousemove')),
+  // once mouse is up, we end swipe
   takeUntil(fromEvent(document, 'mouseup')),
-  throttleTime(50),
+  throttleTime(50)
 );
 const checkIfPasswordMatch = password => from(password).pipe(sequenceEqual(from(expectedPassword)));
 const getXYCoordsOfMousePosition = ({ clientX, clientY }: MouseEvent) => ({ x: clientX, y: clientY });
@@ -53,16 +55,21 @@ const getIdOfSelectedPad = pipe(
 
 const actualPassword$ = fromEvent(document, 'mousedown')
   .pipe(
+    // new stream so reset password pad and take swipe until mouse up
     tap(resetPasswordPad),
     takeMouseSwipe,
+    // as we swipe, we mark pads as touchedand and display selected numbers
     map(getXYCoordsOfMousePosition),
     map(findSelectedPad),
     getIdOfSelectedPad,
     tap(markTouchedPad),
     tap(displaySelectedNumbersSoFar),
+    // we need an array of numbers from current swipe which we can pass to checkIfPasswordMatch
     toArray(),
+    // on mouse up (swipe end), switchMap to new stream to check if password match
     switchMap(checkIfPasswordMatch),
     tap(setResult),
+    // takeUntil inside takeMouseSwipe terminated stream so we repeat from beginning (mousedown) 
     repeat()
   )
 
