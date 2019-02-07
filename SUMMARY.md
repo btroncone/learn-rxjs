@@ -101,6 +101,7 @@
   - [ReplaySubject](/subjects/replaysubject.md)
   - [Subject](/subjects/subject.md)
 - [Recipes](/recipes/README.md)
+  - [Catch The Dot Game](/recipes/catch-the-dot-game.md)
   - [Game Loop](/recipes/gameloop.md)
   - [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
   - [Http Polling](/recipes/http-polling.md)
