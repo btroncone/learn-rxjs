@@ -25,6 +25,10 @@ const source = interval(1000);
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
+### Related Recipes
+
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+
 ### Additional Resources
 
 - [interval](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-interval)

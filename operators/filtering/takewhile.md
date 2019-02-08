@@ -58,6 +58,7 @@ source
 ### Related Recipes
 
 - [Smart Counter](../../recipes/smartcounter.md)
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 
 ### Additional Resources
 

@@ -117,6 +117,7 @@ interval(1000)
 
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Progress Bar](../../recipes/progressbar.md)
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 
 ### Additional Resources
 
