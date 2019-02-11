@@ -22,6 +22,7 @@
     - [sequenceEqual](/operators/conditional/sequenceequal.md)
   - [Creation](/operators/creation/README.md)
     - [create](/operators/creation/create.md)
+    - [defer](/operators/creation/defer.md)
     - [empty](/operators/creation/empty.md)
     - [from](/operators/creation/from.md)
     - [fromEvent](/operators/creation/fromevent.md)
