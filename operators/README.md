@@ -26,6 +26,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [sequenceequal](conditional/sequenceequal.md)
 - [Creation](creation/README.md)
   - [create](creation/create.md)
+  - [defer](creation/defer.md)
   - [empty](creation/empty.md)
   - [from](creation/from.md) :star:
   - [fromEvent](creation/fromevent.md)
