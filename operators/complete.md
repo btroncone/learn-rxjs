@@ -25,6 +25,7 @@ _[Prefer a split by operator type?](README.md)_
 - [debounce](filtering/debounce.md)
 - [debounceTime](filtering/debouncetime.md) :star:
 - [defaultIfEmpty](conditional/defaultifempty.md)
+- [defer](creation/defer.md)
 - [delay](utility/delay.md)
 - [delayWhen](utility/delaywhen.md)
 - [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
