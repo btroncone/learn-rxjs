@@ -118,6 +118,7 @@ interval(1000)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Progress Bar](../../recipes/progressbar.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 
 ### Additional Resources
 
