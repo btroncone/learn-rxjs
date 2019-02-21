@@ -28,6 +28,7 @@ const subscribe = source.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 
 ### Additional Resources
 
