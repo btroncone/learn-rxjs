@@ -81,6 +81,7 @@ Observables.
 Recipes for common use-cases and interesting solutions with RxJS.
 
 - [Catch The Dot Game](/recipes/catch-the-dot-game.md)
+- [Flappy Bird Game](/recipes/flappy-bird-game.md)
 - [Game Loop](/recipes/gameloop.md)
 - [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
 - [HTTP Polling](/recipes/http-polling.md)
