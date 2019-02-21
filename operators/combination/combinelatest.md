@@ -157,6 +157,10 @@ const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
 <div>Total: <span id="total"></span> </div>
 ```
 
+### Related Recipes
+
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
+
 ### Additional Resources
 
 - [combineLatest](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest)
