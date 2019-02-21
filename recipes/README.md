@@ -5,6 +5,7 @@ Common use-cases and interesting recipes to help learn RxJS.
 
 ### Contents
 * [Catch The Dot Game](catch-the-dot-game.md)
+* [Flappy Bird Game](flappy-bird-game.md)
 * [Game Loop](gameloop.md)
 * [Horizontal Scroll Indicator](horizontal-scroll-indicator.md)
 * [HTTP Polling](http-polling.md)
