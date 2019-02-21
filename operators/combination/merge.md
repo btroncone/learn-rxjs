@@ -73,6 +73,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 
