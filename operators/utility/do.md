@@ -45,6 +45,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 
 ### Additional Resources
 
