@@ -92,6 +92,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Smart Counter](../../recipes/smartcounter.md)
+- [Space Invaders Game](/recipes/space-invaders-game.md)
 
 ### Additional Resources
 
