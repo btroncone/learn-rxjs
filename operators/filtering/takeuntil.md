@@ -79,6 +79,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Lockscreen](../../recipes/lockscreen.md)
+- [Space Invaders Game](/recipes/space-invaders-game.md)
 
 ### Additional Resources
 
