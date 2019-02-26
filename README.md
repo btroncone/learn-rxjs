@@ -88,6 +88,7 @@ Recipes for common use-cases and interesting solutions with RxJS.
 - [Lockscreen](/recipes/lockscreen.md)
 - [Progress Bar](/recipes/progressbar.md)
 - [Smart Counter](/recipes/smartcounter.md)
+- [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Type Ahead](/recipes/type-ahead.md)
 
 ## Introductory Resources
