@@ -11,7 +11,7 @@
 ##### Example 1: Defer to get current date/time at the time of subscription
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-defer-example.ts&devtoolsheight=100) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-defer-example?file=index.ts&devtoolsheight=100) )
 
 ```js
 // RxJS v6+
