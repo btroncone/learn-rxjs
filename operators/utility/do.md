@@ -47,6 +47,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 
 ### Additional Resources
 
