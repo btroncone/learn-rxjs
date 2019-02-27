@@ -59,6 +59,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Type Ahead](../../recipes/type-ahead.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 
 ### Additional Resources
 
