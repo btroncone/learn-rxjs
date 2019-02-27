@@ -61,6 +61,10 @@ fromEvent(document, 'mousemove').pipe(
 
 ```
 
+### Related Recipes
+
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
+
 ### Additional Resources
 
 - [iif](https://rxjs-dev.firebaseapp.com/api/index/function/iif)
