@@ -111,6 +111,7 @@
   - [Progress Bar](/recipes/progressbar.md)
   - [Smart Counter](/recipes/smartcounter.md)
   - [Space Invaders Game](/recipes/space-invaders-game.md)
+  - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
   - [Type Ahead](/recipes/type-ahead.md)
 - [Concepts](/concepts/README.md)
   - [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
