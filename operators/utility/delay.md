@@ -45,6 +45,7 @@ const subscribe = message.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Progress Bar](../../recipes/progressbar.md)
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 
 ### Additional Resources
 
