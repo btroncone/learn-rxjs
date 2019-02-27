@@ -42,6 +42,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources

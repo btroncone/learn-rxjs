@@ -80,6 +80,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 
 ### Additional Resources
 

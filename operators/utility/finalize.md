@@ -26,7 +26,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-* [HTTP Polling](../../recipes/http-polling.md)
+- [HTTP Polling](../../recipes/http-polling.md)
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 
 ### Additional Resources
 

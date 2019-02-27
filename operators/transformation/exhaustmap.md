@@ -88,6 +88,10 @@ const exhaustSub = firstInterval
   .subscribe(s => console.log(s));
 ```
 
+### Related Recipes
+
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
+
 ### Outside Examples
 
 ##### `exhaustMap` for login effect in [@ngrx example app](https://github.com/ngrx/platform/tree/a9e522953832b09bb329bac4524637bc608c450a/example-app)
