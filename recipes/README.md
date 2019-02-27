@@ -12,4 +12,6 @@ Common use-cases and interesting recipes to help learn RxJS.
 * [Lockscreen](lockscreen.md)
 * [Progress Bar](progressbar.md)
 * [Smart Counter](smartcounter.md)
+* [Space Invaders Game](space-invaders-game.md)
+* [Swipe To Refresh](swipe-to-refresh.md)
 * [Type Ahead](type-ahead.md)
