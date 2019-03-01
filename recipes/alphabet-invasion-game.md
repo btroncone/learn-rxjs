@@ -17,6 +17,7 @@ This recipe demonstrates RxJs implementation of Alphabet Invasion Game.
 // RxJS v6+
 import { interval, fromEvent, combineLatest, BehaviorSubject } from 'rxjs';
 import { scan, startWith, map, takeWhile, switchMap } from 'rxjs/operators';
+import { State, Letter, Letters } from './interfaces';
 
 const randomLetter = () => String.fromCharCode(
   Math.random() * ('z'.charCodeAt(0) - 'a'.charCodeAt(0)) + 'a'.charCodeAt(0));
@@ -30,13 +31,13 @@ const intervalSubject = new BehaviorSubject(600);
 const letters$ = intervalSubject.pipe(
   switchMap(i => interval(i)
     .pipe(
-      scan<number, any>((a, c) => ({
+      scan<number, Letters>((letters) => ({
         intrvl: i,
         ltrs: [({
           letter: randomLetter(),
           yPos: Math.floor(Math.random() * gameWidth)
-        }), ...a.ltrs]
-      }), { ltrs: [], i: 0 })
+        }), ...letters.ltrs]
+      }), { ltrs: [], intrvl: 0 })
     )));
 
 const keys$ = fromEvent(document, 'keydown')
@@ -45,7 +46,7 @@ const keys$ = fromEvent(document, 'keydown')
     map((e: KeyboardEvent) => e.key)
   );
 
-const renderGame = state => (
+const renderGame = (state: State) => (
   document.body.innerHTML = `Score: ${state.score}, Level: ${state.level} <br/>`,
   state.letters.forEach(l => document.body.innerHTML +=
     '&nbsp'.repeat(l.yPos) + l.letter + '<br/>'),
@@ -56,7 +57,7 @@ const renderGameOver = () => document.body.innerHTML += '<br/>GAME OVER!';
 const noop = () => { };
 
 const game$ = combineLatest(keys$, letters$).pipe(
-  scan<any, any>((state, [key, letters]) => (
+  scan<[string, Letters], State>((state, [key, letters]) => (
     letters.ltrs[letters.ltrs.length - 1]
       && letters.ltrs[letters.ltrs.length - 1].letter === key
       ? (state.score = state.score + 1, letters.ltrs.pop())
@@ -69,7 +70,7 @@ const game$ = combineLatest(keys$, letters$).pipe(
         intervalSubject.next(letters.intrvl - speedAdjust))
       : noop,
     ({ score: state.score, letters: letters.ltrs, level: state.level })),
-    { score: 0, letters: [], level: 0 }),
+    { score: 0, letters: [], level: 1 }),
   takeWhile(state => state.letters.length < endThreshold),
 )
 
@@ -78,6 +79,23 @@ game$.subscribe(
   noop,
   renderGameOver
 );
+```
+
+#### interfaces.ts
+```js
+export interface Letter {
+  letter: String;
+  yPos: number;
+}
+export interface Letters {
+  ltrs: Letter[];
+  intrvl: number;
+}
+export interface State {
+  score: number;
+  letters: Letter[];
+  level: number;
+}
 ```
 
 ### Operators Used
