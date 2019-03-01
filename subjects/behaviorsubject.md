@@ -84,6 +84,10 @@ merge(click$, interval$).subscribe();
   
 ```
 
+### Related Recipes
+
+- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+
 ### Additional Resources
 
 - [BehaviorSubject](https://rxjs-dev.firebaseapp.com/api/index/class/BehaviorSubject)
