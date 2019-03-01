@@ -39,8 +39,9 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Type Ahead](../../recipes/type-ahead.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
-- [Space Invaders Game](/recipes/space-invaders-game.md)
-- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
+- [Space Invaders Game](../../recipes/space-invaders-game.md)
+- [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
+- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 
 ### Additional Resources
 

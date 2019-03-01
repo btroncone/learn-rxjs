@@ -159,6 +159,7 @@ const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
 
 ### Related Recipes
 
+- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 
 ### Additional Resources

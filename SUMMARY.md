@@ -102,6 +102,7 @@
   - [ReplaySubject](/subjects/replaysubject.md)
   - [Subject](/subjects/subject.md)
 - [Recipes](/recipes/README.md)
+  - [Alphabet Invasion Game](/recipes/alphabet-invasion-game.md)
   - [Catch The Dot Game](/recipes/catch-the-dot-game.md)
   - [Flappy Bird Game](/recipes/flappy-bird-game.md)
   - [Game Loop](/recipes/gameloop.md)

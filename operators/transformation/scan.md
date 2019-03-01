@@ -119,7 +119,8 @@ interval(1000)
 - [Progress Bar](../../recipes/progressbar.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
-- [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Space Invaders Game](../../recipes/space-invaders-game.md)
+- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 
 ### Additional Resources
 
