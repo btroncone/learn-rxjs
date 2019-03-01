@@ -79,7 +79,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 3: Take mouse events on mouse down until mouse up
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-ug2ezf?file=index.ts&devtoolsheight=100) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-ug2ezf?file=index.ts&devtoolsheight=50) )
 
 ```js
 // RxJS v6+
