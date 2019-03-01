@@ -170,6 +170,7 @@ Resume Timer
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 
 ### Additional Resources
 
