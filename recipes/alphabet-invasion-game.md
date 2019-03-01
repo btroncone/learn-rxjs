@@ -90,4 +90,4 @@ game$.subscribe(
 - [scan](../operators/transformation/scan.md)
 - [startWith](../operators/combination/startwith.md)
 - [switchMap](../operators/transformation/switchmap.md)
-- [takeWhile](../operators/filtering/takeuntil.md)
+- [takeWhile](../operators/filtering/takewhile.md)
