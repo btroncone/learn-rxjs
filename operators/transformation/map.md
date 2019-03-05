@@ -61,6 +61,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 
 ### Additional Resources
 

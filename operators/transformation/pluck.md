@@ -52,6 +52,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Lockscreen](../../recipes/lockscreen.md)
+- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 
 ### Additional Resources
 
