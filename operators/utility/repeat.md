@@ -3,7 +3,13 @@
 
 #### signature: `repeat(count: number): Observable`
 
-## Repeats the stream of items emitted by the source Observable at most count times.
+## Repeats an observable on completion.
+
+---
+
+:bulb: Like [`retry`](../error_handling/retry.md) but for non error cases!
+
+---
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
@@ -24,6 +30,7 @@ const delayedThing = of('delayed value').pipe(delay(2000));
 delayedThing.pipe(
   repeat(3)
 )
+// delayed value...delayed value...delayed value
 .subscribe(console.log)
 
 ```
