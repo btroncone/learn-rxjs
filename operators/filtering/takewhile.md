@@ -62,6 +62,7 @@ source
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 
 ### Additional Resources
 
