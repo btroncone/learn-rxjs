@@ -171,6 +171,7 @@ Resume Timer
 - [Type Ahead](../../recipes/type-ahead.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 
 ### Additional Resources
 
