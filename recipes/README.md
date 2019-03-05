@@ -11,6 +11,7 @@ Common use-cases and interesting recipes to help learn RxJS.
 * [Horizontal Scroll Indicator](horizontal-scroll-indicator.md)
 * [HTTP Polling](http-polling.md)
 * [Lockscreen](lockscreen.md)
+* [Mine Sweeper Game](mine-sweeper-game.md)
 * [Progress Bar](progressbar.md)
 * [Smart Counter](smartcounter.md)
 * [Space Invaders Game](space-invaders-game.md)
