@@ -4,6 +4,16 @@
 
 ## Retry an observable sequence a specific number of times should an error occur.
 
+---
+
+:bulb: Useful for retrying HTTP requests!
+
+:bulb: If you only want to retry in certain cases, check out [`retryWhen`](./retrywhen.md)!
+
+:bulb: For non error cases check out [`repeat`](../utility/repeat.md)!
+
+---
+
 <div class="ua-ad"><a href="https://ultimatecourses.com/?ref=76683_kee7y7vk"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
