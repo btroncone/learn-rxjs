@@ -109,6 +109,7 @@
   - [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
   - [Http Polling](/recipes/http-polling.md)
   - [Lockscreen](/recipes/lockscreen.md)
+  - [Mine Sweeper Game](mine-sweeper-game.md)
   - [Progress Bar](/recipes/progressbar.md)
   - [Smart Counter](/recipes/smartcounter.md)
   - [Space Invaders Game](/recipes/space-invaders-game.md)
