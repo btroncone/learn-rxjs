@@ -52,6 +52,39 @@ const example = allEvens.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
+##### Example 3: Values arriving over time and completing stream prematurely due to every returning false
+
+(
+[Stackblitz](https://stackblitz.com/edit/rxjs-every-example?file=index.ts&devtoolsheight=100) )
+
+```js
+// RxJS v6+
+console.clear();
+import { concat, of } from 'rxjs';
+import { every, delay, tap } from 'rxjs/operators';
+
+const log = console.log;
+const returnCode = request => Number.isInteger(request)
+  ? 200
+  : 400;
+const fakeRequest = request => of({ code: returnCode(request) })
+  .pipe(
+    tap(_ => log(request)),
+    delay(1000)
+  );
+
+const apiCalls$ = concat(
+  fakeRequest(1),
+  fakeRequest("invalid payload"),
+  fakeRequest(2) //this won't execute as every will return false for previous line
+).pipe(
+  every(e => e.code === 200),
+  tap(e => log(`all request successful: ${e}`))
+);
+
+apiCalls$.subscribe();
+```
+
 ### Additional Resources
 
 - [every](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-every)
