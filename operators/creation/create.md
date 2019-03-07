@@ -25,6 +25,7 @@ import { Observable } from 'rxjs';
 const hello = Observable.create(function(observer) {
   observer.next('Hello');
   observer.next('World');
+  observer.complete();
 });
 
 //output: 'Hello'...'World'
