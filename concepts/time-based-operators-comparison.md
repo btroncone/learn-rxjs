@@ -3,6 +3,14 @@
 RxJs offers rich choice of time based operators but richness comes at cost when choosing right operator for a task at hand.
 Below comparison presents visual comparison of time based operators.
 
+Compared operators:
+
+- [auditTime](../operators/filtering/audittime.md)
+- [bufferTime](../operators/transformation/buffertime.md)
+- [debounceTime](../operators/filtering/debouncetime.md)
+- sampleTime
+- [throttleTime](../operators/filtering/throttletime.md)
+
 (
 [Stackblitz](https://stackblitz.com/edit/rxjs-time-based-operators-comparison?file=index.ts&devtoolsheight=100))
 
@@ -21,8 +29,11 @@ import { interval, merge } from 'rxjs';
 import { auditTime, bufferTime, debounceTime, sampleTime, throttleTime, tap, take } from 'rxjs/operators';
 
 const takeValue = 10;
+const intrvl = 1000;
+const time = 3000;
+
 const intervaled = (operator, operatorName) =>
-  interval(1000)
+  interval(intrvl)
     .pipe(
       take(takeValue),
       operator,
@@ -30,14 +41,13 @@ const intervaled = (operator, operatorName) =>
     );
 
 merge(
-  interval(1000).pipe(take(takeValue), tap(v => console.log(`i: ${v}`))),
-  intervaled(auditTime(3000), "audtiTime"),
-  intervaled(bufferTime(3000), "bufferTime"),
-  intervaled(debounceTime(3000), "debounceTime"),
-  intervaled(sampleTime(3000), "sampleTime"),
-  intervaled(throttleTime(3000), "throttleTime")
+  interval(intrvl).pipe(take(takeValue), tap(v => console.log(`i: ${v}`))),
+  intervaled(auditTime(time), "audtiTime"),
+  intervaled(bufferTime(time), "bufferTime"),
+  intervaled(debounceTime(time), "debounceTime"),
+  intervaled(sampleTime(time), "sampleTime"),
+  intervaled(throttleTime(time), "throttleTime")
 ).subscribe();
-
 
 // output
 /*
