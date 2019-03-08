@@ -1,4 +1,4 @@
-# create
+# defer
 
 #### signature: `defer(observableFactory: function(): SubscribableOrPromise): Observable`
 
