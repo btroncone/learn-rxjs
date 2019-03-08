@@ -74,6 +74,7 @@ major concepts needed to feel comfortable with reactive programming and
 Observables.
 
 - [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
+- [Time based operators comparison](/concepts/time-based-operators-comparison.md)
 - [Understanding Operator Imports](/concepts/operator-imports.md)
 
 #### Recipes
