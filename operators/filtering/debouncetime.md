@@ -52,6 +52,7 @@ const subscribe = debouncedInput.subscribe(val => {
   :newspaper: - Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
+- [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 
 ---
 
