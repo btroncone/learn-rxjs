@@ -1,7 +1,6 @@
 # Time based operators comparison
 
-RxJs offers rich choice of time based operators but richness comes at cost when choosing right operator for a task at hand.
-Below comparison presents visual comparison of time based operators.
+RxJS offers a rich selection of time based operators but this diversity can come at cost when choosing the right operator for a task at hand. Below is a visual comparison of popular time based operators.
 
 Compared operators:
 
