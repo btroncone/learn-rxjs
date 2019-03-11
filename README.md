@@ -36,8 +36,7 @@ points. Learning Rx may be difficult but it is certainly worth the effort!
 
 Operators are the horse-power behind observables, providing an elegant,
 declarative solution to complex asynchronous tasks. This section contains all
-[RxJS operators](/operators/README.md), included with clear, executable examples
-in both [JSBin](https://jsbin.com) and [JSFiddle](https://jsfiddle.net). Links
+[RxJS operators](/operators/README.md), included with clear, executable examples. Links
 to additional resources and recipes for each operator are also provided, when
 applicable.
 
