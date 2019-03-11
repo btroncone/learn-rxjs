@@ -55,6 +55,7 @@ const subscribe = example.subscribe(val =>
 
 * [bufferTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferTime)
   :newspaper: - Official docs
+* [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 
 ---
 
