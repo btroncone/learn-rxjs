@@ -43,6 +43,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Tank Battle Game](../../recipes/tank-battle-game.md)
 
 ### Additional Resources
 
