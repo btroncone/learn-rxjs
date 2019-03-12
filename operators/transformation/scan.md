@@ -121,6 +121,7 @@ interval(1000)
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Tank Battle Game](../../recipes/tank-battle-game.md)
 
 ### Additional Resources
 
