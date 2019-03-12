@@ -94,6 +94,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
+- [Tank Battle Game](../../recipes/tank-battle-game.md)
 
 ### Additional Resources
 
