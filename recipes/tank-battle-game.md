@@ -172,6 +172,8 @@ const paintScores = (state: State) => {
 }
 
 const painInfo = () => {
+  document.body.innerHTML += 'This game requires 2 players :)';
+  document.body.innerHTML += '<br/>';
   document.body.innerHTML += 'Player 1 controls: wsad, fire: c';
   document.body.innerHTML += '<br/>';
   document.body.innerHTML += 'Player 2 controls: ikjl, fire: n';
