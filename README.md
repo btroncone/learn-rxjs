@@ -92,6 +92,7 @@ Recipes for common use-cases and interesting solutions with RxJS.
 - [Smart Counter](/recipes/smartcounter.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
+- [Tank Battle Game](/recipes/tank-battle-game.md)
 - [Type Ahead](/recipes/type-ahead.md)
 
 ## Introductory Resources
