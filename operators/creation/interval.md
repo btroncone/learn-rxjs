@@ -30,7 +30,8 @@ const subscribe = source.subscribe(val => console.log(val));
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
-- [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Space Invaders Game](../../recipes/space-invaders-game.md)
+- [Tank Battle Game](../../recipes/tank-battle-game.md)
 
 ### Additional Resources
 
