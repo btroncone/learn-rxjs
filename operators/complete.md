@@ -78,6 +78,7 @@ _[Prefer a split by operator type?](README.md)_
 - [throttle](filtering/throttle.md)
 - [throttleTime](filtering/throttletime.md)
 - [throw](creation/throw.md)
+- [timeInterval](utility/timeinterval.md)
 - [timeout](utilit/timeout.md)
 - [timer](creation/timer.md)
 - [toArray](transformation/toarray.md)
