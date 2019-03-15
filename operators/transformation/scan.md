@@ -115,12 +115,13 @@ interval(1000)
 
 ### Related Recipes
 
-- [Smart Counter](../../recipes/smartcounter.md)
-- [Progress Bar](../../recipes/progressbar.md)
-- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
-- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
-- [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Click Ninja Game](../../recipes/click-ninja-game.md)
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
+- [Progress Bar](../../recipes/progressbar.md)
+- [Smart Counter](../../recipes/smartcounter.md)
+- [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
 
 ### Additional Resources
