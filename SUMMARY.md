@@ -105,6 +105,7 @@
 - [Recipes](/recipes/README.md)
   - [Alphabet Invasion Game](/recipes/alphabet-invasion-game.md)
   - [Catch The Dot Game](/recipes/catch-the-dot-game.md)
+  - [Click Ninja Game](/recipes/click-ninja-game.md)
   - [Flappy Bird Game](/recipes/flappy-bird-game.md)
   - [Game Loop](/recipes/gameloop.md)
   - [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
