@@ -29,6 +29,11 @@ fromEvent(document, 'mousedown').pipe(
 
 ```
 
+### Related Recipes
+
+- [Click Ninja Game](../../recipes/click-ninja-game.md)
+
+
 ### Additional Resources
 
 - [timeInterval](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-timeInterval)
