@@ -41,15 +41,16 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Click Ninja Game](../../recipes/click-ninja-game.md)
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
 - [Lockscreen](../../recipes/lockscreen.md)
-- [Type Ahead](../../recipes/type-ahead.md)
-- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
-- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
+- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
-- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
+- [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 
