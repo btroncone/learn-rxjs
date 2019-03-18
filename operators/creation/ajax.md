@@ -11,7 +11,7 @@
 
 ##### Example 1: Observable that emits the response object that is being returned from the request.
 
-( [StackBlitz](https://stackblitz.com/edit/rxjs-vnxkth) )
+( [StackBlitz](https://stackblitz.com/edit/rxjs-raqi89) )
 
 ```js
 // RxJS v6+
@@ -74,7 +74,7 @@ const subscribe = users.subscribe(
 ##### Example 2: Observable that emits only the json key of the response object that is being returned from the request.
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-8jkrhl?file=index.ts)
+[StackBlitz](https://stackblitz.com/edit/rxjs-8jkrhl)
 )
 
 ```js
@@ -115,7 +115,7 @@ const subscribe = users.subscribe(
 ##### Example 3: Observable that emits the error object that is being returned from the request.
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-8jkrhl?file=index.ts)
+[StackBlitz](https://stackblitz.com/edit/rxjs-vnxkth)
 )
 
 ```js
@@ -140,7 +140,7 @@ Error: ajax error 404
 ##### Example 4: Ajax operator with object as input.
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-8jkrhl?file=index.ts)
+[StackBlitz](https://stackblitz.com/edit/rxjs-vqnnot)
 )
 
 ```js
