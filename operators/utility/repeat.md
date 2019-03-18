@@ -37,6 +37,7 @@ delayedThing.pipe(
 
 ### Related Recipes
 
+- [Click Ninja Game](../../recipes/click-ninja-game.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)

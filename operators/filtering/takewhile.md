@@ -57,12 +57,13 @@ source
 
 ### Related Recipes
 
-- [Smart Counter](../../recipes/smartcounter.md)
-- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
-- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
-- [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Click Ninja Game](../../recipes/click-ninja-game.md)
+- [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Smart Counter](../../recipes/smartcounter.md)
+- [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 
 ### Additional Resources
 
