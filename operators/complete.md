@@ -7,6 +7,7 @@ _[Prefer a split by operator type?](README.md)_
 
 ### Contents (In Alphabetical Order)
 
+- [ajax](creation/ajax.md) :star:
 - [audit](filtering/audit.md)
 - [auditTime](filtering/audittime.md)
 - [buffer](transformation/buffer.md)
