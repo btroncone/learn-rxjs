@@ -137,7 +137,7 @@ Error: ajax error 404
 ```
 
 
-##### Example 3: Ajax operator with object as input.
+##### Example 4: Ajax operator with object as input.
 
 (
 [StackBlitz](https://stackblitz.com/edit/rxjs-8jkrhl?file=index.ts)
