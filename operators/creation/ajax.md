@@ -1,6 +1,6 @@
 # ajax
 
-#### signature: `ajax(subscribe: function)`
+#### signature: `ajax(urlOrRequest: string | AjaxRequest)`
 
 ## Create an observable for an Ajax request with either a request object with url, headers, etc or a string for a URL.
 
