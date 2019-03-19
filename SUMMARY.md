@@ -21,6 +21,7 @@
     - [iif](/operators/conditional/iif.md)
     - [sequenceEqual](/operators/conditional/sequenceequal.md)
   - [Creation](/operators/creation/README.md)
+    - [ajax](/operators/creation/ajax.md)
     - [create](/operators/creation/create.md)
     - [defer](/operators/creation/defer.md)
     - [empty](/operators/creation/empty.md)
