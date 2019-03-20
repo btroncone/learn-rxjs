@@ -6,6 +6,7 @@ generic to specific use-cases you are free, and encouraged, to turn
 
 ## Contents
 
+- [ajax](ajax.md) :star:
 - [create](create.md)
 - [defer](defer.md)
 - [empty](empty.md)

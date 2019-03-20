@@ -25,6 +25,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [iif](conditional/iif.md)
   - [sequenceequal](conditional/sequenceequal.md)
 - [Creation](creation/README.md)
+  - [ajax](creation/ajax.md) :star:
   - [create](creation/create.md)
   - [defer](creation/defer.md)
   - [empty](creation/empty.md)
