@@ -47,6 +47,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
