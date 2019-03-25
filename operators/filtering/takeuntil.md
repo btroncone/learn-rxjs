@@ -121,6 +121,8 @@ mousedown$.pipe(
   Angular in Depth
 * [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
+- [Build your own takeUntil operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=takeUntil#app)
+  :video_camera: - Kwinten Pisman
 
 ---
 

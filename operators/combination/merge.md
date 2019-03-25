@@ -87,6 +87,8 @@ const subscribe = example.subscribe(val => console.log(val));
   :video_camera: :dollar: - André Staltz
 - [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
+- [Build your own merge operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=merge#app)
+  :video_camera: - Kwinten Pisman  
 
 ---
 

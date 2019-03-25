@@ -97,6 +97,8 @@ const subscribe = example.subscribe(val =>
   :video_camera: :dollar: - John Linquist
 - [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
+- [Build your own filter operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=filter#app)
+  :video_camera: - Kwinten Pisman  
 
 ---
 

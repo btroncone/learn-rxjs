@@ -134,6 +134,8 @@ interval(1000)
   :video_camera: :dollar: - John Linquist
 - [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
+- [Build your own scan operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=scan#app)
+  :video_camera: - Kwinten Pisman
 
 ---
 

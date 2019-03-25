@@ -60,6 +60,8 @@ const subscribe = example.subscribe(val => console.log(val));
   :video_camera: :dollar: - John Linquist
 - [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
+- [Build your own tap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=tap#app)
+  :video_camera: - Kwinten Pisman
 
 ---
 
