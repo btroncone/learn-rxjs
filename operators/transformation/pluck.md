@@ -53,6 +53,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 
 ### Additional Resources
 
