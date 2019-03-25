@@ -113,6 +113,7 @@
   - [Http Polling](/recipes/http-polling.md)
   - [Lockscreen](/recipes/lockscreen.md)
   - [Mine Sweeper Game](/recipes/mine-sweeper-game.md)
+  - [Platform Jumper Game](/recipes/platform-jumper-game.md)
   - [Progress Bar](/recipes/progressbar.md)
   - [Smart Counter](/recipes/smartcounter.md)
   - [Space Invaders Game](/recipes/space-invaders-game.md)
