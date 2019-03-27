@@ -13,6 +13,7 @@ Common use-cases and interesting recipes to help learn RxJS.
 * [HTTP Polling](http-polling.md)
 * [Lockscreen](lockscreen.md)
 * [Mine Sweeper Game](mine-sweeper-game.md)
+* [Platform Jumper Game](platform-jumper-game.md)
 * [Progress Bar](progressbar.md)
 * [Smart Counter](smartcounter.md)
 * [Space Invaders Game](space-invaders-game.md)

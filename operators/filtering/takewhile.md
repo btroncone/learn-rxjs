@@ -62,6 +62,7 @@ source
 - [Click Ninja Game](../../recipes/click-ninja-game.md)
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 

@@ -164,14 +164,15 @@ Resume Timer
 
 ### Related Recipes
 
-- [Smart Counter](../../recipes/smartcounter.md)
-- [Progress Bar](../../recipes/progressbar.md)
+- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Lockscreen](../../recipes/lockscreen.md)
-- [Type Ahead](../../recipes/type-ahead.md)
-- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
-- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Platform Jumper Game](../../recipes/platform-jumper-game.md)
+- [Progress Bar](../../recipes/progressbar.md)
+- [Smart Counter](../../recipes/smartcounter.md)
+- [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 
