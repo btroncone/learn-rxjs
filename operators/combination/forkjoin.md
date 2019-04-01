@@ -35,7 +35,7 @@ item, and you are concerned with the previous emissions `forkJoin` is not the
 correct choice. In these cases you may better off with an operator like
 [combineLatest](combinelatest.md) or [zip](zip.md).
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
