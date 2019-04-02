@@ -31,6 +31,7 @@ interval(100)
 
 ### Related Recipes
 
+- [Breakout Game](../../recipes/breakout-game.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 
 ### Additional Resources
