@@ -38,6 +38,8 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
   :newspaper: - Official docs
 - [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
   :video_camera: - Academind
+- [Build your own reduce operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=reduce#app)
+  :video_camera: - Kwinten Pisman
 
 ---
 

@@ -186,6 +186,8 @@ Resume Timer
   :video_camera: :dollar: - André Staltz
 - [Use switchMap as a safe default to flatten observables in RxJS](https://egghead.io/lessons/rxjs-use-switchmap-as-a-safe-default-to-flatten-observables-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
+- [Build your own switchMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=switchMap#app)
+  :video_camera: - Kwinten Pisman
 
 ---
 

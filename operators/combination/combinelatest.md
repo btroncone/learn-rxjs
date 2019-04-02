@@ -172,6 +172,8 @@ const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
   :video_camera: :dollar: - John Linquist
 - [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
+- [Build your own combineLatest operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=combineLatest#app)
+  :video_camera: - Kwinten Pisman
 
 ---
 

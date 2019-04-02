@@ -173,6 +173,8 @@ const subscribe = example.subscribe(val => console.log(val));
   :video_camera: :dollar: - André Staltz
 - [Use RxJS mergeMap for fine grain custom behavior](https://egghead.io/lessons/rxjs-use-rxjs-mergemap-for-fine-grain-custom-behavior?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
+- [Build your own mergeMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=mergeMap#app)
+  :video_camera: - Kwinten Pisman
 
 ---
 
