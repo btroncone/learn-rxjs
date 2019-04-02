@@ -15,6 +15,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [forkJoin](combination/forkjoin.md)
   - [merge](combination/merge.md) :star:
   - [mergeAll](combination/mergeall.md)
+  - [pairwise](combination/pairwise.md)
   - [race](combination/race.md)
   - [startWith](combination/startwith.md) :star:
   - [withLatestFrom](combination/withlatestfrom.md) :star:
@@ -94,6 +95,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [do / tap](utility/do.md) :star:
   - [delay](utility/delay.md)
   - [delayWhen](utility/delaywhen.md)
+  - [dematerialize](utility/dematerialize.md)
   - [finalize / finally](utility/finalize.md)
   - [let](utility/let.md)
   - [repeat](utility/repeat.md)
