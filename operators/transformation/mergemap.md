@@ -158,6 +158,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+- [Breakout Game](../../recipes/breakout-game.md)
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 

@@ -105,6 +105,7 @@
   - [Subject](/subjects/subject.md)
 - [Recipes](/recipes/README.md)
   - [Alphabet Invasion Game](/recipes/alphabet-invasion-game.md)
+  - [Breakout Game](/recipes/breakout-game.md)
   - [Catch The Dot Game](/recipes/catch-the-dot-game.md)
   - [Click Ninja Game](/recipes/click-ninja-game.md)
   - [Flappy Bird Game](/recipes/flappy-bird-game.md)
