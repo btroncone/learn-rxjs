@@ -2,3 +2,8 @@
   text-align: center;
   padding: 10px 0;
 }
+
+code[class*='language-'],
+pre[class*='language-'] {
+  text-shadow: none !important;
+}
