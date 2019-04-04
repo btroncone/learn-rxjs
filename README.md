@@ -110,6 +110,7 @@ experience!
   Official Docs
 - [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) -
   André Staltz
+- [RxJS: Observables, Observers and Operators Introduction](https://ultimatecourses.com/blog/rxjs-observables-observers-operators) - Todd Motto
 
 #### Videos
 
