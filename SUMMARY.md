@@ -27,6 +27,7 @@
     - [empty](/operators/creation/empty.md)
     - [from](/operators/creation/from.md)
     - [fromEvent](/operators/creation/fromevent.md)
+    - [generate](/operators/creation/generate.md)
     - [interval](/operators/creation/interval.md)
     - [of](/operators/creation/of.md)
     - [range](/operators/creation/range.md)
