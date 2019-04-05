@@ -12,6 +12,7 @@ generic to specific use-cases you are free, and encouraged, to turn
 - [empty](empty.md)
 - [from](from.md) :star:
 - [fromEvent](fromevent.md)
+- [generate](generate.md)
 - [interval](interval.md)
 - [of](of.md) :star:
 - [range](range.md)
