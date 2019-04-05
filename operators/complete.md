@@ -41,6 +41,7 @@ _[Prefer a split by operator type?](README.md)_
 - [forkJoin](combination/forkjoin.md)
 - [from](creation/from.md) :star:
 - [fromEvent](creation/fromevent.md)
+- [generate](creation/generate.md)
 - [groupBy](transformation/groupby.md)
 - [iif](conditional/iif.md)
 - [ignoreElements](filtering/ignoreelements.md)
