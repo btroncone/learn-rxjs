@@ -32,6 +32,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [empty](creation/empty.md)
   - [from](creation/from.md) :star:
   - [fromEvent](creation/fromevent.md)
+  - [generate](creation/generate.md)
   - [interval](creation/interval.md)
   - [of](creation/of.md) :star:
   - [range](creation/range.md)
