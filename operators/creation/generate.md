@@ -66,6 +66,10 @@ OUTPUT:
 */
 ```
 
+### Related Recipes
+
+- [Breakout Game](../../recipes/breakout-game.md)
+
 ### Additional Resources
 
 - [generate](https://rxjs-dev.firebaseapp.com/api/index/function/generate)
