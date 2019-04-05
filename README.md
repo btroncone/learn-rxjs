@@ -32,8 +32,8 @@ points. Learning Rx may be difficult but it is certainly worth the effort!
 
 ### Brand New to RxJS?
 
-Start getting familiar with all the key concepts needed to start being
-productive with our [RxJS Primer](./concepts/rxjs-primer.md)!
+Start getting familiar with all the key concepts needed to be productive with
+our [RxJS Primer](./concepts/rxjs-primer.md)!
 
 ## Content
 

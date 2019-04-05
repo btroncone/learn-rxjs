@@ -1,8 +1,8 @@
 # RxJS Primer
 
 Brand new to RxJS? In this article we will take a crash course through all the
-major concepts you will need to begin getting a grasp on, and being productive
-with RxJS. Hold on tight and let's get started!
+major concepts you will need to begin getting a grasp on, and start being
+productive with RxJS. Hold on tight and let's get started!
 
 ## What is an Observable?
 
