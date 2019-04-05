@@ -1,6 +1,7 @@
 # Summary
 
 ### Learn RxJS
+
 - [Operators](/operators/README.md)
   - [Combination](/operators/combination/README.md)
     - [combineAll](/operators/combination/combineall.md)
@@ -123,6 +124,7 @@
   - [Tank Battle Game](/recipes/tank-battle-game.md)
   - [Type Ahead](/recipes/type-ahead.md)
 - [Concepts](/concepts/README.md)
+  - [RxJS Primer](/concepts/rxjs-primer.md)
   - [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
   - [Time based operators comparison](/concepts/time-based-operators-comparison.md)
   - [Understanding Operator Imports](/concepts/operator-imports.md)
