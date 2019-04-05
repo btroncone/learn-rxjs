@@ -146,6 +146,7 @@ export const render = ([player, ball, bricks]: [Player, Ball, GameObject[]]) => 
 
 - [combineLatest](../operators/combination/combinelatest.md)
 - [fromEvent](../operators/creation/fromevent.md)
+- [generate](../operators/creation/generate.md)
 - [interval](../operators/creation/interval.md)
 - [mergeMap](../operators/transformation/mergemap.md)
 - [of](../operators/creation/of.md)
