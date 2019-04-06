@@ -104,7 +104,7 @@ with `Subjects` (either explicitly or behind the scenes). More on that in a
 future article!
 
 It's worth noting that when we discuss an Observable source emitting data to
-observers, the is a push based model. The source doesn't know or care what
+observers, this is a push based model. The source doesn't know or care what
 subscribers do with the data, it simply pushes it down the line.
 
 While working on a stream of events is nice, it's only so useful on it's own.
