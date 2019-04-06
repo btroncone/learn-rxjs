@@ -361,7 +361,7 @@ The most commonly used transformation operators are
 
 While operators can be grouped into common categories, operators within a
 category often share common behavior. By recognizing this common behavior you
-can start creating a _'choose your own operator'_ tree in your mind.
+can start creating a [_'choose your own operator'_ tree](https://rxjs-dev.firebaseapp.com/operator-decision-tree) in your mind.
 
 **For instance, a large amount of operators can grouped into...**
 
