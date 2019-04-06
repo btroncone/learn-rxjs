@@ -150,7 +150,7 @@ const dataSource = from(1, 2, 3, 4, 5);
 // subscribe to our source observable
 const subscription = dataSource
   .pipe(
-    // ignore values less than 2
+    // only accept values 2 or greater
     filter(value => value >= 2)
   )
   // log: 2, 3, 4, 5
