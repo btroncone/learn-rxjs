@@ -30,15 +30,20 @@ points. Learning Rx may be difficult but it is certainly worth the effort!
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
+### Brand New to RxJS?
+
+Start getting familiar with all the key concepts needed to be productive with
+our [RxJS Primer](./concepts/rxjs-primer.md)!
+
 ## Content
 
 #### Operators
 
 Operators are the horse-power behind observables, providing an elegant,
 declarative solution to complex asynchronous tasks. This section contains all
-[RxJS operators](/operators/README.md), included with clear, executable examples. Links
-to additional resources and recipes for each operator are also provided, when
-applicable.
+[RxJS operators](/operators/README.md), included with clear, executable
+examples. Links to additional resources and recipes for each operator are also
+provided, when applicable.
 
 ##### Operator Categories
 
@@ -57,7 +62,8 @@ applicable.
 
 #### Understanding Subjects
 
-A Subject is a special type of Observable which shares a single execution path among observers. 
+A Subject is a special type of Observable which shares a single execution path
+among observers.
 
 - [Overview](/subjects/README.md)
 - [AsyncSubject](/subjects/asyncsubject.md)
@@ -72,6 +78,7 @@ easy for much of RxJS to feel like 'magic'. This section helps solidify the
 major concepts needed to feel comfortable with reactive programming and
 Observables.
 
+- [RxJS Primer](/concepts/rxjs-primer.md)
 - [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
 - [Time based operators comparison](/concepts/time-based-operators-comparison.md)
 - [Understanding Operator Imports](/concepts/operator-imports.md)
@@ -110,7 +117,8 @@ experience!
   Official Docs
 - [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) -
   André Staltz
-- [RxJS: Observables, Observers and Operators Introduction](https://ultimatecourses.com/blog/rxjs-observables-observers-operators) - Todd Motto
+- [RxJS: Observables, Observers and Operators Introduction](https://ultimatecourses.com/blog/rxjs-observables-observers-operators) -
+  Todd Motto
 
 #### Videos
 
@@ -139,7 +147,8 @@ experience!
   Misha Moroshko
 - [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) -
   Cédric Soulas
-- [Rx Visualization - Visualizes programming with RxJS](https://fingerpich.github.io/rx-visualization/) - Mojtaba Zarei
+- [Rx Visualization - Visualizes programming with RxJS](https://fingerpich.github.io/rx-visualization/) -
+  Mojtaba Zarei
 
 _Interested in RxJS 4? Check out [Denis Stoyanov's](https://github.com/xgrommx)
 excellent [eBook](https://xgrommx.github.io/rx-book/)!_
