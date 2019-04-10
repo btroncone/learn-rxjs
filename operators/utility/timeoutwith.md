@@ -2,7 +2,7 @@
 
 #### signature: `timeoutWith<T, R>(due: number | Date, withObservable: ObservableInput<R>, scheduler: SchedulerLike = async): OperatorFunction<T, T | R>`
 
-## Errors if Observable does not emit a value in given time span, in case of which subscribes to the second Observable.
+## Subscribe to second Observable if no emission occurs in given time span.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
