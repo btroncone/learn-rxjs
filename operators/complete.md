@@ -74,6 +74,7 @@ _[Prefer a split by operator type?](README.md)_
 - [skipWhile](filtering/skipwhile.md)
 - [startWith](combination/startwith.md) :star:
 - [switchMap](transformation/switchmap.md) :star:
+- [switchMapTo](transformation/switchmapto.md)
 - [take](filtering/take.md) :star:
 - [takeUntil](filtering/takeuntil.md) :star:
 - [takeWhile](filtering/takewhile.md)
