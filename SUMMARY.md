@@ -82,6 +82,7 @@
     - [reduce](/operators/transformation/reduce.md)
     - [scan](/operators/transformation/scan.md)
     - [switchMap](/operators/transformation/switchmap.md)
+    - [switchMapTo](/operators/transformation/switchmapto.md)
     - [toArray](/operators/transformation/toarray.md)
     - [window](/operators/transformation/window.md)
     - [windowCount](/operators/transformation/windowcount.md)
