@@ -14,6 +14,7 @@ provide helpful utilities in your observable toolkit.
 * [repeat](repeat.md)
 * [timeInterval](timeinterval.md)
 * [timeout](timeout.md)
+* [timeoutWith](timeoutwith.md)
 * [toPromise](topromise.md)
 
 :star: - _commonly used_
