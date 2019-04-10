@@ -99,6 +99,7 @@
     - [repeat](/operators/utility/repeat.md)
     - [timeInterval](/operators/utility/timeinterval.md)
     - [timeout](/operators/utility/timeout.md)
+    - [timeoutWith](/operators/utility/timeoutwith.md)
     - [toPromise](/operators/utility/topromise.md)
   - [Full Listing](/operators/complete.md)
 - [Subjects](/subjects/README.md)
