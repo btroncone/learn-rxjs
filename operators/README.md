@@ -103,6 +103,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [repeat](utility/repeat.md)
   - [timeInterval](utility/timeinterval.md)
   - [timeout](utility/timeout.md)
+  - [timeoutWith](utility/timeoutwith.md)
   - [toPromise](utility/topromise.md)
 
 :star: - _commonly used_
