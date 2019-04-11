@@ -1,6 +1,6 @@
 # timeoutWith
 
-#### signature: `timeoutWith<T, R>(due: number | Date, withObservable: ObservableInput<R>, scheduler: SchedulerLike = async): OperatorFunction<T, T | R>`
+#### signature: `timeoutWith(due: number | Date, withObservable: ObservableInput, scheduler: SchedulerLike = async): OperatorFunction`
 
 ## Subscribe to second Observable if no emission occurs in given time span.
 
@@ -11,7 +11,8 @@
 ##### Example 1: Timeout after 1 second
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-timeoutwith?file=index.ts&devtoolsheight=100) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-timeoutwith?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -24,10 +25,11 @@ const timeoutThreshold = 1000;
 
 of(timeoutThreshold + 1, timeoutThreshold - 1, timeoutThreshold + 3)
   .pipe(
-    concatMap(e => fakeRequest(e)
-      .pipe(timeoutWith(timeoutThreshold, requestTimeoutLogger))
+    concatMap(e =>
+      fakeRequest(e).pipe(timeoutWith(timeoutThreshold, requestTimeoutLogger))
     )
-  ).subscribe(console.log);
+  )
+  .subscribe(console.log);
 
 /*
   OUTPUT:

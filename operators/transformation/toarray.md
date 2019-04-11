@@ -1,6 +1,6 @@
 # toArray
 
-#### signature: `toArray<T>(): OperatorFunction<T, T[]>`
+#### signature: `toArray(): OperatorFunction`
 
 ## Collects all source emissions and emits them as an array when the source completes.
 
