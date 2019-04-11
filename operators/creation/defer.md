@@ -4,6 +4,14 @@
 
 ## Create an observable with given subscription function.
 
+---
+
+:bulb:
+[`defer`](https://github.com/ReactiveX/rxjs/blob/ecc73d2a1564d0d3edffba90eec76510e509236c/src/internal/observable/iif.ts#L94-L100)
+is used as part of the [`iif`](../conditional/iif.md) operator!
+
+---
+
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
@@ -11,7 +19,8 @@
 ##### Example 1: Defer to get current date/time at the time of subscription
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-defer-example?file=index.ts&devtoolsheight=100) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-defer-example?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -24,9 +33,8 @@ const s2 = defer(() => of(new Date())); //will capture date time at the moment o
 console.log(new Date());
 
 timer(2000)
-  .pipe(
-    switchMap(_ => merge(s1, s2))
-  ).subscribe(console.log);
+  .pipe(switchMap(_ => merge(s1, s2)))
+  .subscribe(console.log);
 
 /*
 OUTPUT => 
