@@ -2,7 +2,7 @@
 
 #### signature: `iif<T, F>(condition: () => boolean, trueResult: SubscribableOrPromise<T> = EMPTY, falseResult: SubscribableOrPromise<F> = EMPTY): Observable<T | F>`
 
-## Decides at subscription time which Observable will actually be subscribed.
+## Subscribe to first or second observable based on a condition
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
