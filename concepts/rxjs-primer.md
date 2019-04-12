@@ -460,7 +460,8 @@ specific condition is met, we could use:
 
 1. [`take`](../operators/filtering/take.md) when we know we only ever want `x`
    values.
-2. `takeLast` when you just want the last value.
+2. [`takeLast`](../operators/filtering/takelast.md) when you just want the last
+   n values.
 3. [`takeWhile`](../operators/filtering/takewhile.md) when we have a predicate
    expression to supply.
 4. [`takeUntil`](../operators/filtering/takeuntil.md) when we only want the

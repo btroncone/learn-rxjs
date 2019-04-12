@@ -9,24 +9,25 @@ with
 
 ## Contents
 
-* [audit](audit.md)
-* [auditTime](audittime.md)
-* [debounce](debounce.md)
-* [debounceTime](debouncetime.md) :star:
-* [distinctUntilChanged](distinctuntilchanged.md) :star:
-* [filter](filter.md) :star:
-* [first](first.md)
-* [ignoreElements](ignoreelements.md)
-* [last](last.md)
-* [sample](sample.md)
-* [single](single.md)
-* [skip](skip.md)
-* [skipUntil](skipuntil.md)
-* [skipWhile](skipwhile.md)
-* [take](take.md) :star:
-* [takeUntil](takeuntil.md) :star:
-* [takeWhile](takewhile.md)
-* [throttle](throttle.md)
-* [throttleTime](throttletime.md)
+- [audit](audit.md)
+- [auditTime](audittime.md)
+- [debounce](debounce.md)
+- [debounceTime](debouncetime.md) :star:
+- [distinctUntilChanged](distinctuntilchanged.md) :star:
+- [filter](filter.md) :star:
+- [first](first.md)
+- [ignoreElements](ignoreelements.md)
+- [last](last.md)
+- [sample](sample.md)
+- [single](single.md)
+- [skip](skip.md)
+- [skipUntil](skipuntil.md)
+- [skipWhile](skipwhile.md)
+- [take](take.md) :star:
+- [takeLast](takelast.md)
+- [takeUntil](takeuntil.md) :star:
+- [takeWhile](takewhile.md)
+- [throttle](throttle.md)
+- [throttleTime](throttletime.md)
 
 :star: - _commonly used_
