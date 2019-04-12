@@ -58,6 +58,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [skipUntil](filtering/skipuntil.md)
   - [skipWhile](filtering/skipwhile.md)
   - [take](filtering/take.md) :star:
+  - [takeLast](filtering/takelast.md)
   - [takeUntil](filtering/takeuntil.md) :star:
   - [takeWhile](filtering/takewhile.md)
   - [throttle](filtering/throttle.md)

@@ -59,6 +59,7 @@
     - [skipUntil](/operators/filtering/skipuntil.md)
     - [skipWhile](/operators/filtering/skipwhile.md)
     - [take](/operators/filtering/take.md)
+    - [takeLast](/operators/filtering/takelast.md)
     - [takeUntil](/operators/filtering/takeuntil.md)
     - [takeWhile](/operators/filtering/takewhile.md)
     - [throttle](/operators/filtering/throttle.md)

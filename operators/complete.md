@@ -76,6 +76,7 @@ _[Prefer a split by operator type?](README.md)_
 - [switchMap](transformation/switchmap.md) :star:
 - [switchMapTo](transformation/switchmapto.md)
 - [take](filtering/take.md) :star:
+- [takeLast](filtering/takelast.md)
 - [takeUntil](filtering/takeuntil.md) :star:
 - [takeWhile](filtering/takewhile.md)
 - [throttle](filtering/throttle.md)

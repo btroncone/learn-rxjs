@@ -4,15 +4,15 @@
 
 ## Emit provided number of values before completing.
 
-### Why use `take`
+### Why use `take`?
 
-When you are interested in only the first set number of emission, you want to
-use `take`. Maybe you want to see what the user first clicked on when he/she
-first entered the page, you would want to subscribe to the click event and just
-take the first emission. There is a race and you want to observe the race, but
-you're only interested in the first who crosses the finish line. This operator
-is clear and straight forward, you just want to see the first _n_ numbers of
-emission to do whatever it is you need.
+When you are interested in only the first emission, you want to use `take`.
+Maybe you want to see what the user first clicked on when they entered the page,
+or you would want to subscribe to the click event and just take the first
+emission. Another use-case is when you need to take a snapshot of data at a
+particular point in time but do not require further emissions. For example, a
+stream of user token updates, or a route guard based on a stream in an Angular
+application.
 
 ---
 
@@ -20,8 +20,9 @@ emission to do whatever it is you need.
 another observable, you can use [takeUntil](takeuntil.md) or
 [takeWhile](takewhile.md)!
 
-:bulb: `take` is the opposite of `skip` where `take` will take the first _n_
-number of emissions while `skip` will skip the first _n_ number of emissions.
+:bulb: `take` is the opposite of [`skip`](./skip.md) where `take` will take the
+first _n_ number of emissions while `skip` will skip the first _n_ number of
+emissions.
 
 ---
 
