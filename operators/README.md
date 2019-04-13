@@ -82,6 +82,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [map](transformation/map.md) :star:
   - [mapTo](transformation/mapto.md)
   - [mergeMap / flatMap](transformation/mergemap.md) :star:
+  - [mergeScan](transformation/mergescan.md)
   - [partition](transformation/partition.md)
   - [pluck](transformation/pluck.md)
   - [reduce](transformation/reduce.md)

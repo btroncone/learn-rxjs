@@ -78,6 +78,7 @@
     - [map](/operators/transformation/map.md)
     - [mapTo](/operators/transformation/mapto.md)
     - [mergeMap / flatMap](/operators/transformation/mergemap.md)
+    - [mergeScan](/operators/transformation/mergescan.md)
     - [partition](/operators/transformation/partition.md)
     - [pluck](/operators/transformation/pluck.md)
     - [reduce](/operators/transformation/reduce.md)

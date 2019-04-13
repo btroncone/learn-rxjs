@@ -53,6 +53,7 @@ _[Prefer a split by operator type?](README.md)_
 - [merge](combination/merge.md) :star:
 - [mergeAll](combination/mergeall.md)
 - [mergeMap / flatMap](transformation/mergemap.md) :star:
+- [mergeScan](transformation/mergescan.md)
 - [multicast](multicasting/multicast.md)
 - [of](creation/of.md) :star:
 - [partition](transformation/partition.md)

@@ -19,6 +19,7 @@ will encounter.
 - [map](map.md) :star:
 - [mapTo](mapto.md)
 - [mergeMap / flatMap](mergemap.md) :star:
+- [mergeScan](mergescan.md)
 - [partition](partition.md)
 - [pluck](pluck.md)
 - [reduce](reduce.md)
