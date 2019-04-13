@@ -24,7 +24,6 @@ const durationElem = document.getElementById('duration');
 
 // streams
 const mouseDown$ = fromEvent(document, 'mousedown');
-const mouseMove$ = fromEvent(document, 'mousemove');
 const mouseUp$ = fromEvent(document, 'mouseup');
 
 // accumulate time mouse held down over time
