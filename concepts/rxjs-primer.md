@@ -121,6 +121,7 @@ want to transform emitted values from an observable source, you can use
 ```js
 // import the from operator
 import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
 /*
  *  'of' allows you to deliver values in a sequence
  *  In this case, it will emit 1,2,3,4,5 in order.
