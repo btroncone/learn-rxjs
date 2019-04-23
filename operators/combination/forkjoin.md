@@ -39,7 +39,34 @@ correct choice. In these cases you may be better off with an operator like
 
 ### Examples
 
-##### Example 1: Observables completing after different durations
+##### Example 1: (RxJS 6.5+) Using a dictionary of sources
+
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-u5pzuf?file=index.ts&devtoolsheight=100)
+)
+
+```js
+// RxJS v6.5+
+import { ajax } from 'rxjs/ajax';
+import { forkJoin } from 'rxjs';
+
+/*
+  when all observables complete, provide the last
+  emitted value from each as dictionary
+*/
+forkJoin(
+  // as of RxJS 6.5+ we can use a dictionary of sources
+  {
+    google: ajax.getJSON('https://api.github.com/users/google'),
+    microsoft: ajax.getJSON('https://api.github.com/users/microsoft'),
+    users: ajax.getJSON('https://api.github.com/users')
+  }
+)
+  // { google: object, microsoft: object, users: array }
+  .subscribe(console.log);
+```
+
+##### Example 2: Observables completing after different durations
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-mzbcrw?file=index.ts&devtoolsheight=100)
@@ -76,7 +103,7 @@ const example = forkJoin(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 2: Making a variable number of requests
+##### Example 3: Making a variable number of requests
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-3mbbjw?file=index.ts&devtoolsheight=100)
@@ -109,7 +136,7 @@ const example = source.pipe(mergeMap(q => forkJoin(...q.map(myPromise))));
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 3: Handling errors on outside
+##### Example 4: Handling errors on outside
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-xgskpm?file=index.ts&devtoolsheight=100)
@@ -137,7 +164,7 @@ const example = forkJoin(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 4: Getting successful results when one inner observable errors
+##### Example 5: Getting successful results when one inner observable errors
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-hydgiu?file=index.ts&devtoolsheight=100)
@@ -165,7 +192,7 @@ const example = forkJoin(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 5: forkJoin in Angular
+##### Example 6: forkJoin in Angular
 
 ( [plunker](https://plnkr.co/edit/ElTrOg8NfR3WbbAfjBXQ?p=preview) )
 
@@ -217,8 +244,8 @@ export class App {
 
 ### Additional Resources
 
-- [forkJoin](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-forkJoin)
-  :newspaper: - Official docs
+- [forkJoin](https://rxjs.dev/api/index/function/forkJoin) :newspaper: -
+  Official docs
 
 ---
 

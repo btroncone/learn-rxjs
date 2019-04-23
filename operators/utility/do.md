@@ -1,6 +1,6 @@
-# do / tap
+# tap / do
 
-#### signature: `do(nextOrObserver: function, error: function, complete: function): Observable`
+#### signature: `tap(nextOrObserver: function, error: function, complete: function): Observable`
 
 ## Transparently perform actions or side-effects, such as logging.
 
@@ -14,7 +14,7 @@
 
 ### Examples
 
-##### Example 1: Logging with do
+##### Example 1: Logging with tap
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-cd2gjp?file=index.ts&devtoolsheight=100)
@@ -27,16 +27,47 @@ import { of } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
 
 const source = of(1, 2, 3, 4, 5);
-//transparently log values from source with 'do'
+// transparently log values from source with 'tap'
 const example = source.pipe(
   tap(val => console.log(`BEFORE MAP: ${val}`)),
   map(val => val + 10),
   tap(val => console.log(`AFTER MAP: ${val}`))
 );
 
-//'do' does not transform values
+//'tap' does not transform values
 //output: 11...12...13...14...15
 const subscribe = example.subscribe(val => console.log(val));
+```
+
+##### Example 1: Using tap with object
+
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-3xykpb?file=index.ts&devtoolsheight=100))
+
+```js
+// RxJS v6+
+import { of } from 'rxjs';
+import { tap, map } from 'rxjs/operators';
+
+const source = of(1, 2, 3, 4, 5);
+
+// tap also accepts an object map to log next, error, and complete
+const example = source
+  .pipe(
+    map(val => val + 10),
+    tap({
+      next: val => {
+        // on next 11, etc.
+        console.log('on next', val);
+      },
+      error: error => {
+        console.log('on error', error.message);
+      },
+      complete: () => console.log('on complete')
+    })
+  )
+  // output: 11, 12, 13, 14, 15
+  .subscribe(val => console.log(val));
 ```
 
 ### Related Recipes
@@ -56,8 +87,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [do](http://reactivex.io/documentation/operators/do.html) :newspaper: -
-  Official docs
+- [tap](https://rxjs.dev/api/operators/tap) :newspaper: - Official docs
 - [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
 - [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)
