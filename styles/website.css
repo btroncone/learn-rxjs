@@ -6,4 +6,5 @@
 code[class*='language-'],
 pre[class*='language-'] {
   text-shadow: none !important;
+  border-radius: 4px;
 }
