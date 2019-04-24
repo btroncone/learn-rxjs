@@ -96,7 +96,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [windowToggle](transformation/windowtoggle.md)
   - [windowWhen](transformation/windowwhen.md)
 - [Utility](utility/README.md)
-  - [do / tap](utility/do.md) :star:
+  - [tap / do](utility/do.md) :star:
   - [delay](utility/delay.md)
   - [delayWhen](utility/delaywhen.md)
   - [dematerialize](utility/dematerialize.md)

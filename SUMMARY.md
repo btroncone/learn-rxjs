@@ -92,7 +92,7 @@
     - [windowToggle](/operators/transformation/windowtoggle.md)
     - [windowWhen](/operators/transformation/windowwhen.md)
   - [Utility](/operators/utility/README.md)
-    - [do / tap](/operators/utility/do.md)
+    - [tap / do](/operators/utility/do.md)
     - [delay](/operators/utility/delay.md)
     - [delayWhen](/operators/utility/delaywhen.md)
     - [dematerialize](/operators/utility/dematerialize.md)

@@ -39,7 +39,7 @@ const example = source.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 1: Using tap with object
+##### Example 2: Using tap with object
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-3xykpb?file=index.ts&devtoolsheight=100))

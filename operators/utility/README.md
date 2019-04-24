@@ -5,16 +5,16 @@ provide helpful utilities in your observable toolkit.
 
 ## Contents
 
-* [do / tap](do.md) :star:
-* [delay](delay.md) :star:
-* [delayWhen](delaywhen.md)
-* [dematerialize](dematerialize.md)
-* [finalize / finally](finalize.md)
-* [let](let.md)
-* [repeat](repeat.md)
-* [timeInterval](timeinterval.md)
-* [timeout](timeout.md)
-* [timeoutWith](timeoutwith.md)
-* [toPromise](topromise.md)
+- [tap / do](do.md) :star:
+- [delay](delay.md) :star:
+- [delayWhen](delaywhen.md)
+- [dematerialize](dematerialize.md)
+- [finalize / finally](finalize.md)
+- [let](let.md)
+- [repeat](repeat.md)
+- [timeInterval](timeinterval.md)
+- [timeout](timeout.md)
+- [timeoutWith](timeoutwith.md)
+- [toPromise](topromise.md)
 
 :star: - _commonly used_
