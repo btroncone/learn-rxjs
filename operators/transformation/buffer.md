@@ -8,10 +8,36 @@
 
 ### Examples
 
-##### Example 1: Buffer until document click
+##### Example 1: Using buffer to recognize double clicks
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-nwp2cl?file=index.ts&devtoolsheight=50) |
-[jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-x5zyn5?file=index.ts&devtoolsheight=50))
+
+```js
+// RxJS v6+
+import { fromEvent } from 'rxjs';
+import { buffer, filter, throttleTime } from 'rxjs/operators';
+
+// streams
+const clicks$ = fromEvent(document, 'click');
+
+/*
+Collect clicks that occur, after 250ms emit array of clicks
+*/
+clicks$
+  .pipe(
+    buffer(clicks$.pipe(throttleTime(250))),
+    // if array is greater than 1, double click occured
+    filter(clickArray => clickArray.length > 1)
+  )
+  .subscribe(() => console.log('Double Click!'));
+```
+
+##### Example 2: Buffer until document click
+
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-nwp2cl?file=index.ts&devtoolsheight=50)
+| [jsBin](http://jsbin.com/fazimarajo/edit?js,console,output) |
 [jsFiddle](https://jsfiddle.net/btroncone/7451s67k/) )
 
 ```js
@@ -36,13 +62,13 @@ const subscribe = myBufferedInterval.subscribe(val =>
 
 ### Related Recipes
 
-* [Game Loop](../../recipes/gameloop.md)
+- [Game Loop](../../recipes/gameloop.md)
 
 ### Additional Resources
 
-* [buffer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-buffer)
-  :newspaper: - Official docs
-* [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth)
+- [buffer](https://rxjs-dev.firebaseapp.com/api/operators/buffer) :newspaper: -
+  Official docs
+- [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
 ---
