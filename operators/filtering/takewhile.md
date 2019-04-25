@@ -29,10 +29,12 @@ import { takeWhile } from 'rxjs/operators';
 
 //emit 1,2,3,4,5
 const source$ = of(1, 2, 3, 4, 5);
+
 //allow values until value from source is greater than 4, then complete
-const example = source.pipe(takeWhile(val => val <= 4));
-//output: 1,2,3,4
-const subscribe = example.subscribe(val => console.log(val));
+source$
+  .pipe(takeWhile(val => val <= 4));
+   // log: 1,2,3,4
+  .subscribe(val => console.log(val));
 ```
 
 ##### Example 2: (v6.4+) takeWhile with inclusive flag
@@ -71,14 +73,14 @@ import { takeWhile, filter } from 'rxjs/operators';
 const source$ = of(3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3);
 
 // allow values until value from source equals 3, then complete
-// log: 3, 3, 3
 source$
   .pipe(takeWhile(it => it === 3))
+  // log: 3, 3, 3
   .subscribe(val => console.log('takeWhile', val));
 
-// log: 3, 3, 3, 3, 3, 3, 3
 source$
   .pipe(filter(it => it === 3))
+  // log: 3, 3, 3, 3, 3, 3, 3
   .subscribe(val => console.log('filter', val));
 ```
 
