@@ -1,6 +1,6 @@
 # takeWhile
 
-#### signature: `takeWhile(predicate: function(value, index): boolean): Observable`
+#### signature: `takeWhile(predicate: function(value, index): boolean, inclusive?: boolean): Observable`
 
 ## Emit values until provided expression is false.
 
