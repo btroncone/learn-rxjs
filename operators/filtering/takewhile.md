@@ -6,7 +6,8 @@
 
 ---
 
-:bulb: When optional `inclusive` parameter is set to `true` it will also emit the first item that didn't pass the predicate.
+:bulb: When the optional `inclusive` parameter is set to `true` it will also
+emit the first item that didn't pass the predicate.
 
 ---
 
