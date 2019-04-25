@@ -12,6 +12,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [combineLatest](combination/combinelatest.md) :star:
   - [concat](combination/concat.md) :star:
   - [concatAll](combination/concatall.md)
+  - [endWith](combination/endwith.md)
   - [forkJoin](combination/forkjoin.md)
   - [merge](combination/merge.md) :star:
   - [mergeAll](combination/mergeall.md)

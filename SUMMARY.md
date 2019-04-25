@@ -8,6 +8,7 @@
     - [combineLatest](/operators/combination/combinelatest.md)
     - [concat](/operators/combination/concat.md)
     - [concatAll](/operators/combination/concatall.md)
+    - [endWith](/operators/combination/endwith.md)
     - [forkJoin](/operators/combination/forkjoin.md)
     - [merge](/operators/combination/merge.md)
     - [mergeAll](/operators/combination/mergeall.md)
