@@ -89,7 +89,7 @@ source
 
 ### Additional Resources
 
-- [takeWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeWhile)
+- [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile)
   :newspaper: - Official docs
 - [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
