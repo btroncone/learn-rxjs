@@ -48,7 +48,7 @@ source
   .subscribe(console.log);
 ```
 
-##### Example 3: Difference between takeWhile() and filter()
+##### Example 3: Difference between `takeWhile` and [`filter`](filter.md)
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-roozza?file=index.ts&devtoolsheight=100)
