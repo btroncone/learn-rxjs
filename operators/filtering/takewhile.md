@@ -4,6 +4,12 @@
 
 ## Emit values until provided expression is false.
 
+---
+
+:bulb: When optional `inclusive` parameter is set to `true` it will also emit the first item that didn't pass the predicate.
+
+---
+
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
