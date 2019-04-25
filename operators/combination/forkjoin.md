@@ -39,7 +39,7 @@ correct choice. In these cases you may be better off with an operator like
 
 ### Examples
 
-##### Example 1: (RxJS 6.5+) Using a dictionary of sources
+##### Example 1: (v6.5+) Using a dictionary of sources
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-u5pzuf?file=index.ts&devtoolsheight=100)
