@@ -52,6 +52,7 @@
     - [distinctUntilChanged](/operators/filtering/distinctuntilchanged.md)
     - [distinctUntilKeyChanged](/operators/filtering/distinctuntilkeychanged.md)
     - [filter](/operators/filtering/filter.md)
+    - [find](/operators/filtering/find.md)
     - [first](/operators/filtering/first.md)
     - [ignoreElements](/operators/filtering/ignoreelements.md)
     - [last](/operators/filtering/last.md)

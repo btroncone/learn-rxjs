@@ -16,6 +16,7 @@ with
 - [distinctUntilChanged](distinctuntilchanged.md) :star:
 - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
 - [filter](filter.md) :star:
+- [find](find.md)
 - [first](first.md)
 - [ignoreElements](ignoreelements.md)
 - [last](last.md)

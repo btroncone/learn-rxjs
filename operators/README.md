@@ -51,6 +51,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
   - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
   - [filter](filtering/filter.md) :star:
+  - [find](filtering/find.md)
   - [first](filtering/first.md)
   - [ignoreElements](filtering/ignoreelements.md)
   - [last](filtering/last.md)

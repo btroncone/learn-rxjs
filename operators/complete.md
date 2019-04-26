@@ -39,6 +39,7 @@ _[Prefer a split by operator type?](README.md)_
 - [expand](transformation/expand.md)
 - [filter](filtering/filter.md) :star:
 - [finalize / finally](utility/finalize.md)
+- [find](filtering/find.md)
 - [first](filtering/first.md)
 - [forkJoin](combination/forkjoin.md)
 - [from](creation/from.md) :star:
