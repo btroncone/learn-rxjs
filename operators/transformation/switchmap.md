@@ -42,85 +42,26 @@ cancel a request if the source emits quickly enough. In these scenarios
 
 ### Examples
 
-##### Example 1: Restart interval every 5 seconds
-
-(
-[StackBlitz](https://stackblitz.com/edit/typescript-eb62ap?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/birepuveya/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/6pz981gd/) )
-
-```js
-// RxJS v6+
-import { timer, interval } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
-
-//emit immediately, then every 5s
-const source = timer(0, 5000);
-//switch to new inner observable when source emits, emit items that are emitted
-const example = source.pipe(switchMap(() => interval(500)));
-//output: 0,1,2,3,4,5,6,7,8,9...0,1,2,3,4,5,6,7,8
-const subscribe = example.subscribe(val => console.log(val));
-```
-
-##### Example 2: Reset on every click
+##### Example 1: Restart interval on every click
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-s4pvix?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/zoruboxogo/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/y11v8aqz/) )
+)
 
 ```js
 // RxJS v6+
 import { interval, fromEvent } from 'rxjs';
-import { switchMap, mapTo } from 'rxjs/operators';
-
-//emit every click
-const source = fromEvent(document, 'click');
-//if another click comes within 3s, message will not be emitted
-const example = source.pipe(
-  switchMap(val => interval(3000).pipe(mapTo('Hello, I made it!')))
-);
-//(click)...3s...'Hello I made it!'...(click)...2s(click)...
-const subscribe = example.subscribe(val => console.log(val));
-```
-
-##### Example 3: Using a `resultSelector` function
-
-(
-[StackBlitz](https://stackblitz.com/edit/typescript-bmibzi?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/qobapubeze/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/nqfu534y/) )
-
-```js
-// RxJS v6+
-import { timer, interval } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
-//emit immediately, then every 5s
-const source = timer(0, 5000);
-//switch to new inner observable when source emits, invoke project function and emit values
-const example = source.pipe(
-  switchMap(
-    _ => interval(2000),
-    (outerValue, innerValue, outerIndex, innerIndex) => ({
-      outerValue,
-      innerValue,
-      outerIndex,
-      innerIndex
-    })
+fromEvent(document, 'click')
+  .pipe(
+    // restart counter on every click
+    switchMap(() => interval(1000))
   )
-);
-/*
-	Output:
-	{outerValue: 0, innerValue: 0, outerIndex: 0, innerIndex: 0}
-	{outerValue: 0, innerValue: 1, outerIndex: 0, innerIndex: 1}
-	{outerValue: 1, innerValue: 0, outerIndex: 1, innerIndex: 0}
-	{outerValue: 1, innerValue: 1, outerIndex: 1, innerIndex: 1}
-*/
-const subscribe = example.subscribe(val => console.log(val));
+  .subscribe(console.log);
 ```
 
-##### Example 4: Countdown timer with switchMap
+##### Example 2: Countdown timer with pause and resume
 
 ( [StackBlitz](https://stackblitz.com/edit/typescript-ivdebg?file=index.ts) )
 
@@ -129,12 +70,15 @@ const subscribe = example.subscribe(val => console.log(val));
 import { interval, fromEvent, merge, empty } from 'rxjs';
 import { switchMap, scan, takeWhile, startWith, mapTo } from 'rxjs/operators';
 
-const countdownSeconds = 10;
-const setHTML = id => val => (document.getElementById(id).innerHTML = val);
+const COUNTDOWN_SECONDS = 10;
+
+// elem refs
+const remainingLabel = document.getElementById('remaining');
 const pauseButton = document.getElementById('pause');
 const resumeButton = document.getElementById('resume');
-const interval$ = interval(1000).pipe(mapTo(-1));
 
+// streams
+const interval$ = interval(1000).pipe(mapTo(-1));
 const pause$ = fromEvent(pauseButton, 'click').pipe(mapTo(false));
 const resume$ = fromEvent(resumeButton, 'click').pipe(mapTo(true));
 
@@ -142,24 +86,44 @@ const timer$ = merge(pause$, resume$)
   .pipe(
     startWith(true),
     switchMap(val => (val ? interval$ : empty())),
-    scan((acc, curr) => (curr ? curr + acc : acc), countdownSeconds),
+    scan((acc, curr) => (curr ? curr + acc : acc), COUNTDOWN_SECONDS),
     takeWhile(v => v >= 0)
   )
-  .subscribe(setHTML('remaining'));
+  .subscribe((val: any) => (remainingLabel.innerHTML = val));
 ```
 
-###### HTML
+##### Example 3: Using a `resultSelector` function
 
-```html
-<h4>
-Time remaining: <span id="remaining"></span>
-</h4>
-<button id="pause">
-Pause Timer
-</button>
-<button id="resume">
-Resume Timer
-</button>
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-bmibzi?file=index.ts&devtoolsheight=100)
+)
+
+```js
+// RxJS v6+
+import { timer, interval } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+
+// switch to new inner observable when source emits, emit result of project function
+timer(0, 5000)
+  .pipe(
+    switchMap(
+      _ => interval(2000),
+      (outerValue, innerValue, outerIndex, innerIndex) => ({
+        outerValue,
+        innerValue,
+        outerIndex,
+        innerIndex
+      })
+    )
+  )
+  /*
+	Output:
+	{outerValue: 0, innerValue: 0, outerIndex: 0, innerIndex: 0}
+	{outerValue: 0, innerValue: 1, outerIndex: 0, innerIndex: 1}
+	{outerValue: 1, innerValue: 0, outerIndex: 1, innerIndex: 0}
+	{outerValue: 1, innerValue: 1, outerIndex: 1, innerIndex: 1}
+*/
+  .subscribe(console.log);
 ```
 
 ### Related Recipes
@@ -172,7 +136,7 @@ Resume Timer
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Progress Bar](../../recipes/progressbar.md)
 - [Smart Counter](../../recipes/smartcounter.md)
-- [Type Ahead](../../recipes/type-ahead.md)
+- [Typeahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 
