@@ -6,8 +6,6 @@
 
 ---
 
-:bulb: This operator can be used as either a static or instance method!
-
 :bulb: [combineAll](combineall.md) can be used to apply combineLatest to emitted
 observables when a source completes!
 
@@ -37,32 +35,25 @@ is likely a better option.
 
 ### Examples
 
-(
-[example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combinelatest-spec.ts)
-)
-
 ##### Example 1: Combining observables emitting at 3 intervals
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-vadvm2?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/tinumesuda/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/69/) )
+)
 
 ```js
 // RxJS v6+
 import { timer, combineLatest } from 'rxjs';
 
-//timerOne emits first value at 1s, then once every 4s
-const timerOne = timer(1000, 4000);
-//timerTwo emits first value at 2s, then once every 4s
-const timerTwo = timer(2000, 4000);
-//timerThree emits first value at 3s, then once every 4s
-const timerThree = timer(3000, 4000);
+// timerOne emits first value at 1s, then once every 4s
+const timerOne$ = timer(1000, 4000);
+// timerTwo emits first value at 2s, then once every 4s
+const timerTwo$ = timer(2000, 4000);
+// timerThree emits first value at 3s, then once every 4s
+const timerThree$ = timer(3000, 4000);
 
-//when one timer emits, emit the latest values from each timer as an array
-const combined = combineLatest(timerOne, timerTwo, timerThree);
-
-const subscribe = combined.subscribe(
+// when one timer emits, emit the latest values from each timer as an array
+combineLatest(timerOne$, timerTwo$, timerThree$).subscribe(
   ([timerValOne, timerValTwo, timerValThree]) => {
     /*
   	Example:
@@ -83,78 +74,73 @@ const subscribe = combined.subscribe(
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-prtbvd?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/codotapula/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) )
+)
 
 ```js
 // RxJS v6+
 import { timer, combineLatest } from 'rxjs';
 
-//timerOne emits first value at 1s, then once every 4s
-const timerOne = timer(1000, 4000);
-//timerTwo emits first value at 2s, then once every 4s
-const timerTwo = timer(2000, 4000);
-//timerThree emits first value at 3s, then once every 4s
-const timerThree = timer(3000, 4000);
+const timerOne$ = timer(1000, 4000);
+const timerTwo$ = timer(2000, 4000);
+const timerThree$ = timer(3000, 4000);
 
-//combineLatest also takes an optional projection function
-const combinedProject = combineLatest(
-  timerOne,
-  timerTwo,
-  timerThree,
+combineLatest(
+  timerOne$,
+  timerTwo$,
+  timerThree$,
+  // combineLatest also takes an optional projection function
   (one, two, three) => {
     return `Timer One (Proj) Latest: ${one}, 
               Timer Two (Proj) Latest: ${two}, 
               Timer Three (Proj) Latest: ${three}`;
   }
-);
-//log values
-const subscribe = combinedProject.subscribe(latestValuesProject =>
-  console.log(latestValuesProject)
-);
+).subscribe(console.log);
 ```
 
 ##### Example 3: Combining events from 2 buttons
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-ihcxud?file=index.ts&devtoolsheight=50)
-| [jsBin](http://jsbin.com/buridepaxi/edit?html,js,output) |
-[jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/14/) )
+)
 
 ```js
 // RxJS v6+
 import { fromEvent, combineLatest } from 'rxjs';
 import { mapTo, startWith, scan, tap, map } from 'rxjs/operators';
 
-// helper function to set HTML
-const setHtml = id => val => (document.getElementById(id).innerHTML = val);
+// elem refs
+const redTotal = document.getElementById('red-total');
+const blackTotal = document.getElementById('black-total');
+const total = document.getElementById('total');
 
 const addOneClick$ = id =>
   fromEvent(document.getElementById(id), 'click').pipe(
     // map every click to 1
     mapTo(1),
-    startWith(0),
     // keep a running total
-    scan((acc, curr) => acc + curr),
-    // set HTML for appropriate element
-    tap(setHtml(`${id}Total`))
+    scan((acc, curr) => acc + curr, 0),
+    startWith(0)
   );
 
-const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
-  .pipe(map(([val1, val2]) => val1 + val2))
-  .subscribe(setHtml('total'));
+combineLatest(addOneClick$('red'), addOneClick$('black')).subscribe(
+  ([red, black]: any) => {
+    redTotal.innerHTML = red;
+    blackTotal.innerHTML = black;
+    total.innerHTML = red + black;
+  }
+);
 ```
 
 ###### HTML
 
 ```html
 <div>
-  <button id='red'>Red</button>
-  <button id='black'>Black</button>
+  <button id="red">Red</button>
+  <button id="black">Black</button>
 </div>
-<div>Red: <span id="redTotal"></span> </div>
-<div>Black: <span id="blackTotal"></span> </div>
-<div>Total: <span id="total"></span> </div>
+<div>Red: <span id="red-total"></span></div>
+<div>Black: <span id="black-total"></span></div>
+<div>Total: <span id="total"></span></div>
 ```
 
 ### Related Recipes
@@ -167,7 +153,7 @@ const combineTotal$ = combineLatest(addOneClick$('red'), addOneClick$('black'))
 
 ### Additional Resources
 
-- [combineLatest](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest)
+- [combineLatest](https://rxjs.dev/api/index/function/combineLatest)
   :newspaper: - Official docs
 - [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
