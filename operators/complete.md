@@ -30,6 +30,7 @@ _[Prefer a split by operator type?](README.md)_
 - [delay](utility/delay.md)
 - [delayWhen](utility/delaywhen.md)
 - [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
+- [distinctUntilKeyChanged](filtering/distinctuntilkeychanged.md)
 - [endWith](combination/endwith.md)
 - [tap / do](utility/do.md) :star:
 - [empty](creation/empty.md)

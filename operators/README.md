@@ -49,6 +49,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [debounce](filtering/debounce.md)
   - [debounceTime](filtering/debouncetime.md) :star:
   - [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
+  - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
   - [filter](filtering/filter.md) :star:
   - [first](filtering/first.md)
   - [ignoreElements](filtering/ignoreelements.md)

@@ -14,6 +14,7 @@ with
 - [debounce](debounce.md)
 - [debounceTime](debouncetime.md) :star:
 - [distinctUntilChanged](distinctuntilchanged.md) :star:
+- [distinctUntilKeyChanged](distinctuntilkeychanged.md)
 - [filter](filter.md) :star:
 - [first](first.md)
 - [ignoreElements](ignoreelements.md)

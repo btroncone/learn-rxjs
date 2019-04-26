@@ -50,6 +50,7 @@
     - [debounce](/operators/filtering/debounce.md)
     - [debounceTime](/operators/filtering/debouncetime.md)
     - [distinctUntilChanged](/operators/filtering/distinctuntilchanged.md)
+    - [distinctUntilKeyChanged](/operators/filtering/distinctuntilkeychanged.md)
     - [filter](/operators/filtering/filter.md)
     - [first](/operators/filtering/first.md)
     - [ignoreElements](/operators/filtering/ignoreelements.md)
