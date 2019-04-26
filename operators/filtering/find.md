@@ -6,7 +6,8 @@
 
 ---
 
-:bulb: If you always want the first item emitted, regardless of condition, try [`first`](first.md)!
+:bulb: If you always want the first item emitted, regardless of condition, try
+[`first`](first.md)!
 
 ---
 
@@ -14,14 +15,22 @@
 
 ### Examples
 
-
 ##### Example 1: Find click inside box, repeat when click occurs outside of box
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-hd63we?file=index.ts))
+( [StackBlitz](https://stackblitz.com/edit/rxjs-hd63we?file=index.ts))
 
 ```js
 // RxJS v6+
+import { fromEvent, interval } from 'rxjs';
+import {
+  find,
+  repeatWhen,
+  mapTo,
+  startWith,
+  tap,
+  take,
+  filter
+} from 'rxjs/operators';
 
 // elem ref
 const status = document.getElementById('status');
@@ -35,16 +44,17 @@ clicks$
     mapTo('Found!'),
     startWith('Find me!'),
     // reset when click outside box
-    repeatWhen(() => clicks$.pipe(filter((event: any) => event.target.id !== 'box')))
+    repeatWhen(() =>
+      clicks$.pipe(filter((event: any) => event.target.id !== 'box'))
+    )
   )
-.subscribe(message => status.innerHTML = message);
+  .subscribe(message => (status.innerHTML = message));
 ```
-
 
 ### Additional Resources
 
-- [find](https://rxjs-dev.firebaseapp.com/api/operators/find)
-  :newspaper: - Official docs
+- [find](https://rxjs-dev.firebaseapp.com/api/operators/find) :newspaper: -
+  Official docs
 
 ---
 
