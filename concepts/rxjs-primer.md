@@ -146,7 +146,7 @@ Or if you want to filter for specific values, you can use
 import { of } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
-const dataSource = from(1, 2, 3, 4, 5);
+const dataSource = of(1, 2, 3, 4, 5);
 
 // subscribe to our source observable
 const subscription = dataSource
