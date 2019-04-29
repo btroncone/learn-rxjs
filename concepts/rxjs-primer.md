@@ -299,11 +299,11 @@ source.pipe(take(5)).subscribe(value => {
 ```
 
 The most commonly used filtering operators are
-[`debounceTime`](../operators/filtering/debouncetime),
-[`distinctUntilChanged`](../operators/filtering/distinctuntilchanged),
-[`filter`](../operators/filtering/filter),
-[`take`](../operators/filtering/take), and
-[`takeUntil`](../operators/filtering/takeuntil).
+[`debounceTime`](../operators/filtering/debouncetime.md),
+[`distinctUntilChanged`](../operators/filtering/distinctuntilchanged.md),
+[`filter`](../operators/filtering/filter.md),
+[`take`](../operators/filtering/take.md), and
+[`takeUntil`](../operators/filtering/takeuntil.md).
 
 ### [Multicasting operators](../operators/multicasting/README.md)
 
