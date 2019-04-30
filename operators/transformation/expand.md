@@ -4,14 +4,15 @@
 
 ## Recursively call provided function.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: Add one for each invocation
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-ntgecj?file=index.ts&devtoolsheight=100) |
-[jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-ntgecj?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/fuxocepazi/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/nu4apbLt/) )
 
 ```js
@@ -50,11 +51,11 @@ const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 
 ### Related Recipes
 
-* [Game Loop](../../recipes/gameloop.md)
+- [Game Loop](../../recipes/gameloop.md)
 
 ### Additional Resources
 
-* [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand)
+- [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand)
   :newspaper: - Official docs
 
 ---

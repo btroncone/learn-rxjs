@@ -4,7 +4,7 @@
 
 ## Select properties to emit.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -49,6 +49,7 @@ const example = source.pipe(pluck('job', 'title'));
 //output: "Developer" , undefined
 const subscribe = example.subscribe(val => console.log(val));
 ```
+
 ### Related Recipes
 
 - [Breakout Game](../../recipes/breakout-game.md)

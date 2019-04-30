@@ -4,15 +4,14 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe shows usage of time interval operator in a simple game
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-click-ninja?file=index.ts)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-click-ninja?file=index.ts) )
 
 #### index.ts
+
 ```js
 // RxJS v6+
 import { fromEvent, TimeInterval } from 'rxjs';
@@ -40,6 +39,7 @@ fromEvent(document, 'mousedown').pipe(
 ```
 
 #### html-renderer.ts
+
 ```js
 const texts = {
   0: 'click, click',
@@ -51,7 +51,7 @@ const texts = {
   6: 'ininhuman!!!'
 };
 
-const text = (score: number, level: number) => `${texts[level]} \n ${score}`
+const text = (score: number, level: number) => `${texts[level]} \n ${score}`;
 
 export const render = (score: number, level: number) => {
   const id = 'level' + level;
@@ -66,7 +66,7 @@ export const render = (score: number, level: number) => {
     elem.style.position = 'absolute';
     elem.style.height = '150px';
     elem.style.width = '150px';
-    elem.style.borderRadius = '10px'
+    elem.style.borderRadius = '10px';
     const position = level * 20;
     elem.style.top = position + 'px';
     elem.style.left = position + 'px';
@@ -81,10 +81,11 @@ export const render = (score: number, level: number) => {
   }
 };
 
-export const clear = () => document.body.innerText = '';
+export const clear = () => (document.body.innerText = '');
 ```
 
 ##### html
+
 ```
 <div>How fast can you click?!</div>
 ```

@@ -4,15 +4,14 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates RxJs implementation of Platform Jumper game.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-platform-jumper?file=index.ts)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-platform-jumper?file=index.ts) )
 
 #### index.ts
+
 ```js
 // RxJS v6+
 import { interval, of, fromEvent, combineLatest } from 'rxjs';
@@ -58,13 +57,20 @@ combineLatest(player$, platforms$)
 ```
 
 #### game.ts
+
 ```js
 import { Player, Platform } from './interfaces';
 import { gameSize } from './constants';
 
 const newPlatform = (x, y): Platform => ({ x, y, scored: false });
-const newPlayer = (x, y, jumpValue, score, lives): Player =>
-  ({ x, y, jumpValue, canJump: false, score: score, lives: lives });
+const newPlayer = (x, y, jumpValue, score, lives): Player => ({
+  x,
+  y,
+  jumpValue,
+  canJump: false,
+  score: score,
+  lives: lives
+});
 const startingY = 4;
 export const initialPlayer = (): Player => newPlayer(0, startingY, 0, 0, 3);
 export const initialPlatforms = [newPlatform(gameSize / 2, startingY)];
@@ -76,36 +82,54 @@ const random = y => {
   max = max > gameSize - 1 ? gameSize - 1 : max;
 
   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
-export const updatePlatforms = (platforms: Platform[]): Platform[] =>
-  (
-    platforms[platforms.length - 1].x > gameSize / 5
-      ? platforms.push(newPlatform(1, random(platforms[platforms.length - 1].y)))
-      : () => { },
-    platforms
-      .filter(e => e.x < gameSize - 1)
-      .map(e => newPlatform(e.x + 1, e.y))
-  );
+export const updatePlatforms = (platforms: Platform[]): Platform[] => (
+  platforms[platforms.length - 1].x > gameSize / 5
+    ? platforms.push(newPlatform(1, random(platforms[platforms.length - 1].y)))
+    : () => {},
+  platforms.filter(e => e.x < gameSize - 1).map(e => newPlatform(e.x + 1, e.y))
+);
 
-export const handleKeypresses = (player: Player, key: string) => key === 'ArrowRight'
-  ? newPlayer(player.x, player.y + (player.y < (gameSize - 1) ? 1 : 0), player.jumpValue, player.score, player.lives)
-  : key === 'ArrowLeft'
-    ? newPlayer(player.x, player.y - (player.y > 0 ? 1 : 0), player.jumpValue, player.score, player.lives)
+export const handleKeypresses = (player: Player, key: string) =>
+  key === 'ArrowRight'
+    ? newPlayer(
+        player.x,
+        player.y + (player.y < gameSize - 1 ? 1 : 0),
+        player.jumpValue,
+        player.score,
+        player.lives
+      )
+    : key === 'ArrowLeft'
+    ? newPlayer(
+        player.x,
+        player.y - (player.y > 0 ? 1 : 0),
+        player.jumpValue,
+        player.score,
+        player.lives
+      )
     : key === 'ArrowUp'
-      ? newPlayer(player.x, player.y, (player.x === gameSize - 1 || player.canJump) ? 6 : 0, player.score, player.lives)
-      : player;
+    ? newPlayer(
+        player.x,
+        player.y,
+        player.x === gameSize - 1 || player.canJump ? 6 : 0,
+        player.score,
+        player.lives
+      )
+    : player;
 
-export const updatePlayer = (player: Player): Player =>
-  (
-    player.jumpValue -= player.jumpValue > 0 ? 1 : 0,
-    player.x -= player.x - 3 > 0 ? player.jumpValue : 0,
-    player.x += player.x < gameSize - 1 ? 1 : 0,
-    player.x === gameSize - 1 ? (player.lives -= 1, player.x = 1) : () => { },
-    player
-  );
+export const updatePlayer = (player: Player): Player => (
+  (player.jumpValue -= player.jumpValue > 0 ? 1 : 0),
+  (player.x -= player.x - 3 > 0 ? player.jumpValue : 0),
+  (player.x += player.x < gameSize - 1 ? 1 : 0),
+  player.x === gameSize - 1 ? ((player.lives -= 1), (player.x = 1)) : () => {},
+  player
+);
 
-const handleCollidingPlatform = (collidingPlatform: Platform, player: Player) => {
+const handleCollidingPlatform = (
+  collidingPlatform: Platform,
+  player: Player
+) => {
   if (player.canJump) {
     return;
   }
@@ -121,23 +145,32 @@ const handleCollidingPlatform = (collidingPlatform: Platform, player: Player) =>
   collidingPlatform.scored = true;
 
   player.canJump = true;
-}
+};
 
-export const handleCollisions = ([player, platforms]: [Player, Platform[]]): [Player, Platform[]] =>
-  (
-    handleCollidingPlatform(platforms.find(p => p.x - 1 === player.x && p.y === player.y), player),
-    player.x = player.canJump
-      ? (collidingPlatforms =>
+export const handleCollisions = ([player, platforms]: [Player, Platform[]]): [
+  Player,
+  Platform[]
+] => (
+  handleCollidingPlatform(
+    platforms.find(p => p.x - 1 === player.x && p.y === player.y),
+    player
+  ),
+  (player.x = player.canJump
+    ? (collidingPlatforms =>
         collidingPlatforms.length
-          ? (platform => platform.x - 1)(collidingPlatforms[collidingPlatforms.length - 1])
-          : player.x)
-        (platforms.filter(p => p.y === player.y && p.x >= player.x))
-      : (player.x),
-    [player, platforms]
-  );
+          ? (platform => platform.x - 1)(
+              collidingPlatforms[collidingPlatforms.length - 1]
+            )
+          : player.x)(
+        platforms.filter(p => p.y === player.y && p.x >= player.x)
+      )
+    : player.x),
+  [player, platforms]
+);
 ```
 
 #### interfaces.ts
+
 ```js
 export interface Player {
   x: number;
@@ -156,27 +189,33 @@ export interface Platform {
 ```
 
 #### constants.ts
+
 ```js
 export const gameSize = 20;
 ```
 
 #### html-renderer.ts
+
 ```js
 import { gameSize } from './constants';
 import { Player, Platform } from './interfaces';
 
 export const render = ([player, platforms]: [Player, Platform[]]) => {
-  document.body.innerHTML = `Lives: ${player.lives} Score: ${player.score} </br>`;
+  document.body.innerHTML = `Lives: ${player.lives} Score: ${
+    player.score
+  } </br>`;
 
-  const game = Array(gameSize).fill(0).map(_ => Array(gameSize).fill(0));
+  const game = Array(gameSize)
+    .fill(0)
+    .map(_ => Array(gameSize).fill(0));
   game[player.x][player.y] = '*';
-  platforms.forEach(p => game[p.x][p.y] = '_');
+  platforms.forEach(p => (game[p.x][p.y] = '_'));
 
   game.forEach(r => {
-    r.forEach(c => document.body.innerHTML += c === 0 ? '...' : c);
+    r.forEach(c => (document.body.innerHTML += c === 0 ? '...' : c));
     document.body.innerHTML += '<br/>';
   });
-}
+};
 ```
 
 ### Operators Used

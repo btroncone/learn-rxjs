@@ -4,7 +4,7 @@
 
 ## If all values pass predicate before completion emit true, else false.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -55,7 +55,8 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 3: Values arriving over time and completing stream prematurely due to every returning false
 
 (
-[Stackblitz](https://stackblitz.com/edit/rxjs-every-example?file=index.ts&devtoolsheight=100) )
+[Stackblitz](https://stackblitz.com/edit/rxjs-every-example?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -64,18 +65,16 @@ import { concat, of } from 'rxjs';
 import { every, delay, tap } from 'rxjs/operators';
 
 const log = console.log;
-const returnCode = request => Number.isInteger(request)
-  ? 200
-  : 400;
-const fakeRequest = request => of({ code: returnCode(request) })
-  .pipe(
+const returnCode = request => (Number.isInteger(request) ? 200 : 400);
+const fakeRequest = request =>
+  of({ code: returnCode(request) }).pipe(
     tap(_ => log(request)),
     delay(1000)
   );
 
 const apiCalls$ = concat(
   fakeRequest(1),
-  fakeRequest("invalid payload"),
+  fakeRequest('invalid payload'),
   fakeRequest(2) //this won't execute as every will return false for previous line
 ).pipe(
   every(e => e.code === 200),

@@ -1,4 +1,3 @@
-
 # repeat
 
 #### signature: `repeat(count: number): Observable`
@@ -11,14 +10,15 @@
 
 ---
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: Repeat 3 times
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-repeat-learnrxjs?file=index.ts&devtoolsheight=100) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-repeat-learnrxjs?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -27,12 +27,10 @@ import { of } from 'rxjs';
 
 const delayedThing = of('delayed value').pipe(delay(2000));
 
-delayedThing.pipe(
-  repeat(3)
-)
-// delayed value...delayed value...delayed value
-.subscribe(console.log)
-
+delayedThing
+  .pipe(repeat(3))
+  // delayed value...delayed value...delayed value
+  .subscribe(console.log);
 ```
 
 ### Related Recipes

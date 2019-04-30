@@ -4,15 +4,14 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates RxJs implementation of Matrix Digital Rain.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-matrix?file=index.ts)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-matrix?file=index.ts) )
 
 #### index.ts
+
 ```js
 // RxJS v6+
 import { interval } from 'rxjs';
@@ -31,22 +30,23 @@ interval(300)
 ```
 
 #### matrix.ts
+
 ```js
 const drop = (x: number, y: number) => ({ x, y, d: [], remove: false });
 const random = (max: number) => Math.floor(Math.random() * Math.floor(max));
 const ranodmChar = () => String.fromCharCode(random(128));
 
 export const markForRemoval = matrix =>
-  matrix.forEach(drop => drop.remove = drop.remove
-    ? true
-    : drop.d.length > 20);
+  matrix.forEach(
+    drop => (drop.remove = drop.remove ? true : drop.d.length > 20)
+  );
 export const updateDrops = matrix =>
-  matrix.forEach(drop => drop.d = drop.remove
-    ? drop.d.slice(1).map(e => ranodmChar())
-    : [
-      ranodmChar(),
-      ...drop.d.map(e => ranodmChar())
-    ]);
+  matrix.forEach(
+    drop =>
+      (drop.d = drop.remove
+        ? drop.d.slice(1).map(e => ranodmChar())
+        : [ranodmChar(), ...drop.d.map(e => ranodmChar())])
+  );
 export const updateMatrix = matrix => [
   ...matrix,
   drop(random(window.innerHeight) / 4, random(window.innerWidth))
@@ -54,6 +54,7 @@ export const updateMatrix = matrix => [
 ```
 
 #### html-renderer.ts
+
 ```js
 const createElem = drop => {
   const elem = document.createElement('div');
@@ -61,10 +62,10 @@ const createElem = drop => {
   elem.style.marginTop = drop.x + 'px';
   elem.style.marginLeft = drop.y + 'px';
   elem.style.fontSize = '12px';
-  elem.innerHTML = drop.d.reduce((acc, c) => acc += '<br/>' + c, '');
+  elem.innerHTML = drop.d.reduce((acc, c) => (acc += '<br/>' + c), '');
   elem.style['color'] = `rgb(21, ${100 + drop.d.length * 10}, 21)`;
   return elem;
-}
+};
 
 export const render = matrix => {
   document.body.innerHTML = '';
@@ -72,7 +73,7 @@ export const render = matrix => {
   container.style.position = 'relative';
   matrix.forEach(m => container.appendChild(createElem(m)));
   document.body.appendChild(container);
-}
+};
 ```
 
 ### Operators Used

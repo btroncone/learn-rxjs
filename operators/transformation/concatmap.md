@@ -4,13 +4,15 @@
 
 ## Map values to inner observable, subscribe and emit in order.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: Demonstrating the difference between `concatMap` and [`mergeMap`](./mergemap.md)
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-pkyxa1?file=index.ts&devtoolsheight=100) )
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-pkyxa1?file=index.ts&devtoolsheight=100)
+)
 
 :bulb: Note the difference between `concatMap` and [`mergeMap`](./mergemap.md).
 Because `concatMap` does not subscribe to the next observable until the previous
@@ -47,8 +49,9 @@ const mergeMapExample = source
 
 ##### Example 2: Map to promise
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-rv9byk?file=index.ts&devtoolsheight=100) |
-[jsBin](http://jsbin.com/celixodeba/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-rv9byk?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/celixodeba/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/Lym33L97//) )
 
 ```js
@@ -70,8 +73,9 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 3: Supplying a projection function
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-2elzt7?file=index.ts&devtoolsheight=100) |
-[jsBin](http://jsbin.com/vihacewozo/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-2elzt7?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/vihacewozo/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/5sr5zzgy/) )
 
 ```js
@@ -95,11 +99,11 @@ const subscribe = example.subscribe(val =>
 
 ### Additional Resources
 
-* [concatMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap)
+- [concatMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap)
   :newspaper: - Official docs
-* [Use RxJS concatMap to map and concat higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-concatmap-to-map-and-concat-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
+- [Use RxJS concatMap to map and concat higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-concatmap-to-map-and-concat-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
-* [Build your own concatMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=concatMap#app)
+- [Build your own concatMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=concatMap#app)
   :video_camera: - Kwinten Pisman
 
 ---

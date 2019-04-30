@@ -4,14 +4,15 @@
 
 ## Group into observables based on provided value.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: Group by property
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-dozkcg?file=index.ts&devtoolsheight=100) |
-[jsBin](http://jsbin.com/buworowuye/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-dozkcg?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/buworowuye/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/utncxxvf/) )
 
 ```js
@@ -44,7 +45,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Group by into key - values
 
-( [StackBlitz](https://stackblitz.com/edit/rxjs-groupby-key-vals?file=index.ts&devtoolsheight=100) )
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-groupby-key-vals?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -58,10 +61,12 @@ const people = [
   { name: 'Sarah', age: 35 }
 ];
 
-from(people).pipe(
-  groupBy(person => person.age, p => p.name),
-  mergeMap(group => zip(of(group.key), group.pipe(toArray())))
-).subscribe(console.log);
+from(people)
+  .pipe(
+    groupBy(person => person.age, p => p.name),
+    mergeMap(group => zip(of(group.key), group.pipe(toArray())))
+  )
+  .subscribe(console.log);
 
 /*
   output:
@@ -71,14 +76,13 @@ from(people).pipe(
 */
 ```
 
-
 ### Additional Resources
 
-* [groupBy](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-groupBy)
+- [groupBy](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-groupBy)
   :newspaper: - Official docs
-* [Group higher order observables with RxJS groupBy](https://egghead.io/lessons/rxjs-group-higher-order-observables-with-rxjs-groupby?course=use-higher-order-observables-in-rxjs-effectively)
+- [Group higher order observables with RxJS groupBy](https://egghead.io/lessons/rxjs-group-higher-order-observables-with-rxjs-groupby?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
-* [Use groupBy in real RxJS applications](https://egghead.io/lessons/rxjs-use-groupby-in-real-rxjs-applications?course=use-higher-order-observables-in-rxjs-effectively)
+- [Use groupBy in real RxJS applications](https://egghead.io/lessons/rxjs-use-groupby-in-real-rxjs-applications?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz
 
 ---

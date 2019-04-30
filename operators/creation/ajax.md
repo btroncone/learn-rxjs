@@ -4,8 +4,7 @@
 
 ## Create an observable for an Ajax request with either a request object with url, headers, etc or a string for a URL.
 
-
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -19,12 +18,12 @@ import { ajax } from 'rxjs/ajax';
 
 const githubUsers = `https://api.github.com/users?per_page=2`;
 
-const users = ajax(githubUsers)
+const users = ajax(githubUsers);
 
 const subscribe = users.subscribe(
-    res => console.log(res),
-    err => console.error(err)
-  );
+  res => console.log(res),
+  err => console.error(err)
+);
 
 /* output
 {  
@@ -68,14 +67,11 @@ const subscribe = users.subscribe(
   ]
 }
 */
-
 ```
 
 ##### Example 2: Observable that emits only the json key of the response object that is being returned from the request.
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-8jkrhl)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-8jkrhl) )
 
 ```js
 // RxJS v6+
@@ -83,12 +79,12 @@ import { ajax } from 'rxjs/ajax';
 
 const githubUsers = `https://api.github.com/users?per_page=2`;
 
-const users = ajax.getJSON(githubUsers)
+const users = ajax.getJSON(githubUsers);
 
 const subscribe = users.subscribe(
-    res => console.log(res),
-    err => console.error(err)
-  );
+  res => console.log(res),
+  err => console.error(err)
+);
 
 /* output
 [  
@@ -114,9 +110,7 @@ const subscribe = users.subscribe(
 
 ##### Example 3: Observable that emits the error object that is being returned from the request.
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-vnxkth)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-vnxkth) )
 
 ```js
 // RxJS v6+
@@ -124,24 +118,21 @@ import { ajax } from 'rxjs/ajax';
 
 const githubUsers = `https://api.github.com/error`;
 
-const users = ajax.getJSON(githubUsers)
+const users = ajax.getJSON(githubUsers);
 
 const subscribe = users.subscribe(
-    res => console.log(res),
-    err => console.error(err)
-  );
+  res => console.log(res),
+  err => console.error(err)
+);
 
 /* output
 Error: ajax error 404
-*/  
+*/
 ```
-
 
 ##### Example 4: Ajax operator with object as input.
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-vqnnot)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-vqnnot) )
 
 ```js
 // RxJS v6+
@@ -149,19 +140,26 @@ import { ajax } from 'rxjs/ajax';
 
 const githubUsers = `https://api.github.com/error`;
 
-const users = ajax({ url: githubUsers, method:"GET", headers:{ /*some headers*/ }, body: { /*in case you need a body*/ }} )
+const users = ajax({
+  url: githubUsers,
+  method: 'GET',
+  headers: {
+    /*some headers*/
+  },
+  body: {
+    /*in case you need a body*/
+  }
+});
 
 const subscribe = users.subscribe(
-    res => console.log(res),
-    err => console.error(err)
-  );
-
+  res => console.log(res),
+  err => console.error(err)
+);
 ```
 
 ### Additional Resources
 
-- [ajax](https://rxjs.dev/api/ajax/ajax)
-  :newspaper: - Official docs
+- [ajax](https://rxjs.dev/api/ajax/ajax) :newspaper: - Official docs
 
 ---
 

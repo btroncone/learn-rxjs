@@ -4,13 +4,15 @@
 
 ## Toggle on to catch emitted values from source, toggle off to emit buffered values as array.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: Toggle buffer on and off at interval
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-xu3sq8?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/relavezugo/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-xu3sq8?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/relavezugo/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/6ad3w3wf/) )
 
 ```js
@@ -29,10 +31,7 @@ const closingInterval = val => {
 };
 //every 5s a new buffer will start, collecting emitted values for 3s then emitting buffered values
 const bufferToggleInterval = sourceInterval.pipe(
-  bufferToggle(
-    startInterval,
-    closingInterval
-  )
+  bufferToggle(startInterval, closingInterval)
 );
 //log to console
 //ex. emitted buffers [4,5,6]...[9,10,11]
@@ -42,7 +41,10 @@ const subscribe = bufferToggleInterval.subscribe(val =>
 ```
 
 ##### Example 2: Toggle buffer on and off on mouse down/up
-( [StackBlitz](https://stackblitz.com/edit/rxjs-buffertoggle-mousemove?file=index.ts&devtoolsheight=50) )
+
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-buffertoggle-mousemove?file=index.ts&devtoolsheight=50)
+)
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -50,17 +52,16 @@ import { bufferToggle } from 'rxjs/operators';
 
 fromEvent(document, 'mousemove')
   .pipe(
-    bufferToggle(
-      fromEvent(document, 'mousedown'),
-      _ => fromEvent(document, 'mouseup')
+    bufferToggle(fromEvent(document, 'mousedown'), _ =>
+      fromEvent(document, 'mouseup')
     )
   )
-.subscribe(console.log)
+  .subscribe(console.log);
 ```
 
 ### Additional Resources
 
-* [bufferToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle)
+- [bufferToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle)
   :newspaper: - Official docs
 
 ---

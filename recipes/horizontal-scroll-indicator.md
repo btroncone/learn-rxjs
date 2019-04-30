@@ -4,7 +4,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates the creation of a horizontal scroll indicator.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
@@ -14,7 +14,7 @@ This recipe demonstrates the creation of a horizontal scroll indicator.
 
 ```js
 // RxJS v6+
-import { fromEvent } from 'rxjs'; 
+import { fromEvent } from 'rxjs';
 import { throttleTime, tap } from 'rxjs/operators';
 
 const scrollIndication = document.getElementById('indication');
@@ -23,18 +23,17 @@ const getScrollWidth = () => {
   // https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
   const winScroll = doc.scrollTop;
   const height = doc.scrollHeight - doc.clientHeight;
-  
+
   return (winScroll / height) * 100;
-}
-const setScroll = _ => 
-  scrollIndication.style.width = getScrollWidth() + '%'
+};
+const setScroll = _ => (scrollIndication.style.width = getScrollWidth() + '%');
 
 fromEvent(document, 'scroll')
   .pipe(
     throttleTime(20),
     tap(setScroll)
   )
-.subscribe()
+  .subscribe();
 ```
 
 ##### html
@@ -45,7 +44,7 @@ fromEvent(document, 'scroll')
     position: fixed;
     width: 5px;
     height: 7px;
-    background-color: #FF3366;
+    background-color: #ff3366;
     left: 0px;
     right: 0px;
     top: 0px;

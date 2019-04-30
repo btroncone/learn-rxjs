@@ -4,15 +4,14 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates RxJs implementation of Breakout game.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
-(
-[StackBlitz](https://stackblitz.com/edit/rxjs-breakout?file=index.ts)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-breakout?file=index.ts) )
 
 #### index.ts
+
 ```js
 // RxJS v6+
 import { fromEvent, of, interval, combineLatest, generate, noop } from 'rxjs';
@@ -78,6 +77,7 @@ combineLatest(player$, ball$, bricks$)
 ```
 
 #### interfaces.ts
+
 ```js
 export interface GameObject {
   x: number;
@@ -94,11 +94,13 @@ export interface Ball extends GameObject {
 ```
 
 #### constants.ts
+
 ```js
 export const gameSize = 20;
 ```
 
 #### html-renderer.ts
+
 ```js
 import { gameSize } from './constants';
 import { Player, Ball, GameObject } from './interfaces';
@@ -115,25 +117,33 @@ const createElem = col => {
   elem.style.marginLeft = '10px';
   elem.style.height = '6px';
   elem.style.width = '6px';
-  elem.style['background-color'] = 
+  elem.style['background-color'] =
     col === empty
       ? 'white'
-      : (col === plyer
-        ? 'cornflowerblue'
-        : col === bll
-          ? 'gray'
-          : 'silver');
+      : col === plyer
+      ? 'cornflowerblue'
+      : col === bll
+      ? 'gray'
+      : 'silver';
   elem.style['border-radius'] = col === bll ? '100%' : '0%';
   return elem;
-}
+};
 
-export const render = ([player, ball, bricks]: [Player, Ball, GameObject[]]) => {
-  const game = Array(gameSize).fill(0).map(e => Array(gameSize).fill(0));
+export const render = ([player, ball, bricks]: [
+  Player,
+  Ball,
+  GameObject[]
+]) => {
+  const game = Array(gameSize)
+    .fill(0)
+    .map(e => Array(gameSize).fill(0));
   game[player.x][player.y] = plyer;
   game[ball.x][ball.y] = bll;
-  bricks.forEach(b => game[b.x][b.y] = brick);
+  bricks.forEach(b => (game[b.x][b.y] = brick));
 
-  document.body.innerHTML = `Score: ${player.score} Lives: ${player.lives} <br/>`;
+  document.body.innerHTML = `Score: ${player.score} Lives: ${
+    player.lives
+  } <br/>`;
   game.forEach(r => {
     const rowContainer = document.createElement('div');
     r.forEach(c => rowContainer.appendChild(createElem(c)));

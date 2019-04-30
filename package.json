@@ -15,11 +15,17 @@
     "type": "git",
     "url": "git+https://github.com/btroncone/learn-rxjs.git"
   },
-  "keywords": ["rxjs"],
+  "keywords": [
+    "rxjs"
+  ],
   "author": "Brian Troncone <btroncone@gmail.com>",
   "contributors": [
     {
       "name": "Huy Le"
+    },
+    {
+      "name": "Adam Lubek",
+      "url": "https://github.com/adamlubek"
     }
   ],
   "license": "MIT",

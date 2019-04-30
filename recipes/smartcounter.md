@@ -8,7 +8,7 @@ a popular library that accomplishes this is
 [Hubspot](https://github.com/HubSpot). Let's see how we can accomplish something
 similar with just a few lines of RxJS.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 #### Vanilla JS
 
@@ -53,7 +53,7 @@ const subscription = (function(currentNumber) {
 ###### HTML
 
 ```html
-<input id="range" type="number">
+<input id="range" type="number" />
 <button id="update">Update</button>
 <h3 id="display">0</h3>
 ```
@@ -128,11 +128,12 @@ export class NumberTrackerComponent implements OnDestroy {
 
 ```html
 <p>
-  <input type="number"
+  <input
+    type="number"
     (keyup.enter)="counterNumber = vanillaInput.value"
-    #vanillaInput>
-  <button
-    (click)="counterNumber = vanillaInput.value">
+    #vanillaInput
+  />
+  <button (click)="counterNumber = vanillaInput.value">
     Update number
   </button>
 </p>
@@ -141,10 +142,10 @@ export class NumberTrackerComponent implements OnDestroy {
 
 ### Operators Used
 
-* [fromEvent](../operators/creation/fromevent.md)
-* [map](../operators/transformation/map.md)
-* [mapTo](../operators/transformation/mapto.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [takeWhile](../operators/filtering/takewhile.md)
+- [fromEvent](../operators/creation/fromevent.md)
+- [map](../operators/transformation/map.md)
+- [mapTo](../operators/transformation/mapto.md)
+- [scan](../operators/transformation/scan.md)
+- [startWith](../operators/combination/startwith.md)
+- [switchMap](../operators/transformation/switchmap.md)
+- [takeWhile](../operators/filtering/takewhile.md)

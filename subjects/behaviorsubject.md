@@ -2,14 +2,15 @@
 
 ## A Subject that requires an initial value and emits its current value to new subscribers
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: simple BehaviorSubject
 
 (
-[Stackblitz](https://stackblitz.com/edit/rxjs-behaviorsubject-simpleexample?file=index.ts?file=index.ts&devtoolsheight=100) )
+[Stackblitz](https://stackblitz.com/edit/rxjs-behaviorsubject-simpleexample?file=index.ts?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -31,22 +32,23 @@ subject.subscribe(console.log);
 subject.next(789);
 
 // output: 123, 123, 456, 456, 456, 789, 789, 789
-
 ```
 
 ##### Example 2: BehaviorSubject with new subscribers created on mouse clicks
 
 (
-[Stackblitz](https://stackblitz.com/edit/rxjs-behaviorsubject-mouseclicks?file=index.ts) )
+[Stackblitz](https://stackblitz.com/edit/rxjs-behaviorsubject-mouseclicks?file=index.ts)
+)
 
 ```js
 // RxJS v6+
 import { BehaviorSubject, fromEvent, interval, merge } from 'rxjs';
 import { map, tap, mergeMap } from 'rxjs/operators';
 
-const setElementText = (elemId, text) => 
-  document.getElementById(elemId).innerText = text.toString();
-const addHtmlElement = coords => document.body.innerHTML += `
+const setElementText = (elemId, text) =>
+  (document.getElementById(elemId).innerText = text.toString());
+const addHtmlElement = coords =>
+  (document.body.innerHTML += `
   <div 
     id=${coords.id}
     style="
@@ -59,20 +61,18 @@ const addHtmlElement = coords => document.body.innerHTML += `
       background: silver;
       border-radius: 80%;"
     >
-  </div>`;
+  </div>`);
 
 const subject = new BehaviorSubject(0);
 
 const click$ = fromEvent(document, 'click').pipe(
-  map((e: MouseEvent) => ({ 
+  map((e: MouseEvent) => ({
     x: e.clientX,
     y: e.clientY,
-    id: Math.random() })),
+    id: Math.random()
+  })),
   tap(addHtmlElement),
-  mergeMap(coords =>
-    subject
-      .pipe(tap(v => setElementText(coords.id, v)))
-  )
+  mergeMap(coords => subject.pipe(tap(v => setElementText(coords.id, v))))
 );
 
 const interval$ = interval(1000).pipe(
@@ -81,7 +81,6 @@ const interval$ = interval(1000).pipe(
 );
 
 merge(click$, interval$).subscribe();
-  
 ```
 
 ### Related Recipes

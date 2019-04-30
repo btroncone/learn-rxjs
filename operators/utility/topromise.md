@@ -6,11 +6,12 @@
 
 ---
 
-:warning: `toPromise` is not a pipable operator, as it does not return an observable.
+:warning: `toPromise` is not a pipable operator, as it does not return an
+observable.
 
 ---
 
-<div class="ua-ad"><div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div></div>
+<div class="ua-ad"><div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div></div>
 
 ### Examples
 

@@ -4,14 +4,15 @@
 
 ## Apply projection with each value from source.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: Add 10 to each number
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-a7bnxb?file=index.ts&devtoolsheight=100) |
-[jsBin](http://jsbin.com/padasukano/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-a7bnxb?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/padasukano/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/yd38awLa/) )
 
 ```js
@@ -29,8 +30,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Map to single property
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-qgpnju?file=index.ts&devtoolsheight=100) |
-[jsBin](http://jsbin.com/detozumale/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-qgpnju?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/detozumale/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/tdLd5tgc/) )
 
 ```js
@@ -65,13 +67,14 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [map](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-map)
+- [map](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-map)
   :newspaper: - Official docs
-* [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
+- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
   :video_camera: - Ben Lesh
-* [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)
+- [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
-- [Build your own map operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=map#app)
+
+* [Build your own map operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=map#app)
   :video_camera: - Kwinten Pisman
 
 ---

@@ -4,13 +4,15 @@
 
 ## Subscribe to provided observable when previous completes, emit values.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
 ##### Example 1: Map to basic observable (simulating request)
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-fkkh6c?file=index.ts&devtoolsheight=50) )
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-fkkh6c?file=index.ts&devtoolsheight=50)
+)
 
 ```js
 // RxJS v6+
@@ -29,8 +31,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 2: Using projection with `concatMap`
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-8kcfm1?file=index.ts&devtoolsheight=100) |
-[jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) |
+(
+[StackBlitz](https://stackblitz.com/edit/typescript-8kcfm1?file=index.ts&devtoolsheight=100)
+| [jsBin](http://jsbin.com/fogefebisu/1/edit?js,console) |
 [jsFiddle](https://jsfiddle.net/btroncone/s19wtscb/) )
 
 ```js
@@ -69,7 +72,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [concatMapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo)
+- [concatMapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo)
   :newspaper: - Official docs
 
 ---

@@ -4,7 +4,7 @@
 
 ## When source observable completes use [combineLatest](combinelatest.md) with collected observables.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -27,7 +27,12 @@ import { interval } from 'rxjs';
 const source = interval(1000).pipe(take(2));
 //map each emitted value from source to interval observable that takes 5 values
 const example = source.pipe(
-  map(val => interval(1000).pipe(map(i => `Result (${val}): ${i}`), take(5)))
+  map(val =>
+    interval(1000).pipe(
+      map(i => `Result (${val}): ${i}`),
+      take(5)
+    )
+  )
 );
 /*
   2 values from source will map to 2 (inner) interval observables that emit every 1s
@@ -52,7 +57,7 @@ const subscribe = combined.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [combineAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll)
+- [combineAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineAll)
   :newspaper: - Official docs
 
 ---

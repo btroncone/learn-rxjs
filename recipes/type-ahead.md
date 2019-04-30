@@ -4,7 +4,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates the creation of type ahead client side code.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
@@ -15,20 +15,27 @@ This recipe demonstrates the creation of type ahead client side code.
 ```js
 // RxJS v6+
 import { fromEvent, of } from 'rxjs';
-import { debounceTime, distinctUntilChanged, map, switchMap, tap } from 'rxjs/operators';
+import {
+  debounceTime,
+  distinctUntilChanged,
+  map,
+  switchMap,
+  tap
+} from 'rxjs/operators';
 
-const getContinents = keys => [
-  'africa',
-  'antarctica',
-  'asia',
-  'australia',
-  'europe',
-  'north america',
-  'south america'
-].filter(e => e.indexOf(keys.toLowerCase()) > -1);
+const getContinents = keys =>
+  [
+    'africa',
+    'antarctica',
+    'asia',
+    'australia',
+    'europe',
+    'north america',
+    'south america'
+  ].filter(e => e.indexOf(keys.toLowerCase()) > -1);
 
-const fakeContinentsRequest = keys => of(getContinents(keys))
-  .pipe(
+const fakeContinentsRequest = keys =>
+  of(getContinents(keys)).pipe(
     tap(_ => console.log(`API CALL at ${new Date()}`))
   );
 
@@ -38,20 +45,22 @@ fromEvent(document.getElementById('type-ahead'), 'keyup')
     map((e: any) => e.target.value),
     distinctUntilChanged(),
     switchMap(fakeContinentsRequest),
-    tap(c => document.getElementById('output').innerText = c.join('\n'))
-  ).subscribe();
+    tap(c => (document.getElementById('output').innerText = c.join('\n')))
+  )
+  .subscribe();
 ```
 
 ##### html
 
 ```html
 Get continents
-<input id='type-ahead'/>
-<hr/>
-<div id='output'></div>
+<input id="type-ahead" />
+<hr />
+<div id="output"></div>
 ```
 
 ### Operators Used
+
 - [debounceTime](../operators/filtering/debouncetime.md)
 - [distinctUntilChanged](../operators/filtering/distinctuntilchanged.md)
 - [fromEvent](../operators/creation/fromevent.md)

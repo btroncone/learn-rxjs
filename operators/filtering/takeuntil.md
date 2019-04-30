@@ -10,7 +10,7 @@
 
 ---
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -79,31 +79,33 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 3: Take mouse events on mouse down until mouse up
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-ug2ezf?file=index.ts&devtoolsheight=50) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-ug2ezf?file=index.ts&devtoolsheight=50)
+)
 
 ```js
 // RxJS v6+
 import { fromEvent } from 'rxjs';
 import { takeUntil, mergeMap, map } from 'rxjs/operators';
 
-const mousedown$ = fromEvent(document, 'mousedown')
+const mousedown$ = fromEvent(document, 'mousedown');
 const mouseup$ = fromEvent(document, 'mouseup');
 const mousemove$ = fromEvent(document, 'mousemove');
 
 // after mousedown, take position until mouse up
-mousedown$.pipe(
-  mergeMap(_ => {
-    return mousemove$.pipe(
-      map((e: any) => ({
-        x: e.clientX,
-        y: e.clientY
-      })),
-      // complete inner observable on mouseup event
-      takeUntil(mouseup$)
-    )
-  })
-)
-.subscribe(console.log);
+mousedown$
+  .pipe(
+    mergeMap(_ => {
+      return mousemove$.pipe(
+        map((e: any) => ({
+          x: e.clientX,
+          y: e.clientY
+        })),
+        // complete inner observable on mouseup event
+        takeUntil(mouseup$)
+      );
+    })
+  )
+  .subscribe(console.log);
 ```
 
 ### Related Recipes
@@ -121,6 +123,7 @@ mousedown$.pipe(
   Angular in Depth
 * [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist
+
 - [Build your own takeUntil operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=takeUntil#app)
   :video_camera: - Kwinten Pisman
 

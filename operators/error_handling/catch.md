@@ -10,7 +10,7 @@
 
 ---
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -66,33 +66,41 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 3: Catching errors comparison when using switchMap/mergeMap/concatMap/exhaustMap
 
-( [StackBlitz](https://stackblitz.com/edit/rxjs-catcherror-withmapoperators?file=index.ts&devtoolsheight=80) )
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-catcherror-withmapoperators?file=index.ts&devtoolsheight=80)
+)
 
 ```js
 // switchMap in example below can be replaced with mergeMap/concatMap/exhaustMap, the same behaviour applies
 import { throwError, fromEvent, of } from 'rxjs';
-import { catchError, tap, switchMap, mergeMap, concatMap, exhaustMap } from 'rxjs/operators';
+import {
+  catchError,
+  tap,
+  switchMap,
+  mergeMap,
+  concatMap,
+  exhaustMap
+} from 'rxjs/operators';
 
 const fakeRequest$ = of().pipe(
   tap(_ => console.log('fakeRequest')),
   throwError
 );
 
-const iWillContinueListening$ =
-  fromEvent(document.getElementById('continued'), 'click')
-    .pipe(
-      switchMap(_ =>
-        fakeRequest$.pipe(
-          catchError(_ => of('keep on clicking!!!'))
-        ))
-    );
+const iWillContinueListening$ = fromEvent(
+  document.getElementById('continued'),
+  'click'
+).pipe(
+  switchMap(_ => fakeRequest$.pipe(catchError(_ => of('keep on clicking!!!'))))
+);
 
-const iWillStopListening$ =
-  fromEvent(document.getElementById('stopped'), 'click')
-    .pipe(
-      switchMap(_ => fakeRequest$),
-      catchError(_ => of('no more requests!!!'))
-    );
+const iWillStopListening$ = fromEvent(
+  document.getElementById('stopped'),
+  'click'
+).pipe(
+  switchMap(_ => fakeRequest$),
+  catchError(_ => of('no more requests!!!'))
+);
 
 iWillContinueListening$.subscribe(console.log);
 iWillStopListening$.subscribe(console.log);

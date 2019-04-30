@@ -4,7 +4,7 @@
 
 ## Emit numbers in sequence based on provided timeframe.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -43,7 +43,7 @@ const subscribe = source.subscribe(val => console.log(val));
 - [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz
 - [Build your own interval operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=interval#app)
-  :video_camera: - Kwinten Pisman  
+  :video_camera: - Kwinten Pisman
 
 ---
 

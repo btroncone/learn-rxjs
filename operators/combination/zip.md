@@ -12,7 +12,7 @@ source!
 
 ---
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -66,24 +66,29 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 3: get X/Y coordinates of drag start/finish (mouse down/up)
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-zip-mousedownup-coordinates?file=index.ts&devtoolsheight=50) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-zip-mousedownup-coordinates?file=index.ts&devtoolsheight=50)
+)
 
 ```js
 // RxJS v6+
 import { fromEvent, zip } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-const documentEvent = eventName => fromEvent(document, eventName)
-  .pipe(map((e: MouseEvent) => ({x: e.clientX, y: e.clientY})));
+const documentEvent = eventName =>
+  fromEvent(document, eventName).pipe(
+    map((e: MouseEvent) => ({ x: e.clientX, y: e.clientY }))
+  );
 
-zip(documentEvent('mousedown'), documentEvent('mouseup'))
-  .subscribe(e => console.log(JSON.stringify(e)));
+zip(documentEvent('mousedown'), documentEvent('mouseup')).subscribe(e =>
+  console.log(JSON.stringify(e))
+);
 ```
 
 ##### Example 4: mouse click duration
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-zip-mouseclickduration?file=index.ts&devtoolsheight=50) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-zip-mouseclickduration?file=index.ts&devtoolsheight=50)
+)
 
 ```js
 // RxJS v6+
@@ -93,15 +98,11 @@ import { map } from 'rxjs/operators';
 const eventTime = eventName =>
   fromEvent(document, eventName).pipe(map(() => new Date()));
 
-const mouseClickDuration =
-  zip(
-    eventTime('mousedown'),
-    eventTime('mouseup')
-  ).pipe(
-    map(([start, end]) =>
-      Math.abs((start.getTime() - end.getTime())))
-  );
-  
+const mouseClickDuration = zip(
+  eventTime('mousedown'),
+  eventTime('mouseup')
+).pipe(map(([start, end]) => Math.abs(start.getTime() - end.getTime())));
+
 mouseClickDuration.subscribe(console.log);
 ```
 

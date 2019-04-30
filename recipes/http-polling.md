@@ -1,6 +1,6 @@
 # HTTP Polling
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -181,15 +181,18 @@ fromEvent(startButton, 'click')
 - [switchMap](../operators/transformation/switchmap.md)
 - [timer](../operators/creation/timer.md)
 
-
 ##### Example 2: Simple http polling
 
 _By [@adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates polling an HTTP endpoint using repeat. It waits for 3 seconds following the response to poll again. Code below is simplifed to demonstrate bare bones of solution but link below contains verbose logging and error handling.
+This recipe demonstrates polling an HTTP endpoint using repeat. It waits for 3
+seconds following the response to poll again. Code below is simplifed to
+demonstrate bare bones of solution but link below contains verbose logging and
+error handling.
 
 (
-[StackBlitz](https://stackblitz.com/edit/rxjs-http-polling?file=index.ts&devtoolsheight=80) )
+[StackBlitz](https://stackblitz.com/edit/rxjs-http-polling?file=index.ts&devtoolsheight=80)
+)
 
 ```js
 // RxJS v6+

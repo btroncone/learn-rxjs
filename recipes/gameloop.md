@@ -9,7 +9,7 @@ a stream of frames and their deltaTimes since the previous frames. Combined with
 this is a stream of user inputs, and the current gameState, which we can use to
 update our objects, and render to to the screen on each frame emission.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/angular"><img src="https://ultimatecourses.com/assets/img/banners/ultimate-angular-leader.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
@@ -88,7 +88,7 @@ const update = (deltaTime: number, state: any, inputState: any): any => {
 
         // Apply Velocity Movements
         obj.x = obj.x += obj.velocity.x*deltaTime;
-        obj.y = obj.y += obj.velocity.y*deltaTime;  
+        obj.y = obj.y += obj.velocity.y*deltaTime;
 
         // Check if we exceeded our boundaries
         const didHit = runBoundaryCheck(obj, boundaries);
@@ -125,7 +125,7 @@ const render = (state: any) => {
   state['objects'].forEach((obj) => {
     ctx.fillStyle = obj.color;
     ctx.fillRect(obj.x, obj.y, obj.width, obj.height);
-  });  
+  });
 };
 
 
@@ -251,7 +251,8 @@ frames$
 <canvas width="400px" height="300px" id="game"></canvas>
 <div id="fps"></div>
 <p class="instructions">
-  Each time a block hits a wall, it gets faster. You can hit SPACE to pause the boxes. They will change colors to show they are paused.
+  Each time a block hits a wall, it gets faster. You can hit SPACE to pause the
+  boxes. They will change colors to show they are paused.
 </p>
 ```
 
