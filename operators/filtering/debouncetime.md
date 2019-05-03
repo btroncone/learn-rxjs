@@ -19,27 +19,26 @@ of user input must be controlled!
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-adheqt?file=index.ts&devtoolsheight=50)
-| [jsBin](http://jsbin.com/kacijarogi/1/edit?js,console,output) |
-[jsFiddle](https://jsfiddle.net/btroncone/7kbg4q2e/) )
+)
 
 ```js
 // RxJS v6+
-import { fromEvent, timer } from 'rxjs';
+import { fromEvent } from 'rxjs';
 import { debounceTime, map } from 'rxjs/operators';
 
-const input = document.getElementById('example');
+// elem ref
+const searchBox = document.getElementById('search');
 
-//for every keyup, map to current input value
-const example = fromEvent(input, 'keyup').pipe(map(i => i.currentTarget.value));
+// streams
+const keyup$ = fromEvent(searchBox, 'keyup');
 
-//wait .5s between keyups to emit current value
-//throw away all other values
-const debouncedInput = example.pipe(debounceTime(500));
-
-//log values
-const subscribe = debouncedInput.subscribe(val => {
-  console.log(`Debounced Input: ${val}`);
-});
+// wait .5s between keyups to emit current value
+keyup$
+  .pipe(
+    map((i: any) => i.currentTarget.value),
+    debounceTime(500)
+  )
+  .subscribe(console.log);
 ```
 
 ### Related Recipes
@@ -48,8 +47,8 @@ const subscribe = debouncedInput.subscribe(val => {
 
 ### Additional Resources
 
-- [debounceTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounceTime)
-  :newspaper: - Official docs
+- [debounceTime](https://rxjs.dev/api/operators/debounceTime) :newspaper: -
+  Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 - [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
