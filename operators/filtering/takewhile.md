@@ -95,6 +95,7 @@ source$
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
+- [Tetris Game](../../recipes/tetris-game.md)
 
 ### Additional Resources
 
