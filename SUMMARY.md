@@ -130,6 +130,7 @@
   - [Space Invaders Game](/recipes/space-invaders-game.md)
   - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
   - [Tank Battle Game](/recipes/tank-battle-game.md)
+  - [Tetris Game](/recipes/tetris-game.md)
   - [Type Ahead](/recipes/type-ahead.md)
 - [Concepts](/concepts/README.md)
   - [RxJS Primer](/concepts/rxjs-primer.md)
