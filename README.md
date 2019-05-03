@@ -20,7 +20,7 @@ Learning RxJS and reactive programming is
 [hard](https://twitter.com/hoss/status/742643506536153088). There's the
 multitude of concepts, large API surface, and fundamental shift in mindset from
 an
-[imperative to declarative style](http://codenugget.co/2015/03/05/declarative-vs-imperative-programming-web.html).
+[imperative to declarative style](https://tylermcginnis.com/imperative-vs-declarative-programming/).
 This site focuses on making these concepts approachable, the examples clear and
 easy to explore, and features references throughout to the best RxJS related
 material on the web. The goal is to supplement the
