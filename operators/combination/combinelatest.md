@@ -150,6 +150,7 @@ combineLatest(addOneClick$('red'), addOneClick$('black')).subscribe(
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
+- [Tetris Game](../../recipes/tetris-game.md)
 
 ### Additional Resources
 

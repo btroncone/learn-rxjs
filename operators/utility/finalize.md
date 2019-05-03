@@ -30,6 +30,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
+- [Tetris Game](../../recipes/tetris-game.md)
 
 ### Additional Resources
 

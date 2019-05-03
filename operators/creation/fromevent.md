@@ -46,6 +46,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
+- [Tetris Game](../../recipes/tetris-game.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources

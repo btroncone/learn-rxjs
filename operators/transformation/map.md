@@ -54,16 +54,17 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
-- [Smart Counter](../../recipes/smartcounter.md)
+- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Game Loop](../../recipes/gameloop.md)
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Lockscreen](../../recipes/lockscreen.md)
-- [Type Ahead](../../recipes/type-ahead.md)
-- [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
+- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
-- [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
-- [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Tetris Game](../../recipes/tetris-game.md)
+- [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 

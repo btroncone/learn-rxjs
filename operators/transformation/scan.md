@@ -128,6 +128,7 @@ interval(1000)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
+- [Tetris Game](../../recipes/tetris-game.md)
 
 ### Additional Resources
 
