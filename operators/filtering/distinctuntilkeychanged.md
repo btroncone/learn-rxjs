@@ -34,6 +34,26 @@ source$
   .subscribe(console.log);
 ```
 
+##### Example 2: Keyboard events
+
+(
+[StackBlitz](https://stackblitz.com/edit/rxjs-distinctuntilkeychanged?file=index.ts&devtoolsheight=50)
+)
+
+```js
+// RxJS v6+
+import { fromEvent } from 'rxjs';
+import { distinctUntilKeyChanged, pluck } from 'rxjs/operators';
+
+const keys$ = fromEvent(document, 'keyup')
+  .pipe(
+    distinctUntilKeyChanged<KeyboardEvent>('code'),
+    pluck('key')
+  );
+
+keys$.subscribe(console.log);
+```
+
 ### Additional Resources
 
 - [distinctUntilKeyChanged](https://rxjs.dev/api/operators/distinctUntilKeyChanged)
