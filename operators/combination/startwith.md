@@ -93,6 +93,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 - [Breakout Game](../../recipes/breakout-game.md)
+- [Car Racing Game](../../recipes/car-racing-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
