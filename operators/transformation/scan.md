@@ -107,10 +107,7 @@ const fakeRequest = of('response').pipe(delay(2000));
 interval(1000)
   .pipe(
     mergeMap(_ => fakeRequest),
-    scan <
-      string >
-      ((allResponses, currentResponse) => [...allResponses, currentResponse],
-      [])
+    scan<string>((all, current) => [...all, current], [])
   )
   .subscribe(console.log);
 ```
