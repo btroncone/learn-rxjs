@@ -79,6 +79,7 @@ const example = source
 - [Flappy Bird Game](../../recipes/flappy-bird-game.md)
 - [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
 - [Lockscreen](../../recipes/lockscreen.md)
+- [Memory Game](../../recipes/memory-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
