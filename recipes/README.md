@@ -15,6 +15,7 @@ Common use-cases and interesting recipes to help learn RxJS.
 * [HTTP Polling](http-polling.md)
 * [Lockscreen](lockscreen.md)
 * [Matrix Digital Rain](matrix-digital-rain.md)
+* [Memory Game](memory-game.md)
 * [Mine Sweeper Game](mine-sweeper-game.md)
 * [Platform Jumper Game](platform-jumper-game.md)
 * [Progress Bar](progressbar.md)
