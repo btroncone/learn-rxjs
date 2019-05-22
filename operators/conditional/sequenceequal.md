@@ -60,6 +60,7 @@ fromEvent(document, 'keydown')
 ### Related Recipes
 
 - [Lockscreen](../../recipes/lockscreen.md)
+- [Memory Game](../../recipes/memory-game.md)
 
 ### Additional Resources
 
