@@ -55,6 +55,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Breakout Game](../../recipes/breakout-game.md)
 - [Car Racing Game](../../recipes/car-racing-game.md)
 - [Lockscreen](../../recipes/lockscreen.md)
+- [Memory Game](../../recipes/memory-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Tetris Game](../../recipes/tetris-game.md)
