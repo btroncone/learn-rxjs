@@ -63,6 +63,7 @@ OUTPUT:
 ### Related Recipes
 
 - [Breakout Game](../../recipes/breakout-game.md)
+- [Memory Game](../../recipes/memory-game.md)
 
 ### Additional Resources
 

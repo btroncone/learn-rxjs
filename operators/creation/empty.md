@@ -57,6 +57,10 @@ const timer$ = merge(pause$, resume$)
   .subscribe(setHTML('remaining'));
 ```
 
+### Related Recipes
+
+- [Memory Game](../../recipes/memory-game.md)
+
 ### Additional Resources
 
 - [empty](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-empty)

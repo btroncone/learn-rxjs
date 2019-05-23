@@ -98,6 +98,10 @@ const oneClickEvent = fromEvent(document, 'click').pipe(
 const subscribe = oneClickEvent.subscribe();
 ```
 
+### Related Recipes
+
+- [Memory Game](../../recipes/memory-game.md)
+
 ### Additional Resources
 
 - [take](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take)

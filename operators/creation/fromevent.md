@@ -40,6 +40,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Horizontal Scroll Indicator](../../recipes/horizontal-scroll-indicator.md)
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Lockscreen](../../recipes/lockscreen.md)
+- [Memory Game](../../recipes/memory-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Progress Bar](../../recipes/progressbar.md)
