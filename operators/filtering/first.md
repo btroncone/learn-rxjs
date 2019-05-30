@@ -8,6 +8,8 @@
 
 :bulb: The counterpart to first is [**last**](last.md)!
 
+:bulb: `First` will deliver an EmptyError to the Observer's error callback if the Observable completes before any next notification was sent. If you don't want this behavior, use `take(1)` instead.
+
 ---
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
