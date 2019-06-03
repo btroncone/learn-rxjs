@@ -14,7 +14,7 @@ observables when a source completes!
 ### Why use `combineLatest`?
 
 This operator is best used when you have multiple, long-lived observables that
-rely on eachother for some calculation or determination. Basic examples of this
+rely on each other for some calculation or determination. Basic examples of this
 can be seen in [example three](#example-3-combining-events-from-2-buttons),
 where events from multiple buttons are being combined to produce a count of each
 and an overall total, or a
