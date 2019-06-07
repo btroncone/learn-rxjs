@@ -52,6 +52,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Smart Counter](../../recipes/smartcounter.md)
+- [Stop Watch](../../recipes/stop-watch.md)
 
 ### Additional Resources
 
