@@ -115,6 +115,9 @@ New to RxJS and reactive programming? In addition to the content found on this
 site, these excellent articles and videos will help jump start your learning
 experience!
 
+#### Conferences
+- [RxJS Live](https://www.rxjs.live/) - Upcoming RxJS specific conference, September 5-6, 2019 (Las Vegas)
+
 #### Reading
 
 - [RxJS Introduction](http://reactivex.io/rxjs/manual/overview.html#introduction) -
