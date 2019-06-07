@@ -63,6 +63,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
+- [Stop Watch](../../recipes/stop-watch.md)
 - [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 - [Tetris Game](../../recipes/tetris-game.md)
 - [Type Ahead](../../recipes/type-ahead.md)
