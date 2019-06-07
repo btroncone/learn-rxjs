@@ -112,7 +112,7 @@ Recipes for common use-cases and interesting solutions with RxJS.
 ## Introductory Resources
 
 New to RxJS and reactive programming? In addition to the content found on this
-site, these excellent articles and videos will help jump start your learning
+site, these excellent resources will help jump start your learning
 experience!
 
 #### Conferences
