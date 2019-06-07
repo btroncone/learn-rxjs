@@ -138,6 +138,7 @@ timer(0, 5000)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Progress Bar](../../recipes/progressbar.md)
 - [Smart Counter](../../recipes/smartcounter.md)
+- [Stop Watch](../../recipes/stop-watch.md)
 - [Typeahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
