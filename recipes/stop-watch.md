@@ -8,7 +8,7 @@ This recipe demonstrates RxJs implementation of Stop Watch, inspired by [RxJS Ad
 
 ### Example Code
 
-( [StackBlitz](https://stackblitz.com/edit/rxjs-stop-watch?file=index.html) )
+( [StackBlitz](https://stackblitz.com/edit/rxjs-stop-watch?file=index.ts) )
 
 #### index.ts
 
