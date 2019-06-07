@@ -45,7 +45,7 @@ const events$ =
   );
 
 const stopWatch$ = events$.pipe(
-  startWith({ count: false, speed: 500, value: 0, countup: true, increase: 1 }),
+  startWith({ count: false, speed: 1000, value: 0, countup: true, increase: 1 }),
   scan((state: State, curr): State => ({ ...state, ...curr }), {}),
   tap((state: State) => setValue(state.value)),
   switchMap((state: State) => state.count
@@ -101,7 +101,7 @@ stopWatch$.subscribe();
   </fieldset>
   <fieldset>
     <legend>Speed</legend>
-    <input id="speed" value="500"></input>
+    <input id="speed" value="1000"></input>
     <br/>
     <button id="setspeed">set speed</button>
   </fieldset>
