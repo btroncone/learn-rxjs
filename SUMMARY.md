@@ -130,6 +130,7 @@
   - [Progress Bar](/recipes/progressbar.md)
   - [Smart Counter](/recipes/smartcounter.md)
   - [Space Invaders Game](/recipes/space-invaders-game.md)
+  - [Stop Watch](/recipes/stop-watch.md)
   - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
   - [Tank Battle Game](/recipes/tank-battle-game.md)
   - [Tetris Game](/recipes/tetris-game.md)
