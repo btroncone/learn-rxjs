@@ -83,6 +83,7 @@ const example = source
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Stop Watch](../../recipes/stop-watch.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
 - [Tetris Game](../../recipes/tetris-game.md)
