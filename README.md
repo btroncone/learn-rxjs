@@ -103,6 +103,7 @@ Recipes for common use-cases and interesting solutions with RxJS.
 - [Platform Jumper Game](/recipes/platform-jumper-game.md)
 - [Progress Bar](/recipes/progressbar.md)
 - [Smart Counter](/recipes/smartcounter.md)
+- [Stop Watch](/recipes/stop-watch.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 - [Tank Battle Game](/recipes/tank-battle-game.md)

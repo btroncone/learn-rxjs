@@ -21,6 +21,7 @@ Common use-cases and interesting recipes to help learn RxJS.
 * [Progress Bar](progressbar.md)
 * [Smart Counter](smartcounter.md)
 * [Space Invaders Game](space-invaders-game.md)
+* [Stop Watch](stop-watch.md)
 * [Swipe To Refresh](swipe-to-refresh.md)
 * [Tank Battle Game](tank-battle-game.md)
 * [Tetris Game](tetris-game.md)

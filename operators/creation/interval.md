@@ -36,6 +36,7 @@ const subscribe = source.subscribe(val => console.log(val));
 - [Memory Game](../../recipes/memory-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
+- [Stop Watch](../../recipes/stop-watch.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
 - [Tetris Game](../../recipes/tetris-game.md)
 

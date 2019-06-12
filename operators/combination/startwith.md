@@ -97,6 +97,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
+- [Stop Watch](../../recipes/stop-watch.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
 - [Tetris Game](../../recipes/tetris-game.md)
 
