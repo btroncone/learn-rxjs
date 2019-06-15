@@ -87,7 +87,7 @@ listener:
 // addEventListener called
 const subscription = myObservable.subscribe(event => console.log(event));
 
-// addEvent listener called again!
+// addEventListener called again!
 const secondSubscription = myObservable.subscribe(event => console.log(event));
 
 // clean up with unsubscribe
