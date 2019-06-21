@@ -82,7 +82,7 @@ const actualPassword$ = fromEvent(document, 'mousedown').pipe(
   // new stream so reset password pad and take swipe until mouse up
   tap(resetPasswordPad),
   takeMouseSwipe,
-  // as we swipe, we mark pads as touchedand and display selected numbers
+  // as we swipe, we mark pads as touched and display selected numbers
   map(getXYCoordsOfMousePosition),
   map(findSelectedPad),
   getIdOfSelectedPad,
