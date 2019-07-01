@@ -6,7 +6,7 @@ productive with RxJS. Hold on tight and let's get started!
 
 ## What is an Observable?
 
-An observable represents a stream, or source of data that can arrive over timef.
+An observable represents a stream, or source of data that can arrive over time.
 You can create an observable from nearly anything, but the most common use case
 in RxJS is from events. This can be anything from mouse moves, button clicks,
 input into a text field, or even route changes. The easiest way to create an
