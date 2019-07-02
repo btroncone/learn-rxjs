@@ -107,7 +107,7 @@ It's worth noting that when we discuss an Observable source emitting data to
 observers, this is a push based model. The source doesn't know or care what
 subscribers do with the data, it simply pushes it down the line.
 
-While working on a stream of events is nice, it's only so useful on it's own.
+While working on a stream of events is nice, it's only so useful on its own.
 **What makes RxJS the "lodash for events" are its...**
 
 ## Operators
