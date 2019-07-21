@@ -42,8 +42,7 @@ const spaceInvaders$ = interval(100).pipe(
       key: event.code
     })
   ),
-  scan < Input,
-  State > (gameUpdate, initialState),
+  scan(gameUpdate, initialState),
   tap(e => paint(e.game, e.playerLives, e.score, e.isGameOver))
 );
 
