@@ -106,7 +106,7 @@ help with example!_
 
 ### Operators Used
 
-- [concatAll](../operators/transformation/concatall.md)
+- [concatAll](../operators/combination/concatall.md)
 - [delay](../operators/utility/delay.md)
 - [fromEvent](../operators/creation/fromevent.md)
 - [from](../operators/creation/from.md)
