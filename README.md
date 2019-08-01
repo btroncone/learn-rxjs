@@ -121,7 +121,7 @@ experience!
 
 #### Reading
 
-- [RxJS Introduction](http://reactivex.io/rxjs/manual/overview.html#introduction) -
+- [RxJS Introduction](https://rxjs-dev.firebaseapp.com/guide/overview) -
   Official Docs
 - [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) -
   André Staltz
