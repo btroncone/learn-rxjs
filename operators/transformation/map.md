@@ -61,6 +61,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Memory Game](../../recipes/memory-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Save Indicator]('../../recipes/save-indicator.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Stop Watch](../../recipes/stop-watch.md)

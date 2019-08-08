@@ -43,6 +43,7 @@ keyup$
 
 ### Related Recipes
 
+- [Save Indicator]('../../recipes/save-indicator.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources

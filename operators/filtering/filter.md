@@ -88,6 +88,7 @@ const subscribe = example.subscribe(val =>
 - [Game Loop](../../recipes/gameloop.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
+- [Save Indicator]('../../recipes/save-indicator.md)
 
 ### Additional Resources
 

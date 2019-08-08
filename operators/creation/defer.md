@@ -51,6 +51,10 @@ setTimeout(() => {
 */
 ```
 
+### Related Recipes
+
+- [Save Indicator]('../../recipes/save-indicator.md)
+
 ### Additional Resources
 
 - [defer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-defer)

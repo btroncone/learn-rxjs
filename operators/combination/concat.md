@@ -75,6 +75,10 @@ concat(interval(1000), of('This', 'Never', 'Runs'))
   .subscribe(console.log);
 ```
 
+### Related Recipes
+
+- [Save Indicator]('../../recipes/save-indicator.md)
+
 ### Additional Resources
 
 - [concat](https://rxjs.dev/api/index/function/concat) :newspaper: - Official

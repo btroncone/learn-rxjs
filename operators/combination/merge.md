@@ -77,6 +77,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Memory Game](../../recipes/memory-game.md)
+- [Save Indicator]('../../recipes/save-indicator.md)
 
 ### Additional Resources
 

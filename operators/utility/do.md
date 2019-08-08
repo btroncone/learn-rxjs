@@ -82,6 +82,7 @@ const example = source
 - [Memory Game](../../recipes/memory-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
+- [Save Indicator]('../../recipes/save-indicator.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Stop Watch](../../recipes/stop-watch.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)

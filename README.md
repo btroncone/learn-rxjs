@@ -102,6 +102,7 @@ Recipes for common use-cases and interesting solutions with RxJS.
 - [Mine Sweeper Game](/recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](/recipes/platform-jumper-game.md)
 - [Progress Bar](/recipes/progressbar.md)
+- [Save Indicator](/recipes/save-indicator.md)
 - [Smart Counter](/recipes/smartcounter.md)
 - [Stop Watch](/recipes/stop-watch.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
@@ -113,11 +114,12 @@ Recipes for common use-cases and interesting solutions with RxJS.
 ## Introductory Resources
 
 New to RxJS and reactive programming? In addition to the content found on this
-site, these excellent resources will help jump start your learning
-experience!
+site, these excellent resources will help jump start your learning experience!
 
 #### Conferences
-- [RxJS Live](https://www.rxjs.live/) - Upcoming RxJS specific conference, September 5-6, 2019 (Las Vegas)
+
+- [RxJS Live](https://www.rxjs.live/) - Upcoming RxJS specific conference,
+  September 5-6, 2019 (Las Vegas)
 
 #### Reading
 

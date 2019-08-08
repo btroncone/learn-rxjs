@@ -51,6 +51,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [HTTP Polling](../../recipes/http-polling.md)
+- [Save Indicator]('../../recipes/save-indicator.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Stop Watch](../../recipes/stop-watch.md)
 

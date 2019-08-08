@@ -90,6 +90,7 @@ source$
 ### Related Recipes
 
 - [Lockscreen](../../recipes/lockscreen.md)
+- [Save Indicator]('../../recipes/save-indicator.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
