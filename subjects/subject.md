@@ -27,7 +27,7 @@ sub.next(3); // OUTPUT => 3,3 (logged from both subscribers)
 
 ### Related Recipes
 
-- [Lockscreen](../../recipes/lockscreen.md)
+- [Lockscreen](../recipes/lockscreen.md)
 
 ### Additional Resources
 
