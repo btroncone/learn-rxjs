@@ -53,7 +53,7 @@ setTimeout(() => {
 
 ### Related Recipes
 
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 
 ### Additional Resources
 
