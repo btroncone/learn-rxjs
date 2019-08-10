@@ -66,45 +66,46 @@ appropriate transition.
 #### Angular Version
 
 (
-[StackBlitz](https://stackblitz.com/edit/angular-gcnqlq?file=app%2Fnumber-tracker.component.ts)
+[StackBlitz](https://stackblitz.com/edit/angular-27anmw?embed=1&file=app/number-tracker.component.ts)
 )
 
 ```js
-import { Component, Input, OnDestroy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { timer } from 'rxjs/observable/timer';
-import { switchMap, startWith, scan, takeWhile, takeUntil, mapTo } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+import { Observable } from 'rxjs';
+import { switchMap, startWith, scan, takeWhile, mapTo, withLatestFrom } from 'rxjs/operators';
 
 @Component({
   selector: 'number-tracker',
   template: `
-    <h3> {{ currentNumber }}</h3>
-  `
+    <h3> {{ (currentNumber$ | async) || 0 }}</h3>
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NumberTrackerComponent implements OnDestroy {
+export class NumberTrackerComponent {
   @Input()
   set end(endRange: number) {
     this._counterSub$.next(endRange);
   }
   @Input() countInterval = 20;
-  public currentNumber = 0;
+  public currentNumber$ = of(0);
   private _counterSub$ = new Subject();
-  private _onDestroy$ = new Subject();
 
   constructor() {
-    this._counterSub$
+    this.currentNumber$ = this._counterSub$
       .pipe(
-        switchMap(endRange => {
+        withLatestFrom(this.currentNumber$),
+        switchMap(([endRange, currentNumber]) => {
           return timer(0, this.countInterval).pipe(
-            mapTo(this.positiveOrNegative(endRange, this.currentNumber)),
-            startWith(this.currentNumber),
+            mapTo(this.positiveOrNegative(endRange, currentNumber)),
+            startWith(currentNumber),
             scan((acc: number, curr: number) => acc + curr),
-            takeWhile(this.isApproachingRange(endRange, this.currentNumber))
+            takeWhile(this.isApproachingRange(endRange, currentNumber))
           )
-        }),
-        takeUntil(this._onDestroy$)
-      )
-      .subscribe((val: number) => this.currentNumber = val);
+        })
+      );
   }
 
   private positiveOrNegative(endRange, currentNumber) {
@@ -115,11 +116,6 @@ export class NumberTrackerComponent implements OnDestroy {
     return endRange > currentNumber
       ? val => val <= endRange
       : val => val >= endRange;
-  }
-
-  ngOnDestroy() {
-    this._onDestroy$.next();
-    this._onDestroy$.complete();
   }
 }
 ```
