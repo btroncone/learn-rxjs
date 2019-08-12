@@ -60,7 +60,7 @@ const timer$ = merge(pause$, resume$)
 ### Related Recipes
 
 - [Memory Game](../../recipes/memory-game.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 
 ### Additional Resources
 
