@@ -55,7 +55,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [fromEvent](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent)
+- [fromEvent](https://rxjs.dev/api/index/function/fromEvent)
   :newspaper: - Official docs
 
 ---

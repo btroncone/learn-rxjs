@@ -81,7 +81,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [merge](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-merge)
+- [merge](https://rxjs.dev/api/index/function/merge)
   :newspaper: - Official docs
 - [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist

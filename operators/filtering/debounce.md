@@ -69,7 +69,7 @@ const subscribe = debouncedInterval.subscribe(val =>
 
 ### Additional Resources
 
-- [debounce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-debounce)
+- [debounce](https://rxjs.dev/api/operators/debounce)
   :newspaper: - Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz

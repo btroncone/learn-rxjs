@@ -69,7 +69,7 @@ const subscribe = error.subscribe(
 
 ### Additional Resources
 
-- [ignoreElements](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-ignoreElements)
+- [ignoreElements](https://rxjs.dev/api/operators/ignoreElements)
   :newspaper: - Official docs
 
 ---

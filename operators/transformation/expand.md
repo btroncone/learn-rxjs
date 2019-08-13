@@ -55,7 +55,7 @@ const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 
 ### Additional Resources
 
-- [expand](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-expand)
+- [expand](https://rxjs.dev/api/operators/expand)
   :newspaper: - Official docs
 
 ---

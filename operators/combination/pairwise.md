@@ -31,7 +31,7 @@ interval(1000)
 
 ### Additional Resources
 
-- [pairwise](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pairwise)
+- [pairwise](https://rxjs.dev/api/operators/pairwise)
   :newspaper: - Official docs
 
 ---

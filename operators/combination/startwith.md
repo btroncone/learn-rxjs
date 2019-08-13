@@ -103,7 +103,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [startWith](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-startWith)
+- [startWith](https://rxjs.dev/api/operators/startWith)
   :newspaper: - Official docs
 - [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist

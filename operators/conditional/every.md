@@ -86,7 +86,7 @@ apiCalls$.subscribe();
 
 ### Additional Resources
 
-- [every](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-every)
+- [every](https://rxjs.dev/api/operators/every)
   :newspaper: - Official docs
 
 ---

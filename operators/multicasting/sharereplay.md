@@ -168,7 +168,7 @@ const lateSubscriber = lastUrl.subscribe(console.log);
 
 ### Additional Resources
 
-- [shareReplay](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-shareReplay)
+- [shareReplay](https://rxjs.dev/api/operators/shareReplay)
   :newspaper: - Official docs
 
 ---

@@ -30,7 +30,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [skipWhile](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skipWhile)
+- [skipWhile](https://rxjs.dev/api/operators/skipWhile)
   :newspaper: - Official docs
 
 ---

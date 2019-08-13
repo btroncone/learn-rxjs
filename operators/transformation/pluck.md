@@ -62,7 +62,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [pluck](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-pluck)
+- [pluck](https://rxjs.dev/api/operators/pluck)
   :newspaper: - Official docs
 
 ---

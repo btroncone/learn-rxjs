@@ -44,7 +44,7 @@ of(4000, 3000, 2000)
 
 ### Additional Resources
 
-- [timeout](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/timeout.md)
+- [timeout](https://rxjs.dev/api/operators/timeout)
   :newspaper: - Official Docs
 
 ---

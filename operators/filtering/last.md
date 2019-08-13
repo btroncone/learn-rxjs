@@ -75,7 +75,7 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [last](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-last)
+- [last](https://rxjs.dev/api/operators/last)
   :newspaper: - Official docs
 - [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz

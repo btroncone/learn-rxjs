@@ -71,7 +71,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [map](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-map)
+- [map](https://rxjs.dev/api/operators/map)
   :newspaper: - Official docs
 - [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
   :video_camera: - Ben Lesh

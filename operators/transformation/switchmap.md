@@ -143,7 +143,7 @@ timer(0, 5000)
 
 ### Additional Resources
 
-- [switchMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-switchMap)
+- [switchMap](https://rxjs.dev/api/operators/switchMap)
   :newspaper: - Official docs
 - [Avoiding switchMap-Related Bugs](https://blog.angularindepth.com/switchmap-bugs-b6de69155524) -
   Nicholas Jamieson

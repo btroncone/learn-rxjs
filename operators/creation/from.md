@@ -101,7 +101,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [from](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from)
+- [from](https://rxjs.dev/api/index/function/from)
   :newspaper: - Official docs
 - [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz

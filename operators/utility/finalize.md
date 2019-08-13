@@ -35,7 +35,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-* [finalize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-finalize)
+* [finalize](https://rxjs.dev/api/operators/finalize)
   :newspaper: - Official docs
 
 ---

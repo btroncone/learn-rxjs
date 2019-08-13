@@ -42,7 +42,7 @@ delayedThing
 
 ### Additional Resources
 
-- [repeat](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-repeat)
+- [repeat](https://rxjs.dev/api/operators/repeat)
   :newspaper: - Official docs
 
 ---

@@ -92,7 +92,7 @@ const subscribe = example.subscribe(val =>
 
 ### Additional Resources
 
-- [filter](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-filter)
+- [filter](https://rxjs.dev/api/operators/filter)
   :newspaper: - Official docs
 - [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist

@@ -55,7 +55,7 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-- [windowToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowToggle)
+- [windowToggle](https://rxjs.dev/api/operators/windowToggle)
   :newspaper: - Official docs
 - [Split an RxJS observable conditionally with windowToggle](https://egghead.io/lessons/rxjs-split-an-rxjs-observable-conditionally-with-windowtoggle?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz

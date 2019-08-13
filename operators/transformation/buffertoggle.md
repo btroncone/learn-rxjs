@@ -61,7 +61,7 @@ fromEvent(document, 'mousemove')
 
 ### Additional Resources
 
-- [bufferToggle](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferToggle)
+- [bufferToggle](https://rxjs.dev/api/operators/bufferToggle)
   :newspaper: - Official docs
 
 ---

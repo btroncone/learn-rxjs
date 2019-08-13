@@ -123,7 +123,7 @@ const exhaustSub = firstInterval
 
 ### Additional Resources
 
-- [exhaustMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-exhaustMap)
+- [exhaustMap](https://rxjs.dev/api/operators/exhaustMap)
   :newspaper: - Official docs
 
 ---

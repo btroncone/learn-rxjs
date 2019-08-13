@@ -76,12 +76,6 @@ const subscribe = merge(
 ).subscribe(val => console.log(val));
 ```
 
-### Additional Resources
-
-- [partition](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-partition)
-  :newspaper: - Official docs
-
----
 
 ##### Example 3: (v6.5+) Partition as a static function
 
@@ -120,10 +114,11 @@ const subscribe = merge(
 ).subscribe(val => console.log(val));
 ```
 
+
 ### Additional Resources
 
-- [partition](https://rxjs.dev/api/index/function/partition) :newspaper: -
-  Official docs
+- [partition](https://rxjs.dev/api/operators/partition)
+  :newspaper: - Official docs
 
 ---
 

@@ -53,7 +53,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [of](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-of)
+- [of](https://rxjs.dev/api/index/function/of)
   :newspaper: - Official docs
 - [Creation operators: of](https://egghead.io/lessons/rxjs-creation-operator-of?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz

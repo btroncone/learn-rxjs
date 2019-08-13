@@ -64,7 +64,7 @@ fromEvent(document, 'keydown')
 
 ### Additional Resources
 
-- [sequenceEqual](https://rxjs-dev.firebaseapp.com/api/operators/sequenceEqual)
+- [sequenceEqual](https://rxjs.dev/api/operators/sequenceEqual)
   :newspaper: - Official docs
 
 ---

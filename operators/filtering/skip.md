@@ -67,7 +67,7 @@ const filterObs = numArrayObs
 
 ### Additional Resources
 
-- [skip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-skip)
+- [skip](https://rxjs.dev/api/operators/skip)
   :newspaper: - Official docs
 - [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz

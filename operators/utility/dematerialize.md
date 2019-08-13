@@ -38,7 +38,7 @@ const subscription = source.subscribe({
 
 ### Additional Resources
 
-- [dematerialize](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-dematerialize)
+- [dematerialize](https://rxjs.dev/api/operators/dematerialize)
   :newspaper: - Official docs
 
 ---

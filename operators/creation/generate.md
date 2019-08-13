@@ -67,7 +67,7 @@ OUTPUT:
 
 ### Additional Resources
 
-- [generate](https://rxjs-dev.firebaseapp.com/api/index/function/generate)
+- [generate](https://rxjs.dev/api/index/function/generate)
   :newspaper: - Official docs
 
 ---

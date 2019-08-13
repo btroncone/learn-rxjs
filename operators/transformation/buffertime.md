@@ -53,7 +53,7 @@ const subscribe = example.subscribe(val =>
 
 ### Additional Resources
 
-* [bufferTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferTime)
+* [bufferTime](https://rxjs.dev/api/operators/bufferTime)
   :newspaper: - Official docs
 * [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 

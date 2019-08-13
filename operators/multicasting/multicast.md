@@ -82,7 +82,7 @@ setTimeout(() => {
 
 ### Additional Resources
 
-- [multicast](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-multicast)
+- [multicast](https://rxjs.dev/api/operators/multicast)
   :newspaper: - Official docs
 
 ---

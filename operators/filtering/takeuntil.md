@@ -116,7 +116,7 @@ mousedown$
 
 ### Additional Resources
 
-- [takeUntil](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-takeUntil)
+- [takeUntil](https://rxjs.dev/api/operators/takeUntil)
   :newspaper: - Official docs
 
 * [Avoiding takeUntil leaks](https://blog.angularindepth.com/rxjs-avoiding-takeuntil-leaks-fb5182d047ef) -

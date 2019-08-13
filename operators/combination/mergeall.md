@@ -89,7 +89,7 @@ const example = source
 
 ### Additional Resources
 
-- [mergeAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeAll)
+- [mergeAll](https://rxjs.dev/api/operators/mergeAll)
   :newspaper: - Official docs
 - [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz

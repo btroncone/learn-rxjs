@@ -132,7 +132,7 @@ interval(1000)
 
 ### Additional Resources
 
-- [scan](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-scan)
+- [scan](https://rxjs.dev/api/operators/scan)
   :newspaper: - Official docs
 - [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
   :video_camera: - Ben Lesh

@@ -85,7 +85,7 @@ source$
 
 ### Additional Resources
 
-- [endWith](https://rxjs-dev.firebaseapp.com/api/operators/endWith)
+- [endWith](https://rxjs.dev/api/operators/endWith)
   :newspaper: - Official docs
 
 ---

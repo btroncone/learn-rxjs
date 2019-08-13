@@ -57,7 +57,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [mapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mapTo)
+- [mapTo](https://rxjs.dev/api/operators/mapTo)
   :newspaper: - Official docs
 - [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs)
   :video_camera: :dollar: - John Linquist

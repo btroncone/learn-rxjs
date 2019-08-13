@@ -57,7 +57,7 @@ setTimeout(() => {
 
 ### Additional Resources
 
-- [defer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-defer)
+- [defer](https://rxjs.dev/api/index/function/defer)
   :newspaper: - Official docs
 
 ---

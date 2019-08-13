@@ -104,7 +104,7 @@ const subscribe = oneClickEvent.subscribe();
 
 ### Additional Resources
 
-- [take](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-take)
+- [take](https://rxjs.dev/api/operators/take)
   :newspaper: - Official docs
 - [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz

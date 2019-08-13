@@ -34,7 +34,7 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 
 ### Additional Resources
 
-- [reduce](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-reduce)
+- [reduce](https://rxjs.dev/api/operators/reduce)
   :newspaper: - Official docs
 - [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
   :video_camera: - Academind

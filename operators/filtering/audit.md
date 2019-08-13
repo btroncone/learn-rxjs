@@ -8,7 +8,7 @@
 
 ### Additional Resources
 
-* [audit](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-audit)
+* [audit](https://rxjs.dev/api/operators/audit)
   :newspaper: - Official docs
 
 ---

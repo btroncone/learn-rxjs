@@ -99,7 +99,7 @@ const subscribe = example.subscribe(val =>
 
 ### Additional Resources
 
-- [concatMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMap)
+- [concatMap](https://rxjs.dev/api/operators/concatMap)
   :newspaper: - Official docs
 - [Use RxJS concatMap to map and concat higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-concatmap-to-map-and-concat-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz

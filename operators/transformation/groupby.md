@@ -78,7 +78,7 @@ from(people)
 
 ### Additional Resources
 
-- [groupBy](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-groupBy)
+- [groupBy](https://rxjs.dev/api/operators/groupBy)
   :newspaper: - Official docs
 - [Group higher order observables with RxJS groupBy](https://egghead.io/lessons/rxjs-group-higher-order-observables-with-rxjs-groupby?course=use-higher-order-observables-in-rxjs-effectively)
   :video_camera: :dollar: - André Staltz

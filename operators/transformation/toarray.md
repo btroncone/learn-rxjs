@@ -36,7 +36,7 @@ interval(100)
 
 ### Additional Resources
 
-- [toArray](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-toArray)
+- [toArray](https://rxjs.dev/api/operators/toArray)
   :newspaper: - Official docs
 
 ---

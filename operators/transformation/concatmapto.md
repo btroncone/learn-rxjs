@@ -72,7 +72,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [concatMapTo](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatMapTo)
+- [concatMapTo](https://rxjs.dev/api/operators/concatMapTo)
   :newspaper: - Official docs
 
 ---

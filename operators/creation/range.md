@@ -27,7 +27,7 @@ const example = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [range](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range)
+- [range](https://rxjs.dev/api/index/function/range)
   :newspaper: - Official docs
 
 ---

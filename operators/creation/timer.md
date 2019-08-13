@@ -52,7 +52,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [timer](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer)
+- [timer](https://rxjs.dev/api/index/function/timer)
   :newspaper: - Official docs
 - [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   :video_camera: :dollar: - André Staltz

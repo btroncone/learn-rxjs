@@ -46,7 +46,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [defaultIfEmpty](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-defaultIfEmpty)
+- [defaultIfEmpty](https://rxjs.dev/api/operators/defaultIfEmpty)
   :newspaper: - Official docs
 
 ---

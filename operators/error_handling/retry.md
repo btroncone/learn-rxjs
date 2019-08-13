@@ -59,7 +59,7 @@ const subscribe = example.subscribe({
 
 ### Additional Resources
 
-- [retry](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-retry)
+- [retry](https://rxjs.dev/api/operators/retry)
   :newspaper: - Official docs
 - [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz

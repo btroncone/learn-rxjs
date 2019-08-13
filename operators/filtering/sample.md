@@ -79,7 +79,7 @@ const listener = merge(
 
 ### Additional Resources
 
-- [sample](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-sample)
+- [sample](https://rxjs.dev/api/operators/sample)
   :newspaper: - Official docs
 
 ---

@@ -54,7 +54,7 @@ setTimeout(() => {
 
 ### Additional Resources
 
-- [publish](http://reactivex-rxjs5.surge.sh/function/index.html#static-function-publish)
+- [publish](https://rxjs.dev/api/operators/publish)
   :newspaper: - Official docs
 
 > :file_folder: Source Code:

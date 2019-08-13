@@ -99,7 +99,7 @@ fromEvent(document, 'keydown')
 
 ### Additional Resources
 
-- [bufferCount](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferCount)
+- [bufferCount](https://rxjs.dev/api/operators/bufferCount)
   :newspaper: - Official docs
 
 ---

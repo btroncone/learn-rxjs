@@ -37,7 +37,7 @@ const subscribe = bufferWhenExample.subscribe(val =>
 
 ### Additional Resources
 
-- [bufferWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-bufferWhen)
+- [bufferWhen](https://rxjs.dev/api/operators/bufferWhen)
   :newspaper: - Official docs
 
 ---

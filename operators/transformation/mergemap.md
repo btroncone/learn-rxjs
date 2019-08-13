@@ -165,7 +165,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [mergeMap](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap)
+- [mergeMap](https://rxjs.dev/api/operators/mergeMap)
   :newspaper: - Official docs
 - [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
   :video_camera: :dollar: - Ben Lesh

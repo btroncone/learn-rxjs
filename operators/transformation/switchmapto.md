@@ -51,6 +51,11 @@ click$
   .subscribe((val: any) => (countdownElem.innerHTML = val));
 ```
 
+### Additional Resources
+
+- [switchMapTo](https://rxjs.dev/api/operators/switchMapTo)
+  :newspaper: - Official docs
+
 ---
 
 > :file_folder: Source Code:

@@ -49,7 +49,7 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-- [windowTime](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowTime)
+- [windowTime](https://rxjs.dev/api/operators/windowTime)
   :newspaper: - Official docs
 
 ---

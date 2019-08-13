@@ -53,7 +53,7 @@ clicks$
 
 ### Additional Resources
 
-- [find](https://rxjs-dev.firebaseapp.com/api/operators/find) :newspaper: -
+- [find](https://rxjs.dev/api/operators/find) :newspaper: -
   Official docs
 
 ---

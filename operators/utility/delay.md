@@ -50,7 +50,7 @@ const subscribe = message.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [delay](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-delay)
+- [delay](https://rxjs.dev/api/operators/delay)
   :newspaper: - Official docs
 - [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz

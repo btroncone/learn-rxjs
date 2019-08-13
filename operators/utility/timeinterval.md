@@ -36,7 +36,7 @@ fromEvent(document, 'mousedown')
 
 ### Additional Resources
 
-- [timeInterval](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-timeInterval)
+- [timeInterval](https://rxjs.dev/api/operators/timeInterval)
   :newspaper: - Official docs
 
 ---

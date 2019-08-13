@@ -53,7 +53,7 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-- [windowWhen](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-windowWhen)
+- [windowWhen](https://rxjs.dev/api/operators/windowWhen)
   :newspaper: - Official docs
 
 ---
