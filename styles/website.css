@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap');
+
 .ua-ad {
   text-align: center;
   padding: 10px 0;
@@ -7,4 +9,29 @@ code[class*='language-'],
 pre[class*='language-'] {
   text-shadow: none !important;
   border-radius: 4px;
+  margin-bottom: 44px;
+}
+
+.book {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.book .markdown-section pre > code {
+  font-family: 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
+    monospace !important;
+  font-size: 0.9em !important;
+}
+
+.markdown-section code {
+  font-family: 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
+    monospace !important;
+}
+
+.markdown-section h5 {
+  font-size: 0.9em !important;
+  text-transform: uppercase !important;
+}
+
+.font-settings {
+  display: none;
 }
