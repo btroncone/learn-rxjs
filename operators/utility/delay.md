@@ -8,12 +8,34 @@
 
 ### Examples
 
-##### Example 1: Delay for increasing durations
+##### Example 1: Delay to recognize long press
+
+( [StackBlitz](https://stackblitz.com/edit/rxjs-bru5fi?devtoolsheight=60) )
+
+```js
+import { fromEvent, of } from 'rxjs';
+import { mergeMap, delay, takeUntil } from 'rxjs/operators';
+
+const mousedown$ = fromEvent(document, 'mousedown');
+const mouseup$ = fromEvent(document, 'mouseup');
+
+mousedown$
+  .pipe(
+    mergeMap(event =>
+      of(event).pipe(
+        delay(700),
+        takeUntil(mouseup$)
+      )
+    )
+  )
+  .subscribe(event => console.log('Long Press!', event));
+```
+
+##### Example 2: Delay for increasing durations
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-twjn8r?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/zebatixije/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/1kxtzcu6/) )
+)
 
 ```js
 // RxJS v6+
@@ -50,8 +72,7 @@ const subscribe = message.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [delay](https://rxjs.dev/api/operators/delay)
-  :newspaper: - Official docs
+- [delay](https://rxjs.dev/api/operators/delay) :newspaper: - Official docs
 - [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   :video_camera: :dollar: - André Staltz
 
