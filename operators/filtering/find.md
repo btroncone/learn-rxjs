@@ -2,7 +2,7 @@
 
 #### signature: `find(predicate: function)`
 
-## Emit the first item that passes predicate, complete.
+## Emit the first item that passes predicate then complete.
 
 ---
 
@@ -53,8 +53,7 @@ clicks$
 
 ### Additional Resources
 
-- [find](https://rxjs.dev/api/operators/find) :newspaper: -
-  Official docs
+- [find](https://rxjs.dev/api/operators/find) :newspaper: - Official docs
 
 ---
 
