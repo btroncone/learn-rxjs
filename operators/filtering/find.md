@@ -21,16 +21,8 @@
 
 ```js
 // RxJS v6+
-import { fromEvent, interval } from 'rxjs';
-import {
-  find,
-  repeatWhen,
-  mapTo,
-  startWith,
-  tap,
-  take,
-  filter
-} from 'rxjs/operators';
+import { fromEvent } from 'rxjs';
+import { find, repeatWhen, mapTo, startWith, filter } from 'rxjs/operators';
 
 // elem ref
 const status = document.getElementById('status');
