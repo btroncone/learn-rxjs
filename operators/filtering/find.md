@@ -15,7 +15,7 @@
 
 ### Examples
 
-##### Example 1: Find click inside box, repeat when click occurs outside of box
+##### Example 1: Find click inside box, repeat when a click occurs outside of box
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-hd63we?file=index.ts))
 
