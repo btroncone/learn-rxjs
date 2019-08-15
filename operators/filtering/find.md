@@ -7,7 +7,7 @@
 ---
 
 :bulb: If you always want the first item emitted, regardless of condition, try
-[`first`](first.md)!
+[`first()`](first.md)!
 
 ---
 
