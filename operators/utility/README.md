@@ -12,6 +12,7 @@ provide helpful utilities in your observable toolkit.
 - [finalize / finally](finalize.md)
 - [let](let.md)
 - [repeat](repeat.md)
+- [repeatWhen](repeatwhen.md)
 - [timeInterval](timeinterval.md)
 - [timeout](timeout.md)
 - [timeoutWith](timeoutwith.md)
