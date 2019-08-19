@@ -1,8 +1,8 @@
 # sequenceEqual
 
-#### signature: `sequenceEqual(compareTo: Observable, comparor?: (a, b) => boolean): OperatorFunction`
+#### signature: `sequenceEqual(compareTo: Observable, comparor?: (a, b) => boolean): Observable`
 
-## Compares all values of two observables in sequence using an optional comparor function and returns an observable of a single boolean value representing whether or not the two sequences are equal.
+## Compares emitted sequence to expected sequence for match
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
