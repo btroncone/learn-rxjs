@@ -106,6 +106,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [finalize / finally](utility/finalize.md)
   - [let](utility/let.md)
   - [repeat](utility/repeat.md)
+  - [repeatWhen](utility/repeatwhen.md)
   - [timeInterval](utility/timeinterval.md)
   - [timeout](utility/timeout.md)
   - [timeoutWith](utility/timeoutwith.md)

@@ -65,6 +65,7 @@ _[Prefer a split by operator type?](README.md)_
 - [race](combination/race.md)
 - [range](creation/range.md)
 - [repeat](utility/repeat.md)
+- [repeatWhen](utility/repeatwhen.md)
 - [retry](error_handling/retry.md)
 - [retryWhen](error_handling/retrywhen.md)
 - [sample](filtering/sample.md)
