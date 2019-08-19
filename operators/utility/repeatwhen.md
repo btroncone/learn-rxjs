@@ -1,8 +1,15 @@
 # repeatWhen
 
-#### signature: `repeatWhen<T>(notifier: (notifications: Observable<any>) => Observable<any>): MonoTypeOperatorFunction<T>`
+#### signature: `repeatWhen(notifier: (notifications: Observable) => Observable): Observable`
 
-## Returns an Observable that mirrors the source Observable with the exception of a complete. If the source Observable calls complete, this method will emit to the Observable returned from notifier. If that Observable calls complete or error, then this method will call complete or error on the child subscription. Otherwise this method will resubscribe to the source Observable.
+## Repeat an observable on completion based on custom criteria.
+
+---
+
+:bulb: If you just want to repeat a specified number of times, try [retry](retry.md)!
+
+---
+
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
@@ -37,10 +44,10 @@ hey!
 
 ### Additional Resources
 
-- [repeatWhen](https://rxjs-dev.firebaseapp.com/api/operators/repeatWhen)
+- [repeatWhen](https://rxjs.dev/api/operators/repeatWhen)
   :newspaper: - Official docs
 
 ---
 
 > :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts#L12-L45](https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts#L12-L45)
+> [https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts](https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts)
