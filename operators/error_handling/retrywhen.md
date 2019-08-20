@@ -60,7 +60,7 @@ const subscribe = example.subscribe(val => console.log(val));
 )
 
 ```js
-import { Observable, _throw, timer } from 'rxjs';
+import { Observable, throwError, timer } from 'rxjs';
 import { mergeMap, finalize } from 'rxjs/operators';
 
 export const genericRetryStrategy = ({
@@ -81,7 +81,7 @@ export const genericRetryStrategy = ({
         retryAttempt > maxRetryAttempts ||
         excludedStatusCodes.find(e => e === error.status)
       ) {
-        return _throw(error);
+        return throwError(error);
       }
       console.log(
         `Attempt ${retryAttempt}: retrying in ${retryAttempt *
