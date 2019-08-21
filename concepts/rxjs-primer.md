@@ -119,7 +119,6 @@ want to transform emitted values from an observable source, you can use
 [`map`](../operators/transformation/map.md):
 
 ```js
-// import the from operator
 import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
 /*
@@ -142,7 +141,6 @@ Or if you want to filter for specific values, you can use
 [`filter`](../operators/filtering/filter.md):
 
 ```js
-// import the from operator
 import { of } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
