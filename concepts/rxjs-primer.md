@@ -428,7 +428,7 @@ concat(
 });
 ```
 
-Merge based operators include [`concat`](../operators/combination/concat.md),
+Concat based operators include [`concat`](../operators/combination/concat.md),
 [`concatAll`](../operators/combination/concatall.md),
 [`concatMap`](../operators/transformation/concatmap.md), and
 [`concatMapTo`](../operators/transformation/concatmapto.md).
