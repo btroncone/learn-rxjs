@@ -41,9 +41,9 @@ concat(
 
 ##### Example 2: Display message using concat with delayed observables
 
-![Example 2](https://drive.google.com/uc?export=view&id=1fKsYUKXkSWEDLdii-5rmOAgqy6sUGNjl)
-
 ( [StackBlitz](https://stackblitz.com/edit/typescript-jtzuaa?file=index.ts) )
+
+![Example 2](https://drive.google.com/uc?export=view&id=1fKsYUKXkSWEDLdii-5rmOAgqy6sUGNjl)
 
 ```js
 // RxJS v6+
