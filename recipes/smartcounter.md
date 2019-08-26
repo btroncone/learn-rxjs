@@ -14,7 +14,7 @@ similar with just a few lines of RxJS.
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-m2zsud) )
 
-![Smart Counter](https://drive.google.com/uc?export=view&id=1VGCmeGwJpiUL6FfA3EHgtxSFvqlkIVsb)
+![Smart Counter](https://drive.google.com/uc?export=view&id=1cG8huWWfsqSe8jLed_NmLrENnF0QyhfZ)
 
 ```js
 import { timer, fromEvent, merge } from 'rxjs';
