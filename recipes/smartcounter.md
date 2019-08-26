@@ -12,50 +12,71 @@ similar with just a few lines of RxJS.
 
 #### Vanilla JS
 
-( [JSBin](http://jsbin.com/jojucaqiki/1/edit?js,output) |
-[JSFiddle](https://jsfiddle.net/btroncone/au4sqvxu/) )
+( [StackBlitz](https://stackblitz.com/edit/rxjs-m2zsud) )
+
+![Smart Counter](https://drive.google.com/uc?export=view&id=1VGCmeGwJpiUL6FfA3EHgtxSFvqlkIVsb)
 
 ```js
+import { timer, fromEvent, merge } from 'rxjs';
+import {
+  switchMap,
+  startWith,
+  scan,
+  takeWhile,
+  takeUntil,
+  filter,
+  mapTo,
+  map,
+  tap,
+  pluck
+} from 'rxjs/operators';
+
+let currentNumber = 0;
+
+// elems
+const input: any = document.getElementById('range');
+
 // utility functions
 const takeUntilFunc = (endRange, currentNumber) => {
   return endRange > currentNumber
     ? val => val <= endRange
     : val => val >= endRange;
 };
-
 const positiveOrNegative = (endRange, currentNumber) => {
   return endRange > currentNumber ? 1 : -1;
 };
-
 const updateHTML = id => val => (document.getElementById(id).innerHTML = val);
-// display
-const input = document.getElementById('range');
-const updateButton = document.getElementById('update');
 
-const subscription = (function(currentNumber) {
-  return fromEvent(updateButton, 'click').pipe(
-    map(_ => parseInt(input.value)),
+// streams
+const enter$ = fromEvent(input, 'keyup').pipe(
+  pluck('code'),
+  filter(code => code === 'Enter')
+);
+
+enter$
+  .pipe(
+    map(() => parseInt(input.value)),
     switchMap(endRange => {
       return timer(0, 20).pipe(
         mapTo(positiveOrNegative(endRange, currentNumber)),
         startWith(currentNumber),
         scan((acc, curr) => acc + curr),
-        takeWhile(takeUntilFunc(endRange, currentNumber));
-      )
+        takeWhile(takeUntilFunc(endRange, currentNumber))
+      );
     }),
     tap(v => (currentNumber = v)),
     startWith(currentNumber)
   )
   .subscribe(updateHTML('display'));
-})(0);
 ```
 
 ###### HTML
 
 ```html
-<input id="range" type="number" />
-<button id="update">Update</button>
-<h3 id="display">0</h3>
+<div class="container">
+  <input id="range" type="number" />
+  <h1 id="display"></h1>
+</div>
 ```
 
 We can easily take our vanilla smart counter and wrap it in any popular
