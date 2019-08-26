@@ -39,24 +39,35 @@ concat(
   .subscribe(console.log);
 ```
 
-##### Example 2: concat with delayed observable
+##### Example 2: Display message using concat with delayed observables
 
-(
-[StackBlitz](https://stackblitz.com/edit/typescript-vsphry?file=index.ts&devtoolsheight=100)
-)
+![Example 2](https://drive.google.com/uc?export=view&id=1fKsYUKXkSWEDLdii-5rmOAgqy6sUGNjl)
+
+( [StackBlitz](https://stackblitz.com/edit/typescript-jtzuaa?file=index.ts) )
 
 ```js
 // RxJS v6+
-import { of, concat } from 'rxjs';
-import { delay } from 'rxjs/operators';
+import { concat, empty } from 'rxjs';
+import { delay, startWith } from 'rxjs/operators';
+
+// elems
+const userMessage = document.getElementById('message');
+// helper
+const delayedMessage = (message, delayedTime = 1000) => {
+  return empty().pipe(
+    startWith(message),
+    delay(delayedTime)
+  );
+};
 
 concat(
-  of(1, 2, 3).pipe(delay(3000)),
-  // after 3s, the first observable will complete and subsquent observable subscribed with values emitted
-  of(4, 5, 6)
-)
-  // log: 1,2,3,4,5,6
-  .subscribe(console.log);
+  delayedMessage('Get Ready!'),
+  delayedMessage(3),
+  delayedMessage(2),
+  delayedMessage(1),
+  delayedMessage('Go!'),
+  delayedMessage('', 2000)
+).subscribe((message: any) => (userMessage.innerHTML = message));
 ```
 
 ##### Example 3: (Warning!) concat with source that does not complete

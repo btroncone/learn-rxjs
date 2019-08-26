@@ -2,7 +2,7 @@
 
 #### signature: `combineLatest(observables: ...Observable, project: function): Observable`
 
-## When any observable emits a value, emit the latest value from each.
+## When any observable emits a value, emit the last emitted value from each.
 
 ---
 
