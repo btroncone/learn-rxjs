@@ -37,7 +37,7 @@ manage the completion of the inner subscription, think
 [`take`](../filtering/take.md) or [`takeUntil`](../filtering/takeuntil.md). You
 can also limit the number of active inner subscriptions at a time with the
 `concurrent` parameter, seen in
-[example 4](#example-4-mergemap-with-concurrent-value).
+[example 5](#example-5-mergemap-with-concurrent-value).
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
