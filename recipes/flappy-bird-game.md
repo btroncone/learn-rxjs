@@ -10,6 +10,8 @@ This recipe demonstrates RxJs implementation of Flappy Bird like game.
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-flappy-bird?file=index.ts) )
 
+![Flappy Bird](https://drive.google.com/uc?export=view&id=1NcV8nce0NfvqghyBr0gxLoPm_Y4zjzXI)
+
 #### index.ts
 
 ```js
