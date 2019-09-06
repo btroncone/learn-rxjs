@@ -457,10 +457,10 @@ There are also operators that share a similar goal but offer flexibility in
 their triggers. For instance, for unsubscribing from an observable after a
 specific condition is met, we could use:
 
-1. [`take`](../operators/filtering/take.md) when we know we only ever want `x`
+1. [`take`](../operators/filtering/take.md) when we know we only ever want `n`
    values.
 2. [`takeLast`](../operators/filtering/takelast.md) when you just want the last
-   n values.
+   `n` values.
 3. [`takeWhile`](../operators/filtering/takewhile.md) when we have a predicate
    expression to supply.
 4. [`takeUntil`](../operators/filtering/takeuntil.md) when we only want the
