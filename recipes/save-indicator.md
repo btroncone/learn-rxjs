@@ -9,6 +9,8 @@ RxJS.
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-3txbvy?file=index.ts) )
 
+![Save Indicator](https://drive.google.com/uc?export=view&id=1sYFqLoKlT0EPHxSDMSX7pT14RDjybU0Q)
+
 ```js
 import { fromEvent, of, merge, empty, concat, defer } from 'rxjs';
 import {

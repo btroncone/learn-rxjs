@@ -14,6 +14,8 @@ completes.
 [StackBlitz](https://stackblitz.com/edit/rxjs-5-progress-bar-wxdxwe?file=index.ts&devtoolsheight=50)
 )
 
+![Progress Bar](https://drive.google.com/uc?export=view&id=18wsoRuVkjiQmhTDk8CgZo3BHTUTEyMqT)
+
 ```js
 import './style.css';
 

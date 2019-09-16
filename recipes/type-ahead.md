@@ -12,6 +12,8 @@ This recipe demonstrates the creation of type ahead client side code.
 [StackBlitz](https://stackblitz.com/edit/rxjs-type-ahead?file=index.ts&devtoolsheight=50)
 )
 
+![Typeahead](https://drive.google.com/uc?export=view&id=1TdDA78dkiy5lC8A3Rz28oDq9SuaxsS45)
+
 ```js
 // RxJS v6+
 import { fromEvent, of } from 'rxjs';

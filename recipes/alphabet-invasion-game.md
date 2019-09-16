@@ -2,7 +2,7 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of Alphabet Invasion Game.
+This recipe demonstrates RxJS implementation of Alphabet Invasion Game.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
@@ -10,6 +10,8 @@ This recipe demonstrates RxJs implementation of Alphabet Invasion Game.
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-alphabet-invasion?file=index.ts)
 )
+
+![Alphabet Invasion](https://drive.google.com/uc?export=view&id=1huQHQFCmfdKPbh7ayjzJOOd1leVAY7Pi)
 
 #### index.ts
 
@@ -56,9 +58,7 @@ const keys$ = fromEvent(document, 'keydown').pipe(
 );
 
 const renderGame = (state: State) => (
-  (document.body.innerHTML = `Score: ${state.score}, Level: ${
-    state.level
-  } <br/>`),
+  (document.body.innerHTML = `Score: ${state.score}, Level: ${state.level} <br/>`),
   state.letters.forEach(
     l =>
       (document.body.innerHTML += '&nbsp'.repeat(l.yPos) + l.letter + '<br/>')

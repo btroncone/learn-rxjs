@@ -2,13 +2,15 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of Platform Jumper game.
+This recipe demonstrates RxJS implementation of Platform Jumper game.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-platform-jumper?file=index.ts) )
+
+![Platform Jumper](https://drive.google.com/uc?export=view&id=1poxaFwTtypxoTzOU13KcvE5fIcnzXog-)
 
 #### index.ts
 
@@ -201,9 +203,7 @@ import { gameSize } from './constants';
 import { Player, Platform } from './interfaces';
 
 export const render = ([player, platforms]: [Player, Platform[]]) => {
-  document.body.innerHTML = `Lives: ${player.lives} Score: ${
-    player.score
-  } </br>`;
+  document.body.innerHTML = `Lives: ${player.lives} Score: ${player.score} </br>`;
 
   const game = Array(gameSize)
     .fill(0)

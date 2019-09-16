@@ -2,7 +2,7 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of lockscreen functionality (known
+This recipe demonstrates RxJS implementation of lockscreen functionality (known
 for example from smartphones).
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
@@ -12,6 +12,8 @@ for example from smartphones).
 (
 [StackBlitz](https://stackblitz.com/edit/rxjs-lockscreen?file=index.ts&devtoolsheight=30)
 )
+
+![Lockscreen](https://drive.google.com/uc?export=view&id=1EknMWCVag08IuecwP4UppUR7fKn3qd-2)
 
 #### index.ts
 

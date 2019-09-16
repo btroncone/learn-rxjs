@@ -17,6 +17,8 @@ update our objects, and render to to the screen on each frame emission.
 [StackBlitz](https://stackblitz.com/edit/rxjs-5-based-game-loop-jlhyfx?file=index.ts&devtoolsheight=50)
 )
 
+![Game Loop](https://drive.google.com/uc?export=view&id=1d4j8fx_b_NTT89VhYAqaqaff46oZaPms)
+
 ```js
 import { BehaviorSubject, Observable, of, fromEvent } from 'rxjs';
 import { buffer, bufferCount, expand, filter, map,  share, tap, withLatestFrom } from 'rxjs/operators';

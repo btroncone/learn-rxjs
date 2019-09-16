@@ -2,13 +2,15 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of Tetris game.
+This recipe demonstrates RxJS implementation of Tetris game.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-tetris?file=index.ts) )
+
+![Tetris Game](https://drive.google.com/uc?export=view&id=1BjyB43WSHEU9rDbNN6uFeoYxIoEzJTZp)
 
 #### index.ts
 

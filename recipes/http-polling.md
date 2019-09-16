@@ -17,6 +17,8 @@ easy to reason about as a stream of data.
 [StackBlitz](https://stackblitz.com/edit/rxjs-http-poll-recipe-jc5cj7?file=index.ts&devtoolsheight=50)
 )
 
+![HTTP Polling](https://drive.google.com/uc?export=view&id=1HwHApLDoxO9Zc5DAG3XtgJBl83CpXmjU)
+
 ```js
 // Import stylesheets
 import './style.css';

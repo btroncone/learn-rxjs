@@ -2,13 +2,15 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of Mine Sweeper Game.
+This recipe demonstrates RxJS implementation of Mine Sweeper Game.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-minesweeper?file=index.ts) )
+
+![Mine Sweeper](https://drive.google.com/uc?export=view&id=18_2_QWnk5ImRT_dGaglKMvtWKa4xwC6B)
 
 #### index.ts
 

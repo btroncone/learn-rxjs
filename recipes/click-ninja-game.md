@@ -10,6 +10,8 @@ This recipe shows usage of time interval operator in a simple game
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-click-ninja?file=index.ts) )
 
+![Click Ninja Game](https://drive.google.com/uc?export=view&id=1VT8umN-jtaqBfcKtlCwZ3w805qe3bXWN)
+
 #### index.ts
 
 ```js

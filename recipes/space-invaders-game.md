@@ -2,13 +2,16 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of Space Invaders Game.
+This recipe demonstrates RxJS implementation of Space Invaders Game.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-space-invaders?file=index.ts) )
+
+![Space
+Invaders](https://drive.google.com/uc?export=view&id=1s3JUvMEKVDMroou92mCtGHr9-qu89KWL)
 
 #### index.ts
 
@@ -36,12 +39,10 @@ const spaceInvaders$ = interval(100).pipe(
       repeat()
     )
   ),
-  map(
-    ([intrvl, event]: [number, KeyboardEvent]): Input => ({
-      dlta: intrvl,
-      key: event.code
-    })
-  ),
+  map(([intrvl, event]: [number, KeyboardEvent]): Input => ({
+    dlta: intrvl,
+    key: event.code
+  })),
   scan(gameUpdate, initialState),
   tap(e => paint(e.game, e.playerLives, e.score, e.isGameOver))
 );
@@ -125,13 +126,14 @@ const updateState = (state: State): State => ({
             )
           : i
       ),
-  invadersShoots: ((state.invadersShoots =
-    state.delta % state.shootFrequency === 0
-      ? [...state.invadersShoots, addInvaderShoot(state)]
-      : state.invadersShoots),
-  state.invadersShoots
-    .filter(e => e.x < gameSize - 1)
-    .map(e => gameObject(e.x + 1, e.y))),
+  invadersShoots:
+    ((state.invadersShoots =
+      state.delta % state.shootFrequency === 0
+        ? [...state.invadersShoots, addInvaderShoot(state)]
+        : state.invadersShoots),
+    state.invadersShoots
+      .filter(e => e.x < gameSize - 1)
+      .map(e => gameObject(e.x + 1, e.y))),
   shoots: filterOutCollisions(state.shoots, state.invaders)
     .filter(e => e.x > 0)
     .map(e => gameObject(e.x - 1, e.y)),

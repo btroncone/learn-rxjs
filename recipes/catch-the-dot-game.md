@@ -12,6 +12,8 @@ This recipe shows usage of scan operator for state management in simple game
 [StackBlitz](https://stackblitz.com/edit/rxjs-catch-the-dot-game?file=index.ts)
 )
 
+![Catch the dot](https://drive.google.com/uc?export=view&id=1VKje20yXoplC2MPgzxP-OykpvhDuv6el)
+
 #### index.ts
 
 ```js

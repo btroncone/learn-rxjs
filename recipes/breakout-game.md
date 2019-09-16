@@ -10,6 +10,8 @@ This recipe demonstrates an RxJS implementation of Breakout game.
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-breakout?file=index.ts) )
 
+![Breakout Game](https://drive.google.com/uc?export=view&id=1unsdGI5UBZu9ECjFtA4t_hLl4l7CRBSE)
+
 #### index.ts
 
 ```js
@@ -141,9 +143,7 @@ export const render = ([player, ball, bricks]: [
   game[ball.x][ball.y] = bll;
   bricks.forEach(b => (game[b.x][b.y] = brick));
 
-  document.body.innerHTML = `Score: ${player.score} Lives: ${
-    player.lives
-  } <br/>`;
+  document.body.innerHTML = `Score: ${player.score} Lives: ${player.lives} <br/>`;
   game.forEach(r => {
     const rowContainer = document.createElement('div');
     r.forEach(c => rowContainer.appendChild(createElem(c)));

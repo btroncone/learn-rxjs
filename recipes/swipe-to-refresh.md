@@ -2,7 +2,7 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of swipe to refresh functionality.
+This recipe demonstrates RxJS implementation of swipe to refresh functionality.
 Inspired by [@BenLesh](https://twitter.com/BenLesh) RxJs talks.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
@@ -12,6 +12,8 @@ Inspired by [@BenLesh](https://twitter.com/BenLesh) RxJs talks.
 (
 [StackBlitz](https://stackblitz.com/edit/rxjs-refresh?file=index.ts&devtoolsheight=40)
 )
+
+![Swipe to Refresh](https://drive.google.com/uc?export=view&id=1BLA2TcAhjwtodkcnsJ8e91ckrvurqkEv)
 
 #### index.ts
 

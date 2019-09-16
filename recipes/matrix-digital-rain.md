@@ -2,13 +2,15 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJs implementation of Matrix Digital Rain.
+This recipe demonstrates RxJS implementation of Matrix Digital Rain.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-matrix?file=index.ts) )
+
+![Matrix Digital Rain](https://drive.google.com/uc?export=view&id=1ZEyGvICTosGA58SVWq8kBK8mBWyEpk9T)
 
 #### index.ts
 
