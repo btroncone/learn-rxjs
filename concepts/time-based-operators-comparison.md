@@ -41,7 +41,7 @@ const intervaled = (operator, operatorName) =>
 
 merge(
   interval(intrvl).pipe(take(takeValue), tap(v => console.log(`i: ${v}`))),
-  intervaled(auditTime(time), "audtiTime"),
+  intervaled(auditTime(time), "auditTime"),
   intervaled(bufferTime(time), "bufferTime"),
   intervaled(debounceTime(time), "debounceTime"),
   intervaled(sampleTime(time), "sampleTime"),
@@ -57,7 +57,7 @@ throttleTime:0
 bufferTime:0,1
 sampleTime:1
 3
-audtiTime:3
+auditTime:3
 4
 throttleTime:4
 5
@@ -65,7 +65,7 @@ bufferTime:2,3,4
 sampleTime:4
 6
 7
-audtiTime:7
+auditTime:7
 8
 bufferTime:5,6,7
 sampleTime:7
