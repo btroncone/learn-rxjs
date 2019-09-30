@@ -84,6 +84,7 @@ const subscribe = example.subscribe(val =>
 
 ### Related Recipes
 
+- [Battleship Game](../../recipes/battleship-game.md)
 - [HTTP Polling](../../recipes/http-polling.md)
 - [Game Loop](../../recipes/gameloop.md)
 - [Lockscreen](../../recipes/lockscreen.md)
