@@ -100,6 +100,7 @@ const subscribe = oneClickEvent.subscribe();
 
 ### Related Recipes
 
+- [Battleship Game](../../recipes/battleship-game.md)
 - [Memory Game](../../recipes/memory-game.md)
 
 ### Additional Resources
