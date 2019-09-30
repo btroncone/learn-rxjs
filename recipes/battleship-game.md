@@ -240,7 +240,7 @@ export const setup$ = (boards: Boards) =>
   );
 ```
 
-#### gane.ts
+#### game.ts
 
 ```js
 import { fromEvent, pipe, noop, Subject, BehaviorSubject, merge } from "rxjs";
@@ -549,8 +549,6 @@ export const COMPUTER = 'c';
 ```
 
 ### Operators Used
-
-- [BehaviorSubject](../subjects/behaviorsubject.md)
 - [concat](../operators/combination/concat.md)
 - [delay](../operators/utility/delay.md)
 - [filter](../operators/filtering/filter.md)
@@ -559,13 +557,14 @@ export const COMPUTER = 'c';
 - [interval](../operators/creation/interval.md)
 - [map](../operators/transformation/map.md)
 - [merge](../operators/combination/merge.md)
-- noop
 - [of](../operators/creation/of.md)
-- pipe
 - repeatWhen
 - [scan](../operators/transformation/scan.md)
-- [Subject](../subjects/subject.md)
 - [switchMap](../operators/transformation/switchmap.md)
 - [take](../operators/filtering/take.md)
 - [takeWhile](../operators/filtering/takewhile.md)
 - [tap](../operators/utility/do.md)
+
+### Subjects Used
+- [BehaviorSubject](../subjects/behaviorsubject.md)
+- [Subject](../subjects/subject.md)
