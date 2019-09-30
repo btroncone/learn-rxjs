@@ -86,6 +86,7 @@ merge(click$, interval$).subscribe();
 ### Related Recipes
 
 - [Alphabet Invasion Game](../recipes/alphabet-invasion-game.md)
+- [Battleship Game](../recipes/battleship-game.md)
 - [Car Racing Game](../recipes/car-racing-game.md)
 
 ### Additional Resources
