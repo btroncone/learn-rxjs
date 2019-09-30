@@ -114,6 +114,7 @@
   - [Subject](/subjects/subject.md)
 - [Recipes](/recipes/README.md)
   - [Alphabet Invasion Game](/recipes/alphabet-invasion-game.md)
+  - [Battleship Game](/recipes/battleship-game.md)
   - [Breakout Game](/recipes/breakout-game.md)
   - [Car Racing Game](/recipes/car-racing-game.md)
   - [Catch The Dot Game](/recipes/catch-the-dot-game.md)

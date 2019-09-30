@@ -27,6 +27,7 @@ sub.next(3); // OUTPUT => 3,3 (logged from both subscribers)
 
 ### Related Recipes
 
+- [Battleship Game](../recipes/battleship-game.md)
 - [Lockscreen](../recipes/lockscreen.md)
 
 ### Additional Resources
