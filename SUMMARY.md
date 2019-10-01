@@ -49,6 +49,7 @@
     - [auditTime](/operators/filtering/audittime.md)
     - [debounce](/operators/filtering/debounce.md)
     - [debounceTime](/operators/filtering/debouncetime.md)
+    - [distinct](/operators/filtering/distinct.md)
     - [distinctUntilChanged](/operators/filtering/distinctuntilchanged.md)
     - [distinctUntilKeyChanged](/operators/filtering/distinctuntilkeychanged.md)
     - [filter](/operators/filtering/filter.md)
