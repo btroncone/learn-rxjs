@@ -48,6 +48,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [auditTime](filtering/audittime.md)
   - [debounce](filtering/debounce.md)
   - [debounceTime](filtering/debouncetime.md) :star:
+  - [distinct](filtering/distinct.md)
   - [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
   - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
   - [filter](filtering/filter.md) :star:
