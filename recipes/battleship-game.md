@@ -2,7 +2,7 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates RxJS implementation of Battleship Game where you play with computer.
+This recipe demonstrates an RxJS implementation of Battleship Game where you play against the computer.
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
