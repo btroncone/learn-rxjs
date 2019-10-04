@@ -11,6 +11,8 @@ This recipe demonstrates RxJS implementation of Battleship Game where you play w
 ( [StackBlitz](https://stackblitz.com/edit/rxjs-battleships?file=index.ts)
 )
 
+![Battleship Game](https://drive.google.com/uc?export=view&id=1WawRG9DbBILOgmuHTulFXsWbxwC8lrX4)
+
 #### index.ts
 
 ```js
