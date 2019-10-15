@@ -5,6 +5,7 @@ Common use-cases and interesting recipes to help learn RxJS.
 ### Contents
 
 - [Alphabet Invasion Game](alphabet-invasion-game.md)
+- [Battleship Game](battleship-game.md)
 - [Breakout Game](breakout-game.md)
 - [Car Racing Game](car-racing-game.md)
 - [Catch The Dot Game](catch-the-dot-game.md)

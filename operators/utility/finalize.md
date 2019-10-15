@@ -26,6 +26,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+- [Battleship Game](../../recipes/battleship-game.md)
 - [Car Racing Game](../../recipes/car-racing-game.md)
 - [Click Ninja Game](../../recipes/click-ninja-game.md)
 - [HTTP Polling](../../recipes/http-polling.md)

@@ -88,7 +88,8 @@ concat(interval(1000), of('This', 'Never', 'Runs'))
 
 ### Related Recipes
 
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Battleship Game](../../recipes/battleship-game.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 
 ### Additional Resources
 

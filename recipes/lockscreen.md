@@ -159,7 +159,7 @@ export const resetPasswordPad = () => {
 
 ##### html
 
-```
+```html
 <style>
   .grid {
     border-spacing: 2px;

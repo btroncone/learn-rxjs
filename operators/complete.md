@@ -29,6 +29,7 @@ _[Prefer a split by operator type?](README.md)_
 - [defer](creation/defer.md)
 - [delay](utility/delay.md)
 - [delayWhen](utility/delaywhen.md)
+- [distinct](filtering/distinct.md)
 - [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
 - [distinctUntilKeyChanged](filtering/distinctuntilkeychanged.md)
 - [endWith](combination/endwith.md)

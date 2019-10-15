@@ -13,6 +13,7 @@ with
 - [auditTime](audittime.md)
 - [debounce](debounce.md)
 - [debounceTime](debouncetime.md) :star:
+- [distinct](distinct.md)
 - [distinctUntilChanged](distinctuntilchanged.md) :star:
 - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
 - [filter](filter.md) :star:

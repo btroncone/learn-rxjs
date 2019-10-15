@@ -42,6 +42,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+- [Battleship Game](../../recipes/battleship-game.md)
 - [Breakout Game](../../recipes/breakout-game.md)
 - [Car Racing Game](../../recipes/car-racing-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)

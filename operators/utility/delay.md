@@ -66,6 +66,7 @@ const subscribe = message.subscribe(val => console.log(val));
 
 ### Related Recipes
 
+- [Battleship Game](../../recipes/battleship-game.md)
 - [Progress Bar](../../recipes/progressbar.md)
 - [Save Indicator]('../../recipes/save-indicator.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)

@@ -6,7 +6,7 @@ You can think of this as a single speaker talking at a microphone in a room full
 
 There are 4 variants of subjects:
 
-- **Subject** - No intial value or replay behavior.
+- **Subject** - No initial value or replay behavior.
 - **AsyncSubject** - Emits latest value to observers upon completion.
 - **BehaviorSubject** - Requires an initial value and emits its current value (last emitted item) to new subscribers.
 - **ReplaySubject** - Emits specified number of last emitted values (a replay) to new subscribers.

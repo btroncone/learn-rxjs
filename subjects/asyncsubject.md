@@ -1,6 +1,6 @@
 # AsyncSubject
 
-## A Subject that only emits its last value upon completion
+## Emits it's last value on completion
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" style="width:100%;max-width:100%"></a></div>
 

@@ -55,6 +55,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
+- [Battleship Game](../../recipes/battleship-game.md)
 - [Catch The Dot Game](../../recipes/catch-the-dot-game.md)
 - [Game Loop](../../recipes/gameloop.md)
 - [HTTP Polling](../../recipes/http-polling.md)
