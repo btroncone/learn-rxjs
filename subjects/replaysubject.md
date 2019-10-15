@@ -1,6 +1,6 @@
 # ReplaySubject
 
-## A Subject that "replays" or emits old values to new subscribers
+## "Replays" or emits old values to new subscribers
 
 <div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
 
