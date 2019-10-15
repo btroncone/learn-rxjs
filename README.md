@@ -28,7 +28,7 @@ material on the web. The goal is to supplement the
 while offering a new, fresh perspective to clear any hurdles and tackle the pain
 points. Learning Rx may be difficult but it is certainly worth the effort!
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" style="width:100%;max-width:100%"></a></div>
 
 ### Brand New to RxJS?
 
@@ -118,8 +118,7 @@ site, these excellent resources will help jump start your learning experience!
 
 #### Conferences
 
-- [RxJS Live](https://www.rxjs.live/) - Upcoming RxJS specific conference,
-  September 5-6, 2019 (Las Vegas)
+- [RxJS Live](https://www.rxjs.live/) - RxJS specific conference, Las Vegas
 
 #### Reading
 
@@ -132,6 +131,8 @@ site, these excellent resources will help jump start your learning experience!
 
 #### Videos
 
+- [RxJS Basics](https://ultimatecourses.com/courses/rxjs) :dollar: - Brian
+  Troncone
 - [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) -
   Jafar Husain
 - [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
