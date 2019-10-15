@@ -4,7 +4,7 @@
 
 ## Emits items emitted that are distinct based on any previously emitted item.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" style="width:100%;max-width:100%"></a></div>
 
 ### Examples
 
@@ -36,9 +36,9 @@ of(1, 2, 3, 4, 5, 1, 2, 3, 4, 5)
 import { from } from 'rxjs';
 import { distinct } from 'rxjs/operators';
 
-const obj1 = { id: 3, name: "name 1" };
-const obj2 = { id: 4, name: "name 2" };
-const obj3 = { id: 3, name: "name 3" };
+const obj1 = { id: 3, name: 'name 1' };
+const obj2 = { id: 4, name: 'name 2' };
+const obj3 = { id: 3, name: 'name 3' };
 const vals = [obj1, obj2, obj3];
 
 from(vals)
@@ -54,8 +54,8 @@ OUTPUT:
 
 ### Additional Resources
 
-- [distinct](https://rxjs.dev/api/operators/distinct)
-  :newspaper: - Official docs
+- [distinct](https://rxjs.dev/api/operators/distinct) :newspaper: - Official
+  docs
 
 ---
 

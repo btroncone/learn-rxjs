@@ -2,14 +2,14 @@
 
 _By [adamlubek](https://github.com/adamlubek)_
 
-This recipe demonstrates an RxJS implementation of Battleship Game where you play against the computer.
+This recipe demonstrates an RxJS implementation of Battleship Game where you
+play against the computer.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://ultimatecourses.com/assets/img/banners/rxjs-banner-desktop.svg" style="width:100%;max-width:100%"></a></div>
+<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs"><img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" style="width:100%;max-width:100%"></a></div>
 
 ### Example Code
 
-( [StackBlitz](https://stackblitz.com/edit/rxjs-battleships?file=index.ts)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-battleships?file=index.ts) )
 
 ![Battleship Game](https://drive.google.com/uc?export=view&id=1WawRG9DbBILOgmuHTulFXsWbxwC8lrX4)
 
@@ -25,46 +25,38 @@ import { shots$, computerScore$, playerScore$, isNotGameOver } from './game';
 import { setup$, emptyBoards$ } from './setup';
 import { Boards } from './interfaces';
 
-const game$ = emptyBoards$ 
-  .pipe(
-    paintBoards$,
-    switchMap((boards: Boards) =>
-      concat(
-        setup$(boards),
-        shots$(boards),
-      ).pipe(
-        takeWhile(isNotGameOver),
-        finalize(displayGameOver(computerScore$))
-      )
+const game$ = emptyBoards$.pipe(
+  paintBoards$,
+  switchMap((boards: Boards) =>
+    concat(setup$(boards), shots$(boards)).pipe(
+      takeWhile(isNotGameOver),
+      finalize(displayGameOver(computerScore$))
     )
-  );
+  )
+);
 
-merge(
-  game$,
-  computerScore$,
-  playerScore$
-).subscribe();
+merge(game$, computerScore$, playerScore$).subscribe();
 ```
 
 #### setup.ts
 
 ```js
-import { concat, interval, of, fromEvent, pipe, noop } from "rxjs";
-import { filter, map, scan, take, tap } from "rxjs/operators";
+import { concat, interval, of, fromEvent, pipe, noop } from 'rxjs';
+import { filter, map, scan, take, tap } from 'rxjs/operators';
 import {
   GAME_SIZE,
   NUMBER_OF_SHIP_PARTS,
   EMPTY,
   COMPUTER,
   PLAYER
-} from "./constants";
+} from './constants';
 import {
   paintBoards$,
   computerScoreContainer,
   playerScoreContainer
-} from "./html-renderer";
-import { random, validClicks$ } from "./game";
-import { Boards } from "./interfaces";
+} from './html-renderer';
+import { random, validClicks$ } from './game';
+import { Boards } from './interfaces';
 
 const isThereEnoughSpaceForNextMove = (
   board: number[][],
@@ -177,7 +169,7 @@ const canMove = (
 
 const addShips$ = (player: string, boards: Boards) =>
   pipe(
-    map((e: string) => e.split(",")),
+    map((e: string) => e.split(',')),
     filter(e => e.length === 3),
     map(e => [e[0], parseInt(e[1]), parseInt(e[2])]),
     scan(
@@ -208,14 +200,14 @@ const addShips$ = (player: string, boards: Boards) =>
   );
 
 const playerSetup$ = (boards: Boards) =>
-  fromEvent(document, "click").pipe(
+  fromEvent(document, 'click').pipe(
     validClicks$,
     addShips$(PLAYER, boards)
   );
 
 const computerSetup$ = (boards: Boards) =>
   interval().pipe(
-    tap(i => (i % 70 === 0 ? (playerScoreContainer.innerHTML += ".") : noop)),
+    tap(i => (i % 70 === 0 ? (playerScoreContainer.innerHTML += '.') : noop)),
     map(_ => `${COMPUTER}, ${random()}, ${random()}`),
     addShips$(COMPUTER, boards)
   );
@@ -235,9 +227,9 @@ export const emptyBoards$ = of({
 
 export const setup$ = (boards: Boards) =>
   concat(
-    info$(computerScoreContainer, "Setup your board!!!"),
+    info$(computerScoreContainer, 'Setup your board!!!'),
     playerSetup$(boards),
-    info$(playerScoreContainer, "Computer setting up!!!"),
+    info$(playerScoreContainer, 'Computer setting up!!!'),
     computerSetup$(boards)
   );
 ```
@@ -245,8 +237,8 @@ export const setup$ = (boards: Boards) =>
 #### game.ts
 
 ```js
-import { fromEvent, pipe, noop, Subject, BehaviorSubject, merge } from "rxjs";
-import { repeatWhen, delay, filter, map, takeWhile, tap } from "rxjs/operators";
+import { fromEvent, pipe, noop, Subject, BehaviorSubject, merge } from 'rxjs';
+import { repeatWhen, delay, filter, map, takeWhile, tap } from 'rxjs/operators';
 import {
   GAME_SIZE,
   EMPTY,
@@ -257,14 +249,14 @@ import {
   PLAYER,
   COMPUTER,
   NUMBER_OF_SHIP_PARTS
-} from "./constants";
-import { paintBoards, paintScores } from "./html-renderer";
-import { Boards, ComputerMove } from "./interfaces";
+} from './constants';
+import { paintBoards, paintScores } from './html-renderer';
+import { Boards, ComputerMove } from './interfaces';
 
 export const random = () => Math.floor(Math.random() * Math.floor(GAME_SIZE));
 
 export const validClicks$ = pipe(
-  map((e: MouseEvent) => e.target["id"]),
+  map((e: MouseEvent) => e.target['id']),
   filter(e => e)
 );
 
@@ -363,7 +355,7 @@ const nextComputerMove = (): [string, number, number] => {
   const isHorizontal = shipHits.every(e => e.x === shipHits[0].x);
 
   if (isHorizontal) {
-    const [min, max] = getOrderedHits("y");
+    const [min, max] = getOrderedHits('y');
     return [
       PLAYER,
       min.x,
@@ -375,7 +367,7 @@ const nextComputerMove = (): [string, number, number] => {
     ];
   }
 
-  const [min, max] = getOrderedHits("x");
+  const [min, max] = getOrderedHits('x');
   return [
     PLAYER,
     playerBoard[min.x - 1] !== undefined &&
@@ -421,9 +413,9 @@ const computerShot$ = (boards: Boards) =>
   );
 
 const playerShot$ = (boards: Boards) =>
-  fromEvent(document, "click").pipe(
+  fromEvent(document, 'click').pipe(
     validClicks$,
-    map((click: string) => click.split(",")),
+    map((click: string) => click.split(',')),
     filter(([player]) => player === COMPUTER),
     performShot$(boards, COMPUTER, (x, y, wasHit, boardValue) =>
       wasHit
@@ -472,7 +464,7 @@ export const paintBoard = (
     r.forEach(
       (c, j) =>
         (container.innerHTML += `
-    <div id=${playerName},${i},${j} 
+    <div id=${playerName},${i},${j}
     style='float:left; margin-left: 5px'>
     ${playerName === PLAYER ? playerCells(c) : computerCells(c)}
     </div>`),
@@ -510,7 +502,7 @@ export const paintBoards = (boards: Boards) => (
 export const paintBoards$ = pipe<any, any>(tap(paintBoards));
 
 export const displayGameOver = (computerScore: BehaviorSubject<any>) => () => {
-  const gameOverText = `GAME OVER, 
+  const gameOverText = `GAME OVER,
           ${
             computerScore.value.score === NUMBER_OF_SHIP_PARTS
               ? "Computer"
@@ -531,8 +523,8 @@ export interface Boards {
 }
 
 export interface ComputerMove {
-  playerBoard: number[],
-  hits: {}
+  playerBoard: number[];
+  hits: {};
 }
 ```
 
@@ -551,6 +543,7 @@ export const COMPUTER = 'c';
 ```
 
 ### Operators Used
+
 - [concat](../operators/combination/concat.md)
 - [delay](../operators/utility/delay.md)
 - [filter](../operators/filtering/filter.md)
@@ -568,5 +561,6 @@ export const COMPUTER = 'c';
 - [tap](../operators/utility/do.md)
 
 ### Subjects Used
+
 - [BehaviorSubject](../subjects/behaviorsubject.md)
 - [Subject](../subjects/subject.md)
