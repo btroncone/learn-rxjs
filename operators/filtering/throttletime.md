@@ -1,6 +1,6 @@
 # throttleTime
 
-#### signature: `throttleTime(duration: number, scheduler: Scheduler): Observable`
+#### signature: `throttleTime(duration: number, scheduler: Scheduler, config: ThrottleConfig): Observable`
 
 ## Emit first value then ignore for specified duration
 
