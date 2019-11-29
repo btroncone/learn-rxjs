@@ -5,7 +5,7 @@
 ## After all observables emit, emit values as an array
 
 ---
-
+ff
 :bulb: Combined with [interval](../creation/interval.md) or
 [timer](../creation/timer.md), zip can be used to time output from another
 source!
