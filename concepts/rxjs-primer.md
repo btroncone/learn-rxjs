@@ -187,7 +187,7 @@ inputValue
     // if the value is the same, ignore
     distinctUntilChanged(),
     // if an updated value comes through while request is still active cancel previous request and 'switch' to new observable
-    switchMap(searchTerm => typeaheadApi.search(term))
+    switchMap(searchTerm => typeaheadApi.search(searchTerm))
   )
   // create a subscription
   .subscribe(results => {
@@ -364,7 +364,7 @@ can start creating a
 [_'choose your own operator'_ tree](https://rxjs-dev.firebaseapp.com/operator-decision-tree)
 in your mind.
 
-**For instance, a large amount of operators can grouped into...**
+**For instance, a large amount of operators can be grouped into...**
 
 #### Operators that flatten
 
