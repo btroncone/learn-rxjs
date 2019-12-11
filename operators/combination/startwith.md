@@ -100,6 +100,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Stop Watch](../../recipes/stop-watch.md)
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
 - [Tetris Game](../../recipes/tetris-game.md)
+- [Uncover Image Game](../../recipes/uncover-image-game.md)
 
 ### Additional Resources
 
