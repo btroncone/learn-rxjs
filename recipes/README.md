@@ -28,3 +28,4 @@ Common use-cases and interesting recipes to help learn RxJS.
 - [Tank Battle Game](tank-battle-game.md)
 - [Tetris Game](tetris-game.md)
 - [Type Ahead](type-ahead.md)
+- [Uncover Image Game](uncover-image-game.md)
