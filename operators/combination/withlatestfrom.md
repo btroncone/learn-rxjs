@@ -84,6 +84,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Progress Bar](../../recipes/progressbar.md)
 - [Game Loop](../../recipes/gameloop.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Uncover Image Game](../../recipes/uncover-image-game.md)
 
 ### Additional Resources
 

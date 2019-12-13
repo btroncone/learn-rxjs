@@ -138,6 +138,7 @@
   - [Tank Battle Game](/recipes/tank-battle-game.md)
   - [Tetris Game](/recipes/tetris-game.md)
   - [Type Ahead](/recipes/type-ahead.md)
+  - [Uncover Image Game](/recipes/uncover-image-game.md)
 - [Concepts](/concepts/README.md)
   - [RxJS Primer](/concepts/rxjs-primer.md)
   - [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)

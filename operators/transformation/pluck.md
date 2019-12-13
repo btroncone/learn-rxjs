@@ -59,6 +59,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Tetris Game](../../recipes/tetris-game.md)
+- [Uncover Image Game](../../recipes/uncover-image-game.md)
 
 ### Additional Resources
 

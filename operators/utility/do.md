@@ -90,6 +90,7 @@ const example = source
 - [Tank Battle Game](../../recipes/tank-battle-game.md)
 - [Tetris Game](../../recipes/tetris-game.md)
 - [Type Ahead](../../recipes/type-ahead.md)
+- [Uncover Image Game](../../recipes/uncover-image-game.md)
 
 ### Additional Resources
 
