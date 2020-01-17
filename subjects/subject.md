@@ -9,7 +9,7 @@
 ##### Example 1: simple Subject
 
 (
-[Stackblitz](https://stackblitz.com/edit/rxjs-subject-simple-example?file=index.ts&devtoolsheight=100)
+[Stackblitz](https://stackblitz.com/edit/rxjs-subject-simple-example-j33czp?file=index.ts&devtoolsheight=100)
 )
 
 ```js
