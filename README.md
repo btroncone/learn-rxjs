@@ -28,7 +28,7 @@ material on the web. The goal is to supplement the
 while offering a new, fresh perspective to clear any hurdles and tackle the pain
 points. Learning Rx may be difficult but it is certainly worth the effort!
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs?ref=4"><img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" style="width:100%;max-width:100%"></a></div>
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Brand New to RxJS?
 

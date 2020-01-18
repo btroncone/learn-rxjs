@@ -6,7 +6,7 @@ This recipe demonstrates RxJS implementation of Stop Watch, inspired by
 [RxJS Advanced Patterns – Operate Heavily Dynamic UI’s](https://www.youtube.com/watch?v=XKfhGntZROQ)
 talk by [@Michael_Hladky](https://twitter.com/michael_hladky)
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs?ref=4"><img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" style="width:100%;max-width:100%"></a></div>
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 

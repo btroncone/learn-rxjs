@@ -31,7 +31,7 @@ Lastly, if you are working with observables that only emit one value, or you
 only require the last value of each before completion, [`forkJoin`](forkjoin.md)
 is likely a better option.
 
-<div class="ua-ad"><a href="https://ultimatecourses.com/courses/rxjs?ref=4"><img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" style="width:100%;max-width:100%"></a></div>
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
