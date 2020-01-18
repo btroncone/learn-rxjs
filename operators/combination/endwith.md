@@ -14,7 +14,9 @@ value, check out [`finalize`](../utility/finalize.md)!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+<a href="https://ultimatecourses.com/courses/rxjs?ref=4">
+  <img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" alt="Ultimate RxJS" style="width:100%">
+</a>
 
 ### Examples
 
@@ -85,8 +87,7 @@ source$
 
 ### Additional Resources
 
-- [endWith](https://rxjs.dev/api/operators/endWith)
-  :newspaper: - Official docs
+- [endWith](https://rxjs.dev/api/operators/endWith) :newspaper: - Official docs
 
 ---
 
