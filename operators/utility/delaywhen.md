@@ -4,7 +4,7 @@
 
 ## Delay emitted values determined by provided function.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -33,8 +33,7 @@ const subscribe = delayWhenExample.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [delayWhen](https://rxjs.dev/api/operators/delayWhen)
-  📰 - Official docs
+- [delayWhen](https://rxjs.dev/api/operators/delayWhen) 📰 - Official docs
 - [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

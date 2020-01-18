@@ -4,7 +4,7 @@
 
 ## Turn notification objects into notification values.
 
-[<img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" alt="Ultimate RxJS">](https://ultimatecourses.com/courses/rxjs?ref=4)
+[<img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" alt="Ultimate RxJS" style="max-width: 100%">](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -38,9 +38,8 @@ const subscription = source.subscribe({
 
 ### Additional Resources
 
-- [dematerialize](https://rxjs.dev/api/operators/dematerialize)
-
-  📰 - Official docs
+- [dematerialize](https://rxjs.dev/api/operators/dematerialize) 📰 - Official
+  docs
 
 > :file_folder: Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/dematerialize.ts)
