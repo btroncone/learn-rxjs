@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: If you are using as a pipeable operator, `do` is known as `tap`!
+💡 If you are using as a pipeable operator, `do` is known as `tap`!
 
 ---
 
@@ -96,11 +96,11 @@ const example = source
 
 - [tap](https://rxjs.dev/api/operators/tap) :newspaper: - Official docs
 - [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 - [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own tap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=tap#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

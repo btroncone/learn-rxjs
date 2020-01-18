@@ -16,11 +16,11 @@ application.
 
 ---
 
-:bulb: If you want to take a variable number of values based on some logic, or
+💡 If you want to take a variable number of values based on some logic, or
 another observable, you can use [takeUntil](takeuntil.md) or
 [takeWhile](takewhile.md)!
 
-:bulb: `take` is the opposite of [`skip`](./skip.md) where `take` will take the
+💡 `take` is the opposite of [`skip`](./skip.md) where `take` will take the
 first _n_ number of emissions while `skip` will skip the first _n_ number of
 emissions.
 
@@ -108,9 +108,9 @@ const subscribe = oneClickEvent.subscribe();
 - [take](https://rxjs.dev/api/operators/take)
   :newspaper: - Official docs
 - [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own take operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=take#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

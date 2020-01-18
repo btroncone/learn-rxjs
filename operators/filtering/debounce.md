@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: Though not as widely used as [debounceTime](debouncetime.md),
+💡 Though not as widely used as [debounceTime](debouncetime.md),
 **debounce** is important when the debounce rate is variable!
 
 ---
@@ -72,7 +72,7 @@ const subscribe = debouncedInterval.subscribe(val =>
 - [debounce](https://rxjs.dev/api/operators/debounce)
   :newspaper: - Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

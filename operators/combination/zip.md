@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: Combined with [interval](../creation/interval.md) or
+💡 Combined with [interval](../creation/interval.md) or
 [timer](../creation/timer.md), zip can be used to time output from another
 source!
 
@@ -111,7 +111,7 @@ mouseClickDuration.subscribe(console.log);
 - [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip)
   :newspaper: - Official docs
 - [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

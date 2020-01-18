@@ -6,22 +6,22 @@ generic to specific use-cases you are free, and encouraged, to turn
 
 ## Contents
 
-- [ajax](ajax.md) :star:
+- [ajax](ajax.md) ⭐
 - [create](create.md)
 - [defer](defer.md)
 - [empty](empty.md)
-- [from](from.md) :star:
+- [from](from.md) ⭐
 - [fromEvent](fromevent.md)
 - [generate](generate.md)
 - [interval](interval.md)
-- [of](of.md) :star:
+- [of](of.md) ⭐
 - [range](range.md)
 - [throw](throw.md)
 - [timer](timer.md)
 
-:star: - _commonly used_
+⭐ - _commonly used_
 
 ### Additional Resources
 
 - [Creating Observables From Scratch](https://egghead.io/courses/rxjs-beyond-the-basics-creating-observables-from-scratch)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz

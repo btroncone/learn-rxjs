@@ -6,13 +6,13 @@
 
 ---
 
-:bulb: If you would like more than one inner subscription to be maintained, try
+💡 If you would like more than one inner subscription to be maintained, try
 [`mergeMap`](mergemap.md)!
 
-:bulb: This operator is generally considered a safer default to
+💡 This operator is generally considered a safer default to
 [`mergeMap`](mergemap.md)!
 
-:bulb: This operator can cancel in-flight network requests!
+💡 This operator can cancel in-flight network requests!
 
 ---
 
@@ -149,13 +149,13 @@ timer(0, 5000)
 - [Avoiding switchMap-Related Bugs](https://blog.angularindepth.com/switchmap-bugs-b6de69155524) -
   Nicholas Jamieson
 - [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 - [Use RxJS switchMap to map and flatten higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-switchmap-to-map-and-flatten-higher-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Use switchMap as a safe default to flatten observables in RxJS](https://egghead.io/lessons/rxjs-use-switchmap-as-a-safe-default-to-flatten-observables-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own switchMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=switchMap#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

@@ -10,7 +10,7 @@ When you are interested in ignoring a source observable for a given amout of tim
 
 ---
 
-:bulb: If you want the timer to reset whenever a new event occurs on the source observable, you can use [debounceTime](debouncetime.md)
+💡 If you want the timer to reset whenever a new event occurs on the source observable, you can use [debounceTime](debouncetime.md)
 
 ---
 

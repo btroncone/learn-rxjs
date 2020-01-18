@@ -5,8 +5,8 @@ effective ways to gracefully handle errors and retry logic, should they occur.
 
 ## Contents
 
-* [catch / catchError](catch.md) :star:
-* [retry](retry.md)
-* [retryWhen](retrywhen.md)
+- [catch / catchError](catch.md) ⭐
+- [retry](retry.md)
+- [retryWhen](retrywhen.md)
 
-:star: - _commonly used_
+⭐ - _commonly used_

@@ -14,7 +14,7 @@
 [StackBlitz](https://stackblitz.com/edit/typescript-pkyxa1?file=index.ts&devtoolsheight=100)
 )
 
-:bulb: Note the difference between `concatMap` and [`mergeMap`](./mergemap.md).
+💡 Note the difference between `concatMap` and [`mergeMap`](./mergemap.md).
 Because `concatMap` does not subscribe to the next observable until the previous
 completes, the value from the source delayed by 2000ms will be emitted first.
 Contrast this with [`mergeMap`](./mergemap.md) which subscribes immediately to
@@ -102,9 +102,9 @@ const subscribe = example.subscribe(val =>
 - [concatMap](https://rxjs.dev/api/operators/concatMap)
   :newspaper: - Official docs
 - [Use RxJS concatMap to map and concat higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-concatmap-to-map-and-concat-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own concatMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=concatMap#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

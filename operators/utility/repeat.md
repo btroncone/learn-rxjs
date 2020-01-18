@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: Like [`retry`](../error_handling/retry.md) but for non error cases!
+💡 Like [`retry`](../error_handling/retry.md) but for non error cases!
 
 ---
 

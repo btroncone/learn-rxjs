@@ -6,12 +6,12 @@
 
 ---
 
-:warning: `let` is no longer available, or necessary, with pipeable operators!
-(RxJS 5.5+)
+⚠ `let` is no longer available, or necessary, with pipeable operators! (RxJS
+5.5+)
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

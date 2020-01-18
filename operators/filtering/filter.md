@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: If you would like to complete an observable when a condition fails, check
+💡 If you would like to complete an observable when a condition fails, check
 out [takeWhile](takewhile.md)!
 
 ---
@@ -96,11 +96,11 @@ const subscribe = example.subscribe(val =>
 - [filter](https://rxjs.dev/api/operators/filter)
   :newspaper: - Official docs
 - [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 - [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own filter operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=filter#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

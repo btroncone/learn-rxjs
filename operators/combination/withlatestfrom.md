@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: If you want the last emission any time a variable number of observables
+💡 If you want the last emission any time a variable number of observables
 emits, try [combinelatest](combinelatest.md)!
 
 ---
@@ -91,7 +91,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [withLatestFrom](https://rxjs.dev/api/operators/withLatestFrom)
   :newspaper: - Official docs
 - [Combination operator: withLatestFrom](https://egghead.io/lessons/rxjs-combination-operator-withlatestfrom?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

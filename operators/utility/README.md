@@ -5,8 +5,8 @@ provide helpful utilities in your observable toolkit.
 
 ## Contents
 
-- [tap / do](do.md) :star:
-- [delay](delay.md) :star:
+- [tap / do](do.md) ⭐
+- [delay](delay.md) ⭐
 - [delayWhen](delaywhen.md)
 - [dematerialize](dematerialize.md)
 - [finalize / finally](finalize.md)
@@ -18,4 +18,4 @@ provide helpful utilities in your observable toolkit.
 - [timeoutWith](timeoutwith.md)
 - [toPromise](topromise.md)
 
-:star: - _commonly used_
+⭐ - _commonly used_

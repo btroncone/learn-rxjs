@@ -6,10 +6,10 @@
 
 ---
 
-:bulb: distinctUntilChanged uses `===` comparison by default, object references
+💡 distinctUntilChanged uses `===` comparison by default, object references
 must match!
 
-:bulb: If you want to compare based on an object property, you can use
+💡 If you want to compare based on an object property, you can use
 [`distinctUntilKeyChanged`](distinctuntilkeychanged.md) instead!
 
 ---
@@ -98,7 +98,7 @@ source$
 - [distinctUntilChanged](https://rxjs.dev/api/operators/distinctUntilChanged)
   :newspaper: - Official docs
 - [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

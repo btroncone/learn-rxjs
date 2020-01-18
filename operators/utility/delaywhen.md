@@ -36,7 +36,7 @@ const subscribe = delayWhenExample.subscribe(val => console.log(val));
 - [delayWhen](https://rxjs.dev/api/operators/delayWhen)
   :newspaper: - Official docs
 - [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

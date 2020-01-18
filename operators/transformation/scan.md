@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: You can create [Redux](http://redux.js.org)-like state management with
+💡 You can create [Redux](http://redux.js.org)-like state management with
 scan!
 
 ---
@@ -137,13 +137,13 @@ interval(1000)
 - [scan](https://rxjs.dev/api/operators/scan)
   :newspaper: - Official docs
 - [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
-  :video_camera: - Ben Lesh
+  🎥 - Ben Lesh
 - [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 - [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own scan operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=scan#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

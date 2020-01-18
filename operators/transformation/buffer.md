@@ -69,7 +69,7 @@ const subscribe = myBufferedInterval.subscribe(val =>
 - [buffer](https://rxjs-dev.firebaseapp.com/api/operators/buffer) :newspaper: -
   Official docs
 - [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

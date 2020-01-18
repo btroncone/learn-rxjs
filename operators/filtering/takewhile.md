@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: When the optional `inclusive` parameter is set to `true` it will also
+💡 When the optional `inclusive` parameter is set to `true` it will also
 emit the first item that didn't pass the predicate.
 
 ---
@@ -105,7 +105,7 @@ source$
 - [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile)
   :newspaper: - Official docs
 - [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 
 ---
 

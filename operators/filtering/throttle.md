@@ -61,7 +61,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [throttle](https://rxjs.dev/api/operators/throttle)
   :newspaper: - Official docs
 - [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

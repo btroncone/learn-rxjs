@@ -8,23 +8,23 @@ will encounter.
 
 - [buffer](buffer.md)
 - [bufferCount](buffercount.md)
-- [bufferTime](buffertime.md) :star:
+- [bufferTime](buffertime.md) ⭐
 - [bufferToggle](buffertoggle.md)
 - [bufferWhen](bufferwhen.md)
-- [concatMap](concatmap.md) :star:
+- [concatMap](concatmap.md) ⭐
 - [concatMapTo](concatmapto.md)
 - [exhaustMap](exhaustmap.md)
 - [expand](expand.md)
 - [groupBy](groupby.md)
-- [map](map.md) :star:
+- [map](map.md) ⭐
 - [mapTo](mapto.md)
-- [mergeMap / flatMap](mergemap.md) :star:
+- [mergeMap / flatMap](mergemap.md) ⭐
 - [mergeScan](mergescan.md)
 - [partition](partition.md)
 - [pluck](pluck.md)
 - [reduce](reduce.md)
-- [scan](scan.md) :star:
-- [switchMap](switchmap.md) :star:
+- [scan](scan.md) ⭐
+- [switchMap](switchmap.md) ⭐
 - [switchMapTo](switchmapto.md)
 - [toArray](toarray.md)
 - [window](window.md)
@@ -33,4 +33,4 @@ will encounter.
 - [windowToggle](windowtoggle.md)
 - [windowWhen](windowwhen.md)
 
-:star: - _commonly used_
+⭐ - _commonly used_

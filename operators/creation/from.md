@@ -6,12 +6,12 @@
 
 ---
 
-:bulb: This operator can be used to convert a promise to an observable!
+💡 This operator can be used to convert a promise to an observable!
 
-:bulb: For arrays and iterables, all contained values will be emitted as a
+💡 For arrays and iterables, all contained values will be emitted as a
 sequence!
 
-:bulb: This operator can also be used to emit a string as a sequence of
+💡 This operator can also be used to emit a string as a sequence of
 characters!
 
 ---
@@ -104,7 +104,7 @@ const subscribe = source.subscribe(val => console.log(val));
 - [from](https://rxjs.dev/api/index/function/from)
   :newspaper: - Official docs
 - [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

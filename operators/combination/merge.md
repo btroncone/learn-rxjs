@@ -6,9 +6,9 @@
 
 ---
 
-:bulb: This operator can be used as either a static or instance method!
+💡 This operator can be used as either a static or instance method!
 
-:bulb: If order not throughput is a primary concern, try [concat](concat.md)
+💡 If order not throughput is a primary concern, try [concat](concat.md)
 instead!
 
 ---
@@ -85,13 +85,13 @@ const subscribe = example.subscribe(val => console.log(val));
 - [merge](https://rxjs.dev/api/index/function/merge)
   :newspaper: - Official docs
 - [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 - [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own merge operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=merge#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

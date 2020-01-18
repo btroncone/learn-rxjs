@@ -6,12 +6,12 @@
 
 ---
 
-:bulb: Useful for retrying HTTP requests!
+💡 Useful for retrying HTTP requests!
 
-:bulb: If you only want to retry in certain cases, check out
+💡 If you only want to retry in certain cases, check out
 [`retryWhen`](./retrywhen.md)!
 
-:bulb: For non error cases check out [`repeat`](../utility/repeat.md)!
+💡 For non error cases check out [`repeat`](../utility/repeat.md)!
 
 ---
 
@@ -62,7 +62,7 @@ const subscribe = example.subscribe({
 - [retry](https://rxjs.dev/api/operators/retry)
   :newspaper: - Official docs
 - [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

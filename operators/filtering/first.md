@@ -6,9 +6,9 @@
 
 ---
 
-:bulb: The counterpart to first is [**last**](last.md)!
+💡 The counterpart to first is [**last**](last.md)!
 
-:bulb: `First` will deliver an EmptyError to the Observer's error callback if the Observable completes before any next notification was sent. If you don't want this behavior, use `take(1)` instead.
+💡 `First` will deliver an EmptyError to the Observer's error callback if the Observable completes before any next notification was sent. If you don't want this behavior, use `take(1)` instead.
 
 ---
 
@@ -84,7 +84,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [first](https://rxjs.dev/api/operators/first)
   :newspaper: - Official docs
 - [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

@@ -12,11 +12,11 @@ with
 - [audit](audit.md)
 - [auditTime](audittime.md)
 - [debounce](debounce.md)
-- [debounceTime](debouncetime.md) :star:
+- [debounceTime](debouncetime.md) ⭐
 - [distinct](distinct.md)
-- [distinctUntilChanged](distinctuntilchanged.md) :star:
+- [distinctUntilChanged](distinctuntilchanged.md) ⭐
 - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
-- [filter](filter.md) :star:
+- [filter](filter.md) ⭐
 - [find](find.md)
 - [first](first.md)
 - [ignoreElements](ignoreelements.md)
@@ -26,11 +26,11 @@ with
 - [skip](skip.md)
 - [skipUntil](skipuntil.md)
 - [skipWhile](skipwhile.md)
-- [take](take.md) :star:
+- [take](take.md) ⭐
 - [takeLast](takelast.md)
-- [takeUntil](takeuntil.md) :star:
+- [takeUntil](takeuntil.md) ⭐
 - [takeWhile](takewhile.md)
 - [throttle](throttle.md)
 - [throttleTime](throttletime.md)
 
-:star: - _commonly used_
+⭐ - _commonly used_

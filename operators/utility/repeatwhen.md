@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: If you just want to repeat a specified number of times, try [retry](retry.md)!
+💡 If you just want to repeat a specified number of times, try [retry](retry.md)!
 
 ---
 

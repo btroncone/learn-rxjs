@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: If you need to consider the emitted value from the source, try
+💡 If you need to consider the emitted value from the source, try
 [`switchMap`](switchmap.md)!
 
 ---

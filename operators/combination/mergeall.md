@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: In many cases you can use [mergeMap](../transformation/mergemap.md) as a
+💡 In many cases you can use [mergeMap](../transformation/mergemap.md) as a
 single operator instead!
 
 ---
@@ -92,7 +92,7 @@ const example = source
 - [mergeAll](https://rxjs.dev/api/operators/mergeAll)
   :newspaper: - Official docs
 - [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

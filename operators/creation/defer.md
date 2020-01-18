@@ -6,7 +6,7 @@
 
 ---
 
-:bulb:
+💡
 [`defer`](https://github.com/ReactiveX/rxjs/blob/ecc73d2a1564d0d3edffba90eec76510e509236c/src/internal/observable/iif.ts#L94-L100)
 is used as part of the [`iif`](../conditional/iif.md) operator!
 

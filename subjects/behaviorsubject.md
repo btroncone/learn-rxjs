@@ -4,7 +4,7 @@
 
 ---
 
-:bulb: If you want the last emitted value(s) on subscription, but do not need to supply a seed value, check out [ReplaySubject](replaysubject.md) instead!
+💡 If you want the last emitted value(s) on subscription, but do not need to supply a seed value, check out [ReplaySubject](replaysubject.md) instead!
 
 ---
 

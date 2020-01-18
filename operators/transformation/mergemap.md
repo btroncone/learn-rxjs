@@ -6,12 +6,12 @@
 
 ---
 
-:bulb: flatMap is an alias for mergeMap!
+💡 flatMap is an alias for mergeMap!
 
-:bulb: If only one inner subscription should be active at a time, try
+💡 If only one inner subscription should be active at a time, try
 [`switchMap`](switchmap.md)!
 
-:bulb: If the order of emission and subscription of inner observables is
+💡 If the order of emission and subscription of inner observables is
 important, try [`concatMap`](concatmap.md)!
 
 ---
@@ -217,15 +217,15 @@ source$
 - [mergeMap](https://rxjs.dev/api/operators/mergeMap) :newspaper: - Official
   docs
 - [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
-  :video_camera: :dollar: - Ben Lesh
+  🎥 💵 - Ben Lesh
 - [Async requests and responses in RxJS](https://egghead.io/lessons/rxjs-04-reactive-programming-async-requests-and-responses-in-rxjs)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Use RxJS mergeMap to map and merge higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-mergemap-to-map-and-merge-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Use RxJS mergeMap for fine grain custom behavior](https://egghead.io/lessons/rxjs-use-rxjs-mergemap-for-fine-grain-custom-behavior?course=use-higher-order-observables-in-rxjs-effectively)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own mergeMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=mergeMap#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

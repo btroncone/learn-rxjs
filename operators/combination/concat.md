@@ -6,10 +6,10 @@
 
 ---
 
-:bulb: You can think of concat like a line at a ATM, the next transaction
+💡 You can think of concat like a line at a ATM, the next transaction
 (subscription) cannot start until the previous completes!
 
-:bulb: If throughput, not order, is a primary concern, try [merge](merge.md)
+💡 If throughput, not order, is a primary concern, try [merge](merge.md)
 instead!
 
 ---
@@ -96,7 +96,7 @@ concat(interval(1000), of('This', 'Never', 'Runs'))
 - [concat](https://rxjs.dev/api/index/function/concat) :newspaper: - Official
   docs
 - [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

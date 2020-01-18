@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: If you want only the last emission from multiple observables, on
+💡 If you want only the last emission from multiple observables, on
 completion of multiple observables, try [forkJoin](../combination/forkjoin.md)!
 
 ---

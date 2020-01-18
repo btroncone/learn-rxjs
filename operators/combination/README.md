@@ -7,17 +7,17 @@ variation among these operators.
 ## Contents
 
 - [combineAll](combineall.md)
-- [combineLatest](combinelatest.md) :star:
-- [concat](concat.md) :star:
+- [combineLatest](combinelatest.md) ⭐
+- [concat](concat.md) ⭐
 - [concatAll](concatall.md)
 - [endWith](endwith.md)
 - [forkJoin](forkjoin.md)
-- [merge](merge.md) :star:
+- [merge](merge.md) ⭐
 - [mergeAll](mergeall.md)
 - [pairwise](pairwise.md)
 - [race](race.md)
-- [startWith](startwith.md) :star:
-- [withLatestFrom](withlatestfrom.md) :star:
+- [startWith](startwith.md) ⭐
+- [withLatestFrom](withlatestfrom.md) ⭐
 - [zip](zip.md)
 
-:star: - _commonly used_
+⭐ - _commonly used_

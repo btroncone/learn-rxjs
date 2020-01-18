@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: share is like [multicast](multicast.md) with a Subject and refCount!
+💡 share is like [multicast](multicast.md) with a Subject and refCount!
 
 ---
 
@@ -69,7 +69,7 @@ const subscribeFour = sharedExample.subscribe(val => console.log(val));
 - [share](https://rxjs.dev/api/operators/share)
   :newspaper: - Official docs
 - [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 
 ---
 

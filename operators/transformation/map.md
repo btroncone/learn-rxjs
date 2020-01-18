@@ -75,12 +75,12 @@ const subscribe = example.subscribe(val => console.log(val));
 - [map](https://rxjs.dev/api/operators/map)
   :newspaper: - Official docs
 - [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
-  :video_camera: - Ben Lesh
+  🎥 - Ben Lesh
 - [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 * [Build your own map operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=map#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

@@ -6,11 +6,11 @@
 
 ---
 
-:warning: Remember to return an observable from the catchError function!
+⚠ Remember to return an observable from the catchError function!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -108,10 +108,10 @@ iWillStopListening$.subscribe(console.log);
 
 ### Additional Resources
 
-- [catchError](https://rxjs.dev/api/operators/catchError)
-  :newspaper: - Official docs
+- [catchError](https://rxjs.dev/api/operators/catchError) :newspaper: - Official
+  docs
 - [Error handling operator: catch](https://egghead.io/lessons/rxjs-error-handling-operator-catch?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

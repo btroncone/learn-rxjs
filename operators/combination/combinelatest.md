@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: [combineAll](combineall.md) can be used to apply combineLatest to emitted
+💡 [combineAll](combineall.md) can be used to apply combineLatest to emitted
 observables when a source completes!
 
 ---
@@ -158,11 +158,11 @@ combineLatest(addOneClick$('red'), addOneClick$('black')).subscribe(
 - [combineLatest](https://rxjs.dev/api/index/function/combineLatest)
   :newspaper: - Official docs
 - [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs)
-  :video_camera: :dollar: - John Linquist
+  🎥 💵 - John Linquist
 - [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 - [Build your own combineLatest operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=combineLatest#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

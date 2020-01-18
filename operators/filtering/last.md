@@ -6,7 +6,7 @@
 
 ---
 
-:bulb: The counterpart to last is [**first**](first.md)!
+💡 The counterpart to last is [**first**](first.md)!
 
 ---
 
@@ -78,7 +78,7 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 - [last](https://rxjs.dev/api/operators/last)
   :newspaper: - Official docs
 - [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

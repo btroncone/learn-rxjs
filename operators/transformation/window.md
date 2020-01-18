@@ -44,7 +44,7 @@ const subscribeTwo = example
 - [window](https://rxjs.dev/api/operators/window)
   :newspaper: - Official docs
 - [Split an RxJS observable with window](https://egghead.io/lessons/rxjs-split-an-rxjs-observable-with-window?course=use-higher-order-observables-in-rxjs-effectively)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

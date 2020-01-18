@@ -4,10 +4,10 @@
 
 ## Reduces the values from source observable to a single value that's emitted when the source completes.
 
-:bulb: Just like
+💡 Just like
 [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=a)
 
-:bulb: If you need the current accumulated value on each emission, try
+💡 If you need the current accumulated value on each emission, try
 [scan](scan.md)!
 
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
@@ -37,9 +37,9 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 - [reduce](https://rxjs.dev/api/operators/reduce)
   :newspaper: - Official docs
 - [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
-  :video_camera: - Academind
+  🎥 - Academind
 - [Build your own reduce operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=reduce#app)
-  :video_camera: - Kwinten Pisman
+  🎥 - Kwinten Pisman
 
 ---
 

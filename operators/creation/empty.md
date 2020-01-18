@@ -67,7 +67,7 @@ const timer$ = merge(pause$, resume$)
 - [empty](https://rxjs.dev/api/index/function/empty)
   :newspaper: - Official docs
 - [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

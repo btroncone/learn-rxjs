@@ -142,7 +142,7 @@ export class AppComponent implements OnInit  {
 - [retryWhen](https://rxjs.dev/api/operators/retryWhen)
   :newspaper: - Official docs
 - [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
 
 ---
 

@@ -9,17 +9,17 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
 
 - [Combination](combination/README.md)
   - [combineAll](combination/combineall.md)
-  - [combineLatest](combination/combinelatest.md) :star:
-  - [concat](combination/concat.md) :star:
+  - [combineLatest](combination/combinelatest.md) ⭐
+  - [concat](combination/concat.md) ⭐
   - [concatAll](combination/concatall.md)
   - [endWith](combination/endwith.md)
   - [forkJoin](combination/forkjoin.md)
-  - [merge](combination/merge.md) :star:
+  - [merge](combination/merge.md) ⭐
   - [mergeAll](combination/mergeall.md)
   - [pairwise](combination/pairwise.md)
   - [race](combination/race.md)
-  - [startWith](combination/startwith.md) :star:
-  - [withLatestFrom](combination/withlatestfrom.md) :star:
+  - [startWith](combination/startwith.md) ⭐
+  - [withLatestFrom](combination/withlatestfrom.md) ⭐
   - [zip](combination/zip.md)
 - [Conditional](conditional/README.md)
   - [defaultIfEmpty](conditional/defaultifempty.md)
@@ -27,31 +27,31 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [iif](conditional/iif.md)
   - [sequenceequal](conditional/sequenceequal.md)
 - [Creation](creation/README.md)
-  - [ajax](creation/ajax.md) :star:
+  - [ajax](creation/ajax.md) ⭐
   - [create](creation/create.md)
   - [defer](creation/defer.md)
   - [empty](creation/empty.md)
-  - [from](creation/from.md) :star:
+  - [from](creation/from.md) ⭐
   - [fromEvent](creation/fromevent.md)
   - [generate](creation/generate.md)
   - [interval](creation/interval.md)
-  - [of](creation/of.md) :star:
+  - [of](creation/of.md) ⭐
   - [range](creation/range.md)
   - [throw](creation/throw.md)
   - [timer](creation/timer.md)
 - [Error Handling](error_handling/README.md)
-  - [catch / catchError](error_handling/catch.md) :star:
+  - [catch / catchError](error_handling/catch.md) ⭐
   - [retry](error_handling/retry.md)
   - [retryWhen](error_handling/retrywhen.md)
 - [Filtering](filtering/README.md)
   - [audit](filtering/audit.md)
   - [auditTime](filtering/audittime.md)
   - [debounce](filtering/debounce.md)
-  - [debounceTime](filtering/debouncetime.md) :star:
+  - [debounceTime](filtering/debouncetime.md) ⭐
   - [distinct](filtering/distinct.md)
-  - [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
+  - [distinctUntilChanged](filtering/distinctuntilchanged.md) ⭐
   - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
-  - [filter](filtering/filter.md) :star:
+  - [filter](filtering/filter.md) ⭐
   - [find](filtering/find.md)
   - [first](filtering/first.md)
   - [ignoreElements](filtering/ignoreelements.md)
@@ -61,37 +61,37 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [skip](filtering/skip.md)
   - [skipUntil](filtering/skipuntil.md)
   - [skipWhile](filtering/skipwhile.md)
-  - [take](filtering/take.md) :star:
+  - [take](filtering/take.md) ⭐
   - [takeLast](filtering/takelast.md)
-  - [takeUntil](filtering/takeuntil.md) :star:
+  - [takeUntil](filtering/takeuntil.md) ⭐
   - [takeWhile](filtering/takewhile.md)
   - [throttle](filtering/throttle.md)
   - [throttleTime](filtering/throttletime.md)
 - [Multicasting](multicasting/README.md)
   - [multicast](multicasting/multicast.md)
   - [publish](multicasting/publish.md)
-  - [share](multicasting/share.md) :star:
-  - [shareReplay](multicasting/sharereplay.md) :star:
+  - [share](multicasting/share.md) ⭐
+  - [shareReplay](multicasting/sharereplay.md) ⭐
 - [Transformation](transformation/README.md)
   - [buffer](transformation/buffer.md)
   - [bufferCount](transformation/buffercount.md)
-  - [bufferTime](transformation/buffertime.md) :star:
+  - [bufferTime](transformation/buffertime.md) ⭐
   - [bufferToggle](transformation/buffertoggle.md)
   - [bufferWhen](transformation/bufferwhen.md)
-  - [concatMap](transformation/concatmap.md) :star:
+  - [concatMap](transformation/concatmap.md) ⭐
   - [concatMapTo](transformation/concatmapto.md)
   - [expand](transformation/expand.md)
   - [exhaustMap](transformation/exhaustmap.md)
   - [groupBy](transformation/groupby.md)
-  - [map](transformation/map.md) :star:
+  - [map](transformation/map.md) ⭐
   - [mapTo](transformation/mapto.md)
-  - [mergeMap / flatMap](transformation/mergemap.md) :star:
+  - [mergeMap / flatMap](transformation/mergemap.md) ⭐
   - [mergeScan](transformation/mergescan.md)
   - [partition](transformation/partition.md)
   - [pluck](transformation/pluck.md)
   - [reduce](transformation/reduce.md)
-  - [scan](transformation/scan.md) :star:
-  - [switchMap](transformation/switchmap.md) :star:
+  - [scan](transformation/scan.md) ⭐
+  - [switchMap](transformation/switchmap.md) ⭐
   - [switchMapTo](transformation/switchmapto.md)
   - [toArray](transformation/toarray.md)
   - [window](transformation/window.md)
@@ -100,7 +100,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [windowToggle](transformation/windowtoggle.md)
   - [windowWhen](transformation/windowwhen.md)
 - [Utility](utility/README.md)
-  - [tap / do](utility/do.md) :star:
+  - [tap / do](utility/do.md) ⭐
   - [delay](utility/delay.md)
   - [delayWhen](utility/delaywhen.md)
   - [dematerialize](utility/dematerialize.md)
@@ -113,11 +113,11 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [timeoutWith](utility/timeoutwith.md)
   - [toPromise](utility/topromise.md)
 
-:star: - _commonly used_
+⭐ - _commonly used_
 
 ### Additional Resources
 
 - [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators)
   :newspaper: - Official Docs
 - [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are)
-  :video_camera: :dollar: - André Staltz
+  🎥 💵 - André Staltz
