@@ -36,7 +36,7 @@ const subscribe = source.subscribe({
 ### Additional Resources
 
 - [throw](https://rxjs.dev/api/index/function/throw)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 

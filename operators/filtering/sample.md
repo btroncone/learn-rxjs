@@ -80,7 +80,7 @@ const listener = merge(
 ### Additional Resources
 
 - [sample](https://rxjs.dev/api/operators/sample)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

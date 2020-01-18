@@ -58,7 +58,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [fromEvent](https://rxjs.dev/api/index/function/fromEvent)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

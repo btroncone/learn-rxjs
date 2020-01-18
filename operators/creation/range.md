@@ -28,7 +28,7 @@ const example = source.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [range](https://rxjs.dev/api/index/function/range)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

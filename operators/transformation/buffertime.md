@@ -54,7 +54,7 @@ const subscribe = example.subscribe(val =>
 ### Additional Resources
 
 * [bufferTime](https://rxjs.dev/api/operators/bufferTime)
-  :newspaper: - Official docs
+  📰 - Official docs
 * [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 
 ---

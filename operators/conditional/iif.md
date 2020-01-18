@@ -84,7 +84,7 @@ interval(1000)
 
 ### Additional Resources
 
-- [iif](https://rxjs.dev/api/operators/iif) :newspaper: -
+- [iif](https://rxjs.dev/api/operators/iif) 📰 -
   Official docs
 
 ---

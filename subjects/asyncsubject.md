@@ -31,7 +31,7 @@ sub.complete(); //456, 456 logged by both subscribers
 ### Additional Resources
 
 - [AsyncSubject](https://rxjs-dev.firebaseapp.com/api/index/class/AsyncSubject)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

@@ -31,7 +31,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [skipUntil](https://rxjs.dev/api/operators/skipUntil)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

@@ -37,7 +37,7 @@ fromEvent(document, 'mousedown')
 ### Additional Resources
 
 - [timeInterval](https://rxjs.dev/api/operators/timeInterval)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

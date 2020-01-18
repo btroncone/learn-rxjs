@@ -93,7 +93,7 @@ concat(interval(1000), of('This', 'Never', 'Runs'))
 
 ### Additional Resources
 
-- [concat](https://rxjs.dev/api/index/function/concat) :newspaper: - Official
+- [concat](https://rxjs.dev/api/index/function/concat) 📰 - Official
   docs
 - [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz

@@ -145,7 +145,7 @@ timer(0, 5000)
 ### Additional Resources
 
 - [switchMap](https://rxjs.dev/api/operators/switchMap)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Avoiding switchMap-Related Bugs](https://blog.angularindepth.com/switchmap-bugs-b6de69155524) -
   Nicholas Jamieson
 - [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs)

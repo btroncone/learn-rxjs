@@ -105,7 +105,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [startWith](https://rxjs.dev/api/operators/startWith)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Clear data while loading with startWith](https://egghead.io/lessons/rxjs-reactive-programming-clear-data-while-loading-with-rxjs-startwith?course=introduction-to-reactive-programming)

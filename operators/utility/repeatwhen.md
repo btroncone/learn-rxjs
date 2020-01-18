@@ -45,7 +45,7 @@ hey!
 ### Additional Resources
 
 - [repeatWhen](https://rxjs.dev/api/operators/repeatWhen)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

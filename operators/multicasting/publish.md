@@ -55,7 +55,7 @@ setTimeout(() => {
 ### Additional Resources
 
 - [publish](https://rxjs.dev/api/operators/publish)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 > :file_folder: Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/publish.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/publish.ts)

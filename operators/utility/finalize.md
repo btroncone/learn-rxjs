@@ -37,7 +37,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 * [finalize](https://rxjs.dev/api/operators/finalize)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

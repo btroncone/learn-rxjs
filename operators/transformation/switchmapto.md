@@ -54,7 +54,7 @@ click$
 ### Additional Resources
 
 - [switchMapTo](https://rxjs.dev/api/operators/switchMapTo)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

@@ -45,7 +45,7 @@ clicks$
 
 ### Additional Resources
 
-- [find](https://rxjs.dev/api/operators/find) :newspaper: - Official docs
+- [find](https://rxjs.dev/api/operators/find) 📰 - Official docs
 
 ---
 

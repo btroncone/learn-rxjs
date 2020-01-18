@@ -102,7 +102,7 @@ const subscribe = source.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [from](https://rxjs.dev/api/index/function/from)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 

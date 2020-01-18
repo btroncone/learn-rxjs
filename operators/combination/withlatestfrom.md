@@ -89,7 +89,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [withLatestFrom](https://rxjs.dev/api/operators/withLatestFrom)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Combination operator: withLatestFrom](https://egghead.io/lessons/rxjs-combination-operator-withlatestfrom?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

@@ -31,7 +31,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [single](https://rxjs.dev/api/operators/single)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

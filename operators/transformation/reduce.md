@@ -35,7 +35,7 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 ### Additional Resources
 
 - [reduce](https://rxjs.dev/api/operators/reduce)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
   🎥 - Academind
 - [Build your own reduce operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=reduce#app)

@@ -56,7 +56,7 @@ const subscribe = example.subscribe(val => console.log(`RESULT: ${val}`));
 ### Additional Resources
 
 - [expand](https://rxjs.dev/api/operators/expand)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

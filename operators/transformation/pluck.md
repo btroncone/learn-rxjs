@@ -64,7 +64,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [pluck](https://rxjs.dev/api/operators/pluck)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

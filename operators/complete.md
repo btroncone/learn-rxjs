@@ -107,6 +107,6 @@ _[Prefer a split by operator type?](README.md)_
 ### Additional Resources
 
 - [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators)
-  :newspaper: - Official Docs
+  📰 - Official Docs
 - [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are)
   🎥 💵 - André Staltz

@@ -54,7 +54,7 @@ const subscribeTwo = example
 ### Additional Resources
 
 - [windowWhen](https://rxjs.dev/api/operators/windowWhen)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

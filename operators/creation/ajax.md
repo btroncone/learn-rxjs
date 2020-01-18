@@ -159,7 +159,7 @@ const subscribe = users.subscribe(
 
 ### Additional Resources
 
-- [ajax](https://rxjs.dev/api/ajax/ajax) :newspaper: - Official docs
+- [ajax](https://rxjs.dev/api/ajax/ajax) 📰 - Official docs
 
 ---
 

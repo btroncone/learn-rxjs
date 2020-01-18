@@ -67,7 +67,7 @@ const subscribeFour = sharedExample.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [share](https://rxjs.dev/api/operators/share)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 

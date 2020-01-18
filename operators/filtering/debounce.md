@@ -70,7 +70,7 @@ const subscribe = debouncedInterval.subscribe(val =>
 ### Additional Resources
 
 - [debounce](https://rxjs.dev/api/operators/debounce)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

@@ -65,7 +65,7 @@ fromEvent(document, 'keydown')
 ### Additional Resources
 
 - [sequenceEqual](https://rxjs.dev/api/operators/sequenceEqual)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

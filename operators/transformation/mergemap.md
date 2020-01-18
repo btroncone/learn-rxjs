@@ -214,7 +214,7 @@ source$
 
 ### Additional Resources
 
-- [mergeMap](https://rxjs.dev/api/operators/mergeMap) :newspaper: - Official
+- [mergeMap](https://rxjs.dev/api/operators/mergeMap) 📰 - Official
   docs
 - [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
   🎥 💵 - Ben Lesh

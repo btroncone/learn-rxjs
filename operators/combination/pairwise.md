@@ -32,7 +32,7 @@ interval(1000)
 ### Additional Resources
 
 - [pairwise](https://rxjs.dev/api/operators/pairwise)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

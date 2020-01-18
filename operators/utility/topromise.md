@@ -58,7 +58,7 @@ example().then(val => {
 ### Additional Resources
 
 - [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md)
-  :newspaper: - Official Docs
+  📰 - Official Docs
 
 ---
 

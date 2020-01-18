@@ -52,7 +52,7 @@ const subscribeTwo = example
 ### Additional Resources
 
 - [windowCount](https://rxjs.dev/api/operators/windowCount)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

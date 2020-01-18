@@ -36,7 +36,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

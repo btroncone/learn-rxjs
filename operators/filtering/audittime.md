@@ -35,7 +35,7 @@ const subscribe = example.subscribe(val => console.log('Clicked'));
 ### Additional Resources
 
 * [auditTime](https://rxjs.dev/api/operators/auditTime)
-  :newspaper: - Official docs
+  📰 - Official docs
 * [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 
 ---

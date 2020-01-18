@@ -58,7 +58,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [mapTo](https://rxjs.dev/api/operators/mapTo)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)

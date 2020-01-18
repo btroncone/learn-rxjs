@@ -100,7 +100,7 @@ fromEvent(document, 'keydown')
 ### Additional Resources
 
 - [bufferCount](https://rxjs.dev/api/operators/bufferCount)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

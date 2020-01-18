@@ -42,7 +42,7 @@ of(timeoutThreshold + 1, timeoutThreshold - 1, timeoutThreshold + 3)
 ### Additional Resources
 
 - [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith)
-  :newspaper: - Official Docs
+  📰 - Official Docs
 
 ---
 

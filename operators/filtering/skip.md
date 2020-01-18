@@ -68,7 +68,7 @@ const filterObs = numArrayObs
 ### Additional Resources
 
 - [skip](https://rxjs.dev/api/operators/skip)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

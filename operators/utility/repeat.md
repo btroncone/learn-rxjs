@@ -43,7 +43,7 @@ delayedThing
 ### Additional Resources
 
 - [repeat](https://rxjs.dev/api/operators/repeat)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

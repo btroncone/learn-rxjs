@@ -47,7 +47,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [defaultIfEmpty](https://rxjs.dev/api/operators/defaultIfEmpty)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

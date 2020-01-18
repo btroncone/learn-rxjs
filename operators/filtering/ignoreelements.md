@@ -70,7 +70,7 @@ const subscribe = error.subscribe(
 ### Additional Resources
 
 - [ignoreElements](https://rxjs.dev/api/operators/ignoreElements)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

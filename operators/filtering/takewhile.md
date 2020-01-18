@@ -103,7 +103,7 @@ source$
 ### Additional Resources
 
 - [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 

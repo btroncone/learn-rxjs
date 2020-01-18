@@ -58,7 +58,7 @@ setTimeout(() => {
 ### Additional Resources
 
 - [defer](https://rxjs.dev/api/index/function/defer)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

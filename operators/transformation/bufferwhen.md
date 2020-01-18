@@ -38,7 +38,7 @@ const subscribe = bufferWhenExample.subscribe(val =>
 ### Additional Resources
 
 - [bufferWhen](https://rxjs.dev/api/operators/bufferWhen)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

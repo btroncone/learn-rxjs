@@ -169,7 +169,7 @@ const lateSubscriber = lastUrl.subscribe(console.log);
 ### Additional Resources
 
 - [shareReplay](https://rxjs.dev/api/operators/shareReplay)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

@@ -68,7 +68,7 @@ OUTPUT:
 ### Additional Resources
 
 - [generate](https://rxjs.dev/api/index/function/generate)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

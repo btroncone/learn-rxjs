@@ -118,7 +118,7 @@ const subscribe = merge(
 ### Additional Resources
 
 - [partition](https://rxjs.dev/api/operators/partition)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

@@ -48,7 +48,7 @@ keyup$
 
 ### Additional Resources
 
-- [debounceTime](https://rxjs.dev/api/operators/debounceTime) :newspaper: -
+- [debounceTime](https://rxjs.dev/api/operators/debounceTime) 📰 -
   Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz

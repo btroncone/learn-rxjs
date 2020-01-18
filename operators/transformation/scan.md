@@ -135,7 +135,7 @@ interval(1000)
 ### Additional Resources
 
 - [scan](https://rxjs.dev/api/operators/scan)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
   🎥 - Ben Lesh
 - [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs)

@@ -99,7 +99,7 @@ merge(click$, interval$).subscribe();
 ### Additional Resources
 
 - [BehaviorSubject](https://rxjs-dev.firebaseapp.com/api/index/class/BehaviorSubject)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

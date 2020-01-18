@@ -243,7 +243,7 @@ export class App {
 
 ### Additional Resources
 
-- [forkJoin](https://rxjs.dev/api/index/function/forkJoin) :newspaper: -
+- [forkJoin](https://rxjs.dev/api/index/function/forkJoin) 📰 -
   Official docs
 
 ---

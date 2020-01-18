@@ -109,7 +109,7 @@ mouseClickDuration.subscribe(console.log);
 ### Additional Resources
 
 - [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

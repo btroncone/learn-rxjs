@@ -16,8 +16,8 @@ subscribers.
 ### Additional Resources
 
 - [Hot vs Cold Observables](https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339#.8x9uam5rg)
-  :newspaper: - Ben Lesh
+  📰 - Ben Lesh
 - [Unicast v Multicast](https://github.com/zenparsing/es-observable/issues/66)
-  :newspaper: - GitHub Discussion
+  📰 - GitHub Discussion
 - [Demystifying Hot and Cold Observables](https://egghead.io/lessons/rxjs-demystifying-cold-and-hot-observables-in-rxjs)
   🎥 - André Staltz

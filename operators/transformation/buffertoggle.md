@@ -62,7 +62,7 @@ fromEvent(document, 'mousemove')
 ### Additional Resources
 
 - [bufferToggle](https://rxjs.dev/api/operators/bufferToggle)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

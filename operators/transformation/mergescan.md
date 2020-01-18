@@ -44,7 +44,7 @@ mouseDown$
 ### Additional Resources
 
 - [pluck](https://rxjs-dev.firebaseapp.com/api/operators/mergeScan)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

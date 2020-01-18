@@ -50,7 +50,7 @@ const subscribeTwo = example
 ### Additional Resources
 
 - [windowTime](https://rxjs.dev/api/operators/windowTime)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

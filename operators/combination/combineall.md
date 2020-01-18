@@ -57,7 +57,7 @@ example$
 
 ### Additional Resources
 
-- [combineAll](https://rxjs.dev/api/operators/combineAll) :newspaper: - Official
+- [combineAll](https://rxjs.dev/api/operators/combineAll) 📰 - Official
   docs
 
 ---

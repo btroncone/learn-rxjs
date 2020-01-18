@@ -57,7 +57,7 @@ keys$.subscribe(console.log);
 ### Additional Resources
 
 - [distinctUntilKeyChanged](https://rxjs.dev/api/operators/distinctUntilKeyChanged)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

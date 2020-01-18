@@ -60,7 +60,7 @@ const subscribe = example.subscribe({
 ### Additional Resources
 
 - [retry](https://rxjs.dev/api/operators/retry)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

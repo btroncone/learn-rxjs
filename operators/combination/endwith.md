@@ -87,7 +87,7 @@ source$
 
 ### Additional Resources
 
-- [endWith](https://rxjs.dev/api/operators/endWith) :newspaper: - Official docs
+- [endWith](https://rxjs.dev/api/operators/endWith) 📰 - Official docs
 
 ---
 

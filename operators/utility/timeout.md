@@ -45,7 +45,7 @@ of(4000, 3000, 2000)
 ### Additional Resources
 
 - [timeout](https://rxjs.dev/api/operators/timeout)
-  :newspaper: - Official Docs
+  📰 - Official Docs
 
 ---
 

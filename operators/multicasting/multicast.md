@@ -83,7 +83,7 @@ setTimeout(() => {
 ### Additional Resources
 
 - [multicast](https://rxjs.dev/api/operators/multicast)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

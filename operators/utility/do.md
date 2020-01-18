@@ -94,7 +94,7 @@ const example = source
 
 ### Additional Resources
 
-- [tap](https://rxjs.dev/api/operators/tap) :newspaper: - Official docs
+- [tap](https://rxjs.dev/api/operators/tap) 📰 - Official docs
 - [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)

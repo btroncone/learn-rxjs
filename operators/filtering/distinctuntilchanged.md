@@ -96,7 +96,7 @@ source$
 ### Additional Resources
 
 - [distinctUntilChanged](https://rxjs.dev/api/operators/distinctUntilChanged)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Filtering operator: distinct and distinctUntilChanged](https://egghead.io/lessons/rxjs-filtering-operators-distinct-and-distinctuntilchanged?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

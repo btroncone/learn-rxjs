@@ -54,7 +54,7 @@ OUTPUT:
 
 ### Additional Resources
 
-- [distinct](https://rxjs.dev/api/operators/distinct) :newspaper: - Official
+- [distinct](https://rxjs.dev/api/operators/distinct) 📰 - Official
   docs
 
 ---

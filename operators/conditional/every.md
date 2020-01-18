@@ -87,7 +87,7 @@ apiCalls$.subscribe();
 ### Additional Resources
 
 - [every](https://rxjs.dev/api/operators/every)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

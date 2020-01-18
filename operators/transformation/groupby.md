@@ -79,7 +79,7 @@ from(people)
 ### Additional Resources
 
 - [groupBy](https://rxjs.dev/api/operators/groupBy)
-  :newspaper: - Official docs
+  📰 - Official docs
 - [Group higher order observables with RxJS groupBy](https://egghead.io/lessons/rxjs-group-higher-order-observables-with-rxjs-groupby?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 - [Use groupBy in real RxJS applications](https://egghead.io/lessons/rxjs-use-groupby-in-real-rxjs-applications?course=use-higher-order-observables-in-rxjs-effectively)

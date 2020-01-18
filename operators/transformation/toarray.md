@@ -37,7 +37,7 @@ interval(100)
 ### Additional Resources
 
 - [toArray](https://rxjs.dev/api/operators/toArray)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

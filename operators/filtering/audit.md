@@ -9,7 +9,7 @@
 ### Additional Resources
 
 * [audit](https://rxjs.dev/api/operators/audit)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 

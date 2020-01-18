@@ -73,7 +73,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [concatMapTo](https://rxjs.dev/api/operators/concatMapTo)
-  :newspaper: - Official docs
+  📰 - Official docs
 
 ---
 
