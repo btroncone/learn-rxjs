@@ -41,35 +41,35 @@ our [RxJS Primer](learn-rxjs/concepts/rxjs-primer.md)!
 
 Operators are the horse-power behind observables, providing an elegant,
 declarative solution to complex asynchronous tasks. This section contains all
-[RxJS operators](learn-rxjs/operators/), included with clear, executable
+[RxJS operators](/operators/README.md), included with clear, executable
 examples. Links to additional resources and recipes for each operator are also
 provided, when applicable.
 
-**Operator Categories**
+##### Operator Categories
 
-- [Combination](learn-rxjs/operators/combination/)
-- [Conditional](learn-rxjs/operators/conditional/)
-- [Creation](learn-rxjs/operators/creation/)
-- [Error Handling](learn-rxjs/operators/error_handling/)
-- [Multicasting](learn-rxjs/operators/multicasting/)
-- [Filtering](learn-rxjs/operators/filtering/)
-- [Transformation](learn-rxjs/operators/transformation/)
-- [Utility](learn-rxjs/operators/utility/)
+- [Combination](/operators/combination/README.md)
+- [Conditional](/operators/conditional/README.md)
+- [Creation](/operators/creation/README.md)
+- [Error Handling](/operators/error_handling/README.md)
+- [Multicasting](/operators/multicasting/README.md)
+- [Filtering](/operators/filtering/README.md)
+- [Transformation](/operators/transformation/README.md)
+- [Utility](/operators/utility/README.md)
 
 **OR...**
 
-[Complete listing in alphabetical order](learn-rxjs/operators/complete.md)
+[Complete listing in alphabetical order](/operators/complete.md)
 
 #### Understanding Subjects
 
 A Subject is a special type of Observable which shares a single execution path
 among observers.
 
-- [Overview](learn-rxjs/subjects/)
-- [AsyncSubject](learn-rxjs/subjects/asyncsubject.md)
-- [BehaviorSubject](learn-rxjs/subjects/behaviorsubject.md)
-- [ReplaySubject](learn-rxjs/subjects/replaysubject.md)
-- [Subject](learn-rxjs/subjects/subject.md)
+- [Overview](/subjects/README.md)
+- [AsyncSubject](/subjects/asyncsubject.md)
+- [BehaviorSubject](/subjects/behaviorsubject.md)
+- [ReplaySubject](/subjects/replaysubject.md)
+- [Subject](/subjects/subject.md)
 
 #### Concepts
 
@@ -78,40 +78,40 @@ easy for much of RxJS to feel like 'magic'. This section helps solidify the
 major concepts needed to feel comfortable with reactive programming and
 Observables.
 
-- [RxJS Primer](learn-rxjs/concepts/rxjs-primer.md)
-- [RxJS v5 -&gt; v6 Upgrade](learn-rxjs/concepts/rxjs5-6.md)
-- [Time based operators comparison](learn-rxjs/concepts/time-based-operators-comparison.md)
-- [Understanding Operator Imports](learn-rxjs/concepts/operator-imports.md)
+- [RxJS Primer](/concepts/rxjs-primer.md)
+- [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
+- [Time based operators comparison](/concepts/time-based-operators-comparison.md)
+- [Understanding Operator Imports](/concepts/operator-imports.md)
 
 #### Recipes
 
 Recipes for common use-cases and interesting solutions with RxJS.
 
-- [Alphabet Invasion Game](learn-rxjs/recipes/alphabet-invasion-game.md)
-- [Battleship Game](learn-rxjs/recipes/battleship-game.md)
-- [Breakout Game](learn-rxjs/recipes/breakout-game.md)
-- [Car Racing Game](learn-rxjs/recipes/car-racing-game.md)
-- [Catch The Dot Game](learn-rxjs/recipes/catch-the-dot-game.md)
-- [Click Ninja Game](learn-rxjs/recipes/click-ninja-game.md)
-- [Flappy Bird Game](learn-rxjs/recipes/flappy-bird-game.md)
-- [Game Loop](learn-rxjs/recipes/gameloop.md)
-- [Horizontal Scroll Indicator](learn-rxjs/recipes/horizontal-scroll-indicator.md)
-- [HTTP Polling](learn-rxjs/recipes/http-polling.md)
-- [Lockscreen](learn-rxjs/recipes/lockscreen.md)
-- [Matrix Digital Rain](learn-rxjs/recipes/matrix-digital-rain.md)
-- [Memory Game](learn-rxjs/recipes/memory-game.md)
-- [Mine Sweeper Game](learn-rxjs/recipes/mine-sweeper-game.md)
-- [Platform Jumper Game](learn-rxjs/recipes/platform-jumper-game.md)
-- [Progress Bar](learn-rxjs/recipes/progressbar.md)
-- [Save Indicator](learn-rxjs/recipes/save-indicator.md)
-- [Smart Counter](learn-rxjs/recipes/smartcounter.md)
-- [Stop Watch](learn-rxjs/recipes/stop-watch.md)
-- [Space Invaders Game](learn-rxjs/recipes/space-invaders-game.md)
-- [Swipe To Refresh](learn-rxjs/recipes/swipe-to-refresh.md)
-- [Tank Battle Game](learn-rxjs/recipes/tank-battle-game.md)
-- [Tetris Game](learn-rxjs/recipes/tetris-game.md)
-- [Type Ahead](learn-rxjs/recipes/type-ahead.md)
-- [Uncover Image Game](learn-rxjs/recipes/uncover-image-game.md)
+- [Alphabet Invasion Game](/recipes/alphabet-invasion-game.md)
+- [Battleship Game](/recipes/battleship-game.md)
+- [Breakout Game](/recipes/breakout-game.md)
+- [Car Racing Game](/recipes/car-racing-game.md)
+- [Catch The Dot Game](/recipes/catch-the-dot-game.md)
+- [Click Ninja Game](/recipes/click-ninja-game.md)
+- [Flappy Bird Game](/recipes/flappy-bird-game.md)
+- [Game Loop](/recipes/gameloop.md)
+- [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
+- [HTTP Polling](/recipes/http-polling.md)
+- [Lockscreen](/recipes/lockscreen.md)
+- [Matrix Digital Rain](/recipes/matrix-digital-rain.md)
+- [Memory Game](/recipes/memory-game.md)
+- [Mine Sweeper Game](/recipes/mine-sweeper-game.md)
+- [Platform Jumper Game](/recipes/platform-jumper-game.md)
+- [Progress Bar](/recipes/progressbar.md)
+- [Save Indicator](/recipes/save-indicator.md)
+- [Smart Counter](/recipes/smartcounter.md)
+- [Stop Watch](/recipes/stop-watch.md)
+- [Space Invaders Game](/recipes/space-invaders-game.md)
+- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
+- [Tank Battle Game](/recipes/tank-battle-game.md)
+- [Tetris Game](/recipes/tetris-game.md)
+- [Type Ahead](/recipes/type-ahead.md)
+- [Uncover Image Game](/recipes/uncover-image-game.md)
 
 ## Introductory Resources
 
