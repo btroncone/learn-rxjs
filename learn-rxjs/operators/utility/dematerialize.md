@@ -4,18 +4,15 @@
 
 ## Turn notification objects into notification values.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX)
 
 ### Examples
 
-##### Example 1: Converting notifications to values
+**Example 1: Converting notifications to values**
 
-(
-[StackBlitz](https://stackblitz.com/edit/typescript-bxdwbg?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/jw08mouy/) )
+\( [StackBlitz](https://stackblitz.com/edit/typescript-bxdwbg?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/jw08mouy/) \)
 
-```js
+```javascript
 // RxJS v6+
 import { from, Notification } from 'rxjs';
 import { dematerialize } from 'rxjs/operators';
@@ -38,10 +35,9 @@ const subscription = source.subscribe({
 
 ### Additional Resources
 
-- [dematerialize](https://rxjs.dev/api/operators/dematerialize)
+* [dematerialize](https://rxjs.dev/api/operators/dematerialize)
+
   :newspaper: - Official docs
 
----
+> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/dematerialize.ts)
 
-> :file_folder: Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/dematerialize.ts)

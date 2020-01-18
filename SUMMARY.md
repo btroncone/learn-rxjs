@@ -101,7 +101,7 @@
     * [tap / do](operators/utility/do.md)
     * [delay](operators/utility/delay.md)
     * [delayWhen](operators/utility/delaywhen.md)
-    * [dematerialize](operators/utility/dematerialize.md)
+    * [dematerialize](learn-rxjs/operators/utility/dematerialize.md)
     * [finalize / finally](operators/utility/finalize.md)
     * [let](operators/utility/let.md)
     * [repeat](operators/utility/repeat.md)
