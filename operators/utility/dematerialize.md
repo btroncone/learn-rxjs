@@ -4,7 +4,11 @@
 
 ## Turn notification objects into notification values.
 
-[<img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" alt="Ultimate RxJS" style="max-width: 100%">](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![UltimateRxJS][uc-image]][uc-url]
+
+[uc-image]:
+  https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX
+[uc-url]: https://ultimatecourses.com/courses/rxjs?ref=4
 
 ### Examples
 
