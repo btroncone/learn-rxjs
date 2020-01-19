@@ -62,5 +62,5 @@ setTimeout(() => {
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts)

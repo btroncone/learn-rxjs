@@ -58,5 +58,5 @@ const subscribeTwo = example
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowWhen.ts)

@@ -49,5 +49,5 @@ hey!
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts](https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts)

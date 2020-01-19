@@ -62,5 +62,5 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/fromEvent.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/fromEvent.ts)

@@ -122,5 +122,5 @@ const subscribe = merge(
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts)

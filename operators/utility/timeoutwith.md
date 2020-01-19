@@ -46,5 +46,5 @@ of(timeoutThreshold + 1, timeoutThreshold - 1, timeoutThreshold + 3)
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts)

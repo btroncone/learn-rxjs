@@ -41,5 +41,5 @@ sub.next(3); // OUTPUT => Subscriber A 3, Subscriber B 3 (logged from both subsc
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts)

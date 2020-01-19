@@ -121,5 +121,5 @@ const subscribe = obsArrayPlusYourOperators(addTenThenTwenty)
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/let.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/let.ts)

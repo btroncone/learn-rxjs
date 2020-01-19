@@ -58,5 +58,5 @@ keyup$
 
 ---
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounceTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounceTime.ts)

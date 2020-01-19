@@ -41,5 +41,5 @@ const subscription = source.subscribe({
 - [dematerialize](https://rxjs.dev/api/operators/dematerialize) 📰 - Official
   docs
 
-> :file_folder: Source Code:
+> 📁 Source Code:
 > [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/dematerialize.ts)
