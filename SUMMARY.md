@@ -143,6 +143,6 @@
   - [Uncover Image Game](recipes/uncover-image-game.md)
 - [Concepts](concepts/README.md)
   - [RxJS Primer](concepts/rxjs-primer.md)
-  - [RxJS v5 -&gt; v6 Upgrade](concepts/rxjs5-6.md)
+  - [Get started transforming streams with map, pluck, and mapTo](concepts/get-started-transforming.md)
   - [Time based operators comparison](concepts/time-based-operators-comparison.md)
-  - [Understanding Operator Imports](concepts/operator-imports.md)
+  - [RxJS v5 -&gt; v6 Upgrade](concepts/rxjs5-6.md)
