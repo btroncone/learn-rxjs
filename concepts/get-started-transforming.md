@@ -86,6 +86,15 @@ While the
 of `Array.map` includes features like index tracking and proper error
 management, this gives us a general sense of how things work behind the scenes.
 
+{% hint style="info" %}
+
+RxJS also offers Observable variants of other popular array methods, like
+[`filter`](../operators/filtering/filter.md),
+[`reduce`](../operators/transformation/reduce.md), and
+[`find`](../operators/filtering/find.md)!
+
+{% endhint %}
+
 So what are some other common scenarios where we could put the `map` method to
 use? Using `Array.map`, we may also want to transform objects. For instance,
 suppose we have an array of objects with a first and last name property and we
