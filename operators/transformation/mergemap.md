@@ -209,7 +209,7 @@ source$
 
 - [Breakout Game](../../recipes/breakout-game.md)
 - [HTTP Polling](../../recipes/http-polling.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 
 ### Additional Resources
