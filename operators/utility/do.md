@@ -105,4 +105,4 @@ const example = source
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/do.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/do.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/tap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/tap.ts)
