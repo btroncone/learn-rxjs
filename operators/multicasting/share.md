@@ -10,7 +10,7 @@
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -62,12 +62,11 @@ const subscribeFour = sharedExample.subscribe(val => console.log(val));
 
 - [Progress Bar](../../recipes/progressbar.md)
 - [Game Loop](../../recipes/gameloop.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 
 ### Additional Resources
 
-- [share](https://rxjs.dev/api/operators/share)
-  📰 - Official docs
+- [share](https://rxjs.dev/api/operators/share) 📰 - Official docs
 - [Sharing streams with share](https://egghead.io/lessons/rxjs-sharing-streams-with-share?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 

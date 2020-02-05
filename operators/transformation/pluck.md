@@ -2,9 +2,16 @@
 
 #### signature: `pluck(properties: ...args): Observable`
 
-## Select properties to emit.
+## Select property to emit.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+{% hint style="info" %}
+
+New to transformation operators? Check out the article
+[Get started transforming streams with map, pluck, and mapTo](../../concepts/get-started-transforming.md)!
+
+{% endhint %}
+
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -20,7 +27,10 @@
 import { from } from 'rxjs';
 import { pluck } from 'rxjs/operators';
 
-const source = from([{ name: 'Joe', age: 30 }, { name: 'Sarah', age: 35 }]);
+const source = from([
+  { name: 'Joe', age: 30 },
+  { name: 'Sarah', age: 35 }
+]);
 //grab names
 const example = source.pipe(pluck('name'));
 //output: "Joe", "Sarah"
@@ -63,8 +73,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [pluck](https://rxjs.dev/api/operators/pluck)
-  📰 - Official docs
+- [pluck](https://rxjs.dev/api/operators/pluck) 📰 - Official docs
 
 ---
 

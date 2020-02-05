@@ -6,12 +6,12 @@
 
 ---
 
-💡 If you would like to complete an observable when a condition fails, check
-out [takeWhile](takewhile.md)!
+💡 If you would like to complete an observable when a condition fails, check out
+[takeWhile](takewhile.md)!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -48,7 +48,10 @@ import { from } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
 //emit ({name: 'Joe', age: 31}, {name: 'Bob', age:25})
-const source = from([{ name: 'Joe', age: 31 }, { name: 'Bob', age: 25 }]);
+const source = from([
+  { name: 'Joe', age: 31 },
+  { name: 'Bob', age: 25 }
+]);
 //filter out people with age under 30
 const example = source.pipe(filter(person => person.age >= 30));
 //output: "Over 30: Joe"
@@ -89,12 +92,11 @@ const subscribe = example.subscribe(val =>
 - [Game Loop](../../recipes/gameloop.md)
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 
 ### Additional Resources
 
-- [filter](https://rxjs.dev/api/operators/filter)
-  📰 - Official docs
+- [filter](https://rxjs.dev/api/operators/filter) 📰 - Official docs
 - [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)

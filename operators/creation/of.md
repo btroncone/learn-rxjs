@@ -47,15 +47,14 @@ const subscribe = source.subscribe(val => console.log(val));
 - [Car Racing Game](../../recipes/car-racing-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 - [Tetris Game](../../recipes/tetris-game.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 
-- [of](https://rxjs.dev/api/index/function/of)
-  📰 - Official docs
+- [of](https://rxjs.dev/api/index/function/of) 📰 - Official docs
 - [Creation operators: of](https://egghead.io/lessons/rxjs-creation-operator-of?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 - [Build your own of operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=of#app)

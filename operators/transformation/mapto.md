@@ -4,7 +4,14 @@
 
 ## Map emissions to constant value.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+{% hint style="info" %}
+
+New to transformation operators? Check out the article
+[Get started transforming streams with map, pluck, and mapTo](../../concepts/get-started-transforming.md)!
+
+{% endhint %}
+
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -51,14 +58,13 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Related Recipes
 
 - [HTTP Polling](../../recipes/http-polling.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Stop Watch](../../recipes/stop-watch.md)
 
 ### Additional Resources
 
-- [mapTo](https://rxjs.dev/api/operators/mapTo)
-  📰 - Official docs
+- [mapTo](https://rxjs.dev/api/operators/mapTo) 📰 - Official docs
 - [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)

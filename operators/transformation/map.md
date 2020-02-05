@@ -4,7 +4,14 @@
 
 ## Apply projection with each value from source.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+{% hint style="info" %}
+
+New to transformation operators? Check out the article
+[Get started transforming streams with map, pluck, and mapTo](../../concepts/get-started-transforming.md)!
+
+{% endhint %}
+
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -62,7 +69,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Lockscreen](../../recipes/lockscreen.md)
 - [Memory Game](../../recipes/memory-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Stop Watch](../../recipes/stop-watch.md)
@@ -72,10 +79,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [map](https://rxjs.dev/api/operators/map)
-  📰 - Official docs
-- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
-  🎥 - Ben Lesh
+- [map](https://rxjs.dev/api/operators/map) 📰 - Official docs
+- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) 🎥 - Ben
+  Lesh
 - [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
