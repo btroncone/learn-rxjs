@@ -4,12 +4,12 @@ Transforming values as they pass through the operator chain is a common task.
 These operators provide transformation techniques for nearly any use-case you
 will encounter.
 
----
+{% hint style="info" %}
 
-💡 New to transformation operators? Check out the article
+New to transformation operators? Check out the article
 [Get started transforming streams with map, pluck, and mapTo](../../concepts/get-started-transforming.md)!
 
----
+{% endhint %}
 
 ## Contents
 

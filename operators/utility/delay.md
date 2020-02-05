@@ -4,7 +4,7 @@
 
 ## Delay emitted values by given time.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -20,14 +20,7 @@ const mousedown$ = fromEvent(document, 'mousedown');
 const mouseup$ = fromEvent(document, 'mouseup');
 
 mousedown$
-  .pipe(
-    mergeMap(event =>
-      of(event).pipe(
-        delay(700),
-        takeUntil(mouseup$)
-      )
-    )
-  )
+  .pipe(mergeMap(event => of(event).pipe(delay(700), takeUntil(mouseup$))))
   .subscribe(event => console.log('Long Press!', event));
 ```
 
@@ -47,18 +40,9 @@ const example = of(null);
 //delay output of each by an extra second
 const message = merge(
   example.pipe(mapTo('Hello')),
-  example.pipe(
-    mapTo('World!'),
-    delay(1000)
-  ),
-  example.pipe(
-    mapTo('Goodbye'),
-    delay(2000)
-  ),
-  example.pipe(
-    mapTo('World!'),
-    delay(3000)
-  )
+  example.pipe(mapTo('World!'), delay(1000)),
+  example.pipe(mapTo('Goodbye'), delay(2000)),
+  example.pipe(mapTo('World!'), delay(3000))
 );
 //output: 'Hello'...'World!'...'Goodbye'...'World!'
 const subscribe = message.subscribe(val => console.log(val));
@@ -68,7 +52,7 @@ const subscribe = message.subscribe(val => console.log(val));
 
 - [Battleship Game](../../recipes/battleship-game.md)
 - [Progress Bar](../../recipes/progressbar.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)
 
 ### Additional Resources

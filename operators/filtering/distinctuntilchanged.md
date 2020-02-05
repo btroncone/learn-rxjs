@@ -6,15 +6,15 @@
 
 ---
 
-💡 distinctUntilChanged uses `===` comparison by default, object references
-must match!
+💡 distinctUntilChanged uses `===` comparison by default, object references must
+match!
 
 💡 If you want to compare based on an object property, you can use
 [`distinctUntilKeyChanged`](distinctuntilkeychanged.md) instead!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -90,7 +90,7 @@ source$
 ### Related Recipes
 
 - [Lockscreen](../../recipes/lockscreen.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources

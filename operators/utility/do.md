@@ -10,7 +10,7 @@
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -83,7 +83,7 @@ const example = source
 - [Memory Game](../../recipes/memory-game.md)
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Space Invaders Game](/recipes/space-invaders-game.md)
 - [Stop Watch](../../recipes/stop-watch.md)
 - [Swipe To Refresh](/recipes/swipe-to-refresh.md)

@@ -6,12 +6,12 @@
 
 ---
 
-💡 This operator is popular in scenarios such as type-ahead where the rate
-of user input must be controlled!
+💡 This operator is popular in scenarios such as type-ahead where the rate of
+user input must be controlled!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -43,13 +43,12 @@ keyup$
 
 ### Related Recipes
 
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Type Ahead](../../recipes/type-ahead.md)
 
 ### Additional Resources
 
-- [debounceTime](https://rxjs.dev/api/operators/debounceTime) 📰 -
-  Official docs
+- [debounceTime](https://rxjs.dev/api/operators/debounceTime) 📰 - Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 - [Time based operators comparison](../../concepts/time-based-operators-comparison.md)

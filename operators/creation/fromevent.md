@@ -4,7 +4,7 @@
 
 ## Turn event into observable sequence.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -45,7 +45,7 @@ const subscribe = example.subscribe(val => console.log(val));
 - [Mine Sweeper Game](../../recipes/mine-sweeper-game.md)
 - [Platform Jumper Game](../../recipes/platform-jumper-game.md)
 - [Progress Bar](../../recipes/progressbar.md)
-- [Save Indicator]('../../recipes/save-indicator.md)
+- [Save Indicator](../../recipes/save-indicator.md)
 - [Smart Counter](../../recipes/smartcounter.md)
 - [Space Invaders Game](../../recipes/space-invaders-game.md)
 - [Stop Watch](../../recipes/stop-watch.md)
@@ -57,8 +57,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [fromEvent](https://rxjs.dev/api/index/function/fromEvent)
-  📰 - Official docs
+- [fromEvent](https://rxjs.dev/api/index/function/fromEvent) 📰 - Official docs
 
 ---
 
