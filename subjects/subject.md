@@ -2,7 +2,7 @@
 
 ## A special type of Observable which shares a single execution path among observers
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -20,11 +20,11 @@ const sub = new Subject();
 
 sub.next(1);
 sub.subscribe(x => {
-  console.log('Subscriber A', x)
+  console.log('Subscriber A', x);
 });
 sub.next(2); // OUTPUT => Subscriber A 2
 sub.subscribe(x => {
-  console.log('Subscriber B', x)
+  console.log('Subscriber B', x);
 });
 sub.next(3); // OUTPUT => Subscriber A 3, Subscriber B 3 (logged from both subscribers)
 ```
@@ -36,8 +36,8 @@ sub.next(3); // OUTPUT => Subscriber A 3, Subscriber B 3 (logged from both subsc
 
 ### Additional Resources
 
-- [Subject](https://rxjs-dev.firebaseapp.com/api/index/class/Subject)
-  📰 - Official docs
+- [Subject](https://rxjs-dev.firebaseapp.com/api/index/class/Subject) 📰 -
+  Official docs
 
 ---
 

@@ -4,14 +4,15 @@
 
 ## Emit first value then ignore for specified duration
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
 ##### Example 1: Emit first value, ignore for 5s window
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-en2zqe?file=index.ts&devtoolsheight=100) )
+[StackBlitz](https://stackblitz.com/edit/typescript-en2zqe?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -31,7 +32,8 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 2: Emit on trailing edge using config
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-5rwl6i?file=index.ts&devtoolsheight=100) )
+[StackBlitz](https://stackblitz.com/edit/typescript-5rwl6i?file=index.ts&devtoolsheight=100)
+)
 
 ```js
 // RxJS v6+
@@ -42,11 +44,9 @@ const source = interval(1000);
 /*
   emit the first value, then ignore for 5 seconds. repeat...
 */
-const example = source.pipe(throttleTime(
-  5000,
-  asyncScheduler,
-  { trailing: true }
-));
+const example = source.pipe(
+  throttleTime(5000, asyncScheduler, { trailing: true })
+);
 // output: 5...11...17
 const subscribe = example.subscribe(val => console.log(val));
 ```
@@ -58,8 +58,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [throttleTime](https://rxjs.dev/api/operators/throttleTime)
-  📰 - Official docs
+- [throttleTime](https://rxjs.dev/api/operators/throttleTime) 📰 - Official docs
 - [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 - [Time based operators comparison](../../concepts/time-based-operators-comparison.md)

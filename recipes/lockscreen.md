@@ -5,7 +5,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 This recipe demonstrates RxJS implementation of lockscreen functionality (known
 for example from smartphones).
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
@@ -183,15 +183,21 @@ export const resetPasswordPad = () => {
   }
 
   @keyframes pulse {
-    from { transform: scale(1); }
-    50% { transform: scale(0.99); }
-    to { transform: scale(1); }
+    from {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.99);
+    }
+    to {
+      transform: scale(1);
+    }
   }
 </style>
 
 Expected Password:
-<input id="expectedPassword" value="1252"/>
-<hr/>
+<input id="expectedPassword" value="1252" />
+<hr />
 Password:
 <div class="grid pulse">
   <div>

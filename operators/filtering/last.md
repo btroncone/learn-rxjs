@@ -10,7 +10,7 @@
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -75,8 +75,7 @@ const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [last](https://rxjs.dev/api/operators/last)
-  📰 - Official docs
+- [last](https://rxjs.dev/api/operators/last) 📰 - Official docs
 - [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

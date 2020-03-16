@@ -8,15 +8,13 @@
 
 💡 This operator can be used to convert a promise to an observable!
 
-💡 For arrays and iterables, all contained values will be emitted as a
-sequence!
+💡 For arrays and iterables, all contained values will be emitted as a sequence!
 
-💡 This operator can also be used to emit a string as a sequence of
-characters!
+💡 This operator can also be used to emit a string as a sequence of characters!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -101,8 +99,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [from](https://rxjs.dev/api/index/function/from)
-  📰 - Official docs
+- [from](https://rxjs.dev/api/index/function/from) 📰 - Official docs
 - [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 

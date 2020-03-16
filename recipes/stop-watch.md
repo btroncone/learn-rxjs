@@ -6,7 +6,7 @@ This recipe demonstrates RxJS implementation of Stop Watch, inspired by
 [RxJS Advanced Patterns – Operate Heavily Dynamic UI’s](https://www.youtube.com/watch?v=XKfhGntZROQ)
 talk by [@Michael_Hladky](https://twitter.com/michael_hladky)
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
@@ -30,35 +30,47 @@ interface State {
 }
 
 const getElem = (id: string): HTMLElement => document.getElementById(id);
-const getVal = (id: string): number => parseInt((getElem(id))['value']);
+const getVal = (id: string): number => parseInt(getElem(id)['value']);
 const fromClick = (id: string) => fromEvent(getElem(id), 'click');
-const fromClickAndMapTo = (id: string, obj: {}) => fromClick(id).pipe(mapTo(obj));
-const fromClickAndMap = (id: string, fn: (_) => {}) => fromClick(id).pipe(map(fn));
-const setValue = (val: number) => getElem('counter').innerText = val.toString()
+const fromClickAndMapTo = (id: string, obj: {}) =>
+  fromClick(id).pipe(mapTo(obj));
+const fromClickAndMap = (id: string, fn: _ => {}) =>
+  fromClick(id).pipe(map(fn));
+const setValue = (val: number) =>
+  (getElem('counter').innerText = val.toString());
 
-const events$ =
-  merge(
-    fromClickAndMapTo('start', { count: true }),
-    fromClickAndMapTo('pause', { count: false }),
-    fromClickAndMapTo('reset', { value: 0 }),
-    fromClickAndMapTo('countup', { countup: true }),
-    fromClickAndMapTo('countdown', { countup: false }),
-    fromClickAndMap('setto', _ => ({ value: getVal('value') })),
-    fromClickAndMap('setspeed', _ => ({ speed: getVal('speed') })),
-    fromClickAndMap('setincrease', _ => ({ increase: getVal('increase') }))
-  );
+const events$ = merge(
+  fromClickAndMapTo('start', { count: true }),
+  fromClickAndMapTo('pause', { count: false }),
+  fromClickAndMapTo('reset', { value: 0 }),
+  fromClickAndMapTo('countup', { countup: true }),
+  fromClickAndMapTo('countdown', { countup: false }),
+  fromClickAndMap('setto', _ => ({ value: getVal('value') })),
+  fromClickAndMap('setspeed', _ => ({ speed: getVal('speed') })),
+  fromClickAndMap('setincrease', _ => ({ increase: getVal('increase') }))
+);
 
 const stopWatch$ = events$.pipe(
-  startWith({ count: false, speed: 1000, value: 0, countup: true, increase: 1 }),
+  startWith({
+    count: false,
+    speed: 1000,
+    value: 0,
+    countup: true,
+    increase: 1
+  }),
   scan((state: State, curr): State => ({ ...state, ...curr }), {}),
   tap((state: State) => setValue(state.value)),
-  switchMap((state: State) => state.count
-    ? interval(state.speed)
-      .pipe(
-        tap(_ => state.value += state.countup ? state.increase : -state.increase),
-        tap(_ => setValue(state.value))
-      )
-    : NEVER)
+  switchMap((state: State) =>
+    state.count
+      ? interval(state.speed).pipe(
+          tap(
+            _ =>
+              (state.value += state.countup ? state.increase : -state.increase)
+          ),
+          tap(_ => setValue(state.value))
+        )
+      : NEVER
+  )
 );
 
 stopWatch$.subscribe();

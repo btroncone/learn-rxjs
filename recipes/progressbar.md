@@ -6,7 +6,7 @@ This recipe demonstrates the creation of an animated progress bar, simulating
 the management of multiple requests, and updating overall progress as each
 completes.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
@@ -72,10 +72,7 @@ const array$ = from(observables);
 const requests$ = array$.pipe(concatAll());
 const clicks$ = fromEvent(loadButton, 'click');
 
-const progress$ = clicks$.pipe(
-  switchMapTo(requests$),
-  share()
-);
+const progress$ = clicks$.pipe(switchMapTo(requests$), share());
 
 const count$ = array$.pipe(count());
 

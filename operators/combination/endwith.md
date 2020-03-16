@@ -15,7 +15,7 @@ value, check out [`finalize`](../utility/finalize.md)!
 ---
 
 <a href="https://ultimatecourses.com/courses/rxjs?ref=4">
-  <img src="https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX" alt="Ultimate RxJS" style="width:100%">
+  <img src="https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz" alt="Ultimate RxJS" style="width:100%">
 </a>
 
 ### Examples

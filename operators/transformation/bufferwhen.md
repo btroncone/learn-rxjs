@@ -4,7 +4,7 @@
 
 ## Collect all values until closing selector emits, emit buffered values.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -37,8 +37,7 @@ const subscribe = bufferWhenExample.subscribe(val =>
 
 ### Additional Resources
 
-- [bufferWhen](https://rxjs.dev/api/operators/bufferWhen)
-  📰 - Official docs
+- [bufferWhen](https://rxjs.dev/api/operators/bufferWhen) 📰 - Official docs
 
 ---
 

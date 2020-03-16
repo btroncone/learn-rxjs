@@ -4,7 +4,7 @@
 
 ## Emit numbers in sequence based on provided timeframe.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -44,8 +44,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [interval](https://rxjs.dev/api/index/function/interval)
-  📰 - Official docs
+- [interval](https://rxjs.dev/api/index/function/interval) 📰 - Official docs
 - [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 - [Build your own interval operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=interval#app)

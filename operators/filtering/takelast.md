@@ -6,12 +6,12 @@
 
 ---
 
-💡 If you want only the last emission from multiple observables, on
-completion of multiple observables, try [forkJoin](../combination/forkjoin.md)!
+💡 If you want only the last emission from multiple observables, on completion
+of multiple observables, try [forkJoin](../combination/forkjoin.md)!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -35,8 +35,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast)
-  📰 - Official docs
+- [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast) 📰 -
+  Official docs
 
 ---
 

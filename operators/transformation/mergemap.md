@@ -11,8 +11,8 @@
 💡 If only one inner subscription should be active at a time, try
 [`switchMap`](switchmap.md)!
 
-💡 If the order of emission and subscription of inner observables is
-important, try [`concatMap`](concatmap.md)!
+💡 If the order of emission and subscription of inner observables is important,
+try [`concatMap`](concatmap.md)!
 
 ---
 
@@ -39,7 +39,7 @@ can also limit the number of active inner subscriptions at a time with the
 `concurrent` parameter, seen in
 [example 5](#example-5-mergemap-with-concurrent-value).
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -214,10 +214,9 @@ source$
 
 ### Additional Resources
 
-- [mergeMap](https://rxjs.dev/api/operators/mergeMap) 📰 - Official
-  docs
-- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
-  🎥 💵 - Ben Lesh
+- [mergeMap](https://rxjs.dev/api/operators/mergeMap) 📰 - Official docs
+- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) 🎥 💵 -
+  Ben Lesh
 - [Async requests and responses in RxJS](https://egghead.io/lessons/rxjs-04-reactive-programming-async-requests-and-responses-in-rxjs)
   🎥 💵 - André Staltz
 - [Use RxJS mergeMap to map and merge higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-mergemap-to-map-and-merge-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)

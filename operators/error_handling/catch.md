@@ -10,7 +10,7 @@
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -108,8 +108,7 @@ iWillStopListening$.subscribe(console.log);
 
 ### Additional Resources
 
-- [catchError](https://rxjs.dev/api/operators/catchError) 📰 - Official
-  docs
+- [catchError](https://rxjs.dev/api/operators/catchError) 📰 - Official docs
 - [Error handling operator: catch](https://egghead.io/lessons/rxjs-error-handling-operator-catch?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

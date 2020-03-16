@@ -6,12 +6,12 @@
 
 ---
 
-💡 If you just want to repeat a specified number of times, try [retry](retry.md)!
+💡 If you just want to repeat a specified number of times, try
+[retry](retry.md)!
 
 ---
 
-
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -23,7 +23,7 @@
 
 ```js
 // RxJS v6+
-import { of, interval } from 'rxjs'; 
+import { of, interval } from 'rxjs';
 import { repeatWhen, take } from 'rxjs/operators';
 
 const repeatInterval$ = interval(1000).pipe(take(5));
@@ -44,8 +44,7 @@ hey!
 
 ### Additional Resources
 
-- [repeatWhen](https://rxjs.dev/api/operators/repeatWhen)
-  📰 - Official docs
+- [repeatWhen](https://rxjs.dev/api/operators/repeatWhen) 📰 - Official docs
 
 ---
 

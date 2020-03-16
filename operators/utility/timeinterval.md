@@ -4,7 +4,7 @@
 
 ## Convert an Observable that emits items into one that emits indications of the amount of time elapsed between those emissions
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -20,10 +20,7 @@ import { fromEvent } from 'rxjs';
 import { timeInterval, tap } from 'rxjs/operators';
 
 fromEvent(document, 'mousedown')
-  .pipe(
-    timeInterval(),
-    tap(console.log)
-  )
+  .pipe(timeInterval(), tap(console.log))
   .subscribe(
     i =>
       (document.body.innerText = `milliseconds since last click: ${i.interval}`)
@@ -36,8 +33,7 @@ fromEvent(document, 'mousedown')
 
 ### Additional Resources
 
-- [timeInterval](https://rxjs.dev/api/operators/timeInterval)
-  📰 - Official docs
+- [timeInterval](https://rxjs.dev/api/operators/timeInterval) 📰 - Official docs
 
 ---
 

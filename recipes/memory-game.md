@@ -4,7 +4,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates an RxJS game to train your memory.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
@@ -79,7 +79,11 @@ const showSequenceToMemorize$ = (memorySize: number) => (
   );
 
 const memoryGame$ = memorySize =>
-  generate(1, x => x <= memorySize, x => x + 1).pipe(
+  generate(
+    1,
+    x => x <= memorySize,
+    x => x + 1
+  ).pipe(
     scan((acc: number[], _: number): number[] => [...acc, random() + 1], []),
     switchMap(showSequenceToMemorize$(memorySize))
   );

@@ -4,7 +4,7 @@
 
 ## Emit the previous and current values as an array.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -22,17 +22,13 @@ import { interval } from 'rxjs';
 
 //Returns: [0,1], [1,2], [2,3], [3,4], [4,5]
 interval(1000)
-  .pipe(
-    pairwise(),
-    take(5)
-  )
+  .pipe(pairwise(), take(5))
   .subscribe(console.log);
 ```
 
 ### Additional Resources
 
-- [pairwise](https://rxjs.dev/api/operators/pairwise)
-  📰 - Official docs
+- [pairwise](https://rxjs.dev/api/operators/pairwise) 📰 - Official docs
 
 ---
 

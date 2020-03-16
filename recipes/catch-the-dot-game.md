@@ -4,7 +4,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe shows usage of scan operator for state management in simple game
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
@@ -54,7 +54,11 @@ const game$ = fromEvent(dot, 'mouseover').pipe(
   takeWhile(isNotGameOver)
 );
 
-game$.subscribe(n => {}, e => {}, () => setTimerText('ouch!'));
+game$.subscribe(
+  n => {},
+  e => {},
+  () => setTimerText('ouch!')
+);
 ```
 
 #### dom-updater.ts

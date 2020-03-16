@@ -38,7 +38,7 @@ every request needs to complete, think writes to a database. `switchMap` could
 cancel a request if the source emits quickly enough. In these scenarios
 [mergeMap](mergemap.md) is the correct option.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -144,8 +144,7 @@ timer(0, 5000)
 
 ### Additional Resources
 
-- [switchMap](https://rxjs.dev/api/operators/switchMap)
-  📰 - Official docs
+- [switchMap](https://rxjs.dev/api/operators/switchMap) 📰 - Official docs
 - [Avoiding switchMap-Related Bugs](https://blog.angularindepth.com/switchmap-bugs-b6de69155524) -
   Nicholas Jamieson
 - [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs)

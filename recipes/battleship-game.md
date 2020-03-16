@@ -5,7 +5,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 This recipe demonstrates an RxJS implementation of Battleship Game where you
 play against the computer.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
@@ -116,7 +116,10 @@ const getValidMoves = (
       row[colIndex - 1] === ship || row[colIndex + 1] === ship;
     if (isHorizontal) {
       const [left, right] = getTwoValidMoves(row, ship);
-      return [{ x: rowIndex, y: left }, { x: rowIndex, y: right }];
+      return [
+        { x: rowIndex, y: left },
+        { x: rowIndex, y: right }
+      ];
     }
 
     const isVertical =
@@ -127,7 +130,10 @@ const getValidMoves = (
         board.map(r => r.filter((c, j) => j === colIndex)[0]),
         ship
       );
-      return [{ x: up, y: colIndex }, { x: down, y: colIndex }];
+      return [
+        { x: up, y: colIndex },
+        { x: down, y: colIndex }
+      ];
     }
 
     return [
@@ -200,10 +206,7 @@ const addShips$ = (player: string, boards: Boards) =>
   );
 
 const playerSetup$ = (boards: Boards) =>
-  fromEvent(document, 'click').pipe(
-    validClicks$,
-    addShips$(PLAYER, boards)
-  );
+  fromEvent(document, 'click').pipe(validClicks$, addShips$(PLAYER, boards));
 
 const computerSetup$ = (boards: Boards) =>
   interval().pipe(

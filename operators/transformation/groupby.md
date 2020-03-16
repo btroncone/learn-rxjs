@@ -4,7 +4,7 @@
 
 ## Group into observables based on provided value.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -63,7 +63,10 @@ const people = [
 
 from(people)
   .pipe(
-    groupBy(person => person.age, p => p.name),
+    groupBy(
+      person => person.age,
+      p => p.name
+    ),
     mergeMap(group => zip(of(group.key), group.pipe(toArray())))
   )
   .subscribe(console.log);
@@ -78,8 +81,7 @@ from(people)
 
 ### Additional Resources
 
-- [groupBy](https://rxjs.dev/api/operators/groupBy)
-  📰 - Official docs
+- [groupBy](https://rxjs.dev/api/operators/groupBy) 📰 - Official docs
 - [Group higher order observables with RxJS groupBy](https://egghead.io/lessons/rxjs-group-higher-order-observables-with-rxjs-groupby?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 - [Use groupBy in real RxJS applications](https://egghead.io/lessons/rxjs-use-groupby-in-real-rxjs-applications?course=use-higher-order-observables-in-rxjs-effectively)

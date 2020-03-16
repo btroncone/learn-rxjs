@@ -4,7 +4,7 @@
 
 ## Retry an observable sequence on error based on custom criteria.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -139,8 +139,7 @@ export class AppComponent implements OnInit  {
 
 ### Additional Resources
 
-- [retryWhen](https://rxjs.dev/api/operators/retryWhen)
-  📰 - Official docs
+- [retryWhen](https://rxjs.dev/api/operators/retryWhen) 📰 - Official docs
 - [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

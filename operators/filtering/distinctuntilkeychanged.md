@@ -4,7 +4,7 @@
 
 ## Only emit when the specified key value has changed
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -45,11 +45,10 @@ source$
 import { fromEvent } from 'rxjs';
 import { distinctUntilKeyChanged, pluck } from 'rxjs/operators';
 
-const keys$ = fromEvent(document, 'keyup')
-  .pipe(
-    distinctUntilKeyChanged<KeyboardEvent>('code'),
-    pluck('key')
-  );
+const keys$ = fromEvent(document, 'keyup').pipe(
+  distinctUntilKeyChanged < KeyboardEvent > 'code',
+  pluck('key')
+);
 
 keys$.subscribe(console.log);
 ```

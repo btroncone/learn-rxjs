@@ -10,7 +10,7 @@
 💡 If you need the current accumulated value on each emission, try
 [scan](scan.md)!
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -34,8 +34,7 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 
 ### Additional Resources
 
-- [reduce](https://rxjs.dev/api/operators/reduce)
-  📰 - Official docs
+- [reduce](https://rxjs.dev/api/operators/reduce) 📰 - Official docs
 - [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
   🎥 - Academind
 - [Build your own reduce operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=reduce#app)

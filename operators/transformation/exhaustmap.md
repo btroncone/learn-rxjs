@@ -4,7 +4,7 @@
 
 ## Map to inner observable, ignore other values until that observable completes.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -21,10 +21,7 @@ import { interval, merge, of } from 'rxjs';
 import { delay, take, exhaustMap } from 'rxjs/operators';
 
 const sourceInterval = interval(1000);
-const delayedInterval = sourceInterval.pipe(
-  delay(10),
-  take(4)
-);
+const delayedInterval = sourceInterval.pipe(delay(10), take(4));
 
 const exhaustSub = merge(
   // delay 10ms, then start interval emitting 4 values
@@ -123,8 +120,7 @@ const exhaustSub = firstInterval
 
 ### Additional Resources
 
-- [exhaustMap](https://rxjs.dev/api/operators/exhaustMap)
-  📰 - Official docs
+- [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 📰 - Official docs
 
 ---
 

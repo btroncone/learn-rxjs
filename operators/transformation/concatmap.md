@@ -4,7 +4,7 @@
 
 ## Map values to inner observable, subscribe and emit in order.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -89,7 +89,10 @@ const source = of('Hello', 'Goodbye');
 const examplePromise = val => new Promise(resolve => resolve(`${val} World!`));
 //result of first param passed to second param selector function before being  returned
 const example = source.pipe(
-  concatMap(val => examplePromise(val), result => `${result} w/ selector!`)
+  concatMap(
+    val => examplePromise(val),
+    result => `${result} w/ selector!`
+  )
 );
 //output: 'Example w/ Selector: 'Hello w/ Selector', Example w/ Selector: 'Goodbye w/ Selector'
 const subscribe = example.subscribe(val =>
@@ -99,8 +102,7 @@ const subscribe = example.subscribe(val =>
 
 ### Additional Resources
 
-- [concatMap](https://rxjs.dev/api/operators/concatMap)
-  📰 - Official docs
+- [concatMap](https://rxjs.dev/api/operators/concatMap) 📰 - Official docs
 - [Use RxJS concatMap to map and concat higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-concatmap-to-map-and-concat-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 - [Build your own concatMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=concatMap#app)

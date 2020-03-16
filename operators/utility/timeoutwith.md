@@ -4,7 +4,7 @@
 
 ## Subscribe to second Observable if no emission occurs in given time span.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -41,8 +41,8 @@ of(timeoutThreshold + 1, timeoutThreshold - 1, timeoutThreshold + 3)
 
 ### Additional Resources
 
-- [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith)
-  📰 - Official Docs
+- [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith) 📰 -
+  Official Docs
 
 ---
 

@@ -4,7 +4,7 @@
 
 ## Generates an observable sequence by running a state-driven loop producing the sequence's elements, using the specified scheduler to send out observer messages.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -18,7 +18,11 @@
 // RxJS v6+
 import { generate } from 'rxjs';
 
-generate(2, x => x <= 8, x => x + 3).subscribe(console.log);
+generate(
+  2,
+  x => x <= 8,
+  x => x + 3
+).subscribe(console.log);
 
 /*
 OUTPUT:
@@ -38,9 +42,12 @@ OUTPUT:
 // RxJS v6+
 import { generate } from 'rxjs';
 
-generate(2, x => x <= 38, x => x + 3, x => '.'.repeat(x)).subscribe(
-  console.log
-);
+generate(
+  2,
+  x => x <= 38,
+  x => x + 3,
+  x => '.'.repeat(x)
+).subscribe(console.log);
 
 /*
 OUTPUT:
@@ -67,8 +74,7 @@ OUTPUT:
 
 ### Additional Resources
 
-- [generate](https://rxjs.dev/api/index/function/generate)
-  📰 - Official docs
+- [generate](https://rxjs.dev/api/index/function/generate) 📰 - Official docs
 
 ---
 

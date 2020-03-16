@@ -4,7 +4,7 @@
 
 ## Toggle on to catch emitted values from source, toggle off to emit buffered values as array.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -61,8 +61,7 @@ fromEvent(document, 'mousemove')
 
 ### Additional Resources
 
-- [bufferToggle](https://rxjs.dev/api/operators/bufferToggle)
-  📰 - Official docs
+- [bufferToggle](https://rxjs.dev/api/operators/bufferToggle) 📰 - Official docs
 
 ---
 

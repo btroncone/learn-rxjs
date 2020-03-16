@@ -6,12 +6,12 @@
 
 ---
 
-💡 When the optional `inclusive` parameter is set to `true` it will also
-emit the first item that didn't pass the predicate.
+💡 When the optional `inclusive` parameter is set to `true` it will also emit
+the first item that didn't pass the predicate.
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -33,7 +33,7 @@ const source$ = of(1, 2, 3, 4, 5);
 //allow values until value from source is greater than 4, then complete
 source$
   .pipe(takeWhile(val => val <= 4))
-   // log: 1,2,3,4
+  // log: 1,2,3,4
   .subscribe(val => console.log(val));
 ```
 
@@ -102,8 +102,8 @@ source$
 
 ### Additional Resources
 
-- [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile)
-  📰 - Official docs
+- [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile) 📰 -
+  Official docs
 - [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 

@@ -14,7 +14,7 @@ instead!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -54,10 +54,7 @@ import { delay, startWith } from 'rxjs/operators';
 const userMessage = document.getElementById('message');
 // helper
 const delayedMessage = (message, delayedTime = 1000) => {
-  return empty().pipe(
-    startWith(message),
-    delay(delayedTime)
-  );
+  return empty().pipe(startWith(message), delay(delayedTime));
 };
 
 concat(
@@ -93,8 +90,7 @@ concat(interval(1000), of('This', 'Never', 'Runs'))
 
 ### Additional Resources
 
-- [concat](https://rxjs.dev/api/index/function/concat) 📰 - Official
-  docs
+- [concat](https://rxjs.dev/api/index/function/concat) 📰 - Official docs
 - [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

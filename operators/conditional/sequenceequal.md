@@ -4,7 +4,7 @@
 
 ## Compares emitted sequence to expected sequence for match
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -64,8 +64,8 @@ fromEvent(document, 'keydown')
 
 ### Additional Resources
 
-- [sequenceEqual](https://rxjs.dev/api/operators/sequenceEqual)
-  📰 - Official docs
+- [sequenceEqual](https://rxjs.dev/api/operators/sequenceEqual) 📰 - Official
+  docs
 
 ---
 

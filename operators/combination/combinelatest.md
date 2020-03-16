@@ -31,7 +31,7 @@ Lastly, if you are working with observables that only emit one value, or you
 only require the last value of each before completion, [`forkJoin`](forkjoin.md)
 is likely a better option.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -155,8 +155,8 @@ combineLatest(addOneClick$('red'), addOneClick$('black')).subscribe(
 
 ### Additional Resources
 
-- [combineLatest](https://rxjs.dev/api/index/function/combineLatest)
-  📰 - Official docs
+- [combineLatest](https://rxjs.dev/api/index/function/combineLatest) 📰 -
+  Official docs
 - [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth)

@@ -4,7 +4,7 @@
 
 ## Emit error on subscription.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -35,8 +35,7 @@ const subscribe = source.subscribe({
 
 ### Additional Resources
 
-- [throw](https://rxjs.dev/api/index/function/throw)
-  📰 - Official docs
+- [throw](https://rxjs.dev/api/index/function/throw) 📰 - Official docs
 - [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 

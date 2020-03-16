@@ -4,19 +4,18 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates RxJS implementation of Uncover Image Game.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
-( [StackBlitz](https://stackblitz.com/edit/rxjs-uncover-image?file=index.ts)
-)
+( [StackBlitz](https://stackblitz.com/edit/rxjs-uncover-image?file=index.ts) )
 
 #### index.ts
 
 ```js
 // RxJS v6+
 import { interval } from 'rxjs';
-import { finalize, scan, takeWhile, tap, withLatestFrom } from 'rxjs/operators'; 
+import { finalize, scan, takeWhile, tap, withLatestFrom } from 'rxjs/operators';
 import { keyboardEvents$ } from './keyboard';
 import { initialGame, updateGame, isGameOn } from './game';
 import { paintGame, paintGameOver } from './html-renderer';
@@ -42,24 +41,22 @@ import { newPlayerFrom, movePlayer } from './player';
 import { newEnemiesFrom } from './enemy';
 
 const intersect = (state: State): State => (
-  state.moves.some((m: Move) => 
+  state.moves.some((m: Move) =>
     state.enemies.some(e => m.x === e.x && m.y === e.y)
-  ) 
-    ? (
-      state.player.lives -= 1,
-      state.player.x = 0,
-      state.player.y = 0,
-      state.moves = []
-    )
+  )
+    ? ((state.player.lives -= 1),
+      (state.player.x = 0),
+      (state.player.y = 0),
+      (state.moves = []))
     : noop,
   state
 );
 
 const initialGame: State = {
-  player: {x: 0, y: 0, lives: 3},
+  player: { x: 0, y: 0, lives: 3 },
   enemies: [
-    {x: 10, y: 10, moveDuration: 0, dirX: 1, dirY: 1}, 
-    {x: 50, y: 50, moveDuration: 0, dirX: -1, dirY: 1}
+    { x: 10, y: 10, moveDuration: 0, dirX: 1, dirY: 1 },
+    { x: 50, y: 50, moveDuration: 0, dirX: -1, dirY: 1 }
   ],
   key: '',
   moves: [],
@@ -67,17 +64,17 @@ const initialGame: State = {
 };
 
 const updateGame = (state: State, [_, key]: [number, string]): State => (
-  state.enemies = newEnemiesFrom(state),
-  state.player = newPlayerFrom(state, key),
-  state = intersect(state),
-  state = movePlayer(state, key),
-  state.key = key,
+  (state.enemies = newEnemiesFrom(state)),
+  (state.player = newPlayerFrom(state, key)),
+  (state = intersect(state)),
+  (state = movePlayer(state, key)),
+  (state.key = key),
   state
 );
 
-const isGameOn = (state: State): boolean => state.player.lives > 0
+const isGameOn = (state: State): boolean => state.player.lives > 0;
 
-export { initialGame, updateGame, isGameOn }
+export { initialGame, updateGame, isGameOn };
 ```
 
 #### player.ts
@@ -94,41 +91,41 @@ const left = 'ArrowLeft';
 const right = 'ArrowRight';
 
 const newPlayerFrom = (state: State, key: string): Player => (
-  state.player.x += keyToDirection(key, down, up),
-  state.player.y += keyToDirection(key, right, left),
-  state.player.x < 0 ? state.player.x = 0 : noop,
-  state.player.x > size ? state.player.x = size : noop,
-  state.player.y < 0 ? state.player.y = 0 : noop,
-  state.player.y > size ? state.player.y = size : noop,
+  (state.player.x += keyToDirection(key, down, up)),
+  (state.player.y += keyToDirection(key, right, left)),
+  state.player.x < 0 ? (state.player.x = 0) : noop,
+  state.player.x > size ? (state.player.x = size) : noop,
+  state.player.y < 0 ? (state.player.y = 0) : noop,
+  state.player.y > size ? (state.player.y = size) : noop,
   state.player
 );
 
-const getEnclosedArea = (state: State): Move[] => 
+const getEnclosedArea = (state: State): Move[] =>
   state.moves.length <= 1
     ? []
     : [
         ...state.moves
-          .slice(state.moves.findIndex(e => 
-            e.x === state.player.x && e.y === state.player.y))
+          .slice(
+            state.moves.findIndex(
+              e => e.x === state.player.x && e.y === state.player.y
+            )
+          )
           .filter(e => e.dirChange),
         state.moves.pop()
       ];
 
 const movePlayer = (state: State, key: string): State => (
-  state.moves.some(e => e.x === state.player.x && e.y === state.player.y) 
-    ? (
-      state.corners = getEnclosedArea(state),
-      state.moves = []
-    )
+  state.moves.some(e => e.x === state.player.x && e.y === state.player.y)
+    ? ((state.corners = getEnclosedArea(state)), (state.moves = []))
     : state.moves.push({
         x: state.player.x,
         y: state.player.y,
-        dirChange: state.key !== key 
+        dirChange: state.key !== key
       }),
   state
 );
 
-export { newPlayerFrom, movePlayer }
+export { newPlayerFrom, movePlayer };
 ```
 
 #### enemy.ts
@@ -139,46 +136,46 @@ import { Enemy, State } from './interfaces';
 import { size } from './constants';
 
 const newEnemiesFrom = (state: State): Enemy[] => (
-  state.enemies.forEach(e => ( 
-    e.x <= 0 || e.x > size ? e.dirX *= -1 : noop,
-    e.y <= 0 || e.y > size ? e.dirY *= -1 : noop,
-    e.x += e.dirX,
-    e.y += e.dirY,
-    e.moveDuration += 1,
-    e.moveDuration > 100 
-      ? (
-        e.dirX = Math.random() > 0.5 ? 1 : -1,
-        e.dirY = Math.random() > 0.5 ? 1 : -1,
-        e.moveDuration = 0
-      ) 
-      : noop
-  )),
+  state.enemies.forEach(
+    e => (
+      e.x <= 0 || e.x > size ? (e.dirX *= -1) : noop,
+      e.y <= 0 || e.y > size ? (e.dirY *= -1) : noop,
+      (e.x += e.dirX),
+      (e.y += e.dirY),
+      (e.moveDuration += 1),
+      e.moveDuration > 100
+        ? ((e.dirX = Math.random() > 0.5 ? 1 : -1),
+          (e.dirY = Math.random() > 0.5 ? 1 : -1),
+          (e.moveDuration = 0))
+        : noop
+    )
+  ),
   state.enemies
 );
 
-export { newEnemiesFrom }
+export { newEnemiesFrom };
 ```
 
 #### keyboard.ts
 
 ```js
-import { fromEvent } from "rxjs";
-import { pluck, startWith } from "rxjs/operators";
+import { fromEvent } from 'rxjs';
+import { pluck, startWith } from 'rxjs/operators';
 
 const positionChangeUnit = 2;
 
-export const keyboardEvents$ = fromEvent(document, "keydown")
-  .pipe(
-    pluck<KeyboardEvent, string>("code"),
-    startWith('')
-  );
+export const keyboardEvents$ = fromEvent(document, 'keydown').pipe(
+  pluck < KeyboardEvent,
+  string > 'code',
+  startWith('')
+);
 
-export const keyToDirection = (key: string, key1: string, key2: string): number => 
-  key === key1
-    ? positionChangeUnit
-    : key === key2
-      ? -positionChangeUnit
-      : 0;
+export const keyToDirection = (
+  key: string,
+  key1: string,
+  key2: string
+): number =>
+  key === key1 ? positionChangeUnit : key === key2 ? -positionChangeUnit : 0;
 ```
 
 #### interfaces.ts
@@ -195,7 +192,7 @@ interface Player extends GameObject {
 
 interface Enemy extends GameObject {
   moveDuration: number;
-  dirX: number; 
+  dirX: number;
   dirY: number;
 }
 
@@ -207,11 +204,11 @@ interface State {
   player: Player;
   enemies: Enemy[];
   key: string;
-  moves: Move[],
-  corners: Move[]
+  moves: Move[];
+  corners: Move[];
 }
 
-export { GameObject, Player, Enemy, State }
+export { GameObject, Player, Enemy, State };
 ```
 
 #### constants.ts
@@ -219,7 +216,7 @@ export { GameObject, Player, Enemy, State }
 ```js
 const size = 200;
 
-export { size }
+export { size };
 ```
 
 #### html-renderer.ts
@@ -227,24 +224,27 @@ export { size }
 ```js
 import { State, GameObject } from './interfaces';
 
-const clearPlayerPath = _ => 
+const clearPlayerPath = _ =>
   document
     .querySelectorAll('circle')
     .forEach(e => document.querySelector('#svg_container').removeChild(e));
 
 const addCircleColored = (color: string) => (e: GameObject) => {
-  const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+  const circle = document.createElementNS(
+    'http://www.w3.org/2000/svg',
+    'circle'
+  );
   circle.setAttribute('cx', e.y);
   circle.setAttribute('cy', e.x);
   circle.setAttribute('r', '2');
   circle.setAttribute('stroke', color);
   circle.setAttribute('strokeWidth', '1');
   document.querySelector('#svg_container').appendChild(circle);
-}
+};
 
-const addPlayerPath = (state: State) => 
+const addPlayerPath = (state: State) =>
   state.moves.forEach(addCircleColored('gray'));
-const addEnemy = (state: State) => 
+const addEnemy = (state: State) =>
   state.enemies.forEach(addCircleColored('red'));
 
 const addHoles = (state: State) => {
@@ -252,31 +252,34 @@ const addHoles = (state: State) => {
     return;
   }
 
-  const createPathFromCorners = (a, c) => a += 
-    `${a.endsWith('Z') ? 'M' : 'L'} ${c.y} ${c.x} ${c.dirChange ? '' : 'Z'}`;
-  const newPath = `M${state.corners[0].y} ${state.corners[0].x}` 
-    + state.corners.reduce(createPathFromCorners, '');
+  const createPathFromCorners = (a, c) =>
+    (a += `${a.endsWith('Z') ? 'M' : 'L'} ${c.y} ${c.x} ${
+      c.dirChange ? '' : 'Z'
+    }`);
+  const newPath =
+    `M${state.corners[0].y} ${state.corners[0].x}` +
+    state.corners.reduce(createPathFromCorners, '');
   const maskPath = document.querySelector('#mask_path');
 
   const currentPath = maskPath.getAttribute('d');
   const path = newPath + ' ' + currentPath;
 
   maskPath.setAttribute('d', path);
-}
+};
 
-const paintInfo = (text: string) => 
-  document.querySelector('#info').innerHTML = text;
-const paintLives = (state: State) => 
-  paintInfo(`lives: ${state.player.lives}`);
+const paintInfo = (text: string) =>
+  (document.querySelector('#info').innerHTML = text);
+const paintLives = (state: State) => paintInfo(`lives: ${state.player.lives}`);
 
-const updateSvgPath = (state: State) => 
-  [clearPlayerPath, addPlayerPath, addEnemy, addHoles, paintLives]
-    .forEach(fn => fn(state));
+const updateSvgPath = (state: State) =>
+  [clearPlayerPath, addPlayerPath, addEnemy, addHoles, paintLives].forEach(fn =>
+    fn(state)
+  );
 
 const paintGame = updateSvgPath;
 const paintGameOver = () => paintInfo('Game Over !!!');
 
-export { paintGame, paintGameOver }
+export { paintGame, paintGameOver };
 ```
 
 #### index.html
@@ -285,16 +288,19 @@ export { paintGame, paintGameOver }
 <div id="info"></div>
 <svg width="200" height="200" id="svg_container">
   <style>
-    .rxjs { font: 95px serif; fill: purple; }
+    .rxjs {
+      font: 95px serif;
+      fill: purple;
+    }
   </style>
   <defs>
     <mask id="Mask" maskContentUnits="">
-      <rect width="200" height="200" fill="white" opacity="1"/>
-      <path id="mask_path"/>
+      <rect width="200" height="200" fill="white" opacity="1" />
+      <path id="mask_path" />
     </mask>
   </defs>
   <text x="10" y="120" class="rxjs">RxJs</text>
-  <rect width="200" height="200" mask="url(#Mask)"/>
+  <rect width="200" height="200" mask="url(#Mask)" />
 </svg>
 <div>Use arrows to uncover image!!!</div>
 ```

@@ -4,7 +4,7 @@
 
 ## Subscribe to first or second observable based on a condition
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -84,8 +84,7 @@ interval(1000)
 
 ### Additional Resources
 
-- [iif](https://rxjs.dev/api/operators/iif) 📰 -
-  Official docs
+- [iif](https://rxjs.dev/api/operators/iif) 📰 - Official docs
 
 ---
 

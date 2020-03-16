@@ -6,12 +6,11 @@
 
 ---
 
-💡 You can create [Redux](http://redux.js.org)-like state management with
-scan!
+💡 You can create [Redux](http://redux.js.org)-like state management with scan!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -107,7 +106,7 @@ const fakeRequest = of('response').pipe(delay(2000));
 interval(1000)
   .pipe(
     mergeMap(_ => fakeRequest),
-    scan<string>((all, current) => [...all, current], [])
+    scan < string > ((all, current) => [...all, current], [])
   )
   .subscribe(console.log);
 ```
@@ -134,8 +133,7 @@ interval(1000)
 
 ### Additional Resources
 
-- [scan](https://rxjs.dev/api/operators/scan)
-  📰 - Official docs
+- [scan](https://rxjs.dev/api/operators/scan) 📰 - Official docs
 - [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
   🎥 - Ben Lesh
 - [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs)

@@ -11,7 +11,7 @@ single operator instead!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -73,12 +73,7 @@ const source = interval(500).pipe(take(5));
 */
 const example = source
   .pipe(
-    map(val =>
-      source.pipe(
-        delay(1000),
-        take(3)
-      )
-    ),
+    map(val => source.pipe(delay(1000), take(3))),
     mergeAll(2)
   )
   .subscribe(val => console.log(val));
@@ -89,8 +84,7 @@ const example = source
 
 ### Additional Resources
 
-- [mergeAll](https://rxjs.dev/api/operators/mergeAll)
-  📰 - Official docs
+- [mergeAll](https://rxjs.dev/api/operators/mergeAll) 📰 - Official docs
 - [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 

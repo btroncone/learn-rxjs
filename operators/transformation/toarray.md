@@ -4,7 +4,7 @@
 
 ## Collects all source emissions and emits them as an array when the source completes.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -20,10 +20,7 @@ import { interval } from 'rxjs';
 import { toArray, take } from 'rxjs/operators';
 
 interval(100)
-  .pipe(
-    take(10),
-    toArray()
-  )
+  .pipe(take(10), toArray())
   .subscribe(console.log);
 
 // output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -36,8 +33,7 @@ interval(100)
 
 ### Additional Resources
 
-- [toArray](https://rxjs.dev/api/operators/toArray)
-  📰 - Official docs
+- [toArray](https://rxjs.dev/api/operators/toArray) 📰 - Official docs
 
 ---
 

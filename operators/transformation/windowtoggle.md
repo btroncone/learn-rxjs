@@ -4,7 +4,7 @@
 
 ## Collect and emit observable of values from source between opening and closing emission.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -55,8 +55,7 @@ const subscribeTwo = example
 
 ### Additional Resources
 
-- [windowToggle](https://rxjs.dev/api/operators/windowToggle)
-  📰 - Official docs
+- [windowToggle](https://rxjs.dev/api/operators/windowToggle) 📰 - Official docs
 - [Split an RxJS observable conditionally with windowToggle](https://egghead.io/lessons/rxjs-split-an-rxjs-observable-conditionally-with-windowtoggle?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 

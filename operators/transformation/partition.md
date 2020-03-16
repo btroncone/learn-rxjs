@@ -4,7 +4,7 @@
 
 ## Split one observable into two based on provided predicate.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -76,7 +76,6 @@ const subscribe = merge(
 ).subscribe(val => console.log(val));
 ```
 
-
 ##### Example 3: (v6.5+) Partition as a static function
 
 (
@@ -114,11 +113,9 @@ const subscribe = merge(
 ).subscribe(val => console.log(val));
 ```
 
-
 ### Additional Resources
 
-- [partition](https://rxjs.dev/api/operators/partition)
-  📰 - Official docs
+- [partition](https://rxjs.dev/api/operators/partition) 📰 - Official docs
 
 ---
 

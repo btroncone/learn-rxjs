@@ -4,7 +4,7 @@
 
 ## Accumulate value over time via merged observables.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -43,8 +43,8 @@ mouseDown$
 
 ### Additional Resources
 
-- [pluck](https://rxjs-dev.firebaseapp.com/api/operators/mergeScan)
-  📰 - Official docs
+- [pluck](https://rxjs-dev.firebaseapp.com/api/operators/mergeScan) 📰 -
+  Official docs
 
 ---
 

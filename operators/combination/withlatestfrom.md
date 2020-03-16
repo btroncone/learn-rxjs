@@ -11,7 +11,7 @@ emits, try [combinelatest](combinelatest.md)!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -88,8 +88,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [withLatestFrom](https://rxjs.dev/api/operators/withLatestFrom)
-  📰 - Official docs
+- [withLatestFrom](https://rxjs.dev/api/operators/withLatestFrom) 📰 - Official
+  docs
 - [Combination operator: withLatestFrom](https://egghead.io/lessons/rxjs-combination-operator-withlatestfrom?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

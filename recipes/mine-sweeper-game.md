@@ -4,7 +4,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates RxJS implementation of Mine Sweeper Game.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Example Code
 
@@ -34,11 +34,7 @@ const mines$ = of(
   Array(size)
     .fill(0)
     .map(e => Array(size).fill(0))
-).pipe(
-  map(addMines),
-  map(addMarks),
-  tap(renderMinefield)
-);
+).pipe(map(addMines), map(addMarks), tap(renderMinefield));
 
 const click$ = mines =>
   fromEvent(document, 'click').pipe(

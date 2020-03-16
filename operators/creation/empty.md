@@ -4,7 +4,7 @@
 
 ## Observable that immediately completes.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -64,8 +64,7 @@ const timer$ = merge(pause$, resume$)
 
 ### Additional Resources
 
-- [empty](https://rxjs.dev/api/index/function/empty)
-  📰 - Official docs
+- [empty](https://rxjs.dev/api/index/function/empty) 📰 - Official docs
 - [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 

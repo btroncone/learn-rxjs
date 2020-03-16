@@ -6,12 +6,12 @@
 
 ---
 
-💡 Though not as widely used as [debounceTime](debouncetime.md),
-**debounce** is important when the debounce rate is variable!
+💡 Though not as widely used as [debounceTime](debouncetime.md), **debounce** is
+important when the debounce rate is variable!
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -69,8 +69,7 @@ const subscribe = debouncedInterval.subscribe(val =>
 
 ### Additional Resources
 
-- [debounce](https://rxjs.dev/api/operators/debounce)
-  📰 - Official docs
+- [debounce](https://rxjs.dev/api/operators/debounce) 📰 - Official docs
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

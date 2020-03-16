@@ -8,11 +8,13 @@
 
 💡 The counterpart to first is [**last**](last.md)!
 
-💡 `First` will deliver an EmptyError to the Observer's error callback if the Observable completes before any next notification was sent. If you don't want this behavior, use `take(1)` instead.
+💡 `First` will deliver an EmptyError to the Observer's error callback if the
+Observable completes before any next notification was sent. If you don't want
+this behavior, use `take(1)` instead.
 
 ---
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -81,8 +83,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [first](https://rxjs.dev/api/operators/first)
-  📰 - Official docs
+- [first](https://rxjs.dev/api/operators/first) 📰 - Official docs
 - [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

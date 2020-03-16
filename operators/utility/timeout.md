@@ -4,7 +4,7 @@
 
 ## Error if no value is emitted before specified duration
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1htrban3k3Z8CxiKwEV6bdmxW5Wu8xdWX "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
@@ -44,8 +44,7 @@ of(4000, 3000, 2000)
 
 ### Additional Resources
 
-- [timeout](https://rxjs.dev/api/operators/timeout)
-  📰 - Official Docs
+- [timeout](https://rxjs.dev/api/operators/timeout) 📰 - Official Docs
 
 ---
 
