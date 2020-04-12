@@ -278,7 +278,7 @@ import { map } from 'rxjs/operators';
 
 const keyup$ = fromEvent(document, 'keyup');
 
-click$
+keyup$
   .pipe(map(event => event.code))
   // 'Space', 'Enter'
   .subscribe(console.log);
@@ -306,7 +306,7 @@ import { pluck } from 'rxjs/operators';
 
 const keyup$ = fromEvent(document, 'keyup');
 
-click$
+keyup$
   .pipe(pluck('code'))
   // 'Space', 'Enter'
   .subscribe(console.log);
@@ -320,7 +320,7 @@ element on click, we could pass both of these properties to `pluck` in order:
 import { fromEvent } from 'rxjs';
 import { pluck } from 'rxjs/operators';
 
-const keyup$ = fromEvent(document, 'click');
+const click$ = fromEvent(document, 'click');
 
 click$
   .pipe(pluck('target', 'nodeName'))
@@ -366,7 +366,7 @@ import { map } from 'rxjs/operators';
 
 const click$ = fromEvent(document, 'click');
 
-keyup$
+click$
   .pipe(map(() => 'You clicked!'))
   // 'You clicked!', 'You clicked!'
   .subscribe(console.log);
