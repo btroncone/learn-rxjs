@@ -50,27 +50,27 @@ merge(
 
 // output
 /*
-0
+i: 0
 throttleTime:0
-1
-2
+i: 1
+i: 2
 bufferTime:0,1
 sampleTime:1
-3
+i: 3
 auditTime:3
-4
+i: 4
 throttleTime:4
-5
+i: 5
 bufferTime:2,3,4
 sampleTime:4
-6
-7
+i: 6
+i: 7
 auditTime:7
-8
+i: 8
 bufferTime:5,6,7
 sampleTime:7
 throttleTime:8
-9
+i: 9
 bufferTime:8,9
 debounceTime:9
 
