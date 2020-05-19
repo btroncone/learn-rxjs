@@ -248,4 +248,4 @@ export class App {
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/observable/ForkJoinObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/observable/ForkJoinObservable.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/forkJoin.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/forkJoin.ts)
