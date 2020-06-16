@@ -6,7 +6,7 @@
 
 ### Why use `auditTime`
 
-When you are interested in ignoring a source observable for a given amout of time, you can use `auditTime`. A possible use case is to only emit certain events (i.e. mouse clicks) at a maximum rate per second. After the specified duration has passed, the timer is disabled and the most recent source value is emitted on the output Observable, and this process repeats for the next source value.
+When you are interested in ignoring a source observable for a given amount of time, you can use `auditTime`. A possible use case is to only emit certain events (i.e. mouse clicks) at a maximum rate per second. After the specified duration has passed, the timer is disabled and the most recent source value is emitted on the output Observable, and this process repeats for the next source value.
 
 ---
 
