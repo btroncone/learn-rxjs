@@ -134,7 +134,7 @@ const people = [
 const lastNames = people.map(person => person.lastName);
 
 // [ 'Troncone', 'Motto' ]
-console.log(peopleWithFullName);
+console.log(lastNames);
 ```
 
 At this point, we are transforming an array of people objects into an array of
