@@ -261,7 +261,7 @@ The error handling operators provide effective ways to gracefully handle errors
 and perform retries, should they occur.
 
 For example, we can use
-[`catchError`](../operators/error_handling/catcherror.md) to safeguard against
+[`catchError`](../operators/error_handling/catch.md) to safeguard against
 failed network requests:
 
 ```js
@@ -279,7 +279,7 @@ source
 ```
 
 The most commonly used error handling operators is
-[`catchError`](../operators/error_handling/catcherror.md).
+[`catchError`](../operators/error_handling/catch.md).
 
 ### [Filtering operators](../operators/filtering/README.md)
 
