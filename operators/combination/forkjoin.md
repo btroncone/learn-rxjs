@@ -38,7 +38,7 @@ correct choice. In these cases you may be better off with an operator like
 
 ### Examples
 
-##### Example 1: (v6.5+) Using a dictionary of sources
+##### Example 1: Using a dictionary of sources to make AJAX request
 
 (
 [StackBlitz](https://stackblitz.com/edit/typescript-u5pzuf?file=index.ts&devtoolsheight=100)
@@ -68,14 +68,12 @@ forkJoin(
 ##### Example 2: Observables completing after different durations
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-mzbcrw?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/remiduhimu/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/5fj77920/81/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-c3f62b?file=index.ts&devtoolsheight=100) )
 
 ```js
 // RxJS v6+
+import { interval, forkJoin, of } from 'rxjs';
 import { delay, take } from 'rxjs/operators';
-import { forkJoin, of, interval } from 'rxjs';
 
 const myPromise = val =>
   new Promise(resolve =>
@@ -86,28 +84,35 @@ const myPromise = val =>
   when all observables complete, give the last
   emitted value from each as an array
 */
-const example = forkJoin(
+const example = forkJoin({
   //emit 'Hello' immediately
-  of('Hello'),
+  sourceOne: of('Hello'),
   //emit 'World' after 1 second
-  of('World').pipe(delay(1000)),
+  sourceTwo: of('World').pipe(delay(1000)),
   //emit 0 after 1 second
-  interval(1000).pipe(take(1)),
+  sourceThree: interval(1000).pipe(take(1)),
   //emit 0...1 in 1 second interval
-  interval(1000).pipe(take(2)),
+  sourceFour: interval(1000).pipe(take(2)),
   //promise that resolves to 'Promise Resolved' after 5 seconds
-  myPromise('RESULT')
-);
-//output: ["Hello", "World", 0, 1, "Promise Resolved: RESULT"]
+  sourceFive: myPromise('RESULT')
+});
+/*
+ * Output:
+ * { 
+ *   sourceOne: "Hello", 
+ *   sourceTwo: "World", 
+ *   sourceThree: 0,
+ *   sourceFour: 1,
+ *   sourceFive: "Promise Resolved: RESULT"
+ * }
+ */
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-##### Example 3: Making a variable number of requests
+##### Example 3: Making a variable number of requests (uses deprecated API)
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-3mbbjw?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/febejakapi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/0b8Lnh7s/1/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-3mbbjw?file=index.ts&devtoolsheight=100) )
 
 ```js
 // RxJS v6+
@@ -138,9 +143,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ##### Example 4: Handling errors on outside
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-xgskpm?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/gugawucixi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/6vz7tjx2/1/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-petcwk?file=index.ts&devtoolsheight=100) )
 
 ```js
 // RxJS v6+
@@ -148,27 +151,26 @@ import { delay, catchError } from 'rxjs/operators';
 import { forkJoin, of, throwError } from 'rxjs';
 
 /*
-  when all observables complete, give the last
-  emitted value from each as an array
+  If any inner observables error, the error result
+  will be emitted by catchError.
 */
-const example = forkJoin(
-  //emit 'Hello' immediately
-  of('Hello'),
-  //emit 'World' after 1 second
-  of('World').pipe(delay(1000)),
+const example = forkJoin({
+  // emit 'Hello' immediately
+  sourceOne: of('Hello'),
+  // emit 'World' after 1 second
+  sourceTwo: of('World').pipe(delay(1000)),
   // throw error
-  _throw('This will error')
-).pipe(catchError(error => of(error)));
-//output: 'This will Error'
+  sourceThree: throwError('This will error')
+}).pipe(catchError(error => of(error)));
+
+// output: 'This will Error'
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
 ##### Example 5: Getting successful results when one inner observable errors
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-hydgiu?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/memajepefe/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/emdu4doy/1/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-7qcyvz?file=index.ts&devtoolsheight=100) )
 
 ```js
 // RxJS v6+
@@ -176,18 +178,26 @@ import { delay, catchError } from 'rxjs/operators';
 import { forkJoin, of, throwError } from 'rxjs';
 
 /*
-  when all observables complete, give the last
-  emitted value from each as an array
+  Emit values from successfully completed
+  inner observables.
 */
-const example = forkJoin(
-  //emit 'Hello' immediately
-  of('Hello'),
-  //emit 'World' after 1 second
-  of('World').pipe(delay(1000)),
+const example = forkJoin({
+  // emit 'Hello' immediately
+  sourceOne: of('Hello'),
+  // emit 'World' after 1 second
+  sourceTwo: of('World').pipe(delay(1000)),
   // throw error
-  _throw('This will error').pipe(catchError(error => of(error)))
-);
-//output: ["Hello", "World", "This will error"]
+  sourceThree: throwError('This will error').pipe(catchError(error => of(error)))
+});
+
+/*
+ * Output:
+ * {
+ *   sourceOne: "Hello",
+ *   sourceTwo: "World",
+ *   sourceThree: "This will error"
+ * }
+ */
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
@@ -227,15 +237,15 @@ export class App {
 
   ngOnInit() {
     // simulate 3 requests with different delays
-    forkJoin(
-      this._myService.makeRequest('Request One', 2000),
-      this._myService.makeRequest('Request Two', 1000),
-      this._myService.makeRequest('Request Three', 3000)
-    )
-    .subscribe(([res1, res2, res3]) => {
-      this.propOne = res1;
-      this.propTwo = res2;
-      this.propThree = res3;
+    forkJoin({
+      requestOne: this._myService.makeRequest('Request One', 2000),
+      requestTwo: this._myService.makeRequest('Request Two', 1000),
+      requestThree: this._myService.makeRequest('Request Three', 3000)
+    })
+    .subscribe(({requestOne, requestTwo, requestThree}) => {
+      this.propOne = requestOne;
+      this.propTwo = requestTwo;
+      this.propThree = requestThree;
     });
   }
 }
