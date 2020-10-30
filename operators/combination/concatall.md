@@ -87,7 +87,7 @@ const subscribe = example.subscribe(val =>
 ```js
 // RxJS v6+
 import { take, concatAll } from 'rxjs/operators';
-import { interval, of } from 'rxjs/observable/interval';
+import { interval, of } from 'rxjs';
 
 const obs1 = interval(1000).pipe(take(5));
 const obs2 = interval(500).pipe(take(2));
