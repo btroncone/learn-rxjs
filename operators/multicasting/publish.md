@@ -22,12 +22,11 @@ import { publish, tap } from 'rxjs/operators';
 
 //emit value every 1 second
 const source = interval(1000);
-const example = source.pipe(
+//do nothing until connect() is called
+const example = publish()(source.pipe(
   //side effects will be executed once
   tap(_ => console.log('Do Something!')),
-  //do nothing until connect() is called
-  publish()
-);
+));
 
 /*
   source will not emit values until connect() is called
@@ -50,6 +49,7 @@ const subscribeTwo = example.subscribe(val =>
 setTimeout(() => {
   example.connect();
 }, 5000);
+
 ```
 
 ### Additional Resources
