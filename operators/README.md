@@ -50,7 +50,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [debounceTime](filtering/debouncetime.md) ⭐
   - [distinct](filtering/distinct.md)
   - [distinctUntilChanged](filtering/distinctuntilchanged.md) ⭐
-  - [distinctUntilKeyChanged](distinctuntilkeychanged.md)
+  - [distinctUntilKeyChanged](filtering/distinctuntilkeychanged.md)
   - [filter](filtering/filter.md) ⭐
   - [find](filtering/find.md)
   - [first](filtering/first.md)
