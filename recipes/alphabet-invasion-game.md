@@ -15,7 +15,7 @@ This recipe demonstrates RxJS implementation of Alphabet Invasion Game.
 
 #### index.ts
 
-```js
+```ts
 // RxJS v6+
 import { interval, fromEvent, combineLatest, BehaviorSubject } from 'rxjs';
 import { scan, startWith, map, takeWhile, switchMap } from 'rxjs/operators';
@@ -35,8 +35,7 @@ const intervalSubject = new BehaviorSubject(600);
 const letters$ = intervalSubject.pipe(
   switchMap(i =>
     interval(i).pipe(
-      scan < number,
-      Letters >
+      scan<number, Letters>
         (letters => ({
           intrvl: i,
           ltrs: [
@@ -71,8 +70,7 @@ const renderGameOver = () => (document.body.innerHTML += '<br/>GAME OVER!');
 const noop = () => {};
 
 const game$ = combineLatest(keys$, letters$).pipe(
-  scan < [string, Letters],
-  State >
+  scan<[string, Letters], State>
     ((state, [key, letters]) => (
       letters.ltrs[letters.ltrs.length - 1] &&
       letters.ltrs[letters.ltrs.length - 1].letter === key
