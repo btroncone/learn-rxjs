@@ -7,7 +7,7 @@
 ---
 
 💡 If you want to start with a value instead, check out
-[`startWith`](startWith.md)!
+[`startWith`](startwith.md)!
 
 💡 If you want to perform an action on completion, but do not want to emit a
 value, check out [`finalize`](../utility/finalize.md)!
