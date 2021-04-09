@@ -97,6 +97,7 @@ const subscribe = example.subscribe(val =>
 ### Additional Resources
 
 - [filter](https://rxjs.dev/api/operators/filter) 📰 - Official docs
+- [filter](https://indepth.dev/reference/rxjs/operators/filter) - In Depth Dev Reference
 - [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)

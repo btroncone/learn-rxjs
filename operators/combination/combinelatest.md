@@ -157,6 +157,7 @@ combineLatest(addOneClick$('red'), addOneClick$('black')).subscribe(
 
 - [combineLatest](https://rxjs.dev/api/index/function/combineLatest) 📰 -
   Official docs
+- [combineLatest](https://indepth.dev/reference/rxjs/operators/combine-latest) - In Depth Dev Reference
 - [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth)

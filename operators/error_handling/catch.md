@@ -109,6 +109,7 @@ iWillStopListening$.subscribe(console.log);
 ### Additional Resources
 
 - [catchError](https://rxjs.dev/api/operators/catchError) 📰 - Official docs
+- [catchError](https://indepth.dev/reference/rxjs/operators/catch-error) - In Depth Dev Reference
 - [Error handling operator: catch](https://egghead.io/lessons/rxjs-error-handling-operator-catch?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

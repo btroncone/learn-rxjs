@@ -215,6 +215,7 @@ source$
 ### Additional Resources
 
 - [mergeMap](https://rxjs.dev/api/operators/mergeMap) 📰 - Official docs
+- [mergeMap](https://indepth.dev/reference/rxjs/operators/merge-map) - In Depth Dev Reference
 - [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) 🎥 💵 -
   Ben Lesh
 - [Async requests and responses in RxJS](https://egghead.io/lessons/rxjs-04-reactive-programming-async-requests-and-responses-in-rxjs)

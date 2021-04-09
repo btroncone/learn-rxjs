@@ -85,6 +85,7 @@ const example = source
 ### Additional Resources
 
 - [mergeAll](https://rxjs.dev/api/operators/mergeAll) 📰 - Official docs
+- [mergeAll](https://indepth.dev/reference/rxjs/operators/merge-all) - In Depth Dev Reference
 - [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 

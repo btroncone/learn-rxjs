@@ -32,6 +32,7 @@ sub.complete(); //456, 456 logged by both subscribers
 
 - [AsyncSubject](https://rxjs-dev.firebaseapp.com/api/index/class/AsyncSubject)
   📰 - Official docs
+- [AsyncSubject](https://indepth.dev/reference/rxjs/subjects/async-subject) - In Depth Dev Reference
 
 ---
 
