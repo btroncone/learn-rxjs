@@ -1,4 +1,4 @@
-# from
+``# from
 
 #### signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
 
@@ -100,6 +100,7 @@ const subscribe = source.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [from](https://rxjs.dev/api/index/function/from) 📰 - Official docs
+- [from](https://indepth.dev/reference/rxjs/operators/from) - In Depth Dev Reference
 - [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 

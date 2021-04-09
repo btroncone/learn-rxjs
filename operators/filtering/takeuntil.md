@@ -117,6 +117,7 @@ mousedown$
 ### Additional Resources
 
 - [takeUntil](https://rxjs.dev/api/operators/takeUntil) 📰 - Official docs
+- [takeUntil](https://indepth.dev/reference/rxjs/operators/take-until) - In Depth Dev Reference
 
 * [Avoiding takeUntil leaks](https://blog.angularindepth.com/rxjs-avoiding-takeuntil-leaks-fb5182d047ef) -
   Angular in Depth

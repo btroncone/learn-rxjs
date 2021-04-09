@@ -254,6 +254,7 @@ export class App {
 ### Additional Resources
 
 - [forkJoin](https://rxjs.dev/api/index/function/forkJoin) 📰 - Official docs
+- [forkJoin](https://indepth.dev/reference/rxjs/operators/fork-join) - In Depth Dev Reference
 
 ---
 

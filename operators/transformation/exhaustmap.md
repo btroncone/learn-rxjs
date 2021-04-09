@@ -121,6 +121,7 @@ const exhaustSub = firstInterval
 ### Additional Resources
 
 - [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 📰 - Official docs
+- [exhaustMap](https://indepth.dev/reference/rxjs/operators/exhaust-map) - In Depth Dev Reference
 
 ---
 

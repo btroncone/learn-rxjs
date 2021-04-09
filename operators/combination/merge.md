@@ -83,6 +83,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [merge](https://rxjs.dev/api/index/function/merge) 📰 - Official docs
+- [merge](https://indepth.dev/reference/rxjs/operators/merge) - In Depth Dev Reference
 - [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming)
