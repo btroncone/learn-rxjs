@@ -1,4 +1,4 @@
-``# from
+# from
 
 #### signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
 
