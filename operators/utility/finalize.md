@@ -6,7 +6,7 @@
 
 ### Examples
 
-##### Example 1: Execute callback function when the observable completes
+##### Example 1: Execute callback function when the observable completes, or when the subscriber explicitly unsubscribes
 
 ( [StackBlitz](https://stackblitz.com/edit/typescript-ohddud) )
 
