@@ -1,51 +1,39 @@
-# Introduction
+# 시작하기
 
-Clear examples, explanations, and resources for RxJS.
+RxJS에 대한 명확한 예제, 설명, 자료.
 
-_By_ [_@btroncone_](https://twitter.com/BTroncone)
+[//]: # (Clear examples, explanations, and resources for RxJS.)
 
-## Introduction
+[@btroncone](https://www.learnrxjs.io/) 님이 작성하신 [Learn RxJs](https://www.learnrxjs.io/) 문서의 한국어 번역본입니다.
 
-[RxJS](https://github.com/ReactiveX/rxjs) is one of the hottest libraries in web
-development today. Offering a powerful, functional approach for dealing with
-events and with integration points into a growing number of frameworks,
-libraries, and utilities, the case for learning Rx has never been more
-appealing. Couple this with the ability to utilize your knowledge across
-[nearly any language](http://reactivex.io/languages.html), having a solid grasp
-on reactive programming and what it can offer seems like a no-brainer.
+## RxJS 소개
 
-**But...**
+[RxJS](https://github.com/ReactiveX/rxjs) 는 최근 웹 개발에서 핫한 라이브러리 중 하나입니다.
+이벤트 처리에 대해 강력하고 기능적인 접근법을 제공하며, 다양한 프레임워크, 라이브러리, 유틸리티들로 활용되고 있습니다. 그러니 Rx를 배우는 것은 그 어느 때보다 매력적이죠.
+Rx는 [거의 모든 언어](http://reactivex.io/languages.html) 에서 활용할 수 있기 때문에,
+반응형 프로그래밍을 확실하게 파악할 수 있으며, 무엇을 제공하는지 쉽게 이해할 수 있습니다.
 
-Learning RxJS and reactive programming is
-[hard](https://twitter.com/hoss/status/742643506536153088). There's the
-multitude of concepts, large API surface, and fundamental shift in mindset from
-an
-[imperative to declarative style](https://tylermcginnis.com/imperative-vs-declarative-programming/).
-This site focuses on making these concepts approachable, the examples clear and
-easy to explore, and features references throughout to the best RxJS related
-material on the web. The goal is to supplement the
-[official docs](http://reactivex.io/rxjs/) and pre-existing learning material
-while offering a new, fresh perspective to clear any hurdles and tackle the pain
-points. Learning Rx may be difficult but it is certainly worth the effort!
+**그러나...**
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz)](https://ultimatecourses.com/courses/rxjs?ref=4)
+RxJS와 반응형 프로그래밍은 배우기 [어렵습니다](https://twitter.com/hoss/status/742643506536153088).
+다양한 개념들, 방대한 API들이 존재하며 사고 방식을 [명령형에서 선언적 스타일로](https://tylermcginnis.com/imperative-vs-declarative-programming/)
+전환해야 합니다. 이 사이트는 이러한 개념을 쉽게 접근할 수 있게 하는 데 초점을 두고 있으며, 명확하고 찾아보기 쉬운 예제를 제공하고, 좋은 자료들을 참조해 두었습니다.
 
-### Brand New to RxJS?
+최종 목표는 [공식 문서](http://reactivex.io/rxjs/) 와 기존 학습 자료를 보완하면서, 어렵지 않게 문제를 해결할 수 있는 새롭고 신선한 관점을 제공하는 것입니다.
+Rx를 배우는 것은 어렵겠지만, 충분히 배울 가치가 있습니다!
 
-Start getting familiar with all the key concepts needed to be productive with
-our [RxJS Primer](/concepts/rxjs-primer.md)!
+### RxJS를 처음 접하셨나요?
 
-## Content
+[RxJS 입문](/concepts/rxjs-primer.md) 문서를 통해 핵심 개념들에 익숙해져 보세요!
+
+## 목차
 
 #### Operators
 
-Operators are the horse-power behind observables, providing an elegant,
-declarative solution to complex asynchronous tasks. This section contains all
-[RxJS operators](/operators/README.md), included with clear, executable
-examples. Links to additional resources and recipes for each operator are also
-provided, when applicable.
+Operator는 observable의 복잡한 비동기 작업에 우아하고 선언적인 해결책을 제공하는 강력한 도구입니다.
+이 섹션에서는 모든 [RxJS operator](/operators/README.md)와 명확하고 실행 가능한 예제 코드, 추가 자료를 제공합니다.
 
-##### Operator Categories
+##### Operator 분류
 
 - [Combination](/operators/combination/README.md)
 - [Conditional](/operators/conditional/README.md)
@@ -56,76 +44,69 @@ provided, when applicable.
 - [Transformation](/operators/transformation/README.md)
 - [Utility](/operators/utility/README.md)
 
-**OR...**
+**또는...**
 
-[Complete listing in alphabetical order](/operators/complete.md)
+[전체 목록](/operators/complete.md)
 
-#### Understanding Subjects
+#### Subjects
 
-A Subject is a special type of Observable which shares a single execution path
-among observers.
+Subject는 하나의 실행 경로를 여러 observer들이 공유하는 특별한 observable입니다.
 
-- [Overview](/subjects/README.md)
+- [개요](/subjects/README.md)
 - [AsyncSubject](/subjects/asyncsubject.md)
 - [BehaviorSubject](/subjects/behaviorsubject.md)
 - [ReplaySubject](/subjects/replaysubject.md)
 - [Subject](/subjects/subject.md)
 
-#### Concepts
+#### RxJS 개념
 
-Without a solid base knowledge of how Observables work behind the scenes, it's
-easy for much of RxJS to feel like 'magic'. This section helps solidify the
-major concepts needed to feel comfortable with reactive programming and
-Observables.
+Observable의 내부 동작에 대한 기초적인 지식 없이는 RxJS가 그저 마술처럼 느껴질 수 있습니다.
+이 섹션에서는 반응형 프로그래밍과 observable에 익숙해지는 데 필요한 주요 개념들을 다루고 있습니다.
 
-- [RxJS Primer](/concepts/rxjs-primer.md)
-- [Get started transforming streams with map, pluck, and mapTo](/concepts/get-started-transforming.md)
-- [Time based operators comparison](/concepts/time-based-operators-comparison.md)
-- [RxJS v5 -> v6 Upgrade](/concepts/rxjs5-6.md)
+- [RxJS 입문](concepts/rxjs-primer.md)
+- [map, pluck, mapTo를 이용해 stream 변형하기](concepts/get-started-transforming.md)
+- [시간 기반의 operator 비교](concepts/time-based-operators-comparison.md)
+- [RxJS v5에서 v6으로](concepts/rxjs5-6.md)
 
-#### Recipes
+#### 레시피
 
-Recipes for common use-cases and interesting solutions with RxJS.
+- [영어 타자 연습 게임](/recipes/alphabet-invasion-game.md)
+- [Battleship 게임](/recipes/battleship-game.md)
+- [버블 게임](/recipes/breakout-game.md)
+- [카레이싱 게임](/recipes/car-racing-game.md)
+- [점을 잡아라!](/recipes/catch-the-dot-game.md)
+- [클릭좌 게임](/recipes/click-ninja-game.md)
+- [날아라 새 게임](/recipes/flappy-bird-game.md)
+- [게임 루프](/recipes/gameloop.md)
+- [가로 스크롤 표시 바](/recipes/horizontal-scroll-indicator.md)
+- [HTTP 폴링](/recipes/http-polling.md)
+- [잠금화면](/recipes/lockscreen.md)
+- [매트릭스 디지털 비 효과](/recipes/matrix-digital-rain.md)
+- [기억력 게임](/recipes/memory-game.md)
+- [지뢰 찾기](/recipes/mine-sweeper-game.md)
+- [점프 게임](/recipes/platform-jumper-game.md)
+- [Progress 바](/recipes/progressbar.md)
+- [저장 표시](/recipes/save-indicator.md)
+- [똑똑한 카운터](/recipes/smartcounter.md)
+- [스톱워치](/recipes/stop-watch.md)
+- [스페이스 인베이더](/recipes/space-invaders-game.md)
+- [새로고침하려면 스와이프하세요](/recipes/swipe-to-refresh.md)
+- [2인용 탱크 게임](/recipes/tank-battle-game.md)
+- [테트리스](/recipes/tetris-game.md)
+- [미리 입력](/recipes/type-ahead.md)
+- [이미지 덮기 게임](/recipes/uncover-image-game.md)
 
-- [Alphabet Invasion Game](/recipes/alphabet-invasion-game.md)
-- [Battleship Game](/recipes/battleship-game.md)
-- [Breakout Game](/recipes/breakout-game.md)
-- [Car Racing Game](/recipes/car-racing-game.md)
-- [Catch The Dot Game](/recipes/catch-the-dot-game.md)
-- [Click Ninja Game](/recipes/click-ninja-game.md)
-- [Flappy Bird Game](/recipes/flappy-bird-game.md)
-- [Game Loop](/recipes/gameloop.md)
-- [Horizontal Scroll Indicator](/recipes/horizontal-scroll-indicator.md)
-- [HTTP Polling](/recipes/http-polling.md)
-- [Lockscreen](/recipes/lockscreen.md)
-- [Matrix Digital Rain](/recipes/matrix-digital-rain.md)
-- [Memory Game](/recipes/memory-game.md)
-- [Mine Sweeper Game](/recipes/mine-sweeper-game.md)
-- [Platform Jumper Game](/recipes/platform-jumper-game.md)
-- [Progress Bar](/recipes/progressbar.md)
-- [Save Indicator](/recipes/save-indicator.md)
-- [Smart Counter](/recipes/smartcounter.md)
-- [Stop Watch](/recipes/stop-watch.md)
-- [Space Invaders Game](/recipes/space-invaders-game.md)
-- [Swipe To Refresh](/recipes/swipe-to-refresh.md)
-- [Tank Battle Game](/recipes/tank-battle-game.md)
-- [Tetris Game](/recipes/tetris-game.md)
-- [Type Ahead](/recipes/type-ahead.md)
-- [Uncover Image Game](/recipes/uncover-image-game.md)
+## 입문자를 위한 자료
 
-## Introductory Resources
+RxJS와 반응형 프로그래밍이 처음이신가요? 여러분의 학습 경험에 도움이 될 좋은 자료들을 첨부해 두었습니다.
 
-New to RxJS and reactive programming? In addition to the content found on this
-site, these excellent resources will help jump start your learning experience!
+#### 컨퍼런스
 
-#### Conferences
+- [RxJS Live](https://www.rxjs.live/)
 
-- [RxJS Live](https://www.rxjs.live/) - RxJS specific conference
+#### 문서
 
-#### Reading
-
-- [RxJS Introduction](https://rxjs-dev.firebaseapp.com/guide/overview) -
-  Official Docs
+- [RxJS Introduction](https://rxjs-dev.firebaseapp.com/guide/overview) - 공식 문서
 
 - [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) -
   André Staltz
@@ -133,7 +114,7 @@ site, these excellent resources will help jump start your learning experience!
 - [RxJS: Observables, Observers and Operators Introduction](https://ultimatecourses.com/blog/rxjs-observables-observers-operators) -
   Todd Motto
 
-#### Videos
+#### 동영상
 
 - [Ultimate RxJS](https://ultimatecourses.com/courses/rxjs?ref=4) 💵 - Brian
   Troncone
@@ -154,36 +135,30 @@ site, these excellent resources will help jump start your learning experience!
 - [Reactive Programming using Observables](https://www.youtube.com/watch?v=HT7JiiqnYYc&feature=youtu.be) -
   Jeremy Lund
 
-#### Exercises
+#### 연습문제
 
 - [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar
   Husain
 
-#### Tools
+#### 툴
 
-- [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) -
+- [Rx Marbles - Observable 다이어그램 모음](http://rxmarbles.com/) -
   André Staltz
 
-- [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) -
+- [Rx Visualizer - Observable Playground](https://rxviz.com) -
   Misha Moroshko
 
-- [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) -
+- [Reactive.how - 반응형 프로그래밍 학습용 사이트](http://reactive.how) -
   Cédric Soulas
 
-- [Rx Visualization - Visualizes programming with RxJS](https://fingerpich.github.io/rx-visualization/) -
+- [Rx Visualization - RxJS 프로그래밍 시각화 도구](https://fingerpich.github.io/rx-visualization/) -
   Mojtaba Zarei
 
-_Interested in RxJS 4? Check out_
-[_Denis Stoyanov's_](https://github.com/xgrommx) _excellent_
-[_eBook_](https://xgrommx.github.io/rx-book/)_!_
+_RxJS 4가 궁금하신가요?_
+[_Denis Stoyanov_](https://github.com/xgrommx) _의 멋진_
+[_eBook_](https://xgrommx.github.io/rx-book/) _을 확인해보세요!_
 
-## Translations
+## 원문/번역
 
+- [English](https://www.learnrxjs.io/)
 - [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
-
-### A Note On References
-
-All references included in this GitBook are resources, both free and paid, that
-helped me tremendously while learning RxJS. If you come across an article or
-video that you think should be included, please use the _edit this page_ link in
-the top menu and submit a pull request. Your feedback is appreciated!
