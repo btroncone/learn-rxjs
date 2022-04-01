@@ -1,5 +1,5 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
 .ua-ad {
   text-align: center;
@@ -14,17 +14,17 @@ pre[class*='language-'] {
 }
 
 .book {
-  font-family: 'Pretendard', sans-serif !important;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif !important;
 }
 
 .book .markdown-section pre > code {
-  font-family: 'JetBrains Mono', 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
+  font-family: 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
     monospace !important;
   font-size: 0.9em !important;
 }
 
 .markdown-section code {
-  font-family: 'JetBrains Mono', 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
+  font-family: 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
     monospace !important;
 }
 
