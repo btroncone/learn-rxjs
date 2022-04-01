@@ -162,3 +162,6 @@ _RxJS 4가 궁금하신가요?_
 
 - [English](https://www.learnrxjs.io/)
 - [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
+
+### 번역 오류 제보
+번역 및 내용 오류 시 상단의 _Edit on GitHub_ 버튼을 통해 Pull Request로 제보해주시면 감사하겠습니다!
