@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .ua-ad {
   text-align: center;
@@ -13,17 +14,17 @@ pre[class*='language-'] {
 }
 
 .book {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Pretendard', sans-serif !important;
 }
 
 .book .markdown-section pre > code {
-  font-family: 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
+  font-family: 'JetBrains Mono', 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
     monospace !important;
   font-size: 0.9em !important;
 }
 
 .markdown-section code {
-  font-family: 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
+  font-family: 'JetBrains Mono', 'Roboto Mono', Consolas, Monaco, andale mono, ubuntu mono,
     monospace !important;
 }
 
