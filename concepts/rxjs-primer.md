@@ -27,6 +27,8 @@ const myObservable = fromEvent(button, 'click');
 **이는 옵저버블이 ["차갑거나"](https://jae-gyeong.tistory.com/entry/%EB%9C%A8%EA%B1%B0%EC%9A%B4-Observable), 활성화되지 않았기 때문입니다(예: 이벤트 리스너 연결).
 이것 전까지는 말이죠...**
 
+[//]: # (TODO: 차후에 설명 추가)
+
 ## Subscription(구독)
 
 구독은 모든 것을 움직이는 원동력입니다.
@@ -412,30 +414,27 @@ merge(firstObservable, secondObservable)
 [`mergeMap`](../operators/transformation/mergemap.md), `mergeMapTo` 그리고
 [`mergeAll`](../operators/combination/mergeall.md)이 있습니다.
 
-## 기타 연산자의 유사성
+## 연산자 간의 기타 유사성
 
 유사한 목표를 갖고 있지만 트리거에 다양성을 제공하는 연산자도 있습니다.
-예를 들어, 특정 조건이 충족되고 나서 옵저버블을 구독 취소하기 위해 이러한 연산자들을 
+예를 들어, 특정 조건이 충족되고 나서 옵저버블을 구독 취소하기 위해 이러한 연산자들을
 사용할 수 있습니다.
 
-1. [`take`](../operators/filtering/take.md) 는 `n`개의 값만을 원할 때 사용합니다.
+1. [`take`](../operators/filtering/take.md)는 `n`개의 값만을 원할 때 사용합니다.
 2. [`takeLast`](../operators/filtering/takelast.md)는 뒤에서 `n`개의 값만을 원할 때 사용합니다.
-3. [`takeWhile`](../operators/filtering/takewhile.md)는 충족해야 할 값의 조건이 있을 때 사용합니다.
-4. [`takeUntil`](../operators/filtering/takeuntil.md)는 다른 소스가 방출될 때까지 활성화 상태를 유지할 때 사용합니다.
+3. [`takeWhile`](../operators/filtering/takewhile.md)은 충족해야 할 값의 조건이 있을 때 사용합니다.
+4. [`takeUntil`](../operators/filtering/takeuntil.md)은 다른 소스가 방출될 때까지 활성화 상태를 유지할 때 사용합니다.
 
 처음엔 RxJS의 연산자 수가 압도적으로 느껴질 수 있지만, 이러한 공통된 동작과 패턴은 RxJS의 학습 격차를 빠르게 메울 수 있습니다.
 
 ## 이것으로 무엇을 할 수 있죠?
 
-As you become more familiar with push based programming through Observables, you
-can begin to model all async behavior in your applications through observable
-streams. This opens up simple solutions and flexibility for notably complex
-behavior.
+옵저버블을 통한 push 기반 프로그래밍에 더욱 익숙해지면 옵저버블 스트림을 통해 애플리케이션의 모든 비동기 동작들을 모델링할 수 있습니다.
+특히 복잡한 동작에 대한 간단한 솔루션과 다양성을 제공하죠.
 
-For instance, suppose we wanted to make a request which saved user activity when
-they answered a quiz question. Our initial implementation may use the
-[`mergeMap`](../opearators/transformation/mergemap.md) operator, which fires off
-a save request on each event:
+예를 들어, 유저가 퀴즈 질문에 답했을 때 유저의 활동 내역을 저장하는 요청을 보내고 싶다고 가정해 봅시다.
+초기 구현은 각 이벤트에 대한 저장 요청을 시작하는 [`mergeMap`](../opearators/transformation/mergemap.md)
+연산자를 사용할 수 있겠죠?
 
 ```js
 const formEvents = fromEvent(formField, 'click');
@@ -447,34 +446,28 @@ const subscription = formEvents
   .subscribe();
 ```
 
-Later, it's determined that we need to ensure order of these saves. Armed with
-the knowledge of operator behavior from above, instead of implementing a complex
-queueing system we can instead replace the
-[`mergeMap`](../operators/transformation/mergemap.md) operator with
-[`concatMap`](../operators/transformation/concatmap.md) and push up our changes:
-
+이후, 저장 시 순서를 확인해야 한다고 판단되었을 때 연산자 동작에 대한 지식이 있다면,
+복잡한 대기열 시스템을 구현하는 대신에
+[`mergeMap`](../operators/transformation/mergemap.md) 연산자를
+[`concatMap`](../operators/transformation/concatmap.md)으로 교체하기만 하면 됩니다.
 ```js
 const formEvents = fromEvent(formField, 'click');
 const subscription = formEvents
   .pipe(
     map(convertToAppropriateValue),
-    // now the next request won't begin until the previous completes
+    // 이제 이전 요청이 완료될 때까지 다음 요청은 시작되지 않습니다!
     concatMap(saveRequest)
   )
   .subscribe();
 ```
 
-With the change of one word we are now queueing our event requests, and this is
-just scratching the surface of what is possible!
+고작 한 단어를 바꿔 이벤트 요청을 순서대로 처리하게 만든 건, 앞으로 우리가 할 수 있는 일에 비하면 빙산의 일각에 불과하죠!
 
-## Keep Going!
+## 계속하세요!
 
-Learning RxJS can be intimidating, but it's a path I promise is worth the
-investment. If some of these concepts are still fuzzy (or make no sense at
-all!), don't worry! It will all click soon.
+RxJS를 배우는 게 두려울 수 있지만, 투자 가치는 충분하다고 약속드릴 수 있습니다.
+설명드린 개념 중 일부분이 여전히 명확하지(또는 이해되지) 않아도, 걱정하지 마세요!
+곧 모든 게 명확해질 거예요.
 
-Start checking out the operators on the left hand side of the site for common
-examples and use-cases, as well as the additional
-[introductory resources](../README.md#introductory-resources) we have collected
-from across the web. Good luck and enjoy your journey to becoming a reactive
-programming expert!
+사이트 왼쪽에 있는 연산자들의 예시와, [입문자를 위한 자료](../README.md#입문자를+위한+자료)들을 확인해보세요.
+반응형 프로그래밍 전문가가 되기 위한 여러분들의 여정을 응원합니다!
