@@ -258,12 +258,9 @@ keyup$
 
 ![pluck](https://drive.google.com/uc?export=view&id=1-TdTqWb-qoif4FJojY3sC0oS81EkB65z)
 
-RxJS features many operators that are simply shortcuts for other operators. For
-example, any time we just want to grab a single property from an emitted value,
-instead of using `map` we could use `pluck`. The `pluck` operator accepts a list
-of values which describe the property you wish to grab from the emitted item.
-For instance, using our event code example from above we could use `pluck`
-instead of `map` to extract the `code` property from the `event` object:
+RxJS에는 단순히 다른 연산자를 단축하기만 한 연산자들이 많습니다. 
+예를 들어, 방출된 값에서 하나의 속성만을 가져오고 싶다면 언제든 `map` 대신 `pluck`을 사용할 수 있죠.
+위의 이벤트 코드 예제에서도 `map` 대신 `pluck`을 사용해 `이벤트` 객체에서 `code` 속성을 추출할 수 있습니다. 
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -277,9 +274,9 @@ keyup$
   .subscribe(console.log);
 ```
 
-We can also pass `pluck` multiple values to grab a nested property within an
-object. For example, if we wanted to grab the `nodeName` from the `target`
-element on click, we could pass both of these properties to `pluck` in order:
+`pluck`에 여러 개의 값을 전달하여 객체 내부에 중첩된 속성을 가져올 수도 있습니다.
+예를 들어, 클릭된 `target` 엘리먼트에서 `nodeName`을 가져오고 싶다면 
+두 속성을 `pluck`에 순서대로 전달하면 됩니다.
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -293,11 +290,10 @@ click$
   .subscribe(console.log);
 ```
 
-Like many other helper operators in RxJS, behind the scenes `pluck` is simply
-reusing the `map` operator, passing it a function to grab the appropriate
-property:
+RxJS의 다른 헬퍼 연산자와 마찬가지로, `pluck`은 내부에서 `map` 연산자를 재사용하여
+적절한 속성을 가져오는 함수를 전달합니다.
 
-[(Source Code)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/operators/pluck.ts#L48-L54)
+[(소스 코드)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/operators/pluck.ts#L48-L54)
 
 ```ts
 export function pluck<T, R>(...properties: string[]): OperatorFunction<T, R> {
@@ -310,20 +306,15 @@ export function pluck<T, R>(...properties: string[]): OperatorFunction<T, R> {
 }
 ```
 
-Functionally, `map` and `pluck` will operate the same in these scenarios, I
-would suggest using whichever you feel most comfortable reading at a glance.
+예제에서 `map`과 `pluck`은 기능적으로 동일하게 작동하지만, 한 눈에 알아보기 쉬운 것을 선택하는 게 좋습니다. 
 
-Lastly, there may also be times where you **always** want to map to a single
-value, no matter the input. For these situations, you can use the `mapTo`
-operator.
+마지막으로, 입력에 관계없이 **항상** 하나의 값에 매핑하려는 경우에 `mapTo` 연산자를 사용할 수 있습니다.
 
-## Mapping to a constant value with `mapTo`
+## `mapTo`로 상수 값에 매핑하기
 
 ![mapTo](https://drive.google.com/uc?export=view&id=1329klWDEvjgjh3JVJkzHoZDc7CpcLZvO)
 
-For situations where you find yourself always wanting to map to a specific
-value, one way you could handle it is by simply using `map` and ignoring the
-input:
+단순히 `map`을 사용한 후 입력을 무시하면, 매번 특정 값에 매핑하고 싶은 상황을 해결할 수 있습니다.
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -332,14 +323,13 @@ import { map } from 'rxjs/operators';
 const click$ = fromEvent(document, 'click');
 
 click$
-  .pipe(map(() => 'You clicked!'))
-  // 'You clicked!', 'You clicked!'
+  .pipe(map(() => '클릭하셨군요!'))
+  // '클릭하셨군요!', '클릭하셨군요!'
   .subscribe(console.log);
 ```
 
-While this works, the wrapping function isn't necessary since we are ignoring
-the received value. For these scenarios you can replace `map` with `mapTo`, and
-simply provide the value you wish to return on all emissions:
+이 작업에서는 반환된 값을 무시하므로 매핑 함수가 필요하지 않습니다.
+이러한 상황에서는 `map` 대신 `mapTo`에 모든 방출에 대해 반환하려는 값을 제공하면 됩니다.
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -353,21 +343,15 @@ click$
   .subscribe(console.log);
 ```
 
-Like `pluck`, `mapTo` provides no real benefit functionally over returning a
-constant value with `map`, but syntactically it may prove slightly easier to
-consume and read at a glance.
+`mapTo`는 `pluck`과 마찬가지로 `map`에 비해 기능적 이점을 제공하지는 않지만, 한 눈에 이해하기 조금 더 쉬울 수 있죠.
 
-## Conclusion
+## 정리하기
 
-In conclusion, `map` is a versatile operator which lets you transform a stream
-using a provided projection function. Whether it's mapping to a keycode, value
-updates from an input box, or reshaping an object, `map` will be one of the most
-used operators in your day-to-day RxJS toolbox. For scenarios where you just
-need to map to a single property, or always want to map to a constant value, you
-can also check out the [`pluck`](../operators/transformation/pluck.md) and
-[`mapTo`](../operators/transformation/mapto.md) helper operators.
+정리해보자면, `map`은 제공된 보조 함수를 사용해 스트림을 변환할 수 있는 다목적 연산자입니다. 
+키 코드 매핑, 입력 필드의 값 업데이트, 객체의 형태 변경 등 일상적인 상황에서 굉장히 많이 사용되죠.
+단일 속성에 매핑하는 경우나 항상 상수 값에 매핑하는 경우 각각 [`pluck`](../operators/transformation/pluck.md) 과
+[`mapTo`](../operators/transformation/mapto.md) 헬퍼 연산자를 사용할 수도 있습니다.
 
-For a full list of transformation operators with examples, including operators
-which manage mapping to more complex values such as other observables, check out
-the [transformation operator section](../operators/transformation/README.md). We
-will explore these topics in detail in future posts!
+더 복잡한 값에 대한 매핑을 담당하는 변환 연산자와 그 예제 목록을 보려면, 
+[transformation operator(변환 연산자) 카테고리](../operators/transformation/README.md)를 참고하세요.
+다음 문서에서 이 주제들에 대해 더 자세히 알아보도록 하죠!
