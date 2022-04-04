@@ -16,20 +16,18 @@ Observable(옵저버블)을 사용하다 보면,
 
 ## `map` 소개
 
-If you have spent time working with JavaScript arrays you may already be
-familiar with `Array.map`. When dealing with arrays, the `map` method lets you
-transform an array by applying a provided function (often referred to as a
-'projection' function) to each item within the array. For instance, let's say we
-have an array of numbers `1-5`:
+여러분이 자바스크립트 배열을 사용해본 적이 있다면 이미 `Array.map`에 익숙할 것입니다.
+배열을 다룰 때, `map` 메소드를 사용하면 주어진 함수를 
+배열 내의 각 요소에 적용하여 배열을 변환할 수 있습니다.
+예를 들어, `1-5`의 숫자 배열이 있다고 해 봅시다.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
 ```
 
-If we wanted to transform this into an array of each number multiplied by ten,
-we could use the `map` method. To do this, we call `map` on our numbers array,
-passing it a function which will be invoked with each value of the source array,
-returning the number multiplied by ten:
+이 배열을 각 숫자에 10을 곱한 배열로 변환하기 위해 `map` 메소드를 사용할 수 있습니다.
+숫자 배열에서 `map`을 호출하고, 배열의 각 값을 호출하는 함수를 전달하고,
+10으로 곱한 숫자를 반환하면 됩니다.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -39,9 +37,8 @@ const numbersTimesTen = numbers.map(number => number * 10);
 console.log(numbersTimesTen);
 ```
 
-The `map` method does not mutate the existing array, but instead returns a new
-array. For example, if we were to log the `numbers` array after calling `map`,
-we can see that it's unchanged:
+`map` 메소드는 기존의 배열을 변경하지 않고 새 배열을 반환합니다.
+`map`을 호출한 후 `numbers` 배열을 로깅해보면 `numbers` 배열이 바뀌지 않았다는 것을 알 수 있죠.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -54,93 +51,83 @@ console.log(numbersTimesTen);
 console.log(numbers);
 ```
 
-To understand this better, let's walk through what a naive implementation of
-`Array.map` could look like.
+조금 더 자세히 이해하기 위해, `Array.map`의 원리적인 구현을 살펴보겠습니다.
 
-1. We create a new array.
-2. For every item contained in the source array we apply the provided function.
-3. We then push the result of this function to a temporary `resultArray`.
-4. After doing this for every item, we return the new array.
+1. 새 배열을 생성합니다.
+2. 소스 배열에 포함된 모든 요소에 대해 함수를 적용합니다.
+3. 함수의 결과를 `resultArray`에 임시로 push 합니다.
+4. 모든 요소에 이 작업을 완료하면, 새 배열을 반환합니다.
 
 ```js
 Array.prototype.map = function(projectFn) {
   let resultArray = [];
-  // loop through each item
+  // 모든 요소를 순회
   this.forEach(item => {
-    // apply the provided project function
+    // 제공된 project function을 적용
     let result = projectFn(item);
-    // push the result to our new array
+    // 새 배열에 결과값을 push
     resultArray.push(result);
   });
-  // return the array containing transformed values
+  // 변환된 값들을 가진 배열 반환
   return resultArray;
 };
 ```
 
-While the
-[real implementation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-of `Array.map` includes features like index tracking and proper error
-management, this gives us a general sense of how things work behind the scenes.
+[실제 `Array.map`의 구현](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) 은 index 추적 및 오류 관리 같은 기능들이 포함되어 있지만, 
+백그라운드에서 어떻게 작동하는지 간단히 알아보기 위해 축약했습니다.
 
 {% hint style="info" %}
 
-RxJS also offers Observable variants of other popular array methods, like
-[`filter`](../operators/filtering/filter.md),
-[`reduce`](../operators/transformation/reduce.md), and
-[`find`](../operators/filtering/find.md)!
+RxJS는 [`filter`](../operators/filtering/filter.md),
+[`reduce`](../operators/transformation/reduce.md), 
+[`find`](../operators/filtering/find.md)와 같이 자주 쓰이는 배열 메소드들의 
+옵저버블 버전 또한 제공한답니다!
 
 {% endhint %}
 
-So what are some other common scenarios where we could put the `map` method to
-use? Using `Array.map`, we may also want to transform objects. For instance,
-suppose we have an array of objects with a first and last name property and we
-want to tack on a full name property to each object. We could accomplish this by
-supplying a function that accepts each object and _maps_ it to a new object that
-includes all current properties plus the new `fullName` property. In this
-example we are using the
-[object spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-and
-[template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals),
-but you could also explicitly rewrite the properties:
+그러면 `map` 메소드를 사용할 수 있는 다른 상황에는 무엇이 있을까요?
+`Array.map`을 사용해서 객체를 변환할 수도 있습니다.
+예를 들어, 성과 이름 속성이 있는 객체 배열이 있고 각 객체에 전체 이름 속성을 추가하려 한다고 가정해 봅시다.
+이 문제는 각 객체의 모든 속성과 `fullName` 속성을 갖고 있는 새 객체에 _매핑_ 하는 함수가 있다면 
+해결할 수 있을 것 같습니다. 이 예제에서는 [전개 구문](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax),
+[템플릿 리터럴](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+을 사용하고 있지만, 명시적으로 속성을 작성해도 괜찮습니다.
 
 ```js
 const people = [
-  { firstName: 'Brian', lastName: 'Troncone' },
-  { firstName: 'Todd', lastName: 'Motto' }
+  { firstName: '사과', lastName: '김' },
+  { firstName: '자몽', lastName: '이' }
 ];
 const peopleWithFullName = people.map(person => ({
   ...person,
-  fullName: `${person.firstName} ${person.lastName}`
+  fullName: `${person.lastName}${person.firstName}`
 }));
 
-// [{ firstName: 'Brian', lastName: 'Troncone', fullName: 'Brian Troncone' }, {firstName: 'Todd', lastName: 'Motto', fullName: 'Todd Motto' }]
+// [{ firstName: '사과', lastName: '김', fullName: '김사과' }, {firstName: '자몽', lastName: '이', fullName: '이자몽' }]
 console.log(peopleWithFullName);
 ```
 
-Another common use case for `map` is extracting a single property from an
-object. For example, given the sample above suppose we decided we only _really_
-need the last name property for display. Instead of our function returning a new
-object, we can instead return just the property we need from that object:
+`map`의 또 다른 사용 사례는 객체에서 하나의 속성만 추출하는 상황입니다.
+위의 예시에서, _오직_ 성 속성만 보여주기로 했다고 가정해봅시다.
+이번에는 함수에서 새 객체를 반환하는 대신에 기존 객체에서 필요한 속성만 반환하면 됩니다.
 
 ```js
 const people = [
-  { firstName: 'Brian', lastName: 'Troncone' },
-  { firstName: 'Todd', lastName: 'Motto' }
+  { firstName: '사과', lastName: '김' },
+  { firstName: '자몽', lastName: '이' }
 ];
 const lastNames = people.map(person => person.lastName);
 
-// [ 'Troncone', 'Motto' ]
+// [ '김', '이' ]
 console.log(lastNames);
 ```
 
-At this point, we are transforming an array of people objects into an array of
-string last names.
+사람 객체 배열을 문자열 성 배열로 변환해보았습니다.
 
-As you can see, the `map` method is extremely flexible with a wide variety of
-use cases, but how does this translate to `map` with RxJS, and when would you
-put this to use with observables?
+보셨다시피, `map` 메소드는 다양한 상황에서 유연하게 사용될 수 있습니다. 
+그렇다면 RxJS에서 `map`을 활용하는 방법은 무엇이고, 언제 옵저버블과 함께 사용할 수 있을까요?
 
-## RxJS `map` operator
+## RxJS `map` 연산자
 
 ![map](https://drive.google.com/uc?export=view&id=1fbxzA5p0FFFUTo0dOAanoq6s1LBip3Ga)
 
