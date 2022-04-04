@@ -4,22 +4,22 @@ RxJS에 대한 명확한 예제, 설명, 자료.
 
 [//]: # (Clear examples, explanations, and resources for RxJS.)
 
-[@btroncone](https://www.learnrxjs.io/) 님이 작성하신 [Learn RxJs](https://www.learnrxjs.io/) 문서의 한국어 번역본입니다.
+[@btroncone](https://www.learnrxjs.io/) 님이 작성하신 [Learn RxJS](https://www.learnrxjs.io/) 문서의 한국어 번역본입니다.
 
 ## RxJS 소개
 
 [RxJS](https://github.com/ReactiveX/rxjs) 는 최근 웹 개발에서 핫한 라이브러리 중 하나입니다.
-이벤트 처리에 대해 강력하고 기능적인 접근법을 제공하며, 다양한 프레임워크, 라이브러리, 유틸리티들로 활용되고 있습니다. 그러니 Rx를 배우는 것은 그 어느 때보다 매력적이죠.
+이벤트 처리에 대해 강력하고 기능적인 접근법을 제공하여 다양한 프레임워크, 라이브러리, 유틸리티들로 활용되고 있죠. Rx를 배우는 것은 그 어느 때보다 매력적입니다.
 Rx는 [거의 모든 언어](http://reactivex.io/languages.html) 에서 활용할 수 있기 때문에,
-반응형 프로그래밍을 확실하게 파악할 수 있으며, 무엇을 제공하는지 쉽게 이해할 수 있습니다.
+반응형 프로그래밍을 확실하게 파악할 수 있으며, 쉽게 이해할 수 있습니다.
 
 **그러나...**
 
-RxJS와 반응형 프로그래밍은 배우기 [어렵습니다](https://twitter.com/hoss/status/742643506536153088).
+RxJS와 반응형 프로그래밍은 [어렵습니다](https://twitter.com/hoss/status/742643506536153088).
 다양한 개념들, 방대한 API들이 존재하며 사고 방식을 [명령형에서 선언적 스타일로](https://tylermcginnis.com/imperative-vs-declarative-programming/)
-전환해야 합니다. 이 사이트는 이러한 개념을 쉽게 접근할 수 있게 하는 데 초점을 두고 있으며, 명확하고 찾아보기 쉬운 예제를 제공하고, 좋은 자료들을 참조해 두었습니다.
+전환해야 합니다. 이 문서는 이러한 개념을 쉽게 접근할 수 있게 하는 데 초점을 두고 있으며, 명확하고 찾아보기 쉬운 예제를 제공하고, 좋은 자료들을 참조해 두었습니다.
 
-최종 목표는 [공식 문서](http://reactivex.io/rxjs/) 와 기존 학습 자료를 보완하면서, 어렵지 않게 문제를 해결할 수 있는 새롭고 신선한 관점을 제공하는 것입니다.
+최종 목표는 [공식 문서](http://reactivex.io/rxjs/) 와 기존 학습 자료를 보완하면서, 쉽게 해결할 수 있는 새롭고 신선한 관점을 제공하는 것입니다.
 Rx를 배우는 것은 어렵겠지만, 충분히 배울 가치가 있습니다!
 
 ### RxJS를 처음 접하셨나요?
@@ -28,12 +28,12 @@ Rx를 배우는 것은 어렵겠지만, 충분히 배울 가치가 있습니다!
 
 ## 목차
 
-#### Operators
+#### Operators(연산자)
 
-Operator는 observable의 복잡한 비동기 작업에 우아하고 선언적인 해결책을 제공하는 강력한 도구입니다.
-이 섹션에서는 모든 [RxJS operator](/operators/README.md)와 명확하고 실행 가능한 예제 코드, 추가 자료를 제공합니다.
+연산자는 observable(옵저버블)의 복잡한 비동기 작업에 우아하고 선언적인 해결책을 제공하는 강력한 도구입니다.
+이 섹션에서는 모든 [RxJS 연산자](/operators/README.md)와 명확하고 실행 가능한 예제 코드, 추가 자료를 제공합니다.
 
-##### Operator 분류
+##### 연산자 분류
 
 - [Combination](/operators/combination/README.md)
 - [Conditional](/operators/conditional/README.md)
@@ -50,7 +50,7 @@ Operator는 observable의 복잡한 비동기 작업에 우아하고 선언적�
 
 #### Subjects
 
-Subject는 하나의 실행 경로를 여러 observer들이 공유하는 특별한 observable입니다.
+Subject는 하나의 실행 경로를 여러 observer(옵저버)들이 공유하는 특별한 옵저버블입니다.
 
 - [개요](/subjects/README.md)
 - [AsyncSubject](/subjects/asyncsubject.md)
@@ -60,8 +60,8 @@ Subject는 하나의 실행 경로를 여러 observer들이 공유하는 특별�
 
 #### RxJS 개념
 
-Observable의 내부 동작에 대한 기초적인 지식 없이는 RxJS가 그저 마술처럼 느껴질 수 있습니다.
-이 섹션에서는 반응형 프로그래밍과 observable에 익숙해지는 데 필요한 주요 개념들을 다루고 있습니다.
+옵저버블의 내부 동작에 대한 기초적인 지식 없이는 RxJS가 그저 마술처럼 느껴질 수 있습니다.
+이 섹션에서는 반응형 프로그래밍과 옵저버블에 익숙해지는 데 필요한 주요 개념들을 다루고 있습니다.
 
 - [RxJS 입문](concepts/rxjs-primer.md)
 - [map, pluck, mapTo를 이용해 stream 변형하기](concepts/get-started-transforming.md)
@@ -160,8 +160,8 @@ _RxJS 4가 궁금하신가요?_
 
 ## 원문/번역
 
-- [English](https://www.learnrxjs.io/)
-- [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
+- [English](https://www.learnrxjs.io/) - 원문
+- [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators) - 중국어 번역본
 
 ### 번역 오류 제보
-번역 및 내용 오류 시 상단의 _Edit on GitHub_ 버튼을 통해 Pull Request로 제보해주시면 감사하겠습니다!
+번역 및 내용 오류 시 상단의 _Edit on GitHub_ 버튼을 통해 Pull Request로 제보해주시면 감사하겠습니다 ☺️
