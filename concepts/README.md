@@ -1,10 +1,10 @@
-# Concepts
+# RxJS 개념
 
-Short explanations of common RxJS scenarios and use-cases.
+일반적인 RxJS 예제와 설명.
 
-### Contents
+### 목차
 
-- [RxJS Primer](rxjs-primer.md)
-- [Get started transforming streams with map, pluck, and mapTo](get-started-transforming.md)
-- [Time Based Operator Comparison](time-based-operator-comparison.md)
-- [RxJS v5 -> v6 Upgrade](rxjs5-6.md)
+- [RxJS 입문](rxjs-primer.md)
+- [map, pluck, mapTo를 이용해 stream 변형하기](get-started-transforming.md)
+- [시간 기반의 operator 비교](time-based-operator-comparison.md)
+- [RxJS v5에서 v6으로](rxjs5-6.md)
