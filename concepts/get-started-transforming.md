@@ -1,24 +1,20 @@
-# Get started transforming streams with map, pluck, and mapTo
+# map, pluck, mapTo를 이용해 stream 변형하기
 
-When working with observables one of the most common use cases you will
-encounter is the need to transform a stream of some value type into a stream of
-another value type. For instance, you may have an observable of click events
-that you wish to transform into an observable of objects containing just the
-`clientX` and `clientY` coordinates. Or maybe you need to extract a value from a
-stream of input events to perform a calculation or initiate a request. Or
-perhaps you just want to extract a single property from an object, like a key
-code, to perform another action down the (pipe)line. The scenarios for
-transforming streams are endless.
 
-In this article, we are going to learn about the most common operator used to
-transform streams, the `map` operator. We will start by taking a look at
-`Array.map` to build a general understanding of the `map` operation. Next, we
-will explore how we can apply this approach to observables by using the RxJS
-`map` operator. Finally, we will check out a few helper operators that can be
-used in place of `map` should the right scenario present itself, exploring
-common use cases along the way. Let's get started!
+Observable(옵저버블)을 사용하다 보면,
+어떤 타입의 stream(스트림)을 다른 타입의 스트림으로 변환해야 하는 상황이 자주 발생할 것입니다.
+예를 들자면 클릭 이벤트 옵저버블을 `clientX`와 `clientY` 좌표만 포함하는 객체 옵저버블로 변환시켜야 하는 상황이나,
+계산 수행이나 요청 초기화를 위해 입력 이벤트 스트림에서 값을 추출해야 하는 상황이 있을 수 있죠.
+또는 키 코드와 같은 객체에서 속성 하나를 추출하여 (파이프)라인에서 다른 작업을 수행해야 하는 상황일 수도 있습니다.
+스트림을 변형해야 하는 상황들은 끊임없이 존재합니다.
 
-## Introducing `map`
+이 문서에서는, 스트림을 변환하는 데 사용되는 가장 일반적인 연산자인 `map`을 배워볼 것입니다.
+`map`에 대해 이해하기 위해 먼저 `Array.map`을 살펴보고,
+이러한 접근 방식을 RxJS `map` 연산자를 통해 옵저버블에서 적용하는 방법을 알아보겠습니다.
+마지막으로, 몇 가지 상황에서 `map` 대신 사용할 수 있는 연산자들과 해당하는 예시들을 확인해볼 것입니다.
+그럼 시작해 볼까요?
+
+## `map` 소개
 
 If you have spent time working with JavaScript arrays you may already be
 familiar with `Array.map`. When dealing with arrays, the `map` method lets you
@@ -144,7 +140,7 @@ As you can see, the `map` method is extremely flexible with a wide variety of
 use cases, but how does this translate to `map` with RxJS, and when would you
 put this to use with observables?
 
-## Introducing the RxJS `map` operator
+## RxJS `map` operator
 
 ![map](https://drive.google.com/uc?export=view&id=1fbxzA5p0FFFUTo0dOAanoq6s1LBip3Ga)
 
