@@ -131,15 +131,11 @@ console.log(lastNames);
 
 ![map](https://drive.google.com/uc?export=view&id=1fbxzA5p0FFFUTo0dOAanoq6s1LBip3Ga)
 
-The `map` operator in RxJS transforms values emitted from the source observable
-based on a provided projection function. This is similar to `Array.map`, except
-we are operating on each value emitted from an observable as it occurs rather
-than each value contained within an array.
+RxJS의 `map` 연산자는 옵저버블에서 방출된 값을 제공된 함수를 기반으로 변환합니다.
+배열 내에 포함된 값이 아니라, 옵저버블에서 방출된 값을 대상으로 한다는 것을 제외하면 `Array.map`과 유사하죠.
 
-For instance, let's start with our initial example, but instead of transforming
-an array of numbers let's transform an observable of numbers. To do this, we
-will use the [`from`](../operators/creation/from.mdl) creation operator to first
-convert our numbers array into an observable:
+`Array.map`에서 활용했던 초기 예제로부터 시작해 보겠습니다. 대신에, 숫자 배열 대신 숫자 옵저버블을 변환해 봅시다. 
+숫자 배열을 옵저버블로 변환하기 위해 [`from`](../operators/creation/from.mdl) 연산자를 사용하겠습니다.
 
 ```js
 import { from } from 'rxjs';
@@ -148,9 +144,8 @@ const numbers = [1, 2, 3, 4, 5];
 const number$ = from(numbers);
 ```
 
-When provided an array, the `from` creation operator will loop through
-(synchronously) emitting each item in sequence. When we subscribe we can see
-each value printed to the console:
+`from` 연산자는 배열이 제공되었을 때 각 요소를 순서대로(동기적으로) 내보냅니다.
+옵저버블을 구독하여 콘솔에 인쇄되는 값을 확인해 봅시다.
 
 ```js
 import { from } from 'rxjs';
@@ -168,21 +163,15 @@ const number$ = from(numbers);
 number$.subscribe(console.log);
 ```
 
-**Tip:** _If you want to see how `from` handles each value type behind the
-scenes, you can check out the
-[`subscribeTo`](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/util/subscribeTo.ts#L14-L29),
-and associated helper functions. In this case,
-[subscribeToArray](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/util/subscribeToArray.ts#L7-L12)
-is used. This same helper function is also used to deal with non-observable
-return values of flattening operators, such as
-[mergeMap](../operators/transformation/mergemap.md)_
+**팁:** _내부적으로 `from`이 각 값 타입을 어떻게 처리하는지 알고 싶다면,
+[`subscribeTo`](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/util/subscribeTo.ts#L14-L29) 와
+관련된 헬퍼 함수들을 확인해 보세요. 위의 예제에서는 
+[subscribeToArray](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/util/subscribeToArray.ts#L7-L12) 가 사용되었습니다. 이러한 헬퍼 함수들은
+[mergeMap](../operators/transformation/mergemap.md)과 같은 병합 연산자의 옵저버블이 아닌 반환 값을 처리할 때에도 사용됩니다._
 
-If we then wanted to transform this observable into the emitted values
-multiplied by ten, we could use the `map` operator. Just like `Array.map`, the
-`map` operator accepts a project function which describes how each value from
-the source will be transformed. In this case, we will provide a function that
-accepts the emitted value from the source observable and returns that value
-multipled:
+이 옵저버블을 방출된 값에 10을 곱한 옵저버블로 변환하기 위해 `map` 연산자를 이용해보겠습니다.
+`Array.map`처럼, `map` 연산자는 소스의 각 요소를 변환하는 함수를 사용할 수 있습니다.
+이 예제에서, 소스 옵저버블에서 방출된 값에 10을 곱한 값을 반환하는 함수를 사용합니다.
 
 ```js
 import { from } from 'rxjs';
@@ -201,36 +190,31 @@ const numbersMultipliedByTen$ = number$.pipe(map(number => number * 10));
 numbersMultipliedByTen$.subscribe(console.log);
 ```
 
-Instead of the function being applied to each item of an array, before a new
-array is returned, with observables the project function is applied and the
-result emitted in real-time as values blast through your streams. We can confirm
-this in the RxJS source code by seeing the function we provide is invoked, with
-the result being passed on to the subscriber (destination):
+새 배열을 반환하기 전에 이 함수를 배열의 각 요소에 적용하는 대신, 
+옵저버블에 함수가 적용되고, 값이 스트림을 통과할 때 결과 값이 실시간으로 방출됩니다.
+RxJS 소스 코드에서 호출된 함수의 결과가 구독자(대상)에게 전달되는지 확인해 볼까요?
 
-[(Source Code)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/operators/map.ts#L81-L91)
+[(소스 코드)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/operators/map.ts#L81-L91)
 
 ```ts
 protected _next(value: T) {
     let result: any;
     try {
-      // project is the function we pass to the map operator
+      // project: map 연산자에 전달하는 함수
       result = this.project.call(this.thisArg, value, this.count++);
     } catch (err) {
-    // forward any errors that occur
+    // 발생한 모든 에러 전달
       this.destination.error(err);
       return;
     }
-    // emit the result of calling our project function to the subscriber
+    // project 함수를 호출한 결과를 구독자에게 방출
     this.destination.next(result);
   }
 ```
 
-Similar to our array example with objects, we may also want to transform an
-observable of objects with the `map` operator. For instance, suppose we have an
-observable of `click` events that we wish to transform into an observable of
-objects containing just the `clientX` and `clientY` coordinates of these events.
-To do this we could apply the `map` operator, providing a function that returns
-an object with just these properties:
+위에서 보았던 객체 배열 예제와 유사하게, `map` 연산자로 객체 옵저버블을 변환할 수 있습니다.
+예를 들어, 클릭 이벤트 옵저버블을 `clientX`와 `clientY` 좌표만 포함하는 객체 옵저버블로 변환시켜야 하는 상황이라고 가정해보면,
+해당하는 속성만 있는 객체를 반환하는 함수를 이용해 `map` 연산자를 적용해볼 수 있겠습니다.
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -249,11 +233,10 @@ click$
   .subscribe(console.log);
 ```
 
-There may also be times we want to grab a single property from an object using
-`map`. For example, we may have a use case for an observable of just the `code`
-property from `keyup` events, so we can take action when the user types a
-particular character or key. To do this we can apply the `map` operator
-returning just the property we are interested in:
+`map`을 이용해 객체에서 단일 속성만 가져와야 하는 상황도 살펴보겠습니다.
+`keyup` 이벤트에서 `code` 속성만 존재하는 옵저버블이 있다면, 
+유저가 특정 문자나 키를 입력할 때 조치를 취할 수 있을 것입니다.
+이 옵저버블을 만들어내기 위해, `map` 연산자를 필요한 속성만 반환하게끔 적용할 수 있겠죠?
 
 ```js
 import { fromEvent } from 'rxjs';
@@ -267,12 +250,11 @@ keyup$
   .subscribe(console.log);
 ```
 
-While `map` works perfectly fine in these situations, RxJS also surfaces helper
-operators for cases where you just want to _map_ to a single property or when
-you _always_ want to map to the same value on any event. First, let's take a
-look at the single property scenario.
+`map`은 여러 상황들에서 완벽하게 작동하지만, RxJS는 추가적으로 단일 속성에 _매핑_ 하려는 경우, 
+모든 이벤트에서 _항상_ 동일한 값에 매핑하려는 경우에 사용할 수 있는 헬퍼 연산자를 제공합니다.
+먼저, 단일 속성에 매핑하려는 경우를 살펴볼까요?
 
-## Extract a single property with `pluck`
+## `pluck`으로 단일 속성 추출하기
 
 ![pluck](https://drive.google.com/uc?export=view&id=1-TdTqWb-qoif4FJojY3sC0oS81EkB65z)
 
