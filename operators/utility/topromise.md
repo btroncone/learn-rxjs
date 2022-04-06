@@ -10,7 +10,7 @@
 
 ---
 
-<div class="ua-ad">[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz "Ultimate RxJS")](https://ultimatecourses.com/courses/rxjs?ref=4)</div>
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
