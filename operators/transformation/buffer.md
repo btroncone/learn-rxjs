@@ -4,6 +4,13 @@
 
 ## Collect output values until provided observable emits, emit as array.
 
+### Why use `buffer`?
+The buffer operator in RxJS stands out for its ability to accumulate emitted values into an array until a specified notifier emits. Think of it as a "collect and release" mechanism. This aligns well with use cases where you want to group events based on a certain condition, such as time or user actions.
+
+Buffer shines in scenarios like batching multiple events together before processing, which can optimize performance and reduce workload. For example, when monitoring clicks on a web page, buffer can gather a series of clicks before sending them for analytics, rather than doing so individually.
+
+However, keep in mind that buffer may not be the best fit when you require immediate processing of each emitted value. One way to think about this is "buffer is about batching". Remember, buffer is all about accumulating and releasing values based on specific triggers, making it a powerful tool for managing grouped events.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
