@@ -4,6 +4,13 @@
 
 ## Collect emitted values until provided time has passed, emit as array.
 
+### Why use `bufferTime`?
+The key distinction between `bufferTime` and other buffering operators lies in its time-based buffering approach. `bufferTime` accumulates values from the source observable in an array over a specified time duration before emitting the buffered array.
+
+This operator is particularly well-suited for scenarios where you need to batch or throttle emissions from high-frequency observables, such as monitoring user interactions, tracking mouse movements, or dealing with rapidly updating data streams. `bufferTime` provides an efficient way to handle and process these emissions in a more manageable, time-based manner.
+
+Remember, `bufferTime` allows you to manage data emissions effectively by collecting and emitting them in time-based batches, as illustrated in the first example. Be mindful of its implications, though, and choose the right operator according to your specific use case.
+
 ### Examples
 
 ##### Example 1: Buffer for 2 seconds
