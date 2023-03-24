@@ -10,6 +10,14 @@
 
 ---
 
+### Why use `scan`?
+
+The key distinction of the scan operator when compared to other reduction operators is its continuous accumulation feature. With each emitted value, the accumulator function is applied, and the accumulated result is emitted instantaneously. You can remember this by the phrase "accumulate and emit on-the-go."
+
+The scan operator is highly useful in scenarios that require real-time monitoring and processing, such as tallying scores in a game, where you want to display the updated score each time points are added. However, be cautious when using scan for cases where the *only* the final accumulated result is crucial. In those situations, the [`reduce`](reduce.md) operator may be more appropriate, as it emits only the final value after the source completes.
+
+In summary, the scan operator provides a powerful and flexible means of handling continuous accumulation and emission of values, which can be especially useful in real-time monitoring and processing tasks.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
