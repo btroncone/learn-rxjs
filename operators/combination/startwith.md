@@ -12,6 +12,13 @@ can also start with an initial value!
 
 ---
 
+### Why use startWith?
+The `startWith` operator is a great tool when you need to provide an initial value to an observable sequence, ensuring that the consumer always receives a value upon subscription. It's a handy way to set a default state or value for your observables, making it easier for subscribers to handle the data and minimizing the chances of encountering unexpected scenarios.
+
+A real-world example can be seen in a search functionality, where the search results should display a list of popular items as a default state before the user starts typing their query. By using startWith, you can seamlessly provide this default data to your subscribers.
+
+Keep in mind that startWith emits the initial value immediately upon subscription. This behavior is helpful when you want to make sure your subscribers receive a value right away, even before the source observable starts emitting values.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
