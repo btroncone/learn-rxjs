@@ -13,6 +13,15 @@ instead!
 
 ---
 
+### Why use merge?
+The merge operator is your go-to solution when you have multiple observables that produce values independently and you want to combine their output into a single stream. Think of it as a highway merger, where multiple roads join together to form a single, unified road - the traffic (data) from each road (observable) flows seamlessly together.
+
+A real-world example can be seen in a chat application, where you have separate observables for receiving messages from multiple users. By using `merge`, you can bring all those message streams into a single unified stream for displaying the messages in the chat window.
+
+Keep in mind that `merge` will emit values as soon as any of the observables emit a value. This is different from combineLatest or withLatestFrom, which wait for each observable to emit at least one value before emitting a combined value.
+
+Lastly, if you're dealing with observables that emit values at specific intervals and you need to combine them based on time, consider using the [zip](zip.md) operator instead.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
