@@ -14,6 +14,13 @@ instead!
 
 ---
 
+### Why use `concat`?
+The concat operator is best used when you need to combine multiple observables, but you want their emissions to be in a specific order, one after the other. It's like putting together a puzzle where the pieces must come together sequentially to create the full picture. An example of this can be seen in a real-world scenario, like downloading and displaying several images in the correct order, where you don't want the next image to load until the current one is fully loaded.
+
+Keep in mind that concat will only start emitting values from the next observable once the previous one has completed. This means that if one of your observables never completes, the subsequent observables will never emit any values. This behavior can be a _gotcha_, as there will be no output and no error, but one (or more) of your inner observables might not be functioning as intended, or a subscription is not being set up correctly.
+
+In contrast, if you need to combine observables that emit values concurrently, or you require the latest values from multiple observables whenever any of them emit a new value, [combineLatest](combinelatest.md) or [withLatestFrom](withlatestfrom.md) might be more suitable options.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
