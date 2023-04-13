@@ -14,9 +14,14 @@ value, check out [`finalize`](../utility/finalize.md)!
 
 ---
 
-<a href="https://ultimatecourses.com/courses/rxjs?ref=4">
-  <img src="https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz" alt="Ultimate RxJS" style="width:100%">
-</a>
+### Why use `endWith`?
+The `endWith` operator is especially handy when you want to ensure that a specific value is emitted after the source observable completes. Think of it as the closing credits of a movie, signaling that the story has reached its conclusion. Real-world examples of endWith can be found in scenarios where you want to append a specific message or status update after a series of events, such as a file download that ends with a "Download Complete" notification or a countdown timer that finishes with a "Time's Up!" alert.
+
+Keep in mind that endWith only emits the specified value when the source observable completes. This means that if your source observable does not complete, the value provided to `endWith` will not be emitted. To avoid surprises, make sure to check that your source observable is designed to complete at some point.
+
+In cases where you want to prepend a value at the beginning of an observable sequence instead of appending it at the end, consider using the [startWith](startwith.md) operator.
+
+[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
