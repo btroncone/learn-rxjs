@@ -11,6 +11,15 @@ emits, try [combinelatest](combinelatest.md)!
 
 ---
 
+### Why use withLatestFrom?
+The `withLatestFrom` operator is your best friend when you have one main observable whose emissions depend on the latest values from one or more other observables. Think of it as a one-way data flow, where the primary observable takes the lead and other observables chime in with their most recent values.
+
+A classic example to remember `withLatestFrom` is a chat application that needs to send a message with a user's current location. The message sending event (main observable) combines with the latest location data (another observable) to form the final message object.
+
+Keep in mind that `withLatestFrom` only emits a value when the main observable emits, and after each additional observable has emitted at least once. This can catch you off guard, as you might not see any output or errors while one of the observables isn't behaving as expected, or a subscription is delayed.
+
+If you need to combine values from multiple observables that emit more than once and are interdependent, consider using [`combineLatest`](combinelatest.md) instead. And for scenarios where observables emit only once or you just need their last values, [`forkJoin`](forkjoin.md) might be a more suitable choice.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
