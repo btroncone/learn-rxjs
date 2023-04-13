@@ -11,6 +11,20 @@ single operator instead!
 
 ---
 
+### Why use mergeAll?
+This operator is best used when you have multiple, short-lived observables that produce values independently and you want to flatten them into a single output stream. Real-world examples of this can be seen in scenarios like processing multiple requests simultaneously, where each request is an observable and the responses need to be combined into a single stream.
+
+Consider a web page that displays live news updates from different sources. Each source produces updates as separate observables, and you want to merge them all together to show a single feed of news updates. In this case, mergeAll can come to the rescue.
+
+It's essential to note that `mergeAll` will start emitting values as soon as any of the inner observables emit a value. This is different from combineLatest, which waits for each observable to emit at least one value before producing an output.
+
+When deciding between mergeAll and other operators, keep in mind the following:
+
+- If you need to merge multiple observables that rely on each other for calculations or decisions, [`combineLatest`](combinelatest.md) may be more suitable.
+- If you're working with observables that only emit one value or you only require the last value of each before completion, [`forkJoin`](forkjoin.md) is likely a better choice.
+- If you need to merge observables that produce values independently and are short-lived, `mergeAll` is the operator to reach for.
+
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
