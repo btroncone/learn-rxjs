@@ -15,6 +15,13 @@ single operator instead!
 
 ---
 
+### Why use `concatAll`?
+This operator is best used when you have multiple observables that need to be processed sequentially, ensuring that each observable completes before moving on to the next. Real-world examples of this can be seen in scenarios such as uploading multiple files to a server one-by-one, or displaying a sequence of animations in order.
+
+Bear in mind that `concatAll` will only start processing the next observable when the current one completes. This is an important consideration if you have observables that emit values indefinitely or take a long time to complete, as it may cause a delay in processing subsequent observables.
+
+Additionally, if you're working with observables that can emit values concurrently and don't need to wait for one to complete before processing another, [mergeAll](mergeall.md) might be a more suitable choice. Similarly, if you only need to combine the values of multiple observables at the point when they all complete, [forkJoin](forkjoin.md) could be a better option.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
