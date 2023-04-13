@@ -4,6 +4,15 @@
 
 ## The observable to emit first is used.
 
+### Why use race?
+The `race` operator is the go-to choice when you want to work with multiple observables that compete against each other, and you're only interested in the first one to emit a value. It's like a competitive race, where the first runner to cross the finish line claims the victory, and the others don't matter anymore (if you're not first you're last?).
+
+A relatable example of using `race` can be observed in an image loading scenario. Imagine you have two sources to load an image from, and you want to display the image as soon as possible. You can use the race operator to subscribe to both sources, and once the first source successfully loads the image, it will emit the value, and the subscription to the other source will be automatically unsubscribed.
+
+It's crucial to remember that `race` only pays attention to the first emitted value from the competing observables. Once an observable wins the race, the other observables are disregarded, and their potential future emissions will have no impact on the output.
+
+If your use case involves working with multiple observables that should all emit values and complete, or you need to process the emitted values in a specific order, consider using operators like [combineLatest](combinelatest.md) or [forkJoin](forkjoin.md) instead.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
