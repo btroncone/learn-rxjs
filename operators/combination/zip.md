@@ -12,6 +12,13 @@ source!
 
 ---
 
+### Why use zip?
+This operator is ideal when you want to combine values from multiple observables in a pairwise fashion, like zipping together the teeth of a zipper. Imagine having two observables, where one emits values like "hot", "warm", "cold", and the other emits values like "coffee", "tea", "lemonade". Using the zip operator, you'd pair them together as "hot coffee", "warm tea", and "cold lemonade".
+
+An everyday example is when you want to match information from two sources, like pairing names with their corresponding scores in a game. Picture an observable emitting player names and another emitting their scores. With zip, you can easily create pairs of `[player, score]`, ensuring each player is associated with the correct score.
+
+Be mindful that zip will only emit a value when all input observables have emitted a corresponding value. This means if one observable has emitted more values than another, the unmatched values will be held back until the other observable emits its next value. In some cases, this could lead to unpaired values, making it important to ensure your observables are synchronized.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
