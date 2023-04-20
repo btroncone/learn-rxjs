@@ -54,14 +54,14 @@ concat(
 
 ```js
 // RxJS v6+
-import { concat, empty } from 'rxjs';
+import { concat, EMPTY } from 'rxjs';
 import { delay, startWith } from 'rxjs/operators';
 
 // elems
 const userMessage = document.getElementById('message');
 // helper
 const delayedMessage = (message, delayedTime = 1000) => {
-  return empty().pipe(startWith(message), delay(delayedTime));
+  return EMPTY.pipe(startWith(message), delay(delayedTime));
 };
 
 concat(
