@@ -10,6 +10,29 @@
 
 ---
 
+### Why use `takeUntil`?
+
+Consider a day at your workplace: You're anticipating an important email, but you've decided that once the clock hits 5 pm, you're clocking out, regardless of whether you've received that email or not. In this RxJS analogy, the anticipation of the email is one observable, while the 5 pm clock-out time is another. The `takeUntil` operator ensures you're alert for the email's potential arrival, but the moment 5 pm arrives, you stop checking (unsubscribe).
+
+In real-world applications, think of a scenario where you're monitoring server responses on a dashboard. However, you want this monitoring to cease once a specific "Stop Monitoring" button is clicked. That's where `takeUntil` shines.
+
+In the context of Angular, `takeUntil` is particularly handy for auto-unsubscribing from observables when a component is destroyed. This is achieved by leveraging the `ngOnDestroy` lifecycle hook. You'd typically create a `Subject`, often named `destroy$`, and use it with `takeUntil`:
+
+```typescript
+private destroy$ = new Subject<void>();
+
+observable$
+  .pipe(takeUntil(this.destroy$))
+  .subscribe(data => console.log(data));
+
+ngOnDestroy() {
+  this.destroy$.next();
+  this.destroy$.complete();
+}
+```
+
+With this setup, as soon as the `ngOnDestroy` method is called (when the component is about to be destroyed), the observables using `takeUntil` with the `destroy$` subject will automatically unsubscribe, ensuring that no unwanted memory leaks or unexpected behavior occurs.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
