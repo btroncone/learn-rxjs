@@ -4,6 +4,12 @@
 
 ## Delay emitted values by given time.
 
+### Why use `delay`?
+
+This operator is your go-to when simulating real-world scenarios such as network latency or introducing a pause before a value is emitted. The `delay` operator allows you to hold back values for a specified duration before they're released to subscribers. 
+
+Keep in mind that **`delay` won’t prevent the original observable from emitting values**. It merely postpones the delivery to its subscribers. This is a _gotcha_ as it could look like your data is lagging or not in sync with the source, especially when multiple observables are at play.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
