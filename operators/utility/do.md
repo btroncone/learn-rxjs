@@ -6,9 +6,19 @@
 
 ---
 
-💡 If you are using as a pipeable operator, `do` is known as `tap`!
+💡 If you are using and old version of RxJS, `tap` used to be known as `do`!
 
 ---
+
+### Why use `tap`?
+
+Think of `tap` as a surveillance camera in a shopping mall. It doesn't interfere with the shoppers (values) moving around but merely observes and records their actions. This operator is best for side effects: actions you want to take in response to values in an observable, without affecting the values themselves.
+
+One of the superpowers of `tap` is its utility in debugging. **When things aren't going as planned with your observable**, instead of tearing apart your chain or inserting numerous logs, simply sprinkle in some `tap` operators. It's like adding checkpoints in a video game, helping you swiftly pinpoint issues without disrupting the main flow.
+
+However, a word of caution: **remember that `tap` is solely for side effects**. If you find yourself tempted to modify data within a `tap`, it's generally best to resist. That's not its purpose, and you're better off with [`map`](../transformation/map.md) or other transformational operators in these cases.
+
+Lastly, it's best to ensure that the side effects you introduce via `tap` are not critical to the main logic of your observable chain, keeping them non-intrusive and harmless.
 
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
