@@ -4,6 +4,16 @@
 
 ## Map to inner observable, ignore other values until that observable completes.
 
+### Why use `exhaustMap`?
+
+Imagine you're at a coffee shop where each customer is allowed to place only one order at a time and must wait until that order is fully prepared before making another. If they try to order again while their coffee is still brewing, the barista simply ignores them. That's the essence of `exhaustMap`.
+
+This operator is perfect for handling events that might be triggered multiple times in rapid succession but where only the initial trigger should be acted upon until it completes. A prime example would be ignoring clicks where a user might impatiently tap a 'Submit' button multiple times. Instead of sending multiple network requests, you'd ideally only want the first click to initiate the action and ignore subsequent clicks until the request is done.
+
+Take note that **`exhaustMap` will ignore source values while the previous inner observable is still active**. This means that if the inner observable hasn't completed, any new values emitted from the source will be discarded without any mapping.
+
+If you want to handle every single event, even if previous ones haven't completed, other operators like [`switchMap`](switchmap.md) or [`mergeMap`](mergemap.md) might be more appropriate. But when ensuring one task is exhausted before moving to the next, `exhaustMap` is your go-to choice.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
