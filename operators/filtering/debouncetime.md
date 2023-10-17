@@ -11,6 +11,22 @@ user input must be controlled!
 
 ---
 
+### Why use `debounceTime`?
+
+Think of `debounceTime` like taking a pause in a conversation to let the other person finish their thought. This operator is incredibly handy when you're dealing with rapid sequences of events and only care about acting upon the last event after a specified duration.
+
+A classic real-world application is in form inputs, particularly in search bars. Imagine you're typing into a search box. Instead of firing off an API call with every keystroke (which can be overwhelming and inefficient), you'd want to wait a bit after the user stops typing to ensure you're fetching data based on their complete thought. That "waiting a bit" is where `debounceTime` shines. For instance, by setting `debounceTime(300)`, the system will wait for 300 milliseconds after the last keystroke before it proceeds.
+
+In Angular, when dealing with reactive forms, `debounceTime` is a lifesaver. By adding this operator to a form control's value changes observable, you can efficiently handle values only after users finish their input. Check out the below example:
+```typescript
+this.myFormControl.valueChanges.pipe(
+  debounceTime(300)
+).subscribe(value => {
+  // handle the value after 300ms of inactivity
+});
+```
+
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
