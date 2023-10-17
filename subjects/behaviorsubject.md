@@ -9,6 +9,17 @@ supply a seed value, check out [ReplaySubject](replaysubject.md) instead!
 
 ---
 
+### Why use `BehaviorSubject`?
+
+This specialized subject is ideal when you want to maintain and provide a "current value" to subscribers. Think of it as a scoreboard in a basketball game. Even if you join watching in the middle of the game, you'll still see the current score. Similarly, when a new observer subscribes to a `BehaviorSubject`, it immediately receives the current value (or the last value that was emitted).
+
+It's important to remember that a **`BehaviorSubject` requires an initial value upon instantiation**. This is where it differs from a regular [`Subject`](subject.md) which doesn't have an initial value. Picture a newly installed scoreboard – with `BehaviorSubject`, you set a starting score, say 0-0. With a regular [`Subject`](subject.md), the board remains blank until a point is scored. Subscribers (early or late) of a normal [`Subject`](subject.md) will not receive
+ emissions until the `Subject` emits a value.
+
+Contrasting with [`ReplaySubject`](replaysubject.md), while both provide historical values, [`ReplaySubject`](replaysubject.md) can relay multiple previous values, not just the last one. If the basketball scoreboard could show the last five scores in the match sequence, that'd be akin to [`ReplaySubject`](replaysubject.md). [`ReplaySubject`](replaysubject.md) also does not receive an initial seed value.
+
+In conclusion, if you need to ensure subscribers always get the latest value upon subscription, or you have an initial seed value, `BehaviorSubject` is your pick. If you need more historical emissions, consider [`ReplaySubject`](replaysubject.md). And if you don't need any history at all, a simple [`Subject`](subject.md) might be what you're looking for.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
