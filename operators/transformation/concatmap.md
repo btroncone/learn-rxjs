@@ -4,6 +4,16 @@
 
 ## Map values to inner observable, subscribe and emit in order.
 
+### Why use `concatMap`?
+
+This operator is your go-to when you have an observable that emits values and, for each of those values, you want to execute another observable sequence, ensuring they are processed in order and not concurrently. Think of it like waiting in line at a bakery: even if multiple customers arrive at once, they're served one by one. So, for instance, if you have a stream of user click events and for each click you want to initiate an HTTP request, but you need those requests to happen sequentially (one completing before the next begins), `concatMap` is what you need.
+
+A practical scenario might be ordering saves sequentialy, without overwhelming the server with simultaneous requests.
+
+Keep in mind that **if the inner observable takes a significant time to complete, it can lead to a backlog of outer values waiting to be processed**. In such cases, it may seem as if your application is lagging or stuck, when in reality, `concatMap` is diligently processing each value in order. For scenarios where you'd prefer to handle the most recent value and discard previous ones, consider using [`switchMap`](switchmap.md) instead.
+
+Lastly, if you're not concerned about the order of processing and just want everything to execute as it arrives, [`mergeMap`](mergemap.md) might be the better choice.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
