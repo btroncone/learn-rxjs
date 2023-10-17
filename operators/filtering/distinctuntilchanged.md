@@ -14,6 +14,18 @@ match!
 
 ---
 
+### Why use `distinctUntilChanged`?
+
+This operator stands guard, ensuring that you're not bombarded with repetitive information. Imagine if your best friend kept repeating the same story to you every time you met. It'd get old, right? The `distinctUntilChanged` operator does just that; it prevents subsequent identical emissions from an observable.
+
+Think about a search bar on a website. As users type their queries, you don't want to send a server request for the same input value multiple times in a row, it would be redundant and inefficient. Here’s where `distinctUntilChanged` combined with [`debounceTime`](debouncetime.md) could shine. Imagine a user typing in a search term and then slightly hesitating before adding another letter. You might want to wait just a little bit (that’s (`debounceTime`)[debouncetime.md] doing its magic) and then, before firing off a request, ensure the term is actually different than the previous one - this is where you can utilize `distinctUntilChanged`.
+
+For example, if a user is searching for "apple" and they type "app" -> wait a bit -> "appl" -> backtrack to "app" -> type again "appl", without `distinctUntilChanged`, you might end up sending redundant requests. But with it, once "appl" is recognized as previously processed, it won't send the redundant search request again.
+
+It's important to remember that **`distinctUntilChanged` compares the current value with the last emitted value**. It doesn’t keep a long history. So, if an observable emitted the values 1, 2, 2, 3, 3, 2 - you’d get 1, 2, 3, 2 in return. By default, it also uses simple equality to compare values. If you're working with objects or arrays, you might need to provide a custom comparison function to determine whether values are distinct.
+
+In essence, when you're looking to filter out consecutive duplicate emissions from your observables, think of `distinctUntilChanged` as your go-to option.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
