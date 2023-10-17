@@ -11,6 +11,14 @@
 
 ---
 
+### Why use `filter`?
+
+This operator is your go-to when you need to sift out unwanted values from an observable stream. Think of it as a fisherman's net, catching only the types of fish you desire while allowing others to slip through.
+
+**The critical point to remember** is that `filter` will only emit values that meet the specified condition. If no values in the observable satisfy the condition, nothing gets emitted. It's a strict bouncer at a club's entrance, only letting in those who fit the criteria.
+
+Also, for scenarios where you not only want to filter values but also transform them, [`map`](../transformation/map.md) is an ideal companion to `filter`. Use them in tandem to both shape and refine your data streams.
+
 [![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
