@@ -115,13 +115,13 @@ mouseClickDuration.subscribe(console.log);
 
 ### Additional Resources
 
-- [zip](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-zip)
+- [zip](https://rxjs-dev.firebaseapp.com/api/index/function/zip)
   📰 - Official docs
-- [zip](https://indepth.dev/reference/rxjs/operators/zip) - In Depth Dev Reference
+- [zip](https://web.archive.org/web/20230529222132/https://indepth.dev/reference/rxjs/operators/zip) - In Depth Dev Reference
 - [Combination operator: zip](https://egghead.io/lessons/rxjs-combination-operator-zip?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/zip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/zip.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/zip.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/zip.ts)

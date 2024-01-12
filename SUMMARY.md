@@ -105,6 +105,7 @@
     - [finalize / finally](operators/utility/finalize.md)
     - [let](operators/utility/let.md)
     - [repeat](operators/utility/repeat.md)
+    - [repeatWhen](operators/utility/repeatwhen.md)
     - [timeInterval](operators/utility/timeinterval.md)
     - [timeout](operators/utility/timeout.md)
     - [timeoutWith](operators/utility/timeoutwith.md)

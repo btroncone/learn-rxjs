@@ -18,7 +18,7 @@ rely on each other for some calculation or determination. Basic examples of this
 can be seen in [example three](#example-3-combining-events-from-2-buttons),
 where events from multiple buttons are being combined to produce a count of each
 and an overall total, or a
-[calculation of BMI](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest)
+[calculation of BMI](https://rxjs-dev.firebaseapp.com/api/index/function/combineLatest#examples)
 from the RxJS documentation.
 
 Be aware that **`combineLatest` will not emit an initial value until each
@@ -157,15 +157,15 @@ combineLatest(addOneClick$('red'), addOneClick$('black')).subscribe(
 
 - [combineLatest](https://rxjs.dev/api/index/function/combineLatest) 📰 -
   Official docs
-- [combineLatest](https://indepth.dev/reference/rxjs/operators/combine-latest) - In Depth Dev Reference
+- [combineLatest](https://web.archive.org/web/20230529225628/https://indepth.dev/reference/rxjs/operators/combine-latest) - In Depth Dev Reference
 - [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
-- [Build your own combineLatest operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=combineLatest#app)
-  🎥 - Kwinten Pisman
+- [Build your own combineLatest operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/observable/combineLatest.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineLatest.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineLatest.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/combineLatest.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/combineLatest.ts)

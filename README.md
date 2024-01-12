@@ -120,7 +120,7 @@ site, these excellent resources will help jump start your learning experience!
 
 #### Conferences
 
-- [RxJS Live](https://www.rxjs.live/) - RxJS specific conference
+- [RxJS Live](https://www.youtube.com/@rxjslive2237) - RxJS specific conference
 
 #### Reading
 
@@ -138,7 +138,7 @@ site, these excellent resources will help jump start your learning experience!
 - [Ultimate RxJS](https://ultimatecourses.com/courses/rxjs?ref=4) 💵 - Brian
   Troncone
 
-- [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) -
+- [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/asynchronous-programming-the-end-of-the-loop) -
   Jafar Husain
 
 - [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
