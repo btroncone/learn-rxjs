@@ -89,4 +89,4 @@ interval(1000)
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/iif.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/iif.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/iif.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/iif.ts)
