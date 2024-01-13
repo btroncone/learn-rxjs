@@ -109,11 +109,11 @@ iWillStopListening$.subscribe(console.log);
 ### Additional Resources
 
 - [catchError](https://rxjs.dev/api/operators/catchError) 📰 - Official docs
-- [catchError](https://indepth.dev/reference/rxjs/operators/catch-error) - In Depth Dev Reference
+- [catchError](https://web.archive.org/web/20220626230048/https://indepth.dev/reference/rxjs/operators/catch-error) - In Depth Dev Reference
 - [Error handling operator: catch](https://egghead.io/lessons/rxjs-error-handling-operator-catch?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/catchError.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/catchError.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/catchError.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/catchError.ts)

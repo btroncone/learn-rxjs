@@ -60,11 +60,11 @@ const subscribe = example.subscribe({
 ### Additional Resources
 
 - [retry](https://rxjs.dev/api/operators/retry) 📰 - Official docs
-- [retry](https://indepth.dev/reference/rxjs/operators/retry) - In Depth Dev Reference
+- [retry](https://web.archive.org/web/20220626224549/https://indepth.dev/reference/rxjs/operators/retry) - In Depth Dev Reference
 - [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/retry.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/retry.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/retry.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/retry.ts)
