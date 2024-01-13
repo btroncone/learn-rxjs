@@ -105,15 +105,15 @@ const subscribe = example.subscribe(val =>
 ### Additional Resources
 
 - [filter](https://rxjs.dev/api/operators/filter) 📰 - Official docs
-- [filter](https://indepth.dev/reference/rxjs/operators/filter) - In Depth Dev Reference
+- [filter](https://web.archive.org/web/20230529222159/https://indepth.dev/reference/rxjs/operators/filter) - In Depth Dev Reference
 - [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
-- [Build your own filter operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=filter#app)
-  🎥 - Kwinten Pisman
+- [Build your own filter operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/filter.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/filter.ts)

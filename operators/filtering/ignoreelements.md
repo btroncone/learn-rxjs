@@ -66,10 +66,9 @@ const subscribe = error.subscribe(
 
 ### Additional Resources
 
-- [ignoreElements](https://rxjs.dev/api/operators/ignoreElements) 📰 - Official
-  docs
+- [ignoreElements](https://rxjs.dev/api/operators/ignoreElements) 📰 - Official docs
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/ignoreElements.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/ignoreElements.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/ignoreElements.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/ignoreElements.ts)

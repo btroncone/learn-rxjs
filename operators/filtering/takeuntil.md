@@ -140,17 +140,15 @@ mousedown$
 ### Additional Resources
 
 - [takeUntil](https://rxjs.dev/api/operators/takeUntil) 📰 - Official docs
-- [takeUntil](https://indepth.dev/reference/rxjs/operators/take-until) - In Depth Dev Reference
-
-* [Avoiding takeUntil leaks](https://blog.angularindepth.com/rxjs-avoiding-takeuntil-leaks-fb5182d047ef) -
-  Angular in Depth
-* [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs)
+- [takeUntil](https://web.archive.org/web/20230925063213/https://indepth.dev/reference/rxjs/operators/take-until) - In Depth Dev Reference
+- [Avoiding takeUntil leaks](https://cartant.medium.com/rxjs-avoiding-takeuntil-leaks-fb5182d047ef) -
+  Nicholas Jamieson
+- [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
-
-- [Build your own takeUntil operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=takeUntil#app)
-  🎥 - Kwinten Pisman
+- [Build your own takeUntil operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/takeUntil.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeUntil.ts)

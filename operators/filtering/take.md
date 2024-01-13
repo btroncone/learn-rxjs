@@ -106,13 +106,13 @@ const subscribe = oneClickEvent.subscribe();
 ### Additional Resources
 
 - [take](https://rxjs.dev/api/operators/take) 📰 - Official docs
-- [take](https://indepth.dev/reference/rxjs/operators/take) - In Depth Dev Reference
+- [take](https://web.archive.org/web/20230619233319/https://indepth.dev/reference/rxjs/operators/take) - In Depth Dev Reference
 - [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
-- [Build your own take operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=take#app)
-  🎥 - Kwinten Pisman
+- [Build your own take operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/take.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/take.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/take.ts)

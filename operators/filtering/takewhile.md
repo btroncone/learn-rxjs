@@ -102,13 +102,12 @@ source$
 
 ### Additional Resources
 
-- [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile) 📰 -
-  Official docs
-- [takeWhile](https://indepth.dev/reference/rxjs/operators/take-while) - In Depth Dev Reference
+- [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile) 📰 - Official docs
+- [takeWhile](https://web.archive.org/web/20230925075841/https://indepth.dev/reference/rxjs/operators/take-while) - In Depth Dev Reference
 - [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeWhile.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeWhile.ts)
