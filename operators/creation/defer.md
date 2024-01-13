@@ -62,4 +62,4 @@ setTimeout(() => {
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/defer.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/defer.ts)

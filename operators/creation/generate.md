@@ -79,4 +79,4 @@ OUTPUT:
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/generate.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/generate.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/generate.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/generate.ts)

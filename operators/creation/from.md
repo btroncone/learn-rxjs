@@ -100,11 +100,11 @@ const subscribe = source.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [from](https://rxjs.dev/api/index/function/from) 📰 - Official docs
-- [from](https://indepth.dev/reference/rxjs/operators/from) - In Depth Dev Reference
+- [from](https://web.archive.org/web/20230529224510/https://indepth.dev/reference/rxjs/operators/from) - In Depth Dev Reference
 - [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts)
+> [https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/observable/from.ts](https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/observable/from.ts)

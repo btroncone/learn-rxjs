@@ -55,13 +55,13 @@ const subscribe = source.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [of](https://rxjs.dev/api/index/function/of) 📰 - Official docs
-- [of](https://indepth.dev/reference/rxjs/operators/of) - In Depth Dev Reference
+- [of](https://web.archive.org/web/20230329033647/https://indepth.dev/reference/rxjs/operators/of) - In Depth Dev Reference
 - [Creation operators: of](https://egghead.io/lessons/rxjs-creation-operator-of?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
-- [Build your own of operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=of#app)
-  🎥 - Kwinten Pisman
+- [Build your own of operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/observable/of.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/of.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/of.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/of.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/of.ts)

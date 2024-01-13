@@ -35,7 +35,7 @@
     - [interval](operators/creation/interval.md)
     - [of](operators/creation/of.md)
     - [range](operators/creation/range.md)
-    - [throw](operators/creation/throw.md)
+    - [throwError](operators/creation/throwError.md)
     - [timer](operators/creation/timer.md)
   - [Error Handling](operators/error_handling/README.md)
     - [catch / catchError](operators/error_handling/catch.md)

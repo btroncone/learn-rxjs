@@ -87,7 +87,7 @@ _[Prefer a split by operator type?](README.md)_
 - [takeWhile](filtering/takewhile.md)
 - [throttle](filtering/throttle.md)
 - [throttleTime](filtering/throttletime.md)
-- [throw](creation/throw.md)
+- [throwError](creation/throwError.md)
 - [timeInterval](utility/timeinterval.md)
 - [timeout](utility/timeout.md)
 - [timeoutWith](utility/timeoutwith.md)

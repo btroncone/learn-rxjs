@@ -164,4 +164,4 @@ const subscribe = users.subscribe(
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/6.4.0/src/internal/observable/dom/ajax.ts#L20-L19](https://github.com/ReactiveX/rxjs/blob/6.4.0/src/internal/observable/dom/ajax.ts#L20-L19)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/ajax/ajax.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/ajax/ajax.ts)
