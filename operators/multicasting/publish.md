@@ -57,4 +57,4 @@ setTimeout(() => {
 - [publish](https://rxjs.dev/api/operators/publish) 📰 - Official docs
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/publish.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/publish.ts)
+> [https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/publish.ts](https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/publish.ts)
