@@ -556,7 +556,7 @@ export const COMPUTER = 'c';
 - [map](../operators/transformation/map.md)
 - [merge](../operators/combination/merge.md)
 - [of](../operators/creation/of.md)
-- repeatWhen
+- [repeatWhen](../operators/utility/repeatwhen.md)
 - [scan](../operators/transformation/scan.md)
 - [switchMap](../operators/transformation/switchmap.md)
 - [take](../operators/filtering/take.md)
