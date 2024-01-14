@@ -30,11 +30,10 @@ sub.complete(); //456, 456 logged by both subscribers
 
 ### Additional Resources
 
-- [AsyncSubject](https://rxjs-dev.firebaseapp.com/api/index/class/AsyncSubject)
-  📰 - Official docs
-- [AsyncSubject](https://indepth.dev/reference/rxjs/subjects/async-subject) - In Depth Dev Reference
+- [AsyncSubject](https://rxjs-dev.firebaseapp.com/api/index/class/AsyncSubject) 📰 - Official docs
+- [AsyncSubject](https://web.archive.org/web/20230925063933/https://indepth.dev/reference/rxjs/subjects/async-subject) - In Depth Dev Reference
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/AsyncSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/AsyncSubject.ts)

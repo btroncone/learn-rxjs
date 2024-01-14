@@ -116,9 +116,6 @@ NEXT(s)
 
 ### Additional Resources
 
-* [Official Overview](http://reactivex.io/rxjs/manual/overview.html#subject)
-  📰
-* [Official Documentation](http://reactivex.io/documentation/subject.html)
-  📰
-* [On The Subject Of Subjects (in RxJS)](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93)
-  📰 - Ben Lesh
+* [Official Overview](https://rxjs-dev.firebaseapp.com/guide/subject) 📰
+* [Official Documentation](http://reactivex.io/documentation/subject.html) 📰
+* [On The Subject Of Subjects (in RxJS)](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93) 📰 - Ben Lesh

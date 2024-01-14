@@ -111,9 +111,9 @@ merge(click$, interval$).subscribe();
 
 - [BehaviorSubject](https://rxjs-dev.firebaseapp.com/api/index/class/BehaviorSubject)
   📰 - Official docs
-- [BehaviorSubject](https://indepth.dev/reference/rxjs/subjects/behavior-subject) - In Depth Dev Reference
+- [BehaviorSubject](https://web.archive.org/web/20230608194245/https://indepth.dev/reference/rxjs/subjects/behavior-subject) - In Depth Dev Reference
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/BehaviorSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/BehaviorSubject.ts)

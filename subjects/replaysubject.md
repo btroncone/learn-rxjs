@@ -49,9 +49,9 @@ sub.next(5); // OUTPUT => 5,5 (log from both subscribers)
 
 - [ReplaySubject](https://rxjs-dev.firebaseapp.com/api/index/class/ReplaySubject)
   📰 - Official docs
-- [ReplaySubject](https://indepth.dev/reference/rxjs/subjects/replay-subject) - In Depth Dev Reference
+- [ReplaySubject](https://web.archive.org/web/20230529213815/https://indepth.dev/reference/rxjs/subjects/replay-subject) - In Depth Dev Reference
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/ReplaySubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/ReplaySubject.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/ReplaySubject.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/ReplaySubject.ts)
