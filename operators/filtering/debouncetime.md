@@ -65,14 +65,14 @@ keyup$
 ### Additional Resources
 
 - [debounceTime](https://rxjs.dev/api/operators/debounceTime) 📰 - Official docs
-- [debounceTime](https://indepth.dev/reference/rxjs/operators/debounce-time) - In Depth Dev Reference
+- [debounceTime](https://web.archive.org/web/20230925073453/https://indepth.dev/reference/rxjs/operators/debounce-time) - In Depth Dev Reference
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 - [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
-- [Build your own debounceTime operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=debounceTime#app)
-  🎥 - Kwinten Pisman
+- [Build your own debounceTime operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/debounceTime.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounceTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounceTime.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounceTime.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounceTime.ts)

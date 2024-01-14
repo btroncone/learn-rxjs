@@ -1,6 +1,6 @@
-# throw
+# throwError
 
-#### signature: `throw(error: any, scheduler: Scheduler): Observable`
+#### signature: `throwError(errorOrErrorFactory: any, scheduler: SchedulerLike): Observable<never>`
 
 ## Emit error on subscription.
 
@@ -31,15 +31,15 @@ const subscribe = source.subscribe({
 
 ### Related Examples
 
-- [Throwing after 3 retries](../error_handling/retrywhen.md)
+- [Throwing after 3 retries](../error_handling/retrywhen.md#example-2-customizable-retry-with-increased-duration)
 
 ### Additional Resources
 
-- [throw](https://rxjs.dev/api/index/function/throw) 📰 - Official docs
+- [throwError](https://rxjs.dev/api/index/function/throwError) 📰 - Official docs
 - [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/throwError.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/throwError.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/throwError.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/throwError.ts)

@@ -59,7 +59,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [throttleTime](https://rxjs.dev/api/operators/throttleTime) 📰 - Official docs
-- [throttleTime](https://indepth.dev/reference/rxjs/operators/throttle-time) - In Depth Dev Reference
+- [throttleTime](https://web.archive.org/web/20230529223636/https://indepth.dev/reference/rxjs/operators/throttle-time) - In Depth Dev Reference
 - [Filtering operator: throttle and throttleTime](https://egghead.io/lessons/rxjs-filtering-operators-throttle-and-throttletime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 - [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
@@ -67,4 +67,4 @@ const subscribe = example.subscribe(val => console.log(val));
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/throttleTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/throttleTime.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/throttleTime.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/throttleTime.ts)

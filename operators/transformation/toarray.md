@@ -38,4 +38,4 @@ interval(100)
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/toArray.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/toArray.ts)

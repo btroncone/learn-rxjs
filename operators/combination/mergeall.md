@@ -99,11 +99,11 @@ const example = source
 ### Additional Resources
 
 - [mergeAll](https://rxjs.dev/api/operators/mergeAll) 📰 - Official docs
-- [mergeAll](https://indepth.dev/reference/rxjs/operators/merge-all) - In Depth Dev Reference
+- [mergeAll](https://web.archive.org/web/20230127122030/https://indepth.dev/reference/rxjs/operators/merge-all) - In Depth Dev Reference
 - [Flatten a higher order observable with mergeAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-mergeall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeAll.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/mergeAll.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/mergeAll.ts)

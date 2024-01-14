@@ -215,19 +215,19 @@ source$
 ### Additional Resources
 
 - [mergeMap](https://rxjs.dev/api/operators/mergeMap) 📰 - Official docs
-- [mergeMap](https://indepth.dev/reference/rxjs/operators/merge-map) - In Depth Dev Reference
-- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) 🎥 💵 -
-  Ben Lesh
+- [mergeMap](https://web.archive.org/web/20230529220018/https://indepth.dev/reference/rxjs/operators/merge-map) - In Depth Dev Reference
+- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
+  🎥 💵 - Ben Lesh
 - [Async requests and responses in RxJS](https://egghead.io/lessons/rxjs-04-reactive-programming-async-requests-and-responses-in-rxjs)
   🎥 💵 - André Staltz
 - [Use RxJS mergeMap to map and merge higher order observables](https://egghead.io/lessons/rxjs-use-rxjs-mergemap-to-map-and-merge-high-order-observables?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 - [Use RxJS mergeMap for fine grain custom behavior](https://egghead.io/lessons/rxjs-use-rxjs-mergemap-for-fine-grain-custom-behavior?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
-- [Build your own mergeMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=mergeMap#app)
-  🎥 - Kwinten Pisman
+- [Build your own mergeMap operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/mergeMap.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mergeMap.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/mergeMap.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/mergeMap.ts)

@@ -24,14 +24,14 @@ the function you supplied) is cancelled and the new observable is subscribed.
 You can remember this by the phrase **switch to a new observable**.
 
 This works perfectly for scenarios like
-[typeaheads](https://angular-2-training-book.rangle.io/handout/http/search_with_switchmap.html)
+[typeaheads](https://angular-training-guide.rangle.io/http/search_with_switchmap)
 where you are no longer concerned with the response of the previous request when
 a new input arrives. This also is a safe option in situations where a long lived
 inner observable could cause memory leaks, for instance if you used
 [mergeMap](mergemap.md) with an interval and forgot to properly dispose of inner
 subscriptions. Remember, `switchMap` maintains only one inner subscription at a
 time, this can be seen clearly in the
-[first example](#example-1-restart-interval-every-5-seconds).
+[first example](#example-1-restart-interval-on-every-click).
 
 Be careful though, you probably want to avoid `switchMap` in scenarios where
 every request needs to complete, think writes to a database. `switchMap` could
@@ -145,8 +145,8 @@ timer(0, 5000)
 ### Additional Resources
 
 - [switchMap](https://rxjs.dev/api/operators/switchMap) 📰 - Official docs
-- [switchMap](https://indepth.dev/reference/rxjs/operators/switch-map) - In Depth Dev Reference
-- [Avoiding switchMap-Related Bugs](https://blog.angularindepth.com/switchmap-bugs-b6de69155524) -
+- [switchMap](https://web.archive.org/web/20230330030949/https://indepth.dev/reference/rxjs/operators/switch-map) - In Depth Dev Reference
+- [Avoiding switchMap-Related Bugs](https://ncjamieson.com/avoiding-switchmap-related-bugs/) -
   Nicholas Jamieson
 - [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
@@ -154,10 +154,10 @@ timer(0, 5000)
   🎥 💵 - André Staltz
 - [Use switchMap as a safe default to flatten observables in RxJS](https://egghead.io/lessons/rxjs-use-switchmap-as-a-safe-default-to-flatten-observables-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
-- [Build your own switchMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=switchMap#app)
-  🎥 - Kwinten Pisman
+- [Build your own switchMap operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/switchMap.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/switchMap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/switchMap.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/switchMap.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/switchMap.ts)

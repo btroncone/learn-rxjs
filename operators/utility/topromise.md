@@ -63,4 +63,4 @@ example().then(val => {
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toPromise.ts)
+> [https://github.com/ReactiveX/rxjs/blob/5.0.0/src/operator/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/5.0.0/src/operator/toPromise.ts)

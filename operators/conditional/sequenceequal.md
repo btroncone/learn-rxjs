@@ -64,10 +64,9 @@ fromEvent(document, 'keydown')
 
 ### Additional Resources
 
-- [sequenceEqual](https://rxjs.dev/api/operators/sequenceEqual) 📰 - Official
-  docs
+- [sequenceEqual](https://rxjs.dev/api/operators/sequenceEqual) 📰 - Official docs
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/sequenceEqual.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/sequenceEqual.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/sequenceEqual.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/sequenceEqual.ts)

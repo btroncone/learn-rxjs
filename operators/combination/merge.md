@@ -92,17 +92,17 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [merge](https://rxjs.dev/api/index/function/merge) 📰 - Official docs
-- [merge](https://indepth.dev/reference/rxjs/operators/merge) - In Depth Dev Reference
+- [merge](https://web.archive.org/web/20230608174759/https://indepth.dev/reference/rxjs/operators/merge) - In Depth Dev Reference
 - [Handling multiple streams with merge](https://egghead.io/lessons/rxjs-handling-multiple-streams-with-merge?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Sharing network requests with merge](https://egghead.io/lessons/rxjs-reactive-programming-sharing-network-requests-with-rxjs-merge?course=introduction-to-reactive-programming)
   🎥 💵 - André Staltz
 - [Combination operator: merge](https://egghead.io/lessons/rxjs-combination-operator-merge?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
-- [Build your own merge operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=merge#app)
-  🎥 - Kwinten Pisman
+- [Build your own merge operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/observable/merge.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/merge.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/merge.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/merge.ts)

@@ -7,7 +7,7 @@
 ---
 
 💡 A
-[BehaviorSubject](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md)
+[BehaviorSubject](https://rxjs.dev/guide/subject#behaviorsubject)
 can also start with an initial value!
 
 ---
@@ -122,4 +122,4 @@ const subscribe = example.subscribe(val => console.log(val));
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/startWith.ts)

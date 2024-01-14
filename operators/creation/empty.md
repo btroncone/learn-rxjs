@@ -71,4 +71,4 @@ const timer$ = merge(pause$, resume$)
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts)
+> [https://github.com/ReactiveX/rxjs/blob/6.6.7/src/internal/observable/empty.ts](https://github.com/ReactiveX/rxjs/blob/6.6.7/src/internal/observable/empty.ts)

@@ -55,10 +55,9 @@ keys$.subscribe(console.log);
 
 ### Additional Resources
 
-- [distinctUntilKeyChanged](https://rxjs.dev/api/operators/distinctUntilKeyChanged)
-  📰 - Official docs
+- [distinctUntilKeyChanged](https://rxjs.dev/api/operators/distinctUntilKeyChanged) 📰 - Official docs
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinctUntilKeyChanged.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinctUntilKeyChanged.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/distinctUntilKeyChanged.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/distinctUntilKeyChanged.ts)

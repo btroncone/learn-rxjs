@@ -35,10 +35,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### Additional Resources
 
-- [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast) 📰 -
-  Official docs
+- [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast) 📰 - Official docs
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeLast.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/takeLast.ts)

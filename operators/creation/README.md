@@ -16,7 +16,7 @@ generic to specific use-cases you are free, and encouraged, to turn
 - [interval](interval.md)
 - [of](of.md) ⭐
 - [range](range.md)
-- [throw](throw.md)
+- [throwError](throwError.md)
 - [timer](timer.md)
 
 ⭐ - _commonly used_

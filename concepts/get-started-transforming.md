@@ -155,7 +155,7 @@ than each value contained within an array.
 
 For instance, let's start with our initial example, but instead of transforming
 an array of numbers let's transform an observable of numbers. To do this, we
-will use the [`from`](../operators/creation/from.mdl) creation operator to first
+will use the [`from`](../operators/creation/from.md) creation operator to first
 convert our numbers array into an observable:
 
 ```js

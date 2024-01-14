@@ -120,4 +120,4 @@ const subscribe = merge(
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts)
+> [https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/partition.ts](https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/partition.ts)

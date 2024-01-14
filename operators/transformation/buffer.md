@@ -75,11 +75,11 @@ const subscribe = myBufferedInterval.subscribe(val =>
 
 - [buffer](https://rxjs-dev.firebaseapp.com/api/operators/buffer) 📰 - Official
   docs
-- [buffer](https://indepth.dev/reference/rxjs/operators/buffer) - In Depth Dev Reference
+- [buffer](https://web.archive.org/web/20230309172739/https://indepth.dev/reference/rxjs/operators/buffer) - In Depth Dev Reference
 - [Transformation operator: buffer](https://egghead.io/lessons/rxjs-transformation-operator-buffer?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/buffer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/buffer.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/buffer.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/buffer.ts)

@@ -34,12 +34,11 @@ const subscribe = example.subscribe(val => console.log('Clicked'));
 
 ### Additional Resources
 
-* [auditTime](https://rxjs.dev/api/operators/auditTime)
-  📰 - Official docs
-* [auditTime](https://indepth.dev/reference/rxjs/operators/audit-time) - In Depth Dev Reference
+* [auditTime](https://rxjs.dev/api/operators/auditTime) 📰 - Official docs
+* [auditTime](https://web.archive.org/web/20230925065445/https://indepth.dev/reference/rxjs/operators/audit-time) - In Depth Dev Reference
 * [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/auditTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/auditTime.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/auditTime.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/auditTime.ts)

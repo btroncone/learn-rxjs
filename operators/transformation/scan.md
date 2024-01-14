@@ -148,10 +148,10 @@ interval(1000)
   🎥 💵 - John Linquist
 - [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
-- [Build your own scan operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=scan#app)
-  🎥 - Kwinten Pisman
+- [Build your own scan operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/scan.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/scan.ts)

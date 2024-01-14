@@ -112,4 +112,4 @@ help with example!_
 - [scan](../operators/transformation/scan.md)
 - [share](../operators/multicasting/share.md)
 - [switchMap](../operators/transformation/switchmap.md)
-- [withLatestFrom](../operators/transformation/withlatestfrom.md)
+- [withLatestFrom](../operators/combination/withlatestfrom.md)

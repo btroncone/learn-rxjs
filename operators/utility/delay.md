@@ -64,11 +64,11 @@ const subscribe = message.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [delay](https://rxjs.dev/api/operators/delay) 📰 - Official docs
-- [delay](https://indepth.dev/reference/rxjs/operators/delay) - In Depth Dev Reference
+- [delay](https://web.archive.org/web/20230529212855/https://indepth.dev/reference/rxjs/operators/delay) - In Depth Dev Reference
 - [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delay.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delay.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/delay.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/delay.ts)

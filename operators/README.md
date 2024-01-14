@@ -37,7 +37,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [interval](creation/interval.md)
   - [of](creation/of.md) ⭐
   - [range](creation/range.md)
-  - [throw](creation/throw.md)
+  - [throwError](creation/throwError.md)
   - [timer](creation/timer.md)
 - [Error Handling](error_handling/README.md)
   - [catch / catchError](error_handling/catch.md) ⭐

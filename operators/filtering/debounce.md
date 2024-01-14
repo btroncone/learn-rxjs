@@ -70,11 +70,11 @@ const subscribe = debouncedInterval.subscribe(val =>
 ### Additional Resources
 
 - [debounce](https://rxjs.dev/api/operators/debounce) 📰 - Official docs
-- [debounce](https://indepth.dev/reference/rxjs/operators/debounce) - In Depth Dev Reference
+- [debounce](https://web.archive.org/web/20230529220711/https://indepth.dev/reference/rxjs/operators/debounce) - In Depth Dev Reference
 - [Transformation operator: debounce and debounceTime](https://egghead.io/lessons/rxjs-transformation-operators-debounce-and-debouncetime?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounce.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounce.ts)

@@ -67,14 +67,11 @@ setTimeout(() => {
 
 ### Additional Resources
 
-- [create](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-create)
-  📰 - Official docs
-- [Creation operators: Create()](https://egghead.io/lessons/rxjs-creation-operator-create?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
-  🎥 💵 - André Staltz
-- [Using Observable.create for fine-grained control](https://egghead.io/lessons/rxjs-using-observable-create-for-fine-grained-control)
-  🎥 💵 - Shane Osbourne
+- [create](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-create) 📰 - Official docs
+- [Creation operators: Create()](https://egghead.io/lessons/rxjs-creation-operator-create?course=rxjs-beyond-the-basics-creating-observables-from-scratch) 🎥 💵 - André Staltz
+- [Using Observable.create for fine-grained control](https://egghead.io/lessons/rxjs-using-observable-create-for-fine-grained-control) 🎥 💵 - Shane Osbourne
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/GenerateObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/GenerateObservable.ts)
+> [https://github.com/ReactiveX/rxjs/blob/6.6.7/compat/observable/GenerateObservable.ts](https://github.com/ReactiveX/rxjs/blob/6.6.7/compat/observable/GenerateObservable.ts)

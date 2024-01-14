@@ -87,7 +87,7 @@ _[Prefer a split by operator type?](README.md)_
 - [takeWhile](filtering/takewhile.md)
 - [throttle](filtering/throttle.md)
 - [throttleTime](filtering/throttletime.md)
-- [throw](creation/throw.md)
+- [throwError](creation/throwError.md)
 - [timeInterval](utility/timeinterval.md)
 - [timeout](utility/timeout.md)
 - [timeoutWith](utility/timeoutwith.md)
@@ -106,7 +106,6 @@ _[Prefer a split by operator type?](README.md)_
 
 ### Additional Resources
 
-- [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators)
-  📰 - Official Docs
+- [What Are Operators?](https://rxjs-dev.firebaseapp.com/guide/operators#what-are-operators) 📰 - Official Docs
 - [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are)
   🎥 💵 - André Staltz

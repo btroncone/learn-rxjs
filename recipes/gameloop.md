@@ -261,11 +261,11 @@ frames$
 ### Operators Used
 
 - [buffer](../operators/transformation/buffer.md)
-- [bufferCount](../operators/transformation/bufferCount.md)
+- [bufferCount](../operators/transformation/buffercount.md)
 - [expand](../operators/transformation/expand.md)
 - [filter](../operators/filtering/filter.md)
 - [fromEvent](../operators/creation/fromevent.md)
 - [map](../operators/transformation/map.md)
 - [share](../operators/multicasting/share.md)
 - [tap](../operators/utility/do.md)
-- [withLatestFrom](../operators/transformation/withlatestfrom.md)
+- [withLatestFrom](../operators/combination/withlatestfrom.md)

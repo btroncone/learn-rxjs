@@ -62,4 +62,4 @@ const subscribeTwo = example
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/windowToggle.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/windowToggle.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/windowToggle.ts)

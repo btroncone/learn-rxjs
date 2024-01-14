@@ -136,7 +136,7 @@ stopWatch$.subscribe();
 - [interval](../operators/creation/interval.md)
 - [map](../operators/transformation/map.md)
 - [mapTo](../operators/transformation/mapto.md)
-- [merge](../operators/transformation/map.md)
+- [merge](../operators/combination/merge.md)
 - NEVER
 - noop
 - [scan](../operators/transformation/scan.md)

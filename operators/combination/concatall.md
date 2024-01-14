@@ -122,11 +122,11 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [concatAll](https://rxjs.dev/api/operators/concatAll) 📰 - Official docs
-- [concatAll](https://indepth.dev/reference/rxjs/operators/concat-all) - In Depth Dev Reference
+- [concatAll](https://web.archive.org/web/20230127105516/https://indepth.dev/reference/rxjs/operators/concat-all) - In Depth Dev Reference
 - [Flatten a higher order observable with concatAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-concatall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concatAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concatAll.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/concatAll.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/concatAll.ts)

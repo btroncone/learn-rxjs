@@ -98,11 +98,11 @@ concat(interval(1000), of('This', 'Never', 'Runs'))
 ### Additional Resources
 
 - [concat](https://rxjs.dev/api/index/function/concat) 📰 - Official docs
-- [concat](https://indepth.dev/reference/rxjs/operators/concat) - In Depth Dev Reference
+- [concat](https://web.archive.org/web/20230529215358/https://indepth.dev/reference/rxjs/operators/concat) - In Depth Dev Reference
 - [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concat.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concat.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/concat.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/observable/concat.ts)
