@@ -62,10 +62,10 @@ const subscribe = example.subscribe(val =>
 
 * [bufferTime](https://rxjs.dev/api/operators/bufferTime)
   📰 - Official docs
-* [bufferTime](https://indepth.dev/reference/rxjs/operators/buffer-time) - In Depth Dev Reference
+* [bufferTime](https://web.archive.org/web/20220810204209/https://indepth.dev/reference/rxjs/operators/buffer-time) - In Depth Dev Reference
 * [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferTime.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferTime.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/bufferTime.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/bufferTime.ts)

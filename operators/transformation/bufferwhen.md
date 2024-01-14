@@ -38,9 +38,9 @@ const subscribe = bufferWhenExample.subscribe(val =>
 ### Additional Resources
 
 - [bufferWhen](https://rxjs.dev/api/operators/bufferWhen) 📰 - Official docs
-- [bufferWhen](https://indepth.dev/reference/rxjs/operators/buffer-when) - In Depth Dev Reference
+- [bufferWhen](https://web.archive.org/web/20220810212022/https://indepth.dev/reference/rxjs/operators/buffer-when) - In Depth Dev Reference
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferWhen.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/bufferWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/bufferWhen.ts)

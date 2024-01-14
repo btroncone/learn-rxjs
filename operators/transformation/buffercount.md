@@ -9,7 +9,7 @@ The key distinction between bufferCount and other buffering operators lies in it
 
 This operator proves advantageous in scenarios where processing data in chunks is more efficient, such as bulk updates or batch processing. By contrast, the buffer operator relies on a closing notifier to define the buffering window, which may not suit all use cases.
 
-Keep in mind, though, that bufferCount may not be the best choice when the buffering strategy requires time-based or event-driven windows. In such instances, consider using [buffer](buffer.md) or [buffertime](bufferTime.md) instead. Remember, bufferCount organizes values based on emission count, as illustrated clearly in the first example.
+Keep in mind, though, that bufferCount may not be the best choice when the buffering strategy requires time-based or event-driven windows. In such instances, consider using [buffer](buffer.md) or [buffertime](buffertime.md) instead. Remember, bufferCount organizes values based on emission count, as illustrated clearly in the first example.
 
 Exercise caution in situations where buffering strategy plays a critical role in the desired output, as choosing the wrong operator might lead to unexpected behavior. Familiarize yourself with the various buffering operators to make informed decisions based on your specific requirements.
 
@@ -113,4 +113,4 @@ fromEvent(document, 'keydown')
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferCount.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/bufferCount.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/bufferCount.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/bufferCount.ts)

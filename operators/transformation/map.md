@@ -80,16 +80,15 @@ const subscribe = example.subscribe(val => console.log(val));
 ### Additional Resources
 
 - [map](https://rxjs.dev/api/operators/map) 📰 - Official docs
-- [map](https://indepth.dev/reference/rxjs/operators/map) - In Depth Dev Reference
-- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) 🎥 - Ben
-  Lesh
+- [map](https://web.archive.org/web/20230925064048/https://indepth.dev/reference/rxjs/operators/map) - In Depth Dev Reference
+- [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) 🎥 - Ben Lesh
 - [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 
-* [Build your own map operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=map#app)
-  🎥 - Kwinten Pisman
+* [Build your own map operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/map.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/map.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/map.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/map.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/map.ts)

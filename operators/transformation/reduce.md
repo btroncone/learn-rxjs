@@ -37,10 +37,10 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 - [reduce](https://rxjs.dev/api/operators/reduce) 📰 - Official docs
 - [Scan() vs reduce() | RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
   🎥 - Academind
-- [Build your own reduce operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=reduce#app)
-  🎥 - Kwinten Pisman
+- [Build your own reduce operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/reduce.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/reduce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/reduce.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/reduce.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/reduce.ts)

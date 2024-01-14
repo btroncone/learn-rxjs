@@ -78,4 +78,4 @@ const subscribe = example.subscribe(val => console.log(val));
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/pluck.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/pluck.ts)
+> [https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/pluck.ts](https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/pluck.ts)
