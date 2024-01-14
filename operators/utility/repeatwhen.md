@@ -7,7 +7,7 @@
 ---
 
 💡 If you just want to repeat a specified number of times, try
-[retry](retry.md)!
+[repeat](repeat.md)!
 
 ---
 

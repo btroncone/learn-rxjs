@@ -41,10 +41,9 @@ of(timeoutThreshold + 1, timeoutThreshold - 1, timeoutThreshold + 3)
 
 ### Additional Resources
 
-- [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith) 📰 -
-  Official Docs
+- [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith) 📰 - Official Docs
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts)
+> [https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/timeoutWith.ts](https://github.com/ReactiveX/rxjs/blob/7.8.1/src/internal/operators/timeoutWith.ts)

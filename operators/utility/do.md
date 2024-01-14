@@ -105,15 +105,15 @@ const example = source
 ### Additional Resources
 
 - [tap](https://rxjs.dev/api/operators/tap) 📰 - Official docs
-- [tap](https://indepth.dev/reference/rxjs/operators/tap) - In Depth Dev Reference
+- [tap](https://web.archive.org/web/20220810203008/https://indepth.dev/reference/rxjs/operators/tap) - In Depth Dev Reference
 - [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 - [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
-- [Build your own tap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=tap#app)
-  🎥 - Kwinten Pisman
+- [Build your own tap operator](https://github.com/KwintenP/rxjs-operators-from-scratch/blob/master/src/operators/tap.ts)
+  📁 - Kwinten Pisman
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/tap.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/tap.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/tap.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/tap.ts)

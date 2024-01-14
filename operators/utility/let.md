@@ -116,10 +116,9 @@ const subscribe = obsArrayPlusYourOperators(addTenThenTwenty)
 
 ### Additional Resources
 
-- [let](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md)
-  📰 - Official docs
+- [let](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/let.md) 📰 - Official docs
 
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/let.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/let.ts)
+> [https://github.com/Reactive-Extensions/RxJS/blob/master/src/core/linq/observable/let.js](https://github.com/Reactive-Extensions/RxJS/blob/master/src/core/linq/observable/let.js)
