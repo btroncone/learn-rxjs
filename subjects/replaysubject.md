@@ -20,7 +20,7 @@ However, be cautious. `ReplaySubject` can potentially use more memory since it's
 
 In conclusion, if you want the ability to replay a series of previous emissions to new subscribers, `ReplaySubject` is your go-to. If you only care about the most recent emission (with an initial value), opt for `BehaviorSubject`. And if you want a basic, no-frills broadcasting mechanism where late subscribers miss prior emissions, stick with a plain `Subject`.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

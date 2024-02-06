@@ -18,7 +18,7 @@ The scan operator is highly useful in scenarios that require real-time monitorin
 
 In summary, the scan operator provides a powerful and flexible means of handling continuous accumulation and emission of values, which can be especially useful in real-time monitoring and processing tasks.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

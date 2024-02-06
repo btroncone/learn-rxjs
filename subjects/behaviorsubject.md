@@ -20,7 +20,7 @@ Contrasting with [`ReplaySubject`](replaysubject.md), while both provide histori
 
 In conclusion, if you need to ensure subscribers always get the latest value upon subscription, or you have an initial seed value, `BehaviorSubject` is your pick. If you need more historical emissions, consider [`ReplaySubject`](replaysubject.md). And if you don't need any history at all, a simple [`Subject`](subject.md) might be what you're looking for.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

@@ -7,7 +7,7 @@
 [![UltimateRxJS][uc-image]][uc-url]
 
 [uc-image]:
-  https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz
+  https://ultimatecourses.com/static/banners/banner-rxjs.svg
 [uc-url]: https://ultimatecourses.com/courses/rxjs?ref=4
 
 ### Examples

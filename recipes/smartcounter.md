@@ -8,7 +8,7 @@ a popular library that accomplishes this is
 [Hubspot](https://github.com/HubSpot). Let's see how we can accomplish something
 similar with just a few lines of RxJS.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 #### Vanilla JS
 

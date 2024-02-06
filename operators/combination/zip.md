@@ -19,7 +19,7 @@ An everyday example is when you want to match information from two sources, like
 
 Be mindful that zip will only emit a value when all input observables have emitted a corresponding value. This means if one observable has emitted more values than another, the unmatched values will be held back until the other observable emits its next value. In some cases, this could lead to unpaired values, making it important to ensure your observables are synchronized.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

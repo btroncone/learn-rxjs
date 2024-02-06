@@ -13,7 +13,7 @@ It's crucial to remember that `race` only pays attention to the first emitted va
 
 If your use case involves working with multiple observables that should all emit values and complete, or you need to process the emitted values in a specific order, consider using operators like [combineLatest](combinelatest.md) or [forkJoin](forkjoin.md) instead.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

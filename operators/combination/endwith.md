@@ -21,7 +21,7 @@ Keep in mind that endWith only emits the specified value when the source observa
 
 In cases where you want to prepend a value at the beginning of an observable sequence instead of appending it at the end, consider using the [startWith](startwith.md) operator.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
