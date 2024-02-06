@@ -22,7 +22,7 @@ Bear in mind that `concatAll` will only start processing the next observable whe
 
 Additionally, if you're working with observables that can emit values concurrently and don't need to wait for one to complete before processing another, [mergeAll](mergeall.md) might be a more suitable choice. Similarly, if you only need to combine the values of multiple observables at the point when they all complete, [forkJoin](forkjoin.md) could be a better option.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

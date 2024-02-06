@@ -21,7 +21,7 @@ Keep in mind that concat will only start emitting values from the next observabl
 
 In contrast, if you need to combine observables that emit values concurrently, or you require the latest values from multiple observables whenever any of them emit a new value, [combineLatest](combinelatest.md) or [withLatestFrom](withlatestfrom.md) might be more suitable options.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

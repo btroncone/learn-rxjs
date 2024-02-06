@@ -18,7 +18,7 @@ In contrast, a simple `Subject` doesn't offer these playback features. If you jo
 
 In summary, choose `Subject` for standard multicasting needs. Opt for `BehaviorSubject` when the latest value or seed value is critical, and `ReplaySubject` when you want to ensure a history of values is available for late subscribers.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

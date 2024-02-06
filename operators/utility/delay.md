@@ -10,7 +10,7 @@ This operator is your go-to when simulating real-world scenarios such as network
 
 Keep in mind that **`delay` won’t prevent the original observable from emitting values**. It merely postpones the delivery to its subscribers. This is a _gotcha_ as it could look like your data is lagging or not in sync with the source, especially when multiple observables are at play.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

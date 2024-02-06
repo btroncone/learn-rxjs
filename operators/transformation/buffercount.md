@@ -13,7 +13,7 @@ Keep in mind, though, that bufferCount may not be the best choice when the buffe
 
 Exercise caution in situations where buffering strategy plays a critical role in the desired output, as choosing the wrong operator might lead to unexpected behavior. Familiarize yourself with the various buffering operators to make informed decisions based on your specific requirements.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 

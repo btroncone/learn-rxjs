@@ -11,7 +11,7 @@ Buffer shines in scenarios like batching multiple events together before process
 
 However, keep in mind that buffer may not be the best fit when you require immediate processing of each emitted value. One way to think about this is "buffer is about batching". Remember, buffer is all about accumulating and releasing values based on specific triggers, making it a powerful tool for managing grouped events.
 
-[![Ultimate RxJS](https://drive.google.com/uc?export=view&id=1qq2-q-eVe-F_-d0eSvTyqaGRjpfLDdJz 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
 
