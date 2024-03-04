@@ -42,7 +42,7 @@ source$
   // emit on completion
   .pipe(endWith('Friend'))
   // 'Hello', 'Friend', 'Goodbye', 'Friend'
-  .subscribe(console.log(val));
+  .subscribe(val => console.log(val));
 ```
 
 ##### Example 2: endWith multiple values
@@ -62,7 +62,7 @@ source$
   // emit on completion
   .pipe(endWith('Goodbye', 'Friend'))
   // 'Hello', 'Friend', 'Goodbye', 'Friend'
-  .subscribe(console.log(val));
+  .subscribe(val => console.log(val));
 ```
 
 ##### Example 3: Comparison to [`finalize`](../utility/finalize.md)
