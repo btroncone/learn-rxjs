@@ -2,6 +2,8 @@
 
 ## Emits its last value on completion
 
+## After completing, it sends the last value to all subscribers
+
 [![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
@@ -9,7 +11,7 @@
 ##### Example 1: simple AsyncSubject
 
 (
-[Stackblitz](https://stackblitz.com/edit/rxjs-asyncsubject?file=index.ts&devtoolsheight=100)
+[Stackblitz](https://stackblitz.com/edit/rxjs-asyncsubject-xyp8ku?file=index.ts)
 )
 
 ```js
@@ -26,6 +28,8 @@ sub.subscribe(console.log);
 
 sub.next(456); //nothing logged
 sub.complete(); //456, 456 logged by both subscribers
+
+sub.subscribe(console.log); //456 logged one more time
 ```
 
 ### Additional Resources
