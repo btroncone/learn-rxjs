@@ -2,6 +2,8 @@
 
 ## Emits its last value on completion
 
+## Then it emits the last value to all subscribers after completion
+
 [![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
 
 ### Examples
@@ -26,6 +28,8 @@ sub.subscribe(console.log);
 
 sub.next(456); //nothing logged
 sub.complete(); //456, 456 logged by both subscribers
+
+sub.subscribe(console.log); //456 logged one more time
 ```
 
 ### Additional Resources
