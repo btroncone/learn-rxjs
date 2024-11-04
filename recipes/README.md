@@ -10,6 +10,7 @@ Common use-cases and interesting recipes to help learn RxJS.
 - [Car Racing Game](car-racing-game.md)
 - [Catch The Dot Game](catch-the-dot-game.md)
 - [Click Ninja Game](click-ninja-game.md)
+- [Dinosaur Game](dinosaur-game.md)
 - [Flappy Bird Game](flappy-bird-game.md)
 - [Game Loop](gameloop.md)
 - [Horizontal Scroll Indicator](horizontal-scroll-indicator.md)
