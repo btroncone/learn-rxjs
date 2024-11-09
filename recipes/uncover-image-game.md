@@ -165,8 +165,7 @@ import { pluck, startWith } from 'rxjs/operators';
 const positionChangeUnit = 2;
 
 export const keyboardEvents$ = fromEvent(document, 'keydown').pipe(
-  pluck < KeyboardEvent,
-  string > 'code',
+  pluck<KeyboardEvent, string>("code"),
   startWith('')
 );
 
