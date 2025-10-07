@@ -19,7 +19,7 @@ This operator is your go-to when you need to sift out unwanted values from an ob
 
 Also, for scenarios where you not only want to filter values but also transform them, [`map`](../transformation/map.md) is an ideal companion to `filter`. Use them in tandem to both shape and refine your data streams.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

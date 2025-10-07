@@ -25,7 +25,7 @@ When deciding between mergeAll and other operators, keep in mind the following:
 - If you need to merge observables that produce values independently and are short-lived, `mergeAll` is the operator to reach for.
 
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

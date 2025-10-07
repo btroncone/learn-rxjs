@@ -4,7 +4,7 @@
 
 ## Emit value on the leading edge of an interval, but suppress new values until `durationSelector` has completed.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

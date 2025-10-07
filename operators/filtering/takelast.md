@@ -11,7 +11,7 @@ of multiple observables, try [forkJoin](../combination/forkjoin.md)!
 
 ---
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

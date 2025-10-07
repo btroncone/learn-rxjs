@@ -26,7 +26,7 @@ It's important to remember that **`distinctUntilChanged` compares the current va
 
 In essence, when you're looking to filter out consecutive duplicate emissions from your observables, think of `distinctUntilChanged` as your go-to option.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

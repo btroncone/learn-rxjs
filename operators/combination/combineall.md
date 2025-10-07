@@ -4,7 +4,7 @@
 
 ## When source observable completes use [combineLatest](combinelatest.md) with collected observables.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

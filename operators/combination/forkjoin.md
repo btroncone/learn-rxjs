@@ -34,7 +34,7 @@ item, and you are concerned with the previous emissions `forkJoin` is not the
 correct choice. In these cases you may be better off with an operator like
 [combineLatest](combinelatest.md) or [zip](zip.md).
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

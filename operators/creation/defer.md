@@ -12,7 +12,7 @@ is used as part of the [`iif`](../conditional/iif.md) operator!
 
 ---
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

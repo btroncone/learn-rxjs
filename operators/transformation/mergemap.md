@@ -39,7 +39,7 @@ can also limit the number of active inner subscriptions at a time with the
 `concurrent` parameter, seen in
 [example 5](#example-5-mergemap-with-concurrent-value).
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 
