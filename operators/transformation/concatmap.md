@@ -14,7 +14,7 @@ Keep in mind that **if the inner observable takes a significant time to complete
 
 Lastly, if you're not concerned about the order of processing and just want everything to execute as it arrives, [`mergeMap`](mergemap.md) might be the better choice.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

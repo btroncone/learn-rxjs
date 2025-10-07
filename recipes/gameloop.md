@@ -9,7 +9,7 @@ a stream of frames and their deltaTimes since the previous frames. Combined with
 this is a stream of user inputs, and the current gameState, which we can use to
 update our objects, and render to to the screen on each frame emission.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Example Code
 

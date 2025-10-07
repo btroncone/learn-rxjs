@@ -4,7 +4,7 @@
 
 ## If all values pass predicate before completion emit true, else false.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

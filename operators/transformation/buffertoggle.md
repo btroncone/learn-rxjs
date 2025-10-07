@@ -4,7 +4,7 @@
 
 ## Toggle on to catch emitted values from source, toggle off to emit buffered values as array.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

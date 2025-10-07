@@ -5,7 +5,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 This recipe demonstrates RxJS implementation of swipe to refresh functionality.
 Inspired by [@BenLesh](https://twitter.com/BenLesh) RxJs talks.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Example Code
 

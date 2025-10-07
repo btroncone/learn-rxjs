@@ -14,7 +14,7 @@ Take note that **`exhaustMap` will ignore source values while the previous inner
 
 If you want to handle every single event, even if previous ones haven't completed, other operators like [`switchMap`](switchmap.md) or [`mergeMap`](mergemap.md) might be more appropriate. But when ensuring one task is exhausted before moving to the next, `exhaustMap` is your go-to choice.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

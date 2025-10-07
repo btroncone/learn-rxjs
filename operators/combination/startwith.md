@@ -19,7 +19,7 @@ A real-world example can be seen in a search functionality, where the search res
 
 Keep in mind that startWith emits the initial value immediately upon subscription. This behavior is helpful when you want to make sure your subscribers receive a value right away, even before the source observable starts emitting values.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

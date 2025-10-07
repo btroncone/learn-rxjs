@@ -20,7 +20,7 @@ Keep in mind that `withLatestFrom` only emits a value when the main observable e
 
 If you need to combine values from multiple observables that emit more than once and are interdependent, consider using [`combineLatest`](combinelatest.md) instead. And for scenarios where observables emit only once or you just need their last values, [`forkJoin`](forkjoin.md) might be a more suitable choice.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

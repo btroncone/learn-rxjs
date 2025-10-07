@@ -4,7 +4,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 
 This recipe demonstrates RxJS implementation of Matrix Digital Rain.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Example Code
 

@@ -22,7 +22,7 @@ Keep in mind that `merge` will emit values as soon as any of the observables emi
 
 Lastly, if you're dealing with observables that emit values at specific intervals and you need to combine them based on time, consider using the [zip](zip.md) operator instead.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

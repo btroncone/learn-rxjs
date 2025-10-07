@@ -10,7 +10,7 @@
 💡 If you need the current accumulated value on each emission, try
 [scan](scan.md)!
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Examples
 

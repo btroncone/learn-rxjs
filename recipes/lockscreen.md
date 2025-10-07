@@ -5,7 +5,7 @@ _By [adamlubek](https://github.com/adamlubek)_
 This recipe demonstrates RxJS implementation of lockscreen functionality (known
 for example from smartphones).
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Example Code
 

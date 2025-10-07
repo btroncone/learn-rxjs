@@ -6,7 +6,7 @@ This recipe demonstrates the creation of an animated progress bar, simulating
 the management of multiple requests, and updating overall progress as each
 completes.
 
-[![Ultimate RxJS](https://ultimatecourses.com/static/banners/banner-rxjs.svg 'Ultimate RxJS')](https://ultimatecourses.com/courses/rxjs?ref=4)
+
 
 ### Example Code
 
