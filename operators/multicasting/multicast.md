@@ -87,4 +87,4 @@ setTimeout(() => {
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/multicast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/multicast.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/multicast.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/multicast.ts)

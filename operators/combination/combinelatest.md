@@ -168,4 +168,4 @@ combineLatest(addOneClick$('red'), addOneClick$('black')).subscribe(
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineLatest.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineLatest.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/combineLatest.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/combineLatest.ts)

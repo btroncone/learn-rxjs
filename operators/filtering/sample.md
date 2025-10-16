@@ -84,4 +84,4 @@ const listener = merge(
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/sample.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/sample.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/sample.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/sample.ts)

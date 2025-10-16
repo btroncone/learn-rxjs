@@ -50,4 +50,4 @@ clicks$
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/find.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/find.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/find.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/find.ts)

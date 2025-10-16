@@ -185,3 +185,7 @@ All references included in this GitBook are resources, both free and paid, that
 helped me tremendously while learning RxJS. If you come across an article or
 video that you think should be included, please use the _edit this page_ link in
 the top menu and submit a pull request. Your feedback is appreciated!
+
+---
+
+Thank you to [Gitbook](https://www.gitbook.com/) for sponsoring this documentation!

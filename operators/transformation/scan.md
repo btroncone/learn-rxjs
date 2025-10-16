@@ -154,4 +154,4 @@ interval(1000)
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/scan.ts)
