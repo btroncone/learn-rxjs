@@ -224,7 +224,7 @@ result emitted in real-time as values blast through your streams. We can confirm
 this in the RxJS source code by seeing the function we provide is invoked, with
 the result being passed on to the subscriber (destination):
 
-[(Source Code)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/operators/map.ts#L81-L91)
+[(Source Code)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/packages/rxjs/src/internal/operators/map.ts#L81-L91)
 
 ```ts
 protected _next(value: T) {
@@ -332,7 +332,7 @@ Like many other helper operators in RxJS, behind the scenes `pluck` is simply
 reusing the `map` operator, passing it a function to grab the appropriate
 property:
 
-[(Source Code)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/src/internal/operators/pluck.ts#L48-L54)
+[(Source Code)](https://github.com/ReactiveX/rxjs/blob/e17df333fec66ea3d79e3f70565064f757c3a4fe/packages/rxjs/src/internal/operators/pluck.ts#L48-L54)
 
 ```ts
 export function pluck<T, R>(...properties: string[]): OperatorFunction<T, R> {

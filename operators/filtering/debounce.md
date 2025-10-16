@@ -77,4 +77,4 @@ const subscribe = debouncedInterval.subscribe(val =>
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/debounce.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounce.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/debounce.ts)

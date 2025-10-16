@@ -62,4 +62,4 @@ example$
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineAll.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/combineAll.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/combineAll.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/combineAll.ts)

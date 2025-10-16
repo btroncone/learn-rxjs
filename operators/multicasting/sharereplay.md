@@ -96,7 +96,7 @@ being used. When a subscription is made, `shareReplay` will subscribe to the
 source, sending values through an internal `ReplaySubject`:
 
 (
-[source](https://github.com/ReactiveX/rxjs/blob/b25db9f369b07f26cf2fc11714ec1990b78a4536/src/internal/operators/shareReplay.ts#L26-L37)
+[source](https://github.com/ReactiveX/rxjs/blob/b25db9f369b07f26cf2fc11714ec1990b78a4536/packages/rxjs/src/internal/operators/shareReplay.ts#L26-L37)
 )
 
 ```js
@@ -173,4 +173,4 @@ const lateSubscriber = lastUrl.subscribe(console.log);
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/shareReplay.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/shareReplay.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/shareReplay.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/shareReplay.ts)

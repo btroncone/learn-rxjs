@@ -105,4 +105,4 @@ concat(interval(1000), of('This', 'Never', 'Runs'))
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concat.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/concat.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/concat.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/concat.ts)

@@ -49,4 +49,4 @@ hey!
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts](https://github.com/ReactiveX/rxjs/blob/6.5.2/src/internal/operators/repeatWhen.ts)
+> [https://github.com/ReactiveX/rxjs/blob/6.5.2/packages/rxjs/src/internal/operators/repeatWhen.ts](https://github.com/ReactiveX/rxjs/blob/6.5.2/packages/rxjs/src/internal/operators/repeatWhen.ts)

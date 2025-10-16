@@ -124,4 +124,4 @@ mouseClickDuration.subscribe(console.log);
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/zip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/zip.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/zip.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/zip.ts)

@@ -71,4 +71,4 @@ const subscribe = message.subscribe(val => console.log(val));
 ---
 
 > 📁 Source Code:
-> [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delay.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delay.ts)
+> [https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/delay.ts](https://github.com/ReactiveX/rxjs/blob/master/packages/rxjs/src/internal/operators/delay.ts)
