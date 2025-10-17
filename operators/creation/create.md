@@ -26,11 +26,11 @@ Create a custom observable by defining subscription behavior.
 
 Custom observables are your bridge between the non-reactive world and RxJS. Think of them as adapters—when you have a data source that doesn't speak "Observable" (like a WebSocket connection, a third-party library with callbacks, or a browser API like Geolocation), creating a custom observable lets you wrap it up and make it play nicely with the rest of your reactive code.
 
-Here's the thing: **you'll rarely need to create custom observables**. RxJS already provides creation operators for most common scenarios—timers, events, promises, arrays, and more. But when you encounter an API that doesn't fit any existing operator, custom observables give you fine-grained control. You decide exactly when to emit values (observer.next()), how to handle errors (observer.error()), and what cleanup should happen when someone unsubscribes.
+Here's the thing: **you'll rarely need to create custom observables**. RxJS already provides creation operators for most common scenarios. Timers, events, promises, arrays, and more. But when you encounter an API that doesn't fit any existing operator, custom observables give you fine-grained control. You decide exactly when to emit values (observer.next()), how to handle errors (observer.error()), and what cleanup should happen when someone unsubscribes.
 
-One way to think about this is like writing a translator. The non-reactive API speaks one language, your Observable streams speak another, and your custom observable sits in the middle making sure they understand each other. When implementing [the cleanup function](#example-2-observable-with-proper-cleanup), remember that this is your chance to be a good citizen—close connections, cancel timers, remove listeners. It's like turning off the lights when you leave a room.
+One way to think about this is like writing a translator. The non-reactive API speaks one language, your Observable streams speak another, and your custom observable sits in the middle making sure they understand each other. When implementing [the cleanup function](#example-2-observable-with-proper-cleanup), remember that this is your chance to be a good citizen. Close connections, cancel timers, remove listeners. It's like turning off the lights when you leave a room.
 
-In essence, custom observables are powerful but should be used sparingly. If an existing creation operator can do the job, use that. But when you need that extra control—when you're integrating with legacy code, third-party libraries, or unusual data sources—this is your tool.
+In essence, custom observables are powerful but should be used sparingly. If an existing creation operator can do the job, use that. But when you need that extra control—when you're integrating with legacy code, third-party libraries, or unusual data sources, this is your tool.
 
 ---
 
