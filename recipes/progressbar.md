@@ -113,3 +113,8 @@ help with example!_
 - [share](../operators/multicasting/share.md)
 - [switchMap](../operators/transformation/switchmap.md)
 - [withLatestFrom](../operators/transformation/withlatestfrom.md)
+
+### Visualization
+
+![learnrxjs - recipes - progressbar example](https://user-images.githubusercontent.com/10571311/138481866-da2b317b-fc35-4131-800a-d0a01d5627d0.png)
+
