@@ -5,7 +5,7 @@ effective ways to gracefully handle errors and retry logic, should they occur.
 
 ## Contents
 
-- [catch / catchError](catch.md) ⭐
+- [catchError](catch.md) ⭐
 - [retry](retry.md)
 - [retryWhen](retrywhen.md)
 
