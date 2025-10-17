@@ -8,7 +8,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
 ### Contents (By Operator Type)
 
 - [Combination](combination/README.md)
-  - [combineAll](combination/combineall.md)
+  - [combineLatestAll](combination/combineall.md)
   - [combineLatest](combination/combinelatest.md) ⭐
   - [concat](combination/concat.md) ⭐
   - [concatAll](combination/concatall.md)
@@ -37,7 +37,7 @@ _[Prefer a complete list in alphabetical order?](complete.md)_
   - [interval](creation/interval.md)
   - [of](creation/of.md) ⭐
   - [range](creation/range.md)
-  - [throw](creation/throw.md)
+  - [throwError](creation/throw.md)
   - [timer](creation/timer.md)
 - [Error Handling](error_handling/README.md)
   - [catch / catchError](error_handling/catch.md) ⭐

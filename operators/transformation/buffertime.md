@@ -15,8 +15,7 @@ Remember, `bufferTime` allows you to manage data emissions effectively by collec
 
 ##### Example 1: Buffer for 2 seconds
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-haqxd1?file=index.ts&devtoolsheight=50) | [jsBin](http://jsbin.com/bafakiyife/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/vx7vwg01/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-haqxd1?file=index.ts&devtoolsheight=50))
 
 ```js
 // RxJS v6+
@@ -36,8 +35,7 @@ const subscribe = example.subscribe(val =>
 
 ##### Example 2: Multiple active buffers
 
-( [StackBlitz](https://stackblitz.com/edit/typescript-9blquz?file=index.ts&devtoolsheight=100) | [jsBin](http://jsbin.com/tadiwiniri/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/7k4ygj1x/) )
+( [StackBlitz](https://stackblitz.com/edit/typescript-9blquz?file=index.ts&devtoolsheight=100))
 
 ```js
 // RxJS v6+
@@ -62,7 +60,6 @@ const subscribe = example.subscribe(val =>
 
 * [bufferTime](https://rxjs.dev/api/operators/bufferTime)
   📰 - Official docs
-* [bufferTime](https://indepth.dev/reference/rxjs/operators/buffer-time) - In Depth Dev Reference
 * [Time based operators comparison](../../concepts/time-based-operators-comparison.md)
 
 ---

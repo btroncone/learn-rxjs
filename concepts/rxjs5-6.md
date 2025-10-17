@@ -8,7 +8,7 @@ handy:
 TsLint rules for migration to RxJS 6. Auto-update project for new import paths
 and transition to pipeable operators.
 
-### [RxJS v5.x to v6 Update Guide](https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md)
+### [RxJS v5.x to v6 Update Guide](https://github.com/ReactiveX/rxjs/blob/6.6.7/docs_app/content/guide/v6/migration.md)
 
 Comprehensive guide for updating your project from RxJS v5 to 6
 

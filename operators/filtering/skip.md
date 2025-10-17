@@ -23,9 +23,7 @@ You could mimic `skip` by using [`filter`](./filter.md) with indexes. Ex.
 ##### Example 1: Skipping values before emission
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-o5ydjf?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/hacepudabi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/ar1eqbya/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-o5ydjf?file=index.ts&devtoolsheight=100))
 
 ```js
 // RxJS v6+

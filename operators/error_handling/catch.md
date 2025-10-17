@@ -173,7 +173,6 @@ userData$.subscribe(user => console.log('User:', user));
 ## Additional Resources
 
 - [catchError](https://rxjs.dev/api/operators/catchError) 📰 - Official docs
-- [catchError](https://indepth.dev/reference/rxjs/operators/catch-error) - In Depth Dev Reference
 - [Error handling operator: catch](https://egghead.io/lessons/rxjs-error-handling-operator-catch?course=rxjs-beyond-the-basics-operators-in-depth) 🎥 💵 - André Staltz
 - [Error Handling in RxJS](https://blog.angular-university.io/rxjs-error-handling/) 📰 - Angular University
 

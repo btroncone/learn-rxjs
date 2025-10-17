@@ -192,10 +192,8 @@ const subscribe = itemsWithTotal.subscribe(item => console.log(item));
 ### Additional Resources
 
 * [map](https://rxjs.dev/api/operators/map) 📰 - Official docs
-* [map](https://indepth.dev/reference/rxjs/operators/map) - In Depth Dev Reference
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap) 🎥 - Ben Lesh
 * [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) 🎥 💵 - André Staltz
-* [Build your own map operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=map#app) 🎥 - Kwinten Pisman
 
 ---
 

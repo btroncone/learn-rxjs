@@ -478,7 +478,7 @@ behavior.
 
 For instance, suppose we wanted to make a request which saved user activity when
 they answered a quiz question. Our initial implementation may use the
-[`mergeMap`](../opearators/transformation/mergemap.md) operator, which fires off
+[`mergeMap`](../operators/transformation/mergemap.md) operator, which fires off
 a save request on each event:
 
 ```js

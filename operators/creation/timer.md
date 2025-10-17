@@ -55,8 +55,6 @@ const subscribe = source.subscribe(val => console.log(val));
 - [timer](https://rxjs.dev/api/index/function/timer) 📰 - Official docs
 - [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
   🎥 💵 - André Staltz
-- [Build your own timer operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=timer#app)
-  🎥 - Kwinten Pisman
 
 ---
 

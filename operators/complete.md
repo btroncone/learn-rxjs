@@ -16,7 +16,7 @@ _[Prefer a split by operator type?](README.md)_
 - [bufferToggle](transformation/buffertoggle.md)
 - [bufferWhen](transformation/bufferwhen.md)
 - [catch / catchError](error_handling/catch.md) ⭐
-- [combineAll](combination/combineall.md)
+- [combineLatestAll](combination/combineall.md)
 - [combineLatest](combination/combinelatest.md) ⭐
 - [concat](combination/concat.md) ⭐
 - [concatAll](combination/concatall.md)
@@ -87,7 +87,7 @@ _[Prefer a split by operator type?](README.md)_
 - [takeWhile](filtering/takewhile.md)
 - [throttle](filtering/throttle.md)
 - [throttleTime](filtering/throttletime.md)
-- [throw](creation/throw.md)
+- [throwError](creation/throw.md)
 - [timeInterval](utility/timeinterval.md)
 - [timeout](utility/timeout.md)
 - [timeoutWith](utility/timeoutwith.md)

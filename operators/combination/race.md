@@ -72,7 +72,7 @@ race(first, second, third).subscribe(val => console.log(val));
 ### Additional Resources
 
 - [race](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-race) 📰 - Official docs
-- [race](https://indepth.dev/reference/rxjs/operators/race) - In Depth Dev Reference
+
 
 ---
 

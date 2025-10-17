@@ -140,15 +140,11 @@ mousedown$
 ### Additional Resources
 
 - [takeUntil](https://rxjs.dev/api/operators/takeUntil) 📰 - Official docs
-- [takeUntil](https://indepth.dev/reference/rxjs/operators/take-until) - In Depth Dev Reference
-
 * [Avoiding takeUntil leaks](https://blog.angularindepth.com/rxjs-avoiding-takeuntil-leaks-fb5182d047ef) -
   Angular in Depth
 * [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 
-- [Build your own takeUntil operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=takeUntil#app)
-  🎥 - Kwinten Pisman
 
 ---
 
