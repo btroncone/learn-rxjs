@@ -18,9 +18,7 @@ Lastly, if you're working with observables that emit multiple values but you onl
 ##### Example 1:
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-tkuydr?file=index.ts&devtoolsheight=50)
-| [jsBin](http://jsbin.com/keteyahido/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/8va47bq3/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-tkuydr?file=index.ts&devtoolsheight=50))
 
 ```js
 // RxJS v6+

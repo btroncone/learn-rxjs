@@ -54,7 +54,6 @@ sub.next(3); // OUTPUT => Subscriber A 3, Subscriber B 3 (logged from both subsc
 
 - [Subject](https://rxjs-dev.firebaseapp.com/api/index/class/Subject) 📰 -
   Official docs
-- [Subject](https://indepth.dev/reference/rxjs/subjects) - In Depth Dev Reference
 
 ---
 

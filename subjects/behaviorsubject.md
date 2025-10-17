@@ -111,7 +111,6 @@ merge(click$, interval$).subscribe();
 
 - [BehaviorSubject](https://rxjs-dev.firebaseapp.com/api/index/class/BehaviorSubject)
   📰 - Official docs
-- [BehaviorSubject](https://indepth.dev/reference/rxjs/subjects/behavior-subject) - In Depth Dev Reference
 
 ---
 

@@ -104,7 +104,6 @@ source$
 
 - [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile) 📰 -
   Official docs
-- [takeWhile](https://indepth.dev/reference/rxjs/operators/take-while) - In Depth Dev Reference
 - [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
   🎥 💵 - John Linquist
 

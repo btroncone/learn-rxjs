@@ -11,9 +11,7 @@
 ##### Example 1: Ignore all elements from source
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-jpjcpg?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/yiyefelubi/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/59scjqss/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-w6rndwxh?file=index.ts))
 
 ```js
 // RxJS v6+
@@ -35,9 +33,7 @@ const subscribe = example.subscribe(
 ##### Example 2: Only displaying error
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-3yxv9z?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/gogonawuze/1/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/srcwdgw6/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-3yxv9z?file=index.ts&devtoolsheight=100))
 
 ```js
 // RxJS v6+
@@ -66,8 +62,7 @@ const subscribe = error.subscribe(
 
 ### Additional Resources
 
-- [ignoreElements](https://rxjs.dev/api/operators/ignoreElements) 📰 - Official
-  docs
+- [ignoreElements](https://rxjs.dev/api/operators/ignoreElements) 📰 - Official docs
 
 ---
 

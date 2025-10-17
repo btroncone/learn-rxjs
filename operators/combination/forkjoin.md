@@ -203,7 +203,6 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ##### Example 6: forkJoin in Angular
 
-( [plunker](https://plnkr.co/edit/ElTrOg8NfR3WbbAfjBXQ?p=preview) )
 
 ```js
 @Injectable()
@@ -254,7 +253,6 @@ export class App {
 ### Additional Resources
 
 - [forkJoin](https://rxjs.dev/api/index/function/forkJoin) 📰 - Official docs
-- [forkJoin](https://indepth.dev/reference/rxjs/operators/fork-join) - In Depth Dev Reference
 
 ---
 

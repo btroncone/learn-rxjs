@@ -148,8 +148,7 @@ interval(1000)
   🎥 💵 - John Linquist
 - [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
-- [Build your own scan operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=scan#app)
-  🎥 - Kwinten Pisman
+
 
 ---
 

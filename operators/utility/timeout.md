@@ -11,9 +11,7 @@
 ##### Example 1: Timeout after 2.5 seconds
 
 (
-[StackBlitz](https://stackblitz.com/edit/typescript-eegqyz?file=index.ts&devtoolsheight=100)
-| [jsBin](http://jsbin.com/gonakiniho/edit?js,console) |
-[jsFiddle](https://jsfiddle.net/btroncone/nr4e1ofy/1/) )
+[StackBlitz](https://stackblitz.com/edit/typescript-eegqyz?file=index.ts&devtoolsheight=100) )
 
 ```js
 // RxJS v6+

@@ -6,7 +6,7 @@ variation among these operators.
 
 ## Contents
 
-- [combineAll](combineall.md)
+- [combineLatestAll](combineall.md)
 - [combineLatest](combinelatest.md) ⭐
 - [concat](concat.md) ⭐
 - [concatAll](concatall.md)

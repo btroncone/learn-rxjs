@@ -140,7 +140,6 @@ export class AppComponent implements OnInit  {
 ### Additional Resources
 
 - [retryWhen](https://rxjs.dev/api/operators/retryWhen) 📰 - Official docs
-- [retryWhen](https://indepth.dev/reference/rxjs/operators/retry-when) - In Depth Dev Reference
 - [Error handling operator: retry and retryWhen](https://egghead.io/lessons/rxjs-error-handling-operator-retry-and-retrywhen?course=rxjs-beyond-the-basics-operators-in-depth)
   🎥 💵 - André Staltz
 

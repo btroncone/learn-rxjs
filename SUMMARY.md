@@ -6,7 +6,7 @@
 
 - [Operators](operators/README.md)
   - [Combination](operators/combination/README.md)
-    - [combineAll](operators/combination/combineall.md)
+    - [combineLatestAll](operators/combination/combineall.md)
     - [combineLatest](operators/combination/combinelatest.md)
     - [concat](operators/combination/concat.md)
     - [concatAll](operators/combination/concatall.md)
@@ -35,7 +35,7 @@
     - [interval](operators/creation/interval.md)
     - [of](operators/creation/of.md)
     - [range](operators/creation/range.md)
-    - [throw](operators/creation/throw.md)
+    - [throwError](operators/creation/throw.md)
     - [timer](operators/creation/timer.md)
   - [Error Handling](operators/error_handling/README.md)
     - [catch / catchError](operators/error_handling/catch.md)

@@ -145,7 +145,6 @@ timer(0, 5000)
 ### Additional Resources
 
 - [switchMap](https://rxjs.dev/api/operators/switchMap) 📰 - Official docs
-- [switchMap](https://indepth.dev/reference/rxjs/operators/switch-map) - In Depth Dev Reference
 - [Avoiding switchMap-Related Bugs](https://blog.angularindepth.com/switchmap-bugs-b6de69155524) -
   Nicholas Jamieson
 - [Starting a stream with switchMap](https://egghead.io/lessons/rxjs-starting-a-stream-with-switchmap?course=step-by-step-async-javascript-with-rxjs)
@@ -154,8 +153,7 @@ timer(0, 5000)
   🎥 💵 - André Staltz
 - [Use switchMap as a safe default to flatten observables in RxJS](https://egghead.io/lessons/rxjs-use-switchmap-as-a-safe-default-to-flatten-observables-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively)
   🎥 💵 - André Staltz
-- [Build your own switchMap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=switchMap#app)
-  🎥 - Kwinten Pisman
+
 
 ---
 
